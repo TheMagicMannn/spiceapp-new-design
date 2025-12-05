@@ -7,21 +7,35 @@ interface TimeLeft {
   seconds: number;
 }
 
+const STORAGE_KEY = "spice_launch_target_date";
+
+const getTargetDate = (): number => {
+  const stored = localStorage.getItem(STORAGE_KEY);
+  if (stored) {
+    return parseInt(stored, 10);
+  }
+  // Set target date to 30 days from now
+  const targetDate = new Date();
+  targetDate.setDate(targetDate.getDate() + 30);
+  const targetTime = targetDate.getTime();
+  localStorage.setItem(STORAGE_KEY, targetTime.toString());
+  return targetTime;
+};
+
 const CountdownTimer = () => {
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({
-    days: 29,
-    hours: 23,
-    minutes: 59,
-    seconds: 59,
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
   });
 
   useEffect(() => {
-    const targetDate = new Date();
-    targetDate.setDate(targetDate.getDate() + 30);
+    const targetTime = getTargetDate();
 
-    const timer = setInterval(() => {
+    const updateTimer = () => {
       const now = new Date().getTime();
-      const distance = targetDate.getTime() - now;
+      const distance = targetTime - now;
 
       if (distance > 0) {
         setTimeLeft({
@@ -30,8 +44,13 @@ const CountdownTimer = () => {
           minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
           seconds: Math.floor((distance % (1000 * 60)) / 1000),
         });
+      } else {
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
       }
-    }, 1000);
+    };
+
+    updateTimer();
+    const timer = setInterval(updateTimer, 1000);
 
     return () => clearInterval(timer);
   }, []);

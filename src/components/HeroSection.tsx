@@ -1,8 +1,46 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import CountdownTimer from "./CountdownTimer";
-import { Sparkles, Heart, ArrowDown } from "lucide-react";
+import { Sparkles, Heart, ArrowDown, Loader2 } from "lucide-react";
+import { supabase } from "@/integrations/supabase/client";
+import { toast } from "sonner";
 
 const HeroSection = () => {
+  const [email, setEmail] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!email || !email.includes("@")) {
+      toast.error("Please enter a valid email address");
+      return;
+    }
+
+    setIsLoading(true);
+    
+    try {
+      const { data, error } = await supabase.functions.invoke("join-waitlist", {
+        body: { email },
+      });
+
+      if (error) throw error;
+      
+      if (data?.error) {
+        toast.error(data.error);
+      } else {
+        toast.success("You're on the waitlist! Check your email for confirmation.");
+        setEmail("");
+      }
+    } catch (error: any) {
+      console.error("Error joining waitlist:", error);
+      toast.error("Something went wrong. Please try again.");
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center px-4 pt-20 pb-12 overflow-hidden">
       {/* Animated background elements */}
@@ -42,7 +80,7 @@ const HeroSection = () => {
           </p>
         </div>
 
-        {/* CTA Section */}
+        {/* CTA Section with Email Capture */}
         <div className="pt-8 space-y-6 fade-in-up-delayed" style={{ animationDelay: "0.6s" }}>
           <div className="glass-card rounded-2xl p-8 max-w-md mx-auto border-gradient">
             <h3 className="text-xl font-semibold text-primary mb-2">
@@ -51,10 +89,30 @@ const HeroSection = () => {
             <p className="text-muted-foreground text-sm mb-6">
               Get 2 months free VIP access when we launch
             </p>
-            <Button variant="hero" size="xl" className="w-full">
-              <Sparkles className="w-5 h-5" />
-              Join Waitlist
-            </Button>
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <Input
+                type="email"
+                placeholder="Enter your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                className="bg-background/50 border-border/50 focus:border-primary h-12 text-center"
+                disabled={isLoading}
+              />
+              <Button 
+                type="submit" 
+                variant="hero" 
+                size="xl" 
+                className="w-full"
+                disabled={isLoading}
+              >
+                {isLoading ? (
+                  <Loader2 className="w-5 h-5 animate-spin" />
+                ) : (
+                  <Sparkles className="w-5 h-5" />
+                )}
+                {isLoading ? "Joining..." : "Join Waitlist"}
+              </Button>
+            </form>
           </div>
         </div>
 
