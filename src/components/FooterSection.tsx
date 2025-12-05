@@ -1,4 +1,4 @@
-import { Shield, Lock, Flame } from "lucide-react";
+import { Shield, Lock } from "lucide-react";
 
 const FooterSection = () => {
   return (
@@ -22,7 +22,6 @@ const FooterSection = () => {
         {/* Logo and copyright */}
         <div className="text-center space-y-4">
           <div className="flex items-center justify-center gap-3">
-            <Flame className="w-8 h-8 text-primary" />
             <span className="text-3xl font-black text-gradient">SPICE</span>
           </div>
           <p className="text-muted-foreground text-sm">
