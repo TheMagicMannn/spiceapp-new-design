@@ -1,0 +1,73 @@
+import { Button } from "@/components/ui/button";
+import CountdownTimer from "./CountdownTimer";
+import { Sparkles, Heart, ArrowDown } from "lucide-react";
+
+const HeroSection = () => {
+  return (
+    <section className="relative min-h-screen flex flex-col items-center justify-center px-4 pt-20 pb-12 overflow-hidden">
+      {/* Animated background elements */}
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-glow-purple/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: "1s" }} />
+      
+      {/* Floating decorative elements */}
+      <div className="absolute top-20 right-10 md:right-20 float">
+        <Sparkles className="w-8 h-8 text-primary/40" />
+      </div>
+      <div className="absolute bottom-40 left-10 md:left-20 float-delayed">
+        <Heart className="w-6 h-6 text-primary/30" />
+      </div>
+      
+      <div className="relative z-10 max-w-5xl mx-auto text-center space-y-8">
+        {/* Countdown */}
+        <div className="fade-in-up mb-12">
+          <CountdownTimer />
+        </div>
+
+        {/* Logo/Brand */}
+        <div className="fade-in-up-delayed" style={{ animationDelay: "0.2s" }}>
+          <h1 className="text-7xl md:text-9xl font-black text-gradient glow-text tracking-tight font-outfit">
+            SPICE
+          </h1>
+          <div className="h-1.5 w-40 mx-auto mt-4 bg-gradient-to-r from-transparent via-primary to-transparent rounded-full" />
+        </div>
+
+        {/* Tagline */}
+        <div className="space-y-4 fade-in-up-delayed" style={{ animationDelay: "0.4s" }}>
+          <h2 className="text-2xl md:text-4xl font-semibold text-foreground">
+            Start your dating journey today
+          </h2>
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            Join thousands of adventurous singles and couples exploring connections 
+            in a safe, premium environment.
+          </p>
+        </div>
+
+        {/* CTA Section */}
+        <div className="pt-8 space-y-6 fade-in-up-delayed" style={{ animationDelay: "0.6s" }}>
+          <div className="glass-card rounded-2xl p-8 max-w-md mx-auto border-gradient">
+            <h3 className="text-xl font-semibold text-primary mb-2">
+              Join the Waitlist
+            </h3>
+            <p className="text-muted-foreground text-sm mb-6">
+              Get 2 months free VIP access when we launch
+            </p>
+            <Button variant="hero" size="xl" className="w-full">
+              <Sparkles className="w-5 h-5" />
+              Join Waitlist
+            </Button>
+          </div>
+        </div>
+
+        {/* Scroll indicator */}
+        <div className="pt-12 fade-in-up-delayed" style={{ animationDelay: "0.8s" }}>
+          <div className="flex flex-col items-center gap-2 animate-bounce">
+            <span className="text-xs text-muted-foreground uppercase tracking-widest">Discover More</span>
+            <ArrowDown className="w-5 h-5 text-primary" />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;
