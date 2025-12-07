@@ -1,4 +1,5 @@
 import ParticlesBackground from "@/components/ParticlesBackground";
+import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import DesireTagsSection from "@/components/DesireTagsSection";
@@ -10,7 +11,8 @@ const Index = () => {
   return (
     <div className="relative min-h-screen">
       <ParticlesBackground />
-      <main className="relative z-10">
+      <Header />
+      <main className="relative z-10 pt-16">
         <HeroSection />
         <AboutSection />
         <DesireTagsSection />
