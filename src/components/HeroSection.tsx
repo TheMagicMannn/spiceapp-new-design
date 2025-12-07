@@ -25,17 +25,35 @@ const HeroSection = () => {
         body: { email },
       });
 
-      if (error) throw error;
+      if (error) {
+        // Try to parse the error context for the actual message
+        const errorMessage = error.message || "Something went wrong. Please try again.";
+        if (errorMessage.includes("already on the waitlist")) {
+          toast.info("You're already on the waitlist! We'll notify you when we launch.");
+        } else {
+          toast.error(errorMessage);
+        }
+        return;
+      }
       
       if (data?.error) {
-        toast.error(data.error);
+        if (data.error.includes("already on the waitlist")) {
+          toast.info("You're already on the waitlist! We'll notify you when we launch.");
+        } else {
+          toast.error(data.error);
+        }
       } else {
         toast.success("You're on the waitlist! Check your email for confirmation.");
         setEmail("");
       }
     } catch (error: any) {
       console.error("Error joining waitlist:", error);
-      toast.error("Something went wrong. Please try again.");
+      const errorMessage = error?.message || "";
+      if (errorMessage.includes("already on the waitlist")) {
+        toast.info("You're already on the waitlist! We'll notify you when we launch.");
+      } else {
+        toast.error("Something went wrong. Please try again.");
+      }
     } finally {
       setIsLoading(false);
     }
