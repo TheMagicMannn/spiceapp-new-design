@@ -3,14 +3,15 @@ import { Linkedin, Twitter, Globe } from "lucide-react";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
+import kyleWitterImage from "@/assets/kyle-witter.png";
 
 const teamMembers = [
   {
-    name: "Alex Rivera",
-    role: "CEO & Co-Founder",
-    bio: "Former lifestyle community organizer with 10+ years of experience building inclusive spaces.",
-    avatar: "🔥",
-    gradient: "from-pink-500 to-rose-500",
+    name: "Kyle Witter",
+    role: "Founder & CEO",
+    bio: "Visionary entrepreneur and creative force behind SPICE. Kyle single-handedly designed, developed, and launched the entire platform from concept to reality. With an unwavering passion for building inclusive communities and a relentless drive to innovate, he transformed his vision of a safer, more authentic lifestyle app into existence. A true builder at heart, Kyle embodies the spirit of turning bold ideas into meaningful connections.",
+    image: kyleWitterImage,
+    gradient: "from-primary to-pink-500",
   },
   {
     name: "Jordan Chen",
@@ -84,13 +85,26 @@ const Team = () => {
                 whileHover={{ y: -10 }}
                 className="glass-card rounded-2xl p-6 group"
               >
-                {/* Avatar */}
-                <motion.div
-                  whileHover={{ scale: 1.1, rotate: 5 }}
-                  className={`w-24 h-24 rounded-2xl bg-gradient-to-br ${member.gradient} flex items-center justify-center text-4xl mb-6 mx-auto shadow-lg`}
-                >
-                  {member.avatar}
-                </motion.div>
+                {/* Avatar/Photo */}
+                {member.image ? (
+                  <motion.div
+                    whileHover={{ scale: 1.05 }}
+                    className="w-28 h-28 rounded-2xl overflow-hidden mb-6 mx-auto shadow-lg ring-2 ring-primary/30"
+                  >
+                    <img 
+                      src={member.image} 
+                      alt={member.name}
+                      className="w-full h-full object-cover object-top"
+                    />
+                  </motion.div>
+                ) : (
+                  <motion.div
+                    whileHover={{ scale: 1.1, rotate: 5 }}
+                    className={`w-24 h-24 rounded-2xl bg-gradient-to-br ${member.gradient} flex items-center justify-center text-4xl mb-6 mx-auto shadow-lg`}
+                  >
+                    {member.avatar}
+                  </motion.div>
+                )}
 
                 {/* Info */}
                 <div className="text-center">
