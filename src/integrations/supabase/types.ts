@@ -14,6 +14,36 @@ export type Database = {
   }
   public: {
     Tables: {
+      bdsm_quiz_results: {
+        Row: {
+          ai_insights: string | null
+          compatibility_profile: Json | null
+          created_at: string
+          email: string | null
+          id: string
+          responses: Json
+          session_id: string
+        }
+        Insert: {
+          ai_insights?: string | null
+          compatibility_profile?: Json | null
+          created_at?: string
+          email?: string | null
+          id?: string
+          responses: Json
+          session_id?: string
+        }
+        Update: {
+          ai_insights?: string | null
+          compatibility_profile?: Json | null
+          created_at?: string
+          email?: string | null
+          id?: string
+          responses?: Json
+          session_id?: string
+        }
+        Relationships: []
+      }
       waitlist: {
         Row: {
           created_at: string
