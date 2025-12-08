@@ -14,21 +14,21 @@ const contactMethods = [
     icon: Mail,
     title: "Email Us",
     description: "For general inquiries",
-    value: "hello@spiceapp.com",
+    value: "info@thespiceapp.com",
     gradient: "from-pink-500 to-rose-500",
   },
   {
     icon: HelpCircle,
     title: "Support",
     description: "Get help with your account",
-    value: "support@spiceapp.com",
+    value: "support@thespiceapp.com",
     gradient: "from-purple-500 to-violet-500",
   },
   {
     icon: Briefcase,
     title: "Partnerships",
     description: "Business opportunities",
-    value: "partners@spiceapp.com",
+    value: "partners@thespiceapp.com",
     gradient: "from-fuchsia-500 to-pink-500",
   },
 ];
@@ -273,7 +273,7 @@ const Contact = () => {
                     <h3 className="font-bold mb-1">Headquarters</h3>
                     <p className="text-sm text-muted-foreground">
                       SPICE HQ<br />
-                      San Francisco, CA<br />
+                      Virginia Beach, VA<br />
                       United States
                     </p>
                   </div>
