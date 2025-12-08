@@ -1,1 +1,7 @@
 project_id = "ikdktebuaipbvrrkkpyb"
+
+[functions.join-waitlist]
+verify_jwt = false
+
+[functions.analyze-bdsm-quiz]
+verify_jwt = false

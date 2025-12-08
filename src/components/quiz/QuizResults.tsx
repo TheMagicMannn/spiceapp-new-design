@@ -1,0 +1,204 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Sparkles, Heart, RefreshCw, Share2, ArrowLeft, TrendingUp } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Progress } from '@/components/ui/progress';
+import { QuizInsights } from '@/pages/BDSMQuiz';
+import { Link } from 'react-router-dom';
+
+interface QuizResultsProps {
+  insights: QuizInsights;
+  onRestart: () => void;
+}
+
+const QuizResults: React.FC<QuizResultsProps> = ({ insights, onRestart }) => {
+  const getDominanceLabel = (score: number) => {
+    if (score < 25) return 'Submissive';
+    if (score < 45) return 'Sub-leaning Switch';
+    if (score < 55) return 'Switch';
+    if (score < 75) return 'Dom-leaning Switch';
+    return 'Dominant';
+  };
+
+  return (
+    <div className="min-h-screen bg-background">
+      {/* Header */}
+      <div className="sticky top-0 bg-background/95 backdrop-blur-sm border-b border-border/50 p-4 z-10">
+        <div className="max-w-4xl mx-auto flex items-center justify-between">
+          <Link to="/" className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
+            <ArrowLeft className="w-4 h-4" />
+            Back to Home
+          </Link>
+          <Button variant="outline" size="sm" onClick={onRestart}>
+            <RefreshCw className="w-4 h-4 mr-2" />
+            Retake Quiz
+          </Button>
+        </div>
+      </div>
+
+      <div className="max-w-4xl mx-auto p-4 md:p-8">
+        {/* Hero Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="text-center mb-12"
+        >
+          <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-primary/20 to-pink-500/20 mb-6">
+            <Sparkles className="w-10 h-10 text-primary" />
+          </div>
+          <h1 className="text-3xl md:text-4xl font-bold mb-2">Your Results Are Ready!</h1>
+          <div className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-primary to-pink-500 text-white font-bold text-xl mt-4">
+            {insights.archetype}
+          </div>
+        </motion.div>
+
+        {/* Personality Summary */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1 }}
+          className="bg-card/50 border border-border/50 rounded-2xl p-6 mb-6"
+        >
+          <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
+            <Heart className="w-5 h-5 text-pink-500" />
+            Your Intimacy Profile
+          </h2>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            {insights.personalitySummary}
+          </p>
+        </motion.div>
+
+        {/* Scores Grid */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6"
+        >
+          <div className="bg-card/50 border border-border/50 rounded-xl p-5">
+            <h3 className="font-semibold mb-3">Power Dynamic Spectrum</h3>
+            <div className="mb-2">
+              <Progress value={insights.scores.dominanceSubmission} className="h-3" />
+            </div>
+            <div className="flex justify-between text-sm">
+              <span className="text-muted-foreground">Submissive</span>
+              <span className="font-medium text-primary">
+                {getDominanceLabel(insights.scores.dominanceSubmission)}
+              </span>
+              <span className="text-muted-foreground">Dominant</span>
+            </div>
+          </div>
+
+          <div className="bg-card/50 border border-border/50 rounded-xl p-5">
+            <h3 className="font-semibold mb-3">Openness to Exploration</h3>
+            <div className="mb-2">
+              <Progress value={insights.scores.opennessToExploration} className="h-3" />
+            </div>
+            <div className="flex justify-between text-sm">
+              <span className="text-muted-foreground">Conservative</span>
+              <span className="font-medium text-primary">
+                {insights.scores.opennessToExploration}%
+              </span>
+              <span className="text-muted-foreground">Adventurous</span>
+            </div>
+          </div>
+
+          <div className="bg-card/50 border border-border/50 rounded-xl p-5">
+            <h3 className="font-semibold mb-2">Communication Style</h3>
+            <p className="text-lg font-medium text-primary">
+              {insights.scores.communicationStyle}
+            </p>
+          </div>
+
+          <div className="bg-card/50 border border-border/50 rounded-xl p-5">
+            <h3 className="font-semibold mb-2">Experience Level</h3>
+            <p className="text-lg font-medium text-primary">
+              {insights.scores.experienceLevel}
+            </p>
+          </div>
+        </motion.div>
+
+        {/* Key Traits */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3 }}
+          className="bg-card/50 border border-border/50 rounded-2xl p-6 mb-6"
+        >
+          <h2 className="text-xl font-bold mb-4">Key Traits</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {insights.keyTraits.map((trait, index) => (
+              <div key={index} className="flex gap-3 p-3 rounded-lg bg-background/50">
+                <div className="w-2 h-2 mt-2 rounded-full bg-primary flex-shrink-0" />
+                <div>
+                  <h4 className="font-semibold text-foreground">{trait.trait}</h4>
+                  <p className="text-sm text-muted-foreground">{trait.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </motion.div>
+
+        {/* Compatibility Insights */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+          className="bg-gradient-to-br from-primary/10 to-pink-500/10 border border-primary/20 rounded-2xl p-6 mb-6"
+        >
+          <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
+            <TrendingUp className="w-5 h-5 text-primary" />
+            Partner Compatibility Insights
+          </h2>
+          <p className="text-muted-foreground leading-relaxed">
+            {insights.compatibilityInsights}
+          </p>
+        </motion.div>
+
+        {/* Growth Areas */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5 }}
+          className="bg-card/50 border border-border/50 rounded-2xl p-6 mb-8"
+        >
+          <h2 className="text-xl font-bold mb-4">Areas for Exploration</h2>
+          <ul className="space-y-2">
+            {insights.growthAreas.map((area, index) => (
+              <li key={index} className="flex items-start gap-3">
+                <Sparkles className="w-4 h-4 mt-1 text-primary flex-shrink-0" />
+                <span className="text-muted-foreground">{area}</span>
+              </li>
+            ))}
+          </ul>
+        </motion.div>
+
+        {/* CTA Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6 }}
+          className="text-center"
+        >
+          <p className="text-muted-foreground mb-4">
+            Ready to find your perfect match?
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <Link to="/">
+              <Button size="lg" className="bg-gradient-to-r from-primary to-pink-600">
+                Join SPICE Waitlist
+                <Heart className="ml-2 w-4 h-4" />
+              </Button>
+            </Link>
+            <Button variant="outline" size="lg">
+              <Share2 className="mr-2 w-4 h-4" />
+              Share Results
+            </Button>
+          </div>
+        </motion.div>
+      </div>
+    </div>
+  );
+};
+
+export default QuizResults;
