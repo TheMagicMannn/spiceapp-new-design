@@ -45,17 +45,27 @@ const handler = async (req: Request): Promise<Response> => {
       },
       body: JSON.stringify({
         from: "SPICE Contact <onboarding@resend.dev>",
-        to: ["info@thespiceapp.com"],
+        to: ["kwitter1982@gmail.com"],
         reply_to: email,
         subject: `[Contact Form] ${subject}`,
         html: `
-          <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
-            <h2 style="color: #ff6b9d;">New Contact Form Submission</h2>
-            <p><strong>From:</strong> ${name} (${email})</p>
-            <p><strong>Subject:</strong> ${subject}</p>
-            <hr style="border: 1px solid #eee; margin: 20px 0;">
-            <p><strong>Message:</strong></p>
-            <p style="white-space: pre-wrap;">${message}</p>
+          <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 40px 20px; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: #ffffff;">
+            <div style="text-align: center; margin-bottom: 30px;">
+              <h1 style="font-size: 48px; margin: 0; background: linear-gradient(135deg, #ff6b9d, #c44569); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">SPICE</h1>
+            </div>
+            <h2 style="color: #ff6b9d; text-align: center;">New Contact Form Submission 📩</h2>
+            <div style="background: rgba(255,255,255,0.05); border-radius: 10px; padding: 20px; margin: 20px 0;">
+              <p style="color: #cccccc; margin: 10px 0;"><strong style="color: #ff6b9d;">From:</strong> ${name}</p>
+              <p style="color: #cccccc; margin: 10px 0;"><strong style="color: #ff6b9d;">Email:</strong> ${email}</p>
+              <p style="color: #cccccc; margin: 10px 0;"><strong style="color: #ff6b9d;">Subject:</strong> ${subject}</p>
+            </div>
+            <div style="background: rgba(255,255,255,0.05); border-radius: 10px; padding: 20px; margin: 20px 0;">
+              <p style="color: #ff6b9d; margin: 0 0 10px 0;"><strong>Message:</strong></p>
+              <p style="color: #cccccc; white-space: pre-wrap; margin: 0;">${message}</p>
+            </div>
+            <p style="color: #888888; font-size: 12px; text-align: center;">
+              Submitted at: ${new Date().toLocaleString()}
+            </p>
           </div>
         `,
       }),
