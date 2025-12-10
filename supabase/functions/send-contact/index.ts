@@ -82,7 +82,7 @@ const handler = async (req: Request): Promise<Response> => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "SPICE <onboarding@resend.dev>",
+        from: "SPICE <noreply@thespiceapp.com>",
         to: [email],
         subject: "We received your message! 💌",
         html: `
