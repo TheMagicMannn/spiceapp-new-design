@@ -5,22 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SpiceApp</title>
 
-    <!-- Google Analytics: G-9REM6Z20KL -->
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9REM6Z20KL"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      // For SPA, disable automatic page_view so we can send manual pageviews
-      gtag('config', 'G-9REM6Z20KL', { send_page_view: false });
-    </script>
-
+    <!-- Google Analytics will be injected at runtime from VITE_GA_ID -->
     <!-- other head tags... -->
   </head>
   <body>
     <div id="root"></div>
-    <!-- your scripts -->
+
+    <!-- Vite entry: restore this so the app mounts -->
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
