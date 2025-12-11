@@ -5,6 +5,16 @@ import CountdownTimer from "./CountdownTimer";
 import { Sparkles, Heart, ArrowDown, Loader2 } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
+import confetti from "canvas-confetti";
+
+const triggerConfetti = () => {
+  confetti({
+    particleCount: 100,
+    spread: 70,
+    origin: { y: 0.6 },
+    colors: ['#FF4D6D', '#FF758F', '#FFB3C1', '#C9184A', '#FF8FA3']
+  });
+};
 
 const HeroSection = () => {
   const [email, setEmail] = useState("");
@@ -38,14 +48,19 @@ const HeroSection = () => {
       
       if (data?.error) {
         if (data.error.includes("already on the waitlist")) {
-          toast.info("You're already on the waitlist! We'll notify you when we launch.");
+          toast.info("You're already part of the Spice family! 💕 Sit tight — we'll let you know as soon as we launch.", {
+            duration: 5000,
+          });
         } else {
           toast.error(data.error);
         }
       } else if (data?.alreadyExists) {
-        toast.info("You're already on the waitlist! We'll notify you when we launch.");
+        toast.info("You're already part of the Spice family! 💕 Sit tight — we'll let you know as soon as we launch.", {
+          duration: 5000,
+        });
         setEmail("");
       } else {
+        triggerConfetti();
         toast.success("Welcome to the Spice family! 🎉 Check your inbox for a confirmation email and get ready for something special.", {
           duration: 5000,
         });
@@ -55,7 +70,9 @@ const HeroSection = () => {
       console.error("Error joining waitlist:", error);
       const errorMessage = error?.message || "";
       if (errorMessage.includes("already on the waitlist")) {
-        toast.info("You're already on the waitlist! We'll notify you when we launch.");
+        toast.info("You're already part of the Spice family! 💕 Sit tight — we'll let you know as soon as we launch.", {
+          duration: 5000,
+        });
       } else {
         toast.error("Something went wrong. Please try again.");
       }
