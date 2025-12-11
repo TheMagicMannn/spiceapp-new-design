@@ -59,8 +59,8 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send internal notification email to team
     const notificationResponse = await resend.emails.send({
-      from: "SPICE <onboarding@resend.dev>",
-      to: ["kwitter1982@gmail.com"],
+      from: "SPICE <noreply@thespiceapp.com>",
+      to: ["support@thespiceapp.com"],
       subject: "🔥 New Waitlist Signup!",
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 40px 20px; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: #ffffff;">
