@@ -42,6 +42,9 @@ const HeroSection = () => {
         } else {
           toast.error(data.error);
         }
+      } else if (data?.alreadyExists) {
+        toast.info("You're already on the waitlist! We'll notify you when we launch.");
+        setEmail("");
       } else {
         toast.success("You're on the waitlist! Check your email for confirmation.");
         setEmail("");

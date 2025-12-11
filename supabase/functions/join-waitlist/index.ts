@@ -48,9 +48,10 @@ const handler = async (req: Request): Promise<Response> => {
 
     if (dbError) {
       if (dbError.code === "23505") {
+        // Return 200 with alreadyExists flag - this is expected behavior, not an error
         return new Response(
-          JSON.stringify({ error: "You're already on the waitlist!" }),
-          { status: 400, headers: { "Content-Type": "application/json", ...corsHeaders } }
+          JSON.stringify({ success: true, alreadyExists: true, message: "You're already on the waitlist!" }),
+          { status: 200, headers: { "Content-Type": "application/json", ...corsHeaders } }
         );
       }
       console.error("Database error:", dbError);
