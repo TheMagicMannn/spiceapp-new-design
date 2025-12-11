@@ -46,7 +46,9 @@ const HeroSection = () => {
         toast.info("You're already on the waitlist! We'll notify you when we launch.");
         setEmail("");
       } else {
-        toast.success("You're on the waitlist! Check your email for confirmation.");
+        toast.success("Welcome to the Spice family! 🎉 Check your inbox for a confirmation email and get ready for something special.", {
+          duration: 5000,
+        });
         setEmail("");
       }
     } catch (error: any) {
