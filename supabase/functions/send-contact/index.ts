@@ -44,8 +44,8 @@ const handler = async (req: Request): Promise<Response> => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        from: "SPICE Contact <onboarding@resend.dev>",
-        to: ["kwitter1982@gmail.com"],
+        from: "SPICE Contact <noreply@thespiceapp.com>",
+        to: ["support@thespiceapp.com"],
         reply_to: email,
         subject: `[Contact Form] ${subject}`,
         html: `
