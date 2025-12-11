@@ -19,6 +19,7 @@ const triggerConfetti = () => {
 const HeroSection = () => {
   const [email, setEmail] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -61,10 +62,12 @@ const HeroSection = () => {
         setEmail("");
       } else {
         triggerConfetti();
+        setShowSuccess(true);
         toast.success("Welcome to the Spice family! 🎉 Check your inbox for a confirmation email and get ready for something special.", {
           duration: 5000,
         });
         setEmail("");
+        setTimeout(() => setShowSuccess(false), 3000);
       }
     } catch (error: any) {
       console.error("Error joining waitlist:", error);
@@ -122,12 +125,18 @@ const HeroSection = () => {
 
         {/* CTA Section with Email Capture */}
         <div className="pt-8 space-y-6 fade-in-up-delayed" style={{ animationDelay: "0.6s" }}>
-          <div className="glass-card rounded-2xl p-8 max-w-md mx-auto border-gradient">
-            <h3 className="text-xl font-semibold text-primary mb-2">
-              Join the Waitlist
+          <div 
+            className={`glass-card rounded-2xl p-8 max-w-md mx-auto border-gradient transition-all duration-500 ${
+              showSuccess 
+                ? 'ring-2 ring-green-500/50 shadow-[0_0_30px_rgba(34,197,94,0.3)] scale-[1.02]' 
+                : ''
+            }`}
+          >
+            <h3 className={`text-xl font-semibold mb-2 transition-colors duration-300 ${showSuccess ? 'text-green-500' : 'text-primary'}`}>
+              {showSuccess ? '🎉 You\'re In!' : 'Join the Waitlist'}
             </h3>
             <p className="text-muted-foreground text-sm mb-6">
-              Get 2 months free VIP access when we launch
+              {showSuccess ? 'Welcome to the Spice family!' : 'Get 2 months free VIP access when we launch'}
             </p>
             <form onSubmit={handleSubmit} className="space-y-4">
               <Input
