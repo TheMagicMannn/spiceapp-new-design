@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { Linkedin, Twitter, Globe } from "lucide-react";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import Header from "@/components/Header";
@@ -167,14 +168,15 @@ const Team = () => {
                 If you believe in creating inclusive spaces and building amazing products,
                 we'd love to hear from you.
               </p>
-              <motion.a
-                href="/contact"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center gap-2 px-8 py-3 rounded-xl bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors"
-              >
-                Get in Touch
-              </motion.a>
+              <Link to="/contact">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="inline-flex items-center gap-2 px-8 py-3 rounded-xl bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors"
+                >
+                  Get in Touch
+                </motion.button>
+              </Link>
             </div>
           </motion.div>
         </div>
