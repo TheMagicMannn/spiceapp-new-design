@@ -109,17 +109,18 @@ const HeroSection = () => {
           <h1 className="text-7xl md:text-9xl font-black text-gradient glow-text tracking-tight font-outfit">
             SPICE
           </h1>
+          <p className="sr-only">SPICE - The Premier Dating App for Swingers, BDSM & ENM Community</p>
           <div className="h-1.5 w-40 mx-auto mt-4 bg-gradient-to-r from-transparent via-primary to-transparent rounded-full" />
         </div>
 
         {/* Tagline */}
         <div className="space-y-4 fade-in-up-delayed" style={{ animationDelay: "0.4s" }}>
           <h2 className="text-2xl md:text-4xl font-semibold text-foreground">
-            Start your dating journey today
+            Premium Dating for Adventurous Adults
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Join thousands of adventurous singles and couples exploring connections 
-            in a safe, premium environment.
+            Join thousands of adventurous singles and couples exploring swingers, BDSM, and ENM connections 
+            in a safe, premium lifestyle community.
           </p>
         </div>
 
