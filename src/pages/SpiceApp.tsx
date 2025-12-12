@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import { Check, X, Minus } from "lucide-react";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 type FeatureStatus = "yes" | "no" | "partial" | "coming";
 
@@ -103,9 +105,15 @@ const StatusIcon = ({ status }: { status: FeatureStatus }) => {
 const SpiceApp = () => {
   return (
     <div className="relative min-h-screen">
+      <Helmet>
+        <title>SPICE App Features — Compare Dating Apps for Swingers & BDSM</title>
+        <meta name="description" content="See how SPICE compares to Feeld, 3Fun, Tinder, SDC, and other dating apps. Discover our unique features for swingers, BDSM, and ENM communities." />
+        <link rel="canonical" href="https://thespiceapp.com/spice-app" />
+      </Helmet>
       <ParticlesBackground />
       <Header />
-      <main className="relative z-10 pt-24 pb-12">
+      <Breadcrumbs />
+      <main className="relative z-10 pt-4 pb-12">
         <div className="container mx-auto px-4">
           {/* Hero Section */}
           <motion.div

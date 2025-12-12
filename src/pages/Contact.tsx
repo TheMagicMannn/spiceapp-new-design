@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import { Mail, MapPin, Send, MessageCircle, HelpCircle, Briefcase, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -9,6 +10,7 @@ import { supabase } from "@/integrations/supabase/client";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 const contactMethods = [
   {
@@ -94,9 +96,15 @@ const Contact = () => {
 
   return (
     <div className="relative min-h-screen">
+      <Helmet>
+        <title>Contact SPICE — Get in Touch with Our Team</title>
+        <meta name="description" content="Have questions about SPICE? Contact our team for support, partnerships, or general inquiries. We'd love to hear from you." />
+        <link rel="canonical" href="https://thespiceapp.com/contact" />
+      </Helmet>
       <ParticlesBackground />
       <Header />
-      <main className="relative z-10 pt-24 pb-12">
+      <Breadcrumbs />
+      <main className="relative z-10 pt-4 pb-12">
         <div className="container mx-auto px-4">
           {/* Hero Section */}
           <motion.div
