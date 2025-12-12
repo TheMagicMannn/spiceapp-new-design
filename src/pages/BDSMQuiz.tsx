@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 import { ArrowLeft, ArrowRight, Sparkles, Heart, Shield, Lock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
@@ -8,6 +9,7 @@ import { useToast } from '@/hooks/use-toast';
 import QuizResults from '@/components/quiz/QuizResults';
 import QuizQuestion from '@/components/quiz/QuizQuestion';
 import { quizQuestions } from '@/data/quizQuestions';
+import Breadcrumbs from '@/components/Breadcrumbs';
 
 export interface QuizResponse {
   questionId: string;
@@ -135,55 +137,65 @@ const BDSMQuiz = () => {
 
   if (!quizStarted) {
     return (
-      <div className="min-h-screen bg-background flex items-center justify-center p-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="max-w-2xl w-full text-center"
-        >
-          <div className="mb-8">
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/20 mb-6">
-              <Sparkles className="w-10 h-10 text-primary" />
-            </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary via-pink-500 to-purple-500 bg-clip-text text-transparent">
-              BDSM Compatibility Quiz
-            </h1>
-            <p className="text-lg text-muted-foreground mb-6">
-              Discover your intimacy style and preferences through our AI-powered analysis
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-            <div className="bg-card/50 border border-border/50 rounded-xl p-4">
-              <Heart className="w-8 h-8 text-pink-500 mx-auto mb-2" />
-              <h3 className="font-semibold mb-1">Personalized Insights</h3>
-              <p className="text-sm text-muted-foreground">AI-generated analysis tailored to you</p>
-            </div>
-            <div className="bg-card/50 border border-border/50 rounded-xl p-4">
-              <Shield className="w-8 h-8 text-green-500 mx-auto mb-2" />
-              <h3 className="font-semibold mb-1">Safe & Private</h3>
-              <p className="text-sm text-muted-foreground">Your responses are anonymous</p>
-            </div>
-            <div className="bg-card/50 border border-border/50 rounded-xl p-4">
-              <Lock className="w-8 h-8 text-purple-500 mx-auto mb-2" />
-              <h3 className="font-semibold mb-1">Non-Judgmental</h3>
-              <p className="text-sm text-muted-foreground">Sex-positive and inclusive</p>
-            </div>
-          </div>
-
-          <p className="text-sm text-muted-foreground mb-6">
-            {quizQuestions.length} questions • Takes about 5 minutes
-          </p>
-
-          <Button
-            onClick={() => setQuizStarted(true)}
-            size="lg"
-            className="bg-gradient-to-r from-primary to-pink-600 hover:from-primary/90 hover:to-pink-600/90"
+      <div className="min-h-screen bg-background">
+        <Helmet>
+          <title>BDSM Compatibility Quiz — Discover Your Intimacy Style | SPICE</title>
+          <meta name="description" content="Take our AI-powered BDSM compatibility quiz to discover your intimacy style, preferences, and find compatible partners. Safe, private, and non-judgmental." />
+          <link rel="canonical" href="https://thespiceapp.com/quiz" />
+        </Helmet>
+        <div className="pt-16">
+          <Breadcrumbs />
+        </div>
+        <div className="flex items-center justify-center p-4 min-h-[calc(100vh-80px)]">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="max-w-2xl w-full text-center"
           >
-            Start Quiz
-            <ArrowRight className="ml-2 w-4 h-4" />
-          </Button>
-        </motion.div>
+            <div className="mb-8">
+              <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-primary/20 mb-6">
+                <Sparkles className="w-10 h-10 text-primary" />
+              </div>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary via-pink-500 to-purple-500 bg-clip-text text-transparent">
+                BDSM Compatibility Quiz
+              </h1>
+              <p className="text-lg text-muted-foreground mb-6">
+                Discover your intimacy style and preferences through our AI-powered analysis
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+              <div className="bg-card/50 border border-border/50 rounded-xl p-4">
+                <Heart className="w-8 h-8 text-pink-500 mx-auto mb-2" />
+                <h3 className="font-semibold mb-1">Personalized Insights</h3>
+                <p className="text-sm text-muted-foreground">AI-generated analysis tailored to you</p>
+              </div>
+              <div className="bg-card/50 border border-border/50 rounded-xl p-4">
+                <Shield className="w-8 h-8 text-green-500 mx-auto mb-2" />
+                <h3 className="font-semibold mb-1">Safe & Private</h3>
+                <p className="text-sm text-muted-foreground">Your responses are anonymous</p>
+              </div>
+              <div className="bg-card/50 border border-border/50 rounded-xl p-4">
+                <Lock className="w-8 h-8 text-purple-500 mx-auto mb-2" />
+                <h3 className="font-semibold mb-1">Non-Judgmental</h3>
+                <p className="text-sm text-muted-foreground">Sex-positive and inclusive</p>
+              </div>
+            </div>
+
+            <p className="text-sm text-muted-foreground mb-6">
+              {quizQuestions.length} questions • Takes about 5 minutes
+            </p>
+
+            <Button
+              onClick={() => setQuizStarted(true)}
+              size="lg"
+              className="bg-gradient-to-r from-primary to-pink-600 hover:from-primary/90 hover:to-pink-600/90"
+            >
+              Start Quiz
+              <ArrowRight className="ml-2 w-4 h-4" />
+            </Button>
+          </motion.div>
+        </div>
       </div>
     );
   }

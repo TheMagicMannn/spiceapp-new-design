@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
@@ -10,6 +11,9 @@ import FooterSection from "@/components/FooterSection";
 const Index = () => {
   return (
     <div className="relative min-h-screen">
+      <Helmet>
+        <link rel="canonical" href="https://thespiceapp.com/" />
+      </Helmet>
       <ParticlesBackground />
       <Header />
       <main className="relative z-10 pt-16">

@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import { Linkedin, Twitter, Globe } from "lucide-react";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import kyleWitterImage from "@/assets/kyle-witter.png";
 
 const teamMembers = [
@@ -54,9 +56,15 @@ const teamMembers = [
 const Team = () => {
   return (
     <div className="relative min-h-screen">
+      <Helmet>
+        <title>Meet the SPICE Team — Leadership Behind Your Dating App</title>
+        <meta name="description" content="Meet the passionate team behind SPICE. Our diverse leadership is dedicated to building the safest, most inclusive dating platform for lifestyle communities." />
+        <link rel="canonical" href="https://thespiceapp.com/team" />
+      </Helmet>
       <ParticlesBackground />
       <Header />
-      <main className="relative z-10 pt-24 pb-12">
+      <Breadcrumbs />
+      <main className="relative z-10 pt-4 pb-12">
         <div className="container mx-auto px-4">
           {/* Hero Section */}
           <motion.div

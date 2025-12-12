@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
+import { Helmet } from "react-helmet-async";
 import { Heart, Shield, Users, Sparkles, Target, Zap } from "lucide-react";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
+import Breadcrumbs from "@/components/Breadcrumbs";
 
 const values = [
   {
@@ -47,9 +49,15 @@ const stats = [
 const About = () => {
   return (
     <div className="relative min-h-screen">
+      <Helmet>
+        <title>About SPICE — Our Mission for Inclusive Adult Dating</title>
+        <meta name="description" content="Learn about SPICE's mission to create the most inclusive, verified, and privacy-focused dating app for swingers, BDSM, and ENM communities." />
+        <link rel="canonical" href="https://thespiceapp.com/about" />
+      </Helmet>
       <ParticlesBackground />
       <Header />
-      <main className="relative z-10 pt-24 pb-12">
+      <Breadcrumbs />
+      <main className="relative z-10 pt-4 pb-12">
         <div className="container mx-auto px-4">
           {/* Hero Section */}
           <motion.div
