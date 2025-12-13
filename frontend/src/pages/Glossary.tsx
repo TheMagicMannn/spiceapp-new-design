@@ -5,123 +5,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { Book, Search } from "lucide-react";
 import { useState, useMemo } from "react";
 import { Input } from "@/components/ui/input";
-
-const categories = [
-  { id: "all", label: "All" },
-  { id: "desires", label: "Desires & Kinks" },
-  { id: "identities", label: "Sexual Identities" },
-  { id: "relationships", label: "Relationship Types" },
-  { id: "roles", label: "Roles & Dynamics" },
-  { id: "practices", label: "Practices" },
-];
-
-const glossaryTerms = [
-  {
-    term: "Aftercare",
-    definition: "The care and attention given to partners after a BDSM scene or intense sexual experience. This can include physical comfort, emotional support, hydration, and processing the experience together.",
-    category: "practices",
-  },
-  {
-    term: "BDSM",
-    definition: "An acronym for Bondage/Discipline, Dominance/Submission, and Sadism/Masochism. It encompasses a wide range of erotic practices involving power exchange, restraint, and sensation play.",
-    category: "practices",
-  },
-  {
-    term: "Compersion",
-    definition: "The feeling of joy when seeing your partner happy with another person. Often described as the opposite of jealousy, it's a common concept in polyamorous relationships.",
-    category: "relationships",
-  },
-  {
-    term: "Demisexual",
-    definition: "A sexual orientation where someone only experiences sexual attraction after forming a strong emotional bond with another person.",
-    category: "identities",
-  },
-  {
-    term: "Dominant (Dom/Domme)",
-    definition: "In BDSM, the partner who takes the controlling role in a power exchange dynamic. They guide scenes and take responsibility for their submissive's experience.",
-    category: "roles",
-  },
-  {
-    term: "ENM (Ethical Non-Monogamy)",
-    definition: "An umbrella term for relationship structures where all parties consent to having multiple romantic or sexual relationships. Includes polyamory, swinging, and open relationships.",
-    category: "relationships",
-  },
-  {
-    term: "Fluid Bonding",
-    definition: "The decision to have unprotected sex with a partner, typically after both parties have been tested for STIs. This is often a significant step in ENM relationships.",
-    category: "practices",
-  },
-  {
-    term: "Hard Limit",
-    definition: "Activities that a person will absolutely not engage in under any circumstances. These boundaries are non-negotiable and must always be respected.",
-    category: "practices",
-  },
-  {
-    term: "Kink",
-    definition: "Sexual practices or desires that fall outside of conventional sexual norms. What constitutes 'kink' varies by culture and individual perspective.",
-    category: "desires",
-  },
-  {
-    term: "Metamour",
-    definition: "Your partner's other partner. In polyamorous relationships, metamours may or may not have a personal relationship with each other.",
-    category: "relationships",
-  },
-  {
-    term: "NRE (New Relationship Energy)",
-    definition: "The excitement, infatuation, and heightened emotional state experienced at the beginning of a new romantic or sexual relationship.",
-    category: "relationships",
-  },
-  {
-    term: "Pansexual",
-    definition: "A sexual orientation characterized by attraction to people regardless of their gender identity or biological sex.",
-    category: "identities",
-  },
-  {
-    term: "Polycule",
-    definition: "A network of people connected through polyamorous relationships. The term comes from 'molecule' and describes the interconnected nature of poly relationships.",
-    category: "relationships",
-  },
-  {
-    term: "Safeword",
-    definition: "A predetermined word or signal used during BDSM play to immediately stop or pause the scene. Common systems include 'red' (stop) and 'yellow' (slow down).",
-    category: "practices",
-  },
-  {
-    term: "Soft Limit",
-    definition: "Activities that someone is hesitant about but may be willing to explore under the right circumstances, with the right partner, or with proper negotiation.",
-    category: "practices",
-  },
-  {
-    term: "Soft Swap",
-    definition: "In swinging, sexual activity with others that doesn't include penetrative intercourse. Often used by couples new to the lifestyle.",
-    category: "practices",
-  },
-  {
-    term: "Solo Poly",
-    definition: "A polyamorous approach where someone chooses not to have a primary or nesting partner, prioritizing their independence while maintaining multiple relationships.",
-    category: "relationships",
-  },
-  {
-    term: "Submissive (Sub)",
-    definition: "In BDSM, the partner who consensually gives up control to the dominant. Submission is an active choice and requires trust and communication.",
-    category: "roles",
-  },
-  {
-    term: "Switch",
-    definition: "Someone who enjoys both dominant and submissive roles in BDSM, either in different relationships or within the same dynamic.",
-    category: "roles",
-  },
-  {
-    term: "Unicorn",
-    definition: "A bisexual person (often a woman) who joins a couple for sexual or romantic relationships. The term reflects how rare such arrangements can be to find.",
-    category: "roles",
-  },
-  {
-    term: "Vanilla",
-    definition: "Conventional or 'mainstream' sexual practices that don't involve BDSM or kink elements. Not a derogatory term—simply describes preferences.",
-    category: "practices",
-  },
-];
+import { glossaryTerms, categories } from "@/data/glossaryTerms";
 
 const Glossary = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -174,6 +58,9 @@ const Glossary = () => {
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Understanding the language of the lifestyle is the first step to meaningful connection.
             </p>
+            <p className="text-sm text-muted-foreground mt-2">
+              {glossaryTerms.length} terms and counting
+            </p>
           </div>
 
           {/* Search */}
@@ -204,6 +91,13 @@ const Glossary = () => {
               </button>
             ))}
           </div>
+
+          {/* Results Count */}
+          <p className="text-sm text-muted-foreground mb-8">
+            Showing {filteredTerms.length} term{filteredTerms.length !== 1 ? 's' : ''}
+            {searchQuery && ` for "${searchQuery}"`}
+            {activeCategory !== "all" && ` in ${categories.find(c => c.id === activeCategory)?.label}`}
+          </p>
 
           {/* Terms List */}
           <div className="space-y-8">
