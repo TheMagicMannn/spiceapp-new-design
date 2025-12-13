@@ -1,4 +1,4 @@
-import { Shield, Lock, Apple, Play } from "lucide-react";
+import { Apple, Play } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const FooterSection = () => {
@@ -32,21 +32,6 @@ const FooterSection = () => {
                 <div className="text-sm font-semibold">Google Play</div>
               </div>
             </a>
-          </div>
-        </div>
-
-        {/* Trust badges */}
-        <div className="glass-card rounded-2xl p-6 mb-12 border-gradient">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-center">
-            <div className="flex items-center gap-3">
-              <Shield className="w-6 h-6 text-primary" />
-              <span className="text-muted-foreground">Adults Only Platform</span>
-            </div>
-            <div className="hidden md:block w-px h-6 bg-border" />
-            <div className="flex items-center gap-3">
-              <Lock className="w-6 h-6 text-primary" />
-              <span className="text-muted-foreground">Your privacy and discretion are our top priorities</span>
-            </div>
           </div>
         </div>
 

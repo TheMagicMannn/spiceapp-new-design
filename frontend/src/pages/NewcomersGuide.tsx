@@ -1,17 +1,18 @@
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Heart, Users, Sparkles, ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom";
 
 const blogPosts = [
   {
     id: 1,
+    slug: "first-steps-lifestyle-beginners-guide",
     category: "Getting Started",
     title: "Your First Steps Into the Lifestyle: A Beginner's Complete Guide",
     excerpt: "Everything you need to know before taking your first steps into ethical non-monogamy, from communication basics to setting boundaries.",
-    image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1543807535-eceef0bc6599?w=600&h=400&fit=crop",
     author: "SPICE Team",
     readTime: "8 min read",
     forCouples: true,
@@ -19,10 +20,11 @@ const blogPosts = [
   },
   {
     id: 2,
+    slug: "how-to-start-swinging-couples-communication",
     category: "For Couples",
     title: "How to Start Swinging as a Couple: Communication First",
     excerpt: "Learn how to have the crucial conversations with your partner before exploring the swinging lifestyle together.",
-    image: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1494774157365-9e04c6720e47?w=600&h=400&fit=crop",
     author: "SPICE Team",
     readTime: "6 min read",
     forCouples: true,
@@ -30,10 +32,11 @@ const blogPosts = [
   },
   {
     id: 3,
+    slug: "navigating-lifestyle-single-person",
     category: "For Singles",
     title: "Navigating the Lifestyle as a Single Person",
     excerpt: "Tips and etiquette for singles entering ENM communities, whether you identify as a unicorn, solo poly, or are just exploring.",
-    image: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600&h=400&fit=crop",
     author: "SPICE Team",
     readTime: "7 min read",
     forCouples: false,
@@ -41,10 +44,11 @@ const blogPosts = [
   },
   {
     id: 4,
+    slug: "kink-101-bdsm-beginners",
     category: "BDSM Basics",
     title: "Kink 101: Understanding BDSM for Beginners",
     excerpt: "A safe and welcoming introduction to BDSM, covering consent, negotiation, and exploring your interests.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1517960413843-0aee8e2b3285?w=600&h=400&fit=crop",
     author: "SPICE Team",
     readTime: "10 min read",
     forCouples: true,
@@ -52,10 +56,11 @@ const blogPosts = [
   },
   {
     id: 5,
+    slug: "is-polyamory-right-for-you",
     category: "Polyamory",
     title: "Is Polyamory Right for You? Self-Reflection Questions",
     excerpt: "Explore whether ethical non-monogamy aligns with your values, needs, and relationship goals.",
-    image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1522098635833-216c03d81fbe?w=600&h=400&fit=crop",
     author: "SPICE Team",
     readTime: "5 min read",
     forCouples: true,
@@ -63,6 +68,7 @@ const blogPosts = [
   },
   {
     id: 6,
+    slug: "managing-jealousy-couples-guide",
     category: "For Couples",
     title: "Managing Jealousy: A Couple's Guide",
     excerpt: "Practical strategies for couples to work through jealousy and strengthen their connection while exploring.",
@@ -86,7 +92,7 @@ const NewcomersGuide = () => {
       <Header />
       <Breadcrumbs />
       
-      <main className="pt-24 pb-16 px-4">
+      <main className="pt-32 pb-16 px-4">
         <div className="max-w-6xl mx-auto">
           {/* Hero Section */}
           <div className="text-center mb-16">
@@ -120,48 +126,54 @@ const NewcomersGuide = () => {
           {/* Blog Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post) => (
-              <article 
+              <Link 
                 key={post.id} 
-                className="glass-card rounded-2xl overflow-hidden border-gradient feature-card group cursor-pointer"
+                to={`/guide/article/${post.slug}`}
+                className="glass-card rounded-2xl overflow-hidden border-gradient feature-card group cursor-pointer block"
               >
-                <div className="relative h-48 overflow-hidden">
-                  <img 
-                    src={post.image} 
-                    alt={post.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
-                  <div className="absolute top-4 left-4">
-                    <span className="px-3 py-1 text-xs font-medium rounded-full bg-primary/90 text-primary-foreground">
-                      {post.category}
-                    </span>
-                  </div>
-                  <div className="absolute top-4 right-4 flex gap-2">
-                    {post.forCouples && (
-                      <span className="px-2 py-1 text-xs rounded-full bg-background/80 backdrop-blur-sm">
-                        <Users className="w-3 h-3 inline" />
+                <article>
+                  <div className="relative h-48 overflow-hidden">
+                    <img 
+                      src={post.image} 
+                      alt={post.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+                    <div className="absolute top-4 left-4">
+                      <span className="px-3 py-1 text-xs font-medium rounded-full bg-primary/90 text-primary-foreground">
+                        {post.category}
                       </span>
-                    )}
-                    {post.forSingles && (
-                      <span className="px-2 py-1 text-xs rounded-full bg-background/80 backdrop-blur-sm">
-                        <Heart className="w-3 h-3 inline" />
-                      </span>
-                    )}
+                    </div>
+                    <div className="absolute top-4 right-4 flex gap-2">
+                      {post.forCouples && (
+                        <span className="px-2 py-1 text-xs rounded-full bg-background/80 backdrop-blur-sm">
+                          <Users className="w-3 h-3 inline" />
+                        </span>
+                      )}
+                      {post.forSingles && (
+                        <span className="px-2 py-1 text-xs rounded-full bg-background/80 backdrop-blur-sm">
+                          <Heart className="w-3 h-3 inline" />
+                        </span>
+                      )}
+                    </div>
                   </div>
-                </div>
-                <div className="p-6">
-                  <h2 className="text-lg font-bold mb-3 group-hover:text-primary transition-colors">
-                    {post.title}
-                  </h2>
-                  <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
-                    {post.excerpt}
-                  </p>
-                  <div className="flex items-center justify-between text-xs text-muted-foreground">
-                    <span>{post.author}</span>
-                    <span>{post.readTime}</span>
+                  <div className="p-6">
+                    <h2 className="text-lg font-bold mb-3 group-hover:text-primary transition-colors">
+                      {post.title}
+                    </h2>
+                    <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
+                      {post.excerpt}
+                    </p>
+                    <div className="flex items-center justify-between text-xs text-muted-foreground">
+                      <span>{post.author}</span>
+                      <div className="flex items-center gap-2">
+                        <span>{post.readTime}</span>
+                        <ArrowRight className="w-4 h-4 text-primary opacity-0 group-hover:opacity-100 transition-opacity" />
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </article>
+                </article>
+              </Link>
             ))}
           </div>
 

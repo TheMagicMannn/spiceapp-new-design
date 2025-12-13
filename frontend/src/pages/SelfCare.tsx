@@ -1,8 +1,9 @@
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import { Heart, Brain, Phone, Users, Sparkles, ExternalLink } from "lucide-react";
+import { Heart, Brain, Phone, Users, Sparkles, ExternalLink, ArrowRight } from "lucide-react";
 
 const resources = [
   {
@@ -12,19 +13,25 @@ const resources = [
     description: "Taking care of your mind is essential for healthy relationships",
     articles: [
       {
+        slug: "managing-anxiety-non-traditional-relationships",
         title: "Managing Anxiety in Non-Traditional Relationships",
         excerpt: "Strategies for coping with anxiety that may arise in ENM and lifestyle dynamics.",
         readTime: "7 min read",
+        image: "https://images.unsplash.com/photo-1545389336-cf090694435e?w=400&h=250&fit=crop",
       },
       {
+        slug: "processing-jealousy-mental-health-approach",
         title: "Processing Jealousy: A Mental Health Approach",
         excerpt: "Understanding jealousy as an emotion and working through it constructively.",
         readTime: "6 min read",
+        image: "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=400&h=250&fit=crop",
       },
       {
+        slug: "when-to-seek-professional-help",
         title: "When to Seek Professional Help",
         excerpt: "Recognizing when you might benefit from working with a kink-aware therapist.",
         readTime: "5 min read",
+        image: "https://images.unsplash.com/photo-1517960413843-0aee8e2b3285?w=400&h=250&fit=crop",
       },
     ],
   },
@@ -35,19 +42,25 @@ const resources = [
     description: "Nurturing your emotional health in the lifestyle",
     articles: [
       {
+        slug: "self-compassion-alternative-lifestyles",
         title: "Self-Compassion in Alternative Lifestyles",
         excerpt: "Being kind to yourself while navigating non-traditional relationship structures.",
         readTime: "6 min read",
+        image: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?w=400&h=250&fit=crop",
       },
       {
+        slug: "dealing-with-drop-after-intense-experiences",
         title: "Dealing with Drop After Intense Experiences",
         excerpt: "Understanding and managing sub drop, dom drop, and emotional drops after events.",
         readTime: "8 min read",
+        image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&h=250&fit=crop",
       },
       {
+        slug: "building-emotional-resilience",
         title: "Building Emotional Resilience",
         excerpt: "Strengthening your emotional core for the unique challenges of lifestyle relationships.",
         readTime: "7 min read",
+        image: "https://images.unsplash.com/photo-1522075782449-e45a34f1ddfb?w=400&h=250&fit=crop",
       },
     ],
   },
@@ -58,19 +71,25 @@ const resources = [
     description: "You're not alone—find your people",
     articles: [
       {
+        slug: "finding-kink-friendly-support-groups",
         title: "Finding Kink-Friendly Support Groups",
         excerpt: "Resources for connecting with others who understand the lifestyle.",
         readTime: "5 min read",
+        image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&h=250&fit=crop",
       },
       {
+        slug: "building-support-network",
         title: "Building a Support Network",
         excerpt: "Creating meaningful connections with people who can support your journey.",
         readTime: "6 min read",
+        image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=250&fit=crop",
       },
       {
+        slug: "online-communities-forums",
         title: "Online Communities and Forums",
         excerpt: "Safe online spaces to discuss experiences and seek advice.",
         readTime: "4 min read",
+        image: "https://images.unsplash.com/photo-1516321165247-4aa89a48be28?w=400&h=250&fit=crop",
       },
     ],
   },
@@ -111,7 +130,7 @@ const SelfCare = () => {
       <Header />
       <Breadcrumbs />
       
-      <main className="pt-24 pb-16 px-4">
+      <main className="pt-32 pb-16 px-4">
         <div className="max-w-6xl mx-auto">
           {/* Hero Section */}
           <div className="text-center mb-16">
@@ -166,18 +185,34 @@ const SelfCare = () => {
                 {/* Articles Grid */}
                 <div className="grid md:grid-cols-3 gap-6">
                   {category.articles.map((article, idx) => (
-                    <article 
+                    <Link 
                       key={idx}
-                      className="glass-card rounded-xl p-6 border-gradient feature-card group cursor-pointer"
+                      to={`/guide/article/${article.slug}`}
+                      className="glass-card rounded-xl overflow-hidden border-gradient feature-card group cursor-pointer block"
                     >
-                      <h3 className="text-lg font-bold mb-3 group-hover:text-primary transition-colors">
-                        {article.title}
-                      </h3>
-                      <p className="text-muted-foreground text-sm mb-4">
-                        {article.excerpt}
-                      </p>
-                      <span className="text-xs text-muted-foreground">{article.readTime}</span>
-                    </article>
+                      <article>
+                        <div className="relative h-36 overflow-hidden">
+                          <img 
+                            src={article.image} 
+                            alt={article.title}
+                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+                        </div>
+                        <div className="p-5">
+                          <h3 className="text-lg font-bold mb-3 group-hover:text-primary transition-colors">
+                            {article.title}
+                          </h3>
+                          <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
+                            {article.excerpt}
+                          </p>
+                          <div className="flex items-center justify-between">
+                            <span className="text-xs text-muted-foreground">{article.readTime}</span>
+                            <ArrowRight className="w-4 h-4 text-primary opacity-0 group-hover:opacity-100 transition-opacity" />
+                          </div>
+                        </div>
+                      </article>
+                    </Link>
                   ))}
                 </div>
               </section>

@@ -9,6 +9,19 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 
+// Import article data for dynamic breadcrumb names
+import { allArticles } from "@/data/articleContent";
+import { safetyArticles } from "@/data/safetyArticles";
+import { selfCareArticles } from "@/data/selfCareArticles";
+import { communityArticles } from "@/data/communityArticles";
+
+const getAllArticles = () => [
+  ...allArticles,
+  ...safetyArticles,
+  ...selfCareArticles,
+  ...communityArticles,
+];
+
 const routeNames: Record<string, string> = {
   "/": "Home",
   "/spice-app": "SPICE App",
@@ -25,15 +38,6 @@ const routeNames: Record<string, string> = {
   "/download": "Download SPICE",
 };
 
-const parentRoutes: Record<string, string> = {
-  "/guide/newcomers": "/guide",
-  "/guide/how-to": "/guide",
-  "/guide/community": "/guide",
-  "/guide/glossary": "/guide",
-  "/guide/safety": "/guide",
-  "/guide/self-care": "/guide",
-};
-
 const Breadcrumbs = () => {
   const location = useLocation();
   const currentPath = location.pathname;
@@ -46,19 +50,35 @@ const Breadcrumbs = () => {
     { path: "/", name: "Home" },
   ];
 
-  // Build breadcrumb trail
-  let currentPathBuild = "";
-  pathSegments.forEach((segment, index) => {
-    currentPathBuild += `/${segment}`;
+  // Check if this is an article page
+  const isArticlePage = pathSegments[0] === "guide" && pathSegments[1] === "article" && pathSegments[2];
+  
+  if (isArticlePage) {
+    // For article pages, show: Home > SPICE Guide > Article Title
+    breadcrumbItems.push({ path: "/guide/newcomers", name: "SPICE Guide" });
     
-    // Special handling for /guide parent
-    if (segment === "guide" && index < pathSegments.length - 1) {
-      breadcrumbItems.push({ path: "/guide/newcomers", name: "SPICE Guide" });
-    } else if (segment !== "guide") {
-      const name = routeNames[currentPathBuild] || segment.charAt(0).toUpperCase() + segment.slice(1);
-      breadcrumbItems.push({ path: currentPathBuild, name });
-    }
-  });
+    // Find the article to get its title
+    const slug = pathSegments[2];
+    const article = getAllArticles().find(a => a.slug === slug);
+    const articleName = article?.title || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+    
+    // Don't add a link for the article itself (it's the current page)
+    breadcrumbItems.push({ path: currentPath, name: articleName });
+  } else {
+    // Build breadcrumb trail for non-article pages
+    let currentPathBuild = "";
+    pathSegments.forEach((segment, index) => {
+      currentPathBuild += `/${segment}`;
+      
+      // Special handling for /guide parent
+      if (segment === "guide" && index < pathSegments.length - 1) {
+        breadcrumbItems.push({ path: "/guide/newcomers", name: "SPICE Guide" });
+      } else if (segment !== "guide") {
+        const name = routeNames[currentPathBuild] || segment.charAt(0).toUpperCase() + segment.slice(1);
+        breadcrumbItems.push({ path: currentPathBuild, name });
+      }
+    });
+  }
 
   // Generate JSON-LD structured data
   const structuredData = {
@@ -84,9 +104,9 @@ const Breadcrumbs = () => {
           <Breadcrumb>
             <BreadcrumbList>
               {breadcrumbItems.map((item, index) => (
-                <BreadcrumbItem key={item.path}>
+                <BreadcrumbItem key={item.path + index}>
                   {index === breadcrumbItems.length - 1 ? (
-                    <BreadcrumbPage>{item.name}</BreadcrumbPage>
+                    <BreadcrumbPage className="max-w-[200px] truncate">{item.name}</BreadcrumbPage>
                   ) : (
                     <>
                       <BreadcrumbLink asChild>

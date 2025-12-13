@@ -2,11 +2,13 @@ import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import { Smartphone, Apple, Play, Bell, CheckCircle } from "lucide-react";
+import { Smartphone, Apple, Play, Sparkles, CheckCircle, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
-import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
+import { toast } from "sonner";
+import confetti from "canvas-confetti";
 
 const features = [
   "Verified adult community",
@@ -17,25 +19,80 @@ const features = [
   "Community forums",
 ];
 
+const triggerConfetti = () => {
+  confetti({
+    particleCount: 100,
+    spread: 70,
+    origin: { y: 0.6 },
+    colors: ['#FF4D6D', '#FF758F', '#FFB3C1', '#C9184A', '#FF8FA3']
+  });
+};
+
 const Download = () => {
   const [email, setEmail] = useState("");
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const { toast } = useToast();
+  const [isLoading, setIsLoading] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
 
-  const handleNotifyMe = async (e: React.FormEvent) => {
+  const handleJoinWaitlist = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email) return;
-
-    setIsSubmitting(true);
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1000));
     
-    toast({
-      title: "You're on the list!",
-      description: "We'll notify you when the app launches.",
-    });
-    setEmail("");
-    setIsSubmitting(false);
+    if (!email || !email.includes("@")) {
+      toast.error("Please enter a valid email address");
+      return;
+    }
+
+    setIsLoading(true);
+    
+    try {
+      const { data, error } = await supabase.functions.invoke("join-waitlist", {
+        body: { email },
+      });
+
+      if (error) {
+        const errorMessage = error.message || "Something went wrong. Please try again.";
+        if (errorMessage.includes("already on the waitlist")) {
+          toast.info("You're already on the waitlist! We'll notify you when we launch.");
+        } else {
+          toast.error(errorMessage);
+        }
+        return;
+      }
+      
+      if (data?.error) {
+        if (data.error.includes("already on the waitlist")) {
+          toast.info("You're already part of the Spice family! 💕 Sit tight — we'll let you know as soon as we launch.", {
+            duration: 5000,
+          });
+        } else {
+          toast.error(data.error);
+        }
+      } else if (data?.alreadyExists) {
+        toast.info("You're already part of the Spice family! 💕 Sit tight — we'll let you know as soon as we launch.", {
+          duration: 5000,
+        });
+        setEmail("");
+      } else {
+        triggerConfetti();
+        setShowSuccess(true);
+        toast.success("Welcome to the Spice family! 🎉 Check your inbox for a confirmation email and get ready for something special.", {
+          duration: 5000,
+        });
+        setEmail("");
+        setTimeout(() => setShowSuccess(false), 3000);
+      }
+    } catch (error: any) {
+      console.error("Error joining waitlist:", error);
+      const errorMessage = error?.message || "";
+      if (errorMessage.includes("already on the waitlist")) {
+        toast.info("You're already part of the Spice family! 💕 Sit tight — we'll let you know as soon as we launch.", {
+          duration: 5000,
+        });
+      } else {
+        toast.error("Something went wrong. Please try again.");
+      }
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -49,7 +106,7 @@ const Download = () => {
       <Header />
       <Breadcrumbs />
       
-      <main className="pt-24 pb-16 px-4">
+      <main className="pt-32 pb-16 px-4">
         <div className="max-w-4xl mx-auto">
           {/* Hero Section */}
           <div className="text-center mb-16">
@@ -89,24 +146,44 @@ const Download = () => {
               </a>
             </div>
 
-            {/* Coming Soon Notice */}
-            <div className="glass-card rounded-2xl p-6 border-gradient bg-primary/10 max-w-lg mx-auto">
-              <Bell className="w-8 h-8 text-primary mx-auto mb-4" />
-              <h2 className="text-xl font-bold mb-2">Coming Soon!</h2>
-              <p className="text-muted-foreground text-sm mb-4">
-                Our mobile app is currently in development. Be the first to know when it launches.
+            {/* Join Waitlist Section */}
+            <div 
+              className={`glass-card rounded-2xl p-8 border-gradient max-w-lg mx-auto transition-all duration-500 ${
+                showSuccess 
+                  ? 'ring-2 ring-green-500/50 shadow-[0_0_30px_rgba(34,197,94,0.3)] scale-[1.02] bg-green-500/10' 
+                  : 'bg-primary/10'
+              }`}
+            >
+              <Sparkles className={`w-8 h-8 mx-auto mb-4 ${showSuccess ? 'text-green-500' : 'text-primary'}`} />
+              <h2 className={`text-xl font-bold mb-2 ${showSuccess ? 'text-green-500' : ''}`}>
+                {showSuccess ? '🎉 You\'re In!' : 'Coming Soon!'}
+              </h2>
+              <p className="text-muted-foreground text-sm mb-6">
+                {showSuccess 
+                  ? 'Welcome to the Spice family!' 
+                  : 'Our mobile app is currently in development. Join the waitlist and get 2 months FREE VIP access when we launch.'}
               </p>
-              <form onSubmit={handleNotifyMe} className="flex gap-2">
+              <form onSubmit={handleJoinWaitlist} className="space-y-4">
                 <Input
                   type="email"
                   placeholder="Enter your email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="flex-1"
+                  className="bg-background/50 border-border/50 focus:border-primary h-12 text-center"
+                  disabled={isLoading}
                   required
                 />
-                <Button type="submit" disabled={isSubmitting}>
-                  {isSubmitting ? "..." : "Notify Me"}
+                <Button 
+                  type="submit" 
+                  className="w-full h-12"
+                  disabled={isLoading}
+                >
+                  {isLoading ? (
+                    <Loader2 className="w-5 h-5 animate-spin mr-2" />
+                  ) : (
+                    <Sparkles className="w-5 h-5 mr-2" />
+                  )}
+                  {isLoading ? "Joining..." : "Join the Waitlist"}
                 </Button>
               </form>
             </div>
