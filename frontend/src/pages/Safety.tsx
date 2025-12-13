@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -12,16 +13,19 @@ const safetyCategories = [
     description: "Protect yourself in the digital world",
     articles: [
       {
+        slug: "protecting-privacy-dating-apps",
         title: "Protecting Your Privacy on Dating Apps",
         excerpt: "Essential tips for maintaining your privacy and security while using lifestyle apps and websites.",
         readTime: "6 min read",
       },
       {
+        slug: "spotting-fake-profiles-catfishing",
         title: "Spotting Fake Profiles and Catfishing",
         excerpt: "Red flags to watch for and verification strategies to ensure you're talking to real people.",
         readTime: "5 min read",
       },
       {
+        slug: "secure-communication-practices",
         title: "Secure Communication Practices",
         excerpt: "How to keep your conversations private and protect sensitive information.",
         readTime: "4 min read",
@@ -35,16 +39,19 @@ const safetyCategories = [
     description: "Stay safe when meeting new people",
     articles: [
       {
+        slug: "first-meet-safety-guidelines",
         title: "First Meet Safety Guidelines",
         excerpt: "A comprehensive checklist for meeting someone from the lifestyle community for the first time.",
         readTime: "7 min read",
       },
       {
+        slug: "buddy-system-keeping-friends-informed",
         title: "The Buddy System: Keeping Friends Informed",
         excerpt: "How to set up a safety network when meeting new connections.",
         readTime: "4 min read",
       },
       {
+        slug: "trusting-your-instincts",
         title: "Trusting Your Instincts",
         excerpt: "Recognizing and acting on red flags during dates and meetups.",
         readTime: "5 min read",
@@ -58,16 +65,19 @@ const safetyCategories = [
     description: "Understanding and practicing enthusiastic consent",
     articles: [
       {
+        slug: "enthusiastic-consent-101",
         title: "Enthusiastic Consent 101",
         excerpt: "What consent really means and how to practice it in every interaction.",
         readTime: "6 min read",
       },
       {
+        slug: "setting-communicating-boundaries",
         title: "Setting and Communicating Boundaries",
         excerpt: "How to clearly express your limits and respect those of others.",
         readTime: "5 min read",
       },
       {
+        slug: "what-to-do-consent-violated",
         title: "What to Do If Consent Is Violated",
         excerpt: "Resources and steps for handling consent violations in the lifestyle community.",
         readTime: "8 min read",
@@ -81,16 +91,19 @@ const safetyCategories = [
     description: "Protecting yourself and your partners",
     articles: [
       {
+        slug: "sti-testing-what-when-how-often",
         title: "STI Testing: What, When, and How Often",
         excerpt: "A guide to regular testing and what to get tested for as an active member of the lifestyle.",
         readTime: "7 min read",
       },
       {
+        slug: "safer-sex-practices-enm",
         title: "Safer Sex Practices for ENM",
         excerpt: "Barrier methods, risk reduction, and communication about sexual health.",
         readTime: "6 min read",
       },
       {
+        slug: "prep-and-pep-what-you-need-to-know",
         title: "PrEP and PEP: What You Need to Know",
         excerpt: "Understanding HIV prevention medications and whether they're right for you.",
         readTime: "5 min read",
@@ -164,21 +177,24 @@ const Safety = () => {
                 {/* Articles Grid */}
                 <div className="grid md:grid-cols-3 gap-6">
                   {category.articles.map((article, idx) => (
-                    <article 
+                    <Link
                       key={idx}
-                      className="glass-card rounded-xl p-6 border-gradient feature-card group cursor-pointer"
+                      to={`/guide/article/${article.slug}`}
+                      className="glass-card rounded-xl p-6 border-gradient feature-card group cursor-pointer block"
                     >
-                      <h3 className="text-lg font-bold mb-3 group-hover:text-primary transition-colors">
-                        {article.title}
-                      </h3>
-                      <p className="text-muted-foreground text-sm mb-4">
-                        {article.excerpt}
-                      </p>
-                      <div className="flex items-center justify-between">
-                        <span className="text-xs text-muted-foreground">{article.readTime}</span>
-                        <ArrowRight className="w-4 h-4 text-primary opacity-0 group-hover:opacity-100 transition-opacity" />
-                      </div>
-                    </article>
+                      <article>
+                        <h3 className="text-lg font-bold mb-3 group-hover:text-primary transition-colors">
+                          {article.title}
+                        </h3>
+                        <p className="text-muted-foreground text-sm mb-4">
+                          {article.excerpt}
+                        </p>
+                        <div className="flex items-center justify-between">
+                          <span className="text-xs text-muted-foreground">{article.readTime}</span>
+                          <ArrowRight className="w-4 h-4 text-primary opacity-0 group-hover:opacity-100 transition-opacity" />
+                        </div>
+                      </article>
+                    </Link>
                   ))}
                 </div>
               </section>
