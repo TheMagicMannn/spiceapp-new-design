@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -7,6 +8,7 @@ import { Lightbulb, ArrowRight } from "lucide-react";
 const howToArticles = [
   {
     id: 1,
+    slug: "how-to-set-boundaries-open-relationships",
     title: "How to Set Boundaries in Open Relationships",
     excerpt: "Clear communication and defined boundaries are the foundation of healthy ENM relationships.",
     image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&h=400&fit=crop",
@@ -15,6 +17,7 @@ const howToArticles = [
   },
   {
     id: 2,
+    slug: "how-to-have-the-talk-partner",
     title: "How to Have 'The Talk' With Your Partner",
     excerpt: "A step-by-step guide to opening up the conversation about exploring ethical non-monogamy.",
     image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=600&h=400&fit=crop",
@@ -23,6 +26,7 @@ const howToArticles = [
   },
   {
     id: 3,
+    slug: "how-to-navigate-first-play-party",
     title: "How to Navigate Your First Play Party",
     excerpt: "Everything you need to know before attending your first lifestyle event or play party.",
     image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&h=400&fit=crop",
@@ -31,6 +35,7 @@ const howToArticles = [
   },
   {
     id: 4,
+    slug: "how-to-practice-safe-kink",
     title: "How to Practice Safe Kink",
     excerpt: "Essential safety practices for BDSM play, from negotiation to aftercare.",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=400&fit=crop",
@@ -39,6 +44,7 @@ const howToArticles = [
   },
   {
     id: 5,
+    slug: "how-to-create-dating-profile-stands-out",
     title: "How to Create a Dating Profile That Stands Out",
     excerpt: "Tips for crafting an authentic and attractive profile on lifestyle dating apps.",
     image: "https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=600&h=400&fit=crop",
@@ -47,6 +53,7 @@ const howToArticles = [
   },
   {
     id: 6,
+    slug: "how-to-handle-jealousy-enm",
     title: "How to Handle Jealousy in ENM",
     excerpt: "Practical strategies for recognizing, processing, and working through jealousy.",
     image: "https://images.unsplash.com/photo-1516589091380-5d8e87df6999?w=600&h=400&fit=crop",
@@ -55,6 +62,7 @@ const howToArticles = [
   },
   {
     id: 7,
+    slug: "how-to-find-local-community",
     title: "How to Find Your Local Community",
     excerpt: "Discover how to connect with lifestyle communities in your area safely and authentically.",
     image: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=600&h=400&fit=crop",
@@ -63,6 +71,7 @@ const howToArticles = [
   },
   {
     id: 8,
+    slug: "how-to-negotiate-scene",
     title: "How to Negotiate a Scene",
     excerpt: "A comprehensive guide to BDSM scene negotiation for beginners and experienced players.",
     image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600&h=400&fit=crop",
@@ -71,6 +80,7 @@ const howToArticles = [
   },
   {
     id: 9,
+    slug: "how-to-practice-compersion",
     title: "How to Practice Compersion",
     excerpt: "Learn to experience joy when your partner finds happiness with others.",
     image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=600&h=400&fit=crop",
@@ -111,40 +121,43 @@ const HowTo = () => {
           {/* Articles Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {howToArticles.map((article) => (
-              <article 
+              <Link 
                 key={article.id} 
-                className="glass-card rounded-2xl overflow-hidden border-gradient feature-card group cursor-pointer"
+                to={`/guide/article/${article.slug}`}
+                className="glass-card rounded-2xl overflow-hidden border-gradient feature-card group cursor-pointer block"
               >
-                <div className="relative h-48 overflow-hidden">
-                  <img 
-                    src={article.image} 
-                    alt={article.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
-                  <div className="absolute top-4 left-4">
-                    <span className="px-3 py-1 text-xs font-medium rounded-full bg-primary/90 text-primary-foreground">
-                      How To
-                    </span>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h2 className="text-lg font-bold mb-3 group-hover:text-primary transition-colors">
-                    {article.title}
-                  </h2>
-                  <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
-                    {article.excerpt}
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                      <span>{article.author}</span>
-                      <span>•</span>
-                      <span>{article.readTime}</span>
+                <article>
+                  <div className="relative h-48 overflow-hidden">
+                    <img 
+                      src={article.image} 
+                      alt={article.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+                    <div className="absolute top-4 left-4">
+                      <span className="px-3 py-1 text-xs font-medium rounded-full bg-primary/90 text-primary-foreground">
+                        How To
+                      </span>
                     </div>
-                    <ArrowRight className="w-4 h-4 text-primary opacity-0 group-hover:opacity-100 transition-opacity" />
                   </div>
-                </div>
-              </article>
+                  <div className="p-6">
+                    <h2 className="text-lg font-bold mb-3 group-hover:text-primary transition-colors">
+                      {article.title}
+                    </h2>
+                    <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
+                      {article.excerpt}
+                    </p>
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2 text-xs text-muted-foreground">
+                        <span>{article.author}</span>
+                        <span>•</span>
+                        <span>{article.readTime}</span>
+                      </div>
+                      <ArrowRight className="w-4 h-4 text-primary opacity-0 group-hover:opacity-100 transition-opacity" />
+                    </div>
+                  </div>
+                </article>
+              </Link>
             ))}
           </div>
         </div>
