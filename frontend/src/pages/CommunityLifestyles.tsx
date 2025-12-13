@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -13,16 +14,19 @@ const communities = [
     color: "from-pink-500/20 to-rose-500/20",
     articles: [
       {
+        slug: "what-is-ethical-non-monogamy",
         title: "What is Ethical Non-Monogamy?",
         excerpt: "An introduction to ENM principles and different relationship structures.",
         readTime: "5 min read",
       },
       {
+        slug: "enm-vs-cheating-understanding-difference",
         title: "ENM vs Cheating: Understanding the Difference",
         excerpt: "Why consent and communication make all the difference.",
         readTime: "4 min read",
       },
       {
+        slug: "coming-out-enm-friends-family",
         title: "Coming Out as ENM to Friends & Family",
         excerpt: "Navigating conversations about your relationship choices.",
         readTime: "7 min read",
@@ -37,16 +41,19 @@ const communities = [
     color: "from-purple-500/20 to-violet-500/20",
     articles: [
       {
+        slug: "bdsm-101-understanding-basics",
         title: "BDSM 101: Understanding the Basics",
         excerpt: "An introduction to kink culture, terminology, and practices.",
         readTime: "8 min read",
       },
       {
+        slug: "importance-of-aftercare",
         title: "The Importance of Aftercare",
         excerpt: "Why aftercare is essential for healthy BDSM experiences.",
         readTime: "5 min read",
       },
       {
+        slug: "finding-your-kink-identity",
         title: "Finding Your Kink Identity",
         excerpt: "Exploring different roles and discovering what resonates with you.",
         readTime: "6 min read",
@@ -61,16 +68,19 @@ const communities = [
     color: "from-orange-500/20 to-amber-500/20",
     articles: [
       {
+        slug: "how-to-start-swinging-couples-communication",
         title: "Swinging 101: Getting Started",
         excerpt: "Everything couples need to know before entering the swinging lifestyle.",
         readTime: "7 min read",
       },
       {
+        slug: "how-to-navigate-first-play-party",
         title: "Swinger Etiquette: The Unwritten Rules",
         excerpt: "How to navigate clubs, parties, and online communities respectfully.",
         readTime: "6 min read",
       },
       {
+        slug: "how-to-set-boundaries-open-relationships",
         title: "Soft Swap vs Full Swap: What's Right for You?",
         excerpt: "Understanding different levels of participation in swinging.",
         readTime: "5 min read",
@@ -85,16 +95,19 @@ const communities = [
     color: "from-blue-500/20 to-cyan-500/20",
     articles: [
       {
+        slug: "is-polyamory-right-for-you",
         title: "What is Polyamory?",
         excerpt: "Understanding the philosophy and practice of ethical multi-partner relationships.",
         readTime: "6 min read",
       },
       {
+        slug: "managing-jealousy-couples-guide",
         title: "Polyamory Relationship Structures",
         excerpt: "From triads to polycules: different ways to structure poly relationships.",
         readTime: "8 min read",
       },
       {
+        slug: "how-to-practice-compersion",
         title: "Managing Time and Energy in Polyamory",
         excerpt: "Practical tips for balancing multiple relationships.",
         readTime: "7 min read",
@@ -154,26 +167,29 @@ const CommunityLifestyles = () => {
                 {/* Articles Grid */}
                 <div className="grid md:grid-cols-3 gap-6">
                   {community.articles.map((article, idx) => (
-                    <article 
+                    <Link 
                       key={idx}
-                      className="glass-card rounded-xl p-6 border-gradient feature-card group cursor-pointer"
+                      to={`/guide/article/${article.slug}`}
+                      className="glass-card rounded-xl p-6 border-gradient feature-card group cursor-pointer block"
                     >
-                      <div className="mb-4">
-                        <span className="px-3 py-1 text-xs font-medium rounded-full bg-primary/20 text-primary">
-                          {community.name}
-                        </span>
-                      </div>
-                      <h3 className="text-lg font-bold mb-3 group-hover:text-primary transition-colors">
-                        {article.title}
-                      </h3>
-                      <p className="text-muted-foreground text-sm mb-4">
-                        {article.excerpt}
-                      </p>
-                      <div className="flex items-center justify-between">
-                        <span className="text-xs text-muted-foreground">{article.readTime}</span>
-                        <ArrowRight className="w-4 h-4 text-primary opacity-0 group-hover:opacity-100 transition-opacity" />
-                      </div>
-                    </article>
+                      <article>
+                        <div className="mb-4">
+                          <span className="px-3 py-1 text-xs font-medium rounded-full bg-primary/20 text-primary">
+                            {community.name}
+                          </span>
+                        </div>
+                        <h3 className="text-lg font-bold mb-3 group-hover:text-primary transition-colors">
+                          {article.title}
+                        </h3>
+                        <p className="text-muted-foreground text-sm mb-4">
+                          {article.excerpt}
+                        </p>
+                        <div className="flex items-center justify-between">
+                          <span className="text-xs text-muted-foreground">{article.readTime}</span>
+                          <ArrowRight className="w-4 h-4 text-primary opacity-0 group-hover:opacity-100 transition-opacity" />
+                        </div>
+                      </article>
+                    </Link>
                   ))}
                 </div>
               </section>
