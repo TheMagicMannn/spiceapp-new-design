@@ -1,0 +1,9 @@
+backend
+tests
+test_result.md
+.git
+.gitignore
+*.md
+node_modules
+.env.local
+.env.*.local
