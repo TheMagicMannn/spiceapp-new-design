@@ -11,6 +11,13 @@ import About from "./pages/About";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
 import BDSMQuiz from "./pages/BDSMQuiz";
+import NewcomersGuide from "./pages/NewcomersGuide";
+import HowTo from "./pages/HowTo";
+import CommunityLifestyles from "./pages/CommunityLifestyles";
+import Glossary from "./pages/Glossary";
+import Safety from "./pages/Safety";
+import SelfCare from "./pages/SelfCare";
+import Download from "./pages/Download";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,6 +37,13 @@ const App = () => (
             <Route path="/team" element={<Team />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/quiz" element={<BDSMQuiz />} />
+            <Route path="/guide/newcomers" element={<NewcomersGuide />} />
+            <Route path="/guide/how-to" element={<HowTo />} />
+            <Route path="/guide/community" element={<CommunityLifestyles />} />
+            <Route path="/guide/glossary" element={<Glossary />} />
+            <Route path="/guide/safety" element={<Safety />} />
+            <Route path="/guide/self-care" element={<SelfCare />} />
+            <Route path="/download" element={<Download />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
