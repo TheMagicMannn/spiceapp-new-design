@@ -34,7 +34,7 @@ const ArticleDetail = () => {
     return (
       <div className="min-h-screen bg-background">
         <Header />
-        <main className="pt-24 pb-16 px-4">
+        <main className="pt-32 pb-16 px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl font-bold mb-4">Article Not Found</h1>
             <p className="text-muted-foreground mb-8">
@@ -128,7 +128,7 @@ const ArticleDetail = () => {
       <Header />
       <Breadcrumbs />
       
-      <main className="pt-24 pb-16 px-4">
+      <main className="pt-32 pb-16 px-4">
         <div className="max-w-4xl mx-auto">
           {/* Back Button */}
           <Button 

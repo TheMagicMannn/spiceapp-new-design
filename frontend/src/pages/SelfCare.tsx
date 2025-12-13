@@ -121,7 +121,7 @@ const SelfCare = () => {
       <Header />
       <Breadcrumbs />
       
-      <main className="pt-24 pb-16 px-4">
+      <main className="pt-32 pb-16 px-4">
         <div className="max-w-6xl mx-auto">
           {/* Hero Section */}
           <div className="text-center mb-16">
