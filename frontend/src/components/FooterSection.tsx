@@ -1,4 +1,4 @@
-import { Shield, Lock, Apple, Play } from "lucide-react";
+import { Apple, Play } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const FooterSection = () => {
