@@ -18,18 +18,21 @@ const communities = [
         title: "What is Ethical Non-Monogamy?",
         excerpt: "An introduction to ENM principles and different relationship structures.",
         readTime: "5 min read",
+        image: "https://images.unsplash.com/photo-1491438590914-bc09fcaaf77a?w=400&h=250&fit=crop",
       },
       {
         slug: "enm-vs-cheating-understanding-difference",
         title: "ENM vs Cheating: Understanding the Difference",
         excerpt: "Why consent and communication make all the difference.",
         readTime: "4 min read",
+        image: "https://images.unsplash.com/photo-1494774157365-9e04c6720e47?w=400&h=250&fit=crop",
       },
       {
         slug: "coming-out-enm-friends-family",
         title: "Coming Out as ENM to Friends & Family",
         excerpt: "Navigating conversations about your relationship choices.",
         readTime: "7 min read",
+        image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&h=250&fit=crop",
       },
     ],
   },
@@ -45,18 +48,21 @@ const communities = [
         title: "BDSM 101: Understanding the Basics",
         excerpt: "An introduction to kink culture, terminology, and practices.",
         readTime: "8 min read",
+        image: "https://images.unsplash.com/photo-1517960413843-0aee8e2b3285?w=400&h=250&fit=crop",
       },
       {
         slug: "importance-of-aftercare",
         title: "The Importance of Aftercare",
         excerpt: "Why aftercare is essential for healthy BDSM experiences.",
         readTime: "5 min read",
+        image: "https://images.unsplash.com/photo-1516321165247-4aa89a48be28?w=400&h=250&fit=crop",
       },
       {
         slug: "finding-your-kink-identity",
         title: "Finding Your Kink Identity",
         excerpt: "Exploring different roles and discovering what resonates with you.",
         readTime: "6 min read",
+        image: "https://images.unsplash.com/photo-1586380951230-e6703d9f6833?w=400&h=250&fit=crop",
       },
     ],
   },
@@ -72,18 +78,21 @@ const communities = [
         title: "Swinging 101: Getting Started",
         excerpt: "Everything couples need to know before entering the swinging lifestyle.",
         readTime: "7 min read",
+        image: "https://images.unsplash.com/photo-1494774157365-9e04c6720e47?w=400&h=250&fit=crop",
       },
       {
         slug: "how-to-navigate-first-play-party",
         title: "Swinger Etiquette: The Unwritten Rules",
         excerpt: "How to navigate clubs, parties, and online communities respectfully.",
         readTime: "6 min read",
+        image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&h=250&fit=crop",
       },
       {
         slug: "how-to-set-boundaries-open-relationships",
         title: "Soft Swap vs Full Swap: What's Right for You?",
         excerpt: "Understanding different levels of participation in swinging.",
         readTime: "5 min read",
+        image: "https://images.unsplash.com/photo-1543807535-eceef0bc6599?w=400&h=250&fit=crop",
       },
     ],
   },
@@ -99,18 +108,21 @@ const communities = [
         title: "What is Polyamory?",
         excerpt: "Understanding the philosophy and practice of ethical multi-partner relationships.",
         readTime: "6 min read",
+        image: "https://images.unsplash.com/photo-1522098635833-216c03d81fbe?w=400&h=250&fit=crop",
       },
       {
         slug: "managing-jealousy-couples-guide",
         title: "Polyamory Relationship Structures",
         excerpt: "From triads to polycules: different ways to structure poly relationships.",
         readTime: "8 min read",
+        image: "https://images.unsplash.com/photo-1516589091380-5d8e87df6999?w=400&h=250&fit=crop",
       },
       {
         slug: "how-to-practice-compersion",
         title: "Managing Time and Energy in Polyamory",
         excerpt: "Practical tips for balancing multiple relationships.",
         readTime: "7 min read",
+        image: "https://images.unsplash.com/photo-1522075782449-e45a34f1ddfb?w=400&h=250&fit=crop",
       },
     ],
   },
@@ -170,23 +182,33 @@ const CommunityLifestyles = () => {
                     <Link 
                       key={idx}
                       to={`/guide/article/${article.slug}`}
-                      className="glass-card rounded-xl p-6 border-gradient feature-card group cursor-pointer block"
+                      className="glass-card rounded-xl overflow-hidden border-gradient feature-card group cursor-pointer block"
                     >
                       <article>
-                        <div className="mb-4">
-                          <span className="px-3 py-1 text-xs font-medium rounded-full bg-primary/20 text-primary">
-                            {community.name}
-                          </span>
+                        <div className="relative h-36 overflow-hidden">
+                          <img 
+                            src={article.image} 
+                            alt={article.title}
+                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+                          <div className="absolute top-3 left-3">
+                            <span className="px-2 py-1 text-xs font-medium rounded-full bg-primary/90 text-primary-foreground">
+                              {community.name.split(' ')[0]}
+                            </span>
+                          </div>
                         </div>
-                        <h3 className="text-lg font-bold mb-3 group-hover:text-primary transition-colors">
-                          {article.title}
-                        </h3>
-                        <p className="text-muted-foreground text-sm mb-4">
-                          {article.excerpt}
-                        </p>
-                        <div className="flex items-center justify-between">
-                          <span className="text-xs text-muted-foreground">{article.readTime}</span>
-                          <ArrowRight className="w-4 h-4 text-primary opacity-0 group-hover:opacity-100 transition-opacity" />
+                        <div className="p-5">
+                          <h3 className="text-lg font-bold mb-3 group-hover:text-primary transition-colors">
+                            {article.title}
+                          </h3>
+                          <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
+                            {article.excerpt}
+                          </p>
+                          <div className="flex items-center justify-between">
+                            <span className="text-xs text-muted-foreground">{article.readTime}</span>
+                            <ArrowRight className="w-4 h-4 text-primary opacity-0 group-hover:opacity-100 transition-opacity" />
+                          </div>
                         </div>
                       </article>
                     </Link>
