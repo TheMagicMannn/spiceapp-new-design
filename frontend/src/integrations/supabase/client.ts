@@ -8,8 +8,17 @@ const SUPABASE_PUBLISHABLE_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY;
 // Import the supabase client like this:
 // import { supabase } from "@/integrations/supabase/client";
 
-// Use dummy values if environment variables are not set (for builds without Supabase)
-const url = SUPABASE_URL || 'https://placeholder.supabase.co';
+// Validate environment variables
+if (!SUPABASE_URL || SUPABASE_URL === 'https://placeholder.supabase.co') {
+  console.error('❌ VITE_SUPABASE_URL is not set or is using placeholder value!');
+}
+
+if (!SUPABASE_PUBLISHABLE_KEY || SUPABASE_PUBLISHABLE_KEY === 'YOUR_SUPABASE_ANON_KEY_HERE' || SUPABASE_PUBLISHABLE_KEY === 'placeholder-key') {
+  console.error('❌ VITE_SUPABASE_PUBLISHABLE_KEY is not set or is using placeholder value!');
+  console.error('👉 Get your anon key from: https://supabase.com/dashboard/project/rvpkcwskkovqhfwwrdeq/settings/api');
+}
+
+const url = SUPABASE_URL || 'https://rvpkcwskkovqhfwwrdeq.supabase.co';
 const key = SUPABASE_PUBLISHABLE_KEY || 'placeholder-key';
 
 export const supabase = createClient<Database>(url, key, {
