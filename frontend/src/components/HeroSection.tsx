@@ -37,9 +37,17 @@ const HeroSection = () => {
       });
 
       if (error) {
+        console.error('Waitlist error:', error);
         const errorMessage = error.message || "Something went wrong. Please try again.";
+        
         if (errorMessage.includes("already on the waitlist")) {
           toast.info("You're already on the waitlist! We'll notify you when we launch.");
+        } else if (errorMessage.includes("Failed to send") || errorMessage.includes("Edge Function")) {
+          toast.error("⚙️ Configuration Error: Please check browser console for details", {
+            duration: 5000
+          });
+          console.error('🔴 Supabase configuration issue detected!');
+          console.error('📝 Check: /app/SUPABASE_SETUP_DIAGNOSTIC.md for setup instructions');
         } else {
           toast.error(errorMessage);
         }
