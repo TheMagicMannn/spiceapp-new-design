@@ -362,63 +362,48 @@ export const quizQuestions: QuizQuestionType[] = [
       { value: 'hard_limit', label: 'Hard limit beyond natural intimacy' }
     ]
   },
-  {
-    id: 'communication_style',
-    question: 'How do you prefer to communicate boundaries and desires?',
-    category: 'Communication',
-    type: 'choice',
-    options: [
-      { value: 'direct', label: 'Direct and explicit verbal communication' },
-      { value: 'gradual', label: 'Gradual discussions over time' },
-      { value: 'written', label: 'Written agreements and checklists' },
-      { value: 'intuitive', label: 'Reading body language and signals' }
-    ]
-  },
+  
+  // ============================================
+  // SECTION 4: DYNAMICS & COMPATIBILITY
+  // ============================================
   {
     id: 'intensity_preference',
     question: 'What level of intensity do you generally prefer?',
-    category: 'Intensity',
+    category: 'Dynamics',
+    section: 'dynamics',
     type: 'scale',
-    scaleLabels: { min: 'Gentle & sensual', max: 'Intense & edgy' }
+    scaleLabels: { min: 'Gentle & sensual', max: 'Intense & extreme' }
   },
   {
-    id: 'bondage_interest',
-    question: 'How interested are you in bondage and restraint play?',
-    category: 'Kink Exploration',
-    type: 'scale',
-    scaleLabels: { min: 'Not interested', max: 'Very interested' }
-  },
-  {
-    id: 'impact_interest',
-    question: 'How do you feel about impact play (spanking, etc.)?',
-    category: 'Kink Exploration',
+    id: 'pain_pleasure',
+    question: 'How do you relate to pain in intimate contexts?',
+    category: 'Dynamics',
+    section: 'dynamics',
     type: 'choice',
     options: [
-      { value: 'giving', label: 'I enjoy giving' },
-      { value: 'receiving', label: 'I enjoy receiving' },
-      { value: 'both', label: 'I enjoy both' },
-      { value: 'not_interested', label: 'Not for me' }
+      { value: 'avoid', label: 'I avoid pain completely' },
+      { value: 'tolerate', label: 'I tolerate some pain for my partner' },
+      { value: 'neutral', label: 'Pain is neutral to me' },
+      { value: 'arousing', label: 'Pain enhances arousal' },
+      { value: 'require', label: 'I need pain to reach peak arousal' },
+      { value: 'give_enjoy', label: 'I enjoy giving pain to willing partners' }
     ]
   },
   {
-    id: 'roleplay_interest',
-    question: 'How interested are you in power exchange and roleplay scenarios?',
-    category: 'Fantasy',
+    id: 'control_comfort',
+    question: 'How comfortable are you with giving up control to a trusted partner?',
+    category: 'Dynamics',
+    section: 'dynamics',
     type: 'scale',
-    scaleLabels: { min: 'Not interested', max: 'Very interested' }
+    scaleLabels: { min: 'Very uncomfortable', max: 'Completely comfortable' }
   },
   {
-    id: 'sensory_play',
-    question: 'Which sensory experiences appeal to you most?',
-    category: 'Sensory',
-    type: 'choice',
-    options: [
-      { value: 'blindfolds', label: 'Blindfolds and sensory deprivation' },
-      { value: 'temperature', label: 'Temperature play (ice, wax)' },
-      { value: 'texture', label: 'Different textures and materials' },
-      { value: 'all', label: 'All of the above' },
-      { value: 'none', label: 'None of these' }
-    ]
+    id: 'taking_control',
+    question: 'How comfortable are you with taking complete control of a partner?',
+    category: 'Dynamics',
+    section: 'dynamics',
+    type: 'scale',
+    scaleLabels: { min: 'Very uncomfortable', max: 'Completely comfortable' }
   },
   {
     id: 'aftercare_needs',
