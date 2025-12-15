@@ -131,19 +131,58 @@ const BDSMQuiz = () => {
       return responses.find(r => r.questionId === questionId)?.answer;
     };
 
-    // Determine lifestyle
+    // =====================================================
+    // LIFESTYLE ANALYSIS
+    // =====================================================
     const relationshipStructure = getAnswer('relationship_structure') as string;
+    const enmComfort = getAnswer('non_monogamy_interest') as number || 50;
+    const groupPlayInterest = getAnswer('group_play') as string;
+    const communityInvolvement = getAnswer('kink_community') as string;
+    const lifestyleIntegration = getAnswer('lifestyle_integration') as string;
+    
     const lifestyleMap: Record<string, string> = {
       'monogamous': 'Monogamous',
       'open': 'Open Relationship',
       'polyamorous': 'Polyamorous',
       'swinger': 'Swinger Lifestyle',
       'relationship_anarchy': 'Relationship Anarchist',
-      'exploring': 'Exploring Non-Monogamy'
+      'exploring': 'Exploring Relationship Styles'
     };
 
-    // Determine BDSM role
+    const lifestyleSecondary: string[] = [];
+    if (enmComfort > 60 && relationshipStructure === 'monogamous') {
+      lifestyleSecondary.push('Open to ENM');
+    }
+    if (groupPlayInterest === 'regular' || groupPlayInterest === 'prefer') {
+      lifestyleSecondary.push('Group Play Enthusiast');
+    }
+    if (communityInvolvement === 'active' || communityInvolvement === 'organizer') {
+      lifestyleSecondary.push('Community Active');
+    }
+    if (lifestyleIntegration === 'full_247' || lifestyleIntegration === 'subtle_247') {
+      lifestyleSecondary.push('24/7 Dynamic');
+    }
+
+    const lifestyleDescription = `You identify as ${lifestyleMap[relationshipStructure]?.toLowerCase() || 'exploring'} with ${
+      enmComfort > 70 ? 'strong enthusiasm for' : enmComfort > 50 ? 'openness to' : enmComfort > 30 ? 'curiosity about' : 'preference against'
+    } ethical non-monogamy. ${
+      lifestyleIntegration === 'full_247' ? 'You seek full 24/7 power exchange integration.' :
+      lifestyleIntegration === 'subtle_247' ? 'You prefer subtle D/s elements in daily life.' :
+      lifestyleIntegration === 'bedroom_only' ? 'You keep kink separate in the bedroom.' :
+      'You take a flexible approach to kink integration.'
+    }`;
+
+    // =====================================================
+    // BDSM ROLE ANALYSIS
+    // =====================================================
     const primaryRole = getAnswer('primary_role') as string;
+    const domStyles = (getAnswer('dominance_style') as string[] || []).filter(s => s !== 'not_applicable');
+    const subStyles = (getAnswer('submission_style') as string[] || []).filter(s => s !== 'not_applicable');
+    const switchPref = getAnswer('switch_preference') as string;
+    const controlComfort = getAnswer('control_comfort') as number || 50;
+    const takingControl = getAnswer('taking_control') as number || 50;
+    const powerExchange = getAnswer('power_exchange_level') as string;
+    
     const roleMap: Record<string, string> = {
       'dominant': 'Dominant',
       'submissive': 'Submissive',
@@ -156,19 +195,71 @@ const BDSMQuiz = () => {
       'primal': 'Primal',
       'sadist': 'Sadist',
       'masochist': 'Masochist',
-      'exploring': 'Exploring'
+      'exploring': 'Exploring My Role'
     };
 
-    // Get styles
-    const domStyles = getAnswer('dominance_style') as string[] || [];
-    const subStyles = getAnswer('submission_style') as string[] || [];
-    const styles = [...domStyles, ...subStyles].filter(s => s !== 'not_applicable');
-
-    // Calculate dominance score
+    // Calculate dominance score from multiple factors
     let dominanceScore = 50;
-    if (primaryRole === 'dominant' || primaryRole === 'master_mistress' || primaryRole === 'top') dominanceScore = 80;
-    if (primaryRole === 'submissive' || primaryRole === 'slave' || primaryRole === 'bottom') dominanceScore = 20;
-    if (primaryRole === 'switch') dominanceScore = 50;
+    
+    // Primary role influence (40% weight)
+    if (primaryRole === 'dominant' || primaryRole === 'master_mistress' || primaryRole === 'top' || primaryRole === 'sadist') {
+      dominanceScore += 30;
+    } else if (primaryRole === 'submissive' || primaryRole === 'slave' || primaryRole === 'bottom' || primaryRole === 'masochist') {
+      dominanceScore -= 30;
+    } else if (primaryRole === 'brat') {
+      dominanceScore -= 15;
+    } else if (primaryRole === 'primal') {
+      dominanceScore += (takingControl - 50) / 5;
+    }
+    
+    // Control comfort influence (30% weight)
+    if (takingControl > controlComfort) {
+      dominanceScore += (takingControl - controlComfort) / 3;
+    } else {
+      dominanceScore -= (controlComfort - takingControl) / 3;
+    }
+    
+    // Power exchange level influence (20% weight)
+    if (powerExchange === 'equal') dominanceScore = 50;
+    else if (powerExchange === 'total_authority') dominanceScore += 10;
+    
+    // Switch preference adjustment (10% weight)
+    if (switchPref === 'lean_dominant') dominanceScore += 10;
+    else if (switchPref === 'lean_submissive') dominanceScore -= 10;
+    else if (switchPref === 'equal') dominanceScore = 50;
+    
+    // Normalize to 0-100
+    dominanceScore = Math.max(0, Math.min(100, dominanceScore));
+
+    // Determine style based on selections and other factors
+    const activeStyles = [...domStyles, ...subStyles];
+    const styleLabels = activeStyles.map(s => 
+      s.split('_').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
+    );
+
+    // Determine secondary roles
+    const secondaryRoles: string[] = [];
+    if (primaryRole === 'switch') {
+      if (switchPref === 'lean_dominant') secondaryRoles.push('Dominant-leaning');
+      if (switchPref === 'lean_submissive') secondaryRoles.push('Submissive-leaning');
+    }
+    if (primaryRole === 'dominant' && subStyles.length > 0) {
+      secondaryRoles.push('Switch potential');
+    }
+    if (primaryRole === 'submissive' && domStyles.length > 0) {
+      secondaryRoles.push('Switch potential');
+    }
+
+    const roleDescription = `As a ${roleMap[primaryRole]?.toLowerCase() || 'person exploring their role'}, you ${
+      dominanceScore > 70 ? 'strongly identify with taking control and leading in scenes' :
+      dominanceScore < 30 ? 'deeply enjoy surrender and following your partner\'s lead' :
+      'appreciate both giving and receiving control depending on the dynamic'
+    }. ${styleLabels.length > 0 ? `Your style leans ${styleLabels.slice(0, 3).join(', ')}.` : 'You\'re still discovering your specific style.'} ${
+      powerExchange === 'full_247' ? 'You seek total power exchange in a 24/7 dynamic.' :
+      powerExchange === 'total_authority' ? 'You desire complete authority transfer.' :
+      powerExchange === 'scene_only' ? 'You prefer power exchange limited to scenes.' :
+      'Your preferred level of power exchange varies.'
+    }`;
     
     // Get kink interests
     const topKinks: QuizInsights['topKinks'] = [];
