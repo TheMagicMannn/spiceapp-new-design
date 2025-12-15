@@ -102,27 +102,17 @@ const BDSMQuiz = () => {
     setIsAnalyzing(true);
     
     try {
-      // Get backend URL
-      const backendUrl = import.meta.env.VITE_BACKEND_URL || process.env.REACT_APP_BACKEND_URL || 'http://localhost:8001';
-      
-      // Call backend API for AI analysis
-      const response = await fetch(`${backendUrl}/api/analyze-quiz`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          responses: responses
-        })
+      // Call Supabase Edge Function for AI analysis
+      const { data, error } = await supabase.functions.invoke('analyze-bdsm-quiz', {
+        body: { responses }
       });
 
-      if (!response.ok) {
-        throw new Error(`Analysis failed: ${response.statusText}`);
+      if (error) {
+        console.error('Supabase function error:', error);
+        throw error;
       }
 
-      const data = await response.json();
-      
-      if (data.success && data.insights) {
+      if (data?.success && data?.insights) {
         setInsights(data.insights);
         
         toast({
