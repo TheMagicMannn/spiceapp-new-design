@@ -14,7 +14,7 @@ import Header from '@/components/Header';
 
 export interface QuizResponse {
   questionId: string;
-  answer: string | number;
+  answer: string | number | string[];
 }
 
 export interface QuizInsights {
