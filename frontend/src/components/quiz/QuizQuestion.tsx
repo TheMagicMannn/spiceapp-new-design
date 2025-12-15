@@ -6,8 +6,8 @@ import { cn } from '@/lib/utils';
 
 interface QuizQuestionProps {
   question: QuizQuestionType;
-  currentAnswer: string | number | undefined;
-  onAnswer: (answer: string | number) => void;
+  currentAnswer: string | number | string[] | undefined;
+  onAnswer: (answer: string | number | string[]) => void;
 }
 
 const QuizQuestion: React.FC<QuizQuestionProps> = ({ 
