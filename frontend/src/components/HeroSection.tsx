@@ -32,24 +32,19 @@ const HeroSection = () => {
     setIsLoading(true);
     
     try {
-      const backendUrl = import.meta.env.VITE_BACKEND_URL || process.env.REACT_APP_BACKEND_URL || 'http://localhost:8001';
-      
-      const response = await fetch(`${backendUrl}/api/waitlist`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ 
-          email,
-          source: 'hero'
-        }),
+      const { data, error } = await supabase.functions.invoke("join-waitlist", {
+        body: { email, source: 'hero' },
       });
 
-      if (!response.ok) {
-        throw new Error('Failed to join waitlist');
+      if (error) {
+        const errorMessage = error.message || "Something went wrong. Please try again.";
+        if (errorMessage.includes("already on the waitlist")) {
+          toast.info("You're already on the waitlist! We'll notify you when we launch.");
+        } else {
+          toast.error(errorMessage);
+        }
+        return;
       }
-
-      const data = await response.json();
       
       if (data?.alreadyExists) {
         toast.info("You're already part of the Spice family! 💕 Sit tight — we'll let you know as soon as we launch.", {
