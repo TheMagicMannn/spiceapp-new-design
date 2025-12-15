@@ -59,7 +59,7 @@ const BDSMQuiz = () => {
 
   const progress = ((currentQuestion + 1) / quizQuestions.length) * 100;
 
-  const handleAnswer = (answer: string | number) => {
+  const handleAnswer = (answer: string | number | string[]) => {
     const newResponses = [...responses];
     const existingIndex = newResponses.findIndex(
       r => r.questionId === quizQuestions[currentQuestion].id
