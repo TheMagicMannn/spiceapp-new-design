@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Sparkles, Heart, RefreshCw, Share2, ArrowLeft, TrendingUp } from 'lucide-react';
+import { Sparkles, Heart, RefreshCw, Share2, ArrowLeft, TrendingUp, Check, Copy } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import { QuizInsights } from '@/pages/BDSMQuiz';
 import { Link } from 'react-router-dom';
+import { useToast } from '@/hooks/use-toast';
+import { supabase } from '@/integrations/supabase/client';
 
 interface QuizResultsProps {
   insights: QuizInsights;
   onRestart: () => void;
+  responses?: any[];
 }
 
 const QuizResults: React.FC<QuizResultsProps> = ({ insights, onRestart }) => {
