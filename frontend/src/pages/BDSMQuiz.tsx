@@ -143,10 +143,10 @@ const BDSMQuiz = () => {
           <meta name="description" content="Take our AI-powered BDSM compatibility quiz to discover your intimacy style, preferences, and find compatible partners. Safe, private, and non-judgmental." />
           <link rel="canonical" href="https://thespiceapp.com/quiz" />
         </Helmet>
-        <div className="pt-16">
+        <div className="pt-32">
           <Breadcrumbs />
         </div>
-        <div className="flex items-center justify-center p-4 min-h-[calc(100vh-80px)]">
+        <div className="flex items-center justify-center p-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
