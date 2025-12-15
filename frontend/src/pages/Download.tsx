@@ -44,29 +44,26 @@ const Download = () => {
     setIsLoading(true);
     
     try {
-      const { data, error } = await supabase.functions.invoke("join-waitlist", {
-        body: { email },
+      const backendUrl = import.meta.env.VITE_BACKEND_URL || process.env.REACT_APP_BACKEND_URL || 'http://localhost:8001';
+      
+      const response = await fetch(`${backendUrl}/api/waitlist`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ 
+          email,
+          source: 'download'
+        }),
       });
 
-      if (error) {
-        const errorMessage = error.message || "Something went wrong. Please try again.";
-        if (errorMessage.includes("already on the waitlist")) {
-          toast.info("You're already on the waitlist! We'll notify you when we launch.");
-        } else {
-          toast.error(errorMessage);
-        }
-        return;
+      if (!response.ok) {
+        throw new Error('Failed to join waitlist');
       }
+
+      const data = await response.json();
       
-      if (data?.error) {
-        if (data.error.includes("already on the waitlist")) {
-          toast.info("You're already part of the Spice family! 💕 Sit tight — we'll let you know as soon as we launch.", {
-            duration: 5000,
-          });
-        } else {
-          toast.error(data.error);
-        }
-      } else if (data?.alreadyExists) {
+      if (data?.alreadyExists) {
         toast.info("You're already part of the Spice family! 💕 Sit tight — we'll let you know as soon as we launch.", {
           duration: 5000,
         });
