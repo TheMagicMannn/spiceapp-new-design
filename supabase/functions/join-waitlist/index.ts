@@ -6,6 +6,8 @@ const corsHeaders = {
   'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
 }
 
+const RESEND_API_KEY = Deno.env.get('RESEND_API_KEY')
+
 serve(async (req) => {
   // Handle CORS preflight requests
   if (req.method === 'OPTIONS') {
@@ -37,7 +39,7 @@ serve(async (req) => {
     }
 
     // Check if email already exists
-    const { data: existing, error: checkError } = await supabaseClient
+    const { data: existing } = await supabaseClient
       .from('waitlist')
       .select('email')
       .eq('email', email.toLowerCase())
@@ -77,8 +79,56 @@ serve(async (req) => {
       throw error
     }
 
-    // TODO: Send welcome email via Resend or SendGrid
-    // await sendWelcomeEmail(email, name)
+    // Send emails via Resend
+    if (RESEND_API_KEY) {
+      try {
+        // Send confirmation to user
+        await fetch('https://api.resend.com/emails', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${RESEND_API_KEY}`
+          },
+          body: JSON.stringify({
+            from: 'noreply@thespiceapp.com',
+            to: email,
+            subject: 'Welcome to the SPICE Waitlist! 🌶️',
+            html: `
+              <h1>Welcome to SPICE!</h1>
+              <p>Hi ${name || 'there'},</p>
+              <p>Thank you for joining the SPICE waitlist! We're excited to have you on board.</p>
+              <p>You'll be among the first to know when we launch. Get ready for something special! ✨</p>
+              <br>
+              <p>Best regards,<br>The SPICE Team</p>
+            `
+          })
+        })
+
+        // Send notification to support
+        await fetch('https://api.resend.com/emails', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${RESEND_API_KEY}`
+          },
+          body: JSON.stringify({
+            from: 'noreply@thespiceapp.com',
+            to: 'support@thespiceapp.com',
+            subject: `New Waitlist Signup: ${email}`,
+            html: `
+              <h2>New Waitlist Signup</h2>
+              <p><strong>Email:</strong> ${email}</p>
+              <p><strong>Name:</strong> ${name || 'Not provided'}</p>
+              <p><strong>Source:</strong> ${source}</p>
+              <p><strong>Timestamp:</strong> ${new Date().toISOString()}</p>
+            `
+          })
+        })
+      } catch (emailError) {
+        console.error('Email error (non-blocking):', emailError)
+        // Don't fail the request if email fails
+      }
+    }
 
     return new Response(
       JSON.stringify({ 
