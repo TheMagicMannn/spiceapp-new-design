@@ -82,15 +82,73 @@ export const quizQuestions: QuizQuestionType[] = [
   // SECTION 2: BDSM ROLES & POWER DYNAMICS
   // ============================================
   {
-    id: 'dynamic_preference',
-    question: 'In intimate situations, which role feels most natural to you?',
-    category: 'Power Dynamics',
+    id: 'primary_role',
+    question: 'Which BDSM role resonates most with you?',
+    category: 'Role Identity',
+    section: 'role',
     type: 'choice',
     options: [
-      { value: 'dominant', label: 'Taking control and leading' },
-      { value: 'submissive', label: 'Following and surrendering' },
-      { value: 'switch', label: 'Enjoying both roles equally' },
-      { value: 'exploring', label: 'Still exploring what feels right' }
+      { value: 'dominant', label: 'Dominant/Dom/Domme - I lead and control' },
+      { value: 'submissive', label: 'Submissive/Sub - I surrender and serve' },
+      { value: 'switch', label: 'Switch - I enjoy both dominant and submissive roles' },
+      { value: 'top', label: 'Top - I give sensation/action (not power exchange focused)' },
+      { value: 'bottom', label: 'Bottom - I receive sensation/action' },
+      { value: 'master_mistress', label: 'Master/Mistress - Authority-focused dominance' },
+      { value: 'slave', label: 'Slave - Total power exchange and service' },
+      { value: 'brat', label: 'Brat - Playful resistance and teasing' },
+      { value: 'primal', label: 'Primal - Instinct-driven, animalistic energy' },
+      { value: 'sadist', label: 'Sadist - I enjoy giving pain/intensity' },
+      { value: 'masochist', label: 'Masochist - I enjoy receiving pain/intensity' },
+      { value: 'exploring', label: 'Still exploring my role' }
+    ]
+  },
+  {
+    id: 'dominance_style',
+    question: 'If you identify as Dominant/Top, which style appeals to you most?',
+    category: 'Role Identity',
+    section: 'role',
+    type: 'multi',
+    options: [
+      { value: 'strict', label: 'Strict - Rules, discipline, structure' },
+      { value: 'sensual', label: 'Sensual - Pleasure-focused, teasing' },
+      { value: 'sadistic', label: 'Sadistic - Pain and intensity' },
+      { value: 'nurturing', label: 'Nurturing - Caregiver, protective' },
+      { value: 'degrading', label: 'Degrading - Humiliation, objectification' },
+      { value: 'primal', label: 'Primal - Raw, instinctual, animalistic' },
+      { value: 'owner', label: 'Owner - Possession, control, authority' },
+      { value: 'not_applicable', label: 'Not applicable to me' }
+    ]
+  },
+  {
+    id: 'submission_style',
+    question: 'If you identify as Submissive/Bottom, which style appeals to you most?',
+    category: 'Role Identity',
+    section: 'role',
+    type: 'multi',
+    options: [
+      { value: 'obedient', label: 'Obedient - Eager to please and follow rules' },
+      { value: 'brat', label: 'Brat - Playful resistance, testing boundaries' },
+      { value: 'masochistic', label: 'Masochistic - Craving pain and intensity' },
+      { value: 'service', label: 'Service-oriented - Acts of service and care' },
+      { value: 'pet', label: 'Pet/Kitten/Puppy - Animal persona play' },
+      { value: 'little', label: 'Little/Middle - Age regression play' },
+      { value: 'rope_bunny', label: 'Rope bunny - Love being tied up' },
+      { value: 'slave', label: 'Slave - Total power exchange' },
+      { value: 'not_applicable', label: 'Not applicable to me' }
+    ]
+  },
+  {
+    id: 'switch_preference',
+    question: 'If you\'re a Switch, do you have a preference?',
+    category: 'Role Identity',
+    section: 'role',
+    type: 'choice',
+    options: [
+      { value: 'lean_dominant', label: 'Lean dominant but enjoy submitting sometimes' },
+      { value: 'lean_submissive', label: 'Lean submissive but enjoy dominating sometimes' },
+      { value: 'equal', label: 'Equal interest in both roles' },
+      { value: 'partner_dependent', label: 'Depends on my partner\'s energy' },
+      { value: 'not_switch', label: 'I\'m not a switch' }
     ]
   },
   {
