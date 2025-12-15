@@ -461,65 +461,100 @@ const BDSMQuiz = () => {
     growthAreas.push('Practice negotiation and consent conversations with potential partners');
 
     return {
-      personalitySummary: `You identify as ${roleMap[primaryRole] || 'exploring'} and are ${expMap[expLevel] || 'exploring'} the BDSM lifestyle. Your interests span ${topKinks.length} major kink categories, and you prefer ${lifestyleMap[relationshipStructure] || 'exploring'} relationship structures. You bring a thoughtful and ${dominanceScore > 60 ? 'dominant' : dominanceScore < 40 ? 'submissive' : 'balanced'} energy to your dynamics.`,
+      personalitySummary: `You identify as ${roleMap[primaryRole] || 'exploring your role'} with ${expMap[expLevel]?.toLowerCase() || 'emerging'} experience in BDSM and kink. ${
+        topKinks.length > 0 ? `Your primary interests include ${topKinks.slice(0, 3).map(k => k.name.toLowerCase()).join(', ')}.` : 'You\'re exploring various kinks to discover your interests.'
+      } You prefer ${lifestyleMap[relationshipStructure]?.toLowerCase() || 'exploring'} relationship structures and ${
+        intensityPref > 70 ? 'crave intense, boundary-pushing experiences' :
+        intensityPref < 30 ? 'enjoy gentle, sensual explorations' :
+        'appreciate a balanced range of intensity levels'
+      }. ${
+        emotionalConnection === 'essential' || emotionalConnection === 'romantic' ? 'Deep emotional connection is essential for your kink experiences.' :
+        emotionalConnection === 'unnecessary' ? 'You can separate kink from emotional connection.' :
+        'You value emotional connection but can be flexible.'
+      }`,
       
-      keyTraits: [
-        {
-          trait: roleMap[primaryRole] || 'Explorer',
-          description: dominanceScore > 60 ? 'You enjoy taking control and leading partners' : dominanceScore < 40 ? 'You find fulfillment in surrender and service' : 'You enjoy both giving and receiving control'
-        },
-        {
-          trait: styles.length > 0 ? styles.map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(', ') : 'Versatile',
-          description: 'Your unique style and approach to kink'
-        },
-        {
-          trait: expMap[expLevel] || 'Curious',
-          description: 'Your level of experience in the lifestyle'
-        }
-      ],
+      keyTraits: keyTraits.slice(0, 4),
       
-      compatibilityInsights: `Based on your responses, you'd be most compatible with partners who ${dominanceScore > 60 ? 'enjoy submitting and following your lead' : dominanceScore < 40 ? 'are confident dominants who provide structure' : 'can switch roles and match your energy'}. Your ${lifestyleMap[relationshipStructure]} approach means you value ${relationshipStructure === 'monogamous' ? 'deep exclusive connection' : 'ethical non-monogamy and open communication'}. Strong communication and respect for boundaries are essential for you.`,
+      compatibilityInsights: `Based on your comprehensive profile, you'd thrive with partners who ${
+        dominanceScore > 70 ? 'naturally submit and seek structure, enjoying your authoritative energy' :
+        dominanceScore < 30 ? 'confidently take control and provide the guidance you crave' :
+        'can switch dynamics with you, matching your versatile energy'
+      }. Your ${lifestyleMap[relationshipStructure]?.toLowerCase() || 'relationship'} approach means ${
+        relationshipStructure === 'monogamous' ? 'you value exclusive, deep connection with a single partner' :
+        relationshipStructure === 'polyamorous' ? 'you can love multiple people simultaneously with honesty' :
+        relationshipStructure === 'open' ? 'you separate emotional and sexual connections thoughtfully' :
+        relationshipStructure === 'swinger' ? 'you enjoy shared sexual experiences as a couple' :
+        'you take a flexible, individual approach to relationships'
+      }. ${
+        jealousyCompersion === 'compersion' || jealousyCompersion === 'encourage' ? 'You feel compersion, taking joy in your partner\'s pleasure with others.' :
+        jealousyCompersion === 'monogamous' ? 'You prefer complete monogamy and exclusivity.' :
+        'You navigate jealousy and sharing with clear communication.'
+      } Ideal partners share your ${intensityPref > 60 ? 'appetite for intensity' : 'preference for sensuality'}, respect your ${hardLimits.length} hard limits, and match your ${
+        explorationPace === 'very_slow' ? 'patient, gradual' :
+        explorationPace === 'adventurous' ? 'eager, adventurous' :
+        'moderate'
+      } pace of exploration.`,
       
-      growthAreas: [
-        'Explore your interests in ' + (topKinks[0]?.name || 'various kinks'),
-        'Continue learning through community and education',
-        'Develop clear communication protocols with partners',
-        'Practice aftercare and emotional processing'
-      ],
+      growthAreas: growthAreas.slice(0, 6),
       
       scores: {
-        dominanceSubmission: dominanceScore,
-        communicationStyle: 'Direct & Clear',
+        dominanceSubmission: Math.round(dominanceScore),
+        communicationStyle: communicationStyles.length > 2 ? 'Multi-Modal Communicator' : communicationStyles.includes('verbal_direct') ? 'Direct Verbal' : 'Developing Style',
         experienceLevel: expMap[expLevel] || 'Exploring',
-        opennessToExploration: 75
+        opennessToExploration: Math.round(opennessScore)
       },
       
-      archetype: roleMap[primaryRole] || 'Explorer',
+      archetype: `${roleMap[primaryRole] || 'Explorer'}${styleLabels.length > 0 ? ' - ' + styleLabels[0] : ''}`,
       
       lifestyle: {
         primary: lifestyleMap[relationshipStructure] || 'Exploring',
-        secondary: relationshipStructure === 'monogamous' ? [] : ['Open Communication', 'Ethical Non-Monogamy'],
-        description: `You prefer ${lifestyleMap[relationshipStructure]?.toLowerCase() || 'exploring different'} relationship structures with clear boundaries and communication.`
+        secondary: lifestyleSecondary,
+        description: lifestyleDescription
       },
       
       bdsmRole: {
         primary: roleMap[primaryRole] || 'Exploring',
-        secondary: [],
-        style: styles.map(s => s.charAt(0).toUpperCase() + s.slice(1).replace(/_/g, ' ')),
-        description: `As ${roleMap[primaryRole]?.toLowerCase() || 'someone exploring'}, you bring ${styles.length > 0 ? styles[0] : 'unique'} energy to your dynamics.`
+        secondary: secondaryRoles,
+        style: styleLabels.slice(0, 4),
+        description: roleDescription
       },
       
-      topKinks: topKinks.length > 0 ? topKinks : [
+      topKinks: topKinks.length > 0 ? topKinks.slice(0, 8) : [
         {
-          name: 'Exploring Preferences',
+          name: 'Still Exploring',
           interest: 'medium',
-          description: 'You\'re still discovering what interests you most'
+          description: 'Take time to discover what excites you through education and gradual exploration'
         }
       ],
       
-      hardLimits: hardLimits.length > 0 ? hardLimits : ['None specified'],
+      hardLimits: hardLimits.length > 0 ? hardLimits : ['No major limits identified - communicate boundaries with partners'],
       
-      idealPartner: `Your ideal partner ${dominanceScore > 60 ? 'is submissive and enjoys following your lead' : dominanceScore < 40 ? 'is a confident dominant who provides structure and care' : 'can match your switch energy and enjoys both roles'}. They value ${relationshipStructure === 'monogamous' ? 'monogamy and deep connection' : 'ethical non-monogamy and open communication'}, respect boundaries, and share your interest in ${topKinks[0]?.name || 'exploring kink together'}.`
+      idealPartner: `Your ideal partner ${
+        dominanceScore > 70 ? 'is naturally submissive, craving your structure and control' :
+        dominanceScore > 55 ? 'leans submissive but appreciates your flexibility' :
+        dominanceScore < 30 ? 'is a confident, experienced dominant who provides clear leadership' :
+        dominanceScore < 45 ? 'leans dominant but appreciates your input' :
+        'shares your switch nature, enjoying both roles with equal enthusiasm'
+      }. They ${
+        relationshipStructure === 'monogamous' ? 'are committed to monogamy and building deep exclusive intimacy' :
+        relationshipStructure === 'polyamorous' ? 'embrace polyamory and managing multiple loving relationships' :
+        relationshipStructure === 'open' ? 'appreciate the distinction between sex and romance in open dynamics' :
+        relationshipStructure === 'swinger' ? 'enjoy the swinger lifestyle and shared recreational experiences' :
+        'are open to exploring various relationship structures together'
+      }. ${
+        emotionalConnection === 'essential' || emotionalConnection === 'romantic' ? 'Deep emotional and romantic connection is essential to them.' :
+        emotionalConnection === 'unnecessary' ? 'They can keep kink and emotion separate.' :
+        'They value connection but maintain healthy boundaries.'
+      } They're ${
+        expLevel === 'expert' || expLevel === 'experienced' ? 'experienced practitioners who match your expertise' :
+        expLevel === 'intermediate' ? 'established in the lifestyle with solid experience' :
+        expLevel === 'novice' || expLevel === 'curious' ? 'patient educators or fellow learners growing together' :
+        'experienced enough to guide your exploration safely'
+      }, share enthusiasm for ${topKinks[0]?.name.toLowerCase() || 'exploration'}, absolutely respect your hard limits around ${hardLimits[0]?.toLowerCase() || 'boundaries'}, and ${
+        aftercareImportance > 70 ? 'prioritize thorough aftercare' :
+        aftercareImportance < 30 ? 'are comfortable with minimal aftercare' :
+        'provide balanced aftercare'
+      }.`
     };
   };
 
