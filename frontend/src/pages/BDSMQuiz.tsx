@@ -102,30 +102,12 @@ const BDSMQuiz = () => {
     setIsAnalyzing(true);
     
     try {
-      // Format responses for AI analysis
-      const formattedResponses = responses.map(r => {
-        const question = quizQuestions.find(q => q.id === r.questionId);
-        return {
-          question: question?.question,
-          category: question?.category,
-          answer: r.answer
-        };
-      });
-
-      const { data, error } = await supabase.functions.invoke('analyze-bdsm-quiz', {
-        body: { responses: formattedResponses }
-      });
-
-      if (error) throw error;
-
-      setInsights(data.insights);
-
-      // Save results to database
-      await supabase.from('bdsm_quiz_results').insert({
-        responses: formattedResponses,
-        ai_insights: JSON.stringify(data.insights),
-        compatibility_profile: data.insights.scores
-      });
+      // Simulate analysis delay
+      await new Promise(resolve => setTimeout(resolve, 2000));
+      
+      // Generate mock insights based on responses
+      const mockInsights = generateMockInsights(responses);
+      setInsights(mockInsights);
 
       toast({
         title: "Analysis Complete!",
@@ -141,6 +123,185 @@ const BDSMQuiz = () => {
     } finally {
       setIsAnalyzing(false);
     }
+  };
+
+  const generateMockInsights = (responses: QuizResponse[]): QuizInsights => {
+    // Helper to get answer
+    const getAnswer = (questionId: string) => {
+      return responses.find(r => r.questionId === questionId)?.answer;
+    };
+
+    // Determine lifestyle
+    const relationshipStructure = getAnswer('relationship_structure') as string;
+    const lifestyleMap: Record<string, string> = {
+      'monogamous': 'Monogamous',
+      'open': 'Open Relationship',
+      'polyamorous': 'Polyamorous',
+      'swinger': 'Swinger Lifestyle',
+      'relationship_anarchy': 'Relationship Anarchist',
+      'exploring': 'Exploring Non-Monogamy'
+    };
+
+    // Determine BDSM role
+    const primaryRole = getAnswer('primary_role') as string;
+    const roleMap: Record<string, string> = {
+      'dominant': 'Dominant',
+      'submissive': 'Submissive',
+      'switch': 'Switch',
+      'top': 'Top',
+      'bottom': 'Bottom',
+      'master_mistress': 'Master/Mistress',
+      'slave': 'Slave',
+      'brat': 'Brat',
+      'primal': 'Primal',
+      'sadist': 'Sadist',
+      'masochist': 'Masochist',
+      'exploring': 'Exploring'
+    };
+
+    // Get styles
+    const domStyles = getAnswer('dominance_style') as string[] || [];
+    const subStyles = getAnswer('submission_style') as string[] || [];
+    const styles = [...domStyles, ...subStyles].filter(s => s !== 'not_applicable');
+
+    // Calculate dominance score
+    let dominanceScore = 50;
+    if (primaryRole === 'dominant' || primaryRole === 'master_mistress' || primaryRole === 'top') dominanceScore = 80;
+    if (primaryRole === 'submissive' || primaryRole === 'slave' || primaryRole === 'bottom') dominanceScore = 20;
+    if (primaryRole === 'switch') dominanceScore = 50;
+    
+    // Get kink interests
+    const topKinks: QuizInsights['topKinks'] = [];
+    
+    const bondageInterest = getAnswer('bondage_interest') as number;
+    if (bondageInterest && bondageInterest > 50) {
+      topKinks.push({
+        name: 'Bondage & Restraint',
+        interest: bondageInterest > 75 ? 'high' : 'medium',
+        description: 'Rope, cuffs, and various restraint techniques'
+      });
+    }
+
+    const impactInterest = getAnswer('impact_play_interest') as number;
+    if (impactInterest && impactInterest > 50) {
+      topKinks.push({
+        name: 'Impact Play',
+        interest: impactInterest > 75 ? 'high' : 'medium',
+        description: 'Spanking, flogging, and sensation play'
+      });
+    }
+
+    const sensoryInterest = getAnswer('sensory_play_interest') as number;
+    if (sensoryInterest && sensoryInterest > 50) {
+      topKinks.push({
+        name: 'Sensory Play',
+        interest: sensoryInterest > 75 ? 'high' : 'medium',
+        description: 'Temperature, texture, and sensory exploration'
+      });
+    }
+
+    const orgasmControl = getAnswer('orgasm_control') as number;
+    if (orgasmControl && orgasmControl > 50) {
+      topKinks.push({
+        name: 'Orgasm Control',
+        interest: orgasmControl > 75 ? 'high' : 'medium',
+        description: 'Denial, edging, and control of pleasure'
+      });
+    }
+
+    const humiliationInterest = getAnswer('humiliation_interest') as number;
+    if (humiliationInterest && humiliationInterest > 50) {
+      topKinks.push({
+        name: 'Humiliation & Degradation',
+        interest: humiliationInterest > 75 ? 'high' : 'medium',
+        description: 'Verbal and psychological power play'
+      });
+    }
+
+    // Get hard limits
+    const hardLimits: string[] = [];
+    if (humiliationInterest && humiliationInterest < 25) hardLimits.push('Humiliation');
+    const edgePlay = getAnswer('edge_play_interest') as string;
+    if (edgePlay === 'hard_limit') hardLimits.push('Edge Play');
+    const fluidsComfort = getAnswer('fluids') as string;
+    if (fluidsComfort === 'hard_limit') hardLimits.push('Bodily Fluids');
+    const dealBreakers = getAnswer('deal_breakers') as string[] || [];
+    dealBreakers.forEach(db => {
+      if (db !== 'none') hardLimits.push(db.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase()));
+    });
+
+    // Experience level
+    const expLevel = getAnswer('experience_level') as string;
+    const expMap: Record<string, string> = {
+      'fantasy_only': 'Fantasy Only',
+      'curious': 'Curious Beginner',
+      'novice': 'Novice',
+      'intermediate': 'Intermediate',
+      'experienced': 'Experienced',
+      'expert': 'Expert'
+    };
+
+    return {
+      personalitySummary: `You identify as ${roleMap[primaryRole] || 'exploring'} and are ${expMap[expLevel] || 'exploring'} the BDSM lifestyle. Your interests span ${topKinks.length} major kink categories, and you prefer ${lifestyleMap[relationshipStructure] || 'exploring'} relationship structures. You bring a thoughtful and ${dominanceScore > 60 ? 'dominant' : dominanceScore < 40 ? 'submissive' : 'balanced'} energy to your dynamics.`,
+      
+      keyTraits: [
+        {
+          trait: roleMap[primaryRole] || 'Explorer',
+          description: dominanceScore > 60 ? 'You enjoy taking control and leading partners' : dominanceScore < 40 ? 'You find fulfillment in surrender and service' : 'You enjoy both giving and receiving control'
+        },
+        {
+          trait: styles.length > 0 ? styles.map(s => s.charAt(0).toUpperCase() + s.slice(1)).join(', ') : 'Versatile',
+          description: 'Your unique style and approach to kink'
+        },
+        {
+          trait: expMap[expLevel] || 'Curious',
+          description: 'Your level of experience in the lifestyle'
+        }
+      ],
+      
+      compatibilityInsights: `Based on your responses, you'd be most compatible with partners who ${dominanceScore > 60 ? 'enjoy submitting and following your lead' : dominanceScore < 40 ? 'are confident dominants who provide structure' : 'can switch roles and match your energy'}. Your ${lifestyleMap[relationshipStructure]} approach means you value ${relationshipStructure === 'monogamous' ? 'deep exclusive connection' : 'ethical non-monogamy and open communication'}. Strong communication and respect for boundaries are essential for you.`,
+      
+      growthAreas: [
+        'Explore your interests in ' + (topKinks[0]?.name || 'various kinks'),
+        'Continue learning through community and education',
+        'Develop clear communication protocols with partners',
+        'Practice aftercare and emotional processing'
+      ],
+      
+      scores: {
+        dominanceSubmission: dominanceScore,
+        communicationStyle: 'Direct & Clear',
+        experienceLevel: expMap[expLevel] || 'Exploring',
+        opennessToExploration: 75
+      },
+      
+      archetype: roleMap[primaryRole] || 'Explorer',
+      
+      lifestyle: {
+        primary: lifestyleMap[relationshipStructure] || 'Exploring',
+        secondary: relationshipStructure === 'monogamous' ? [] : ['Open Communication', 'Ethical Non-Monogamy'],
+        description: `You prefer ${lifestyleMap[relationshipStructure]?.toLowerCase() || 'exploring different'} relationship structures with clear boundaries and communication.`
+      },
+      
+      bdsmRole: {
+        primary: roleMap[primaryRole] || 'Exploring',
+        secondary: [],
+        style: styles.map(s => s.charAt(0).toUpperCase() + s.slice(1).replace(/_/g, ' ')),
+        description: `As ${roleMap[primaryRole]?.toLowerCase() || 'someone exploring'}, you bring ${styles.length > 0 ? styles[0] : 'unique'} energy to your dynamics.`
+      },
+      
+      topKinks: topKinks.length > 0 ? topKinks : [
+        {
+          name: 'Exploring Preferences',
+          interest: 'medium',
+          description: 'You\'re still discovering what interests you most'
+        }
+      ],
+      
+      hardLimits: hardLimits.length > 0 ? hardLimits : ['None specified'],
+      
+      idealPartner: `Your ideal partner ${dominanceScore > 60 ? 'is submissive and enjoys following your lead' : dominanceScore < 40 ? 'is a confident dominant who provides structure and care' : 'can match your switch energy and enjoys both roles'}. They value ${relationshipStructure === 'monogamous' ? 'monogamy and deep connection' : 'ethical non-monogamy and open communication'}, respect boundaries, and share your interest in ${topKinks[0]?.name || 'exploring kink together'}.`
+    };
   };
 
   const restartQuiz = () => {
