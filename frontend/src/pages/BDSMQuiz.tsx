@@ -102,24 +102,47 @@ const BDSMQuiz = () => {
     setIsAnalyzing(true);
     
     try {
-      // Simulate analysis delay
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      // Get backend URL
+      const backendUrl = import.meta.env.VITE_BACKEND_URL || process.env.REACT_APP_BACKEND_URL || 'http://localhost:8001';
       
-      // Generate mock insights based on responses
-      const mockInsights = generateMockInsights(responses);
-      setInsights(mockInsights);
-
-      toast({
-        title: "Analysis Complete!",
-        description: "Your personalized insights are ready.",
+      // Call backend API for AI analysis
+      const response = await fetch(`${backendUrl}/api/analyze-quiz`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          responses: responses
+        })
       });
+
+      if (!response.ok) {
+        throw new Error(`Analysis failed: ${response.statusText}`);
+      }
+
+      const data = await response.json();
+      
+      if (data.success && data.insights) {
+        setInsights(data.insights);
+        
+        toast({
+          title: "Analysis Complete!",
+          description: "Your personalized insights are ready.",
+        });
+      } else {
+        throw new Error('Invalid response from analysis service');
+      }
     } catch (error) {
       console.error('Quiz analysis error:', error);
+      
+      // Fallback to local analysis
       toast({
-        title: "Analysis Error",
-        description: "We couldn't analyze your responses. Please try again.",
-        variant: "destructive"
+        title: "Using Local Analysis",
+        description: "AI analysis unavailable, using local processing.",
       });
+      
+      const mockInsights = generateMockInsights(responses);
+      setInsights(mockInsights);
     } finally {
       setIsAnalyzing(false);
     }
