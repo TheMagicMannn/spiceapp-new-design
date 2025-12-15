@@ -406,72 +406,185 @@ export const quizQuestions: QuizQuestionType[] = [
     scaleLabels: { min: 'Very uncomfortable', max: 'Completely comfortable' }
   },
   {
+    id: 'communication_style',
+    question: 'How do you prefer to communicate boundaries and desires?',
+    category: 'Compatibility',
+    section: 'compatibility',
+    type: 'multi',
+    options: [
+      { value: 'verbal_direct', label: 'Direct verbal communication' },
+      { value: 'written', label: 'Written agreements and contracts' },
+      { value: 'checklists', label: 'Kink checklists and spreadsheets' },
+      { value: 'gradual', label: 'Gradual discussions over time' },
+      { value: 'nonverbal', label: 'Body language and signals' },
+      { value: 'safewords', label: 'Safeword system and traffic lights' }
+    ]
+  },
+  {
     id: 'aftercare_needs',
-    question: 'How important is aftercare (cuddling, reassurance, care after play)?',
-    category: 'Emotional Connection',
+    question: 'How important is aftercare to you?',
+    category: 'Compatibility',
+    section: 'compatibility',
     type: 'scale',
-    scaleLabels: { min: 'Not important', max: 'Essential' }
+    scaleLabels: { min: 'Not needed', max: 'Absolutely essential' }
+  },
+  {
+    id: 'aftercare_type',
+    question: 'What type of aftercare do you need/enjoy providing?',
+    category: 'Compatibility',
+    section: 'compatibility',
+    type: 'multi',
+    options: [
+      { value: 'physical', label: 'Physical - Cuddling, holding, warmth' },
+      { value: 'verbal', label: 'Verbal - Reassurance, praise, processing' },
+      { value: 'care', label: 'Acts of care - Water, snacks, blankets' },
+      { value: 'alone', label: 'Alone time to decompress' },
+      { value: 'playful', label: 'Playful - Laughter, lightness' },
+      { value: 'sexual', label: 'Sexual - Continuing intimacy' }
+    ]
   },
   {
     id: 'experience_level',
-    question: 'How would you describe your experience with BDSM?',
-    category: 'Experience',
+    question: 'How would you describe your BDSM/kink experience?',
+    category: 'Compatibility',
+    section: 'compatibility',
     type: 'choice',
     options: [
-      { value: 'curious', label: 'Curious beginner' },
-      { value: 'some', label: 'Some experience' },
-      { value: 'experienced', label: 'Experienced practitioner' },
-      { value: 'veteran', label: 'Veteran with years of experience' }
+      { value: 'fantasy_only', label: 'Fantasy only - Haven\'t tried yet' },
+      { value: 'curious', label: 'Curious beginner - Want to explore' },
+      { value: 'novice', label: 'Novice - Some basic experience' },
+      { value: 'intermediate', label: 'Intermediate - Regular practitioner' },
+      { value: 'experienced', label: 'Experienced - Years in the lifestyle' },
+      { value: 'expert', label: 'Expert - Extensive experience/educator' }
+    ]
+  },
+  {
+    id: 'learning_style',
+    question: 'How do you prefer to learn about new kinks and techniques?',
+    category: 'Compatibility',
+    section: 'compatibility',
+    type: 'multi',
+    options: [
+      { value: 'research', label: 'Research online and in books' },
+      { value: 'workshops', label: 'Attend workshops and classes' },
+      { value: 'mentor', label: 'Learn from experienced mentor' },
+      { value: 'partner', label: 'Explore with trusted partner' },
+      { value: 'community', label: 'Community events and munches' },
+      { value: 'trial', label: 'Trial and error experimentation' }
     ]
   },
   {
     id: 'protocol_interest',
-    question: 'How interested are you in formal protocols and rituals?',
-    category: 'Structure',
+    question: 'Interest in formal protocols and rituals?',
+    category: 'Compatibility',
+    section: 'compatibility',
     type: 'scale',
-    scaleLabels: { min: 'Prefer casual', max: 'Love structure' }
-  },
-  {
-    id: 'public_private',
-    question: 'Do you prefer to keep your dynamic completely private or incorporate subtle elements in daily life?',
-    category: 'Lifestyle',
-    type: 'choice',
-    options: [
-      { value: 'private', label: 'Strictly private/bedroom only' },
-      { value: 'subtle', label: 'Subtle elements in daily life' },
-      { value: 'lifestyle', label: 'Full lifestyle integration' },
-      { value: 'unsure', label: 'Not sure yet' }
-    ]
+    scaleLabels: { min: 'Prefer totally casual', max: 'Love strict structure' }
   },
   {
     id: 'emotional_connection',
-    question: 'How important is emotional connection in power exchange?',
-    category: 'Emotional Connection',
-    type: 'scale',
-    scaleLabels: { min: 'Can be casual', max: 'Deep connection required' }
+    question: 'How important is emotional connection for kink/BDSM?',
+    category: 'Compatibility',
+    section: 'compatibility',
+    type: 'choice',
+    options: [
+      { value: 'unnecessary', label: 'Not necessary - Can be purely physical' },
+      { value: 'preferred', label: 'Preferred but not required' },
+      { value: 'important', label: 'Important - Enhances the experience' },
+      { value: 'essential', label: 'Essential - Must have deep connection' },
+      { value: 'romantic', label: 'Need romantic love for power exchange' }
+    ]
+  },
+  {
+    id: 'jealousy_compersion',
+    question: 'How do you feel about your partner playing with others?',
+    category: 'Compatibility',
+    section: 'compatibility',
+    type: 'choice',
+    options: [
+      { value: 'monogamous', label: 'Prefer complete monogamy' },
+      { value: 'controlled_jealousy', label: 'Jealous but working on it' },
+      { value: 'neutral', label: 'Neutral - Okay with guidelines' },
+      { value: 'compersion', label: 'Feel compersion (joy in their joy)' },
+      { value: 'encourage', label: 'Actively encourage it' },
+      { value: 'required', label: 'Prefer/require non-monogamy' }
+    ]
+  },
+  {
+    id: 'gender_preference',
+    question: 'Gender preference for BDSM/kink partners?',
+    category: 'Compatibility',
+    section: 'compatibility',
+    type: 'choice',
+    options: [
+      { value: 'men', label: 'Men only' },
+      { value: 'women', label: 'Women only' },
+      { value: 'nonbinary', label: 'Non-binary/genderqueer only' },
+      { value: 'feminine', label: 'Feminine-presenting people' },
+      { value: 'masculine', label: 'Masculine-presenting people' },
+      { value: 'any', label: 'Any gender/no preference' },
+      { value: 'specific', label: 'Specific genders for specific dynamics' }
+    ]
   },
   {
     id: 'exploration_pace',
     question: 'What pace of exploration feels right for you?',
-    category: 'Growth',
+    category: 'Compatibility',
+    section: 'compatibility',
     type: 'choice',
     options: [
-      { value: 'slow', label: 'Slow and steady' },
-      { value: 'moderate', label: 'Moderate - trying new things regularly' },
-      { value: 'adventurous', label: 'Adventurous - eager to explore' },
-      { value: 'settled', label: 'I know what I like' }
+      { value: 'very_slow', label: 'Very slow - Take months building trust' },
+      { value: 'slow', label: 'Slow and steady - New thing every few weeks' },
+      { value: 'moderate', label: 'Moderate - Regularly trying new things' },
+      { value: 'adventurous', label: 'Adventurous - Eager to explore quickly' },
+      { value: 'settled', label: 'Settled - I know what I like' }
     ]
   },
   {
-    id: 'partner_compatibility',
-    question: 'What\'s most important to you in a BDSM-compatible partner?',
+    id: 'risk_tolerance',
+    question: 'Your tolerance for risk in BDSM/kink activities?',
     category: 'Compatibility',
+    section: 'compatibility',
     type: 'choice',
     options: [
-      { value: 'trust', label: 'Trust and emotional safety' },
-      { value: 'experience', label: 'Experience and skill' },
-      { value: 'openness', label: 'Openness to exploration' },
-      { value: 'communication', label: 'Strong communication' }
+      { value: 'risk_aware', label: 'Very risk-aware - Careful and cautious' },
+      { value: 'calculated', label: 'Calculated risks with safety measures' },
+      { value: 'moderate', label: 'Moderate - Balance safety and intensity' },
+      { value: 'edge', label: 'Enjoy edge play - Calculated higher risk' },
+      { value: 'extreme', label: 'Extreme - Push boundaries significantly' }
+    ]
+  },
+  {
+    id: 'deal_breakers',
+    question: 'Which would be absolute deal-breakers for you?',
+    category: 'Compatibility',
+    section: 'compatibility',
+    type: 'multi',
+    options: [
+      { value: 'dishonesty', label: 'Dishonesty or hiding things' },
+      { value: 'no_consent', label: 'Consent violations' },
+      { value: 'unsafe', label: 'Unsafe practices' },
+      { value: 'drugs', label: 'Drug/alcohol use during play' },
+      { value: 'no_aftercare', label: 'Lack of aftercare' },
+      { value: 'public_exposure', label: 'Unwanted public exposure of identity' },
+      { value: 'permanence', label: 'Permanent marks/body modification' },
+      { value: 'none', label: 'I\'m very flexible' }
+    ]
+  },
+  {
+    id: 'ideal_dynamic',
+    question: 'Describe your ideal BDSM dynamic:',
+    category: 'Compatibility',
+    section: 'compatibility',
+    type: 'choice',
+    options: [
+      { value: 'casual_scenes', label: 'Casual scenes with various partners' },
+      { value: 'steady_play_partner', label: 'Steady play partner, no romance' },
+      { value: 'romantic_kink', label: 'Romantic relationship with kink' },
+      { value: 'primary_secondary', label: 'Primary with secondary play partners' },
+      { value: 'poly_dynamic', label: 'Polyamorous kink family' },
+      { value: 'master_slave', label: 'Master/slave or Owner/property' },
+      { value: 'exploring', label: 'Still figuring it out' }
     ]
   }
 ];
