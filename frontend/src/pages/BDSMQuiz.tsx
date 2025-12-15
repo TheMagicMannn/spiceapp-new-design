@@ -202,8 +202,10 @@ const BDSMQuiz = () => {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
+      <Header />
+      <Breadcrumbs />
       {/* Header with progress */}
-      <div className="sticky top-0 bg-background/95 backdrop-blur-sm border-b border-border/50 p-4 z-10">
+      <div className="sticky top-16 bg-background/95 backdrop-blur-sm border-b border-border/50 p-4 z-10 mt-28">
         <div className="max-w-2xl mx-auto">
           <div className="flex items-center justify-between mb-2">
             <span className="text-sm text-muted-foreground">
