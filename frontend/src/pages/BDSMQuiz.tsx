@@ -10,6 +10,7 @@ import QuizResults from '@/components/quiz/QuizResults';
 import QuizQuestion from '@/components/quiz/QuizQuestion';
 import { quizQuestions } from '@/data/quizQuestions';
 import Breadcrumbs from '@/components/Breadcrumbs';
+import Header from '@/components/Header';
 
 export interface QuizResponse {
   questionId: string;
