@@ -261,64 +261,103 @@ const BDSMQuiz = () => {
       'Your preferred level of power exchange varies.'
     }`;
     
-    // Get kink interests
+    // =====================================================
+    // KINK INTEREST ANALYSIS
+    // =====================================================
     const topKinks: QuizInsights['topKinks'] = [];
     
-    const bondageInterest = getAnswer('bondage_interest') as number;
-    if (bondageInterest && bondageInterest > 50) {
+    // Analyze all kink interest levels
+    const kinkScores = [
+      { id: 'bondage_interest', name: 'Bondage & Restraint', types: getAnswer('bondage_types') as string[] || [] },
+      { id: 'impact_play_interest', name: 'Impact Play', types: getAnswer('impact_types') as string[] || [] },
+      { id: 'sensory_play_interest', name: 'Sensory Play', types: getAnswer('sensory_types') as string[] || [] },
+      { id: 'humiliation_interest', name: 'Humiliation & Degradation', types: getAnswer('humiliation_types') as string[] || [] },
+      { id: 'orgasm_control', name: 'Orgasm Control & Denial', types: [] },
+      { id: 'anal_play', name: 'Anal Play', types: [] }
+    ];
+
+    kinkScores.forEach(kink => {
+      const interest = getAnswer(kink.id) as number;
+      if (interest && interest > 40) {
+        const specificTypes = kink.types.filter(t => t !== 'none' && t !== 'not_interested').length;
+        const detailDesc = specificTypes > 0 ? ` including ${specificTypes} specific interests` : '';
+        
+        topKinks.push({
+          name: kink.name,
+          interest: interest > 75 ? 'high' : interest > 60 ? 'medium' : 'low',
+          description: `Interest level: ${interest}%${detailDesc}`
+        });
+      }
+    });
+
+    // Roleplay interests
+    const roleplayScenarios = (getAnswer('roleplay_scenarios') as string[] || []).filter(s => s !== 'none');
+    if (roleplayScenarios.length > 0) {
       topKinks.push({
-        name: 'Bondage & Restraint',
-        interest: bondageInterest > 75 ? 'high' : 'medium',
-        description: 'Rope, cuffs, and various restraint techniques'
+        name: 'Roleplay & Fantasy',
+        interest: roleplayScenarios.length > 3 ? 'high' : 'medium',
+        description: `Interested in ${roleplayScenarios.length} scenario types`
       });
     }
 
-    const impactInterest = getAnswer('impact_play_interest') as number;
-    if (impactInterest && impactInterest > 50) {
+    // Chastity interest
+    const chastity = getAnswer('chastity') as string;
+    if (chastity && chastity !== 'not_interested') {
       topKinks.push({
-        name: 'Impact Play',
-        interest: impactInterest > 75 ? 'high' : 'medium',
-        description: 'Spanking, flogging, and sensation play'
+        name: 'Chastity & Long-term Denial',
+        interest: chastity === 'permanent' || chastity === 'long_term' ? 'high' : 'medium',
+        description: `Interested in ${chastity.replace(/_/g, ' ')} chastity`
       });
     }
 
-    const sensoryInterest = getAnswer('sensory_play_interest') as number;
-    if (sensoryInterest && sensoryInterest > 50) {
+    // Exhibitionism
+    const exhibitionism = getAnswer('exhibitionism') as string;
+    if (exhibitionism && exhibitionism !== 'private_only') {
       topKinks.push({
-        name: 'Sensory Play',
-        interest: sensoryInterest > 75 ? 'high' : 'medium',
-        description: 'Temperature, texture, and sensory exploration'
+        name: 'Exhibitionism/Voyeurism',
+        interest: exhibitionism === 'public' ? 'high' : 'medium',
+        description: `Preferences: ${exhibitionism.replace(/_/g, ' ')}`
       });
     }
 
-    const orgasmControl = getAnswer('orgasm_control') as number;
-    if (orgasmControl && orgasmControl > 50) {
-      topKinks.push({
-        name: 'Orgasm Control',
-        interest: orgasmControl > 75 ? 'high' : 'medium',
-        description: 'Denial, edging, and control of pleasure'
-      });
-    }
-
-    const humiliationInterest = getAnswer('humiliation_interest') as number;
-    if (humiliationInterest && humiliationInterest > 50) {
-      topKinks.push({
-        name: 'Humiliation & Degradation',
-        interest: humiliationInterest > 75 ? 'high' : 'medium',
-        description: 'Verbal and psychological power play'
-      });
-    }
-
-    // Get hard limits
-    const hardLimits: string[] = [];
-    if (humiliationInterest && humiliationInterest < 25) hardLimits.push('Humiliation');
+    // Edge play
     const edgePlay = getAnswer('edge_play_interest') as string;
-    if (edgePlay === 'hard_limit') hardLimits.push('Edge Play');
+    if (edgePlay === 'experienced' || edgePlay === 'seek') {
+      topKinks.push({
+        name: 'Edge Play',
+        interest: edgePlay === 'seek' ? 'high' : 'medium',
+        description: 'Breath play, knife play, and high-risk activities'
+      });
+    }
+
+    // Sort by interest level
+    topKinks.sort((a, b) => {
+      const order = { high: 3, medium: 2, low: 1 };
+      return order[b.interest] - order[a.interest];
+    });
+
+    // =====================================================
+    // HARD LIMITS ANALYSIS
+    // =====================================================
+    const hardLimits: string[] = [];
+    
+    // From low interest scores
+    if ((getAnswer('bondage_interest') as number || 50) < 20) hardLimits.push('Bondage/Restraint');
+    if ((getAnswer('impact_play_interest') as number || 50) < 20) hardLimits.push('Impact Play');
+    if ((getAnswer('humiliation_interest') as number || 50) < 20) hardLimits.push('Humiliation');
+    if ((getAnswer('anal_play') as number || 50) < 20) hardLimits.push('Anal Play');
+    
+    // From explicit rejections
+    if (edgePlay === 'hard_limit') hardLimits.push('Edge Play (Breath/Blood/Knife)');
+    
     const fluidsComfort = getAnswer('fluids') as string;
-    if (fluidsComfort === 'hard_limit') hardLimits.push('Bodily Fluids');
-    const dealBreakers = getAnswer('deal_breakers') as string[] || [];
+    if (fluidsComfort === 'hard_limit') hardLimits.push('Bodily Fluids Beyond Natural');
+    
+    // From deal breakers
+    const dealBreakers = (getAnswer('deal_breakers') as string[] || []).filter(db => db !== 'none');
     dealBreakers.forEach(db => {
-      if (db !== 'none') hardLimits.push(db.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase()));
+      const label = db.replace(/_/g, ' ').split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+      if (!hardLimits.includes(label)) hardLimits.push(label);
     });
 
     // Experience level
