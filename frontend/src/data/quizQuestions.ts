@@ -152,11 +152,215 @@ export const quizQuestions: QuizQuestionType[] = [
     ]
   },
   {
-    id: 'control_comfort',
-    question: 'How comfortable are you with giving up control to a trusted partner?',
-    category: 'Trust & Surrender',
+    id: 'power_exchange_level',
+    question: 'What level of power exchange interests you?',
+    category: 'Power Dynamics',
+    section: 'dynamics',
+    type: 'choice',
+    options: [
+      { value: 'scene_only', label: 'Scene only - Power exchange during play sessions' },
+      { value: 'bedroom', label: 'Bedroom - Extended to all intimate time' },
+      { value: 'partial_247', label: 'Partial 24/7 - Some aspects outside bedroom' },
+      { value: 'full_247', label: 'Full 24/7 - Constant power exchange' },
+      { value: 'total_authority', label: 'Total authority transfer (Master/slave dynamic)' },
+      { value: 'equal', label: 'No power exchange - Equal partners who enjoy kink' }
+    ]
+  },
+
+  // ============================================
+  // SECTION 3: SPECIFIC KINKS & ACTIVITIES
+  // ============================================
+  {
+    id: 'bondage_interest',
+    question: 'How interested are you in bondage and restraint?',
+    category: 'Kinks',
+    section: 'kinks',
     type: 'scale',
-    scaleLabels: { min: 'Very uncomfortable', max: 'Very comfortable' }
+    scaleLabels: { min: 'Not interested', max: 'Major interest' }
+  },
+  {
+    id: 'bondage_types',
+    question: 'Which types of bondage interest you?',
+    category: 'Kinks',
+    section: 'kinks',
+    type: 'multi',
+    options: [
+      { value: 'rope', label: 'Rope bondage/Shibari' },
+      { value: 'cuffs', label: 'Cuffs and restraints' },
+      { value: 'tape', label: 'Tape bondage' },
+      { value: 'furniture', label: 'Bondage furniture' },
+      { value: 'mummification', label: 'Mummification' },
+      { value: 'predicament', label: 'Predicament bondage' },
+      { value: 'self', label: 'Self-bondage' },
+      { value: 'none', label: 'None interest me' }
+    ]
+  },
+  {
+    id: 'impact_play_interest',
+    question: 'Rate your interest in impact play (spanking, flogging, etc.)',
+    category: 'Kinks',
+    section: 'kinks',
+    type: 'scale',
+    scaleLabels: { min: 'Not interested', max: 'Major interest' }
+  },
+  {
+    id: 'impact_types',
+    question: 'Which impact play activities interest you?',
+    category: 'Kinks',
+    section: 'kinks',
+    type: 'multi',
+    options: [
+      { value: 'spanking_hand', label: 'Spanking (hand)' },
+      { value: 'paddling', label: 'Paddling' },
+      { value: 'flogging', label: 'Flogging/Whips' },
+      { value: 'caning', label: 'Caning' },
+      { value: 'slapping', label: 'Slapping (face, body)' },
+      { value: 'punching', label: 'Punching/Heavy impact' },
+      { value: 'crops', label: 'Crops and riding crops' },
+      { value: 'none', label: 'None interest me' }
+    ]
+  },
+  {
+    id: 'roleplay_scenarios',
+    question: 'Which roleplay scenarios appeal to you?',
+    category: 'Kinks',
+    section: 'kinks',
+    type: 'multi',
+    options: [
+      { value: 'age_play', label: 'Age play (Daddy/Mommy Dom, Little)' },
+      { value: 'pet_play', label: 'Pet play (Puppy, Kitten, Pony)' },
+      { value: 'authority', label: 'Authority figures (Teacher, Boss, Officer)' },
+      { value: 'capture', label: 'Capture/Kidnapping fantasy' },
+      { value: 'medical', label: 'Medical play' },
+      { value: 'religious', label: 'Religious authority scenarios' },
+      { value: 'historical', label: 'Historical roles (Victorian, Medieval)' },
+      { value: 'supernatural', label: 'Supernatural (Vampire, Werewolf)' },
+      { value: 'none', label: 'Not interested in roleplay' }
+    ]
+  },
+  {
+    id: 'humiliation_interest',
+    question: 'How interested are you in humiliation play?',
+    category: 'Kinks',
+    section: 'kinks',
+    type: 'scale',
+    scaleLabels: { min: 'Hard limit', max: 'Major turn-on' }
+  },
+  {
+    id: 'humiliation_types',
+    question: 'If interested in humiliation, which types?',
+    category: 'Kinks',
+    section: 'kinks',
+    type: 'multi',
+    options: [
+      { value: 'verbal', label: 'Verbal humiliation/Name calling' },
+      { value: 'public', label: 'Public humiliation' },
+      { value: 'body_worship', label: 'Body worship/Degradation' },
+      { value: 'objectification', label: 'Objectification (furniture, toy)' },
+      { value: 'sexual', label: 'Sexual humiliation' },
+      { value: 'forced', label: 'Forced activities' },
+      { value: 'exposure', label: 'Exposure/Embarrassment' },
+      { value: 'not_interested', label: 'Not interested' }
+    ]
+  },
+  {
+    id: 'sensory_play_interest',
+    question: 'Rate your interest in sensory play',
+    category: 'Kinks',
+    section: 'kinks',
+    type: 'scale',
+    scaleLabels: { min: 'Not interested', max: 'Major interest' }
+  },
+  {
+    id: 'sensory_types',
+    question: 'Which sensory experiences appeal to you?',
+    category: 'Kinks',
+    section: 'kinks',
+    type: 'multi',
+    options: [
+      { value: 'blindfolds', label: 'Blindfolds/Sensory deprivation' },
+      { value: 'temperature', label: 'Temperature play (ice, wax)' },
+      { value: 'texture', label: 'Texture play (feathers, silk, rough)' },
+      { value: 'electro', label: 'Electrostimulation' },
+      { value: 'wax', label: 'Wax play' },
+      { value: 'knife', label: 'Knife play (sensation, not cutting)' },
+      { value: 'fire', label: 'Fire play' },
+      { value: 'none', label: 'None interest me' }
+    ]
+  },
+  {
+    id: 'edge_play_interest',
+    question: 'Interest in edge play (breath play, knife play, blood play)?',
+    category: 'Kinks',
+    section: 'kinks',
+    type: 'choice',
+    options: [
+      { value: 'hard_limit', label: 'Hard limit - Absolutely not' },
+      { value: 'nervous', label: 'Curious but nervous' },
+      { value: 'interested', label: 'Interested with experienced partner' },
+      { value: 'experienced', label: 'Experienced and enjoy' },
+      { value: 'seek', label: 'Actively seek edge play' }
+    ]
+  },
+  {
+    id: 'anal_play',
+    question: 'Interest level in anal play and training?',
+    category: 'Kinks',
+    section: 'kinks',
+    type: 'scale',
+    scaleLabels: { min: 'Hard limit', max: 'Major interest' }
+  },
+  {
+    id: 'orgasm_control',
+    question: 'Interest in orgasm control/denial?',
+    category: 'Kinks',
+    section: 'kinks',
+    type: 'scale',
+    scaleLabels: { min: 'Not interested', max: 'Major interest' }
+  },
+  {
+    id: 'chastity',
+    question: 'Interest in chastity devices and long-term denial?',
+    category: 'Kinks',
+    section: 'kinks',
+    type: 'choice',
+    options: [
+      { value: 'not_interested', label: 'Not interested' },
+      { value: 'curious', label: 'Curious about trying' },
+      { value: 'short_term', label: 'Interested in short-term (hours/days)' },
+      { value: 'long_term', label: 'Interested in long-term (weeks/months)' },
+      { value: 'permanent', label: 'Interested in permanent/long-term lifestyle' }
+    ]
+  },
+  {
+    id: 'exhibitionism',
+    question: 'Interest in exhibitionism/voyeurism?',
+    category: 'Kinks',
+    section: 'kinks',
+    type: 'choice',
+    options: [
+      { value: 'private_only', label: 'Prefer complete privacy' },
+      { value: 'photography', label: 'Enjoy intimate photography' },
+      { value: 'online', label: 'Interested in online sharing' },
+      { value: 'watched', label: 'Being watched by others in person' },
+      { value: 'public', label: 'Public/semi-public play' },
+      { value: 'watching', label: 'Prefer watching others' }
+    ]
+  },
+  {
+    id: 'fluids',
+    question: 'Comfort level with bodily fluids in play?',
+    category: 'Kinks',
+    section: 'kinks',
+    type: 'choice',
+    options: [
+      { value: 'standard_only', label: 'Standard fluids only (natural intimacy)' },
+      { value: 'saliva', label: 'Comfortable with saliva/spit play' },
+      { value: 'squirt', label: 'Interested in squirting/ejaculation focus' },
+      { value: 'watersports', label: 'Interested in watersports/golden showers' },
+      { value: 'all', label: 'Open to various fluid play' },
+      { value: 'hard_limit', label: 'Hard limit beyond natural intimacy' }
+    ]
   },
   {
     id: 'communication_style',
