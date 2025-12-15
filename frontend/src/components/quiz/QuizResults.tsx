@@ -262,12 +262,30 @@ const QuizResults: React.FC<QuizResultsProps> = ({ insights, onRestart }) => {
           </div>
         </motion.div>
 
+        {/* Ideal Partner */}
+        {insights.idealPartner && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.55 }}
+            className="bg-gradient-to-br from-primary/10 to-pink-500/10 border border-primary/20 rounded-2xl p-6 mb-6"
+          >
+            <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
+              <Heart className="w-5 h-5 text-primary" />
+              Your Ideal Partner
+            </h2>
+            <p className="text-muted-foreground leading-relaxed">
+              {insights.idealPartner}
+            </p>
+          </motion.div>
+        )}
+
         {/* Compatibility Insights */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4 }}
-          className="bg-gradient-to-br from-primary/10 to-pink-500/10 border border-primary/20 rounded-2xl p-6 mb-6"
+          transition={{ delay: 0.6 }}
+          className="bg-card/50 border border-border/50 rounded-2xl p-6 mb-6"
         >
           <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
             <TrendingUp className="w-5 h-5 text-primary" />
@@ -282,10 +300,10 @@ const QuizResults: React.FC<QuizResultsProps> = ({ insights, onRestart }) => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
+          transition={{ delay: 0.65 }}
           className="bg-card/50 border border-border/50 rounded-2xl p-6 mb-8"
         >
-          <h2 className="text-xl font-bold mb-4">Areas for Exploration</h2>
+          <h2 className="text-xl font-bold mb-4">Areas for Exploration & Growth</h2>
           <ul className="space-y-2">
             {insights.growthAreas.map((area, index) => (
               <li key={index} className="flex items-start gap-3">
