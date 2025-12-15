@@ -566,7 +566,7 @@ const BDSMQuiz = () => {
   };
 
   if (insights) {
-    return <QuizResults insights={insights} onRestart={restartQuiz} />;
+    return <QuizResults insights={insights} onRestart={restartQuiz} responses={responses} />;
   }
 
   if (!quizStarted) {
