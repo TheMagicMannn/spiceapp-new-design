@@ -55,6 +55,137 @@ async def get_status_checks():
     status_checks = await db.status_checks.find().to_list(1000)
     return [StatusCheck(**status_check) for status_check in status_checks]
 
+
+# BDSM Quiz Models
+class QuizResponse(BaseModel):
+    questionId: str
+    answer: Any  # Can be string, number, or list
+
+class QuizAnalysisRequest(BaseModel):
+    responses: List[QuizResponse]
+
+class QuizInsights(BaseModel):
+    personalitySummary: str
+    keyTraits: List[Dict[str, str]]
+    compatibilityInsights: str
+    growthAreas: List[str]
+    scores: Dict[str, Any]
+    archetype: str
+    lifestyle: Dict[str, Any]
+    bdsmRole: Dict[str, Any]
+    topKinks: List[Dict[str, Any]]
+    hardLimits: List[str]
+    idealPartner: str
+
+# AI-Powered Quiz Analysis Endpoint
+@api_router.post("/analyze-quiz")
+async def analyze_quiz(request: QuizAnalysisRequest):
+    try:
+        # Get Emergent LLM key
+        api_key = os.environ.get('EMERGENT_LLM_KEY')
+        if not api_key:
+            raise HTTPException(status_code=500, detail="API key not configured")
+        
+        # Format responses for AI analysis
+        formatted_responses = []
+        for resp in request.responses:
+            formatted_responses.append({
+                "question_id": resp.questionId,
+                "answer": resp.answer
+            })
+        
+        # Create comprehensive prompt for AI analysis
+        analysis_prompt = f"""You are an expert BDSM/kink relationship psychologist and compatibility analyst. Analyze the following quiz responses and provide a comprehensive personality profile.
+
+Quiz Responses:
+{json.dumps(formatted_responses, indent=2)}
+
+Based on these responses, provide a detailed analysis in JSON format with the following structure:
+
+{{
+  "personalitySummary": "2-3 paragraph comprehensive summary of the person's BDSM identity, preferences, and approach",
+  "keyTraits": [
+    {{"trait": "Trait Name", "description": "Detailed description"}},
+    // 3-4 key traits
+  ],
+  "compatibilityInsights": "Detailed paragraph about ideal partner compatibility",
+  "growthAreas": ["Area 1", "Area 2", "Area 3", "Area 4"],
+  "scores": {{
+    "dominanceSubmission": 0-100,
+    "communicationStyle": "Direct & Clear",
+    "experienceLevel": "Beginner/Intermediate/Experienced",
+    "opennessToExploration": 0-100
+  }},
+  "archetype": "Primary Role - Style",
+  "lifestyle": {{
+    "primary": "Lifestyle Type",
+    "secondary": ["Secondary trait 1", "Secondary trait 2"],
+    "description": "Detailed lifestyle description"
+  }},
+  "bdsmRole": {{
+    "primary": "Primary Role",
+    "secondary": ["Secondary role if applicable"],
+    "style": ["Style 1", "Style 2"],
+    "description": "Detailed role description"
+  }},
+  "topKinks": [
+    {{
+      "name": "Kink Name",
+      "interest": "high/medium/low",
+      "description": "Why this interests them"
+    }},
+    // Top 5-8 kinks
+  ],
+  "hardLimits": ["Limit 1", "Limit 2"],
+  "idealPartner": "Detailed 2-3 sentence description of ideal partner"
+}}
+
+Be specific, insightful, and non-judgmental. Focus on understanding their unique preferences and providing actionable compatibility insights."""
+
+        # Initialize LLM chat
+        chat = LlmChat(
+            api_key=api_key,
+            session_id=f"quiz-analysis-{uuid.uuid4()}",
+            system_message="You are an expert BDSM/kink relationship psychologist. Provide detailed, non-judgmental, accurate analysis in valid JSON format only. No markdown, no code blocks, just pure JSON."
+        ).with_model("openai", "gpt-5.1")
+        
+        # Send message and get analysis
+        user_message = UserMessage(text=analysis_prompt)
+        response_text = await chat.send_message(user_message)
+        
+        # Parse JSON response
+        try:
+            # Clean response (remove markdown if present)
+            cleaned_response = response_text.strip()
+            if cleaned_response.startswith("```"):
+                # Remove markdown code blocks
+                lines = cleaned_response.split('\n')
+                cleaned_response = '\n'.join(lines[1:-1]) if len(lines) > 2 else cleaned_response
+                cleaned_response = cleaned_response.replace("```json", "").replace("```", "").strip()
+            
+            insights = json.loads(cleaned_response)
+            
+            # Validate the structure
+            required_keys = ["personalitySummary", "keyTraits", "compatibilityInsights", 
+                           "growthAreas", "scores", "archetype", "lifestyle", "bdsmRole", 
+                           "topKinks", "hardLimits", "idealPartner"]
+            
+            for key in required_keys:
+                if key not in insights:
+                    logger.error(f"Missing key in AI response: {key}")
+                    raise ValueError(f"Invalid response structure: missing {key}")
+            
+            return {"success": True, "insights": insights}
+            
+        except json.JSONDecodeError as e:
+            logger.error(f"JSON parsing error: {e}")
+            logger.error(f"Response text: {response_text}")
+            raise HTTPException(status_code=500, detail=f"Failed to parse AI response: {str(e)}")
+        
+    except Exception as e:
+        logger.error(f"Quiz analysis error: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Analysis failed: {str(e)}")
+
 # Include the router in the main app
 app.include_router(api_router)
 
