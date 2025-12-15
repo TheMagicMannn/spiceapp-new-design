@@ -14,13 +14,92 @@ interface QuizResultsProps {
   responses?: any[];
 }
 
-const QuizResults: React.FC<QuizResultsProps> = ({ insights, onRestart }) => {
+const QuizResults: React.FC<QuizResultsProps> = ({ insights, onRestart, responses }) => {
+  const { toast } = useToast();
+  const [isSharing, setIsSharing] = useState(false);
+  const [shareUrl, setShareUrl] = useState<string | null>(null);
+  const [copied, setCopied] = useState(false);
+
   const getDominanceLabel = (score: number) => {
     if (score < 25) return 'Submissive';
     if (score < 45) return 'Sub-leaning Switch';
     if (score < 55) return 'Switch';
     if (score < 75) return 'Dom-leaning Switch';
     return 'Dominant';
+  };
+
+  const handleShare = async () => {
+    setIsSharing(true);
+    
+    try {
+      // Check if Web Share API is available
+      if (navigator.share) {
+        await navigator.share({
+          title: 'My BDSM Compatibility Results',
+          text: `I just completed the SPICE BDSM Compatibility Quiz! My role: ${insights.archetype}`,
+          url: window.location.href,
+        });
+        
+        toast({
+          title: "Shared!",
+          description: "Results shared successfully",
+        });
+      } else {
+        // Fallback: Save to database and generate shareable link
+        const { data, error } = await supabase.functions.invoke('save-quiz-result', {
+          body: {
+            responses: responses || [],
+            insights,
+            isPublic: true
+          }
+        });
+
+        if (error) throw error;
+
+        const url = data.shareUrl || window.location.href;
+        setShareUrl(url);
+
+        // Copy to clipboard
+        await navigator.clipboard.writeText(url);
+        
+        toast({
+          title: "Link Copied!",
+          description: "Shareable link copied to clipboard",
+        });
+      }
+    } catch (error) {
+      console.error('Share error:', error);
+      
+      // Ultimate fallback: copy current URL
+      try {
+        await navigator.clipboard.writeText(window.location.href);
+        toast({
+          title: "Link Copied!",
+          description: "Results link copied to clipboard",
+        });
+      } catch (clipError) {
+        toast({
+          title: "Share Failed",
+          description: "Unable to share results. Try copying the URL manually.",
+          variant: "destructive"
+        });
+      }
+    } finally {
+      setIsSharing(false);
+    }
+  };
+
+  const copyShareLink = async () => {
+    if (shareUrl) {
+      await navigator.clipboard.writeText(shareUrl);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+      
+      toast({
+        title: "Copied!",
+        description: "Share link copied to clipboard",
+      });
+    }
   };
 
   return (
