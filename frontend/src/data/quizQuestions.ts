@@ -5,9 +5,82 @@ export interface QuizQuestionType {
   type: 'scale' | 'choice' | 'multi';
   options?: { value: string; label: string }[];
   scaleLabels?: { min: string; max: string };
+  section?: 'lifestyle' | 'role' | 'kinks' | 'dynamics' | 'compatibility';
 }
 
 export const quizQuestions: QuizQuestionType[] = [
+  // ============================================
+  // SECTION 1: LIFESTYLE & RELATIONSHIP STRUCTURE
+  // ============================================
+  {
+    id: 'relationship_structure',
+    question: 'What relationship structure appeals to you most?',
+    category: 'Lifestyle',
+    section: 'lifestyle',
+    type: 'choice',
+    options: [
+      { value: 'monogamous', label: 'Monogamous - Exclusive partnership' },
+      { value: 'open', label: 'Open relationship - Sexual freedom with emotional commitment' },
+      { value: 'polyamorous', label: 'Polyamorous - Multiple romantic relationships' },
+      { value: 'swinger', label: 'Swinging - Recreational sex with other couples' },
+      { value: 'relationship_anarchy', label: 'Relationship Anarchy - Fluid, non-hierarchical' },
+      { value: 'exploring', label: 'Still exploring what works for me' }
+    ]
+  },
+  {
+    id: 'non_monogamy_interest',
+    question: 'How comfortable are you with ethical non-monogamy (ENM)?',
+    category: 'Lifestyle',
+    section: 'lifestyle',
+    type: 'scale',
+    scaleLabels: { min: 'Prefer monogamy', max: 'Enthusiastic about ENM' }
+  },
+  {
+    id: 'group_play',
+    question: 'What\'s your interest level in group activities (threesomes, orgies, play parties)?',
+    category: 'Lifestyle',
+    section: 'lifestyle',
+    type: 'choice',
+    options: [
+      { value: 'not_interested', label: 'Not interested' },
+      { value: 'curious', label: 'Curious, might try' },
+      { value: 'occasional', label: 'Enjoy occasionally' },
+      { value: 'regular', label: 'Regular part of my lifestyle' },
+      { value: 'prefer', label: 'Strongly prefer group dynamics' }
+    ]
+  },
+  {
+    id: 'kink_community',
+    question: 'How involved do you want to be in the kink/BDSM community?',
+    category: 'Lifestyle',
+    section: 'lifestyle',
+    type: 'choice',
+    options: [
+      { value: 'private', label: 'Keep it completely private' },
+      { value: 'online', label: 'Online communities only' },
+      { value: 'occasional', label: 'Attend events occasionally' },
+      { value: 'active', label: 'Active community member' },
+      { value: 'organizer', label: 'Want to organize/lead in community' }
+    ]
+  },
+  {
+    id: 'lifestyle_integration',
+    question: 'How much do you want BDSM integrated into your daily life?',
+    category: 'Lifestyle',
+    section: 'lifestyle',
+    type: 'choice',
+    options: [
+      { value: 'bedroom_only', label: 'Bedroom only - completely separate from daily life' },
+      { value: 'occasional', label: 'Occasional play sessions' },
+      { value: 'subtle_247', label: 'Subtle 24/7 with protocols' },
+      { value: 'full_247', label: 'Full 24/7 power exchange' },
+      { value: 'flexible', label: 'Flexible - varies by mood/situation' }
+    ]
+  },
+
+  // ============================================
+  // SECTION 2: BDSM ROLES & POWER DYNAMICS
+  // ============================================
   {
     id: 'dynamic_preference',
     question: 'In intimate situations, which role feels most natural to you?',
