@@ -29,6 +29,24 @@ export interface QuizInsights {
     opennessToExploration: number;
   };
   archetype: string;
+  lifestyle: {
+    primary: string;
+    secondary: string[];
+    description: string;
+  };
+  bdsmRole: {
+    primary: string;
+    secondary: string[];
+    style: string[];
+    description: string;
+  };
+  topKinks: {
+    name: string;
+    interest: 'high' | 'medium' | 'low';
+    description: string;
+  }[];
+  hardLimits: string[];
+  idealPartner: string;
 }
 
 const BDSMQuiz = () => {
