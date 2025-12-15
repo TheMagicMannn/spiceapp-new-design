@@ -113,7 +113,7 @@ const SpiceApp = () => {
       <ParticlesBackground />
       <Header />
       <Breadcrumbs />
-      <main className="relative z-10 pt-4 pb-12">
+      <main className="relative z-10 pt-32 pb-12">
         <div className="container mx-auto px-4">
           {/* Hero Section */}
           <motion.div
