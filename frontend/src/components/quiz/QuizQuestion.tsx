@@ -79,6 +79,60 @@ const QuizQuestion: React.FC<QuizQuestionProps> = ({
           </div>
         </div>
       )}
+
+      {question.type === 'multi' && question.options && (
+        <div className="space-y-4 max-w-xl mx-auto">
+          <p className="text-sm text-muted-foreground mb-4">
+            Select all that apply
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {question.options.map((option) => {
+              const isSelected = Array.isArray(currentAnswer) && currentAnswer.includes(option.value);
+              
+              return (
+                <motion.button
+                  key={option.value}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  onClick={() => {
+                    const current = Array.isArray(currentAnswer) ? currentAnswer : [];
+                    if (isSelected) {
+                      onAnswer(current.filter(v => v !== option.value));
+                    } else {
+                      onAnswer([...current, option.value]);
+                    }
+                  }}
+                  className={cn(
+                    "p-4 rounded-xl border-2 transition-all text-left relative",
+                    isSelected
+                      ? "border-primary bg-primary/10 shadow-lg shadow-primary/20"
+                      : "border-border/50 bg-card/50 hover:border-primary/50 hover:bg-card"
+                  )}
+                >
+                  <div className="flex items-start gap-3">
+                    <div className={cn(
+                      "w-5 h-5 rounded border-2 flex items-center justify-center flex-shrink-0 mt-0.5",
+                      isSelected ? "border-primary bg-primary" : "border-muted-foreground"
+                    )}>
+                      {isSelected && (
+                        <svg className="w-3 h-3 text-primary-foreground" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                        </svg>
+                      )}
+                    </div>
+                    <span className={cn(
+                      "font-medium",
+                      isSelected ? "text-primary" : "text-foreground"
+                    )}>
+                      {option.label}
+                    </span>
+                  </div>
+                </motion.button>
+              );
+            })}
+          </div>
+        </div>
+      )}
     </motion.div>
   );
 };
