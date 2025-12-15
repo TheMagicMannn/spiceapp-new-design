@@ -413,10 +413,36 @@ const QuizResults: React.FC<QuizResultsProps> = ({ insights, onRestart, response
                 <Heart className="ml-2 w-4 h-4" />
               </Button>
             </Link>
-            <Button variant="outline" size="lg">
+            <Button 
+              variant="outline" 
+              size="lg"
+              onClick={handleShare}
+              disabled={isSharing}
+            >
               <Share2 className="mr-2 w-4 h-4" />
-              Share Results
+              {isSharing ? 'Sharing...' : 'Share Results'}
             </Button>
+            
+            {shareUrl && (
+              <div className="mt-4 p-4 bg-muted rounded-lg">
+                <p className="text-sm text-muted-foreground mb-2">Shareable Link:</p>
+                <div className="flex items-center gap-2">
+                  <input
+                    type="text"
+                    value={shareUrl}
+                    readOnly
+                    className="flex-1 px-3 py-2 bg-background border border-border rounded text-sm"
+                  />
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    onClick={copyShareLink}
+                  >
+                    {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
+                  </Button>
+                </div>
+              </div>
+            )}
           </div>
         </motion.div>
       </div>
