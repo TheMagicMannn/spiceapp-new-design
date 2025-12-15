@@ -360,16 +360,105 @@ const BDSMQuiz = () => {
       if (!hardLimits.includes(label)) hardLimits.push(label);
     });
 
-    // Experience level
+    // =====================================================
+    // COMPATIBILITY & PERSONALITY ANALYSIS
+    // =====================================================
     const expLevel = getAnswer('experience_level') as string;
     const expMap: Record<string, string> = {
       'fantasy_only': 'Fantasy Only',
       'curious': 'Curious Beginner',
       'novice': 'Novice',
       'intermediate': 'Intermediate',
-      'experienced': 'Experienced',
-      'expert': 'Expert'
+      'experienced': 'Experienced Practitioner',
+      'expert': 'Expert/Educator'
     };
+
+    const intensityPref = getAnswer('intensity_preference') as number || 50;
+    const painRelation = getAnswer('pain_pleasure') as string;
+    const emotionalConnection = getAnswer('emotional_connection') as string;
+    const aftercareImportance = getAnswer('aftercare_needs') as number || 50;
+    const communicationStyles = (getAnswer('communication_style') as string[] || []);
+    const explorationPace = getAnswer('exploration_pace') as string;
+    const genderPreference = getAnswer('gender_preference') as string;
+    const jealousyCompersion = getAnswer('jealousy_compersion') as string;
+    const riskTolerance = getAnswer('risk_tolerance') as string;
+
+    // Calculate openness to exploration
+    const opennessFactors = [
+      intensityPref,
+      explorationPace === 'adventurous' ? 90 : explorationPace === 'moderate' ? 70 : explorationPace === 'slow' ? 40 : 60,
+      topKinks.length * 10,
+      riskTolerance === 'extreme' ? 90 : riskTolerance === 'edge' ? 75 : riskTolerance === 'moderate' ? 50 : 30
+    ];
+    const opennessScore = Math.min(100, opennessFactors.reduce((a, b) => a + b, 0) / opennessFactors.length);
+
+    // Generate personality traits
+    const keyTraits = [
+      {
+        trait: roleMap[primaryRole] || 'Explorer',
+        description: dominanceScore > 70 ? 'You thrive in leadership and control, guiding scenes with confidence' :
+                    dominanceScore < 30 ? 'You find deep fulfillment in surrender and serving your partner\'s desires' :
+                    'You enjoy the fluidity of both giving and receiving control'
+      },
+      {
+        trait: intensityPref > 70 ? 'Intensity Seeker' : intensityPref < 30 ? 'Sensual Explorer' : 'Balanced Intensity',
+        description: intensityPref > 70 ? 'You crave intense, edgy experiences that push boundaries' :
+                    intensityPref < 30 ? 'You prefer gentle, sensual connections and gradual buildup' :
+                    'You appreciate a range from gentle sensuality to moderate intensity'
+      },
+      {
+        trait: expMap[expLevel] || 'Curious Beginner',
+        description: expLevel === 'expert' ? 'Extensive experience and knowledge in the lifestyle' :
+                    expLevel === 'experienced' ? 'Well-versed in kink practices with years of experience' :
+                    expLevel === 'intermediate' ? 'Growing experience with regular practice' :
+                    expLevel === 'novice' ? 'Some hands-on experience, building skills' :
+                    expLevel === 'curious' ? 'New to the lifestyle, eager to explore' :
+                    'Exploring fantasies and learning about kink'
+      }
+    ];
+
+    if (aftercareImportance > 75) {
+      keyTraits.push({
+        trait: 'Aftercare Focused',
+        description: 'You prioritize emotional processing and care after intense scenes'
+      });
+    }
+
+    if (communicationStyles.length > 3) {
+      keyTraits.push({
+        trait: 'Multi-Modal Communicator',
+        description: 'You excel at using various communication methods to express boundaries and desires'
+      });
+    }
+
+    // Generate growth areas based on responses
+    const growthAreas: string[] = [];
+    
+    if (expLevel === 'fantasy_only' || expLevel === 'curious') {
+      growthAreas.push('Connect with the kink community through munches and educational events');
+      growthAreas.push('Start with beginner-friendly activities and build trust with partners');
+    }
+    
+    if (explorationPace === 'very_slow' || explorationPace === 'slow') {
+      growthAreas.push('Take time to build trust and comfort before trying new activities');
+    } else if (explorationPace === 'adventurous') {
+      growthAreas.push('Balance enthusiasm with safety - research thoroughly before trying edge play');
+    }
+
+    if (topKinks.length > 0) {
+      growthAreas.push(`Deepen your exploration of ${topKinks[0].name.toLowerCase()}`);
+    }
+
+    if (communicationStyles.length < 2) {
+      growthAreas.push('Develop multiple communication methods for expressing needs and boundaries');
+    }
+
+    if (aftercareImportance < 40) {
+      growthAreas.push('Learn about the importance of aftercare for emotional wellbeing');
+    }
+
+    growthAreas.push('Continue education through workshops, books, and community learning');
+    growthAreas.push('Practice negotiation and consent conversations with potential partners');
 
     return {
       personalitySummary: `You identify as ${roleMap[primaryRole] || 'exploring'} and are ${expMap[expLevel] || 'exploring'} the BDSM lifestyle. Your interests span ${topKinks.length} major kink categories, and you prefer ${lifestyleMap[relationshipStructure] || 'exploring'} relationship structures. You bring a thoughtful and ${dominanceScore > 60 ? 'dominant' : dominanceScore < 40 ? 'submissive' : 'balanced'} energy to your dynamics.`,
