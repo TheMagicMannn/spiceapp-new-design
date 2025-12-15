@@ -118,14 +118,137 @@ const QuizResults: React.FC<QuizResultsProps> = ({ insights, onRestart }) => {
           </div>
         </motion.div>
 
+        {/* Lifestyle Preferences */}
+        {insights.lifestyle && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="bg-card/50 border border-border/50 rounded-2xl p-6 mb-6"
+          >
+            <h2 className="text-xl font-bold mb-4">Your Lifestyle Preferences</h2>
+            <div className="mb-4">
+              <div className="inline-block px-4 py-2 rounded-lg bg-primary/20 text-primary font-semibold mb-2">
+                {insights.lifestyle.primary}
+              </div>
+              <p className="text-muted-foreground mt-2">{insights.lifestyle.description}</p>
+            </div>
+            {insights.lifestyle.secondary && insights.lifestyle.secondary.length > 0 && (
+              <div>
+                <h3 className="font-semibold mb-2 text-sm">Also Compatible With:</h3>
+                <div className="flex flex-wrap gap-2">
+                  {insights.lifestyle.secondary.map((style, idx) => (
+                    <span key={idx} className="px-3 py-1 rounded-full bg-muted text-sm">
+                      {style}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+          </motion.div>
+        )}
+
+        {/* BDSM Role */}
+        {insights.bdsmRole && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.35 }}
+            className="bg-gradient-to-br from-pink-500/10 to-purple-500/10 border border-pink-500/20 rounded-2xl p-6 mb-6"
+          >
+            <h2 className="text-xl font-bold mb-4">Your BDSM Role</h2>
+            <div className="mb-4">
+              <div className="inline-block px-4 py-2 rounded-lg bg-gradient-to-r from-pink-500/20 to-purple-500/20 text-pink-300 font-bold text-lg mb-2">
+                {insights.bdsmRole.primary}
+              </div>
+              <p className="text-muted-foreground mt-2">{insights.bdsmRole.description}</p>
+            </div>
+            {insights.bdsmRole.style && insights.bdsmRole.style.length > 0 && (
+              <div className="mb-3">
+                <h3 className="font-semibold mb-2 text-sm">Your Style:</h3>
+                <div className="flex flex-wrap gap-2">
+                  {insights.bdsmRole.style.map((s, idx) => (
+                    <span key={idx} className="px-3 py-1 rounded-full bg-pink-500/20 text-pink-300 text-sm">
+                      {s}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+            {insights.bdsmRole.secondary && insights.bdsmRole.secondary.length > 0 && (
+              <div>
+                <h3 className="font-semibold mb-2 text-sm">Secondary Roles:</h3>
+                <div className="flex flex-wrap gap-2">
+                  {insights.bdsmRole.secondary.map((role, idx) => (
+                    <span key={idx} className="px-3 py-1 rounded-full bg-muted text-sm">
+                      {role}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            )}
+          </motion.div>
+        )}
+
+        {/* Top Kinks */}
+        {insights.topKinks && insights.topKinks.length > 0 && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+            className="bg-card/50 border border-border/50 rounded-2xl p-6 mb-6"
+          >
+            <h2 className="text-xl font-bold mb-4">Your Top Kinks & Interests</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {insights.topKinks.map((kink, idx) => (
+                <div key={idx} className="p-4 rounded-xl bg-background/50 border border-border/30">
+                  <div className="flex items-center justify-between mb-2">
+                    <h3 className="font-semibold">{kink.name}</h3>
+                    <span className={`px-2 py-1 rounded-full text-xs font-medium ${
+                      kink.interest === 'high' ? 'bg-primary/20 text-primary' :
+                      kink.interest === 'medium' ? 'bg-yellow-500/20 text-yellow-500' :
+                      'bg-muted text-muted-foreground'
+                    }`}>
+                      {kink.interest === 'high' ? '🔥 High' : kink.interest === 'medium' ? '⭐ Medium' : '💭 Low'}
+                    </span>
+                  </div>
+                  <p className="text-sm text-muted-foreground">{kink.description}</p>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        )}
+
+        {/* Hard Limits */}
+        {insights.hardLimits && insights.hardLimits.length > 0 && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.45 }}
+            className="bg-red-500/5 border border-red-500/20 rounded-2xl p-6 mb-6"
+          >
+            <h2 className="text-xl font-bold mb-3 text-red-400">Your Hard Limits</h2>
+            <p className="text-sm text-muted-foreground mb-3">
+              These are important boundaries that partners should respect:
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {insights.hardLimits.map((limit, idx) => (
+                <span key={idx} className="px-3 py-1 rounded-full bg-red-500/10 border border-red-500/20 text-red-300 text-sm">
+                  ⛔ {limit}
+                </span>
+              ))}
+            </div>
+          </motion.div>
+        )}
+
         {/* Key Traits */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3 }}
+          transition={{ delay: 0.5 }}
           className="bg-card/50 border border-border/50 rounded-2xl p-6 mb-6"
         >
-          <h2 className="text-xl font-bold mb-4">Key Traits</h2>
+          <h2 className="text-xl font-bold mb-4">Key Personality Traits</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {insights.keyTraits.map((trait, index) => (
               <div key={index} className="flex gap-3 p-3 rounded-lg bg-background/50">
