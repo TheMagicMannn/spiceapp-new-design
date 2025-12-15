@@ -284,7 +284,10 @@ const BDSMQuiz = () => {
 
             <Button
               onClick={goNext}
-              disabled={getCurrentAnswer() === undefined}
+              disabled={
+                getCurrentAnswer() === undefined || 
+                (Array.isArray(getCurrentAnswer()) && (getCurrentAnswer() as string[]).length === 0)
+              }
               className="bg-gradient-to-r from-primary to-pink-600"
             >
               {currentQuestion === quizQuestions.length - 1 ? (
