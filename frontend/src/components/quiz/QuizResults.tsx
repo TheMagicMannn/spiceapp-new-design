@@ -45,26 +45,13 @@ const QuizResults: React.FC<QuizResultsProps> = ({ insights, onRestart, response
           description: "Results shared successfully",
         });
       } else {
-        // Fallback: Save to database and generate shareable link
-        const { data, error } = await supabase.functions.invoke('save-quiz-result', {
-          body: {
-            responses: responses || [],
-            insights,
-            isPublic: true
-          }
-        });
-
-        if (error) throw error;
-
-        const url = data.shareUrl || window.location.href;
-        setShareUrl(url);
-
-        // Copy to clipboard
-        await navigator.clipboard.writeText(url);
+        // Fallback: Just copy current URL
+        await navigator.clipboard.writeText(window.location.href);
+        setShareUrl(window.location.href);
         
         toast({
           title: "Link Copied!",
-          description: "Shareable link copied to clipboard",
+          description: "Share this link with others",
         });
       }
     } catch (error) {
