@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
 import BDSMQuiz from "./pages/BDSMQuiz";
+import FAQ from "./pages/FAQ";
 import NewcomersGuide from "./pages/NewcomersGuide";
 import HowTo from "./pages/HowTo";
 import CommunityLifestyles from "./pages/CommunityLifestyles";
