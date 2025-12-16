@@ -81,13 +81,33 @@ const blogPosts = [
 ];
 
 const NewcomersGuide = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Lifestyle Beginners Guide",
+    "description": "Comprehensive guides for couples and singles new to ENM, swinging, BDSM, and polyamory",
+    "numberOfItems": 6,
+    "itemListElement": blogPosts.map((post, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "item": {
+        "@type": "Article",
+        "name": post.title,
+        "description": post.excerpt,
+        "url": `https://thespiceapp.com/guide/article/${post.slug}`
+      }
+    }))
+  };
+
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
-        <title>For the Interested & Curious | SPICE Guide</title>
-        <meta name="description" content="New to the lifestyle? Explore our beginner guides for couples and singles entering ENM, swinging, BDSM, and polyamory communities." />
-        <link rel="canonical" href="https://thespiceapp.com/guide/newcomers" />
-      </Helmet>
+      <SEO
+        title="Lifestyle Beginners Guide — First Steps for Couples & Singles | SPICE"
+        description="New to the lifestyle? Comprehensive beginner guides for couples and singles entering ENM, swinging, BDSM, and polyamory communities. Learn about communication, jealousy management, kink 101, boundary setting, and safe exploration. Free educational resources for lifestyle newcomers."
+        keywords="lifestyle beginners guide, how to start swinging, swinging for beginners, ENM guide for couples, polyamory introduction, BDSM for beginners, ethical non-monogamy beginners, couples guide to swinging, first steps into lifestyle, lifestyle exploration guide, kink beginners, alternative relationships guide"
+        canonical="https://thespiceapp.com/guide/newcomers"
+        structuredData={structuredData}
+      />
       
       <Header />
       <Breadcrumbs />
