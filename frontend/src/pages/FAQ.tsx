@@ -181,7 +181,7 @@ const FAQ = () => {
               Frequently Asked Questions
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-              Everything you need to know about SPICE - the premium dating app for swingers, BDSM enthusiasts, ENM practitioners, and the lifestyle community. Find answers about features, safety, and getting started.
+              Everything you need to know about SPICE - the premium dating app for swingers, BDSM, ENM, polyamory, and kink enthusiasts. Find answers about features, safety, verification, and how to get started in the lifestyle community.
             </p>
           </div>
 
