@@ -4,45 +4,45 @@ const TrustBadgesSection = () => {
   const badges = [
     {
       icon: Shield,
-      title: "100% Verified",
-      description: "Every profile is verified for authenticity",
-      stat: "10,000+",
-      statLabel: "Verified Members"
+      title: "STI Testing Badges",
+      description: "Optional STI test verification for peace of mind",
+      stat: "Verified",
+      statLabel: "Health Status"
     },
     {
       icon: Users,
-      title: "Lifestyle Community",
-      description: "Swingers, ENM, poly, BDSM & kink enthusiasts",
-      stat: "5,000+",
-      statLabel: "Active Couples"
+      title: "Member Validation",
+      description: "Photo verification & community feedback system",
+      stat: "Multi-Layer",
+      statLabel: "Verification"
     },
     {
       icon: Lock,
       title: "Private & Secure",
-      description: "End-to-end encrypted messaging",
+      description: "End-to-end encrypted messaging & discrete profiles",
       stat: "256-bit",
       statLabel: "Encryption"
     },
     {
       icon: Heart,
-      title: "Sex-Positive",
-      description: "Judgment-free lifestyle exploration",
-      stat: "4.8/5",
-      statLabel: "Community Rating"
+      title: "E-Learning Modules",
+      description: "Educational content on consent, safety & lifestyle",
+      stat: "Guided",
+      statLabel: "Learning Paths"
     },
     {
       icon: CheckCircle,
       title: "Consent Focused",
-      description: "Built-in consent verification tools",
+      description: "Built-in consent verification & agreement tools",
       stat: "100%",
       statLabel: "Consent Priority"
     },
     {
       icon: Award,
-      title: "Premium Quality",
-      description: "Curated community of adventurous adults",
-      stat: "Top Rated",
-      statLabel: "Lifestyle App 2025"
+      title: "Feedback System",
+      description: "Member reviews & ratings for safe connections",
+      stat: "Community",
+      statLabel: "Accountability"
     }
   ];
 
