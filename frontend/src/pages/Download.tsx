@@ -67,6 +67,7 @@ const Download = () => {
       } else {
         triggerConfetti();
         setShowSuccess(true);
+        trackWaitlistSignup('download');
         toast.success("Welcome to the Spice family! 🎉 Check your inbox for a confirmation email and get ready for something special.", {
           duration: 5000,
         });
