@@ -132,6 +132,13 @@ const communities = [
     color: "from-blue-500/20 to-cyan-500/20",
     articles: [
       {
+        slug: "polyamory-vs-open-relationships-key-differences",
+        title: "Polyamory vs Open Relationships: Key Differences",
+        excerpt: "Understand the distinct differences between polyamory and open relationships, including emotional involvement and commitment levels.",
+        readTime: "7 min read",
+        image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&h=250&fit=crop",
+      },
+      {
         slug: "is-polyamory-right-for-you",
         title: "What is Polyamory?",
         excerpt: "Understanding the philosophy and practice of ethical multi-partner relationships.",
