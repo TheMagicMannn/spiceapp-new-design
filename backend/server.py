@@ -218,12 +218,12 @@ Based on these responses, provide a detailed analysis in JSON format with the fo
 
 Be specific, insightful, and non-judgmental. Focus on understanding their unique preferences and providing actionable compatibility insights."""
 
-        # Use Emergent LLM integration
+        # Use Emergent LLM integration with Gemini
         chat = LlmChat(
             api_key=api_key,
             session_id=f"quiz-analysis-{uuid.uuid4()}",
             system_message="You are an expert BDSM/kink relationship psychologist. Provide detailed, non-judgmental, accurate analysis in valid JSON format only. No markdown, no code blocks, just pure JSON."
-        ).with_model("openai", "gpt-4o")
+        ).with_model("gemini", "gemini-2.5-flash")
         
         # Send message and get analysis
         user_message = UserMessage(text=analysis_prompt)
