@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Sparkles, Heart, RefreshCw, Share2, ArrowLeft, TrendingUp, Check, Copy } from 'lucide-react';
+import { Sparkles, Heart, RefreshCw, Download, ArrowLeft, TrendingUp, Check, Copy } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import { QuizInsights } from '@/pages/BDSMQuiz';
 import { Link } from 'react-router-dom';
 import { useToast } from '@/hooks/use-toast';
-import { supabase } from '@/integrations/supabase/client';
+import html2canvas from 'html2canvas';
 
 interface QuizResultsProps {
   insights: QuizInsights;
