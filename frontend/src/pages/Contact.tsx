@@ -96,13 +96,22 @@ const Contact = () => {
     }
   };
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact SPICE",
+    "description": "Contact SPICE dating app team for support, partnerships, or inquiries"
+  };
+
   return (
     <div className="relative min-h-screen">
-      <Helmet>
-        <title>Contact SPICE — Get in Touch with Our Team</title>
-        <meta name="description" content="Have questions about SPICE? Contact our team for support, partnerships, or general inquiries. We'd love to hear from you." />
-        <link rel="canonical" href="https://thespiceapp.com/contact" />
-      </Helmet>
+      <SEO
+        title="Contact SPICE — Support, Partnerships & Inquiries"
+        description="Have questions about SPICE dating app? Contact our team for customer support, business partnerships, or general inquiries. Email: info@thespiceapp.com, support@thespiceapp.com. We'd love to hear from you and help with your lifestyle dating needs."
+        keywords="contact SPICE, SPICE support, SPICE customer service, dating app help, SPICE team contact, lifestyle dating support, SPICE partnerships, SPICE inquiries"
+        canonical="https://thespiceapp.com/contact"
+        structuredData={structuredData}
+      />
       <ParticlesBackground />
       <Header />
       <Breadcrumbs />
