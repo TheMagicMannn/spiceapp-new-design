@@ -89,13 +89,29 @@ const Download = () => {
     }
   };
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "SPICE Dating App",
+    "operatingSystem": "iOS, Android",
+    "applicationCategory": "LifestyleApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "description": "Download SPICE — premium adult lifestyle dating app for swingers, BDSM, and ENM communities"
+  };
+
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
-        <title>Download SPICE App | iOS & Android</title>
-        <meta name="description" content="Download the SPICE app for iPhone and Android. Join the premier adult dating community for swingers, BDSM enthusiasts, and ENM lifestyles." />
-        <link rel="canonical" href="https://thespiceapp.com/download" />
-      </Helmet>
+      <SEO
+        title="Download SPICE App — iOS & Android | Lifestyle Dating for Swingers & BDSM"
+        description="Download the SPICE mobile app for iPhone (iOS) and Android. Join the premier verified adult dating community for swingers, BDSM enthusiasts, polyamory, and ENM lifestyles. Free waitlist with 2 months VIP access. Coming soon to App Store and Google Play."
+        keywords="download SPICE app, SPICE iOS app, SPICE Android app, lifestyle dating app download, swingers app mobile, BDSM dating app download, ENM app iOS, polyamory dating app, adult lifestyle app download, verified dating mobile app, alternative lifestyle app"
+        canonical="https://thespiceapp.com/download"
+        structuredData={structuredData}
+      />
       
       <Header />
       <Breadcrumbs />
