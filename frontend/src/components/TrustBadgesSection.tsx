@@ -48,16 +48,16 @@ const TrustBadgesSection = () => {
 
   const communityImages = [
     {
-      url: "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846",
-      alt: "Diverse community of SPICE members celebrating together"
+      url: "https://images.unsplash.com/photo-1718754720400-a5e6167ed1dd",
+      alt: "Intimate sensual connection - sophisticated lifestyle dating on SPICE"
     },
     {
-      url: "https://images.unsplash.com/photo-1527525443983-6e60c75fff46",
-      alt: "SPICE community members building connections and trust"
+      url: "https://images.unsplash.com/photo-1691932230591-6a41c363775d",
+      alt: "Artistic intimate embrace - BDSM and kink lifestyle community"
     },
     {
-      url: "https://images.pexels.com/photos/4881619/pexels-photo-4881619.jpeg",
-      alt: "Inclusive LGBTQ+ lifestyle community gathering"
+      url: "https://images.unsplash.com/photo-1762237895002-1658ebb56acf",
+      alt: "Lifestyle event atmosphere - swingers and ENM community gathering"
     }
   ];
 
