@@ -14,6 +14,13 @@ const communities = [
     color: "from-pink-500/20 to-rose-500/20",
     articles: [
       {
+        slug: "how-to-talk-to-partner-about-enm",
+        title: "How to Talk to Your Partner About ENM",
+        excerpt: "A compassionate, step-by-step guide to opening the conversation about ethical non-monogamy.",
+        readTime: "9 min read",
+        image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=400&h=250&fit=crop",
+      },
+      {
         slug: "what-is-ethical-non-monogamy",
         title: "What is Ethical Non-Monogamy?",
         excerpt: "An introduction to ENM principles and different relationship structures.",
