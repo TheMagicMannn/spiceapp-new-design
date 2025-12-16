@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Helmet } from "react-helmet-async";
+import SEO from "@/components/SEO";
 import { Mail, MapPin, Send, MessageCircle, HelpCircle, Briefcase, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -11,6 +11,7 @@ import ParticlesBackground from "@/components/ParticlesBackground";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import { trackFormSubmit } from "@/lib/gtag";
 
 const contactMethods = [
   {
