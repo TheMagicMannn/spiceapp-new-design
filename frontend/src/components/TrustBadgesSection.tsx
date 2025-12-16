@@ -92,29 +92,6 @@ const TrustBadgesSection = () => {
           })}
         </div>
 
-        {/* Community Images Section */}
-        <div className="mt-16">
-          <h3 className="text-2xl md:text-3xl font-bold text-center mb-8">
-            Where the Lifestyle Comes Alive
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {communityImages.map((image, index) => (
-              <div
-                key={index}
-                className="relative rounded-2xl overflow-hidden group aspect-[4/3] border-2 border-border/50 hover:border-primary/50 transition-all duration-300"
-              >
-                <img
-                  src={image.url}
-                  alt={image.alt}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
-            ))}
-          </div>
-        </div>
-
         {/* Statistics Bar */}
         <div className="mt-16 glass-card rounded-2xl p-8 border-gradient">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
