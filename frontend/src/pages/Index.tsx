@@ -76,8 +76,8 @@ const Index = () => {
     <div className="relative min-h-screen">
       <SEO
         title="SPICE Dating App — Premium Swingers, BDSM & ENM Community for Couples and Singles"
-        description="Join SPICE — the #1 dating app for swingers, BDSM, ENM, polyamory, and kink. 100% verified profiles, AI-powered matching, 200+ desire tags, BDSM compatibility quiz. LGBTQ+ inclusive community for adventurous couples and singles. Download now for iOS & Android."
-        keywords="swingers dating app, BDSM dating app, ENM dating app, polyamory dating, kink dating app, dating app for couples, dating app for singles, LGBTQ+ dating, lifestyle dating, ethical non-monogamy app, verified dating app, sex-positive community, alternative lifestyle dating, couples swinging app, hotwife dating"
+        description="Join SPICE — the #1 dating app for swingers, BDSM, ENM, polyamory, and kink. 100% verified profiles, AI-powered matching, 200+ desire tags, BDSM compatibility quiz. Judgment-free lifestyle community for adventurous couples and singles of all genders. Download now for iOS & Android."
+        keywords="swingers dating app, BDSM dating app, ENM dating app, polyamory dating, kink dating app, dating app for couples, dating app for singles, lifestyle dating, ethical non-monogamy app, verified dating app, sex-positive community, alternative lifestyle dating, couples swinging app, hotwife dating, threesome dating"
         canonical="https://thespiceapp.com/"
         structuredData={structuredData}
       />
