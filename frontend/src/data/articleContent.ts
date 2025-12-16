@@ -3806,6 +3806,2225 @@ Polyamory and open relationships are distinct paths under the ENM umbrella. Neit
 
 Whatever you choose, approach it with honesty, communication, and respect for everyone involved. That's what makes it ethical. ❤️
     `
+  },
+  {
+    slug: "lifestyle-dating-etiquette-dos-donts",
+    title: "Lifestyle Dating Etiquette: Do's and Don'ts",
+    category: "How To",
+    excerpt: "Master the unwritten rules of lifestyle dating. Learn proper etiquette for couples and singles navigating ENM, swinging, and BDSM communities.",
+    image: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600&h=400&fit=crop",
+    author: "SPICE Team",
+    readTime: "8 min read",
+    publishedDate: "2025-01-20",
+    forCouples: true,
+    forSingles: true,
+    tags: ["etiquette", "lifestyle", "swinging", "ENM", "dating", "community"],
+    content: `
+## Why Etiquette Matters in the Lifestyle
+
+Good etiquette isn't just about being polite—it's about respect, safety, and creating positive experiences for everyone. The lifestyle community thrives on mutual respect and consent.
+
+## Universal Do's and Don'ts
+
+### ✅ DO: Respect Consent Always
+
+**Do:**
+- Ask before touching anyone
+- Accept "no" gracefully without pressure
+- Check in during activities
+- Honor safe words immediately
+- Respect boundaries even if you don't understand them
+
+**Don't:**
+❌ Touch without permission
+❌ Pressure or coerce anyone
+❌ Assume consent based on appearance or location
+❌ Ignore verbal or non-verbal "no" signals
+
+**Remember:** Consent can be withdrawn at any time.
+
+### ✅ DO: Communicate Clearly
+
+**Do:**
+- Be honest about your experience level
+- Clearly state your boundaries
+- Discuss expectations before meeting
+- Update partners if your situation changes
+- Ask questions if you're unsure
+
+**Don't:**
+❌ Mislead about your relationship status
+❌ Hide important information
+❌ Make assumptions
+❌ Ghost people without explanation
+
+### ✅ DO: Be Respectful of Relationships
+
+**Do:**
+- Respect existing relationship agreements
+- Ask about partners' boundaries
+- Include all parties in relevant discussions
+- Honor couples' comfort levels
+- Respect hierarchy if it exists
+
+**Don't:**
+❌ Try to "steal" someone's partner
+❌ Encourage rule-breaking
+❌ Dismiss the primary partner
+❌ Create drama between partners
+
+## Profile Etiquette
+
+### Creating Your Profile
+
+**✅ Do:**
+- Use recent, accurate photos
+- Be honest about your situation
+- Clearly state what you're seeking
+- Mention your boundaries upfront
+- Include relevant information (couple/single, experience level)
+
+**❌ Don't:**
+- Use misleading or old photos
+- Lie about your relationship status
+- Be vague about intentions
+- Post explicit photos as your main picture
+- Copy-paste generic messages
+
+### Messaging Etiquette
+
+**✅ Do:**
+- Read profiles before messaging
+- Personalize your messages
+- Respect stated preferences
+- Ask open-ended questions
+- Be patient waiting for responses
+
+**❌ Don't:**
+- Send unsolicited explicit photos
+- Open with sexual demands
+- Message people whose profiles say they're not interested in your type
+- Spam multiple messages if no response
+- Be pushy or aggressive
+
+## First Meeting Etiquette
+
+### Setting Up the Meet
+
+**✅ Do:**
+- Suggest meeting in public first
+- Be flexible with scheduling
+- Confirm plans the day before
+- Show up on time
+- Dress appropriately for the venue
+
+**❌ Don't:**
+- Pressure for private meetings first
+- Cancel last minute without good reason
+- Show up late without notice
+- Overdress or underdress inappropriately
+- Bring uninvited guests
+
+### During the Meet
+
+**✅ Do:**
+- Be yourself
+- Listen actively
+- Share openly within comfort
+- Respect personal space
+- Split the bill or take turns (unless otherwise agreed)
+
+**❌ Don't:**
+- Dominate the conversation
+- Check your phone constantly
+- Drink excessively
+- Push for play on the first meet
+- Talk negatively about other lifestyle members
+
+### After the Meet
+
+**✅ Do:**
+- Follow up within 24-48 hours
+- Be honest about your interest level
+- Respect if they're not interested
+- Give feedback if asked politely
+- Keep their information private
+
+**❌ Don't:**
+- Ghost without explanation
+- Lead people on if not interested
+- Badmouth them to others
+- Share their personal information
+- Keep bothering them after rejection
+
+## Club and Party Etiquette
+
+### Entering a Lifestyle Venue
+
+**✅ Do:**
+- Follow the venue's dress code
+- Respect photography policies (usually no photos)
+- Introduce yourself to hosts
+- Observe before participating
+- Follow house rules
+
+**❌ Don't:**
+- Take photos/videos without permission
+- Stare at others
+- Interrupt scenes in progress
+- Block play areas
+- Be overly intoxicated
+
+### Approaching Others
+
+**✅ Do:**
+- Make eye contact and smile first
+- Ask permission before joining conversations
+- Take "no" graciously
+- Give space if people seem uninterested
+- Compliment respectfully if genuine
+
+**❌ Don't:**
+- Interrupt intimate moments
+- Touch without asking
+- Be overly aggressive
+- Linger after being declined
+- Make lewd comments
+
+### During Play
+
+**✅ Do:**
+- Discuss boundaries before starting
+- Check in during play
+- Respect others' scenes (don't interrupt/watch without permission)
+- Stop immediately if anyone uses safe word
+- Clean up after yourselves
+
+**❌ Don't:**
+- Assume anything is okay
+- Get upset if someone stops
+- Critique others' scenes
+- Make noise that disrupts others
+- Leave a mess
+
+## Couples-Specific Etiquette
+
+### When You're a Couple
+
+**✅ Do:**
+- Present as a united front
+- Respect your partner's comfort level
+- Check in with each other regularly
+- Honor your agreements
+- Speak up if uncomfortable
+
+**❌ Don't:**
+- Pressure your partner
+- Make unilateral decisions
+- Ignore your partner's concerns
+- Compare partners negatively
+- Proceed if your partner is uncomfortable
+
+### When Approaching Couples
+
+**✅ Do:**
+- Address both partners equally
+- Respect if they're selective
+- Accept if only one partner is interested (and that's not okay with them)
+- Understand their rules may differ from yours
+- Give them space to discuss privately
+
+**❌ Don't:**
+- Focus on only one partner
+- Try to split them up
+- Pressure them to break their rules
+- Get offended by their boundaries
+- Ignore one partner
+
+## Single Person Etiquette
+
+### If You're Single in the Lifestyle
+
+**✅ Do:**
+- Be upfront that you're single
+- Respect that some couples/people only play with couples
+- Be extra respectful (singles sometimes face more scrutiny)
+- Prove yourself trustworthy
+- Contribute positively to the community
+
+**❌ Don't:**
+- Pretend to be part of a couple
+- Take rejection personally
+- Be entitled
+- Cause drama
+- Pursue unavailable people
+
+### Unicorns (Single Bisexual Women)
+
+**✅ Do:**
+- Value your own boundaries
+- Don't let couples pressure you
+- Choose couples who respect you
+- State your preferences clearly
+- Know your worth
+
+**❌ Don't:**
+- Feel obligated to be with couples
+- Accept disrespect because you're "in demand"
+- Ignore red flags
+
+### Bulls (Single Men in Hotwife/Cuckold Scenarios)
+
+**✅ Do:**
+- Respect the couple's dynamic
+- Follow their rules precisely
+- Communicate clearly
+- Prioritize the wife's pleasure
+- Respect the husband's role
+
+**❌ Don't:**
+- Try to control the situation
+- Disrespect the husband
+- Break their agreements
+- Develop feelings if not agreed upon
+
+## Online Community Etiquette
+
+### In Forums and Groups
+
+**✅ Do:**
+- Read group rules before posting
+- Search before asking common questions
+- Be supportive and helpful
+- Disagree respectfully
+- Share experiences constructively
+
+**❌ Don't:**
+- Troll or be inflammatory
+- Share others' private information
+- Promote your profile excessively
+- Attack others' choices
+- Share graphic content where inappropriate
+
+### Video Chat Etiquette
+
+**✅ Do:**
+- Ask before assuming video is okay
+- Dress appropriately for the call
+- Have good lighting
+- Be on time
+- Respect if they're not ready for video
+
+**❌ Don't:**
+- Expose yourself without consent
+- Record without permission
+- Be in inappropriate locations (bathroom, while driving)
+- Demand video if they prefer voice first
+
+## Rejection Etiquette
+
+### When Declining Someone
+
+**✅ Do:**
+- Be polite but clear
+- Give a reason if comfortable (not required)
+- Wish them well
+- Block if they persist
+- Report harassment
+
+**❌ Don't:**
+- Ghost without explanation (after significant interaction)
+- Be cruel or insulting
+- Lead them on
+- Give false hope
+
+### When Being Declined
+
+**✅ Do:**
+- Accept gracefully
+- Thank them for their time
+- Move on respectfully
+- Maintain dignity
+- Learn from the experience
+
+**❌ Don't:**
+- Demand reasons
+- Argue or debate
+- Insult them
+- Keep messaging
+- Badmouth them to others
+
+## Sex and Play Etiquette
+
+### Before Sex
+
+**✅ Do:**
+- Discuss STI status and testing
+- Agree on barrier use
+- Discuss what activities are on/off the table
+- Have protection readily available
+- Establish safe words
+
+**❌ Don't:**
+- Lie about STI status
+- Pressure for unprotected sex
+- Spring surprise activities
+- Assume anything
+
+### During Sex
+
+**✅ Do:**
+- Check in regularly
+- Adjust based on feedback
+- Respect boundaries
+- Honor safe words immediately
+- Focus on mutual pleasure
+
+**❌ Don't:**
+- Try activities that weren't discussed
+- Remove protection without permission
+- Ignore discomfort signals
+- Be selfish
+
+### After Sex
+
+**✅ Do:**
+- Provide/receive aftercare
+- Clean up
+- Check in emotionally
+- Discuss what worked well
+- Plan follow-up if everyone's interested
+
+**❌ Don't:**
+- Leave abruptly
+- Critique performance harshly
+- Ghost afterward
+- Skip aftercare
+
+## Discretion and Privacy
+
+### Protecting Others' Privacy
+
+**✅ Do:**
+- Keep others' lifestyle involvement private
+- Use discretion at lifestyle events
+- Respect if someone doesn't want to be acknowledged in public
+- Keep conversations confidential
+- Protect identities online
+
+**❌ Don't:**
+- Out people in the lifestyle
+- Share photos without permission
+- Gossip about others
+- Use real names online (unless they do)
+- Connect with lifestyle friends on mainstream social media without asking
+
+## Handling Conflicts
+
+### If Issues Arise
+
+**✅ Do:**
+- Address issues directly with the person involved
+- Stay calm and respectful
+- Listen to their perspective
+- Seek mediation if needed
+- Learn from the experience
+
+**❌ Don't:**
+- Create public drama
+- Spread rumors
+- Retaliate
+- Involve uninvolved parties
+- Hold grudges indefinitely
+
+## Community Contribution
+
+### Being a Good Community Member
+
+**✅ Do:**
+- Welcome newcomers
+- Share knowledge generously
+- Support community events
+- Defend against harassment
+- Promote safe practices
+
+**❌ Don't:**
+- Gate-keep or exclude
+- Be cliquey
+- Tolerate predatory behavior
+- Spread negativity
+- Take advantage of newbies
+
+## Cultural Sensitivity
+
+### Respecting Diversity
+
+**✅ Do:**
+- Welcome people of all backgrounds
+- Educate yourself on different perspectives
+- Call out discrimination
+- Be inclusive in your preferences
+- Respect different relationship structures
+
+**❌ Don't:**
+- Fetishize races or identities
+- Make assumptions based on stereotypes
+- Tolerate racism, sexism, homophobia, transphobia
+- Exclude based on identity
+
+## Red Flag Behaviors
+
+🚩 **Watch out for people who:**
+- Pressure or guilt-trip
+- Disrespect boundaries repeatedly
+- Lie about important things
+- Create drama regularly
+- Disrespect consent
+- Ignore safe words
+- Bad-mouth many previous partners
+- Rush intimacy
+- Isolate you from community
+
+**If you see these behaviors, exit the situation.**
+
+## Final Thoughts
+
+**Good lifestyle etiquette boils down to:**
+
+1. **Respect**: For others' boundaries, relationships, and humanity
+2. **Communication**: Clear, honest, and frequent
+3. **Consent**: Explicit, ongoing, and enthusiastic
+4. **Discretion**: Protecting privacy and dignity
+5. **Contribution**: Being a positive community member
+
+**Remember:** The lifestyle is built on mutual respect and trust. Your behavior affects not just your experiences but the community's reputation and safety.
+
+Follow these guidelines, and you'll build a positive reputation, have better experiences, and contribute to a welcoming, respectful lifestyle community.
+
+Welcome, and enjoy your journey! 💫
+    `
+  },
+  {
+    slug: "creating-couples-profile-tips-success",
+    title: "Creating a Couples Profile: Tips for Success",
+    category: "How To",
+    excerpt: "Build an attractive, authentic couples profile for lifestyle dating apps. Learn what to include, what to avoid, and how to stand out to potential matches.",
+    image: "https://images.unsplash.com/photo-1494774157365-9e04c6720e47?w=600&h=400&fit=crop",
+    author: "SPICE Team",
+    readTime: "7 min read",
+    publishedDate: "2025-01-20",
+    forCouples: true,
+    tags: ["couples", "profile", "dating", "lifestyle", "online dating"],
+    content: `
+## Your Profile is Your First Impression
+
+In lifestyle dating, your profile is how potential partners get to know you before meeting. A well-crafted profile attracts compatible matches and sets clear expectations.
+
+## Profile Photos: Show Your Best Selves
+
+### ✅ Photos You Need
+
+**1. Clear Face Photo (Main Photo)**
+- Both partners visible
+- Good lighting
+- Smiling and approachable
+- Recent (within 6 months)
+- Fully clothed
+
+**Why:** This is the first thing people see. Make it welcoming!
+
+**2. Full Body Photo**
+- Shows both partners
+- Casual but flattering
+- Clear view of body types
+- Not overly posed
+
+**Why:** Honest representation of physical appearance.
+
+**3. Activity Photo**
+- Doing something fun together
+- Shows personality
+- Natural and candid
+- Could be hobby, travel, etc.
+
+**Why:** Gives conversation starters and shows compatibility.
+
+**4. Dressed Up Photo**
+- Both looking your best
+- Date night or event
+- Shows you make effort
+
+**Why:** Shows what you look like when trying.
+
+### Photo Do's and Don'ts
+
+**✅ DO:**
+- Use recent photos (last 6-12 months)
+- Show both partners clearly
+- Have good lighting
+- Smile genuinely
+- Show variety (casual, dressed up, activity)
+- Include at least 4-6 photos
+
+**❌ DON'T:**
+- Use heavily filtered photos
+- Include only one partner prominently
+- Use photos from 5+ years ago
+- Make your main photo explicit
+- Include other people without explanation
+- Use all mirror selfies
+
+### Private/Explicit Photos
+
+**If you choose to include them:**
+- Keep in private galleries (not main photos)
+- Grant access selectively
+- Ensure both partners consent to sharing
+- Consider face covering if privacy is concern
+- Include body variety (not all the same angle)
+
+**Remember:** You're not obligated to include explicit photos.
+
+## Writing Your Profile: Stand Out
+
+### The Headline
+
+**Good headlines:**
+✅ "Adventurous couple seeking same for fun and connection"
+✅ "Midwest couple exploring the lifestyle together"
+✅ "Experienced swingers looking for regular playmates"
+
+**Bad headlines:**
+❌ "Looking" (too vague)
+❌ "Hot couple here" (sounds arrogant)
+❌ Explicit sexual demands
+❌ Inside jokes only you understand
+
+**Make it:** Specific, friendly, and authentic.
+
+### The "About Us" Section
+
+**Structure your bio:**
+
+**Opening (2-3 sentences):**
+- Who you are as a couple
+- How long together
+- General vibe
+
+**Example:**
+> "We're Sarah (32) and Mike (35), married for 7 years and exploring the lifestyle for the last 2. We're an outgoing, fun-loving couple who values honesty, laughter, and connection."
+
+**Middle (4-6 sentences):**
+- Your lifestyle experience
+- What you're seeking
+- Boundaries or preferences
+- Interests/hobbies
+
+**Example:**
+> "We're looking for couples or single women for friendship and occasional play. We prefer same-room experiences and love getting to know people over drinks first. We're into hiking, craft beer, and live music. We're 420-friendly and enjoy deep conversations as much as fun adventures."
+
+**Closing (1-2 sentences):**
+- Call to action
+- How to connect
+
+**Example:**
+> "If we sound like a match, send us a message! We'd love to grab coffee or drinks and see if there's a connection."
+
+### What to Include
+
+**✅ Must-haves:**
+- Your experience level in the lifestyle
+- What you're looking for (couples, singles, specific dynamics)
+- Soft swap vs. full swap preference
+- Basic boundaries (same room only, separate play okay, etc.)
+- General interests and personality traits
+- Your communication style
+
+**✅ Nice-to-haves:**
+- Specific turn-ons or interests
+- Ideal first meeting scenario
+- How you make decisions together
+- What you value in potential partners
+
+**❌ Avoid:**
+- Overly explicit sexual details in main bio
+- Negative language ("No drama," "No flakes")
+- Lists of demands
+- Complaints about previous experiences
+- Too much personal/identifying information
+
+### Tone and Voice
+
+**✅ DO sound:**
+- Friendly and approachable
+- Authentic and genuine
+- Positive and enthusiastic
+- Respectful and mature
+- Clear and direct
+
+**❌ DON'T sound:**
+- Arrogant or superior
+- Desperate or needy
+- Overly explicit or crude
+- Negative or bitter
+- Vague or mysterious
+
+### Dealing with Individual vs. Couple Voice
+
+**Option 1: "We" Voice (Recommended)**
+Write as a unified couple:
+> "We're looking for..."
+> "We enjoy..."
+
+**Option 2: Individual Sections**
+Each partner writes their own paragraph:
+> "About her: I'm Sarah, 32..."
+> "About him: I'm Mike, 35..."
+
+**Choose based on:** What feels more natural for your dynamic.
+
+## Specificity: The Key to Better Matches
+
+### Be Specific About What You Want
+
+**Vague ❌:**
+"Looking for fun"
+
+**Specific ✅:**
+"Looking for couples aged 25-40 for drinks, dinner dates, and possible same-room play"
+
+**Vague ❌:**
+"Open to new experiences"
+
+**Specific ✅:**
+"New to the lifestyle and interested in starting with soft swap with another beginner couple"
+
+**Why this matters:** Specificity filters out incompatible matches and attracts compatible ones.
+
+### Be Clear About Boundaries
+
+**Include:**
+- Same room only or separate play okay?
+- Soft swap or full swap?
+- Limits on emotional involvement?
+- Preferred safer sex practices?
+- Off-limits activities?
+
+**Example:**
+> "We're full swap but prefer same room. We always use protection with others and get tested quarterly. We're not interested in developing romantic relationships with play partners."
+
+## Common Profile Mistakes
+
+### ❌ Mistake #1: Too Vague
+
+**Problem:** "We're a fun couple looking for fun."
+
+**Fix:** "We're an outgoing couple in our 30s, new to swinging, seeking other beginner couples for friendship and soft swap play."
+
+### ❌ Mistake #2: Too Negative
+
+**Problem:** "No drama, no flakes, no single men, no overweight couples, no one over 40."
+
+**Fix:** Focus on what you DO want: "We're seeking fit, drama-free couples ages 25-40 for regular connections."
+
+### ❌ Mistake #3: Overly Explicit
+
+**Problem:** Main profile is graphic sexual descriptions.
+
+**Fix:** Keep main profile suggestive but tasteful. Save explicit details for private chats.
+
+### ❌ Mistake #4: All About One Partner
+
+**Problem:** Profile focuses 90% on her, barely mentions him.
+
+**Fix:** Give equal representation to both partners.
+
+### ❌ Mistake #5: Poor Photos
+
+**Problem:** Blurry, old, or unflattering photos.
+
+**Fix:** Invest time in taking quality recent photos.
+
+### ❌ Mistake #6: No Personality
+
+**Problem:** Generic profile that could describe anyone.
+
+**Fix:** Include specific hobbies, humor, and authentic details.
+
+### ❌ Mistake #7: Demands and Rules
+
+**Problem:** "You must be 100% drug-free, have recent STI tests, be available weekends only, never contact us on weekdays..."
+
+**Fix:** State preferences conversationally: "We prefer to connect with health-conscious couples and typically meet on weekends."
+
+## Profile Sections to Complete
+
+### "Looking For" Section
+
+Be specific:
+✅ "Couples for same-room full swap"
+✅ "Women for unicorn play"
+✅ "Couples or single women, soft swap only"
+✅ "Experienced swingers for regular connections"
+
+### Interests/Turn-Ons
+
+**Be honest but tasteful:**
+
+Good examples:
+- Light bondage
+- Sensual massage
+- Exhibitionism/voyeurism
+- Group play
+- Oral focus
+
+**Avoid:**
+- Overly graphic descriptions
+- Extreme kinks (save for private discussion)
+- Anything non-consensual sounding
+
+### Boundaries/Rules
+
+**Include:**
+- Hard limits
+- Safer sex requirements
+- Emotional boundaries
+- Time/availability limits
+- Discretion needs
+
+**Example:**
+> "We use protection with others, no exceptions. We're not interested in developing romantic feelings with play partners. We need to meet in public first before any play."
+
+## Representing Both Partners Fairly
+
+### Make Sure Both Voices Are Heard
+
+**✅ DO:**
+- Show both partners in multiple photos
+- Mention both partners' interests
+- Use "we" or give each equal space
+- Represent both partners' boundaries
+
+**❌ DON'T:**
+- Feature only the woman (or only the man)
+- Write as if only one partner is interested
+- Ignore one partner's preferences
+- Make it seem like one is dragging the other along
+
+### If One Partner is More Into It
+
+**Be honest:**
+> "She's more experienced and he's enthusiastically learning. We move at his comfort level."
+
+**This transparency:**
+- Sets realistic expectations
+- Shows respect for both partners
+- Avoids misunderstandings
+
+## Updating Your Profile
+
+### When to Update
+
+**Update your profile when:**
+- Your photos are 6+ months old
+- Your interests or boundaries change
+- Your experience level evolves
+- You're not getting the responses you want
+- You've had new experiences to share
+- Relationship status changes
+
+### Refreshing Your Profile
+
+**Every few months:**
+- Add new photos
+- Update your bio with new experiences
+- Refine what you're seeking
+- Remove outdated information
+
+**Fresh profiles often get more visibility!**
+
+## Profile Testing
+
+### Get Feedback
+
+**Ask trusted lifestyle friends:**
+- Does this represent us accurately?
+- What impression does this give?
+- What would make it better?
+- Are we being too vague or too specific?
+
+### A/B Testing
+
+**Try different approaches:**
+- Different main photos
+- Varying bio lengths
+- Different levels of detail
+- Casual vs. polished tone
+
+**See what gets better responses and engagement.**
+
+## Examples of Strong Profile Bios
+
+### Example 1: New Couple
+
+> "We're Amanda (29) and Josh (31), together for 5 years and new to the lifestyle. We're curious, open-minded, and excited to explore with the right people. We're looking for beginner-friendly couples to meet for drinks and see where things go. We prefer same-room soft swap to start and value clear communication and mutual respect. Outside the lifestyle, we love hiking, board games, and trying new restaurants. We're 420-friendly and enjoy craft beer. If you're patient, fun, and looking for friends first, send us a message!"
+
+### Example 2: Experienced Couple
+
+> "We're Melissa (35) and Tom (38), married 10 years and in the lifestyle for 4. We're experienced, drama-free, and seeking regular connections with like-minded couples. We're full swap and enjoy both same-room and separate play with couples we know well. We value discretion, honesty, and fun above all. We're into travel, wine tasting, and concert-going. Ideally looking for couples who want ongoing FWB situations rather than one-time encounters. Always practice safe sex and get tested quarterly. Hit us up if you're looking for genuine connection and hot experiences!"
+
+### Example 3: Selective Couple
+
+> "Sarah (32) and Mike (34) here—we're picky, but worth it! We're an attractive, fit couple seeking the same. We're full swap but prefer quality over quantity, so we take time getting to know potential partners. We love intelligent conversation, good wine, and genuine chemistry. Looking for couples or exceptional single women for sophisticated fun. We're experienced but always respectful, disease-free, and discreet. If you value substance along with physical attraction, let's chat!"
+
+## Final Tips
+
+**✅ Profile Success Checklist:**
+
+- [ ] 4-6 recent, clear photos
+- [ ] Main photo shows both partners, smiling
+- [ ] Bio is 150-300 words
+- [ ] Tone is friendly and positive
+- [ ] Clear about what you're seeking
+- [ ] Mention experience level
+- [ ] Include boundaries/preferences
+- [ ] Show personality and interests
+- [ ] Both partners represented equally
+- [ ] Free of spelling/grammar errors
+- [ ] Updated within last 6 months
+
+## Remember
+
+**Your profile should:**
+- Reflect who you really are
+- Attract compatible matches
+- Filter out incompatible ones
+- Set clear expectations
+- Make people want to know more
+
+**Take your time creating it.** A thoughtful profile leads to better connections, more fulfilling experiences, and less frustration in your lifestyle journey.
+
+Happy profile building! 🎉
+    `
+  },
+  {
+    slug: "jealousy-management-open-relationships",
+    title: "Jealousy Management in Open Relationships",
+    category: "How To",
+    excerpt: "Practical strategies for recognizing, processing, and working through jealousy in ENM relationships. Turn jealousy from a threat into a tool for growth.",
+    image: "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=600&h=400&fit=crop",
+    author: "SPICE Team",
+    readTime: "9 min read",
+    publishedDate: "2025-01-20",
+    forCouples: true,
+    forSingles: true,
+    tags: ["jealousy", "ENM", "polyamory", "emotions", "communication", "relationships"],
+    content: `
+## Jealousy is Normal—Even in Open Relationships
+
+Let's start with this truth: **jealousy doesn't disappear just because you choose non-monogamy.** Anyone who says they never feel jealous is either lying or hasn't been tested yet.
+
+The difference in healthy ENM isn't the absence of jealousy—it's how you handle it.
+
+## Understanding Jealousy
+
+### What is Jealousy?
+
+Jealousy is a complex emotion, usually a combination of:
+- Fear (of loss, abandonment, replacement)
+- Insecurity (am I enough?)
+- Comparison (are they better than me?)
+- Possessiveness (they're mine)
+- Threat perception (my relationship is in danger)
+
+**It's a protective emotion,** rooted in attachment and self-preservation.
+
+### Jealousy vs. Envy
+
+**Jealousy**: Fear of losing something you have
+> "I'm afraid my partner will prefer them over me."
+
+**Envy**: Wanting something someone else has
+> "I wish I had the NRE (new relationship energy) they're experiencing."
+
+**Both are valid.** Recognizing which you're feeling helps you address it.
+
+### The Jealousy Spiral
+
+1. **Trigger**: Partner does something (goes on a date, mentions attraction)
+2. **Physical response**: Chest tightness, stomach knot, racing thoughts
+3. **Fear thoughts**: "What if they leave me?" "Am I not enough?"
+4. **Behavioral response**: Withdraw, lash out, seek reassurance, shut down
+
+**Breaking the spiral requires recognizing it's happening.**
+
+## Before the Jealousy: Prevention
+
+### Build a Strong Foundation
+
+**✅ Secure Attachment**
+- Regular quality time together
+- Consistent affection and affirmation
+- Predictable check-ins
+- Trust-building exercises
+
+**✅ Clear Agreements**
+- Established boundaries
+- Regular relationship discussions
+- Shared expectations
+- Renegotiation as needed
+
+**✅ Self-Worth Work**
+- Individual therapy if needed
+- Self-care practices
+- Hobbies and interests outside relationship
+- Support network beyond partners
+
+**Jealousy is harder to manage when you're already feeling insecure.**
+
+### Identify Your Triggers
+
+**Common jealousy triggers:**
+- Partner mentioning attraction to others
+- Knowing partner is on a date
+- Seeing partner dress up for someone else
+- Partner being less available
+- Comparing yourself to metamours
+- Partner canceling plans with you for others
+- Sexual details shared
+- Affectionate behaviors with others
+
+**Know your triggers so you can:**
+- Communicate them to partners
+- Create preventative agreements
+- Prepare coping strategies
+- Request accommodations
+
+### Proactive Communication
+
+**Before situations arise, discuss:**
+- How much detail do you want about dates?
+- What reassurances do you need?
+- What helps you feel secure?
+- How should partners respond when you're jealous?
+- What boundaries might help?
+
+**Example agreement:**
+> "When you're going on a date, I need you to text me goodnight. I don't need details about your evening, but knowing you're thinking of me helps."
+
+## During Jealousy: In-the-Moment Strategies
+
+### Step 1: Name It
+
+**Say it out loud (to yourself or partner):**
+> "I'm feeling jealous right now."
+
+**Naming emotions reduces their power.** You're observing the feeling, not being consumed by it.
+
+### Step 2: Breathe
+
+**Physically calm your body:**
+- Deep belly breaths (4-7-8 breathing)
+- Progressive muscle relaxation
+- Go for a walk
+- Do jumping jacks or push-ups
+
+**Why?** Jealousy triggers fight-or-flight. Calming your nervous system helps you think clearly.
+
+### Step 3: Pause Before Reacting
+
+**Don't:**
+- Send angry texts immediately
+- Make demands
+- Lash out
+- Make ultimatums
+- Act on impulse
+
+**Do:**
+- Take 10 minutes to calm down
+- Journal your feelings
+- Talk to a friend
+- Wait until you can communicate calmly
+
+**Exception:** If you need immediate reassurance, ask for it—but calmly.
+
+### Step 4: Identify the Root Fear
+
+**Ask yourself:**
+- What am I actually afraid of?
+- What story am I telling myself?
+- What need isn't being met?
+
+**Examples:**
+
+**Surface**: "I'm jealous they're going out."
+**Root**: "I'm afraid they'll have more fun with them than with me."
+**Deeper root**: "I'm afraid I'm not interesting enough."
+
+**Surface**: "I'm upset about the new partner."
+**Root**: "I feel replaced."
+**Deeper root**: "I fear abandonment from childhood."
+
+**Getting to the root helps you address the real issue.**
+
+### Step 5: Reality Check
+
+**Challenge catastrophic thinking:**
+
+**Jealous thought**: "They're going to leave me for them."
+**Reality check**: "They've chosen to be with me for X years. They have the option to be non-monogamous; they don't have to choose."
+
+**Jealous thought**: "They're having better sex with them."
+**Reality check**: "Different doesn't mean better. We have our own unique connection."
+
+**Jealous thought**: "They'll fall in love and forget about me."
+**Reality check**: "Love isn't finite. Loving someone else doesn't erase love for me."
+
+### Step 6: Self-Soothe
+
+**Comfort strategies:**
+- Wrap in a cozy blanket
+- Watch favorite comfort show
+- Take a bath
+- Call a supportive friend
+- Do a favorite hobby
+- Listen to calming music
+- Cuddle a pet
+- Journal
+
+**Create a jealousy comfort kit:**
+A box with comforting items for hard moments (favorite snacks, journal, cozy socks, affirmation cards, etc.)
+
+## After the Acute Moment: Processing
+
+### Have a Calm Conversation
+
+**Wait until emotions are manageable, then:**
+
+**Use "I" statements:**
+✅ "I felt jealous when you mentioned how fun your date was."
+❌ "You made me jealous by rubbing your date in my face."
+
+**Explain the root fear:**
+✅ "I'm afraid that if they're more exciting than me, you'll prefer them."
+❌ "You're going to leave me for them."
+
+**Request specific needs:**
+✅ "Could you reassure me about what makes our connection special?"
+❌ "Stop seeing them." (unless that's truly your boundary)
+
+### Partner Response Best Practices
+
+**If your partner is jealous:**
+
+**✅ DO:**
+- Listen without defensiveness
+- Validate their feelings
+- Offer reassurance
+- Ask what they need
+- Be patient
+- Honor reasonable requests
+
+**❌ DON'T:**
+- Dismiss their feelings ("You're being ridiculous")
+- Compare them to others ("They would never act like this")
+- Weaponize it ("I guess we should just be monogamous")
+- Punish them emotionally
+- Continue triggering behaviors without discussion
+
+### Journal Prompts for Processing
+
+After jealous episodes, journal:
+1. What triggered this jealousy?
+2. What was I afraid would happen?
+3. Did that fear come true? (Usually no)
+4. What do I need to feel secure?
+5. How can I communicate this to my partner?
+6. What patterns do I notice in my jealousy?
+7. What would make this easier next time?
+
+**Track patterns.** You'll likely see recurring themes that point to deeper work needed.
+
+## Long-Term Jealousy Management
+
+### Build Compersion (Joy in Partner's Joy)
+
+**Compersion** is the opposite of jealousy—feeling happy that your partner is happy, even if it's with someone else.
+
+**It's not automatic.** You cultivate it over time.
+
+**How to build compersion:**
+- Start small (be glad they had a nice conversation)
+- Focus on their happiness rather than the threat
+- Reframe: "They're experiencing joy" vs. "They're replacing me"
+- Celebrate their good experiences
+- Remember their joy doesn't diminish yours
+
+**Example reframe:**
+Jealous thought: "They're on a great date without me."
+Compersion reframe: "I love that they're experiencing connection and joy."
+
+### Increase Your Own Fulfillment
+
+**Jealousy often increases when you're:**
+- Bored
+- Lonely
+- Feeling stuck
+- Lacking purpose
+- Dependent solely on partner for happiness
+
+**Combat this:**
+- Pursue your own interests and hobbies
+- Cultivate friendships
+- Date others (if that's your structure)
+- Focus on personal growth
+- Build a life you love independent of partners
+
+**The happier and more fulfilled you are, the less threatened you feel.**
+
+### Separate Your Worth from Your Relationship
+
+**Insecure attachment asks:** "Am I valuable because they love me?"
+**Secure attachment knows:** "I'm valuable regardless of who loves me."
+
+**Work on:**
+- Self-esteem building
+- Therapy (especially attachment-focused)
+- Self-compassion practices
+- Identity outside of relationships
+
+**You are enough, with or without any partner.**
+
+### Regular Relationship Maintenance
+
+**Prevent jealousy by maintaining connection:**
+
+- **Weekly check-ins**: Discuss feelings, needs, appreciation
+- **Date nights**: Regular quality time, just the two of you
+- **Affection**: Daily physical touch, verbal affirmations
+- **Shared experiences**: Continue building memories together
+- **Appreciation rituals**: Regularly express gratitude
+
+**A well-nourished relationship has less room for jealousy to take root.**
+
+### Therapy and Support
+
+**Consider professional help if:**
+- Jealousy is constant and intense
+- It's damaging your relationships
+- You're stuck in jealousy patterns
+- It's connected to past trauma
+- You can't manage it alone
+
+**Types of support:**
+- Individual therapy (especially attachment-focused)
+- Couples therapy with poly-friendly therapist
+- Support groups for ENM individuals
+- Online communities (with care—avoid toxic ones)
+
+## When Jealousy is a Red Flag
+
+### Jealousy Can Signal Real Problems
+
+**Sometimes jealousy is telling you something legitimate:**
+
+🚩 **Your boundaries are being violated**
+- Partner is breaking agreements
+- They're not respecting your needs
+- Consent is being overridden
+
+🚩 **The relationship is imbalanced**
+- One partner gets freedom, the other doesn't
+- Rules apply unequally
+- Your needs are consistently ignored
+
+🚩 **Trust has been broken**
+- Partner lied or cheated
+- They're not transparent
+- You have reason not to trust them
+
+🚩 **You're actually not okay with non-monogamy**
+- You agreed under pressure
+- It consistently makes you miserable
+- You're enduring, not embracing
+
+**In these cases, jealousy is a valid alarm system.**
+
+**Action:** Address the underlying problem, don't just suppress the jealousy.
+
+### When to Consider Closing the Relationship
+
+**Signs non-monogamy isn't working:**
+- Constant, unmanageable jealousy
+- Relationship quality has severely declined
+- You're miserable more than happy
+- Trust is destroyed
+- One partner is forcing it
+
+**It's okay to try non-monogamy and decide it's not for you.**
+
+## Tools and Techniques Summary
+
+### Quick Jealousy First Aid
+
+1. **Name it**: "I'm feeling jealous."
+2. **Breathe**: 4-7-8 breathing (inhale 4, hold 7, exhale 8)
+3. **Ground**: 5-4-3-2-1 senses technique
+4. **Question**: "What am I afraid of right now?"
+5. **Reality check**: "Is this fear based in reality?"
+6. **Self-soothe**: Comfort activity
+7. **Communicate**: When calm, talk to partner
+8. **Process**: Journal afterward
+
+### Jealousy Management Mantras
+
+- "Feelings are not facts."
+- "Different doesn't mean better."
+- "Love is not a finite resource."
+- "I am enough, regardless."
+- "This feeling will pass."
+- "Their joy doesn't diminish mine."
+- "I can feel jealous and still be okay."
+
+### Red Light, Yellow Light, Green Light
+
+**Green (manageable)**: Feeling a twinge of jealousy but can function
+**Yellow (uncomfortable)**: Jealousy is stronger, need to implement strategies
+**Red (crisis)**: Overwhelmed, need immediate support
+
+**Know your colors and have plans for each level.**
+
+## Final Thoughts
+
+**Jealousy in ENM is:**
+- Normal
+- Manageable
+- An opportunity for growth
+- Information about your needs
+
+**Jealousy in ENM is NOT:**
+- A sign you're doing it wrong
+- A reason to be ashamed
+- A weapon to control partners
+- Proof non-monogamy can't work
+
+**The goal isn't to eliminate jealousy—it's to:**
+- Understand it
+- Manage it healthily
+- Communicate about it
+- Grow through it
+
+**With practice, patience, and self-compassion, jealousy becomes less frequent and intense.** You'll develop resilience, security, and maybe even compersion.
+
+You've got this. 💚
+    `
+  },
+  {
+    slug: "bdsm-terminology-complete-glossary",
+    title: "BDSM Terminology: Complete Glossary",
+    category: "BDSM",
+    excerpt: "Master BDSM language with this comprehensive glossary. From basic terms to advanced concepts, understand the vocabulary of the kink community.",
+    image: "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=600&h=400&fit=crop",
+    author: "SPICE Team",
+    readTime: "12 min read",
+    publishedDate: "2025-01-20",
+    tags: ["BDSM", "glossary", "terminology", "education", "kink", "vocabulary"],
+    content: `
+## Understanding BDSM Language
+
+Welcome to the most comprehensive BDSM terminology guide. Whether you're a curious beginner or looking to expand your vocabulary, this glossary will help you navigate kink conversations with confidence.
+
+**Note:** For the full interactive glossary with search and filters, visit our Glossary page!
+
+## The Basics: BDSM Acronym
+
+**B&D** - Bondage & Discipline
+**D/s** - Dominance & Submission  
+**S&M** - Sadism & Masochism
+
+**Together: BDSM** - An umbrella term for various consensual power exchange and sensation play practices.
+
+## Essential Terms Every Beginner Should Know
+
+### Consent and Safety
+
+**SSC (Safe, Sane, and Consensual)**
+The traditional BDSM motto emphasizing:
+- **Safe**: Minimize physical risks
+- **Sane**: All participants of sound mind
+- **Consensual**: Explicit agreement from everyone
+
+**RACK (Risk-Aware Consensual Kink)**
+A more modern framework acknowledging:
+- All BDSM has some risk
+- Participants understand and accept risks
+- Consent is informed and ongoing
+
+**Safe Word**
+A pre-agreed word or signal used to pause or stop a scene immediately. Common systems:
+- **Red**: Stop completely
+- **Yellow**: Slow down, check in
+- **Green**: All good, continue
+
+**Hard Limit**
+Activities you will absolutely not engage in, no exceptions. Never negotiable.
+
+**Soft Limit**
+Activities you're hesitant about but might explore under the right circumstances.
+
+**Aftercare**
+Care and attention given after a scene to help participants transition back to normal headspace. May include physical comfort, hydration, emotional reassurance.
+
+### Roles and Dynamics
+
+**Top**
+The person doing the action (impact play, bondage, etc.). Not necessarily dominant.
+
+**Bottom**
+The person receiving the action. Not necessarily submissive.
+
+**Dominant (Dom/Domme/Daddy/Mommy)**
+The person in the position of control and authority in a scene or relationship.
+
+**Submissive (Sub/Slave/Baby/Little)**
+The person who surrenders control to the Dominant.
+
+**Switch**
+Someone who enjoys both topping/dominating and bottoming/submitting, depending on mood, partner, or context.
+
+**Service Top**
+A Top who takes direction from the Bottom about what to do.
+
+**Power Bottom**
+A Bottom who directs the scene while still receiving the actions.
+
+## Role-Specific Terms
+
+### Dominant Roles
+
+**Master/Mistress**
+A Dominant in a more formal, often 24/7 power exchange relationship.
+
+**Sir/Ma'am**
+Common titles of respect for Dominants.
+
+**Daddy Dom/Mommy Domme**
+Dominant who takes on a nurturing, parental-style role (not actual family).
+
+**Sadist**
+Someone who derives pleasure from giving consensual pain.
+
+**Brat Tamer**
+Dominant who enjoys "taming" bratty, defiant submissives.
+
+**Rigger**
+Someone skilled in rope bondage.
+
+### Submissive Roles
+
+**Slave**
+A submissive in a more formalized, often 24/7 power exchange with fewer limits.
+
+**Pet/Puppy/Kitten**
+Submissive who takes on animal characteristics and behaviors.
+
+**Little**
+Submissive who embodies a younger headspace (age play).
+
+**Masochist**
+Someone who derives pleasure from receiving consensual pain.
+
+**Brat**
+Playfully defiant submissive who enjoys "earning" punishment.
+
+**Rope Bunny**
+Someone who enjoys being tied up.
+
+**Primal**
+Someone who enjoys raw, animalistic play (growling, biting, wrestling).
+
+## Activities and Practices
+
+### Bondage
+
+**Bondage**
+Restraining a partner using rope, cuffs, tape, or other devices.
+
+**Shibari**
+Japanese-style decorative rope bondage, often intricate and artistic.
+
+**Hogtie**
+Bondage position with wrists and ankles bound together behind the back.
+
+**Spreader Bar**
+Bar that keeps legs or arms spread apart.
+
+**Suspension**
+Bondage where the person is partially or fully lifted off the ground.
+
+### Impact Play
+
+**Impact Play**
+Consensually striking the body for sensation and/or pain.
+
+**Flogging**
+Using a flogger (multiple tails) to strike the body.
+
+**Spanking**
+Striking the buttocks with hand or implement.
+
+**Caning**
+Using a rigid cane to strike the body.
+
+**Paddling**
+Using a paddle (flat implement) for impact.
+
+**Warm-up**
+Starting with lighter strikes to prepare the body for heavier impact.
+
+### Sensation Play
+
+**Sensation Play**
+Activities focused on physical sensations (not necessarily painful).
+
+**Wax Play**
+Dripping hot wax on the body (specific candles designed for this).
+
+**Ice Play**
+Using ice cubes to create cold sensations.
+
+**Temperature Play**
+Alternating hot and cold sensations.
+
+**Knife Play**
+Using a blade for sensation (scraping, pressure) without cutting.
+
+**Needle Play**
+Temporarily piercing skin with sterile needles.
+
+**Electrostimulation (E-stim)**
+Using safe electrical devices to create tingling/shocking sensations.
+
+### Psychological Play
+
+**Humiliation/Degradation**
+Consensual verbal or behavioral acts that make submissive feel embarrassed or degraded.
+
+**Praise Kink**
+Deriving pleasure from receiving praise and positive affirmations.
+
+**Objectification**
+Treating partner as an object (furniture, decoration) rather than person.
+
+**Mind Fuck**
+Psychological play designed to confuse, surprise, or challenge mentally.
+
+**Orgasm Control/Denial**
+Controlling when/if partner is allowed to orgasm.
+
+**Chastity**
+Using a device to prevent sexual activity or orgasm.
+
+## States of Mind
+
+**Subspace**
+Altered state of consciousness submissives may enter during intense scenes. Characterized by euphoria, pain tolerance increase, and mental float.
+
+**Topspace**
+Similar altered state Dominants/Tops may experience, feeling powerful, focused, and deeply connected to the scene.
+
+**Drop (Sub Drop/Top Drop)**
+Emotional/physical crash that can occur hours or days after intense scenes. Can include sadness, anxiety, fatigue.
+
+**Headspace**
+One's mental/emotional state during or related to BDSM activities.
+
+**Subby Brain/Dommy Brain**
+Informal terms for being in submissive or dominant mindset.
+
+## Scene Terms
+
+**Scene**
+A session of BDSM play with agreed beginning and end.
+
+**Negotiation**
+Discussion before a scene about boundaries, desires, limits, and safe words.
+
+**Check-in**
+Pausing during a scene to assess how everyone is feeling.
+
+**Scene Space**
+The physical and mental "bubble" during a scene where you're focused on play.
+
+**Protocol**
+Formal rules or behaviors within a D/s dynamic (kneeling, asking permission, titles, etc.).
+
+### Types of Scenes
+
+**Impact Scene**
+Focused on spanking, flogging, and other strikes.
+
+**Bondage Scene**
+Focused on restraint and restriction.
+
+**Roleplay Scene**
+Acting out fantasies or scenarios.
+
+**Sensory Deprivation Scene**
+Removing one or more senses (blindfolds, earplugs, etc.).
+
+**Edge Play**
+Activities considered higher risk (breath play, knife play, etc.).
+
+## Relationship Structures
+
+**24/7 (Total Power Exchange/TPE)**
+Power exchange dynamic that exists all the time, not just during scenes.
+
+**Bedroom Only**
+Power dynamic that only exists during sexual/play activities.
+
+**Collaring**
+Symbolic act where Dominant gives submissive a collar, similar to engagement/marriage in BDSM context.
+
+**Contract**
+Written agreement outlining terms of D/s relationship.
+
+**Polyamory + Kink**
+Having multiple kink-involved partners.
+
+## Community Terms
+
+**Munch**
+Social gathering of BDSM community in vanilla (public, non-play) setting, usually at restaurant.
+
+**Play Party**
+Private event where BDSM scenes occur.
+
+**Dungeon**
+Space designed for BDSM play (private or public).
+
+**Demo**
+Educational demonstration of BDSM techniques.
+
+**Kink/Leather/BDSM Community**
+The broader social network of people who practice BDSM.
+
+**Vanilla**
+Non-kinky people or activities.
+
+**Vanill a-friendly**
+Someone kinky who can socialize comfortably in non-kink spaces.
+
+## Equipment and Toys
+
+**Flogger**
+Multi-tailed whip for impact play.
+
+**Crop**
+Riding crop used for precise strikes.
+
+**Cane**
+Long, thin, rigid implement for impact.
+
+**Paddle**
+Flat implement for impact (wood, leather, etc.).
+
+**Cuffs**
+Restraints for wrists or ankles (leather, metal, etc.).
+
+**Collar**
+Worn around neck, symbolizing submission or ownership.
+
+**Gag**
+Device placed in mouth to limit speech.
+
+**Blindfold**
+Covers eyes to remove sense of sight.
+
+**Nipple Clamps**
+Clamps that pinch nipples for sensation/pain.
+
+**Violet Wand**
+Electrostimulation device that creates sparks.
+
+**Wartenberg Wheel**
+Spiked wheel rolled on skin for sensation.
+
+## Consent and Ethics
+
+**Informed Consent**
+Agreeing to activities after understanding what they involve and potential risks.
+
+**Enthusiastic Consent**
+Agreement given with genuine excitement and desire, not reluctance.
+
+**Continuous Consent**
+Understanding that consent is ongoing and can be withdrawn anytime.
+
+**Negotiation**
+Pre-scene discussion about activities, boundaries, and safety.
+
+**Boundaries**
+Personal limits about what you will/won't do.
+
+**Trigger**
+Something that causes intense negative emotional response, often related to past trauma.
+
+**Trauma-Informed**
+Approaching BDSM with awareness of how past trauma may affect participants.
+
+## Advanced Concepts
+
+**Primal Play**
+Raw, instinct-driven play involving wrestling, biting, growling, chasing.
+
+**Age Play**
+Roleplay involving different ages (adult partners only).
+
+**Pet Play**
+Roleplay as animals (puppies, kittens, ponies, etc.).
+
+**Domestic Discipline**
+D/s dynamic focused on rules, chores, and discipline in everyday life.
+
+**Master/Slave (M/s)**
+High-protocol relationship with extensive power exchange.
+
+**Consensual Non-Consent (CNC)**
+Pre-negotiated scenes where consent appears absent but is actually prearranged.
+
+## Online and App Terms
+
+**FetLife**
+Social networking site for BDSM/fetish community (like Facebook for kink).
+
+**Munches**
+(See Community Terms above)
+
+**Kink-Friendly**
+Businesses, therapists, or spaces that welcome/understand BDSM.
+
+**NSFW**
+"Not Safe For Work" - explicit content.
+
+**SFW**
+"Safe For Work" - appropriate for general audiences.
+
+## Respect and Red Flags
+
+**True Dom/Domme**
+⚠️ **Red flag term:** Someone claiming they're a "true" Dom often uses it to pressure or manipulate. Real Dominants don't need to announce it.
+
+**Predator**
+Someone who uses BDSM as cover for abuse, ignoring consent and boundaries.
+
+**Topping from the Bottom**
+When a bottom/submissive attempts to control the scene excessively. (Note: Not always negative—communication about needs is good!)
+
+**Gaslighting**
+Psychological manipulation making someone doubt their reality. **Not consensual BDSM.**
+
+**Abuse ≠ BDSM**
+BDSM is consensual. Abuse is not. If consent is absent or ignored, it's not BDSM—it's abuse.
+
+## Slang and Informal Terms
+
+**Kinky**
+Into BDSM or non-vanilla sexual activities.
+
+**Pervy**
+Playfully kinky or deviant.
+
+**Spicy**
+Mildly kinky or adventurous.
+
+**Switch Energy**
+Vibing with both dominant and submissive energy.
+
+**Big Dick Energy (BDE)**
+Confidence and presence (not literal).
+
+**Subby**
+Acting or feeling submissive.
+
+**Bratting**
+Behaving like a brat (playfully defiant).
+
+**Funishment**
+"Punishment" that's actually fun for both parties.
+
+## Final Notes
+
+**This glossary covers core terms, but BDSM vocabulary is vast and regional.**
+
+### Key Takeaways:
+
+✅ **Consent is paramount** - All BDSM must be consensual  
+✅ **Communication is essential** - Negotiate before, check in during, debrief after  
+✅ **Education matters** - Learn safety before trying new activities  
+✅ **Community helps** - Connect with experienced practitioners  
+✅ **Your kink is yours** - No shame in what consensually appeals to you
+
+### Resources for Deeper Learning:
+
+- **Books**: "SM 101" by Jay Wiseman, "The New Topping/Bottoming Book"
+- **Websites**: FetLife, BDSM Education sites
+- **Local**: Munches, workshops, community groups
+
+**Remember**: BDSM is diverse. These terms are guides, not rules. Your kink, your way—as long as it's safe, sane, and consensual (or risk-aware).
+
+Happy exploring! 🖤
+
+---
+
+*For more terms and an interactive search experience, visit the full [SPICE Glossary](/guide/glossary).*
+    `
+  },
+  {
+    slug: "finding-your-bdsm-role-dom-sub-switch",
+    title: "Finding Your BDSM Role: Dom, Sub, or Switch?",
+    category: "BDSM",
+    excerpt: "Discover your natural BDSM role through self-reflection, exploration, and experimentation. Learn the signs, dispel myths, and embrace your authentic kink identity.",
+    image: "https://images.unsplash.com/photo-1517960413843-0aee8e2b3285?w=600&h=400&fit=crop",
+    author: "SPICE Team",
+    readTime: "8 min read",
+    publishedDate: "2025-01-20",
+    tags: ["BDSM", "identity", "dom", "sub", "switch", "roles"],
+    content: `
+## Your Role Isn't Your Identity—But It Helps Guide Your Play
+
+Finding your BDSM role is a journey of self-discovery, not a test you pass or fail. Whether you're naturally dominant, submissive, enjoy switching, or don't fit neatly into any category—you're valid.
+
+Let's explore how to discover what feels right for you.
+
+## Understanding the Roles
+
+### Dominant (Dom/Domme/Top)
+
+**Primary characteristics:**
+- Enjoys leading and directing
+- Finds satisfaction in partner's submission
+- Comfortable making decisions during scenes
+- Derives pleasure from control
+
+**Common traits:**
+- Assertive in play
+- Enjoys planning scenes
+- Responsible for partner's experience
+- Takes charge naturally
+
+### Submissive (Sub/Bottom)
+
+**Primary characteristics:**
+- Enjoys surrendering control
+- Finds satisfaction in pleasing partner
+- Comfortable following direction
+- Derives pleasure from submission
+
+**Common traits:**
+- Receptive in play
+- Finds freedom in surrender
+- Trusts partner to lead
+- Relaxes into submission
+
+### Switch
+
+**Primary characteristics:**
+- Enjoys both roles at different times
+- Comfortable with flexibility
+- May prefer one but can enjoy both
+- Role depends on mood, partner, or context
+
+**Common traits:**
+- Adaptable
+- Understands both perspectives
+- Not limited to one expression
+- May switch within a scene or between partners
+
+## Signs You Might Be Dominant
+
+### In Fantasy:
+
+✅ You imagine yourself:
+- Taking control
+- Making the decisions
+- Directing what happens
+- Receiving service or worship
+- Watching your partner submit
+
+✅ Your arousal comes from:
+- Power and authority
+- Your partner's pleasure from submitting
+- Orchestrating scenes
+- Seeing the effect you have
+- Being obeyed or pleased
+
+### In Real Life:
+
+✅ You tend to:
+- Lead naturally in situations
+- Enjoy planning and organizing
+- Feel satisfied when things go your way
+- Like being in charge
+- Appreciate when others defer to you
+
+**But remember:** Being assertive in life doesn't always mean being dominant in bed, and vice versa.
+
+### Common Dominant Fantasies:
+
+- Giving commands and having them followed
+- Impact play (spanking, flogging) as the giver
+- Bondage as the tier
+- Receiving oral service
+- Controlling orgasms
+- Directing scenes and activities
+
+## Signs You Might Be Submissive
+
+### In Fantasy:
+
+✅ You imagine yourself:
+- Being told what to do
+- Surrendering control
+- Following directions
+- Serving or pleasing
+- Being bound or restrained
+
+✅ Your arousal comes from:
+- Giving up control
+- Partner's satisfaction with you
+- Following commands
+- Being dominated
+- The freedom of submission
+
+### In Real Life:
+
+✅ You tend to:
+- Feel relief when others take charge
+- Find decision-making exhausting sometimes
+- Enjoy doing things that please others
+- Appreciate clear direction
+- Feel satisfied when you've served well
+
+**But remember:** Submission is strength, not weakness. You're choosing to surrender.
+
+### Common Submissive Fantasies:
+
+- Receiving commands and following them
+- Impact play as the receiver
+- Bondage as the one being tied
+- Giving oral service
+- Having orgasms controlled
+- Being used for partner's pleasure
+
+## Signs You Might Be a Switch
+
+### In Fantasy:
+
+✅ You imagine yourself:
+- In both roles at different times
+- Enjoying variety
+- Adapting to your partner
+- Topping sometimes, bottoming others
+
+✅ Your arousal comes from:
+- Flexibility
+- Different dynamics
+- The right fit for the moment
+- Both giving and receiving
+
+### In Real Life:
+
+✅ You tend to:
+- Adapt to situations fluidly
+- Enjoy different roles in different contexts
+- Not feel limited to one expression
+- Appreciate variety
+
+### Common Switch Patterns:
+
+**Contextual Switching:**
+- Top with some partners, bottom with others
+- Depends on chemistry and preference
+
+**Mood-Based Switching:**
+- Dominant when feeling energetic and assertive
+- Submissive when needing to release control
+
+**Scene Switching:**
+- May switch roles within the same encounter
+- Starts as one, transitions to the other
+
+**Relationship Switching:**
+- Primarily one role in main relationship
+- Explores other role with different partners
+
+**No Pattern:**
+- Genuinely enjoys both equally
+- Chooses based on the moment
+
+## How to Explore and Discover Your Role
+
+### Self-Reflection Questions
+
+**Ask yourself:**
+
+1. **In fantasies, what role am I in?**
+   - Always one role?
+   - Varies?
+   - Both appeal equally?
+
+2. **What excites me most?**
+   - Giving pleasure or receiving it?
+   - Leading or following?
+   - Control or surrender?
+
+3. **What feels natural?**
+   - Taking charge?
+   - Being directed?
+   - Both, depending?
+
+4. **Where do I feel most myself?**
+   - When I'm in control?
+   - When I surrender?
+   - When I can be flexible?
+
+5. **What appeals to me about BDSM?**
+   - Power and authority?
+   - Submission and service?
+   - Intensity and sensation?
+   - Variety and exploration?
+
+### Start Small and Experiment
+
+**Try simple activities:**
+
+**To test Dominant tendencies:**
+- Give directions during sex ("Touch yourself here")
+- Try light spanking
+- Use restraints on a partner
+- Take complete control of a sexual encounter
+- Direct your partner to please you
+
+**To test Submissive tendencies:**
+- Follow directions during sex
+- Receive light spanking
+- Let yourself be restrained
+- Surrender control completely
+- Focus entirely on pleasing your partner
+
+**Notice:**
+- What felt natural?
+- What was arousing?
+- What felt awkward or forced?
+- What do you want to explore more?
+
+### Take the SPICE BDSM Compatibility Quiz
+
+Our comprehensive quiz can help identify your natural inclinations across multiple BDSM interests, including dominance, submission, and switching.
+
+## Common Myths and Misconceptions
+
+### Myth: "Dominants are always in control in life"
+
+❌ **False**
+
+Many Dominants are submissive in their professional lives or vice versa. BDSM roles are separate from everyday personality.
+
+### Myth: "Submissives are weak"
+
+❌ **False**
+
+Submission is an act of strength. It takes courage to surrender control and trust someone with your vulnerability.
+
+### Myth: "You must be only one role"
+
+❌ **False**
+
+Many people are switches. You can enjoy different roles with different partners or at different times. Flexibility is valid.
+
+### Myth: "Your role is fixed forever"
+
+❌ **False**
+
+Roles can evolve. You might start as submissive and discover dominant desires later, or vice versa. Exploration is ongoing.
+
+### Myth: "Tops are always Dominants and Bottoms are always Submissive"
+
+❌ **False**
+
+**Top/Bottom** = who's doing/receiving actions (physical)
+**Dominant/Submissive** = who's in control (psychological)
+
+You can be a submissive top (taking direction on what physical acts to perform) or a dominant bottom (directing what's done to you).
+
+### Myth: "There's a right way to be Dom/Sub"
+
+❌ **False**
+
+Dominance and submission look different for everyone. There's no single correct way to express your role.
+
+## What If Nothing Feels Right?
+
+**You might:**
+
+1. **Not be into power exchange**
+   - You can enjoy BDSM without D/s dynamics
+   - Focus on sensation play, bondage for aesthetics, etc.
+   - No power exchange required
+
+2. **Be still exploring**
+   - It's okay not to know yet
+   - Give yourself time and experiences
+   - Don't rush to label yourself
+
+3. **Be more fluid than categories allow**
+   - Maybe you don't fit neatly into any box
+   - Maybe your role changes dramatically by context
+   - Create your own label or use none
+
+4. **Prefer egalitarian kink**
+   - Equal partners exploring sensation and play
+   - No power dynamic
+   - Mutual exploration
+
+**All of these are completely valid.**
+
+## Role vs. Relationship Structure
+
+**Your BDSM role doesn't dictate your relationship:**
+
+- You can be dominant in scenes but have an equal partnership otherwise
+- You can be submissive 24/7 or only in the bedroom
+- You can switch roles with the same partner
+- You can be one role with one partner and another role with different partners
+
+**Relationship structures to consider:**
+
+**Bedroom Only:** Power dynamic only during sex/scenes
+**24/7:** Power exchange all the time
+**High Protocol:** Formal rules and behaviors
+**Low Protocol:** Casual, less structured
+**Negotiated:** Custom rules that work for you
+
+## Exploring with Partners
+
+### Communicating Your Interests
+
+**When you know your role:**
+> "I've been exploring my interests, and I think I'm naturally submissive. I'd love to explore that dynamic with you."
+
+**When you're unsure:**
+> "I'm curious about BDSM but not sure which role fits me. Would you be open to experimenting together?"
+
+**When you're a switch:**
+> "I enjoy both dominant and submissive roles depending on the mood and partner. I'm flexible and would love to explore what works for us."
+
+### Trying Roles Safely
+
+**Start with:**
+1. **Communication:** Discuss boundaries, interests, safe words
+2. **Simple scenes:** Light bondage, mild impact, basic commands
+3. **Check-ins:** Pause to assess comfort and arousal
+4. **Debrief:** Discuss what worked and what didn't
+5. **Adjust:** Refine based on experience
+
+**Build up to:**
+- More intense activities
+- Longer scenes
+- More complex dynamics
+- Power exchange outside bedroom (if desired)
+
+## Signs a Role Fits
+
+**You'll know a role feels right when:**
+
+✅ It's arousing, not just interesting
+✅ You feel authentic, not like you're acting
+✅ It enhances pleasure rather than diminishes it
+✅ You're eager to explore more
+✅ It feels natural, even if new
+✅ You think about it often
+✅ It brings you satisfaction
+
+**Signs a role doesn't fit:**
+
+❌ You're doing it only to please a partner
+❌ It feels forced or uncomfortable
+❌ You're constantly questioning it
+❌ It doesn't enhance arousal
+❌ You dread it rather than anticipate it
+❌ You feel like you're pretending
+
+## Embracing Your Role
+
+### If You're Dominant:
+
+**Embrace:**
+- Your authority and leadership
+- Responsibility for your submissive
+- Planning and creativity in scenes
+- The power you hold
+
+**Remember:**
+- Dominance is earned through trust
+- It's a gift from your submissive
+- With power comes responsibility
+- Aftercare is your duty too
+
+### If You're Submissive:
+
+**Embrace:**
+- Your strength in surrender
+- The gift you give through submission
+- Your power in consent
+- The freedom you find
+
+**Remember:**
+- Submission is not weakness
+- You have power through boundaries
+- You can withdraw consent anytime
+- Your needs matter just as much
+
+### If You're a Switch:
+
+**Embrace:**
+- Your flexibility and adaptability
+- Understanding both perspectives
+- The variety you enjoy
+- Your non-linear expression
+
+**Remember:**
+- You're not "confused" or "uncommitted"
+- Switching is a valid identity
+- You don't have to pick one
+- Variety is legitimate
+
+## Final Thoughts
+
+**Finding your BDSM role is:**
+- A personal journey
+- Based on your desires, not others' expectations
+- Allowed to evolve
+- Not mandatory (you can enjoy BDSM without defining a role)
+
+**Your role is about what feels right for YOU:**
+- Not what your partner wants
+- Not what's "normal"
+- Not what you think you should be
+- But what genuinely arouses and fulfills you
+
+**Trust yourself, explore safely, and embrace whatever role (or non-role) feels authentic.**
+
+You might discover you're a strong Dominant, a devoted Submissive, a flexible Switch, or something entirely your own.
+
+**Whatever you are, you're valid. Welcome to your kink journey.** 🖤
+
+---
+
+*Ready to explore? Take the SPICE BDSM Compatibility Quiz to discover your preferences across multiple dimensions of kink.*
+    `
   }
 ];
 
