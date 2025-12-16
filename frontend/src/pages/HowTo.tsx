@@ -8,6 +8,42 @@ import { Lightbulb, ArrowRight } from "lucide-react";
 const howToArticles = [
   {
     id: 1,
+    slug: "how-to-talk-to-partner-about-enm",
+    title: "How to Talk to Your Partner About ENM",
+    excerpt: "A compassionate, step-by-step guide to opening the conversation about ethical non-monogamy with your partner.",
+    image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=600&h=400&fit=crop",
+    author: "SPICE Team",
+    readTime: "9 min read",
+  },
+  {
+    id: 2,
+    slug: "lifestyle-dating-etiquette-dos-donts",
+    title: "Lifestyle Dating Etiquette: Do's and Don'ts",
+    excerpt: "Master the unwritten rules of lifestyle dating. Learn proper etiquette for couples and singles navigating ENM, swinging, and BDSM communities.",
+    image: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600&h=400&fit=crop",
+    author: "SPICE Team",
+    readTime: "8 min read",
+  },
+  {
+    id: 3,
+    slug: "creating-couples-profile-tips-success",
+    title: "Creating a Couples Profile: Tips for Success",
+    excerpt: "Build an attractive, authentic couples profile for lifestyle dating apps. Learn what to include, what to avoid, and how to stand out.",
+    image: "https://images.unsplash.com/photo-1494774157365-9e04c6720e47?w=600&h=400&fit=crop",
+    author: "SPICE Team",
+    readTime: "7 min read",
+  },
+  {
+    id: 4,
+    slug: "jealousy-management-open-relationships",
+    title: "Jealousy Management in Open Relationships",
+    excerpt: "Practical strategies for recognizing, processing, and working through jealousy in ENM relationships.",
+    image: "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=600&h=400&fit=crop",
+    author: "SPICE Team",
+    readTime: "9 min read",
+  },
+  {
+    id: 5,
     slug: "how-to-set-boundaries-open-relationships",
     title: "How to Set Boundaries in Open Relationships",
     excerpt: "Clear communication and defined boundaries are the foundation of healthy ENM relationships.",
@@ -16,7 +52,7 @@ const howToArticles = [
     readTime: "6 min read",
   },
   {
-    id: 2,
+    id: 6,
     slug: "how-to-have-the-talk-partner",
     title: "How to Have 'The Talk' With Your Partner",
     excerpt: "A step-by-step guide to opening up the conversation about exploring ethical non-monogamy.",
@@ -25,7 +61,7 @@ const howToArticles = [
     readTime: "8 min read",
   },
   {
-    id: 3,
+    id: 7,
     slug: "how-to-navigate-first-play-party",
     title: "How to Navigate Your First Play Party",
     excerpt: "Everything you need to know before attending your first lifestyle event or play party.",
@@ -34,7 +70,7 @@ const howToArticles = [
     readTime: "10 min read",
   },
   {
-    id: 4,
+    id: 8,
     slug: "how-to-practice-safe-kink",
     title: "How to Practice Safe Kink",
     excerpt: "Essential safety practices for BDSM play, from negotiation to aftercare.",
@@ -43,7 +79,7 @@ const howToArticles = [
     readTime: "7 min read",
   },
   {
-    id: 5,
+    id: 9,
     slug: "how-to-create-dating-profile-stands-out",
     title: "How to Create a Dating Profile That Stands Out",
     excerpt: "Tips for crafting an authentic and attractive profile on lifestyle dating apps.",
@@ -52,7 +88,7 @@ const howToArticles = [
     readTime: "5 min read",
   },
   {
-    id: 6,
+    id: 10,
     slug: "how-to-handle-jealousy-enm",
     title: "How to Handle Jealousy in ENM",
     excerpt: "Practical strategies for recognizing, processing, and working through jealousy.",
@@ -61,7 +97,7 @@ const howToArticles = [
     readTime: "9 min read",
   },
   {
-    id: 7,
+    id: 11,
     slug: "how-to-find-local-community",
     title: "How to Find Your Local Community",
     excerpt: "Discover how to connect with lifestyle communities in your area safely and authentically.",
@@ -70,7 +106,7 @@ const howToArticles = [
     readTime: "6 min read",
   },
   {
-    id: 8,
+    id: 12,
     slug: "how-to-negotiate-scene",
     title: "How to Negotiate a Scene",
     excerpt: "A comprehensive guide to BDSM scene negotiation for beginners and experienced players.",
@@ -79,7 +115,7 @@ const howToArticles = [
     readTime: "8 min read",
   },
   {
-    id: 9,
+    id: 13,
     slug: "how-to-practice-compersion",
     title: "How to Practice Compersion",
     excerpt: "Learn to experience joy when your partner finds happiness with others.",
