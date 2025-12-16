@@ -103,13 +103,26 @@ const StatusIcon = ({ status }: { status: FeatureStatus }) => {
 };
 
 const SpiceApp = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "SPICE App Features Comparison",
+    "description": "Compare SPICE dating app features with Feeld, 3Fun, Tinder, SDC, and Beedoo for swingers, BDSM, and ENM communities.",
+    "mainEntity": {
+      "@type": "Table",
+      "about": "Dating app feature comparison for alternative lifestyle communities"
+    }
+  };
+
   return (
     <div className="relative min-h-screen">
-      <Helmet>
-        <title>SPICE App Features — Compare Dating Apps for Swingers & BDSM</title>
-        <meta name="description" content="See how SPICE compares to Feeld, 3Fun, Tinder, SDC, and other dating apps. Discover our unique features for swingers, BDSM, and ENM communities." />
-        <link rel="canonical" href="https://thespiceapp.com/spice-app" />
-      </Helmet>
+      <SEO
+        title="SPICE vs Feeld, 3Fun, Tinder — Best Swingers Dating App Comparison"
+        description="Compare SPICE with Feeld, 3Fun, Tinder, SDC, and Beedoo. See why SPICE offers 100% photo verification, BDSM compatibility quiz, couples matching, polyamorous support, 200+ desire tags, and more features for the lifestyle community."
+        keywords="SPICE vs Feeld, SPICE vs 3Fun, best swingers dating app, BDSM dating app comparison, lifestyle app reviews, alternative lifestyle dating comparison, couples dating app features, verified adult dating comparison, ENM dating app features, kink-friendly dating apps"
+        canonical="https://thespiceapp.com/spice-app"
+        structuredData={structuredData}
+      />
       <ParticlesBackground />
       <Header />
       <Breadcrumbs />
