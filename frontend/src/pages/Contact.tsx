@@ -81,7 +81,8 @@ const Contact = () => {
         title: "Message sent!",
         description: "We'll get back to you as soon as possible.",
       });
-
+      
+      trackFormSubmit('contact');
       setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (error: unknown) {
       const errorMessage = error instanceof Error ? error.message : "Something went wrong";
