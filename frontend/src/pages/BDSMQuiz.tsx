@@ -597,13 +597,30 @@ const BDSMQuiz = () => {
   }
 
   if (!quizStarted) {
+    const structuredData = {
+      "@context": "https://schema.org",
+      "@type": "Quiz",
+      "name": "BDSM Compatibility Quiz",
+      "description": "Comprehensive 40+ question BDSM compatibility assessment covering lifestyle, roles, kinks, and dynamics",
+      "educationalLevel": "All Levels",
+      "assesses": "BDSM compatibility, kink interests, relationship dynamics, lifestyle preferences",
+      "numberOfQuestions": 40,
+      "typicalAgeRange": "18-",
+      "about": {
+        "@type": "Thing",
+        "name": "BDSM Compatibility and Lifestyle Assessment"
+      }
+    };
+
     return (
       <div className="min-h-screen bg-background">
-        <Helmet>
-          <title>BDSM Compatibility Quiz — Discover Your Intimacy Style | SPICE</title>
-          <meta name="description" content="Take our AI-powered BDSM compatibility quiz to discover your intimacy style, preferences, and find compatible partners. Safe, private, and non-judgmental." />
-          <link rel="canonical" href="https://thespiceapp.com/quiz" />
-        </Helmet>
+        <SEO
+          title="Free BDSM Compatibility Quiz — Discover Your Kink, Role & Ideal Partner"
+          description="Take our comprehensive 40+ question BDSM compatibility quiz to discover your role (Dom/Sub/Switch), kink interests, lifestyle preferences, and ideal partner match. AI-powered analysis with detailed insights on BDSM dynamics, power exchange, and relationship compatibility. 100% private and judgment-free."
+          keywords="BDSM compatibility quiz, kink compatibility test, dom sub test, BDSM personality quiz, free BDSM quiz, kink interest assessment, BDSM archetype quiz, sexual compatibility test, BDSM role identification, lifestyle compatibility quiz, power exchange assessment, kink discovery quiz"
+          canonical="https://thespiceapp.com/quiz"
+          structuredData={structuredData}
+        />
         <Header />
         <Breadcrumbs />
         <div className="pt-32 flex items-center justify-center p-4">
