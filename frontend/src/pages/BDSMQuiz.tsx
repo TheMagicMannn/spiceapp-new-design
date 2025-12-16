@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import { ArrowLeft, ArrowRight, Sparkles, Heart, Shield, Lock } from 'lucide-react';
@@ -11,6 +11,7 @@ import QuizQuestion from '@/components/quiz/QuizQuestion';
 import { quizQuestions } from '@/data/quizQuestions';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import Header from '@/components/Header';
+import { trackQuizStart, trackQuizComplete, trackQuizProgress } from '@/lib/gtag';
 
 export interface QuizResponse {
   questionId: string;
