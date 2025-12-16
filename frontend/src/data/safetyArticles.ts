@@ -1598,12 +1598,34 @@ Request a copy of your results. Many lifestyle apps allow you to upload or share
 
 ### General Guidelines
 
-| Activity Level | Testing Frequency |
-|----------------|-------------------|
-| Monogamous | Annually |
-| Occasional lifestyle play | Every 3-6 months |
-| Regular lifestyle activity | Every 3 months |
-| Very active | Monthly or as needed |
+<div style="overflow-x: auto; margin: 20px 0;">
+  <table style="width: 100%; border-collapse: collapse; background: rgba(139, 92, 246, 0.05); border-radius: 12px; overflow: hidden;">
+    <thead>
+      <tr style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.2), rgba(139, 92, 246, 0.2));">
+        <th style="padding: 16px; text-align: left; font-weight: bold; color: #ec4899; border-bottom: 2px solid rgba(236, 72, 153, 0.3);">Activity Level</th>
+        <th style="padding: 16px; text-align: left; font-weight: bold; color: #ec4899; border-bottom: 2px solid rgba(236, 72, 153, 0.3);">Testing Frequency</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom: 1px solid rgba(139, 92, 246, 0.1);">
+        <td style="padding: 14px 16px; color: #fff;">💑 Monogamous</td>
+        <td style="padding: 14px 16px; color: #a78bfa;">Annually</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(139, 92, 246, 0.1);">
+        <td style="padding: 14px 16px; color: #fff;">🎭 Occasional lifestyle play</td>
+        <td style="padding: 14px 16px; color: #a78bfa;">Every 3-6 months</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(139, 92, 246, 0.1);">
+        <td style="padding: 14px 16px; color: #fff;">🔥 Regular lifestyle activity</td>
+        <td style="padding: 14px 16px; color: #a78bfa;">Every 3 months</td>
+      </tr>
+      <tr>
+        <td style="padding: 14px 16px; color: #fff;">⚡ Very active</td>
+        <td style="padding: 14px 16px; color: #a78bfa;">Monthly or as needed</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ### Test After
 - Any new partner
@@ -1614,16 +1636,44 @@ Request a copy of your results. Many lifestyle apps allow you to upload or share
 ### Window Periods
 STIs have "window periods" where they won't show on tests:
 
-| STI | Window Period |
-|-----|---------------|
-| HIV (4th gen test) | 18-45 days |
-| Syphilis | 3-6 weeks |
-| Gonorrhea | 1-14 days |
-| Chlamydia | 1-14 days |
-| Herpes | 2-12 weeks |
-| Hepatitis B | 6 weeks - 6 months |
+<div style="overflow-x: auto; margin: 20px 0;">
+  <table style="width: 100%; border-collapse: collapse; background: rgba(139, 92, 246, 0.05); border-radius: 12px; overflow: hidden;">
+    <thead>
+      <tr style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.2), rgba(139, 92, 246, 0.2));">
+        <th style="padding: 16px; text-align: left; font-weight: bold; color: #ec4899; border-bottom: 2px solid rgba(236, 72, 153, 0.3);">STI</th>
+        <th style="padding: 16px; text-align: left; font-weight: bold; color: #ec4899; border-bottom: 2px solid rgba(236, 72, 153, 0.3);">Window Period</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="border-bottom: 1px solid rgba(139, 92, 246, 0.1);">
+        <td style="padding: 14px 16px; color: #fff;">🔴 HIV (4th gen test)</td>
+        <td style="padding: 14px 16px; color: #a78bfa;">18-45 days</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(139, 92, 246, 0.1);">
+        <td style="padding: 14px 16px; color: #fff;">🟡 Syphilis</td>
+        <td style="padding: 14px 16px; color: #a78bfa;">3-6 weeks</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(139, 92, 246, 0.1);">
+        <td style="padding: 14px 16px; color: #fff;">🟢 Gonorrhea</td>
+        <td style="padding: 14px 16px; color: #a78bfa;">1-14 days</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(139, 92, 246, 0.1);">
+        <td style="padding: 14px 16px; color: #fff;">🔵 Chlamydia</td>
+        <td style="padding: 14px 16px; color: #a78bfa;">1-14 days</td>
+      </tr>
+      <tr style="border-bottom: 1px solid rgba(139, 92, 246, 0.1);">
+        <td style="padding: 14px 16px; color: #fff;">🟣 Herpes</td>
+        <td style="padding: 14px 16px; color: #a78bfa;">2-12 weeks</td>
+      </tr>
+      <tr>
+        <td style="padding: 14px 16px; color: #fff;">🟠 Hepatitis B</td>
+        <td style="padding: 14px 16px; color: #a78bfa;">6 weeks - 6 months</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-If you had a potential exposure, wait for the window period before testing, then test again later to confirm.
+**Important:** If you had a potential exposure, wait for the window period before testing, then test again later to confirm.
 
 ## Where to Get Tested
 
