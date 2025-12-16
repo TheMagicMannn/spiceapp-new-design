@@ -71,6 +71,13 @@ const safetyCategories = [
     description: "Understanding and practicing enthusiastic consent",
     articles: [
       {
+        slug: "bdsm-safety-complete-beginners-checklist",
+        title: "BDSM Safety: Complete Beginner's Checklist",
+        excerpt: "Essential safety practices for BDSM beginners. Learn about consent, negotiation, safe words, aftercare, and risk awareness.",
+        readTime: "10 min read",
+        image: "https://images.unsplash.com/photo-1557682250-33bd709cbe85?w=400&h=250&fit=crop",
+      },
+      {
         slug: "enthusiastic-consent-101",
         title: "Enthusiastic Consent 101",
         excerpt: "What consent really means and how to practice it in every interaction.",
