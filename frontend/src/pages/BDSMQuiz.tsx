@@ -117,15 +117,21 @@ const BDSMQuiz = () => {
     setIsAnalyzing(true);
     
     try {
-      // Call Supabase Edge Function for AI analysis
-      const { data, error } = await supabase.functions.invoke('analyze-bdsm-quiz', {
-        body: { responses }
+      // Call backend API for AI analysis
+      const backendUrl = import.meta.env.VITE_BACKEND_URL || process.env.REACT_APP_BACKEND_URL || '';
+      const response = await fetch(`${backendUrl}/api/analyze-quiz`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ responses })
       });
 
-      if (error) {
-        console.error('Supabase function error:', error);
-        throw error;
+      if (!response.ok) {
+        throw new Error(`API error: ${response.status}`);
       }
+
+      const data = await response.json();
 
       if (data?.success && data?.insights) {
         setInsights(data.insights);
