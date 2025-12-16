@@ -258,9 +258,30 @@ agent_communication:
       - https://images.unsplash.com/photo-1527525443983-6e60c75fff46
       - https://images.pexels.com/photos/4881619/pexels-photo-4881619.jpeg
       
+      🔄 ADJUSTMENTS MADE (User Feedback):
+      - Reduced LGBTQ+ emphasis, made it natural mention instead
+      - Replaced diversity-focused images with lifestyle-focused images (intimate, sensual)
+      - Changed "LGBTQ+ Inclusive" badge to "Lifestyle Community" (5,000+ Active Couples)
+      - Updated testimonial from identity-focused to activity-focused (swinging couple)
+      - Changed section header from "Celebrates Diversity" to "Where the Lifestyle Comes Alive"
+      - Updated FAQ question from "Is SPICE LGBTQ+ friendly?" to "Who can use SPICE?"
+      - Changed "LGBTQ+ inclusive" to "judgment-free" in hero sections
+      - Added "polyamory" and "kink" to all descriptions
+      - Keywords now focus on activities (swinging, threesome) vs identities
+      
+      📸 NEW LIFESTYLE-FOCUSED IMAGES:
+      - https://images.unsplash.com/photo-1718754720400-a5e6167ed1dd (intimate sculpture)
+      - https://images.unsplash.com/photo-1691932230591-6a41c363775d (artistic embrace)
+      - https://images.unsplash.com/photo-1762237895002-1658ebb56acf (lifestyle party atmosphere)
+      
+      🎯 CURRENT FOCUS:
+      Core message: Swingers, ENM, polyamory, BDSM, and kink for couples and singles
+      Natural inclusivity: "all genders and sexualities" as supporting statement
+      Trust: Verified, safe, judgment-free community
+      
       🔄 NEXT STEPS:
       - Test FAQ page rendering
-      - Test Trust Badges section display
+      - Test Trust Badges section display with new images
       - Verify structured data with Google Rich Results Test
       - Test internal linking
       - Optional: Replace existing hero with EnhancedHeroSection if desired
