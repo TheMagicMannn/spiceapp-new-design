@@ -74,6 +74,13 @@ const communities = [
     color: "from-orange-500/20 to-amber-500/20",
     articles: [
       {
+        slug: "10-signs-ready-try-swinging",
+        title: "10 Signs You're Ready to Try Swinging",
+        excerpt: "Thinking about entering the swinging lifestyle? Here are 10 clear indicators that you and your partner might be ready.",
+        readTime: "7 min read",
+        image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=250&fit=crop",
+      },
+      {
         slug: "how-to-start-swinging-couples-communication",
         title: "Swinging 101: Getting Started",
         excerpt: "Everything couples need to know before entering the swinging lifestyle.",
