@@ -3509,17 +3509,12 @@ Polyamory involves having multiple romantic and emotional relationships simultan
 **Example structures:**
 
 **Vee (or V):**
-```
-Person A ← Person B → Person C
-```
-Person B dates both A and C, who don't date each other
+- Person A ← Person B → Person C
+- Person B dates both A and C, who don't date each other
 
 **Triad (or Triangle):**
-```
-Person A ↔ Person B ↔ Person C
-       ↓____________↑
-```
-All three people in relationships with each other
+- Person A ↔ Person B ↔ Person C (all three connected)
+- All three people in relationships with each other
 
 **Quad:**
 Four people in various relationship configurations
