@@ -157,10 +157,10 @@ async def join_waitlist(request: WaitlistRequest):
 @api_router.post("/analyze-quiz")
 async def analyze_quiz(request: QuizAnalysisRequest):
     try:
-        # Get Emergent LLM key
-        api_key = os.environ.get('EMERGENT_LLM_KEY')
+        # Get OpenAI API key from environment
+        api_key = os.environ.get('OPENAI_API_KEY')
         if not api_key:
-            raise HTTPException(status_code=500, detail="API key not configured")
+            raise HTTPException(status_code=500, detail="OpenAI API key not configured")
         
         # Format responses for AI analysis
         formatted_responses = []
@@ -218,16 +218,23 @@ Based on these responses, provide a detailed analysis in JSON format with the fo
 
 Be specific, insightful, and non-judgmental. Focus on understanding their unique preferences and providing actionable compatibility insights."""
 
-        # Initialize LLM chat
-        chat = LlmChat(
-            api_key=api_key,
-            session_id=f"quiz-analysis-{uuid.uuid4()}",
-            system_message="You are an expert BDSM/kink relationship psychologist. Provide detailed, non-judgmental, accurate analysis in valid JSON format only. No markdown, no code blocks, just pure JSON."
-        ).with_model("openai", "gpt-5.1")
+        # Use OpenAI directly
+        import openai
+        openai.api_key = api_key
         
-        # Send message and get analysis
-        user_message = UserMessage(text=analysis_prompt)
-        response_text = await chat.send_message(user_message)
+        # Call OpenAI API
+        response = await asyncio.to_thread(
+            openai.chat.completions.create,
+            model="gpt-4o",
+            messages=[
+                {"role": "system", "content": "You are an expert BDSM/kink relationship psychologist. Provide detailed, non-judgmental, accurate analysis in valid JSON format only. No markdown, no code blocks, just pure JSON."},
+                {"role": "user", "content": analysis_prompt}
+            ],
+            temperature=0.7,
+            max_tokens=2500
+        )
+        
+        response_text = response.choices[0].message.content
         
         # Parse JSON response
         try:
