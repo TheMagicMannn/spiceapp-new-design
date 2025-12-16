@@ -153,8 +153,8 @@ const TrustBadgesSection = () => {
         {/* Testimonial Quote */}
         <div className="mt-16 max-w-4xl mx-auto text-center">
           <blockquote className="text-xl md:text-2xl font-medium text-muted-foreground italic">
-            "SPICE has created the most welcoming and authentic platform for the lifestyle community. 
-            As a queer polyamorous couple, we finally found a space where we truly belong."
+            "SPICE transformed how we explore the lifestyle. The verification gives us peace of mind, 
+            and we've met amazing like-minded couples who share our interests in swinging and ENM."
           </blockquote>
           <div className="mt-6 flex items-center justify-center gap-3">
             <div className="flex -space-x-2">
@@ -162,8 +162,8 @@ const TrustBadgesSection = () => {
               <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 border-2 border-background" />
             </div>
             <div className="text-left">
-              <div className="font-semibold">Alex & Jordan</div>
-              <div className="text-sm text-muted-foreground">SPICE Members since 2024</div>
+              <div className="font-semibold">Mike & Sarah</div>
+              <div className="text-sm text-muted-foreground">Swinging Couple - SPICE Members since 2024</div>
             </div>
           </div>
         </div>
