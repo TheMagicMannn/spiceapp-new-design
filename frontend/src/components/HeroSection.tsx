@@ -63,6 +63,7 @@ const HeroSection = () => {
       } else {
         triggerConfetti();
         setShowSuccess(true);
+        trackWaitlistSignup('hero');
         toast.success("Welcome to the Spice family! 🎉 Check your inbox for a confirmation email and get ready for something special.", {
           duration: 5000,
         });
