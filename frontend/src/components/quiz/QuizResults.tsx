@@ -391,18 +391,6 @@ const QuizResults: React.FC<QuizResultsProps> = ({ insights, onRestart, response
               <Download className="mr-2 w-4 h-4" />
               {isDownloading ? 'Downloading...' : 'Download Results'}
             </Button>
-                    className="flex-1 px-3 py-2 bg-background border border-border rounded text-sm"
-                  />
-                  <Button
-                    size="sm"
-                    variant="outline"
-                    onClick={copyShareLink}
-                  >
-                    {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
-                  </Button>
-                </div>
-              </div>
-            )}
           </div>
         </motion.div>
       </div>
