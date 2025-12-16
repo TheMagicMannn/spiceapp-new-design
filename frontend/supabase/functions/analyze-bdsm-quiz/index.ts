@@ -64,11 +64,13 @@ Based on these responses, provide a detailed analysis in JSON format with the fo
 
 Be specific, insightful, and non-judgmental. Focus on understanding their unique preferences and providing actionable compatibility insights.`;
 
-    const response = await fetch('https://api.emergent.ai/v1/chat/completions', {
+    const response = await fetch('https://api.openai.com/v1/chat/completions', {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${EMERGENT_LLM_KEY}`,
         'Content-Type': 'application/json',
+        'HTTP-Referer': 'https://thespiceapp.com',
+        'X-Title': 'SPICE Dating App'
       },
       body: JSON.stringify({
         model: 'gemini/gemini-2.5-flash',
