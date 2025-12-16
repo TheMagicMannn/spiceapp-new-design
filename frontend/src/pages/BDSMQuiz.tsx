@@ -117,31 +117,32 @@ const BDSMQuiz = () => {
     setIsAnalyzing(true);
     
     try {
-      // Call backend API for AI analysis
-      const backendUrl = import.meta.env.VITE_BACKEND_URL || process.env.REACT_APP_BACKEND_URL || '';
-      console.log('Backend URL:', backendUrl);
-      console.log('Calling API:', `${backendUrl}/api/analyze-quiz`);
+      // Call Supabase Edge Function for AI analysis
+      console.log('Calling Supabase Edge Function: analyze-bdsm-quiz');
+      console.log('Number of responses:', responses.length);
       
-      const response = await fetch(`${backendUrl}/api/analyze-quiz`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ responses })
+      const { data, error } = await supabase.functions.invoke('analyze-bdsm-quiz', {
+        body: { responses }
       });
 
-      console.log('Response status:', response.status);
-      
-      if (!response.ok) {
-        const errorText = await response.text();
-        console.error('API error response:', errorText);
-        throw new Error(`API error: ${response.status} - ${errorText}`);
+      console.log('Supabase function response:', { data, error });
+
+      if (error) {
+        console.error('Supabase function error:', error);
+        throw error;
       }
 
-      const data = await response.json();
-      console.log('API response data:', data);
-
       if (data?.success && data?.insights) {
+        console.log('Successfully received insights from AI');
+        setInsights(data.insights);
+        
+        toast({
+          title: "Analysis Complete!",
+          description: "Your personalized insights are ready.",
+        });
+      } else if (data?.insights) {
+        // Handle old response format without success flag
+        console.log('Received insights (legacy format)');
         setInsights(data.insights);
         
         toast({
