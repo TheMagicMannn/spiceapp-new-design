@@ -114,20 +114,32 @@ const TrustBadgesSection = () => {
           </div>
         </div>
 
-        {/* Testimonial Quote */}
-        <div className="mt-16 max-w-4xl mx-auto text-center">
-          <blockquote className="text-xl md:text-2xl font-medium text-muted-foreground italic">
-            "SPICE transformed how we explore the lifestyle. The verification gives us peace of mind, 
-            and we've met amazing like-minded couples who share our interests in swinging and ENM."
-          </blockquote>
-          <div className="mt-6 flex items-center justify-center gap-3">
-            <div className="flex -space-x-2">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary to-purple-400 border-2 border-background" />
-              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 border-2 border-background" />
+        {/* Feature Highlight */}
+        <div className="mt-16 max-w-4xl mx-auto text-center bg-gradient-to-r from-primary/10 via-purple-500/10 to-primary/10 rounded-2xl p-8 border border-primary/30">
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            Safety-First Platform Design
+          </h3>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            SPICE prioritizes your safety with multi-layer verification, optional STI testing badges, 
+            comprehensive e-learning modules on consent and safety, and a community-driven feedback system. 
+            Explore the lifestyle with confidence knowing every member is verified and accountable.
+          </p>
+          <div className="mt-6 flex items-center justify-center gap-4 flex-wrap">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-background/50 rounded-full border border-border">
+              <CheckCircle className="w-4 h-4 text-primary" />
+              <span className="text-sm font-medium">Photo Verified</span>
             </div>
-            <div className="text-left">
-              <div className="font-semibold">Mike & Sarah</div>
-              <div className="text-sm text-muted-foreground">Swinging Couple - SPICE Members since 2024</div>
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-background/50 rounded-full border border-border">
+              <Shield className="w-4 h-4 text-primary" />
+              <span className="text-sm font-medium">STI Test Option</span>
+            </div>
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-background/50 rounded-full border border-border">
+              <Heart className="w-4 h-4 text-primary" />
+              <span className="text-sm font-medium">Consent Education</span>
+            </div>
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-background/50 rounded-full border border-border">
+              <Award className="w-4 h-4 text-primary" />
+              <span className="text-sm font-medium">Member Reviews</span>
             </div>
           </div>
         </div>
