@@ -44,6 +44,27 @@ const communities = [
     color: "from-purple-500/20 to-violet-500/20",
     articles: [
       {
+        slug: "finding-your-bdsm-role-dom-sub-switch",
+        title: "Finding Your BDSM Role: Dom, Sub, or Switch?",
+        excerpt: "Discover your natural BDSM role through self-reflection, exploration, and experimentation.",
+        readTime: "8 min read",
+        image: "https://images.unsplash.com/photo-1517960413843-0aee8e2b3285?w=400&h=250&fit=crop",
+      },
+      {
+        slug: "understanding-bdsm-quiz-results",
+        title: "Understanding Your BDSM Quiz Results",
+        excerpt: "Decode your BDSM compatibility quiz results and learn what your scores mean for your kink identity.",
+        readTime: "8 min read",
+        image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=250&fit=crop",
+      },
+      {
+        slug: "bdsm-terminology-complete-glossary",
+        title: "BDSM Terminology: Complete Glossary",
+        excerpt: "Master BDSM language with this comprehensive glossary of terms from basic to advanced concepts.",
+        readTime: "12 min read",
+        image: "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=400&h=250&fit=crop",
+      },
+      {
         slug: "bdsm-101-understanding-basics",
         title: "BDSM 101: Understanding the Basics",
         excerpt: "An introduction to kink culture, terminology, and practices.",
@@ -56,13 +77,6 @@ const communities = [
         excerpt: "Why aftercare is essential for healthy BDSM experiences.",
         readTime: "5 min read",
         image: "https://images.unsplash.com/photo-1516321165247-4aa89a48be28?w=400&h=250&fit=crop",
-      },
-      {
-        slug: "finding-your-kink-identity",
-        title: "Finding Your Kink Identity",
-        excerpt: "Exploring different roles and discovering what resonates with you.",
-        readTime: "6 min read",
-        image: "https://images.unsplash.com/photo-1586380951230-e6703d9f6833?w=400&h=250&fit=crop",
       },
     ],
   },
