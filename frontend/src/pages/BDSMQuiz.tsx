@@ -95,7 +95,13 @@ const BDSMQuiz = () => {
   const goNext = async () => {
     if (currentQuestion < quizQuestions.length - 1) {
       setCurrentQuestion(prev => prev + 1);
+      // Track progress at key milestones
+      const nextQuestion = currentQuestion + 1;
+      if (nextQuestion % 10 === 0) {
+        trackQuizProgress(nextQuestion);
+      }
     } else {
+      trackQuizComplete(responses.length);
       await analyzeQuiz();
     }
   };
