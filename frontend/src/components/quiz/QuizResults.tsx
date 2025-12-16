@@ -16,9 +16,8 @@ interface QuizResultsProps {
 
 const QuizResults: React.FC<QuizResultsProps> = ({ insights, onRestart, responses }) => {
   const { toast } = useToast();
-  const [isSharing, setIsSharing] = useState(false);
-  const [shareUrl, setShareUrl] = useState<string | null>(null);
-  const [copied, setCopied] = useState(false);
+  const [isDownloading, setIsDownloading] = useState(false);
+  const resultsRef = useRef<HTMLDivElement>(null);
 
   const getDominanceLabel = (score: number) => {
     if (score < 25) return 'Submissive';
@@ -28,64 +27,47 @@ const QuizResults: React.FC<QuizResultsProps> = ({ insights, onRestart, response
     return 'Dominant';
   };
 
-  const handleShare = async () => {
-    setIsSharing(true);
+  const handleDownloadImage = async () => {
+    if (!resultsRef.current) return;
+    
+    setIsDownloading(true);
     
     try {
-      // Check if Web Share API is available
-      if (navigator.share) {
-        await navigator.share({
-          title: 'My BDSM Compatibility Results',
-          text: `I just completed the SPICE BDSM Compatibility Quiz! My role: ${insights.archetype}`,
-          url: window.location.href,
-        });
-        
-        toast({
-          title: "Shared!",
-          description: "Results shared successfully",
-        });
-      } else {
-        // Fallback: Just copy current URL
-        await navigator.clipboard.writeText(window.location.href);
-        setShareUrl(window.location.href);
-        
-        toast({
-          title: "Link Copied!",
-          description: "Share this link with others",
-        });
-      }
-    } catch (error) {
-      console.error('Share error:', error);
-      
-      // Ultimate fallback: copy current URL
-      try {
-        await navigator.clipboard.writeText(window.location.href);
-        toast({
-          title: "Link Copied!",
-          description: "Results link copied to clipboard",
-        });
-      } catch (clipError) {
-        toast({
-          title: "Share Failed",
-          description: "Unable to share results. Try copying the URL manually.",
-          variant: "destructive"
-        });
-      }
-    } finally {
-      setIsSharing(false);
-    }
-  };
-
-  const copyShareLink = async () => {
-    if (shareUrl) {
-      await navigator.clipboard.writeText(shareUrl);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-      
-      toast({
-        title: "Copied!",
-        description: "Share link copied to clipboard",
+      // Capture the results section as an image
+      const canvas = await html2canvas(resultsRef.current, {
+        backgroundColor: '#1a1625',
+        scale: 2, // Higher quality
+        logging: false,
+        useCORS: true,
       });
+      
+      // Convert to blob and download
+      canvas.toBlob((blob) => {
+        if (blob) {
+          const url = URL.createObjectURL(blob);
+          const link = document.createElement('a');
+          link.href = url;
+          link.download = `SPICE-BDSM-Quiz-Results-${Date.now()}.png`;
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+          URL.revokeObjectURL(url);
+          
+          toast({
+            title: "Downloaded!",
+            description: "Your results have been saved as an image",
+          });
+        }
+      }, 'image/png');
+    } catch (error) {
+      console.error('Download error:', error);
+      toast({
+        title: "Download Failed",
+        description: "Unable to download results. Please try again.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsDownloading(false);
     }
   };
 
