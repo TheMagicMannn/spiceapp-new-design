@@ -73,8 +73,8 @@ const TrustBadgesSection = () => {
             Trusted by the Lifestyle Community
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Join thousands of verified couples and singles exploring connections in a safe, 
-            inclusive, and sex-positive environment
+            Join thousands of verified couples and singles exploring swingers, ENM, polyamory, 
+            BDSM, and kink connections in a safe, judgment-free environment
           </p>
         </div>
 
