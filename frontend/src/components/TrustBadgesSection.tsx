@@ -92,24 +92,24 @@ const TrustBadgesSection = () => {
           })}
         </div>
 
-        {/* Statistics Bar */}
+        {/* Features Bar */}
         <div className="mt-16 glass-card rounded-2xl p-8 border-gradient">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">10,000+</div>
-              <div className="text-sm text-muted-foreground">Active Members</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">STI</div>
+              <div className="text-sm text-muted-foreground">Test Verification</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">50+</div>
-              <div className="text-sm text-muted-foreground">Countries Worldwide</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">Learning</div>
+              <div className="text-sm text-muted-foreground">Education Modules</div>
             </div>
             <div>
               <div className="text-3xl md:text-4xl font-bold text-primary mb-2">200+</div>
               <div className="text-sm text-muted-foreground">Desire Tags</div>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">100%</div>
-              <div className="text-sm text-muted-foreground">Verified Profiles</div>
+              <div className="text-3xl md:text-4xl font-bold text-primary mb-2">Reviews</div>
+              <div className="text-sm text-muted-foreground">Member Feedback</div>
             </div>
           </div>
         </div>
