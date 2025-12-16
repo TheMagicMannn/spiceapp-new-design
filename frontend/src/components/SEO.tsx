@@ -9,6 +9,8 @@ interface SEOProps {
   ogImage?: string;
   twitterCard?: string;
   structuredData?: object;
+  noIndex?: boolean;
+  ageRestriction?: boolean;
 }
 
 const SEO = ({
@@ -20,6 +22,8 @@ const SEO = ({
   ogImage = "https://thespiceapp.com/og-image.jpg",
   twitterCard = "summary_large_image",
   structuredData,
+  noIndex = false,
+  ageRestriction = true,
 }: SEOProps) => {
   const fullTitle = title.includes("SPICE") ? title : `${title} | SPICE Dating App`;
   const url = canonical || `https://thespiceapp.com${window.location.pathname}`;
@@ -32,6 +36,22 @@ const SEO = ({
       <meta name="description" content={description} />
       {keywords && <meta name="keywords" content={keywords} />}
       
+      {/* Robots Meta */}
+      {noIndex ? (
+        <meta name="robots" content="noindex, nofollow" />
+      ) : (
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+      )}
+      
+      {/* Age Restriction Tags */}
+      {ageRestriction && (
+        <>
+          <meta name="rating" content="adult" />
+          <meta name="age-restriction" content="18+" />
+          <meta name="content-rating" content="mature" />
+        </>
+      )}
+      
       {/* Canonical URL */}
       <link rel="canonical" href={url} />
       
@@ -41,7 +61,11 @@ const SEO = ({
       <meta property="og:title" content={fullTitle} />
       <meta property="og:description" content={description} />
       <meta property="og:image" content={ogImage} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
       <meta property="og:site_name" content="SPICE" />
+      <meta property="og:locale" content="en_US" />
+      {ageRestriction && <meta property="og:restrictions:age" content="18+" />}
       
       {/* Twitter */}
       <meta name="twitter:card" content={twitterCard} />
@@ -49,6 +73,16 @@ const SEO = ({
       <meta name="twitter:title" content={fullTitle} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage} />
+      <meta name="twitter:image:alt" content={fullTitle} />
+      
+      {/* Additional SEO Tags */}
+      <meta name="author" content="SPICE Dating App" />
+      <meta name="language" content="English" />
+      <meta httpEquiv="Content-Language" content="en" />
+      
+      {/* Mobile Optimization */}
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+      <meta name="theme-color" content="#9b87f5" />
       
       {/* Structured Data */}
       {structuredData && (
