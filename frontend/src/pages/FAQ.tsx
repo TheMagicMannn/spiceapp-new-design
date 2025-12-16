@@ -165,8 +165,8 @@ const FAQ = () => {
     <div className="relative min-h-screen bg-gradient-to-br from-background via-background to-muted/30">
       <SEO
         title="Frequently Asked Questions (FAQ) - SPICE Dating App"
-        description="Get answers about SPICE dating app - the premium platform for swingers, BDSM, ENM, polyamory, and kink. Learn about our features, safety, verification, LGBTQ+ inclusivity, pricing, and how to get started with lifestyle dating for couples and singles."
-        keywords="SPICE FAQ, swingers dating app questions, BDSM dating app help, ENM dating FAQ, polyamory app questions, kink dating help, lifestyle dating FAQ, couples dating app FAQ, LGBTQ+ dating questions, verified dating app, alternative lifestyle FAQ"
+        description="Get answers about SPICE dating app - the premium platform for swingers, BDSM, ENM, polyamory, and kink. Learn about our features, safety, verification, pricing, and how to get started with lifestyle dating for adventurous couples and singles."
+        keywords="SPICE FAQ, swingers dating app questions, BDSM dating app help, ENM dating FAQ, polyamory app questions, kink dating help, lifestyle dating FAQ, couples dating app FAQ, verified dating app, alternative lifestyle FAQ, swinging couples questions"
         canonical="https://thespiceapp.com/faq"
         structuredData={faqStructuredData}
       />
