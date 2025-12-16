@@ -120,6 +120,10 @@ const Download = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
               <a
                 href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  trackDownloadClick('iOS');
+                }}
                 className="flex items-center gap-3 px-6 py-4 rounded-xl glass-card border-gradient hover:bg-primary/10 transition-colors group w-full sm:w-auto"
               >
                 <Apple className="w-8 h-8 text-foreground" />
@@ -130,6 +134,10 @@ const Download = () => {
               </a>
               <a
                 href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  trackDownloadClick('Android');
+                }}
                 className="flex items-center gap-3 px-6 py-4 rounded-xl glass-card border-gradient hover:bg-primary/10 transition-colors group w-full sm:w-auto"
               >
                 <Play className="w-8 h-8 text-foreground" />
