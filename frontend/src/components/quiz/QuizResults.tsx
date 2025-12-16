@@ -87,7 +87,7 @@ const QuizResults: React.FC<QuizResultsProps> = ({ insights, onRestart, response
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto p-4 md:p-8">
+      <div className="max-w-4xl mx-auto p-4 md:p-8" ref={resultsRef}>
         {/* Hero Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
