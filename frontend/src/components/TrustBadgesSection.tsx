@@ -46,20 +46,7 @@ const TrustBadgesSection = () => {
     }
   ];
 
-  const communityImages = [
-    {
-      url: "https://images.unsplash.com/photo-1718754720400-a5e6167ed1dd",
-      alt: "Intimate sensual connection - sophisticated lifestyle dating on SPICE"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1691932230591-6a41c363775d",
-      alt: "Artistic intimate embrace - BDSM and kink lifestyle community"
-    },
-    {
-      url: "https://images.unsplash.com/photo-1762237895002-1658ebb56acf",
-      alt: "Lifestyle event atmosphere - swingers and ENM community gathering"
-    }
-  ];
+  const communityImages: any[] = [];
 
   return (
     <section className="py-24 px-4 relative overflow-hidden">
