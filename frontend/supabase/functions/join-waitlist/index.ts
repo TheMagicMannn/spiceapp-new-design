@@ -92,7 +92,7 @@ const handler = async (req: Request): Promise<Response> => {
     // Send confirmation email to user (may fail if domain not verified)
     try {
       const confirmationResponse = await resend.emails.send({
-        from: "SPICE <noreply@thespiceapp.com>",
+        from: "SPICE <welcome@thespiceapp.com>",
         to: [email],
         subject: "🔥 You're on the SPICE Waitlist!",
         html: `
