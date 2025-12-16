@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <!-- Homepage -->
   <url>
     <loc>https://thespiceapp.com/</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-20</lastmod>
   </url>
   
   <!-- SPICE App Features Comparison -->
@@ -15,7 +14,7 @@
     <loc>https://thespiceapp.com/spice-app</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-20</lastmod>
   </url>
   
   <!-- About Page -->
@@ -23,7 +22,7 @@
     <loc>https://thespiceapp.com/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-20</lastmod>
   </url>
   
   <!-- Team Page -->
@@ -31,7 +30,7 @@
     <loc>https://thespiceapp.com/team</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-20</lastmod>
   </url>
   
   <!-- Contact Page -->
@@ -39,7 +38,7 @@
     <loc>https://thespiceapp.com/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-20</lastmod>
   </url>
   
   <!-- BDSM Compatibility Quiz -->
@@ -47,7 +46,7 @@
     <loc>https://thespiceapp.com/quiz</loc>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-20</lastmod>
   </url>
   
   <!-- FAQ Page -->
@@ -55,7 +54,7 @@
     <loc>https://thespiceapp.com/faq</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-20</lastmod>
   </url>
   
   <!-- Download Page -->
@@ -63,7 +62,7 @@
     <loc>https://thespiceapp.com/download</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-20</lastmod>
   </url>
   
   <!-- Guide: Newcomers -->
@@ -71,7 +70,7 @@
     <loc>https://thespiceapp.com/guide/newcomers</loc>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-20</lastmod>
   </url>
   
   <!-- Guide: How To -->
@@ -79,7 +78,7 @@
     <loc>https://thespiceapp.com/guide/how-to</loc>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-20</lastmod>
   </url>
   
   <!-- Guide: Community Lifestyles -->
@@ -87,7 +86,7 @@
     <loc>https://thespiceapp.com/guide/community</loc>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-20</lastmod>
   </url>
   
   <!-- Guide: Glossary -->
@@ -95,7 +94,7 @@
     <loc>https://thespiceapp.com/guide/glossary</loc>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-20</lastmod>
   </url>
   
   <!-- Guide: Safety -->
@@ -103,7 +102,7 @@
     <loc>https://thespiceapp.com/guide/safety</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-20</lastmod>
   </url>
   
   <!-- Guide: Self-Care -->
@@ -111,50 +110,186 @@
     <loc>https://thespiceapp.com/guide/self-care</loc>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-20</lastmod>
   </url>
   
-  <!-- Individual Guide Articles -->
+  <!-- Guide Articles - Newcomers -->
   <url>
     <loc>https://thespiceapp.com/guide/article/first-steps-lifestyle-beginners-guide</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-20</lastmod>
   </url>
   
   <url>
     <loc>https://thespiceapp.com/guide/article/how-to-start-swinging-couples-communication</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-20</lastmod>
   </url>
   
   <url>
     <loc>https://thespiceapp.com/guide/article/navigating-lifestyle-single-person</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-20</lastmod>
   </url>
   
+  <url>
+    <loc>https://thespiceapp.com/guide/article/10-signs-ready-try-swinging</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/guide/article/how-to-have-the-talk-partner</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-20</lastmod>
+  </url>
+  
+  <!-- Guide Articles - How To -->
+  <url>
+    <loc>https://thespiceapp.com/guide/article/how-to-create-dating-profile-stands-out</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/guide/article/creating-couples-profile-tips-success</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/guide/article/how-to-find-local-community</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/guide/article/how-to-navigate-first-play-party</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/guide/article/lifestyle-dating-etiquette-dos-donts</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/guide/article/how-to-talk-to-partner-about-enm</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/guide/article/how-to-set-boundaries-open-relationships</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/guide/article/how-to-handle-jealousy-enm</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/guide/article/how-to-practice-compersion</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/guide/article/how-to-negotiate-scene</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/guide/article/how-to-practice-safe-kink</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-20</lastmod>
+  </url>
+  
+  <!-- Guide Articles - BDSM/Kink -->
   <url>
     <loc>https://thespiceapp.com/guide/article/kink-101-bdsm-beginners</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-20</lastmod>
   </url>
   
+  <url>
+    <loc>https://thespiceapp.com/guide/article/finding-your-bdsm-role-dom-sub-switch</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/guide/article/bdsm-safety-complete-beginners-checklist</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/guide/article/understanding-bdsm-quiz-results</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/guide/article/bdsm-terminology-complete-glossary</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-20</lastmod>
+  </url>
+  
+  <!-- Guide Articles - Polyamory/ENM -->
   <url>
     <loc>https://thespiceapp.com/guide/article/is-polyamory-right-for-you</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/guide/article/polyamory-vs-open-relationships-key-differences</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-20</lastmod>
   </url>
   
   <url>
     <loc>https://thespiceapp.com/guide/article/managing-jealousy-couples-guide</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2025-01-20</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/guide/article/jealousy-management-open-relationships</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-01-20</lastmod>
   </url>
 
 </urlset>
