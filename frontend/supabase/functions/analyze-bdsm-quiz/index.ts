@@ -104,7 +104,7 @@ Be specific, insightful, and non-judgmental. Focus on understanding their unique
     const data = await response.json();
     const aiResponse = data.choices?.[0]?.message?.content;
     
-    console.log('AI response:', aiResponse);
+    console.log('AI response received');
 
     // Parse the JSON from the AI response
     let insights;
@@ -114,24 +114,28 @@ Be specific, insightful, and non-judgmental. Focus on understanding their unique
                         aiResponse.match(/\{[\s\S]*\}/);
       const jsonStr = jsonMatch ? (jsonMatch[1] || jsonMatch[0]) : aiResponse;
       insights = JSON.parse(jsonStr);
+      
+      // Validate required fields
+      const required = ["personalitySummary", "keyTraits", "compatibilityInsights", 
+                       "growthAreas", "scores", "archetype", "lifestyle", "bdsmRole", 
+                       "topKinks", "hardLimits", "idealPartner"];
+      
+      for (const key of required) {
+        if (!insights[key]) {
+          throw new Error(`Missing required field: ${key}`);
+        }
+      }
+      
+      console.log('Successfully parsed and validated insights');
     } catch (parseError) {
       console.error('Failed to parse AI response as JSON:', parseError);
-      insights = {
-        personalitySummary: aiResponse,
-        keyTraits: [],
-        compatibilityInsights: '',
-        growthAreas: [],
-        scores: {
-          dominanceSubmission: 50,
-          communicationStyle: 'Balanced',
-          experienceLevel: 'Curious',
-          opennessToExploration: 70
-        },
-        archetype: 'Explorer'
-      };
+      console.error('Raw response:', aiResponse);
+      
+      // Return error so frontend falls back to local processing
+      throw new Error('Failed to parse AI response');
     }
 
-    return new Response(JSON.stringify({ insights }), {
+    return new Response(JSON.stringify({ success: true, insights }), {
       headers: { ...corsHeaders, 'Content-Type': 'application/json' },
     });
   } catch (error) {
