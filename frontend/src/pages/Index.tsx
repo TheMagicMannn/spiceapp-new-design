@@ -5,6 +5,7 @@ import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import DesireTagsSection from "@/components/DesireTagsSection";
 import FeaturesSection from "@/components/FeaturesSection";
+import TrustBadgesSection from "@/components/TrustBadgesSection";
 import PricingSection from "@/components/PricingSection";
 import FooterSection from "@/components/FooterSection";
 
