@@ -57,11 +57,11 @@ const TrustBadgesSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-primary via-purple-400 to-primary bg-clip-text text-transparent">
-            Trusted by the Lifestyle Community
+            Built for Safety & Trust
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Join thousands of verified couples and singles exploring swingers, ENM, polyamory, 
-            BDSM, and kink connections in a safe, judgment-free environment
+            Premium features designed for couples and singles exploring swingers, ENM, polyamory, 
+            BDSM, and kink in a safe, verified, and judgment-free environment
           </p>
         </div>
 
