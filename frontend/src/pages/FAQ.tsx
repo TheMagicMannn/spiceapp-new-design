@@ -24,8 +24,8 @@ const FAQ = () => {
           a: "SPICE welcomes both! Our platform is designed for singles, couples, and groups interested in alternative relationship styles. Whether you're a couple exploring swinging, a single looking to join the lifestyle, or someone interested in polyamorous relationships, SPICE provides the tools and community to connect with compatible partners.",
         },
         {
-          q: "Is SPICE LGBTQ+ friendly?",
-          a: "Absolutely! SPICE is a proudly LGBTQ+ inclusive platform. We celebrate diversity in all its forms and provide a welcoming space for people of all gender identities, sexual orientations, and relationship configurations. Our community includes gay, lesbian, bisexual, transgender, queer, and non-binary members.",
+          q: "Who can use SPICE?",
+          a: "SPICE is for adventurous couples and singles of all genders and sexualities interested in exploring swingers, ENM, polyamory, BDSM, and kink lifestyles. Whether you're experienced in the lifestyle or just curious, our platform welcomes anyone seeking authentic connections in the alternative relationship space.",
         },
         {
           q: "What makes SPICE different from other dating apps?",
