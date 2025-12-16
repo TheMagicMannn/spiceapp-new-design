@@ -385,21 +385,12 @@ const QuizResults: React.FC<QuizResultsProps> = ({ insights, onRestart, response
             <Button 
               variant="outline" 
               size="lg"
-              onClick={handleShare}
-              disabled={isSharing}
+              onClick={handleDownloadImage}
+              disabled={isDownloading}
             >
-              <Share2 className="mr-2 w-4 h-4" />
-              {isSharing ? 'Sharing...' : 'Share Results'}
+              <Download className="mr-2 w-4 h-4" />
+              {isDownloading ? 'Downloading...' : 'Download Results'}
             </Button>
-            
-            {shareUrl && (
-              <div className="mt-4 p-4 bg-muted rounded-lg">
-                <p className="text-sm text-muted-foreground mb-2">Shareable Link:</p>
-                <div className="flex items-center gap-2">
-                  <input
-                    type="text"
-                    value={shareUrl}
-                    readOnly
                     className="flex-1 px-3 py-2 bg-background border border-border rounded text-sm"
                   />
                   <Button
