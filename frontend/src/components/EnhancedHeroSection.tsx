@@ -225,8 +225,8 @@ const EnhancedHeroSection = () => {
             Premium Dating for Adventurous Adults
           </h2>
           <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto leading-relaxed drop-shadow-md">
-            Join thousands of adventurous singles and couples exploring swingers, BDSM, and ENM connections 
-            in a safe, LGBTQ+ inclusive lifestyle community.
+            Join thousands of adventurous singles and couples exploring swingers, BDSM, ENM, polyamory, and kink connections 
+            in a safe, judgment-free lifestyle community.
           </p>
         </div>
 
