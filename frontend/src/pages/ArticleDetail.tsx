@@ -1,8 +1,8 @@
-import { Helmet } from "react-helmet-async";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import SEO from "@/components/SEO";
 import { ArrowLeft, Clock, User, Calendar, Tag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -117,13 +117,44 @@ const ArticleDetail = () => {
       .join('');
   };
 
+  // Structured data for article
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": article.title,
+    "description": article.excerpt,
+    "image": article.image,
+    "author": {
+      "@type": "Organization",
+      "name": article.author
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "SPICE",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://thespiceapp.com/favicon.ico"
+      }
+    },
+    "datePublished": article.publishedDate,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `https://thespiceapp.com/guide/article/${article.slug}`
+    },
+    "keywords": article.tags?.join(', ')
+  };
+
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
-        <title>{article.title} | SPICE Guide</title>
-        <meta name="description" content={article.excerpt} />
-        <link rel="canonical" href={`https://thespiceapp.com/guide/article/${article.slug}`} />
-      </Helmet>
+      <SEO 
+        title={article.title}
+        description={article.excerpt}
+        keywords={article.tags?.join(', ') || `${article.category}, lifestyle guide, SPICE dating`}
+        canonical={`https://thespiceapp.com/guide/article/${article.slug}`}
+        ogType="article"
+        ogImage={article.image}
+        structuredData={structuredData}
+      />
       
       <Header />
       <Breadcrumbs />

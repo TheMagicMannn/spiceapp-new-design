@@ -1,8 +1,8 @@
-import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import SEO from "@/components/SEO";
 import { Shield, Lock, Eye, AlertTriangle, ArrowRight, Heart } from "lucide-react";
 
 const safetyCategories = [
@@ -125,13 +125,29 @@ const safetyCategories = [
 ];
 
 const Safety = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Lifestyle Safety Resources",
+    "description": "Comprehensive safety guides for online dating, in-person meetings, consent practices, and sexual health",
+    "hasPart": safetyCategories.map(category => ({
+      "@type": "HowTo",
+      "name": category.title,
+      "description": category.description
+    }))
+  };
+
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
-        <title>Safety Resources | SPICE Guide</title>
-        <meta name="description" content="Stay safe in the lifestyle with our comprehensive safety guides. Learn about online safety, dating safety, consent, and sexual health." />
-        <link rel="canonical" href="https://thespiceapp.com/guide/safety" />
-      </Helmet>
+      <SEO 
+        title="Lifestyle Safety Guide — Dating Safety, Consent & Sexual Health"
+        description="Stay safe in the lifestyle with comprehensive guides on online safety, dating safety, consent practices, and sexual health. Learn about BDSM safety, ENM communication, and protecting yourself in alternative relationships."
+        keywords="lifestyle safety tips, BDSM safety, online dating safety, consent practices, sexual health ENM, safe kink practices, dating app security, lifestyle meetup safety, STI testing guide, safer sex practices, enthusiastic consent, boundary setting, lifestyle safety guidelines"
+        canonical="https://thespiceapp.com/guide/safety"
+        ogType="website"
+        ogImage="https://images.unsplash.com/photo-1555421689-d68471e189f2?w=1200&h=630&fit=crop"
+        structuredData={structuredData}
+      />
       
       <Header />
       <Breadcrumbs />

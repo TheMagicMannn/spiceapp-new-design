@@ -1,8 +1,8 @@
-import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import SEO from "@/components/SEO";
 import { Heart, Brain, Phone, Users, Sparkles, ExternalLink, ArrowRight } from "lucide-react";
 
 const resources = [
@@ -119,13 +119,29 @@ const externalResources = [
 ];
 
 const SelfCare = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Lifestyle Mental Health & Self-Care Resources",
+    "description": "Mental health resources, emotional support, and self-care guides for the lifestyle community",
+    "hasPart": resources.map(category => ({
+      "@type": "WebPage",
+      "name": category.title,
+      "description": category.description
+    }))
+  };
+
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
-        <title>Self Care Resources | SPICE Guide</title>
-        <meta name="description" content="Prioritize your mental health and wellbeing. Find resources for self-care, emotional support, and mental health in the lifestyle community." />
-        <link rel="canonical" href="https://thespiceapp.com/guide/self-care" />
-      </Helmet>
+      <SEO 
+        title="Self-Care & Mental Health — Lifestyle Therapy & Support Resources"
+        description="Prioritize your mental health and wellbeing in the lifestyle. Find resources for self-care, emotional support, kink-aware therapists, and mental health guidance for ENM, BDSM, and polyamory relationships."
+        keywords="lifestyle mental health, ENM therapy, kink-aware therapists, polyamory counseling, BDSM mental health, emotional wellbeing lifestyle, relationship self-care, alternative lifestyle therapy, sex-positive therapy, ENM support groups, lifestyle emotional health, jealousy management therapy"
+        canonical="https://thespiceapp.com/guide/self-care"
+        ogType="website"
+        ogImage="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1200&h=630&fit=crop"
+        structuredData={structuredData}
+      />
       
       <Header />
       <Breadcrumbs />

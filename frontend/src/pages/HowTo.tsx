@@ -1,8 +1,8 @@
-import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import SEO from "@/components/SEO";
 import { Lightbulb, ArrowRight } from "lucide-react";
 
 const howToArticles = [
@@ -90,13 +90,34 @@ const howToArticles = [
 ];
 
 const HowTo = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Lifestyle How-To Guides",
+    "description": "Practical guides for navigating relationships, communication, and lifestyle exploration",
+    "itemListElement": howToArticles.map((article, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "item": {
+        "@type": "HowTo",
+        "name": article.title,
+        "description": article.excerpt,
+        "url": `https://thespiceapp.com/guide/article/${article.slug}`
+      }
+    }))
+  };
+
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
-        <title>How To Guides | SPICE Guide</title>
-        <meta name="description" content="Learn how to navigate relationships, communicate effectively, and explore the lifestyle with our comprehensive how-to guides." />
-        <link rel="canonical" href="https://thespiceapp.com/guide/how-to" />
-      </Helmet>
+      <SEO 
+        title="Lifestyle How-To Guides — ENM, BDSM & Relationship Communication Tips"
+        description="Step-by-step guides for navigating ENM relationships, BDSM exploration, setting boundaries, handling jealousy, and building healthy communication in alternative lifestyles."
+        keywords="lifestyle how-to guides, ENM communication tips, BDSM for beginners, how to handle jealousy ENM, setting boundaries open relationships, poly relationship advice, swinger lifestyle tips, kink negotiation guide, compersion practice, lifestyle dating tips"
+        canonical="https://thespiceapp.com/guide/how-to"
+        ogType="website"
+        ogImage="https://images.unsplash.com/photo-1586380951230-e6703d9f6833?w=1200&h=630&fit=crop"
+        structuredData={structuredData}
+      />
       
       <Header />
       <Breadcrumbs />

@@ -1,7 +1,7 @@
-import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import SEO from "@/components/SEO";
 import { Book, Search } from "lucide-react";
 import { useState, useMemo } from "react";
 import { Input } from "@/components/ui/input";
@@ -33,13 +33,29 @@ const Glossary = () => {
     return groups;
   }, [filteredTerms]);
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Lifestyle & BDSM Glossary",
+    "description": "Comprehensive glossary of lifestyle, BDSM, ENM, and polyamory terminology",
+    "about": {
+      "@type": "Thing",
+      "name": "Alternative Lifestyle Terminology"
+    },
+    "numberOfItems": glossaryTerms.length
+  };
+
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
-        <title>Glossary | SPICE Guide</title>
-        <meta name="description" content="Learn lifestyle terminology with our comprehensive glossary. From BDSM terms to polyamory concepts, understand the language of ethical non-monogamy." />
-        <link rel="canonical" href="https://thespiceapp.com/guide/glossary" />
-      </Helmet>
+      <SEO 
+        title="Lifestyle Glossary — BDSM, ENM & Polyamory Terms Dictionary"
+        description="Learn lifestyle terminology with our comprehensive glossary of 100+ terms. From BDSM vocabulary to polyamory concepts, understand the language of ethical non-monogamy, kink, and alternative relationships."
+        keywords="BDSM glossary, lifestyle terminology, ENM terms, kink dictionary, polyamory definitions, swinger terms, BDSM vocabulary, alternative lifestyle glossary, sex-positive terminology, lifestyle dating terms, kink terms explained, ENM vocabulary"
+        canonical="https://thespiceapp.com/guide/glossary"
+        ogType="website"
+        ogImage="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=1200&h=630&fit=crop"
+        structuredData={structuredData}
+      />
       
       <Header />
       <Breadcrumbs />

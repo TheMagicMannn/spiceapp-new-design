@@ -1,8 +1,8 @@
-import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import SEO from "@/components/SEO";
 import { Users, Heart, Flame, Link as LinkIcon, ArrowRight } from "lucide-react";
 
 const communities = [
@@ -129,13 +129,30 @@ const communities = [
 ];
 
 const CommunityLifestyles = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Lifestyle Community Guides",
+    "description": "Explore ENM, BDSM, Swinging, and Polyamory communities with comprehensive guides and resources",
+    "hasPart": communities.map(community => ({
+      "@type": "WebPage",
+      "name": community.name,
+      "description": community.description,
+      "url": `https://thespiceapp.com/guide/community#${community.id}`
+    }))
+  };
+
   return (
     <div className="min-h-screen bg-background">
-      <Helmet>
-        <title>Community & Lifestyles | SPICE Guide</title>
-        <meta name="description" content="Explore different lifestyle communities including ENM, BDSM, Swinging, and Polyamory. Find articles, guides, and resources for each community." />
-        <link rel="canonical" href="https://thespiceapp.com/guide/community" />
-      </Helmet>
+      <SEO 
+        title="Lifestyle Communities — ENM, BDSM, Swinging & Polyamory Guides"
+        description="Explore diverse lifestyle communities including Ethical Non-Monogamy (ENM), BDSM & Kink, Swingers, and Polyamory. Find articles, guides, and resources for each community on SPICE."
+        keywords="ENM community, BDSM community, swinger community, polyamory community, ethical non-monogamy, kink community, lifestyle communities, alternative relationships, sex-positive community, LGBTQ+ lifestyle, consensual non-monogamy, lifestyle dating communities"
+        canonical="https://thespiceapp.com/guide/community"
+        ogType="website"
+        ogImage="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200&h=630&fit=crop"
+        structuredData={structuredData}
+      />
       
       <Header />
       <Breadcrumbs />
