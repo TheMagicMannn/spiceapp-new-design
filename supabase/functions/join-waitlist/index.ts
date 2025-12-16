@@ -90,7 +90,7 @@ serve(async (req) => {
             'Authorization': `Bearer ${RESEND_API_KEY}`
           },
           body: JSON.stringify({
-            from: 'noreply@thespiceapp.com',
+            from: 'welcome@thespiceapp.com',
             to: email,
             subject: 'Welcome to the SPICE Waitlist! 🌶️',
             html: `
