@@ -11,10 +11,10 @@ const TrustBadgesSection = () => {
     },
     {
       icon: Users,
-      title: "LGBTQ+ Inclusive",
-      description: "Welcoming community for all identities",
-      stat: "40%",
-      statLabel: "LGBTQ+ Members"
+      title: "Lifestyle Community",
+      description: "Swingers, ENM, poly, BDSM & kink enthusiasts",
+      stat: "5,000+",
+      statLabel: "Active Couples"
     },
     {
       icon: Lock,
