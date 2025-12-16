@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import SEO from "@/components/SEO";
 import { Linkedin, Twitter, Globe } from "lucide-react";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import Header from "@/components/Header";
@@ -54,13 +54,22 @@ const teamMembers = [
 ];
 
 const Team = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "SPICE Team",
+    "description": "Meet the team behind SPICE dating app"
+  };
+
   return (
     <div className="relative min-h-screen">
-      <Helmet>
-        <title>Meet the SPICE Team — Leadership Behind Your Dating App</title>
-        <meta name="description" content="Meet the passionate team behind SPICE. Our diverse leadership is dedicated to building the safest, most inclusive dating platform for lifestyle communities." />
-        <link rel="canonical" href="https://thespiceapp.com/team" />
-      </Helmet>
+      <SEO
+        title="Meet the SPICE Team — Leadership Behind the Lifestyle Dating App"
+        description="Meet the passionate team behind SPICE dating app. Learn about our founders, engineers, designers, and community leaders building the premier platform for swingers, BDSM, ENM, and lifestyle dating. Dedicated to privacy, verification, and authentic connections."
+        keywords="SPICE team, SPICE founders, dating app leadership, Kyle Witter, lifestyle app creators, SPICE leadership team, adult dating app team, BDSM app developers"
+        canonical="https://thespiceapp.com/team"
+        structuredData={structuredData}
+      />
       <ParticlesBackground />
       <Header />
       <Breadcrumbs />
@@ -71,19 +80,18 @@ const Team = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="text-center mb-20"
           >
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Meet the <span className="text-gradient">Team</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-              We're a passionate group of individuals united by our commitment to
-              creating the best platform for the lifestyle community.
+              Passionate individuals building the future of authentic, inclusive connections.
             </p>
           </motion.div>
 
           {/* Team Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {teamMembers.map((member, index) => (
               <motion.div
                 key={member.name}
@@ -91,99 +99,75 @@ const Team = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.1 * index }}
                 viewport={{ once: true }}
-                whileHover={{ y: -10 }}
-                className="glass-card rounded-2xl p-6 group"
+                whileHover={{ y: -5, scale: 1.02 }}
+                className="glass-card rounded-2xl overflow-hidden group"
               >
-                {/* Avatar/Photo */}
-                {member.image ? (
-                  <motion.div
-                    whileHover={{ scale: 1.05 }}
-                    className="w-28 h-28 rounded-2xl overflow-hidden mb-6 mx-auto shadow-lg ring-2 ring-primary/30"
-                  >
-                    <img 
-                      src={member.image} 
+                {/* Avatar/Image */}
+                <div className={`h-64 bg-gradient-to-br ${member.gradient} flex items-center justify-center relative overflow-hidden`}>
+                  {member.image ? (
+                    <img
+                      src={member.image}
                       alt={member.name}
-                      className="w-full h-full object-cover object-top"
+                      className="w-full h-full object-cover"
                     />
-                  </motion.div>
-                ) : (
-                  <motion.div
-                    whileHover={{ scale: 1.1, rotate: 5 }}
-                    className={`w-24 h-24 rounded-2xl bg-gradient-to-br ${member.gradient} flex items-center justify-center text-4xl mb-6 mx-auto shadow-lg`}
-                  >
-                    {member.avatar}
-                  </motion.div>
-                )}
+                  ) : (
+                    <div className="text-8xl">{member.avatar}</div>
+                  )}
+                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+                </div>
 
                 {/* Info */}
-                <div className="text-center">
-                  <h3 className="text-xl font-bold mb-1">{member.name}</h3>
-                  <p className="text-primary text-sm font-medium mb-3">{member.role}</p>
-                  <p className="text-muted-foreground text-sm mb-4">{member.bio}</p>
+                <div className="p-6">
+                  <h3 className="text-2xl font-bold mb-2">{member.name}</h3>
+                  <p className="text-primary font-medium mb-4">{member.role}</p>
+                  <p className="text-muted-foreground text-sm">{member.bio}</p>
 
-                  {/* Social Links */}
-                  <div className="flex justify-center gap-3">
-                    <motion.button
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="w-9 h-9 rounded-full bg-muted/50 flex items-center justify-center hover:bg-primary/20 transition-colors"
+                  {/* Social Links (placeholder) */}
+                  <div className="flex gap-3 mt-6">
+                    <a
+                      href="#"
+                      className="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:bg-primary/10 transition-colors"
                     >
-                      <Linkedin className="w-4 h-4 text-muted-foreground" />
-                    </motion.button>
-                    <motion.button
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="w-9 h-9 rounded-full bg-muted/50 flex items-center justify-center hover:bg-primary/20 transition-colors"
+                      <Linkedin className="w-5 h-5" />
+                    </a>
+                    <a
+                      href="#"
+                      className="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:bg-primary/10 transition-colors"
                     >
-                      <Twitter className="w-4 h-4 text-muted-foreground" />
-                    </motion.button>
-                    <motion.button
-                      whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="w-9 h-9 rounded-full bg-muted/50 flex items-center justify-center hover:bg-primary/20 transition-colors"
+                      <Twitter className="w-5 h-5" />
+                    </a>
+                    <a
+                      href="#"
+                      className="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:bg-primary/10 transition-colors"
                     >
-                      <Globe className="w-4 h-4 text-muted-foreground" />
-                    </motion.button>
+                      <Globe className="w-5 h-5" />
+                    </a>
                   </div>
                 </div>
               </motion.div>
             ))}
           </div>
 
-          {/* Join the Team CTA */}
+          {/* CTA Section */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="glass-card rounded-2xl p-8 md:p-12 text-center relative overflow-hidden"
+            className="text-center mt-20"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-transparent to-primary/10" />
-            <div className="relative">
-              <motion.div
-                initial={{ scale: 0 }}
-                whileInView={{ scale: 1 }}
-                transition={{ type: "spring", stiffness: 200 }}
-                viewport={{ once: true }}
-                className="w-16 h-16 rounded-2xl bg-primary/20 flex items-center justify-center text-3xl mx-auto mb-6"
-              >
-                🎯
-              </motion.div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            <div className="glass-card rounded-2xl p-8 md:p-12 max-w-2xl mx-auto">
+              <h2 className="text-3xl font-bold mb-4">
                 Want to <span className="text-gradient">Join Us</span>?
               </h2>
-              <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-                We're always looking for passionate individuals who share our vision.
-                If you believe in creating inclusive spaces and building amazing products,
-                we'd love to hear from you.
+              <p className="text-muted-foreground mb-6">
+                We're always looking for talented individuals who share our vision of
+                building authentic, inclusive connections.
               </p>
-              <Link to="/contact">
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="inline-flex items-center gap-2 px-8 py-3 rounded-xl bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors"
-                >
-                  Get in Touch
-                </motion.button>
+              <Link
+                to="/contact"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors"
+              >
+                Get in Touch
               </Link>
             </div>
           </motion.div>
