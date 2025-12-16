@@ -47,13 +47,32 @@ const stats = [
 ];
 
 const About = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About SPICE Dating App",
+    "description": "SPICE's mission to create an inclusive, verified, privacy-focused dating platform for swingers, BDSM, and ENM communities.",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "SPICE",
+      "description": "Premium adult lifestyle dating platform",
+      "foundingDate": "2024",
+      "memberOf": {
+        "@type": "Thing",
+        "name": "Alternative Lifestyle Community"
+      }
+    }
+  };
+
   return (
     <div className="relative min-h-screen">
-      <Helmet>
-        <title>About SPICE — Our Mission for Inclusive Adult Dating</title>
-        <meta name="description" content="Learn about SPICE's mission to create the most inclusive, verified, and privacy-focused dating app for swingers, BDSM, and ENM communities." />
-        <link rel="canonical" href="https://thespiceapp.com/about" />
-      </Helmet>
+      <SEO
+        title="About SPICE — Inclusive, Verified Dating for Swingers, BDSM & ENM"
+        description="Learn about SPICE's mission to create the most inclusive, verified, and privacy-focused dating app for swingers, BDSM, ENM, and polyamorous communities. Built by the lifestyle community, for the community. 10K+ waitlist members, 100% verification rate, 50+ countries."
+        keywords="about SPICE dating app, lifestyle dating mission, sex-positive dating platform, inclusive adult dating, verified dating community, alternative lifestyle app, BDSM community values, ENM platform mission, privacy-focused adult dating, authentic connections dating"
+        canonical="https://thespiceapp.com/about"
+        structuredData={structuredData}
+      />
       <ParticlesBackground />
       <Header />
       <Breadcrumbs />
