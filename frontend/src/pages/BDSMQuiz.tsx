@@ -130,11 +130,16 @@ const BDSMQuiz = () => {
         body: JSON.stringify({ responses })
       });
 
+      console.log('Response status:', response.status);
+      
       if (!response.ok) {
-        throw new Error(`API error: ${response.status}`);
+        const errorText = await response.text();
+        console.error('API error response:', errorText);
+        throw new Error(`API error: ${response.status} - ${errorText}`);
       }
 
       const data = await response.json();
+      console.log('API response data:', data);
 
       if (data?.success && data?.insights) {
         setInsights(data.insights);
@@ -148,6 +153,7 @@ const BDSMQuiz = () => {
       }
     } catch (error) {
       console.error('Quiz analysis error:', error);
+      console.error('Error details:', error);
       
       // Fallback to local analysis
       toast({
