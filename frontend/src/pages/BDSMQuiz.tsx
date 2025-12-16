@@ -119,6 +119,9 @@ const BDSMQuiz = () => {
     try {
       // Call backend API for AI analysis
       const backendUrl = import.meta.env.VITE_BACKEND_URL || process.env.REACT_APP_BACKEND_URL || '';
+      console.log('Backend URL:', backendUrl);
+      console.log('Calling API:', `${backendUrl}/api/analyze-quiz`);
+      
       const response = await fetch(`${backendUrl}/api/analyze-quiz`, {
         method: 'POST',
         headers: {
