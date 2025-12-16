@@ -17,6 +17,7 @@ const mainNavItems = [
   { name: "SPICE App", path: "/spice-app" },
   { name: "About Us", path: "/about" },
   { name: "Meet the Team", path: "/team" },
+  { name: "FAQ", path: "/faq" },
   { name: "Contact Us", path: "/contact" },
 ];
 
