@@ -11,7 +11,7 @@ import uuid
 from datetime import datetime
 import json
 import asyncio
-import openai
+from emergentintegrations.llm.chat import LlmChat, UserMessage
 
 
 ROOT_DIR = Path(__file__).parent
