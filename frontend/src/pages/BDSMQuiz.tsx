@@ -58,6 +58,13 @@ const BDSMQuiz = () => {
   const [quizStarted, setQuizStarted] = useState(false);
   const { toast } = useToast();
 
+  // Track quiz start when quiz is started
+  useEffect(() => {
+    if (quizStarted && currentQuestion === 0 && responses.length === 0) {
+      trackQuizStart();
+    }
+  }, [quizStarted]);
+
   const progress = ((currentQuestion + 1) / quizQuestions.length) * 100;
 
   const handleAnswer = (answer: string | number | string[]) => {
