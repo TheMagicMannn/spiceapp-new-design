@@ -21,6 +21,9 @@ import SelfCare from "./pages/SelfCare";
 import Download from "./pages/Download";
 import ArticleDetail from "./pages/ArticleDetail";
 import CityPage from "./pages/CityPage";
+import ComparisonFeeld from "./pages/ComparisonFeeld";
+import Comparison3Fun from "./pages/Comparison3Fun";
+import ComparisonSDC from "./pages/ComparisonSDC";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
