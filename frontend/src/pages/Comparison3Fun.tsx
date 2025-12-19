@@ -3,6 +3,7 @@ import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
 import ParticlesBackground from "@/components/ParticlesBackground";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 
 const Comparison3Fun = () => {
@@ -55,11 +56,12 @@ const Comparison3Fun = () => {
       <div className="relative min-h-screen">
         <ParticlesBackground />
         <Header />
+        <Breadcrumbs />
         
-        <main className="relative z-10 pt-16">
+        <main className="relative z-10 pt-32 pb-12">
         {/* Hero */}
         <section className="py-20 px-4 relative overflow-hidden">
-          <div className="max-w-6xl mx-auto">
+          <div className="container mx-auto px-4">
             <div className="flex items-center gap-2 mb-4 text-muted-foreground">
               <span className="text-sm">Home → Comparisons → SPICE vs 3Fun</span>
             </div>
@@ -74,7 +76,7 @@ const Comparison3Fun = () => {
 
         {/* Quick Winner Box */}
         <section className="py-12 px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="container mx-auto px-4">
             <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-8 border-2 border-green-200">
               <div className="flex items-center gap-3 mb-4">
                 <Crown className="w-10 h-10 text-yellow-500" />
@@ -85,7 +87,7 @@ const Comparison3Fun = () => {
               </p>
               <Button 
                 size="lg" 
-                className="gradient-animate hover:scale-105 transition-transform text-white"
+                className="bg-gradient-to-r from-primary/20 via-purple-500/20 to-primary/20 hover:scale-105 transition-transform text-white"
                 onClick={() => window.open('https://thespiceapp.com/download', '_blank')}
               >
                 <Download className="w-5 h-5 mr-2" />
@@ -97,7 +99,7 @@ const Comparison3Fun = () => {
 
         {/* Safety Comparison - Highlighted */}
         <section className="py-16 px-4 glass-card">
-          <div className="max-w-4xl mx-auto">
+          <div className="container mx-auto px-4">
             <div className="flex items-center justify-center gap-3 mb-8">
               <Shield className="w-10 h-10 text-blue-600" />
               <h2 className="text-4xl font-bold text-center text-foreground">
@@ -105,7 +107,7 @@ const Comparison3Fun = () => {
               </h2>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="glass-card rounded-xl p-8 shadow-lg border-2 border-green-200">
+              <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8 shadow-lg border-2 border-green-200">
                 <h3 className="text-2xl font-bold mb-4 text-primary flex items-center gap-2">
                   <CheckCircle className="w-7 h-7 text-green-600" />
                   SPICE Safety Features
@@ -142,7 +144,7 @@ const Comparison3Fun = () => {
                 </ul>
               </div>
 
-              <div className="glass-card rounded-xl p-8 shadow-lg">
+              <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8 shadow-lg">
                 <h3 className="text-2xl font-bold mb-4 text-muted-foreground">3Fun Safety Features</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
@@ -185,7 +187,7 @@ const Comparison3Fun = () => {
 
         {/* Feature Comparison Table */}
         <section className="py-16 px-4">
-          <div className="max-w-6xl mx-auto">
+          <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold mb-12 text-center text-foreground">
               Feature Comparison
             </h2>
@@ -193,14 +195,14 @@ const Comparison3Fun = () => {
             <div className="overflow-x-auto">
               <table className="w-full glass-card rounded-xl shadow-lg border border-border">
                 <thead>
-                  <tr className="glass-card border-b border-border">
+                  <tr className="bg-card/50 backdrop-blur-sm border border-border border-b border-border">
                     <th className="p-6 text-left text-lg font-bold text-foreground">Feature</th>
                     <th className="p-6 text-center text-lg font-bold text-primary">SPICE</th>
                     <th className="p-6 text-center text-lg font-bold text-muted-foreground">3Fun</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200">
-                  <tr className="glass-card">
+                  <tr className="bg-card/50 backdrop-blur-sm border border-border">
                     <td className="p-6 font-semibold text-foreground">ID Verification</td>
                     <td className="p-6 text-center">
                       <div className="flex items-center justify-center gap-2">
@@ -230,7 +232,7 @@ const Comparison3Fun = () => {
                       </div>
                     </td>
                   </tr>
-                  <tr className="glass-card">
+                  <tr className="bg-card/50 backdrop-blur-sm border border-border">
                     <td className="p-6 font-semibold text-foreground">Local Events & Meetups</td>
                     <td className="p-6 text-center">
                       <div className="flex items-center justify-center gap-2">
@@ -255,7 +257,7 @@ const Comparison3Fun = () => {
                     </td>
                     <td className="p-6 text-center text-muted-foreground">Basic tips only</td>
                   </tr>
-                  <tr className="glass-card">
+                  <tr className="bg-card/50 backdrop-blur-sm border border-border">
                     <td className="p-6 font-semibold text-foreground">US Member Base</td>
                     <td className="p-6 text-center">
                       <div className="flex items-center justify-center gap-2">
@@ -275,7 +277,7 @@ const Comparison3Fun = () => {
                     </td>
                     <td className="p-6 text-center text-muted-foreground">Browse + Likes only</td>
                   </tr>
-                  <tr className="glass-card">
+                  <tr className="bg-card/50 backdrop-blur-sm border border-border">
                     <td className="p-6 font-semibold text-foreground">Customer Support</td>
                     <td className="p-6 text-center">
                       <div className="flex items-center justify-center gap-2">
@@ -303,11 +305,11 @@ const Comparison3Fun = () => {
 
         {/* User Reviews & Reputation */}
         <section className="py-16 px-4 glass-card">
-          <div className="max-w-4xl mx-auto">
+          <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold mb-8 text-center text-foreground">User Reviews & Reputation</h2>
             
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="glass-card rounded-xl p-8 shadow-md">
+              <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8 shadow-md">
                 <h3 className="text-xl font-bold mb-4 text-primary">SPICE User Feedback</h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
@@ -341,7 +343,7 @@ const Comparison3Fun = () => {
                 </div>
               </div>
 
-              <div className="glass-card rounded-xl p-8 shadow-md">
+              <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8 shadow-md">
                 <h3 className="text-xl font-bold mb-4 text-muted-foreground">3Fun User Concerns</h3>
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
@@ -380,7 +382,7 @@ const Comparison3Fun = () => {
 
         {/* Who Should Use Which */}
         <section className="py-16 px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold mb-12 text-center text-foreground">
               Which App is Right for You?
             </h2>
@@ -424,7 +426,7 @@ const Comparison3Fun = () => {
                 </Button>
               </div>
 
-              <div className="glass-card rounded-2xl p-8 border-2 border-border">
+              <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 border-2 border-border">
                 <h3 className="text-2xl font-bold mb-4 text-muted-foreground">Choose 3Fun if you:</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
@@ -451,7 +453,7 @@ const Comparison3Fun = () => {
 
         {/* Final CTA */}
         <section className="py-16 px-4 gradient-animate">
-          <div className="max-w-4xl mx-auto text-center text-white">
+          <div className="container mx-auto px-4 text-center text-white">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Join the Safer, More Authentic Community
             </h2>
@@ -470,7 +472,7 @@ const Comparison3Fun = () => {
               <Button 
                 size="lg" 
                 variant="outline"
-                className="bg-transparent border-2 border-white text-white hover:bg-white/10 text-lg px-8 py-6"
+                className="inline-flex items-center justify-center px-8 py-3 bg-background border-2 border-primary hover:bg-primary/10 font-semibold rounded-full transition-all text-white hover:bg-white/10 text-lg px-8 py-6"
                 onClick={() => window.location.href = '/quiz'}
               >
                 Take BDSM Quiz First

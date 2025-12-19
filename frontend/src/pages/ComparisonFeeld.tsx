@@ -3,6 +3,7 @@ import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
 import ParticlesBackground from "@/components/ParticlesBackground";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 
 const ComparisonFeeld = () => {
@@ -55,8 +56,9 @@ const ComparisonFeeld = () => {
       <div className="relative min-h-screen">
         <ParticlesBackground />
         <Header />
+        <Breadcrumbs />
         
-        <main className="relative z-10 pt-16">
+        <main className="relative z-10 pt-32 pb-12">
         {/* Hero */}
         <section className="py-20 px-4 relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-accent/10" />
@@ -75,7 +77,7 @@ const ComparisonFeeld = () => {
 
         {/* Quick Winner Box */}
         <section className="py-12 px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="container mx-auto px-4">
             <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-8 border-2 border-green-200">
               <div className="flex items-center gap-3 mb-4">
                 <Crown className="w-10 h-10 text-yellow-500" />
@@ -86,7 +88,7 @@ const ComparisonFeeld = () => {
               </p>
               <Button 
                 size="lg" 
-                className="gradient-animate hover:scale-105 transition-transform text-white"
+                className="bg-gradient-to-r from-primary/20 via-purple-500/20 to-primary/20 hover:scale-105 transition-transform text-white"
                 onClick={() => window.open('https://thespiceapp.com/download', '_blank')}
               >
                 <Download className="w-5 h-5 mr-2" />
@@ -98,7 +100,7 @@ const ComparisonFeeld = () => {
 
         {/* Main Comparison Table */}
         <section className="py-16 px-4">
-          <div className="max-w-6xl mx-auto">
+          <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold mb-12 text-center text-foreground">
               Feature-by-Feature Comparison
             </h2>
@@ -106,7 +108,7 @@ const ComparisonFeeld = () => {
             <div className="overflow-x-auto">
               <table className="w-full glass-card rounded-xl shadow-lg border border-border">
                 <thead>
-                  <tr className="glass-card border-b border-border">
+                  <tr className="bg-card/50 backdrop-blur-sm border border-border border-b border-border">
                     <th className="p-6 text-left text-lg font-bold text-foreground">Feature</th>
                     <th className="p-6 text-center text-lg font-bold text-primary">SPICE</th>
                     <th className="p-6 text-center text-lg font-bold text-muted-foreground">Feeld</th>
@@ -123,7 +125,7 @@ const ComparisonFeeld = () => {
                     </td>
                     <td className="p-6 text-center text-muted-foreground">~500,000+ global users</td>
                   </tr>
-                  <tr className="glass-card">
+                  <tr className="bg-card/50 backdrop-blur-sm border border-border">
                     <td className="p-6 font-semibold text-foreground">BDSM Compatibility Quiz</td>
                     <td className="p-6 text-center">
                       <div className="flex items-center justify-center gap-2">
@@ -148,7 +150,7 @@ const ComparisonFeeld = () => {
                     </td>
                     <td className="p-6 text-center text-muted-foreground">Photo verification only</td>
                   </tr>
-                  <tr className="glass-card">
+                  <tr className="bg-card/50 backdrop-blur-sm border border-border">
                     <td className="p-6 font-semibold text-foreground">Couples Profiles</td>
                     <td className="p-6 text-center">
                       <CheckCircle className="w-6 h-6 text-green-600" />
@@ -172,7 +174,7 @@ const ComparisonFeeld = () => {
                       </div>
                     </td>
                   </tr>
-                  <tr className="glass-card">
+                  <tr className="bg-card/50 backdrop-blur-sm border border-border">
                     <td className="p-6 font-semibold text-foreground">Events & Meetups</td>
                     <td className="p-6 text-center">
                       <div className="flex items-center justify-center gap-2">
@@ -197,7 +199,7 @@ const ComparisonFeeld = () => {
                     </td>
                     <td className="p-6 text-center text-muted-foreground">"Ask Feeld" blog</td>
                   </tr>
-                  <tr className="glass-card">
+                  <tr className="bg-card/50 backdrop-blur-sm border border-border">
                     <td className="p-6 font-semibold text-foreground">Privacy Mode</td>
                     <td className="p-6 text-center">
                       <CheckCircle className="w-6 h-6 text-green-600" />
@@ -216,7 +218,7 @@ const ComparisonFeeld = () => {
                     </td>
                     <td className="p-6 text-center text-muted-foreground">$19.99/month</td>
                   </tr>
-                  <tr className="glass-card">
+                  <tr className="bg-card/50 backdrop-blur-sm border border-border">
                     <td className="p-6 font-semibold text-foreground">Customer Support</td>
                     <td className="p-6 text-center">
                       <div className="flex items-center justify-center gap-2">
@@ -234,11 +236,11 @@ const ComparisonFeeld = () => {
 
         {/* Detailed Comparison Sections */}
         <section className="py-16 px-4 glass-card">
-          <div className="max-w-4xl mx-auto space-y-12">
+          <div className="container mx-auto px-4 space-y-12">
             {/* Community & User Base */}
             <div>
               <h2 className="text-3xl font-bold mb-6 text-foreground">Community & User Base</h2>
-              <div className="glass-card rounded-xl p-8 shadow-md">
+              <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8 shadow-md">
                 <h3 className="text-xl font-bold mb-4 text-primary">SPICE Community</h3>
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-start gap-3">
@@ -281,7 +283,7 @@ const ComparisonFeeld = () => {
             <div>
               <h2 className="text-3xl font-bold mb-6 text-foreground">Unique Features</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="glass-card rounded-xl p-8 border-2 border-purple-200">
+                <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8 border-2 border-purple-200">
                   <h3 className="text-xl font-bold mb-4 text-primary">SPICE Exclusive Features</h3>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
@@ -327,7 +329,7 @@ const ComparisonFeeld = () => {
             <div>
               <h2 className="text-3xl font-bold mb-6 text-foreground">Pricing Comparison</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="glass-card rounded-xl p-8 shadow-md border-2 border-green-200">
+                <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8 shadow-md border-2 border-green-200">
                   <div className="flex items-center gap-3 mb-4">
                     <CheckCircle className="w-8 h-8 text-green-600" />
                     <h3 className="text-2xl font-bold text-primary">SPICE Pricing</h3>
@@ -365,7 +367,7 @@ const ComparisonFeeld = () => {
                   <p className="text-sm text-green-700 font-semibold">💰 25% cheaper than Feeld!</p>
                 </div>
 
-                <div className="glass-card rounded-xl p-8 shadow-md">
+                <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8 shadow-md">
                   <h3 className="text-2xl font-bold text-muted-foreground mb-4">Feeld Majestic</h3>
                   <div className="mb-6">
                     <p className="text-4xl font-bold text-foreground mb-2">$19.99<span className="text-xl text-muted-foreground">/month</span></p>
@@ -401,7 +403,7 @@ const ComparisonFeeld = () => {
 
         {/* Who Should Use Which */}
         <section className="py-16 px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold mb-12 text-center text-foreground">
               Which App is Right for You?
             </h2>
@@ -445,7 +447,7 @@ const ComparisonFeeld = () => {
                 </Button>
               </div>
 
-              <div className="glass-card rounded-2xl p-8 border-2 border-border">
+              <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 border-2 border-border">
                 <h3 className="text-2xl font-bold mb-4 text-muted-foreground">Choose Feeld if you:</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
@@ -476,7 +478,7 @@ const ComparisonFeeld = () => {
 
         {/* Final CTA */}
         <section className="py-16 px-4 gradient-animate">
-          <div className="max-w-4xl mx-auto text-center text-white">
+          <div className="container mx-auto px-4 text-center text-white">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Ready to Experience SPICE?
             </h2>
@@ -495,7 +497,7 @@ const ComparisonFeeld = () => {
               <Button 
                 size="lg" 
                 variant="outline"
-                className="bg-transparent border-2 border-white text-white hover:bg-white/10 text-lg px-8 py-6"
+                className="inline-flex items-center justify-center px-8 py-3 bg-background border-2 border-primary hover:bg-primary/10 font-semibold rounded-full transition-all text-white hover:bg-white/10 text-lg px-8 py-6"
                 onClick={() => window.location.href = '/quiz'}
               >
                 Take BDSM Quiz First
