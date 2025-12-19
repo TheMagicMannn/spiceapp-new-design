@@ -1,5 +1,8 @@
 import { ArrowRight, CheckCircle, XCircle, Crown, Download } from "lucide-react";
 import SEO from "@/components/SEO";
+import Header from "@/components/Header";
+import FooterSection from "@/components/FooterSection";
+import ParticlesBackground from "@/components/ParticlesBackground";
 import { Button } from "@/components/ui/button";
 
 const ComparisonFeeld = () => {
@@ -49,7 +52,11 @@ const ComparisonFeeld = () => {
         structuredData={combinedSchema}
       />
 
-      <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white">
+      <div className="relative min-h-screen">
+        <ParticlesBackground />
+        <Header />
+        
+        <main className="relative z-10 pt-16">
         {/* Hero */}
         <section className="py-20 px-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white">
           <div className="max-w-6xl mx-auto">
