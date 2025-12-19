@@ -79,14 +79,14 @@ const ComparisonFeeld = () => {
             <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-8 border-2 border-green-200">
               <div className="flex items-center gap-3 mb-4">
                 <Crown className="w-10 h-10 text-yellow-500" />
-                <h2 className="text-3xl font-bold text-gray-900">The Winner: SPICE</h2>
+                <h2 className="text-3xl font-bold text-foreground">The Winner: SPICE</h2>
               </div>
-              <p className="text-lg text-gray-700 mb-4">
+              <p className="text-lg text-muted-foreground mb-4">
                 While Feeld is a solid app, <strong>SPICE offers better value, unique features like the BDSM Compatibility Quiz, superior verification, and a more engaged community</strong>. Perfect for couples and singles exploring swinging, BDSM, polyamory, and ENM.
               </p>
               <Button 
                 size="lg" 
-                className="bg-purple-600 hover:bg-purple-700 text-white"
+                className="gradient-animate hover:scale-105 transition-transform text-white"
                 onClick={() => window.open('https://thespiceapp.com/download', '_blank')}
               >
                 <Download className="w-5 h-5 mr-2" />
@@ -99,32 +99,32 @@ const ComparisonFeeld = () => {
         {/* Main Comparison Table */}
         <section className="py-16 px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold mb-12 text-center text-gray-900">
+            <h2 className="text-4xl font-bold mb-12 text-center text-foreground">
               Feature-by-Feature Comparison
             </h2>
 
             <div className="overflow-x-auto">
-              <table className="w-full bg-white rounded-xl shadow-lg border border-gray-200">
+              <table className="w-full glass-card rounded-xl shadow-lg border border-border">
                 <thead>
-                  <tr className="bg-gray-50 border-b border-gray-200">
-                    <th className="p-6 text-left text-lg font-bold text-gray-900">Feature</th>
-                    <th className="p-6 text-center text-lg font-bold text-purple-600">SPICE</th>
-                    <th className="p-6 text-center text-lg font-bold text-gray-600">Feeld</th>
+                  <tr className="glass-card border-b border-border">
+                    <th className="p-6 text-left text-lg font-bold text-foreground">Feature</th>
+                    <th className="p-6 text-center text-lg font-bold text-primary">SPICE</th>
+                    <th className="p-6 text-center text-lg font-bold text-muted-foreground">Feeld</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200">
                   <tr>
-                    <td className="p-6 font-semibold text-gray-900">Community Size</td>
+                    <td className="p-6 font-semibold text-foreground">Community Size</td>
                     <td className="p-6 text-center">
                       <div className="flex items-center justify-center gap-2">
                         <CheckCircle className="w-6 h-6 text-green-600" />
                         <span className="font-bold">30,000+ verified members</span>
                       </div>
                     </td>
-                    <td className="p-6 text-center text-gray-600">~500,000+ global users</td>
+                    <td className="p-6 text-center text-muted-foreground">~500,000+ global users</td>
                   </tr>
-                  <tr className="bg-purple-50">
-                    <td className="p-6 font-semibold text-gray-900">BDSM Compatibility Quiz</td>
+                  <tr className="glass-card">
+                    <td className="p-6 font-semibold text-foreground">BDSM Compatibility Quiz</td>
                     <td className="p-6 text-center">
                       <div className="flex items-center justify-center gap-2">
                         <CheckCircle className="w-6 h-6 text-green-600" />
@@ -139,17 +139,17 @@ const ComparisonFeeld = () => {
                     </td>
                   </tr>
                   <tr>
-                    <td className="p-6 font-semibold text-gray-900">Photo & ID Verification</td>
+                    <td className="p-6 font-semibold text-foreground">Photo & ID Verification</td>
                     <td className="p-6 text-center">
                       <div className="flex items-center justify-center gap-2">
                         <CheckCircle className="w-6 h-6 text-green-600" />
                         <span className="font-bold">Strict verification</span>
                       </div>
                     </td>
-                    <td className="p-6 text-center text-gray-600">Photo verification only</td>
+                    <td className="p-6 text-center text-muted-foreground">Photo verification only</td>
                   </tr>
-                  <tr className="bg-purple-50">
-                    <td className="p-6 font-semibold text-gray-900">Couples Profiles</td>
+                  <tr className="glass-card">
+                    <td className="p-6 font-semibold text-foreground">Couples Profiles</td>
                     <td className="p-6 text-center">
                       <CheckCircle className="w-6 h-6 text-green-600" />
                     </td>
@@ -158,7 +158,7 @@ const ComparisonFeeld = () => {
                     </td>
                   </tr>
                   <tr>
-                    <td className="p-6 font-semibold text-gray-900">Free Messaging</td>
+                    <td className="p-6 font-semibold text-foreground">Free Messaging</td>
                     <td className="p-6 text-center">
                       <div className="flex items-center justify-center gap-2">
                         <CheckCircle className="w-6 h-6 text-green-600" />
@@ -172,8 +172,8 @@ const ComparisonFeeld = () => {
                       </div>
                     </td>
                   </tr>
-                  <tr className="bg-purple-50">
-                    <td className="p-6 font-semibold text-gray-900">Events & Meetups</td>
+                  <tr className="glass-card">
+                    <td className="p-6 font-semibold text-foreground">Events & Meetups</td>
                     <td className="p-6 text-center">
                       <div className="flex items-center justify-center gap-2">
                         <CheckCircle className="w-6 h-6 text-green-600" />
@@ -188,17 +188,17 @@ const ComparisonFeeld = () => {
                     </td>
                   </tr>
                   <tr>
-                    <td className="p-6 font-semibold text-gray-900">Educational Resources</td>
+                    <td className="p-6 font-semibold text-foreground">Educational Resources</td>
                     <td className="p-6 text-center">
                       <div className="flex items-center justify-center gap-2">
                         <CheckCircle className="w-6 h-6 text-green-600" />
                         <span className="font-bold">50+ comprehensive guides</span>
                       </div>
                     </td>
-                    <td className="p-6 text-center text-gray-600">"Ask Feeld" blog</td>
+                    <td className="p-6 text-center text-muted-foreground">"Ask Feeld" blog</td>
                   </tr>
-                  <tr className="bg-purple-50">
-                    <td className="p-6 font-semibold text-gray-900">Privacy Mode</td>
+                  <tr className="glass-card">
+                    <td className="p-6 font-semibold text-foreground">Privacy Mode</td>
                     <td className="p-6 text-center">
                       <CheckCircle className="w-6 h-6 text-green-600" />
                     </td>
@@ -207,24 +207,24 @@ const ComparisonFeeld = () => {
                     </td>
                   </tr>
                   <tr>
-                    <td className="p-6 font-semibold text-gray-900">Premium Price</td>
+                    <td className="p-6 font-semibold text-foreground">Premium Price</td>
                     <td className="p-6 text-center">
                       <div className="flex items-center justify-center gap-2">
                         <CheckCircle className="w-6 h-6 text-green-600" />
                         <span className="font-bold">$14.99/month</span>
                       </div>
                     </td>
-                    <td className="p-6 text-center text-gray-600">$19.99/month</td>
+                    <td className="p-6 text-center text-muted-foreground">$19.99/month</td>
                   </tr>
-                  <tr className="bg-purple-50">
-                    <td className="p-6 font-semibold text-gray-900">Customer Support</td>
+                  <tr className="glass-card">
+                    <td className="p-6 font-semibold text-foreground">Customer Support</td>
                     <td className="p-6 text-center">
                       <div className="flex items-center justify-center gap-2">
                         <CheckCircle className="w-6 h-6 text-green-600" />
                         <span className="font-bold">24/7 support</span>
                       </div>
                     </td>
-                    <td className="p-6 text-center text-gray-600">Email support</td>
+                    <td className="p-6 text-center text-muted-foreground">Email support</td>
                   </tr>
                 </tbody>
               </table>
@@ -233,45 +233,45 @@ const ComparisonFeeld = () => {
         </section>
 
         {/* Detailed Comparison Sections */}
-        <section className="py-16 px-4 bg-gray-50">
+        <section className="py-16 px-4 glass-card">
           <div className="max-w-4xl mx-auto space-y-12">
             {/* Community & User Base */}
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-gray-900">Community & User Base</h2>
-              <div className="bg-white rounded-xl p-8 shadow-md">
-                <h3 className="text-xl font-bold mb-4 text-purple-600">SPICE Community</h3>
+              <h2 className="text-3xl font-bold mb-6 text-foreground">Community & User Base</h2>
+              <div className="glass-card rounded-xl p-8 shadow-md">
+                <h3 className="text-xl font-bold mb-4 text-primary">SPICE Community</h3>
                 <ul className="space-y-3 mb-6">
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
-                    <span className="text-gray-700"><strong>30,000+ verified members</strong> focused specifically on swingers, BDSM, ENM, and polyamory</span>
+                    <span className="text-muted-foreground"><strong>30,000+ verified members</strong> focused specifically on swingers, BDSM, ENM, and polyamory</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
-                    <span className="text-gray-700"><strong>Higher engagement rate</strong> - Members join with clear lifestyle intentions</span>
+                    <span className="text-muted-foreground"><strong>Higher engagement rate</strong> - Members join with clear lifestyle intentions</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
-                    <span className="text-gray-700"><strong>Strong US presence</strong> in major cities (NYC 10,500+, LA 12,800+, Vegas 8,200+)</span>
+                    <span className="text-muted-foreground"><strong>Strong US presence</strong> in major cities (NYC 10,500+, LA 12,800+, Vegas 8,200+)</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
-                    <span className="text-gray-700"><strong>Verification required</strong> - Photo AND ID verification reduces fake profiles</span>
+                    <span className="text-muted-foreground"><strong>Verification required</strong> - Photo AND ID verification reduces fake profiles</span>
                   </li>
                 </ul>
 
-                <h3 className="text-xl font-bold mb-4 text-gray-600">Feeld Community</h3>
+                <h3 className="text-xl font-bold mb-4 text-muted-foreground">Feeld Community</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
-                    <span className="text-gray-700">~500,000+ global users, but more broad/general audience</span>
+                    <span className="text-muted-foreground">~500,000+ global users, but more broad/general audience</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-gray-700">Heavy LGBTQ+ focus, less emphasis on swinging/couples</span>
+                    <span className="text-muted-foreground">Heavy LGBTQ+ focus, less emphasis on swinging/couples</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-gray-700">More casual explorers vs. serious lifestyle participants</span>
+                    <span className="text-muted-foreground">More casual explorers vs. serious lifestyle participants</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="text-gray-700">Photo verification only - more fake profiles reported</span>
+                    <span className="text-muted-foreground">Photo verification only - more fake profiles reported</span>
                   </li>
                 </ul>
               </div>
@@ -279,44 +279,44 @@ const ComparisonFeeld = () => {
 
             {/* Unique Features */}
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-gray-900">Unique Features</h2>
+              <h2 className="text-3xl font-bold mb-6 text-foreground">Unique Features</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-purple-50 rounded-xl p-8 border-2 border-purple-200">
-                  <h3 className="text-xl font-bold mb-4 text-purple-600">SPICE Exclusive Features</h3>
+                <div className="glass-card rounded-xl p-8 border-2 border-purple-200">
+                  <h3 className="text-xl font-bold mb-4 text-primary">SPICE Exclusive Features</h3>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
-                      <span className="text-gray-700"><strong>BDSM Compatibility Quiz</strong> - 50+ questions to discover your kink profile and find compatible partners</span>
+                      <span className="text-muted-foreground"><strong>BDSM Compatibility Quiz</strong> - 50+ questions to discover your kink profile and find compatible partners</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
-                      <span className="text-gray-700"><strong>Events Calendar</strong> - Find local lifestyle parties, meetups, and workshops</span>
+                      <span className="text-muted-foreground"><strong>Events Calendar</strong> - Find local lifestyle parties, meetups, and workshops</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
-                      <span className="text-gray-700"><strong>Educational Hub</strong> - 50+ safety guides, how-tos, and lifestyle resources</span>
+                      <span className="text-muted-foreground"><strong>Educational Hub</strong> - 50+ safety guides, how-tos, and lifestyle resources</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-1" />
-                      <span className="text-gray-700"><strong>ID Verification</strong> - Extra layer of safety and authenticity</span>
+                      <span className="text-muted-foreground"><strong>ID Verification</strong> - Extra layer of safety and authenticity</span>
                     </li>
                   </ul>
                 </div>
 
                 <div className="bg-gray-100 rounded-xl p-8">
-                  <h3 className="text-xl font-bold mb-4 text-gray-600">Feeld Features</h3>
+                  <h3 className="text-xl font-bold mb-4 text-muted-foreground">Feeld Features</h3>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
-                      <span className="text-gray-700">AI-powered matching algorithm</span>
+                      <span className="text-muted-foreground">AI-powered matching algorithm</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-gray-700">Detailed preference settings</span>
+                      <span className="text-muted-foreground">Detailed preference settings</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-gray-700">Incognito mode (premium)</span>
+                      <span className="text-muted-foreground">Incognito mode (premium)</span>
                     </li>
                     <li className="flex items-start gap-3">
-                      <span className="text-gray-700">"Ask Feeld" blog with articles</span>
+                      <span className="text-muted-foreground">"Ask Feeld" blog with articles</span>
                     </li>
                   </ul>
                 </div>
@@ -325,16 +325,16 @@ const ComparisonFeeld = () => {
 
             {/* Pricing */}
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-gray-900">Pricing Comparison</h2>
+              <h2 className="text-3xl font-bold mb-6 text-foreground">Pricing Comparison</h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-white rounded-xl p-8 shadow-md border-2 border-green-200">
+                <div className="glass-card rounded-xl p-8 shadow-md border-2 border-green-200">
                   <div className="flex items-center gap-3 mb-4">
                     <CheckCircle className="w-8 h-8 text-green-600" />
-                    <h3 className="text-2xl font-bold text-purple-600">SPICE Pricing</h3>
+                    <h3 className="text-2xl font-bold text-primary">SPICE Pricing</h3>
                   </div>
                   <div className="mb-6">
-                    <p className="text-4xl font-bold text-gray-900 mb-2">$14.99<span className="text-xl text-gray-600">/month</span></p>
-                    <p className="text-gray-600">Save 25% with annual plan</p>
+                    <p className="text-4xl font-bold text-foreground mb-2">$14.99<span className="text-xl text-muted-foreground">/month</span></p>
+                    <p className="text-muted-foreground">Save 25% with annual plan</p>
                   </div>
                   <ul className="space-y-2 mb-6">
                     <li className="flex items-start gap-2">
@@ -365,11 +365,11 @@ const ComparisonFeeld = () => {
                   <p className="text-sm text-green-700 font-semibold">💰 25% cheaper than Feeld!</p>
                 </div>
 
-                <div className="bg-white rounded-xl p-8 shadow-md">
-                  <h3 className="text-2xl font-bold text-gray-600 mb-4">Feeld Majestic</h3>
+                <div className="glass-card rounded-xl p-8 shadow-md">
+                  <h3 className="text-2xl font-bold text-muted-foreground mb-4">Feeld Majestic</h3>
                   <div className="mb-6">
-                    <p className="text-4xl font-bold text-gray-900 mb-2">$19.99<span className="text-xl text-gray-600">/month</span></p>
-                    <p className="text-gray-600">Tiered pricing by location</p>
+                    <p className="text-4xl font-bold text-foreground mb-2">$19.99<span className="text-xl text-muted-foreground">/month</span></p>
+                    <p className="text-muted-foreground">Tiered pricing by location</p>
                   </div>
                   <ul className="space-y-2">
                     <li className="flex items-start gap-2">
@@ -402,42 +402,42 @@ const ComparisonFeeld = () => {
         {/* Who Should Use Which */}
         <section className="py-16 px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold mb-12 text-center text-gray-900">
+            <h2 className="text-4xl font-bold mb-12 text-center text-foreground">
               Which App is Right for You?
             </h2>
 
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 border-2 border-purple-200">
-                <h3 className="text-2xl font-bold mb-4 text-purple-600">Choose SPICE if you:</h3>
+                <h3 className="text-2xl font-bold mb-4 text-primary">Choose SPICE if you:</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
-                    <ArrowRight className="w-5 h-5 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-gray-700">Are specifically interested in <strong>swinging, BDSM, or ENM</strong></span>
+                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                    <span className="text-muted-foreground">Are specifically interested in <strong>swinging, BDSM, or ENM</strong></span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <ArrowRight className="w-5 h-5 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-gray-700">Want to <strong>discover your BDSM compatibility</strong> with a detailed quiz</span>
+                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                    <span className="text-muted-foreground">Want to <strong>discover your BDSM compatibility</strong> with a detailed quiz</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <ArrowRight className="w-5 h-5 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-gray-700">Value <strong>verified profiles</strong> and safety features</span>
+                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                    <span className="text-muted-foreground">Value <strong>verified profiles</strong> and safety features</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <ArrowRight className="w-5 h-5 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-gray-700">Want to <strong>attend local lifestyle events</strong></span>
+                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                    <span className="text-muted-foreground">Want to <strong>attend local lifestyle events</strong></span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <ArrowRight className="w-5 h-5 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-gray-700">Prefer <strong>better value</strong> ($5/month cheaper)</span>
+                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                    <span className="text-muted-foreground">Prefer <strong>better value</strong> ($5/month cheaper)</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <ArrowRight className="w-5 h-5 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-gray-700">Want a <strong>focused, serious lifestyle community</strong></span>
+                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                    <span className="text-muted-foreground">Want a <strong>focused, serious lifestyle community</strong></span>
                   </li>
                 </ul>
                 <Button 
                   size="lg" 
-                  className="w-full mt-6 bg-purple-600 hover:bg-purple-700 text-white"
+                  className="w-full mt-6 gradient-animate hover:scale-105 transition-transform text-white"
                   onClick={() => window.open('https://thespiceapp.com/download', '_blank')}
                 >
                   <Download className="w-5 h-5 mr-2" />
@@ -445,28 +445,28 @@ const ComparisonFeeld = () => {
                 </Button>
               </div>
 
-              <div className="bg-gray-50 rounded-2xl p-8 border-2 border-gray-200">
-                <h3 className="text-2xl font-bold mb-4 text-gray-600">Choose Feeld if you:</h3>
+              <div className="glass-card rounded-2xl p-8 border-2 border-border">
+                <h3 className="text-2xl font-bold mb-4 text-muted-foreground">Choose Feeld if you:</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
-                    <ArrowRight className="w-5 h-5 text-gray-600 flex-shrink-0 mt-1" />
-                    <span className="text-gray-700">Are exploring many different relationship styles broadly</span>
+                    <ArrowRight className="w-5 h-5 text-muted-foreground flex-shrink-0 mt-1" />
+                    <span className="text-muted-foreground">Are exploring many different relationship styles broadly</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <ArrowRight className="w-5 h-5 text-gray-600 flex-shrink-0 mt-1" />
-                    <span className="text-gray-700">Prioritize LGBTQ+ identity-focused community</span>
+                    <ArrowRight className="w-5 h-5 text-muted-foreground flex-shrink-0 mt-1" />
+                    <span className="text-muted-foreground">Prioritize LGBTQ+ identity-focused community</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <ArrowRight className="w-5 h-5 text-gray-600 flex-shrink-0 mt-1" />
-                    <span className="text-gray-700">Want a larger, global user base</span>
+                    <ArrowRight className="w-5 h-5 text-muted-foreground flex-shrink-0 mt-1" />
+                    <span className="text-muted-foreground">Want a larger, global user base</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <ArrowRight className="w-5 h-5 text-gray-600 flex-shrink-0 mt-1" />
-                    <span className="text-gray-700">Prefer AI-powered algorithmic matching</span>
+                    <ArrowRight className="w-5 h-5 text-muted-foreground flex-shrink-0 mt-1" />
+                    <span className="text-muted-foreground">Prefer AI-powered algorithmic matching</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <ArrowRight className="w-5 h-5 text-gray-600 flex-shrink-0 mt-1" />
-                    <span className="text-gray-700">Are willing to pay premium for incognito mode</span>
+                    <ArrowRight className="w-5 h-5 text-muted-foreground flex-shrink-0 mt-1" />
+                    <span className="text-muted-foreground">Are willing to pay premium for incognito mode</span>
                   </li>
                 </ul>
               </div>
@@ -475,18 +475,18 @@ const ComparisonFeeld = () => {
         </section>
 
         {/* Final CTA */}
-        <section className="py-16 px-4 bg-gradient-to-r from-purple-600 to-pink-600">
+        <section className="py-16 px-4 gradient-animate">
           <div className="max-w-4xl mx-auto text-center text-white">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Ready to Experience SPICE?
             </h2>
-            <p className="text-xl mb-8 text-purple-100">
+            <p className="text-xl mb-8 text-muted-foreground">
               Join 30,000+ verified members. Take the BDSM quiz, attend local events, and connect with lifestyle-minded people in your city.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
-                className="bg-white text-purple-600 hover:bg-purple-50 text-lg px-8 py-6"
+                className="bg-white text-primary hover:glass-card text-lg px-8 py-6"
                 onClick={() => window.open('https://thespiceapp.com/download', '_blank')}
               >
                 <Download className="w-5 h-5 mr-2" />
@@ -503,6 +503,9 @@ const ComparisonFeeld = () => {
             </div>
           </div>
         </section>
+        </main>
+
+        <FooterSection />
       </div>
     </>
   );

@@ -1,5 +1,8 @@
 import { ArrowRight, CheckCircle, XCircle, Crown, Download, DollarSign } from "lucide-react";
 import SEO from "@/components/SEO";
+import Header from "@/components/Header";
+import FooterSection from "@/components/FooterSection";
+import ParticlesBackground from "@/components/ParticlesBackground";
 import { Button } from "@/components/ui/button";
 
 const ComparisonSDC = () => {
@@ -49,17 +52,21 @@ const ComparisonSDC = () => {
         structuredData={combinedSchema}
       />
 
-      <div className="min-h-screen bg-gradient-to-b from-purple-50 to-white">
+      <div className="relative min-h-screen">
+        <ParticlesBackground />
+        <Header />
+        
+        <main className="relative z-10 pt-16">
         {/* Hero */}
-        <section className="py-20 px-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white">
+        <section className="py-20 px-4 relative overflow-hidden">
           <div className="max-w-6xl mx-auto">
-            <div className="flex items-center gap-2 mb-4 text-purple-100">
+            <div className="flex items-center gap-2 mb-4 text-muted-foreground">
               <span className="text-sm">Home → Comparisons → SPICE vs SDC</span>
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               SPICE vs SDC: Modern App vs Legacy Platform
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-purple-100 max-w-3xl">
+            <p className="text-xl md:text-2xl mb-8 text-muted-foreground max-w-3xl">
               Comprehensive comparison of pricing, features, and value. See why SPICE offers 70% better value with modern features SDC can't match.
             </p>
           </div>
@@ -71,14 +78,14 @@ const ComparisonSDC = () => {
             <div className="bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-8 border-2 border-green-200">
               <div className="flex items-center gap-3 mb-4">
                 <Crown className="w-10 h-10 text-yellow-500" />
-                <h2 className="text-3xl font-bold text-gray-900">The Winner: SPICE</h2>
+                <h2 className="text-3xl font-bold text-foreground">The Winner: SPICE</h2>
               </div>
-              <p className="text-lg text-gray-700 mb-4">
+              <p className="text-lg text-muted-foreground mb-4">
                 SDC has been around for 20+ years, but <strong>SPICE offers superior value ($14.99 vs $49.99), modern mobile-first design, BDSM compatibility quiz, and features SDC doesn't have</strong>. Better for modern swingers who want more than a dated forum.
               </p>
               <Button 
                 size="lg" 
-                className="bg-purple-600 hover:bg-purple-700 text-white"
+                className="gradient-animate hover:scale-105 transition-transform text-white"
                 onClick={() => window.open('https://thespiceapp.com/download', '_blank')}
               >
                 <Download className="w-5 h-5 mr-2" />
@@ -89,23 +96,23 @@ const ComparisonSDC = () => {
         </section>
 
         {/* Price Comparison - Highlighted */}
-        <section className="py-16 px-4 bg-yellow-50">
+        <section className="py-16 px-4 glass-card">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center justify-center gap-3 mb-8">
               <DollarSign className="w-10 h-10 text-green-600" />
-              <h2 className="text-4xl font-bold text-center text-gray-900">
+              <h2 className="text-4xl font-bold text-center text-foreground">
                 Pricing: SPICE is 70% Cheaper!
               </h2>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white rounded-xl p-8 shadow-lg border-2 border-green-300">
-                <h3 className="text-2xl font-bold mb-4 text-purple-600 flex items-center gap-2">
+              <div className="glass-card rounded-xl p-8 shadow-lg border-2 border-green-300">
+                <h3 className="text-2xl font-bold mb-4 text-primary flex items-center gap-2">
                   <CheckCircle className="w-7 h-7 text-green-600" />
                   SPICE Pricing
                 </h3>
                 <div className="mb-6">
-                  <p className="text-5xl font-bold text-purple-600">$14.99</p>
-                  <p className="text-xl text-gray-600">/month</p>
+                  <p className="text-5xl font-bold text-primary">$14.99</p>
+                  <p className="text-xl text-muted-foreground">/month</p>
                   <p className="text-sm text-green-700 font-semibold mt-2">💰 Save 70% vs SDC!</p>
                 </div>
                 <div className="space-y-3 mb-6">
@@ -140,11 +147,11 @@ const ComparisonSDC = () => {
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl p-8 shadow-lg border-2 border-red-200">
-                <h3 className="text-2xl font-bold mb-4 text-gray-600">SDC Pricing</h3>
+              <div className="glass-card rounded-xl p-8 shadow-lg border-2 border-red-200">
+                <h3 className="text-2xl font-bold mb-4 text-muted-foreground">SDC Pricing</h3>
                 <div className="mb-6">
-                  <p className="text-5xl font-bold text-gray-600">$49.99</p>
-                  <p className="text-xl text-gray-600">/month</p>
+                  <p className="text-5xl font-bold text-muted-foreground">$49.99</p>
+                  <p className="text-xl text-muted-foreground">/month</p>
                   <p className="text-sm text-red-600 font-semibold mt-2">⚠️ 3.3x more expensive</p>
                 </div>
                 <div className="space-y-3 mb-6">
@@ -190,22 +197,22 @@ const ComparisonSDC = () => {
         {/* Feature Comparison Table */}
         <section className="py-16 px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold mb-12 text-center text-gray-900">
+            <h2 className="text-4xl font-bold mb-12 text-center text-foreground">
               Feature-by-Feature Comparison
             </h2>
 
             <div className="overflow-x-auto">
-              <table className="w-full bg-white rounded-xl shadow-lg border border-gray-200">
+              <table className="w-full glass-card rounded-xl shadow-lg border border-border">
                 <thead>
-                  <tr className="bg-gray-50 border-b border-gray-200">
-                    <th className="p-6 text-left text-lg font-bold text-gray-900">Feature</th>
-                    <th className="p-6 text-center text-lg font-bold text-purple-600">SPICE</th>
-                    <th className="p-6 text-center text-lg font-bold text-gray-600">SDC</th>
+                  <tr className="glass-card border-b border-border">
+                    <th className="p-6 text-left text-lg font-bold text-foreground">Feature</th>
+                    <th className="p-6 text-center text-lg font-bold text-primary">SPICE</th>
+                    <th className="p-6 text-center text-lg font-bold text-muted-foreground">SDC</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200">
-                  <tr className="bg-yellow-50">
-                    <td className="p-6 font-semibold text-gray-900">Monthly Price</td>
+                  <tr className="glass-card">
+                    <td className="p-6 font-semibold text-foreground">Monthly Price</td>
                     <td className="p-6 text-center">
                       <div className="flex items-center justify-center gap-2">
                         <CheckCircle className="w-6 h-6 text-green-600" />
@@ -220,7 +227,7 @@ const ComparisonSDC = () => {
                     </td>
                   </tr>
                   <tr>
-                    <td className="p-6 font-semibold text-gray-900">Mobile App Experience</td>
+                    <td className="p-6 font-semibold text-foreground">Mobile App Experience</td>
                     <td className="p-6 text-center">
                       <div className="flex items-center justify-center gap-2">
                         <CheckCircle className="w-6 h-6 text-green-600" />
@@ -228,11 +235,11 @@ const ComparisonSDC = () => {
                       </div>
                     </td>
                     <td className="p-6 text-center">
-                      <span className="text-gray-600">Desktop-focused, dated</span>
+                      <span className="text-muted-foreground">Desktop-focused, dated</span>
                     </td>
                   </tr>
-                  <tr className="bg-purple-50">
-                    <td className="p-6 font-semibold text-gray-900">BDSM Compatibility Quiz</td>
+                  <tr className="glass-card">
+                    <td className="p-6 font-semibold text-foreground">BDSM Compatibility Quiz</td>
                     <td className="p-6 text-center">
                       <div className="flex items-center justify-center gap-2">
                         <CheckCircle className="w-6 h-6 text-green-600" />
@@ -247,7 +254,7 @@ const ComparisonSDC = () => {
                     </td>
                   </tr>
                   <tr>
-                    <td className="p-6 font-semibold text-gray-900">Photo + ID Verification</td>
+                    <td className="p-6 font-semibold text-foreground">Photo + ID Verification</td>
                     <td className="p-6 text-center">
                       <div className="flex items-center justify-center gap-2">
                         <CheckCircle className="w-6 h-6 text-green-600" />
@@ -255,11 +262,11 @@ const ComparisonSDC = () => {
                       </div>
                     </td>
                     <td className="p-6 text-center">
-                      <span className="text-gray-600">Basic verification</span>
+                      <span className="text-muted-foreground">Basic verification</span>
                     </td>
                   </tr>
-                  <tr className="bg-purple-50">
-                    <td className="p-6 font-semibold text-gray-900">Local Events Calendar</td>
+                  <tr className="glass-card">
+                    <td className="p-6 font-semibold text-foreground">Local Events Calendar</td>
                     <td className="p-6 text-center">
                       <CheckCircle className="w-6 h-6 text-green-600" />
                     </td>
@@ -268,7 +275,7 @@ const ComparisonSDC = () => {
                     </td>
                   </tr>
                   <tr>
-                    <td className="p-6 font-semibold text-gray-900">Educational Resources</td>
+                    <td className="p-6 font-semibold text-foreground">Educational Resources</td>
                     <td className="p-6 text-center">
                       <div className="flex items-center justify-center gap-2">
                         <CheckCircle className="w-6 h-6 text-green-600" />
@@ -276,13 +283,13 @@ const ComparisonSDC = () => {
                       </div>
                     </td>
                     <td className="p-6 text-center">
-                      <span className="text-gray-600">Forums only</span>
+                      <span className="text-muted-foreground">Forums only</span>
                     </td>
                   </tr>
-                  <tr className="bg-purple-50">
-                    <td className="p-6 font-semibold text-gray-900">Forum/Community</td>
+                  <tr className="glass-card">
+                    <td className="p-6 font-semibold text-foreground">Forum/Community</td>
                     <td className="p-6 text-center">
-                      <span className="text-gray-600">Coming soon</span>
+                      <span className="text-muted-foreground">Coming soon</span>
                     </td>
                     <td className="p-6 text-center">
                       <div className="flex items-center justify-center gap-2">
@@ -292,7 +299,7 @@ const ComparisonSDC = () => {
                     </td>
                   </tr>
                   <tr>
-                    <td className="p-6 font-semibold text-gray-900">Modern UI/UX</td>
+                    <td className="p-6 font-semibold text-foreground">Modern UI/UX</td>
                     <td className="p-6 text-center">
                       <div className="flex items-center justify-center gap-2">
                         <CheckCircle className="w-6 h-6 text-green-600" />
@@ -300,11 +307,11 @@ const ComparisonSDC = () => {
                       </div>
                     </td>
                     <td className="p-6 text-center">
-                      <span className="text-gray-600">2000s-era design</span>
+                      <span className="text-muted-foreground">2000s-era design</span>
                     </td>
                   </tr>
-                  <tr className="bg-purple-50">
-                    <td className="p-6 font-semibold text-gray-900">Customer Support</td>
+                  <tr className="glass-card">
+                    <td className="p-6 font-semibold text-foreground">Customer Support</td>
                     <td className="p-6 text-center">
                       <div className="flex items-center justify-center gap-2">
                         <CheckCircle className="w-6 h-6 text-green-600" />
@@ -312,16 +319,16 @@ const ComparisonSDC = () => {
                       </div>
                     </td>
                     <td className="p-6 text-center">
-                      <span className="text-gray-600">Email support</span>
+                      <span className="text-muted-foreground">Email support</span>
                     </td>
                   </tr>
                   <tr>
-                    <td className="p-6 font-semibold text-gray-900">Target Audience</td>
+                    <td className="p-6 font-semibold text-foreground">Target Audience</td>
                     <td className="p-6 text-center">
                       <span className="font-bold">All ages, mobile-first</span>
                     </td>
                     <td className="p-6 text-center">
-                      <span className="text-gray-600">Older demographic, desktop</span>
+                      <span className="text-muted-foreground">Older demographic, desktop</span>
                     </td>
                   </tr>
                 </tbody>
@@ -331,26 +338,26 @@ const ComparisonSDC = () => {
         </section>
 
         {/* Pros & Cons */}
-        <section className="py-16 px-4 bg-gray-50">
+        <section className="py-16 px-4 glass-card">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-8 text-center text-gray-900">Honest Pros & Cons</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center text-foreground">Honest Pros & Cons</h2>
             
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white rounded-xl p-8 shadow-md">
-                <h3 className="text-2xl font-bold mb-6 text-purple-600">SPICE</h3>
+              <div className="glass-card rounded-xl p-8 shadow-md">
+                <h3 className="text-2xl font-bold mb-6 text-primary">SPICE</h3>
                 <div className="mb-6">
                   <h4 className="font-bold text-green-700 mb-3 flex items-center gap-2">
                     <CheckCircle className="w-5 h-5" />
                     Pros:
                   </h4>
                   <ul className="space-y-2 ml-7">
-                    <li className="text-gray-700">• 70% cheaper ($14.99 vs $49.99)</li>
-                    <li className="text-gray-700">• Modern mobile-first experience</li>
-                    <li className="text-gray-700">• Unique BDSM compatibility quiz</li>
-                    <li className="text-gray-700">• Superior verification (Photo + ID)</li>
-                    <li className="text-gray-700">• Clean, intuitive interface</li>
-                    <li className="text-gray-700">• 50+ educational resources</li>
-                    <li className="text-gray-700">• Growing engaged community</li>
+                    <li className="text-muted-foreground">• 70% cheaper ($14.99 vs $49.99)</li>
+                    <li className="text-muted-foreground">• Modern mobile-first experience</li>
+                    <li className="text-muted-foreground">• Unique BDSM compatibility quiz</li>
+                    <li className="text-muted-foreground">• Superior verification (Photo + ID)</li>
+                    <li className="text-muted-foreground">• Clean, intuitive interface</li>
+                    <li className="text-muted-foreground">• 50+ educational resources</li>
+                    <li className="text-muted-foreground">• Growing engaged community</li>
                   </ul>
                 </div>
                 <div>
@@ -359,26 +366,26 @@ const ComparisonSDC = () => {
                     Cons:
                   </h4>
                   <ul className="space-y-2 ml-7">
-                    <li className="text-gray-700">• Newer app (smaller than SDC's 20+ years)</li>
-                    <li className="text-gray-700">• No forum feature yet</li>
-                    <li className="text-gray-700">• US-focused (SDC more international)</li>
+                    <li className="text-muted-foreground">• Newer app (smaller than SDC's 20+ years)</li>
+                    <li className="text-muted-foreground">• No forum feature yet</li>
+                    <li className="text-muted-foreground">• US-focused (SDC more international)</li>
                   </ul>
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl p-8 shadow-md">
-                <h3 className="text-2xl font-bold mb-6 text-gray-600">SDC (Swingers Date Club)</h3>
+              <div className="glass-card rounded-xl p-8 shadow-md">
+                <h3 className="text-2xl font-bold mb-6 text-muted-foreground">SDC (Swingers Date Club)</h3>
                 <div className="mb-6">
                   <h4 className="font-bold text-green-700 mb-3 flex items-center gap-2">
                     <CheckCircle className="w-5 h-5" />
                     Pros:
                   </h4>
                   <ul className="space-y-2 ml-7">
-                    <li className="text-gray-700">• Established for 20+ years</li>
-                    <li className="text-gray-700">• Large existing member base</li>
-                    <li className="text-gray-700">• Active forums and discussions</li>
-                    <li className="text-gray-700">• Travel calendar feature</li>
-                    <li className="text-gray-700">• Strong in Netherlands/Europe</li>
+                    <li className="text-muted-foreground">• Established for 20+ years</li>
+                    <li className="text-muted-foreground">• Large existing member base</li>
+                    <li className="text-muted-foreground">• Active forums and discussions</li>
+                    <li className="text-muted-foreground">• Travel calendar feature</li>
+                    <li className="text-muted-foreground">• Strong in Netherlands/Europe</li>
                   </ul>
                 </div>
                 <div>
@@ -387,12 +394,12 @@ const ComparisonSDC = () => {
                     Cons:
                   </h4>
                   <ul className="space-y-2 ml-7">
-                    <li className="text-gray-700">• 3.3x more expensive ($49.99/month!)</li>
-                    <li className="text-gray-700">• Dated 2000s-era interface</li>
-                    <li className="text-gray-700">• Poor mobile app experience</li>
-                    <li className="text-gray-700">• No compatibility quiz/matching</li>
-                    <li className="text-gray-700">• User complaints about pricing</li>
-                    <li className="text-gray-700">• Desktop-focused (not mobile-first)</li>
+                    <li className="text-muted-foreground">• 3.3x more expensive ($49.99/month!)</li>
+                    <li className="text-muted-foreground">• Dated 2000s-era interface</li>
+                    <li className="text-muted-foreground">• Poor mobile app experience</li>
+                    <li className="text-muted-foreground">• No compatibility quiz/matching</li>
+                    <li className="text-muted-foreground">• User complaints about pricing</li>
+                    <li className="text-muted-foreground">• Desktop-focused (not mobile-first)</li>
                   </ul>
                 </div>
               </div>
@@ -403,42 +410,42 @@ const ComparisonSDC = () => {
         {/* Who Should Use Which */}
         <section className="py-16 px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold mb-12 text-center text-gray-900">
+            <h2 className="text-4xl font-bold mb-12 text-center text-foreground">
               Which App is Right for You?
             </h2>
 
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 border-2 border-purple-200">
-                <h3 className="text-2xl font-bold mb-4 text-purple-600">Choose SPICE if you:</h3>
+                <h3 className="text-2xl font-bold mb-4 text-primary">Choose SPICE if you:</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
-                    <ArrowRight className="w-5 h-5 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-gray-700">Want <strong>70% better value</strong> for money</span>
+                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                    <span className="text-muted-foreground">Want <strong>70% better value</strong> for money</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <ArrowRight className="w-5 h-5 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-gray-700">Prefer a <strong>modern mobile-first app</strong></span>
+                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                    <span className="text-muted-foreground">Prefer a <strong>modern mobile-first app</strong></span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <ArrowRight className="w-5 h-5 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-gray-700">Want <strong>BDSM/kink compatibility</strong> matching</span>
+                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                    <span className="text-muted-foreground">Want <strong>BDSM/kink compatibility</strong> matching</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <ArrowRight className="w-5 h-5 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-gray-700">Are under 50 and tech-savvy</span>
+                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                    <span className="text-muted-foreground">Are under 50 and tech-savvy</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <ArrowRight className="w-5 h-5 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-gray-700">Value <strong>superior verification</strong> and safety</span>
+                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                    <span className="text-muted-foreground">Value <strong>superior verification</strong> and safety</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <ArrowRight className="w-5 h-5 text-purple-600 flex-shrink-0 mt-1" />
-                    <span className="text-gray-700">Want to <strong>save $420/year</strong></span>
+                    <ArrowRight className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                    <span className="text-muted-foreground">Want to <strong>save $420/year</strong></span>
                   </li>
                 </ul>
                 <Button 
                   size="lg" 
-                  className="w-full mt-6 bg-purple-600 hover:bg-purple-700 text-white"
+                  className="w-full mt-6 gradient-animate hover:scale-105 transition-transform text-white"
                   onClick={() => window.open('https://thespiceapp.com/download', '_blank')}
                 >
                   <Download className="w-5 h-5 mr-2" />
@@ -446,28 +453,28 @@ const ComparisonSDC = () => {
                 </Button>
               </div>
 
-              <div className="bg-gray-50 rounded-2xl p-8 border-2 border-gray-200">
-                <h3 className="text-2xl font-bold mb-4 text-gray-600">Choose SDC if you:</h3>
+              <div className="glass-card rounded-2xl p-8 border-2 border-border">
+                <h3 className="text-2xl font-bold mb-4 text-muted-foreground">Choose SDC if you:</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
-                    <ArrowRight className="w-5 h-5 text-gray-600 flex-shrink-0 mt-1" />
-                    <span className="text-gray-700">Don't mind paying 3.3x more</span>
+                    <ArrowRight className="w-5 h-5 text-muted-foreground flex-shrink-0 mt-1" />
+                    <span className="text-muted-foreground">Don't mind paying 3.3x more</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <ArrowRight className="w-5 h-5 text-gray-600 flex-shrink-0 mt-1" />
-                    <span className="text-gray-700">Prefer desktop over mobile</span>
+                    <ArrowRight className="w-5 h-5 text-muted-foreground flex-shrink-0 mt-1" />
+                    <span className="text-muted-foreground">Prefer desktop over mobile</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <ArrowRight className="w-5 h-5 text-gray-600 flex-shrink-0 mt-1" />
-                    <span className="text-gray-700">Want established forums/community</span>
+                    <ArrowRight className="w-5 h-5 text-muted-foreground flex-shrink-0 mt-1" />
+                    <span className="text-muted-foreground">Want established forums/community</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <ArrowRight className="w-5 h-5 text-gray-600 flex-shrink-0 mt-1" />
-                    <span className="text-gray-700">Are based in Europe/Netherlands</span>
+                    <ArrowRight className="w-5 h-5 text-muted-foreground flex-shrink-0 mt-1" />
+                    <span className="text-muted-foreground">Are based in Europe/Netherlands</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <ArrowRight className="w-5 h-5 text-gray-600 flex-shrink-0 mt-1" />
-                    <span className="text-gray-700">Don't care about modern UI</span>
+                    <ArrowRight className="w-5 h-5 text-muted-foreground flex-shrink-0 mt-1" />
+                    <span className="text-muted-foreground">Don't care about modern UI</span>
                   </li>
                 </ul>
               </div>
@@ -476,27 +483,27 @@ const ComparisonSDC = () => {
         </section>
 
         {/* Switching CTA */}
-        <section className="py-12 px-4 bg-green-50">
+        <section className="py-12 px-4 glass-card">
           <div className="max-w-4xl mx-auto">
             <div className="bg-white rounded-2xl p-8 shadow-lg text-center">
-              <h2 className="text-3xl font-bold mb-4 text-gray-900">
+              <h2 className="text-3xl font-bold mb-4 text-foreground">
                 💰 Already an SDC Member? Make the Switch!
               </h2>
-              <p className="text-lg text-gray-700 mb-6">
+              <p className="text-lg text-muted-foreground mb-6">
                 Save $420/year by switching to SPICE. Get modern features, BDSM quiz, better mobile experience, and keep the money for lifestyle events and fun!
               </p>
               <div className="bg-green-100 rounded-lg p-6 mb-6">
                 <p className="text-2xl font-bold text-green-900 mb-2">Do the Math:</p>
-                <p className="text-lg text-gray-700">SDC: $599/year</p>
-                <p className="text-lg text-gray-700">SPICE: $179/year</p>
+                <p className="text-lg text-muted-foreground">SDC: $599/year</p>
+                <p className="text-lg text-muted-foreground">SPICE: $179/year</p>
                 <p className="text-3xl font-bold text-green-700 mt-3">You Save: $420/year! 🎉</p>
               </div>
-              <p className="text-gray-600 mb-6">
+              <p className="text-muted-foreground mb-6">
                 That's a Vegas weekend, tickets to multiple lifestyle events, or just more fun money in your pocket!
               </p>
               <Button 
                 size="lg" 
-                className="bg-purple-600 hover:bg-purple-700 text-white"
+                className="gradient-animate hover:scale-105 transition-transform text-white"
                 onClick={() => window.open('https://thespiceapp.com/download', '_blank')}
               >
                 <Download className="w-5 h-5 mr-2" />
@@ -507,18 +514,18 @@ const ComparisonSDC = () => {
         </section>
 
         {/* Final CTA */}
-        <section className="py-16 px-4 bg-gradient-to-r from-purple-600 to-pink-600">
+        <section className="py-16 px-4 gradient-animate">
           <div className="max-w-4xl mx-auto text-center text-white">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               Modern Features. Better Value. SPICE.
             </h2>
-            <p className="text-xl mb-8 text-purple-100">
+            <p className="text-xl mb-8 text-muted-foreground">
               Join 30,000+ members who chose the modern, affordable lifestyle dating app. BDSM quiz, local events, and 70% savings vs SDC.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
-                className="bg-white text-purple-600 hover:bg-purple-50 text-lg px-8 py-6"
+                className="bg-white text-primary hover:glass-card text-lg px-8 py-6"
                 onClick={() => window.open('https://thespiceapp.com/download', '_blank')}
               >
                 <Download className="w-5 h-5 mr-2" />
@@ -535,6 +542,9 @@ const ComparisonSDC = () => {
             </div>
           </div>
         </section>
+        </main>
+
+        <FooterSection />
       </div>
     </>
   );
