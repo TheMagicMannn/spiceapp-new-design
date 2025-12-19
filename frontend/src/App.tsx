@@ -20,6 +20,7 @@ import Safety from "./pages/Safety";
 import SelfCare from "./pages/SelfCare";
 import Download from "./pages/Download";
 import ArticleDetail from "./pages/ArticleDetail";
+import CityPage from "./pages/CityPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
