@@ -58,15 +58,16 @@ const ComparisonFeeld = () => {
         
         <main className="relative z-10 pt-16">
         {/* Hero */}
-        <section className="py-20 px-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white">
-          <div className="max-w-6xl mx-auto">
-            <div className="flex items-center gap-2 mb-4 text-purple-100">
+        <section className="py-20 px-4 relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-accent/10" />
+          <div className="container mx-auto relative z-10">
+            <div className="flex items-center gap-2 mb-4 text-muted-foreground">
               <span className="text-sm">Home → Comparisons → SPICE vs Feeld</span>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-gradient glow-text">
               SPICE vs Feeld: Which Lifestyle Dating App Wins in 2025?
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-purple-100 max-w-3xl">
+            <p className="text-xl md:text-2xl mb-8 text-muted-foreground max-w-3xl">
               Detailed comparison of features, community, pricing, and user experience. See why 30,000+ members chose SPICE over Feeld.
             </p>
           </div>
