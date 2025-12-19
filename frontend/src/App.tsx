@@ -53,6 +53,9 @@ const App = () => (
             <Route path="/download" element={<Download />} />
             <Route path="/guide/article/:slug" element={<ArticleDetail />} />
             <Route path="/locations/:citySlug" element={<CityPage />} />
+            <Route path="/vs/feeld" element={<ComparisonFeeld />} />
+            <Route path="/vs/3fun" element={<Comparison3Fun />} />
+            <Route path="/vs/sdc" element={<ComparisonSDC />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
