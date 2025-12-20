@@ -24,6 +24,14 @@ import CityPage from "./pages/CityPage";
 import ComparisonFeeld from "./pages/ComparisonFeeld";
 import Comparison3Fun from "./pages/Comparison3Fun";
 import ComparisonSDC from "./pages/ComparisonSDC";
+import HotwifingGuide from "./pages/HotwifingGuide";
+import SwingersGuide from "./pages/SwingersGuide";
+import TravelMiami from "./pages/TravelMiami";
+import BlogHome from "./pages/BlogHome";
+import AppComparisons from "./pages/AppComparisons";
+import ENMPolyamoryGuide from "./pages/ENMPolyamoryGuide";
+import RelationshipsCommunication from "./pages/RelationshipsCommunication";
+import JealousyManagement from "./pages/JealousyManagement";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
