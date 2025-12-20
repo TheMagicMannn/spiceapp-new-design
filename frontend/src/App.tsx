@@ -64,6 +64,25 @@ const App = () => (
             <Route path="/vs/feeld" element={<ComparisonFeeld />} />
             <Route path="/vs/3fun" element={<Comparison3Fun />} />
             <Route path="/vs/sdc" element={<ComparisonSDC />} />
+            
+            {/* Lifestyle Guides */}
+            <Route path="/lifestyle/hotwifing-guide" element={<HotwifingGuide />} />
+            <Route path="/lifestyle/swingers-guide" element={<SwingersGuide />} />
+            <Route path="/lifestyle/enm-polyamory-guide" element={<ENMPolyamoryGuide />} />
+            <Route path="/lifestyle/relationships-communication" element={<RelationshipsCommunication />} />
+            <Route path="/lifestyle/jealousy-management" element={<JealousyManagement />} />
+            
+            {/* Travel */}
+            <Route path="/travel/miami" element={<TravelMiami />} />
+            <Route path="/travel/las-vegas" element={<CityPage />} />
+            <Route path="/travel/new-york" element={<CityPage />} />
+            
+            {/* Blog */}
+            <Route path="/blog" element={<BlogHome />} />
+            
+            {/* Tools */}
+            <Route path="/tools/app-comparisons" element={<AppComparisons />} />
+            
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
