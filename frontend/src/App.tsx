@@ -131,6 +131,29 @@ const App = () => (
             <Route path="/travel/international" element={<TravelInternational />} />
             <Route path="/travel/clubs-resorts" element={<ClubsResorts />} />
             
+            {/* Academy - Additional */}
+            <Route path="/academy/consent" element={<ConsentBasics />} />
+            <Route path="/academy/journeys" element={<ConsentBasics />} />
+            
+            {/* Support & Legal (Placeholders) */}
+            <Route path="/support/help" element={<ConsentBasics />} />
+            <Route path="/support/report" element={<ConsentBasics />} />
+            <Route path="/legal/terms" element={<ConsentBasics />} />
+            <Route path="/legal/privacy" element={<ConsentBasics />} />
+            <Route path="/legal/cookies" element={<ConsentBasics />} />
+            <Route path="/legal/community-standards" element={<ConsentBasics />} />
+            <Route path="/newsletter" element={<ConsentBasics />} />
+            <Route path="/tools/sti-resources" element={<ConsentBasics />} />
+            
+            {/* Blog Categories (Placeholders) */}
+            <Route path="/blog/swingers" element={<BlogHome />} />
+            <Route path="/blog/hotwifing" element={<BlogHome />} />
+            <Route path="/blog/bdsm" element={<BlogHome />} />
+            <Route path="/blog/enm" element={<BlogHome />} />
+            <Route path="/blog/consent" element={<BlogHome />} />
+            <Route path="/blog/travel" element={<BlogHome />} />
+            <Route path="/blog/relationships" element={<BlogHome />} />
+            
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
