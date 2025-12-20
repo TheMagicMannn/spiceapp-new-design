@@ -97,6 +97,29 @@ const App = () => (
             
             {/* Tools */}
             <Route path="/tools/app-comparisons" element={<AppComparisons />} />
+            <Route path="/tools/feature-comparison" element={<FeatureComparison />} />
+            
+            {/* About SPICE */}
+            <Route path="/about/safety-verification" element={<SafetyVerification />} />
+            <Route path="/about/ai-matching" element={<AIMatching />} />
+            <Route path="/about/why-different" element={<WhyDifferent />} />
+            
+            {/* Start Here */}
+            <Route path="/start/consent-basics" element={<ConsentBasics />} />
+            <Route path="/start/etiquette" element={<LifestyleEtiquette />} />
+            <Route path="/start/myths" element={<CommonMyths />} />
+            
+            {/* Academy */}
+            <Route path="/academy" element={<Academy />} />
+            <Route path="/academy/modules" element={<AcademyModules />} />
+            
+            {/* Travel - Additional Cities */}
+            <Route path="/travel" element={<Travel />} />
+            <Route path="/travel/new-orleans" element={<TravelNewOrleans />} />
+            <Route path="/travel/orlando" element={<TravelOrlando />} />
+            <Route path="/travel/cancun" element={<TravelCancun />} />
+            <Route path="/travel/international" element={<TravelInternational />} />
+            <Route path="/travel/clubs-resorts" element={<ClubsResorts />} />
             
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
