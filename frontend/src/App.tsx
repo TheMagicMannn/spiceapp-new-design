@@ -47,16 +47,6 @@ import TravelCancun from "./pages/TravelCancun";
 import TravelInternational from "./pages/TravelInternational";
 import ClubsResorts from "./pages/ClubsResorts";
 import FeatureComparison from "./pages/FeatureComparison";
-import ConsentBasics from "./pages/ConsentBasics";
-import LifestyleEtiquette from "./pages/LifestyleEtiquette";
-import CommonMyths from "./pages/CommonMyths";
-import Academy from "./pages/Academy";
-import AcademyModules from "./pages/AcademyModules";
-import Travel from "./pages/Travel";
-import TravelNewOrleans from "./pages/TravelNewOrleans";
-import TravelOrlando from "./pages/TravelOrlando";
-import TravelCancun from "./pages/TravelCancun";
-import TravelInternational from "./pages/TravelInternational";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
