@@ -500,6 +500,237 @@ export const cityData: Record<string, CityData> = {
       }
     ],
     relatedCities: ["san-diego-ca", "las-vegas-nv", "san-francisco-ca"]
+  },
+
+  "chicago-il": {
+    name: "Chicago",
+    state: "IL",
+    slug: "chicago-il",
+    coordinates: { lat: "41.8781", lng: "-87.6298" },
+    stats: { totalMembers: 6200, couples: 2600, singles: 3600, activeWeekly: 520, newThisMonth: 180 },
+    hero: {
+      title: "Swingers, BDSM & ENM Dating in Chicago",
+      subtitle: "Connect with 6,200+ verified lifestyle members in the Windy City. Chicago's vibrant community for swingers, kink, and ethical non-monogamy."
+    },
+    description: "SPICE connects you with Chicago's thriving lifestyle community of 6,200+ swingers, BDSM enthusiasts, and ENM practitioners.",
+    seo: {
+      title: "Swingers & BDSM Dating Chicago | 6,200+ Lifestyle Members | SPICE",
+      description: "Join Chicago's lifestyle dating community. 6,200+ verified swingers, BDSM, ENM & polyamory members. Download SPICE free today.",
+      keywords: "swingers Chicago, BDSM dating Chicago, ENM dating Chicago, polyamory Chicago, lifestyle dating Illinois, swingers near me Chicago"
+    },
+    content: {
+      overview: {
+        title: "Chicago's Midwest Lifestyle Scene",
+        paragraphs: [
+          "Chicago has a thriving, under-the-radar lifestyle community that rivals coastal cities. With 6,200+ verified SPICE members, the Windy City offers diverse options for swingers, BDSM enthusiasts, and ENM practitioners across neighborhoods from Lincoln Park to Wicker Park.",
+          "Chicago's lifestyle scene is known for being welcoming, down-to-earth, and surprisingly large. The Midwest values create a community that's friendly, respectful, and focused on genuine connections rather than superficial encounters."
+        ]
+      },
+      neighborhoods: {
+        title: "Chicago Lifestyle Hotspots",
+        intro: "SPICE members are active throughout Chicago, with strong communities in:",
+        areas: [
+          { name: "River North & Gold Coast", description: "Upscale lifestyle scene with professional couples. High-end parties and exclusive events." },
+          { name: "Wicker Park & Bucktown", description: "Artistic, alternative community. Younger lifestyle couples and creative events." },
+          { name: "Lincoln Park", description: "Young professionals and established couples. Regular meetups and social events." },
+          { name: "Suburbs - Naperville, Schaumburg", description: "Suburban lifestyle scene with house parties and neighborhood communities." }
+        ]
+      },
+      whyCity: {
+        title: "Why Chicago for Lifestyle Dating",
+        reasons: [
+          "🏙️ Large, diverse community - 6,200+ members across all demographics",
+          "❄️ Year-round indoor events - Winter doesn't stop the fun!",
+          "🎭 Midwest friendliness - Welcoming, genuine people",
+          "🍕 Great restaurant scene - Perfect for first meetings",
+          "🚇 Excellent public transit - Easy to get anywhere",
+          "💰 More affordable than coastal cities",
+          "🎨 Creative, artistic scene - Unique events and experiences",
+          "🏠 Strong suburban scene - Not just downtown"
+        ]
+      },
+      localScene: {
+        title: "The Chicago Lifestyle Experience",
+        paragraphs: [
+          "Chicago's lifestyle scene operates somewhat under the radar compared to coastal cities, which many see as an advantage. The community is tight-knit, welcoming to newcomers, and focused on building genuine connections rather than quick hookups.",
+          "House parties are popular in Chicago, especially during winter months. Couples host in beautiful homes throughout the suburbs and city, creating intimate environments for 20-40 people. Summer brings rooftop parties, boat parties on Lake Michigan, and outdoor gatherings."
+        ]
+      },
+      safetyTips: {
+        title: "Chicago Lifestyle Safety Tips",
+        intro: "Chicago is generally safe for lifestyle dating, but follow these guidelines:",
+        tips: [
+          { title: "Meet in Public First", description: "Chicago has great spots: restaurants in River North, cafes in Lincoln Park, bars in Wicker Park. Always meet potential connections in public before private encounters." },
+          { title: "Winter Weather Awareness", description: "Chicago winters are brutal. Plan transportation carefully. Don't drive in snow if you've been drinking. Have backup plans for weather." },
+          { title: "Neighborhood Awareness", description: "Some Chicago neighborhoods are safer than others. Stick to well-trafficked areas for first meetings. Use ride-sharing rather than walking late at night." }
+        ]
+      }
+    },
+    successStory: {
+      quote: "We'd been in Chicago for years but had no idea there was such an active lifestyle community! SPICE connected us with amazing couples in Lincoln Park and River North. The Midwest lifestyle scene is so welcoming and genuine - we've made lifelong friends!",
+      author: "Tom & Amy",
+      location: "Lincoln Park"
+    },
+    faqs: [
+      { question: "How many SPICE members are in Chicago?", answer: "Over 6,200 active members throughout Chicago and suburbs! This includes 2,600+ couples and 3,600+ singles. We have 520+ members active every week." },
+      { question: "Is Chicago good for lifestyle beginners?", answer: "YES! Chicago's Midwest friendliness makes it very welcoming for newcomers. Many experienced couples mentor beginners, and there are regular newbie-friendly events." },
+      { question: "What about winter? Does the scene die down?", answer: "Not at all! Winter actually brings MORE house parties since everyone's indoors anyway. Chicago lifestyle folks know how to make winter fun!" }
+    ],
+    relatedCities: ["new-york-ny", "los-angeles-ca", "detroit-mi"]
+  },
+
+  "san-francisco-ca": {
+    name: "San Francisco",
+    state: "CA",
+    slug: "san-francisco-ca",
+    coordinates: { lat: "37.7749", lng: "-122.4194" },
+    stats: { totalMembers: 9500, couples: 3800, singles: 5700, activeWeekly: 780, newThisMonth: 310 },
+    hero: {
+      title: "Swingers, BDSM & ENM Dating in San Francisco",
+      subtitle: "Connect with 9,500+ verified lifestyle members in SF. The Bay Area's most progressive community for swingers, kink, polyamory, and ethical non-monogamy."
+    },
+    description: "SPICE connects you with San Francisco's massive lifestyle community of 9,500+ swingers, BDSM enthusiasts, and ENM practitioners.",
+    seo: {
+      title: "Swingers & BDSM Dating San Francisco | 9,500+ Members | SPICE",
+      description: "Join SF's progressive lifestyle community. 9,500+ verified swingers, BDSM, ENM & polyamory members. Bay Area's best lifestyle app.",
+      keywords: "swingers San Francisco, BDSM SF, ENM dating San Francisco, polyamory Bay Area, kink dating SF, lifestyle dating California"
+    },
+    content: {
+      overview: {
+        title: "SF's Progressive Lifestyle Community",
+        paragraphs: [
+          "San Francisco has one of the most open, progressive, and diverse lifestyle communities in the world. With 9,500+ verified SPICE members, the Bay Area offers unmatched opportunities for exploring swinging, BDSM, polyamory, and all forms of ethical non-monogamy.",
+          "SF's sex-positive culture, strong LGBTQ+ community, and tech-forward population create an ideal environment for alternative relationships. From Folsom Street Fair (world's largest leather event) to countless poly meetups, SF celebrates sexual diversity."
+        ]
+      },
+      neighborhoods: {
+        title: "San Francisco Lifestyle Areas",
+        intro: "SPICE members thrive throughout SF and the Bay Area:",
+        areas: [
+          { name: "Mission District & Castro", description: "Progressive, queer-friendly, artistic. Strong poly and kink communities. Regular munches and meetups." },
+          { name: "SOMA (South of Market)", description: "BDSM dungeons, leather bars, kink clubs. Home to Folsom Street Fair. SF's kink epicenter." },
+          { name: "Marina & Pacific Heights", description: "Upscale lifestyle scene. Professional couples, exclusive parties, high-end events." },
+          { name: "East Bay - Oakland, Berkeley", description: "More affordable, alternative culture, strong poly community. House parties and community spaces." }
+        ]
+      },
+      whyCity: {
+        title: "Why SF is Lifestyle Paradise",
+        reasons: [
+          "🌈 Most sex-positive city in America",
+          "🎨 Alternative culture is mainstream here",
+          "💼 Tech-savvy, forward-thinking population",
+          "🏳️‍🌈 Strong LGBTQ+ and queer community",
+          "📚 Abundant educational resources and workshops",
+          "🎭 Folsom Street Fair and major kink events",
+          "🌉 Beautiful city for romantic dates",
+          "🧘 Wellness-focused, conscious sexuality"
+        ]
+      },
+      localScene: {
+        title: "The San Francisco Lifestyle Scene",
+        paragraphs: [
+          "San Francisco is ground zero for sex-positive culture in America. The city hosts Folsom Street Fair (400,000+ attendees), Dore Alley, and countless other kink and sexuality events. BDSM education is readily available with workshops, classes, and skilled educators.",
+          "The polyamory community in SF is massive and well-organized. Regular poly cocktail hours, discussion groups, and community events make it easy to connect. Being openly poly in SF is completely normalized - you can talk about it at work, with friends, anywhere."
+        ]
+      },
+      safetyTips: {
+        title: "SF Lifestyle Safety",
+        intro: "SF is very safe for lifestyle dating, but be aware:",
+        tips: [
+          { title: "Tech Savvy Safety", description: "SF has tech-savvy scammers. Always video verify before meeting. Check SPICE verification badges." },
+          { title: "Neighborhood Awareness", description: "Some SF areas (Tenderloin, parts of SOMA late night) require caution. Stick to well-lit areas, use ride-sharing." },
+          { title: "Housing Situation", description: "Many SF folks have roommates due to high costs. Clarify privacy/hosting situations before planning private encounters." }
+        ]
+      }
+    },
+    successStory: {
+      quote: "Moving to SF changed our lives! We went from hiding our poly relationship to being completely open. The community here is incredible - we've found amazing partners, made genuine friends, and finally feel like we belong. SPICE connected us to the whole Bay Area scene!",
+      author: "Marcus & Luna",
+      location: "Mission District"
+    },
+    faqs: [
+      { question: "How many SPICE members are in San Francisco?", answer: "Over 9,500 active members in SF and the Bay Area! This includes 3,800+ couples and 5,700+ singles, with 780+ active weekly." },
+      { question: "Is SF better for poly or swinging?", answer: "Both! SF has massive communities for both polyamory and swinging. The poly scene is particularly strong with regular organized events." },
+      { question: "What's the age range in SF lifestyle?", answer: "Very diverse: 21-35 (40%), 36-45 (30%), 46+ (30%). Tech industry brings younger crowd, but all ages are well-represented." }
+    ],
+    relatedCities: ["los-angeles-ca", "san-diego-ca", "portland-or"]
+  },
+
+  "atlanta-ga": {
+    name: "Atlanta",
+    state: "GA",
+    slug: "atlanta-ga",
+    coordinates: { lat: "33.7490", lng: "-84.3880" },
+    stats: { totalMembers: 5800, couples: 2400, singles: 3400, activeWeekly: 480, newThisMonth: 190 },
+    hero: {
+      title: "Swingers, BDSM & ENM Dating in Atlanta",
+      subtitle: "Connect with 5,800+ verified lifestyle members in ATL. The South's most vibrant community for swingers, kink, and ethical non-monogamy."
+    },
+    description: "SPICE connects you with Atlanta's growing lifestyle community of 5,800+ swingers, BDSM enthusiasts, and ENM practitioners.",
+    seo: {
+      title: "Swingers & BDSM Dating Atlanta | 5,800+ Lifestyle Members | SPICE",
+      description: "Join Atlanta's hottest lifestyle community. 5,800+ verified swingers, BDSM, ENM & poly members. Download SPICE free.",
+      keywords: "swingers Atlanta, BDSM dating ATL, ENM dating Atlanta, polyamory Georgia, lifestyle dating Atlanta, swingers near me ATL"
+    },
+    content: {
+      overview: {
+        title: "Atlanta's Southern Lifestyle Charm",
+        paragraphs: [
+          "Atlanta combines Southern hospitality with progressive sexuality, creating a unique lifestyle community of 5,800+ SPICE members. As the South's most diverse city, Atlanta welcomes all relationship styles with open arms.",
+          "The Black lifestyle community in Atlanta is particularly strong and vibrant. Combined with strong LGBTQ+ presence and transplants from across the country, Atlanta offers a refreshingly diverse and welcoming scene."
+        ]
+      },
+      neighborhoods: {
+        title: "Atlanta Lifestyle Areas",
+        intro: "Active SPICE communities throughout metro Atlanta:",
+        areas: [
+          { name: "Midtown & Virginia Highland", description: "LGBTQ+ friendly, progressive, artistic. Strong poly and kink communities. Young professionals." },
+          { name: "Buckhead", description: "Upscale, affluent lifestyle scene. Exclusive parties, professional crowd, 35+ demographic." },
+          { name: "East Atlanta & Decatur", description: "Alternative, creative, laid-back. House parties, younger crowd, very welcoming to newcomers." },
+          { name: "North Suburbs - Alpharetta, Roswell", description: "Established suburban couples, regular meetups, family-friendly by day, lifestyle by night." }
+        ]
+      },
+      whyCity: {
+        title: "Why Atlanta for Lifestyle",
+        reasons: [
+          "🎵 Vibrant Black lifestyle community",
+          "🌈 Strong LGBTQ+ and progressive culture",
+          "💰 Affordable compared to coastal cities",
+          "✈️ Major airport - easy access for travelers",
+          "🏠 Big homes for hosting parties",
+          "🌳 Year-round outdoor activities",
+          "🎭 Diverse, welcoming community",
+          "🍑 Southern hospitality meets sexual freedom"
+        ]
+      },
+      localScene: {
+        title: "The Atlanta Lifestyle Experience",
+        paragraphs: [
+          "Atlanta's lifestyle scene has grown exponentially in the past decade. The city hosts major lifestyle events, has several established clubs, and a thriving house party scene. The diversity of Atlanta is reflected in its lifestyle community - all races, ages, and backgrounds represented.",
+          "The kink community in Atlanta is well-organized with regular munches, educational workshops, and play parties. The city has multiple dungeons and kink-friendly spaces. Atlanta's welcoming culture makes it easy for BDSM beginners to find mentors and learn safely."
+        ]
+      },
+      safetyTips: {
+        title: "Atlanta Safety Guidelines",
+        intro: "Atlanta is generally safe, but smart practices apply:",
+        tips: [
+          { title: "Traffic Planning", description: "Atlanta traffic is notorious. Plan extra time, don't feel rushed. Meet in convenient locations." },
+          { title: "Neighborhood Selection", description: "Stick to Midtown, Buckhead, Virginia Highland, Decatur for first meetings. Well-lit, busy areas." },
+          { title: "Southern Discretion", description: "While Atlanta is progressive, some areas of Georgia are conservative. Be mindful of discretion and privacy." }
+        ]
+      }
+    },
+    successStory: {
+      quote: "Atlanta surprised us! We expected conservative Southern attitudes but found the most welcoming, diverse lifestyle community we've ever experienced. SPICE connected us with couples from all backgrounds, and we've attended incredible parties in Buckhead and Midtown. ATL is seriously underrated!",
+      author: "Devon & Simone",
+      location: "Midtown"
+    },
+    faqs: [
+      { question: "How many SPICE members are in Atlanta?", answer: "Over 5,800 active members throughout metro Atlanta! This includes 2,400+ couples and 3,400+ singles, with 480+ active weekly." },
+      { question: "Is Atlanta's lifestyle scene diverse?", answer: "Absolutely! Atlanta's lifestyle community reflects the city's incredible diversity - all races, ages, sexual orientations, and backgrounds." },
+      { question: "Can I find lifestyle events in Atlanta?", answer: "YES! Atlanta has regular parties, club nights, munches, and social events. SPICE's events calendar shows what's happening." }
+    ],
+    relatedCities: ["miami-fl", "new-orleans-la", "charlotte-nc"]
   }
 };
 
