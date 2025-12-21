@@ -147,6 +147,16 @@ const App = () => (
             <Route path="/blog/travel" element={<BlogHome />} />
             <Route path="/blog/relationships" element={<BlogHome />} />
             
+            {/* Blog Posts */}
+            <Route path="/blog/10-signs-ready-lifestyle" element={<BlogPost10Signs />} />
+            <Route path="/blog/talk-partner-opening-relationship" element={<BlogTalkToPartner />} />
+            <Route path="/blog/bdsm-safety-checklist" element={<BlogBDSMSafety />} />
+            
+            {/* City Pages - Additional */}
+            <Route path="/locations/chicago-il" element={<CityPage />} />
+            <Route path="/locations/san-francisco-ca" element={<CityPage />} />
+            <Route path="/locations/atlanta-ga" element={<CityPage />} />
+            
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
