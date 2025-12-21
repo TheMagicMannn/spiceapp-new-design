@@ -5,7 +5,7 @@ import FooterSection from "@/components/FooterSection";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
-const BlogTalkToPartner = () => {
+const BlogPost10Signs = () => {
   return (
     <>
       <SEO
