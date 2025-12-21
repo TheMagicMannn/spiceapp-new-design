@@ -47,6 +47,9 @@ import TravelCancun from "./pages/TravelCancun";
 import TravelInternational from "./pages/TravelInternational";
 import ClubsResorts from "./pages/ClubsResorts";
 import FeatureComparison from "./pages/FeatureComparison";
+import BlogPost10Signs from "./pages/BlogPost10Signs";
+import BlogTalkToPartner from "./pages/BlogTalkToPartner";
+import BlogBDSMSafety from "./pages/BlogBDSMSafety";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
