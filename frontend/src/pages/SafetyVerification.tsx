@@ -5,7 +5,7 @@ import FooterSection from "@/components/FooterSection";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
-const WhyDifferent = () => {
+const SafetyVerification = () => {
   const features = [
     { icon: Sparkles, title: "BDSM Compatibility Quiz", desc: "50+ question quiz to discover your kink profile and find compatible partners. NO other lifestyle app has this!", unique: true },
     { icon: Shield, title: "Dual Verification System", desc: "Photo + ID verification required. Most apps only do photos. We eliminate 99% of fakes.", unique: true },
