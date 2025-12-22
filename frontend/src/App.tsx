@@ -56,6 +56,7 @@ import TermsOfService from "./pages/TermsOfService";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import CookiePolicy from "./pages/CookiePolicy";
 import Legal from "./pages/Legal";
+import Lifestyle from "./pages/Lifestyle";
 
 const queryClient = new QueryClient();
 
