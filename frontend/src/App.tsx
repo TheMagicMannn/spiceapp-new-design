@@ -134,12 +134,13 @@ const App = () => (
             <Route path="/academy/journeys" element={<ConsentBasics />} />
             
             {/* Support & Legal */}
-            <Route path="/support/help" element={<ConsentBasics />} />
-            <Route path="/support/report" element={<ConsentBasics />} />
+            <Route path="/legal" element={<Legal />} />
             <Route path="/legal/terms" element={<TermsOfService />} />
             <Route path="/legal/privacy" element={<PrivacyPolicy />} />
             <Route path="/legal/cookies" element={<CookiePolicy />} />
             <Route path="/legal/community-standards" element={<CommunityStandards />} />
+            <Route path="/support/help" element={<ConsentBasics />} />
+            <Route path="/support/report" element={<ConsentBasics />} />
             <Route path="/newsletter" element={<ConsentBasics />} />
             <Route path="/tools/sti-resources" element={<ConsentBasics />} />
             
