@@ -90,6 +90,7 @@ const App = () => (
             <Route path="/vs/sdc" element={<ComparisonSDC />} />
             
             {/* Lifestyle Guides */}
+            <Route path="/lifestyle" element={<Lifestyle />} />
             <Route path="/lifestyle/hotwifing-guide" element={<HotwifingGuide />} />
             <Route path="/lifestyle/swingers-guide" element={<SwingersGuide />} />
             <Route path="/lifestyle/enm-polyamory-guide" element={<ENMPolyamoryGuide />} />
