@@ -55,6 +55,7 @@ import CommunityStandards from "./pages/CommunityStandards";
 import TermsOfService from "./pages/TermsOfService";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import CookiePolicy from "./pages/CookiePolicy";
+import Legal from "./pages/Legal";
 
 const queryClient = new QueryClient();
 
