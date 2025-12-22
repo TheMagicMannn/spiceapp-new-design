@@ -51,6 +51,10 @@ import BlogPost10Signs from "./pages/BlogPost10Signs";
 import BlogTalkToPartner from "./pages/BlogTalkToPartner";
 import BlogBDSMSafety from "./pages/BlogBDSMSafety";
 import NotFound from "./pages/NotFound";
+import CommunityStandards from "./pages/CommunityStandards";
+import TermsOfService from "./pages/TermsOfService";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import CookiePolicy from "./pages/CookiePolicy";
 
 const queryClient = new QueryClient();
 
