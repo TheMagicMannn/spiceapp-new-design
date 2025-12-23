@@ -234,6 +234,18 @@ const App = () => (
             <Route path="/blog/swinging-health-safety" element={<BlogSwingingHealthSafety />} />
             <Route path="/blog/swinging-keeping-spark" element={<BlogSwingingKeepingSpark />} />
             
+            {/* BDSM & Kink Blog Articles */}
+            <Route path="/blog/bdsm-beginners-guide" element={<BlogBDSMBeginners />} />
+            <Route path="/blog/bdsm-aftercare-guide" element={<BlogBDSMAftercareGuide />} />
+            <Route path="/blog/bdsm-negotiation-checklist" element={<BlogBDSMNegotiationChecklist />} />
+            <Route path="/blog/kink-mental-health" element={<BlogKinkMentalHealth />} />
+            <Route path="/blog/beginner-friendly-kinks" element={<BlogBeginnerFriendlyKinks />} />
+            <Route path="/blog/finding-kink-community" element={<BlogFindingKinkCommunity />} />
+            <Route path="/blog/switching-dynamics" element={<BlogSwitchingDynamics />} />
+            <Route path="/blog/kink-on-budget" element={<BlogKinkOnBudget />} />
+            <Route path="/blog/long-distance-bdsm" element={<BlogLongDistanceBDSM />} />
+            <Route path="/blog/coming-out-kinky" element={<BlogComingOutKinky />} />
+            
             {/* Consent & Safety Blog Articles */}
             <Route path="/blog/consent-golden-rules" element={<BlogConsentGoldenRules />} />
             <Route path="/blog/red-flags-green-flags" element={<BlogRedFlagsGreenFlags />} />
