@@ -1329,7 +1329,7 @@ const SwingersGuide = () => {
                     <div>
                       <h3 className="text-2xl font-semibold text-foreground mb-4">Recommended SPICE Blog Posts</h3>
                       <div className="grid md:grid-cols-2 gap-4">
-                        <Link to="/blog/swinging-101" className="flex items-center gap-3 p-4 bg-background/50 rounded-xl hover:bg-background/80 transition-colors group">
+                        <Link to="/blog/swinging-101-beginners-guide" className="flex items-center gap-3 p-4 bg-background/50 rounded-xl hover:bg-background/80 transition-colors group">
                           <BookOpen className="w-5 h-5 text-primary flex-shrink-0" />
                           <div className="flex-1">
                             <h4 className="font-semibold text-sm group-hover:text-primary transition-colors">Swinging 101: Complete Beginner's Guide</h4>
@@ -1337,7 +1337,7 @@ const SwingersGuide = () => {
                           <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary" />
                         </Link>
 
-                        <Link to="/blog/swinging-mistakes" className="flex items-center gap-3 p-4 bg-background/50 rounded-xl hover:bg-background/80 transition-colors group">
+                        <Link to="/blog/swinging-mistakes-avoid" className="flex items-center gap-3 p-4 bg-background/50 rounded-xl hover:bg-background/80 transition-colors group">
                           <BookOpen className="w-5 h-5 text-primary flex-shrink-0" />
                           <div className="flex-1">
                             <h4 className="font-semibold text-sm group-hover:text-primary transition-colors">Common Mistakes New Swingers Make</h4>
@@ -1345,7 +1345,7 @@ const SwingersGuide = () => {
                           <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary" />
                         </Link>
 
-                        <Link to="/blog/swinging-marriage" className="flex items-center gap-3 p-4 bg-background/50 rounded-xl hover:bg-background/80 transition-colors group">
+                        <Link to="/blog/swinging-strengthened-marriage" className="flex items-center gap-3 p-4 bg-background/50 rounded-xl hover:bg-background/80 transition-colors group">
                           <BookOpen className="w-5 h-5 text-primary flex-shrink-0" />
                           <div className="flex-1">
                             <h4 className="font-semibold text-sm group-hover:text-primary transition-colors">How Swinging Strengthened Our Marriage</h4>
@@ -1361,7 +1361,7 @@ const SwingersGuide = () => {
                           <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary" />
                         </Link>
 
-                        <Link to="/blog/swinging-jealousy" className="flex items-center gap-3 p-4 bg-background/50 rounded-xl hover:bg-background/80 transition-colors group">
+                        <Link to="/blog/swinging-jealousy-tools" className="flex items-center gap-3 p-4 bg-background/50 rounded-xl hover:bg-background/80 transition-colors group">
                           <BookOpen className="w-5 h-5 text-primary flex-shrink-0" />
                           <div className="flex-1">
                             <h4 className="font-semibold text-sm group-hover:text-primary transition-colors">Managing Jealousy in the Lifestyle</h4>
@@ -1377,7 +1377,7 @@ const SwingersGuide = () => {
                           <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary" />
                         </Link>
 
-                        <Link to="/blog/swinging-etiquette" className="flex items-center gap-3 p-4 bg-background/50 rounded-xl hover:bg-background/80 transition-colors group">
+                        <Link to="/blog/swinging-etiquette-rules" className="flex items-center gap-3 p-4 bg-background/50 rounded-xl hover:bg-background/80 transition-colors group">
                           <BookOpen className="w-5 h-5 text-primary flex-shrink-0" />
                           <div className="flex-1">
                             <h4 className="font-semibold text-sm group-hover:text-primary transition-colors">Swinging Etiquette: Do's and Don'ts</h4>
