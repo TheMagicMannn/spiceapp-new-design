@@ -47,6 +47,7 @@ const routeNames: Record<string, string> = {
   "/start/myths": "Common Myths",
   "/start/etiquette": "Lifestyle Etiquette",
   "/start/consent-basics": "Consent Basics",
+  "/start/beginner-faq": "Beginner FAQ",
 };
 
 const Breadcrumbs = () => {
