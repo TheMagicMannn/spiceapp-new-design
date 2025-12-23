@@ -346,6 +346,65 @@ const ConsentBasics = () => {
               </div>
             </section>
 
+            {/* Consent & Safety Blog Articles */}
+            <section className="mb-16">
+              <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8">
+                <div className="flex items-center justify-between mb-6">
+                  <h2 className="text-2xl md:text-3xl font-bold">More on Consent & Safety</h2>
+                </div>
+                
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+                  <a href="/blog/consent-golden-rules" className="bg-background/50 border border-green-500/30 rounded-lg p-4 hover:border-green-500/50 transition-colors">
+                    <span className="text-xs font-semibold text-green-500 bg-green-500/10 px-2 py-1 rounded mb-2 inline-block">Consent & Safety</span>
+                    <h3 className="font-bold text-foreground mb-2">The Golden Rules of Consent</h3>
+                    <p className="text-sm text-muted-foreground">How to ask, give, and revoke consent gracefully in any encounter.</p>
+                  </a>
+                  
+                  <a href="/blog/red-flags-green-flags" className="bg-background/50 border border-green-500/30 rounded-lg p-4 hover:border-green-500/50 transition-colors">
+                    <span className="text-xs font-semibold text-green-500 bg-green-500/10 px-2 py-1 rounded mb-2 inline-block">Consent & Safety</span>
+                    <h3 className="font-bold text-foreground mb-2">Red Flags vs. Green Flags</h3>
+                    <p className="text-sm text-muted-foreground">Spotting safe partners before you ever meet in person.</p>
+                  </a>
+                  
+                  <a href="/blog/consent-check-ins-sexy" className="bg-background/50 border border-green-500/30 rounded-lg p-4 hover:border-green-500/50 transition-colors">
+                    <span className="text-xs font-semibold text-green-500 bg-green-500/10 px-2 py-1 rounded mb-2 inline-block">Consent & Safety</span>
+                    <h3 className="font-bold text-foreground mb-2">Consent Check-Ins: Sexy Phrases</h3>
+                    <p className="text-sm text-muted-foreground">Keep things hot and safe with these flirty check-in techniques.</p>
+                  </a>
+                  
+                  <a href="/blog/safer-sex-guide-2026" className="bg-background/50 border border-green-500/30 rounded-lg p-4 hover:border-green-500/50 transition-colors">
+                    <span className="text-xs font-semibold text-green-500 bg-green-500/10 px-2 py-1 rounded mb-2 inline-block">Consent & Safety</span>
+                    <h3 className="font-bold text-foreground mb-2">Safer Sex in the Lifestyle: 2026 Guide</h3>
+                    <p className="text-sm text-muted-foreground">STI testing, barriers, and honest conversations.</p>
+                  </a>
+                  
+                  <a href="/blog/consent-violations" className="bg-background/50 border border-green-500/30 rounded-lg p-4 hover:border-green-500/50 transition-colors">
+                    <span className="text-xs font-semibold text-green-500 bg-green-500/10 px-2 py-1 rounded mb-2 inline-block">Consent & Safety</span>
+                    <h3 className="font-bold text-foreground mb-2">When "No" Gets Ignored</h3>
+                    <p className="text-sm text-muted-foreground">How to handle consent violations and protect your boundaries.</p>
+                  </a>
+                  
+                  <a href="/blog/aftercare-emotional-safety" className="bg-background/50 border border-green-500/30 rounded-lg p-4 hover:border-green-500/50 transition-colors">
+                    <span className="text-xs font-semibold text-green-500 bg-green-500/10 px-2 py-1 rounded mb-2 inline-block">Consent & Safety</span>
+                    <h3 className="font-bold text-foreground mb-2">Aftercare and Emotional Safety</h3>
+                    <p className="text-sm text-muted-foreground">Why reconnection matters just as much as protection.</p>
+                  </a>
+                </div>
+                
+                <div className="text-center">
+                  <a 
+                    href="/blog/consent" 
+                    className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-semibold transition-colors"
+                  >
+                    Read more about Consent & Safety
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </section>
+
             <div className="mb-16">
               <div className="bg-gradient-to-r from-primary/20 via-purple-500/20 to-primary/20 rounded-2xl p-8 md:p-12 border border-primary/30 text-center">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4">Join a Consent-Focused Community</h2>
