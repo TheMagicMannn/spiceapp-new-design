@@ -670,6 +670,822 @@ const SwingersGuide = () => {
               {/* Continue with remaining sections... */}
               {/* I'll create a separate message for the rest due to length */}
 
+              {/* First Time Experience */}
+              <section id="first-time" className="mb-16 scroll-mt-24">
+                <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12">
+                  <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
+                    <Sparkles className="w-8 h-8 text-primary" />
+                    Your First Experience
+                  </h2>
+                  
+                  <div className="space-y-6 text-muted-foreground">
+                    <p className="text-lg leading-relaxed">
+                      Your first swinging experience will likely be nerve-wracking and exciting in equal measure. Here's what to expect and how to make it go smoothly.
+                    </p>
+
+                    <div className="bg-primary/10 border border-primary/30 rounded-xl p-6">
+                      <h3 className="text-xl font-semibold text-foreground mb-4">Before the Date:</h3>
+                      <ul className="space-y-3">
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <div>
+                            <strong className="text-foreground">Meet in Public First:</strong> Have drinks or dinner before any play. Chemistry matters—if it's not there in conversation, it won't magically appear in the bedroom
+                          </div>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <div>
+                            <strong className="text-foreground">Reconfirm Boundaries:</strong> Before the date, review your boundaries with your partner one more time
+                          </div>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <div>
+                            <strong className="text-foreground">Bring Protection:</strong> Always have condoms, even if you assume others will. Better safe than sorry
+                          </div>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <div>
+                            <strong className="text-foreground">Establish a Safe Word/Signal:</strong> Something like "pause," "yellow," or "red" that means stop immediately
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-background/50 rounded-xl p-6 my-6">
+                      <h3 className="text-xl font-semibold text-foreground mb-4">During the Experience:</h3>
+                      <ul className="space-y-3">
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <span><strong className="text-foreground">Check In With Each Other:</strong> Make eye contact, ask "you good?" verbally or non-verbally</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <span><strong className="text-foreground">Don't Force It:</strong> If something doesn't feel right, it's OK to stop. Good lifestyle couples will totally understand</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <span><strong className="text-foreground">Stay Present:</strong> Don't overthink or get in your head. Focus on the moment and the pleasure</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <span><strong className="text-foreground">Performance Pressure is Normal:</strong> Nerves can affect physical performance. Don't stress—focus on connection and fun</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6">
+                      <h3 className="text-xl font-semibold text-foreground mb-4">After the Experience:</h3>
+                      <ul className="space-y-3">
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-1" />
+                          <span><strong className="text-foreground">Reconnect With Your Partner:</strong> Many couples have "reclamation sex" after—intimate time just the two of you</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-1" />
+                          <span><strong className="text-foreground">Debrief Honestly:</strong> Talk about what you loved, what felt weird, how you're feeling emotionally</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-1" />
+                          <span><strong className="text-foreground">Process Emotions:</strong> It's normal to feel a mix of excitement, insecurity, jealousy, arousal. Talk through it all</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-1" />
+                          <span><strong className="text-foreground">Give It Time:</strong> Don't make big decisions right away. Let the experience settle before planning your next move</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              {/* Parties */}
+              <section id="parties" className="mb-16 scroll-mt-24">
+                <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12">
+                  <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
+                    <PartyPopper className="w-8 h-8 text-primary" />
+                    Swinger Parties
+                  </h2>
+                  
+                  <div className="space-y-6 text-muted-foreground">
+                    <p className="text-lg leading-relaxed">
+                      Lifestyle parties range from intimate house parties (10-20 people) to large hotel takeovers (100+ attendees). They're social events with the option—but not obligation—for sexual play.
+                    </p>
+
+                    <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">Types of Parties</h3>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div className="bg-background/50 rounded-xl p-6">
+                        <h4 className="font-semibold text-foreground mb-2">House Parties</h4>
+                        <p className="text-sm mb-3">Hosted by lifestyle couples in their homes. Usually invite-only or vetted guests. More intimate and social.</p>
+                        <p className="text-xs text-foreground"><strong>Dress code:</strong> Sexy/cocktail attire, lingerie later</p>
+                      </div>
+                      <div className="bg-background/50 rounded-xl p-6">
+                        <h4 className="font-semibold text-foreground mb-2">Hotel Takeovers</h4>
+                        <p className="text-sm mb-3">Entire hotel floors or sections reserved for lifestyle event. Larger, more anonymous, multiple play rooms.</p>
+                        <p className="text-xs text-foreground"><strong>Dress code:</strong> Theme nights (lingerie, masquerade, etc.)</p>
+                      </div>
+                      <div className="bg-background/50 rounded-xl p-6">
+                        <h4 className="font-semibold text-foreground mb-2">Meet-and-Greets</h4>
+                        <p className="text-sm mb-3">Social-only events at bars or restaurants. No play, just networking and making friends.</p>
+                        <p className="text-xs text-foreground"><strong>Dress code:</strong> Cocktail/business casual</p>
+                      </div>
+                      <div className="bg-background/50 rounded-xl p-6">
+                        <h4 className="font-semibold text-foreground mb-2">Lifestyle Cruises/Resorts</h4>
+                        <p className="text-sm mb-3">Multi-day vacation experiences. Combination of social activities, parties, and private play.</p>
+                        <p className="text-xs text-foreground"><strong>Dress code:</strong> Varies by event/time of day</p>
+                      </div>
+                    </div>
+
+                    <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">Party Etiquette</h3>
+                    <div className="bg-primary/10 border border-primary/30 rounded-xl p-6">
+                      <ul className="space-y-3">
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <span><strong className="text-foreground">RSVP and Show Up:</strong> If you commit to attending, follow through. No-shows are frowned upon</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <span><strong className="text-foreground">Bring a Bottle:</strong> Contributing drinks or snacks is appreciated at house parties</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <span><strong className="text-foreground">Socialize First:</strong> Don't make a beeline for the playrooms. Chat, dance, build connections</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <span><strong className="text-foreground">Ask Before Joining:</strong> If a couple is playing, ask permission before watching or participating</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <span><strong className="text-foreground">Respect "Closed Door" Rooms:</strong> If a playroom door is closed, that means private—don't enter</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <span><strong className="text-foreground">Clean Up After Yourselves:</strong> Use provided supplies, dispose of protection, wipe down surfaces</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <span><strong className="text-foreground">No Phones in Play Areas:</strong> Photography is usually banned in playrooms to protect privacy</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              {/* Clubs */}
+              <section id="clubs" className="mb-16 scroll-mt-24">
+                <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12">
+                  <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
+                    <PartyPopper className="w-8 h-8 text-primary" />
+                    Swinger Clubs
+                  </h2>
+                  
+                  <div className="space-y-6 text-muted-foreground">
+                    <p className="text-lg leading-relaxed">
+                      Lifestyle clubs are physical venues—like nightclubs with playrooms—where swingers socialize and play. They're found in most major cities and offer a consistent, safe environment for exploration.
+                    </p>
+
+                    <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">What to Expect at a Club</h3>
+                    <div className="space-y-4">
+                      <div className="bg-background/50 rounded-xl p-6">
+                        <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
+                          <Calendar className="w-5 h-5 text-primary" />
+                          Layout & Amenities
+                        </h4>
+                        <p className="leading-relaxed text-sm mb-3">
+                          Most clubs have: a dance floor and bar area (social zone), multiple playrooms (ranging from private rooms to group spaces), BDSM/kink equipment rooms, hot tubs or pools, lockers for belongings, and showers/changing areas.
+                        </p>
+                      </div>
+
+                      <div className="bg-background/50 rounded-xl p-6">
+                        <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
+                          <Shield className="w-5 h-5 text-primary" />
+                          Rules & Safety
+                        </h4>
+                        <ul className="space-y-2 text-sm">
+                          <li>• <strong className="text-foreground">No means no, always</strong> - Consent is paramount and enforced by staff</li>
+                          <li>• <strong className="text-foreground">Single men policies</strong> - Many clubs restrict or charge more for single men on peak nights</li>
+                          <li>• <strong className="text-foreground">Dress codes</strong> - Usually upscale/sexy for social areas; towels or robes in play areas</li>
+                          <li>• <strong className="text-foreground">No cell phones</strong> - Photography banned to protect privacy</li>
+                          <li>• <strong className="text-foreground">Alcohol limits</strong> - Some clubs have BYOB policies or bars, but they monitor intoxication</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">Tips for Your First Club Visit</h3>
+                    <div className="bg-primary/10 border border-primary/30 rounded-xl p-6">
+                      <ul className="space-y-3">
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <span><strong className="text-foreground">Go on a Less Busy Night:</strong> Fridays or off-peak nights are less crowded and less pressure</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <span><strong className="text-foreground">Take a Tour:</strong> Most clubs offer tours for first-timers. Ask staff to show you around</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <span><strong className="text-foreground">Agree to Just Watch:</strong> Many first-timers agree beforehand to only observe and be together</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <span><strong className="text-foreground">Dance and Socialize:</strong> Treat it like any nightclub at first. Get comfortable with the environment</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <span><strong className="text-foreground">Explore the Playrooms:</strong> Walk through, see what's happening. You can watch from doorways if rooms are open</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <span><strong className="text-foreground">Don't Feel Obligated:</strong> You're paying for access to the environment—not an obligation to play</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <p className="text-sm leading-relaxed mt-6">
+                      <strong className="text-foreground">Finding Clubs:</strong> Use <Link to="/download" className="text-primary hover:underline">SPICE</Link> to connect with locals who can recommend clubs in your area, or search "lifestyle clubs near me" online. Sites like SDC and Kasidie have club directories.
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              {/* Essential Etiquette */}
+              <section id="etiquette" className="mb-16 scroll-mt-24">
+                <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12">
+                  <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
+                    <CheckCircle className="w-8 h-8 text-primary" />
+                    Essential Lifestyle Etiquette
+                  </h2>
+                  
+                  <div className="space-y-6 text-muted-foreground">
+                    <p className="text-lg leading-relaxed">
+                      The swinging community has unwritten rules that keep experiences safe, respectful, and enjoyable for everyone. Follow these and you'll be welcomed warmly.
+                    </p>
+
+                    <div className="grid md:grid-cols-2 gap-6 mt-8">
+                      <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6">
+                        <h3 className="text-xl font-semibold text-foreground mb-4">✅ DO:</h3>
+                        <ul className="space-y-2 text-sm">
+                          <li>• Ask for explicit consent before any touch</li>
+                          <li>• Respect "no" immediately without pouting</li>
+                          <li>• Communicate clearly and honestly</li>
+                          <li>• Bring condoms and use them</li>
+                          <li>• Check in with your partner frequently</li>
+                          <li>• Practice excellent hygiene and grooming</li>
+                          <li>• Be friendly and social, not predatory</li>
+                          <li>• Compliment and make others feel good</li>
+                          <li>• Honor your partner's veto power</li>
+                          <li>• Keep lifestyle activities private from vanilla life</li>
+                        </ul>
+                      </div>
+
+                      <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-6">
+                        <h3 className="text-xl font-semibold text-foreground mb-4">❌ DON'T:</h3>
+                        <ul className="space-y-2 text-sm">
+                          <li>• Touch without asking first</li>
+                          <li>• Pressure anyone or push boundaries</li>
+                          <li>• Get blackout drunk or high</li>
+                          <li>• Take photos in lifestyle spaces</li>
+                          <li>• Out people in the community</li>
+                          <li>• Contact one partner without the other's knowledge</li>
+                          <li>• Try to come between couples or create drama</li>
+                          <li>• Judge others' preferences or boundaries</li>
+                          <li>• Assume bisexuality (women especially)</li>
+                          <li>• Be aggressive, entitled, or pushy</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div className="bg-primary/10 border border-primary/30 rounded-xl p-6 mt-6">
+                      <h3 className="text-xl font-semibold text-foreground mb-4">The Golden Rule: No Means No</h3>
+                      <p className="text-sm leading-relaxed">
+                        This cannot be overstated. If someone says no, you stop immediately. You don't ask "why?" or "are you sure?" You respect it, smile, and say "no problem!" Anyone who doesn't respect this will quickly earn a bad reputation and be excluded from events. The lifestyle community is small and word spreads fast. Learn more in our <Link to="/blog/swinging-etiquette" className="text-primary hover:underline">Swinging Etiquette Guide</Link>.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              {/* Managing Jealousy */}
+              <section id="jealousy" className="mb-16 scroll-mt-24">
+                <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12">
+                  <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
+                    <Heart className="w-8 h-8 text-primary" />
+                    Managing Jealousy
+                  </h2>
+                  
+                  <div className="space-y-6 text-muted-foreground">
+                    <p className="text-lg leading-relaxed">
+                      Even in the best relationships with the most secure couples, <strong className="text-foreground">jealousy happens</strong>. It's a normal human emotion, not a sign that swinging "isn't for you." What matters is how you handle it.
+                    </p>
+
+                    <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">Common Jealousy Triggers</h3>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div className="bg-background/50 rounded-xl p-4">
+                        <h4 className="font-semibold text-foreground mb-2 text-sm">Your partner seems more into someone else</h4>
+                        <p className="text-xs">They're more enthusiastic, loud, or physical than with you</p>
+                      </div>
+                      <div className="bg-background/50 rounded-xl p-4">
+                        <h4 className="font-semibold text-foreground mb-2 text-sm">You feel left out or ignored</h4>
+                        <p className="text-xs">Your partner is giving all attention to play partner, not you</p>
+                      </div>
+                      <div className="bg-background/50 rounded-xl p-4">
+                        <h4 className="font-semibold text-foreground mb-2 text-sm">Comparison and insecurity</h4>
+                        <p className="text-xs">The other person is more attractive, skilled, or larger/smaller than you</p>
+                      </div>
+                      <div className="bg-background/50 rounded-xl p-4">
+                        <h4 className="font-semibold text-foreground mb-2 text-sm">Emotional connection fear</h4>
+                        <p className="text-xs">Worry that your partner is developing feelings for someone else</p>
+                      </div>
+                    </div>
+
+                    <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">How to Handle Jealousy</h3>
+                    <div className="bg-primary/10 border border-primary/30 rounded-xl p-6">
+                      <ul className="space-y-3">
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <div>
+                            <strong className="text-foreground">Stop the Activity If Needed:</strong> Use your safe word. Your relationship comes first, always. Good lifestyle folks will totally understand
+                          </div>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <div>
+                            <strong className="text-foreground">Name the Feeling:</strong> "I'm feeling jealous because..." Identifying the trigger helps you address it
+                          </div>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <div>
+                            <strong className="text-foreground">Get Reassurance:</strong> Tell your partner what you need to feel secure. Physical touch? Verbal affirmation?
+                          </div>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <div>
+                            <strong className="text-foreground">Reconnect:</strong> Many couples have sex together after playing with others—it reaffirms your bond
+                          </div>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <div>
+                            <strong className="text-foreground">Talk It Through Later:</strong> Process the jealousy when you're both calm, not in the heat of the moment
+                          </div>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <div>
+                            <strong className="text-foreground">Adjust Boundaries:</strong> If something consistently triggers jealousy, modify your boundaries accordingly
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-blue-500/10 border border-blue-500/30 rounded-xl p-6 my-6">
+                      <p className="text-sm text-foreground flex items-start gap-3">
+                        <AlertCircle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <span><strong>Pro Tip:</strong> Jealousy often decreases over time as you build confidence and see that your partner always comes back to you. But it may never fully disappear—and that's okay. Read our comprehensive guide: <Link to="/blog/swinging-jealousy" className="text-primary hover:underline">Managing Jealousy in the Swinging Lifestyle</Link>.</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              {/* Safety & Health */}
+              <section id="safety" className="mb-16 scroll-mt-24">
+                <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12">
+                  <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
+                    <Shield className="w-8 h-8 text-primary" />
+                    Safety & Health
+                  </h2>
+                  
+                  <div className="space-y-6 text-muted-foreground">
+                    <p className="text-lg leading-relaxed">
+                      The lifestyle community actually has <strong className="text-foreground">lower STI rates</strong> than the general population, largely due to better communication, testing practices, and consistent condom use. Here's how to stay safe:
+                    </p>
+
+                    <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">Sexual Health Practices</h3>
+                    <div className="bg-primary/10 border border-primary/30 rounded-xl p-6">
+                      <ul className="space-y-3">
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <div>
+                            <strong className="text-foreground">Condom Use:</strong> Use condoms for all penetrative sex (vaginal, anal). Many also use them for oral, though it's less common
+                          </div>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <div>
+                            <strong className="text-foreground">Regular Testing:</strong> Get tested every 3-6 months, or between partners. Many lifestyle folks share test results before play
+                          </div>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <div>
+                            <strong className="text-foreground">Vaccination:</strong> Get HPV vaccine (even for men), Hepatitis B, and stay current on other vaccinations
+                          </div>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <div>
+                            <strong className="text-foreground">Know Your Status:</strong> If you test positive for anything, disclose it to potential partners. Honesty is crucial
+                          </div>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <div>
+                            <strong className="text-foreground">PrEP Consideration:</strong> Talk to your doctor about PrEP (HIV prevention medication) if you're frequently active
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">Physical Safety</h3>
+                    <div className="bg-background/50 rounded-xl p-6">
+                      <ul className="space-y-3 text-sm">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                          <span><strong className="text-foreground">Meet in Public First:</strong> Always meet new people in public before going to private locations</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                          <span><strong className="text-foreground">Video Verify:</strong> Video chat before meeting to confirm identities and avoid catfishing</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                          <span><strong className="text-foreground">Tell a Friend:</strong> Let a trusted friend know where you're going and check in afterward</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                          <span><strong className="text-foreground">Trust Your Gut:</strong> If something feels off, leave. Your safety instincts are usually right</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+                          <span><strong className="text-foreground">Moderate Alcohol:</strong> Stay sober enough to make good decisions and give clear consent</span>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-blue-500/10 border border-blue-500/30 rounded-xl p-6 my-6">
+                      <p className="text-sm text-foreground flex items-start gap-3">
+                        <AlertCircle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <span>For more detailed safety information, read our <Link to="/blog/swinging-health-safety" className="text-primary hover:underline">Swinging Health & Safety Guide</Link> and <Link to="/start/consent-basics" className="text-primary hover:underline">Consent Basics</Link>.</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              {/* Finding Partners */}
+              <section id="finding" className="mb-16 scroll-mt-24">
+                <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12">
+                  <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
+                    <Users className="w-8 h-8 text-primary" />
+                    Finding Partners & Connecting
+                  </h2>
+                  
+                  <div className="space-y-6 text-muted-foreground">
+                    <p className="text-lg leading-relaxed">
+                      Gone are the days when finding lifestyle partners meant scouring classified ads. Modern technology makes connecting with compatible couples and singles easy and safe.
+                    </p>
+
+                    <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">Where to Meet Lifestyle People</h3>
+                    <div className="space-y-4">
+                      <div className="bg-gradient-to-br from-primary/10 to-purple-500/10 border border-primary/30 rounded-xl p-6">
+                        <div className="flex items-center gap-3 mb-3">
+                          <Users className="w-6 h-6 text-primary" />
+                          <h4 className="font-semibold text-foreground text-lg">SPICE - The Modern Lifestyle App</h4>
+                        </div>
+                        <p className="text-sm mb-3">
+                          <Link to="/download" className="text-primary hover:underline font-semibold">SPICE</Link> is built specifically for the lifestyle community with AI-powered matching, verified profiles, and advanced privacy controls. Connect with couples and singles who share your interests and boundaries.
+                        </p>
+                        <Link to="/download" className="inline-flex items-center gap-2 px-6 py-2 bg-primary hover:bg-primary/90 text-white font-semibold rounded-full text-sm transition-all">
+                          Join SPICE Free <ExternalLink className="w-4 h-4" />
+                        </Link>
+                      </div>
+
+                      <div className="bg-background/50 rounded-xl p-6">
+                        <h4 className="font-semibold text-foreground mb-3">Other Popular Platforms:</h4>
+                        <ul className="space-y-2 text-sm">
+                          <li>• <strong className="text-foreground">SDC (Swingers Date Club):</strong> Largest lifestyle site, great for finding local events</li>
+                          <li>• <strong className="text-foreground">Kasidie:</strong> Popular on the West Coast, strong event listings</li>
+                          <li>• <strong className="text-foreground">Feeld:</strong> Modern app for open-minded dating and non-monogamy</li>
+                          <li>• <strong className="text-foreground">3Fun:</strong> Simple app for threesomes and couple swapping</li>
+                        </ul>
+                      </div>
+
+                      <div className="bg-background/50 rounded-xl p-6">
+                        <h4 className="font-semibold text-foreground mb-3">In-Person Options:</h4>
+                        <ul className="space-y-2 text-sm">
+                          <li>• <strong className="text-foreground">Lifestyle Clubs:</strong> See the clubs section above</li>
+                          <li>• <strong className="text-foreground">Meet-and-Greets:</strong> Check local lifestyle sites for social mixers</li>
+                          <li>• <strong className="text-foreground">Lifestyle Cruises/Resorts:</strong> Vacation while meeting lifestyle people (Desire, Hedonism, etc.)</li>
+                          <li>• <strong className="text-foreground">Private Parties:</strong> Get invited through connections you make online or at clubs</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">Creating an Effective Profile</h3>
+                    <div className="bg-primary/10 border border-primary/30 rounded-xl p-6">
+                      <ul className="space-y-3">
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <div>
+                            <strong className="text-foreground">Recent Photos:</strong> Include clear face photos and full-body shots. Be honest about what you look like
+                          </div>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <div>
+                            <strong className="text-foreground">Both Partners Visible:</strong> For couples, show you're both on board and involved
+                          </div>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <div>
+                            <strong className="text-foreground">Be Specific:</strong> Clearly state what you're looking for (soft swap, full swap, MFF, etc.)
+                          </div>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <div>
+                            <strong className="text-foreground">Share Personality:</strong> What do you like to do outside the bedroom? Hobbies, interests, what makes you fun?
+                          </div>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <div>
+                            <strong className="text-foreground">State Boundaries:</strong> Mention any hard limits upfront to filter incompatible matches
+                          </div>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <div>
+                            <strong className="text-foreground">Proofread:</strong> Typos and poor grammar are off-putting. Take time to make it polished
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <p className="text-sm leading-relaxed mt-6">
+                      <strong className="text-foreground">Resource:</strong> Read more tips in <Link to="/blog/swinging-finding-couples" className="text-primary hover:underline">How to Find Other Swinging Couples</Link>.
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              {/* Common Mistakes */}
+              <section id="mistakes" className="mb-16 scroll-mt-24">
+                <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12">
+                  <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
+                    <AlertCircle className="w-8 h-8 text-primary" />
+                    Common Mistakes to Avoid
+                  </h2>
+                  
+                  <div className="space-y-6 text-muted-foreground">
+                    <p className="text-lg leading-relaxed">
+                      Learn from others' experiences. Here are the most common pitfalls new swingers face:
+                    </p>
+
+                    <div className="space-y-4 mt-6">
+                      <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-6">
+                        <h3 className="text-lg font-semibold text-foreground mb-2">❌ Thinking Swinging Will Fix Relationship Problems</h3>
+                        <p className="text-sm">
+                          Swinging amplifies what's already there—good or bad. If you have trust issues, poor communication, or unhappiness, swinging will make it worse. Fix your foundation first.
+                        </p>
+                      </div>
+
+                      <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-6">
+                        <h3 className="text-lg font-semibold text-foreground mb-2">❌ One Partner Dragging the Other Along</h3>
+                        <p className="text-sm">
+                          Both partners need to be genuinely enthusiastic, not just "going along" to make the other happy. Reluctant participation breeds resentment fast.
+                        </p>
+                      </div>
+
+                      <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-6">
+                        <h3 className="text-lg font-semibold text-foreground mb-2">❌ Not Discussing Boundaries in Detail</h3>
+                        <p className="text-sm">
+                          Vague agreements like "let's just see what happens" lead to hurt feelings. Be specific about what's okay and what's not before you play.
+                        </p>
+                      </div>
+
+                      <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-6">
+                        <h3 className="text-lg font-semibold text-foreground mb-2">❌ Pushing Through When Someone's Uncomfortable</h3>
+                        <p className="text-sm">
+                          If your partner shows signs of discomfort or asks to stop, honor it immediately. Don't pressure them to "just get through it." That damages trust.
+                        </p>
+                      </div>
+
+                      <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-6">
+                        <h3 className="text-lg font-semibold text-foreground mb-2">❌ Developing Feelings and Not Addressing It</h3>
+                        <p className="text-sm">
+                          Sometimes people catch feelings for play partners. This isn't failure—it's human. But you MUST talk about it with your primary partner immediately, not hide it.
+                        </p>
+                      </div>
+
+                      <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-6">
+                        <h3 className="text-lg font-semibold text-foreground mb-2">❌ Breaking Your Own Rules "In the Moment"</h3>
+                        <p className="text-sm">
+                          Heat of passion might tempt you to cross a boundary you set. Don't. The temporary pleasure isn't worth the breach of trust with your partner.
+                        </p>
+                      </div>
+
+                      <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-6">
+                        <h3 className="text-lg font-semibold text-foreground mb-2">❌ Not Debriefing After Experiences</h3>
+                        <p className="text-sm">
+                          Always talk about what happened afterward. What felt good? What didn't? How do you both feel? Skipping this leads to misunderstandings and hurt.
+                        </p>
+                      </div>
+
+                      <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-6">
+                        <h3 className="text-lg font-semibold text-foreground mb-2">❌ Comparing Yourself to Play Partners</h3>
+                        <p className="text-sm">
+                          Your partner isn't looking for a replacement for you. Different people offer different experiences—that's the whole point. Don't fall into comparison traps.
+                        </p>
+                      </div>
+                    </div>
+
+                    <div className="bg-blue-500/10 border border-blue-500/30 rounded-xl p-6 my-6">
+                      <p className="text-sm text-foreground flex items-start gap-3">
+                        <AlertCircle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <span>Read the full breakdown in <Link to="/blog/swinging-mistakes" className="text-primary hover:underline">Common Mistakes New Swingers Make (And How to Avoid Them)</Link>.</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              {/* Resources & Next Steps */}
+              <section id="resources" className="mb-16 scroll-mt-24">
+                <div className="bg-gradient-to-br from-primary/20 via-purple-500/20 to-primary/20 border border-primary/30 rounded-2xl p-8 md:p-12">
+                  <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
+                    <BookOpen className="w-8 h-8 text-primary" />
+                    Resources & Next Steps
+                  </h2>
+                  
+                  <div className="space-y-8 text-muted-foreground">
+                    <div>
+                      <h3 className="text-2xl font-semibold text-foreground mb-4">Recommended SPICE Blog Posts</h3>
+                      <div className="grid md:grid-cols-2 gap-4">
+                        <Link to="/blog/swinging-101" className="flex items-center gap-3 p-4 bg-background/50 rounded-xl hover:bg-background/80 transition-colors group">
+                          <BookOpen className="w-5 h-5 text-primary flex-shrink-0" />
+                          <div className="flex-1">
+                            <h4 className="font-semibold text-sm group-hover:text-primary transition-colors">Swinging 101: Complete Beginner's Guide</h4>
+                          </div>
+                          <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary" />
+                        </Link>
+
+                        <Link to="/blog/swinging-mistakes" className="flex items-center gap-3 p-4 bg-background/50 rounded-xl hover:bg-background/80 transition-colors group">
+                          <BookOpen className="w-5 h-5 text-primary flex-shrink-0" />
+                          <div className="flex-1">
+                            <h4 className="font-semibold text-sm group-hover:text-primary transition-colors">Common Mistakes New Swingers Make</h4>
+                          </div>
+                          <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary" />
+                        </Link>
+
+                        <Link to="/blog/swinging-marriage" className="flex items-center gap-3 p-4 bg-background/50 rounded-xl hover:bg-background/80 transition-colors group">
+                          <BookOpen className="w-5 h-5 text-primary flex-shrink-0" />
+                          <div className="flex-1">
+                            <h4 className="font-semibold text-sm group-hover:text-primary transition-colors">How Swinging Strengthened Our Marriage</h4>
+                          </div>
+                          <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary" />
+                        </Link>
+
+                        <Link to="/blog/swinging-finding-couples" className="flex items-center gap-3 p-4 bg-background/50 rounded-xl hover:bg-background/80 transition-colors group">
+                          <BookOpen className="w-5 h-5 text-primary flex-shrink-0" />
+                          <div className="flex-1">
+                            <h4 className="font-semibold text-sm group-hover:text-primary transition-colors">How to Find Other Swinging Couples</h4>
+                          </div>
+                          <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary" />
+                        </Link>
+
+                        <Link to="/blog/swinging-jealousy" className="flex items-center gap-3 p-4 bg-background/50 rounded-xl hover:bg-background/80 transition-colors group">
+                          <BookOpen className="w-5 h-5 text-primary flex-shrink-0" />
+                          <div className="flex-1">
+                            <h4 className="font-semibold text-sm group-hover:text-primary transition-colors">Managing Jealousy in the Lifestyle</h4>
+                          </div>
+                          <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary" />
+                        </Link>
+
+                        <Link to="/blog/swinging-soft-full-swap" className="flex items-center gap-3 p-4 bg-background/50 rounded-xl hover:bg-background/80 transition-colors group">
+                          <BookOpen className="w-5 h-5 text-primary flex-shrink-0" />
+                          <div className="flex-1">
+                            <h4 className="font-semibold text-sm group-hover:text-primary transition-colors">Soft Swap vs Full Swap: What's Right for You?</h4>
+                          </div>
+                          <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary" />
+                        </Link>
+
+                        <Link to="/blog/swinging-etiquette" className="flex items-center gap-3 p-4 bg-background/50 rounded-xl hover:bg-background/80 transition-colors group">
+                          <BookOpen className="w-5 h-5 text-primary flex-shrink-0" />
+                          <div className="flex-1">
+                            <h4 className="font-semibold text-sm group-hover:text-primary transition-colors">Swinging Etiquette: Do's and Don'ts</h4>
+                          </div>
+                          <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary" />
+                        </Link>
+
+                        <Link to="/blog/swinging-health-safety" className="flex items-center gap-3 p-4 bg-background/50 rounded-xl hover:bg-background/80 transition-colors group">
+                          <BookOpen className="w-5 h-5 text-primary flex-shrink-0" />
+                          <div className="flex-1">
+                            <h4 className="font-semibold text-sm group-hover:text-primary transition-colors">Swinging Health & Safety Guide</h4>
+                          </div>
+                          <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary" />
+                        </Link>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h3 className="text-2xl font-semibold text-foreground mb-4">Take Our Quizzes</h3>
+                      <div className="grid md:grid-cols-2 gap-4">
+                        <Link to="/quiz/swinging" className="flex items-center gap-4 p-6 bg-background/50 rounded-xl hover:bg-background/80 transition-colors border border-border group">
+                          <Brain className="w-8 h-8 text-primary flex-shrink-0" />
+                          <div>
+                            <h4 className="font-semibold group-hover:text-primary transition-colors">Swinging Readiness Quiz</h4>
+                            <p className="text-sm text-muted-foreground">20 questions to assess your relationship's readiness</p>
+                          </div>
+                        </Link>
+
+                        <Link to="/quiz/bdsm" className="flex items-center gap-4 p-6 bg-background/50 rounded-xl hover:bg-background/80 transition-colors border border-border group">
+                          <Flame className="w-8 h-8 text-primary flex-shrink-0" />
+                          <div>
+                            <h4 className="font-semibold group-hover:text-primary transition-colors">BDSM & Kink Quiz</h4>
+                            <p className="text-sm text-muted-foreground">Discover your kink profile and preferences</p>
+                          </div>
+                        </Link>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h3 className="text-2xl font-semibold text-foreground mb-4">Essential Books</h3>
+                      <div className="space-y-3">
+                        <div className="bg-background/50 rounded-xl p-4">
+                          <h4 className="font-semibold text-foreground mb-1">The Ethical Slut</h4>
+                          <p className="text-sm mb-2">by Dossie Easton & Janet Hardy</p>
+                          <p className="text-xs text-muted-foreground">The classic guide to non-monogamy, communication, and jealousy management.</p>
+                        </div>
+
+                        <div className="bg-background/50 rounded-xl p-4">
+                          <h4 className="font-semibold text-foreground mb-1">Opening Up</h4>
+                          <p className="text-sm mb-2">by Tristan Taormino</p>
+                          <p className="text-xs text-muted-foreground">Comprehensive guide to creating and sustaining open relationships.</p>
+                        </div>
+
+                        <div className="bg-background/50 rounded-xl p-4">
+                          <h4 className="font-semibold text-foreground mb-1">The Lifestyle: A Look at the Erotic Rites of Swingers</h4>
+                          <p className="text-sm mb-2">by Terry Gould</p>
+                          <p className="text-xs text-muted-foreground">Deep dive into swinging culture, history, and modern practice.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <h3 className="text-2xl font-semibold text-foreground mb-4">Additional Guides</h3>
+                      <div className="grid md:grid-cols-2 gap-4">
+                        <Link to="/start/beginner-faq" className="flex items-center gap-3 p-4 bg-background/50 rounded-xl hover:bg-background/80 transition-colors group">
+                          <span className="text-foreground group-hover:text-primary transition-colors">→ Beginner Lifestyle FAQ</span>
+                        </Link>
+                        <Link to="/start/consent-basics" className="flex items-center gap-3 p-4 bg-background/50 rounded-xl hover:bg-background/80 transition-colors group">
+                          <span className="text-foreground group-hover:text-primary transition-colors">→ Consent Basics Guide</span>
+                        </Link>
+                        <Link to="/start/etiquette" className="flex items-center gap-3 p-4 bg-background/50 rounded-xl hover:bg-background/80 transition-colors group">
+                          <span className="text-foreground group-hover:text-primary transition-colors">→ Lifestyle Etiquette</span>
+                        </Link>
+                        <Link to="/guide/safety" className="flex items-center gap-3 p-4 bg-background/50 rounded-xl hover:bg-background/80 transition-colors group">
+                          <span className="text-foreground group-hover:text-primary transition-colors">→ Safety Resources</span>
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              {/* Final CTA */}
+              <section className="mb-16">
+                <div className="bg-gradient-to-r from-primary/20 via-purple-500/20 to-primary/20 rounded-2xl p-8 md:p-12 border border-primary/30 text-center">
+                  <h2 className="text-3xl font-bold mb-4">Ready to Start Your Journey?</h2>
+                  <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+                    Join thousands of couples and singles exploring the lifestyle safely and respectfully on SPICE. Connect with like-minded people, attend events, and build meaningful connections.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                    <Link
+                      to="/download"
+                      className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary hover:bg-primary/90 text-white font-semibold rounded-full transition-all text-lg shadow-lg"
+                    >
+                      <Users className="w-5 h-5" />
+                      Join SPICE Free
+                    </Link>
+                    <Link
+                      to="/quiz/swinging"
+                      className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-background/50 hover:bg-background/80 border border-border font-semibold rounded-full transition-all text-lg"
+                    >
+                      <Brain className="w-5 h-5" />
+                      Take the Readiness Quiz
+                    </Link>
+                  </div>
+                </div>
+              </section>
+
             </article>
           </div>
         </main>
