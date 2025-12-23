@@ -129,6 +129,7 @@ const App = () => (
             <Route path="/contact" element={<Contact />} />
             <Route path="/quiz" element={<BDSMQuiz />} />
             <Route path="/faq" element={<FAQ />} />
+            <Route path="/guide" element={<SpiceGuide />} />
             <Route path="/guide/newcomers" element={<NewcomersGuide />} />
             <Route path="/guide/how-to" element={<HowTo />} />
             <Route path="/guide/community" element={<CommunityLifestyles />} />
