@@ -96,6 +96,7 @@ import Support from "./pages/Support";
 import HelpCenter from "./pages/HelpCenter";
 import TechnicalResources from "./pages/TechnicalResources";
 import ReportIssue from "./pages/ReportIssue";
+import StartHere from "./pages/StartHere";
 
 const queryClient = new QueryClient();
 
