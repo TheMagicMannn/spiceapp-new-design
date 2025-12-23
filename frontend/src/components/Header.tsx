@@ -33,6 +33,7 @@ const navigationItems = [
     items: [
       { name: "Hotwifing & Stag/Vixen", path: "/lifestyle/hotwifing-guide", description: "Complete guide to hotwifing" },
       { name: "Swingers Guide", path: "/lifestyle/swingers-guide", description: "Etiquette, parties, clubs" },
+      { name: "BDSM & Kink Guide", path: "/lifestyle/bdsm-guide", description: "Complete BDSM & kink guide" },
       { name: "BDSM & Kink Dynamics", path: "/guide/community", description: "Roles, play types, safety" },
       { name: "ENM & Polyamory", path: "/lifestyle/enm-polyamory-guide", description: "Structures, agreements, tools" },
       { name: "Relationships & Communication", path: "/lifestyle/relationships-communication", description: "Opening up, boundaries" },
