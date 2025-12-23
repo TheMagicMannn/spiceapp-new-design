@@ -67,6 +67,7 @@ import BlogHotwifingCreativeDates from "./pages/BlogHotwifingCreativeDates";
 import BlogHotwifingYearReview from "./pages/BlogHotwifingYearReview";
 import BlogHotwifingToysKink from "./pages/BlogHotwifingToysKink";
 import BlogHotwifingCommunicationMarriage from "./pages/BlogHotwifingCommunicationMarriage";
+import BlogCategory from "./pages/BlogCategory";
 
 const queryClient = new QueryClient();
 
