@@ -46,6 +46,7 @@ import CommonMyths from "./pages/CommonMyths";
 import BeginnerLifestyleFAQ from "./pages/BeginnerLifestyleFAQ";
 import Academy from "./pages/Academy";
 import AcademyModules from "./pages/AcademyModules";
+import GuidedJourneys from "./pages/GuidedJourneys";
 import Travel from "./pages/Travel";
 import TravelNewOrleans from "./pages/TravelNewOrleans";
 import TravelOrlando from "./pages/TravelOrlando";
