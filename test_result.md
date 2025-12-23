@@ -318,6 +318,52 @@ test_plan:
           🚀 No 404 errors, broken links, or navigation issues found
           ✅ All routing updates working perfectly as designed
 
+  - task: "Updated Breadcrumbs for Quiz Pages"
+    implemented: true
+    working: true
+    file: "frontend/src/components/Breadcrumbs.tsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: "Updated Breadcrumbs component to show 'Lifestyle Quizzes' instead of 'BDSM Quiz' for the /quiz route. Changes made to routeNames mapping and special handling for /quiz parent route."
+      - working: true
+        agent: "testing"
+        comment: |
+          ✅ COMPREHENSIVE BREADCRUMB TESTING COMPLETED - ALL SCENARIOS PASSED:
+          
+          1. Quiz Landing Page (/quiz):
+             - ✅ PASS: Shows "Home > Lifestyle Quizzes" (correctly updated from "BDSM Quiz")
+             - ✅ PASS: No longer displays "BDSM Quiz" in breadcrumbs
+             - ✅ PASS: Page loads with correct title "Lifestyle Quizzes"
+          
+          2. BDSM Quiz Page (/quiz/bdsm):
+             - ✅ PASS: Shows "Home > Lifestyle Quizzes > BDSM Quiz"
+             - ✅ PASS: "Lifestyle Quizzes" is clickable link
+             - ✅ PASS: Correct hierarchy maintained
+          
+          3. Hotwifing Quiz Page (/quiz/hotwifing):
+             - ✅ PASS: Shows "Home > Lifestyle Quizzes > Hotwifing Quiz"
+             - ✅ PASS: "Lifestyle Quizzes" is clickable link
+             - ✅ PASS: Correct hierarchy maintained
+          
+          4. Breadcrumb Navigation:
+             - ✅ PASS: Clicking "Lifestyle Quizzes" from individual quiz pages navigates back to /quiz
+             - ✅ PASS: Quiz Landing page loads correctly after navigation
+             - ✅ PASS: Quiz cards display properly
+          
+          🎯 KEY VERIFICATION POINTS CONFIRMED:
+          - Quiz Landing shows "Lifestyle Quizzes" (NOT "BDSM Quiz") ✅
+          - Individual quiz pages show correct hierarchy ✅
+          - "Lifestyle Quizzes" links are clickable and functional ✅
+          - Navigation back to /quiz works correctly ✅
+          - No console errors found ✅
+          
+          📸 Screenshots captured for all test scenarios
+          🚀 All breadcrumb updates working perfectly as designed
+
 agent_communication:
   - agent: "main"
     message: |
