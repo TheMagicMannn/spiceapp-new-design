@@ -30,6 +30,46 @@ const CommonMyths = () => {
     {
       myth: "Lifestyle people are promiscuous and risky",
       reality: "Lifestyle communities actually tend to be MORE cautious about sexual health than the general population. Regular STI testing, condom use, and honest communication are standard. Many lifestyle people are safer than those engaging in serial monogamy with poor testing habits."
+    },
+    {
+      myth: "You have to be bisexual to swing",
+      reality: "While some swingers are bisexual, many are completely heterosexual. There's no requirement or expectation to engage with the same sex. The lifestyle welcomes all orientations, and you only participate in activities you're comfortable with."
+    },
+    {
+      myth: "Swingers don't get jealous",
+      reality: "Swingers experience jealousy like anyone else - they've just learned healthy ways to process and communicate it. Jealousy is often a signal worth examining, not something to suppress. Experienced couples use it as a conversation starter, not a deal-breaker."
+    },
+    {
+      myth: "It's impossible to find quality people in the lifestyle",
+      reality: "The lifestyle attracts people from all walks of life - doctors, teachers, business owners, artists. Many are well-educated professionals seeking discreet adventures. Quality connections take time to find, just like in traditional dating."
+    },
+    {
+      myth: "Swinging is only about sex",
+      reality: "While sex is part of it, many swingers emphasize the social aspects equally. The community offers friendships, parties, travel companions, and a judgment-free social circle. Many couples enjoy the flirting and socializing without always 'playing.'"
+    },
+    {
+      myth: "Kids of lifestyle parents are damaged",
+      reality: "Research shows children of sex-positive parents (who maintain appropriate boundaries) often have healthier attitudes about relationships and consent. Lifestyle parents keep adult activities completely separate from family life - their kids see parents who communicate well and respect each other."
+    },
+    {
+      myth: "The lifestyle is full of pressure and coercion",
+      reality: "Reputable lifestyle communities are actually STRICTER about consent than mainstream dating. 'No means no' is absolute, and pushy behavior gets people banned. Most lifestyle spaces are safer than regular bars or clubs because consent culture is paramount."
+    },
+    {
+      myth: "You have to participate in everything",
+      reality: "The lifestyle operates on enthusiastic consent. You can attend clubs just to watch, only engage in soft swap, or set any boundaries you want. 'No' is always respected, and experienced community members will never pressure newcomers."
+    },
+    {
+      myth: "BDSM people are psychologically damaged",
+      reality: "Psychological research shows BDSM practitioners are no more likely to have mental health issues than the general population. Many are highly successful professionals who use kink as a healthy form of stress relief and intimacy exploration."
+    },
+    {
+      myth: "Polyamory is just an excuse to avoid commitment",
+      reality: "Polyamorous relationships often involve MORE commitment, not less. Managing multiple relationships requires exceptional time management, communication, and emotional labor. Many poly people are deeply committed to all their partners."
+    },
+    {
+      myth: "Open relationships never last",
+      reality: "Many open and polyamorous relationships are long-term and stable. Like any relationship structure, success depends on compatibility, communication, and commitment - not the number of partners involved."
     }
   ];
 
