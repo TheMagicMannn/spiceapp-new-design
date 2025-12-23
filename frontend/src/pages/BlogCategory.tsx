@@ -277,6 +277,129 @@ const allBlogPosts = [
     path: "/blog/teaching-consent-next-generation",
     readTime: "14 min read"
   },
+  // Exploring/Curious Articles
+  {
+    title: "Am I Ready for the Lifestyle? A Self-Assessment Guide",
+    category: "exploring",
+    categoryDisplay: "Exploring/Curious",
+    excerpt: "Honest questions to ask yourself before diving into swinging, ENM, or any alternative lifestyle. Find out if you're truly prepared.",
+    path: "/blog/am-i-ready-lifestyle",
+    readTime: "10 min read"
+  },
+  {
+    title: "The Different Types of Ethical Non-Monogamy Explained",
+    category: "exploring",
+    categoryDisplay: "Exploring/Curious",
+    excerpt: "Swinging, polyamory, hotwifing, open relationships—what's the difference? A comprehensive breakdown of lifestyle options.",
+    path: "/blog/types-ethical-non-monogamy",
+    readTime: "12 min read"
+  },
+  {
+    title: "What Really Happens at a Lifestyle Club? Expectations vs. Reality",
+    category: "exploring",
+    categoryDisplay: "Exploring/Curious",
+    excerpt: "Nervous about your first club visit? Here's what actually happens, what to expect, and how to prepare for the experience.",
+    path: "/blog/what-happens-lifestyle-club",
+    readTime: "11 min read"
+  },
+  {
+    title: "Common Fears About the Lifestyle (And Why Most Don't Come True)",
+    category: "exploring",
+    categoryDisplay: "Exploring/Curious",
+    excerpt: "Worried about jealousy, judgment, or ruining your relationship? Let's address the most common fears head-on.",
+    path: "/blog/common-lifestyle-fears",
+    readTime: "9 min read"
+  },
+  {
+    title: "Is the Lifestyle Right for Your Relationship? Key Questions for Couples",
+    category: "exploring",
+    categoryDisplay: "Exploring/Curious",
+    excerpt: "Before taking the plunge, couples should ask themselves these crucial questions about readiness, motivations, and expectations.",
+    path: "/blog/lifestyle-right-for-relationship",
+    readTime: "10 min read"
+  },
+  // How-To Articles
+  {
+    title: "How to Create the Perfect Lifestyle Profile That Gets Responses",
+    category: "howto",
+    categoryDisplay: "How-To",
+    excerpt: "Step-by-step guide to writing a profile that attracts the right connections. Photos, bios, and what to include (and avoid).",
+    path: "/blog/how-to-create-lifestyle-profile",
+    readTime: "12 min read"
+  },
+  {
+    title: "How to Have 'The Talk' With Your Partner About Opening Up",
+    category: "howto",
+    categoryDisplay: "How-To",
+    excerpt: "A tactical guide to starting the conversation about non-monogamy without scaring your partner away.",
+    path: "/blog/how-to-talk-opening-up",
+    readTime: "14 min read"
+  },
+  {
+    title: "How to Prepare for Your First Lifestyle Event or Party",
+    category: "howto",
+    categoryDisplay: "How-To",
+    excerpt: "Everything you need to do before, during, and after your first event. Packing list, etiquette, and insider tips included.",
+    path: "/blog/how-to-prepare-first-event",
+    readTime: "15 min read"
+  },
+  {
+    title: "How to Set Boundaries That Work (And Stick to Them)",
+    category: "howto",
+    categoryDisplay: "How-To",
+    excerpt: "Practical framework for establishing, communicating, and enforcing boundaries in any lifestyle situation.",
+    path: "/blog/how-to-set-boundaries",
+    readTime: "11 min read"
+  },
+  {
+    title: "How to Recover After a Lifestyle Experience That Didn't Go Well",
+    category: "howto",
+    categoryDisplay: "How-To",
+    excerpt: "Bad experiences happen. Here's how to process, communicate, and move forward as a stronger couple.",
+    path: "/blog/how-to-recover-bad-experience",
+    readTime: "10 min read"
+  },
+  // SPICE User Stories
+  {
+    title: "From Curious to Connected: How SPICE Changed Our Marriage",
+    category: "stories",
+    categoryDisplay: "User Stories",
+    excerpt: "One couple's journey from lifestyle-curious to finding their perfect community through SPICE. Their honest story.",
+    path: "/blog/story-curious-to-connected",
+    readTime: "8 min read"
+  },
+  {
+    title: "Finding Our Tribe: A Poly Family's SPICE Journey",
+    category: "stories",
+    categoryDisplay: "User Stories",
+    excerpt: "How a polyamorous triad used SPICE to find like-minded connections and build a supportive community.",
+    path: "/blog/story-poly-family-journey",
+    readTime: "9 min read"
+  },
+  {
+    title: "Solo and Thriving: One Woman's Experience in the Lifestyle",
+    category: "stories",
+    categoryDisplay: "User Stories",
+    excerpt: "A single woman shares her experiences navigating the lifestyle world, finding respect, and building confidence.",
+    path: "/blog/story-solo-woman-lifestyle",
+    readTime: "10 min read"
+  },
+  {
+    title: "We Almost Gave Up—Then We Found the Right Community",
+    category: "stories",
+    categoryDisplay: "User Stories",
+    excerpt: "After several disappointing experiences, this couple nearly quit the lifestyle. Here's what changed everything.",
+    path: "/blog/story-almost-gave-up",
+    readTime: "11 min read"
+  },
+  {
+    title: "Long-Distance Lifestyle: Making It Work Across Miles",
+    category: "stories",
+    categoryDisplay: "User Stories",
+    excerpt: "How one couple maintains their lifestyle connection despite living in different cities. Creative solutions and honest challenges.",
+    path: "/blog/story-long-distance-lifestyle",
+    readTime: "9 min read"
+  },
 ];
 
 // Category metadata
