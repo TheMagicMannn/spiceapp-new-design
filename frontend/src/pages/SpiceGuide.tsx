@@ -232,7 +232,7 @@ const SpiceGuide = () => {
                   to="/quiz" 
                   className="inline-flex items-center justify-center px-8 py-3 bg-background/50 hover:bg-background/80 border border-border font-semibold rounded-full transition-all"
                 >
-                  Take the BDSM Quiz
+                  Explore Lifestyle Quizzes
                 </Link>
               </div>
             </div>
