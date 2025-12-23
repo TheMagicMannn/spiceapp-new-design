@@ -49,6 +49,10 @@ const routeNames: Record<string, string> = {
   "/start/etiquette": "Lifestyle Etiquette",
   "/start/consent-basics": "Consent Basics",
   "/start/beginner-faq": "Beginner FAQ",
+  "/academy": "SPICE Academy",
+  "/academy/modules": "Learning Modules",
+  "/academy/journeys": "Guided Journeys",
+  "/academy/consent": "Consent Modules",
 };
 
 const Breadcrumbs = () => {
