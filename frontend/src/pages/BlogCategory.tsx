@@ -98,6 +98,86 @@ const allBlogPosts = [
     path: "/blog/10-signs-ready-lifestyle",
     readTime: "8 min read"
   },
+  {
+    title: "Swinging 101: A Step-by-Step Guide for Curious Couples",
+    category: "swingers",
+    categoryDisplay: "Swingers",
+    excerpt: "Complete beginner's guide to swinging. Learn how to start the conversation, set rules, find swinger clubs and events, and prepare for your first experience.",
+    path: "/blog/swinging-101-beginners-guide",
+    readTime: "18 min read"
+  },
+  {
+    title: "The Biggest Mistakes New Swinging Couples Make",
+    category: "swingers",
+    categoryDisplay: "Swingers",
+    excerpt: "Real-talk lessons from experienced couples on common pitfalls like poor communication, rushing into play, ignoring jealousy triggers, and choosing the wrong first partners.",
+    path: "/blog/swinging-mistakes-avoid",
+    readTime: "14 min read"
+  },
+  {
+    title: "How Swinging Strengthened Our Marriage: Real Stories",
+    category: "swingers",
+    categoryDisplay: "Swingers",
+    excerpt: "Heartfelt testimonials and insights on how the lifestyle improved trust, communication, sexual satisfaction, and emotional intimacy.",
+    path: "/blog/swinging-strengthened-marriage",
+    readTime: "12 min read"
+  },
+  {
+    title: "Finding Your Perfect Match: Best Ways to Meet Swingers in 2025",
+    category: "swingers",
+    categoryDisplay: "Swingers",
+    excerpt: "An up-to-date comparison of clubs, lifestyle resorts, apps, websites, house parties, and events—plus tips for creating a standout profile.",
+    path: "/blog/swinging-finding-couples",
+    readTime: "15 min read"
+  },
+  {
+    title: "Jealousy in the Lifestyle: Proven Tools to Turn It Into Excitement",
+    category: "swingers",
+    categoryDisplay: "Swingers",
+    excerpt: "Practical strategies including pre-play check-ins, aftercare rituals, reclamation techniques, and how to use compersion as a superpower.",
+    path: "/blog/swinging-jealousy-tools",
+    readTime: "13 min read"
+  },
+  {
+    title: "Soft Swap vs. Full Swap: How to Decide What's Right for You",
+    category: "swingers",
+    categoryDisplay: "Swingers",
+    excerpt: "A non-judgmental breakdown of the differences, pros/cons, how to communicate preferences, and signs you're ready to level up.",
+    path: "/blog/swinging-soft-full-swap",
+    readTime: "11 min read"
+  },
+  {
+    title: "Swinging Etiquette: The Unwritten Rules Every Couple Needs to Know",
+    category: "swingers",
+    categoryDisplay: "Swingers",
+    excerpt: "Essential dos and don'ts at clubs, parties, and dates—covering consent, rejection, hygiene, phone use, and being a good guest.",
+    path: "/blog/swinging-etiquette-rules",
+    readTime: "13 min read"
+  },
+  {
+    title: "Planning the Ultimate Swinger Vacation: Top Resorts & Cruises 2025-2026",
+    category: "swingers",
+    categoryDisplay: "Swingers",
+    excerpt: "Reviews and insider tips on places like Desire, Hedonism II, Bliss Cruise, and emerging hotspots, plus budgeting and booking advice.",
+    path: "/blog/swinging-vacation-guide",
+    readTime: "20 min read"
+  },
+  {
+    title: "Health, Safety & Consent: Non-Negotiables for Responsible Swinging",
+    category: "swingers",
+    categoryDisplay: "Swingers",
+    excerpt: "In-depth guide on STI testing protocols, safer sex practices, boundary setting, sober consent, and how to handle 'no' gracefully.",
+    path: "/blog/swinging-health-safety",
+    readTime: "16 min read"
+  },
+  {
+    title: "Keeping the Spark Alive: Advanced Tips from Veteran Swingers",
+    category: "swingers",
+    categoryDisplay: "Swingers",
+    excerpt: "Ideas for long-term couples to avoid burnout—new fantasies, role-playing within the lifestyle, solo dates, themed events, and balancing swinging with vanilla life.",
+    path: "/blog/swinging-keeping-spark",
+    readTime: "15 min read"
+  },
   // Relationships Articles
   {
     title: "How to Talk to Your Partner About Opening Your Relationship",
