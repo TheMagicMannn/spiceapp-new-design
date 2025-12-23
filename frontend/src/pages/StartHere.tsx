@@ -54,8 +54,8 @@ const StartHere = () => {
     {
       icon: HelpCircle,
       title: "Beginner FAQ",
-      description: "Answers to the most common questions newcomers ask about swinging, clubs, online dating, and more.",
-      link: "/faq",
+      description: "Answers to the most common questions newcomers ask about swinging, BDSM, ENM, polyamory, and hotwifing for singles and couples.",
+      link: "/start/beginner-faq",
       color: "amber"
     }
   ];
