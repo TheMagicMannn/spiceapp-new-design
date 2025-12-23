@@ -12,6 +12,7 @@ import Team from "./pages/Team";
 import Contact from "./pages/Contact";
 import BDSMQuiz from "./pages/BDSMQuiz";
 import HotwifingQuiz from "./pages/HotwifingQuiz";
+import SwingingQuiz from "./pages/SwingingQuiz";
 import QuizLanding from "./pages/QuizLanding";
 import FAQ from "./pages/FAQ";
 import SpiceGuide from "./pages/SpiceGuide";
