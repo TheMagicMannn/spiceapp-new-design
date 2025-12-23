@@ -1310,7 +1310,7 @@ const SwingersGuide = () => {
                     <div className="bg-blue-500/10 border border-blue-500/30 rounded-xl p-6 my-6">
                       <p className="text-sm text-foreground flex items-start gap-3">
                         <AlertCircle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
-                        <span>Read the full breakdown in <Link to="/blog/swinging-mistakes" className="text-primary hover:underline">Common Mistakes New Swingers Make (And How to Avoid Them)</Link>.</span>
+                        <span>Read the full breakdown in <Link to="/blog/swinging-mistakes-avoid" className="text-primary hover:underline">Common Mistakes New Swingers Make (And How to Avoid Them)</Link>.</span>
                       </p>
                     </div>
                   </div>
