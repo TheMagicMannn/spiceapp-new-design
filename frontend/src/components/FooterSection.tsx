@@ -118,6 +118,12 @@ const FooterSection = () => {
               <li><a href="https://facebook.com/spiceapp" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors flex items-center gap-2">
                 <Facebook className="w-4 h-4" /> Facebook
               </a></li>
+              <li><a href="https://reddit.com/r/spiceapp" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors flex items-center gap-2">
+                <RedditIcon className="w-4 h-4" /> Reddit
+              </a></li>
+              <li><a href="https://youtube.com/@spiceapp" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors flex items-center gap-2">
+                <Youtube className="w-4 h-4" /> YouTube
+              </a></li>
             </ul>
           </div>
         </div>
