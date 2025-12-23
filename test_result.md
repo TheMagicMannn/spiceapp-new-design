@@ -255,7 +255,56 @@ test_plan:
   test_all: false
   test_priority: "high_first"
 
+  - task: "Quiz Landing Page Routing and SPICE Guide Updates"
+    implemented: true
+    working: "NA"
+    file: "frontend/src/pages/SpiceGuide.tsx, frontend/src/App.tsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: true
+    status_history:
+      - working: "NA"
+        agent: "main"
+        comment: |
+          IMPLEMENTED:
+          1. Updated SpiceGuide.tsx: Changed CTA button text from "Take the BDSM Quiz" to "Explore Lifestyle Quizzes" (line 235)
+          2. Updated App.tsx routing:
+             - Changed /quiz route from BDSMQuiz to QuizLanding (hub page)
+             - Added /quiz/bdsm route for BDSMQuiz component
+             - Kept /quiz/hotwifing route unchanged
+          3. Quiz Landing page now serves as central hub displaying both BDSM and Hotwifing quizzes
+          
+          EXPECTED BEHAVIOR:
+          - SPICE Guide page shows "Explore Lifestyle Quizzes" button instead of "Take the BDSM Quiz"
+          - Clicking "Explore Lifestyle Quizzes" navigates to /quiz (QuizLanding page)
+          - QuizLanding page displays both quiz options with proper cards and descriptions
+          - Users can click "Take the Quiz" buttons to navigate to specific quizzes:
+            * BDSM & Kink Quiz → /quiz/bdsm
+            * Hotwifing Readiness Quiz → /quiz/hotwifing
+
 agent_communication:
+  - agent: "main"
+    message: |
+      QUIZ ROUTING UPDATE COMPLETE:
+      
+      ✅ Changes Made:
+      1. SpiceGuide.tsx: Button text changed from "Take the BDSM Quiz" → "Explore Lifestyle Quizzes"
+      2. App.tsx routing updated:
+         - /quiz → QuizLanding (was BDSMQuiz)
+         - /quiz/bdsm → BDSMQuiz (new route)
+         - /quiz/hotwifing → HotwifingQuiz (unchanged)
+      
+      🎯 User Journey:
+      SPICE Guide → "Explore Lifestyle Quizzes" button → Quiz Landing Page → Choose Quiz (BDSM or Hotwifing)
+      
+      📋 Testing Needed:
+      - Verify SPICE Guide shows "Explore Lifestyle Quizzes" button
+      - Verify /quiz route shows QuizLanding page with both quiz cards
+      - Verify BDSM quiz card links to /quiz/bdsm and loads correctly
+      - Verify Hotwifing quiz card links to /quiz/hotwifing and loads correctly
+      - Verify breadcrumbs navigation works properly
+      
+      Frontend and backend services restarted successfully.
   - agent: "main"
     message: |
       SEO Implementation Phase 1 Complete:
