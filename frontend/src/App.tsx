@@ -184,6 +184,7 @@ const App = () => (
             <Route path="/start/consent-basics" element={<ConsentBasics />} />
             <Route path="/start/etiquette" element={<LifestyleEtiquette />} />
             <Route path="/start/myths" element={<CommonMyths />} />
+            <Route path="/start/beginner-faq" element={<BeginnerLifestyleFAQ />} />
             
             {/* Academy */}
             <Route path="/academy" element={<Academy />} />
