@@ -65,7 +65,7 @@ const guideCategories = [
 
 const quickLinks = [
   { title: "Start Here", description: "Brand new? Begin your journey", path: "/start", icon: Sparkles },
-  { title: "BDSM Quiz", description: "Discover your kink profile", path: "/quiz", icon: Brain },
+  { title: "Lifestyle Quizzes", description: "Discover your preferences", path: "/quiz", icon: Brain },
   { title: "Blog", description: "In-depth articles & stories", path: "/blog", icon: MessageCircle },
 ];
 
