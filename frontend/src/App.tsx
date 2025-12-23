@@ -67,6 +67,16 @@ import BlogHotwifingCreativeDates from "./pages/BlogHotwifingCreativeDates";
 import BlogHotwifingYearReview from "./pages/BlogHotwifingYearReview";
 import BlogHotwifingToysKink from "./pages/BlogHotwifingToysKink";
 import BlogHotwifingCommunicationMarriage from "./pages/BlogHotwifingCommunicationMarriage";
+import BlogSwinging101 from "./pages/BlogSwinging101";
+import BlogSwingingMistakes from "./pages/BlogSwingingMistakes";
+import BlogSwingingMarriage from "./pages/BlogSwingingMarriage";
+import BlogSwingingFindingCouples from "./pages/BlogSwingingFindingCouples";
+import BlogSwingingJealousy from "./pages/BlogSwingingJealousy";
+import BlogSwingingSoftFullSwap from "./pages/BlogSwingingSoftFullSwap";
+import BlogSwingingEtiquette from "./pages/BlogSwingingEtiquette";
+import BlogSwingingVacation from "./pages/BlogSwingingVacation";
+import BlogSwingingHealthSafety from "./pages/BlogSwingingHealthSafety";
+import BlogSwingingKeepingSpark from "./pages/BlogSwingingKeepingSpark";
 import BlogCategory from "./pages/BlogCategory";
 
 const queryClient = new QueryClient();
@@ -173,6 +183,18 @@ const App = () => (
             <Route path="/blog/hotwifing-year-review" element={<BlogHotwifingYearReview />} />
             <Route path="/blog/hotwifing-toys-kink" element={<BlogHotwifingToysKink />} />
             <Route path="/blog/hotwifing-communication-marriage" element={<BlogHotwifingCommunicationMarriage />} />
+            
+            {/* Swinging Blog Articles */}
+            <Route path="/blog/swinging-101-beginners-guide" element={<BlogSwinging101 />} />
+            <Route path="/blog/swinging-mistakes-avoid" element={<BlogSwingingMistakes />} />
+            <Route path="/blog/swinging-strengthened-marriage" element={<BlogSwingingMarriage />} />
+            <Route path="/blog/swinging-finding-couples" element={<BlogSwingingFindingCouples />} />
+            <Route path="/blog/swinging-jealousy-tools" element={<BlogSwingingJealousy />} />
+            <Route path="/blog/swinging-soft-full-swap" element={<BlogSwingingSoftFullSwap />} />
+            <Route path="/blog/swinging-etiquette-rules" element={<BlogSwingingEtiquette />} />
+            <Route path="/blog/swinging-vacation-guide" element={<BlogSwingingVacation />} />
+            <Route path="/blog/swinging-health-safety" element={<BlogSwingingHealthSafety />} />
+            <Route path="/blog/swinging-keeping-spark" element={<BlogSwingingKeepingSpark />} />
             
             {/* Blog Category Pages (must come after specific article routes) */}
             <Route path="/blog/:category" element={<BlogCategory />} />
