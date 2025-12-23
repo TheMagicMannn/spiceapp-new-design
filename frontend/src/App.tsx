@@ -170,6 +170,18 @@ const App = () => (
             <Route path="/blog/talk-partner-opening-relationship" element={<BlogTalkToPartner />} />
             <Route path="/blog/bdsm-safety-checklist" element={<BlogBDSMSafety />} />
             
+            {/* Hotwifing Blog Articles */}
+            <Route path="/blog/hotwifing-beginners-guide" element={<BlogHotwifingBeginnersGuide />} />
+            <Route path="/blog/hotwifing-jealousy" element={<BlogHotwifingJealousy />} />
+            <Route path="/blog/hotwifing-first-date" element={<BlogHotwifingFirstDate />} />
+            <Route path="/blog/hotwifing-finding-bull" element={<BlogHotwifingFindingBull />} />
+            <Route path="/blog/hotwifing-reclamation-sex" element={<BlogHotwifingReclamationSex />} />
+            <Route path="/blog/hotwifing-fantasy-reality" element={<BlogHotwifingFantasyReality />} />
+            <Route path="/blog/hotwifing-creative-dates" element={<BlogHotwifingCreativeDates />} />
+            <Route path="/blog/hotwifing-year-review" element={<BlogHotwifingYearReview />} />
+            <Route path="/blog/hotwifing-toys-kink" element={<BlogHotwifingToysKink />} />
+            <Route path="/blog/hotwifing-communication-marriage" element={<BlogHotwifingCommunicationMarriage />} />
+            
             {/* City Pages - Additional */}
             <Route path="/locations/chicago-il" element={<CityPage />} />
             <Route path="/locations/san-francisco-ca" element={<CityPage />} />
