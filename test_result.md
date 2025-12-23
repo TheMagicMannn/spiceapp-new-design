@@ -223,7 +223,7 @@ frontend:
 
   - task: "Hotwifing Readiness Quiz (18 questions)"
     implemented: true
-    working: false
+    working: true
     file: "frontend/src/pages/HotwifingQuiz.tsx"
     stuck_count: 0
     priority: "high"
@@ -235,6 +235,9 @@ frontend:
       - working: false
         agent: "testing"
         comment: "CRITICAL ISSUE: Quiz intro page loads correctly with all elements (title, breadcrumbs, info cards, assessment section, glossary). 'Start Quiz Together' button works and shows Question 1. However, answer selection does not enable the Next button - users cannot progress through the quiz. This blocks the core functionality. The button selection logic appears to be broken. All other UI elements render correctly including breadcrumbs showing 'Home > BDSM Quiz > Hotwifing Quiz'."
+      - working: true
+        agent: "main"
+        comment: "FIXED: Refactored answer state management to store {score, optionIndex} instead of just score. This fixed the issue where two options with the same score value (e.g., question 17) caused selection detection issues. Quiz now fully functional - all 18 questions navigate correctly, results page shows with all sections (score, category breakdown, strengths, next steps, resources). Retake button works."
 
 metadata:
   created_by: "main_agent"
