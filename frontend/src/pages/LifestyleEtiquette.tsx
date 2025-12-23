@@ -315,6 +315,303 @@ const LifestyleEtiquette = () => {
               </div>
             </section>
 
+            <section id="club-etiquette" className="mb-16">
+              <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8 md:p-12">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="p-2 bg-purple-500/10 rounded-lg">
+                    <Users className="w-6 h-6 text-purple-500" />
+                  </div>
+                  <h2 className="text-2xl md:text-3xl font-bold">Lifestyle Club Etiquette</h2>
+                </div>
+                
+                <div className="space-y-6 text-muted-foreground">
+                  <p className="text-lg leading-relaxed">
+                    Lifestyle clubs have their own culture and rules. Whether it's your first visit or your hundredth, these guidelines ensure everyone has a great time.
+                  </p>
+
+                  <div className="space-y-4">
+                    <div className="bg-background/50 border border-purple-500/30 rounded-lg p-6">
+                      <h3 className="font-bold text-lg mb-3 text-foreground">Before You Arrive</h3>
+                      <ul className="text-sm space-y-2 ml-4">
+                        <li>• <strong>Research the club</strong> - Know their dress code, rules, and theme nights</li>
+                        <li>• <strong>Make reservations</strong> if required (many clubs require advance booking)</li>
+                        <li>• <strong>Complete membership/verification</strong> - Most clubs require ID and couples verification</li>
+                        <li>• <strong>Discuss expectations</strong> with your partner beforehand - what are you hoping for?</li>
+                        <li>• <strong>Pack essentials</strong> - Condoms, lube, towel, change of underwear, breath mints</li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-background/50 border border-purple-500/30 rounded-lg p-6">
+                      <h3 className="font-bold text-lg mb-3 text-foreground">Club-Specific Rules</h3>
+                      <ul className="text-sm space-y-2 ml-4">
+                        <li>• <strong>No phones in play areas</strong> - Store them in lockers. Zero tolerance policy</li>
+                        <li>• <strong>Towels required</strong> - Always sit on a towel on furniture and beds</li>
+                        <li>• <strong>Clean up after yourself</strong> - Dispose of condoms, wipe down surfaces</li>
+                        <li>• <strong>Use the facilities</strong> - Most clubs have showers; use them between encounters</li>
+                        <li>• <strong>Lock your valuables</strong> - Use the locker system provided</li>
+                        <li>• <strong>Tip staff appropriately</strong> - Many clubs rely on tips for their staff</li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-background/50 border border-purple-500/30 rounded-lg p-6">
+                      <h3 className="font-bold text-lg mb-3 text-foreground">Navigating Common Areas</h3>
+                      <ul className="text-sm space-y-2 ml-4">
+                        <li>• <strong>Dance floor</strong> - Touching requires consent, even while dancing</li>
+                        <li>• <strong>Bar/social areas</strong> - Great for meeting people; be sociable, not predatory</li>
+                        <li>• <strong>Play rooms</strong> - Don't interrupt scenes; watch quietly if invited or move on</li>
+                        <li>• <strong>Private rooms</strong> - Respect closed doors; knock and wait if door is ajar</li>
+                        <li>• <strong>Couples-only sections</strong> - Respect these boundaries if you're single</li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-background/50 border border-purple-500/30 rounded-lg p-6">
+                      <h3 className="font-bold text-lg mb-3 text-foreground">Watching vs. Participating</h3>
+                      <ul className="text-sm space-y-2 ml-4">
+                        <li>• <strong>Watching is often OK</strong> in open areas - but don't hover or stare aggressively</li>
+                        <li>• <strong>Keep respectful distance</strong> - Give couples space unless invited closer</li>
+                        <li>• <strong>Don't touch yourself</strong> while watching unless in designated areas</li>
+                        <li>• <strong>If you want to join</strong> - Make eye contact, wait for invitation, or ask verbally</li>
+                        <li>• <strong>Take a polite no</strong> gracefully and move on without lingering</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="bdsm-etiquette" className="mb-16">
+              <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8 md:p-12">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="p-2 bg-red-500/10 rounded-lg">
+                    <Heart className="w-6 h-6 text-red-500" />
+                  </div>
+                  <h2 className="text-2xl md:text-3xl font-bold">BDSM Event Etiquette</h2>
+                </div>
+                
+                <div className="space-y-6 text-muted-foreground">
+                  <p className="text-lg leading-relaxed">
+                    BDSM events, dungeons, and play parties have additional protocols beyond standard lifestyle etiquette. Respect these rules to keep everyone safe.
+                  </p>
+
+                  <div className="space-y-4">
+                    <div className="bg-background/50 border border-red-500/30 rounded-lg p-6">
+                      <h3 className="font-bold text-lg mb-3 text-foreground">Pre-Scene Negotiation</h3>
+                      <ul className="text-sm space-y-2 ml-4">
+                        <li>• <strong>Always negotiate before playing</strong> - Discuss limits, safe words, and activities</li>
+                        <li>• <strong>Use clear safe words</strong> - Red/Yellow/Green system or agree on specific words</li>
+                        <li>• <strong>Disclose health conditions</strong> that might affect play (asthma, heart issues, etc.)</li>
+                        <li>• <strong>Discuss aftercare needs</strong> - What do they need when the scene ends?</li>
+                        <li>• <strong>Set time limits</strong> if appropriate, especially for bondage or intense scenes</li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-background/50 border border-red-500/30 rounded-lg p-6">
+                      <h3 className="font-bold text-lg mb-3 text-foreground">During Scenes</h3>
+                      <ul className="text-sm space-y-2 ml-4">
+                        <li>• <strong>NEVER interrupt a scene</strong> unless you see a genuine safety emergency</li>
+                        <li>• <strong>Don't talk loudly</strong> near ongoing scenes - maintain the atmosphere</li>
+                        <li>• <strong>Keep safe distance</strong> - Impact play needs space; swinging floggers can hit bystanders</li>
+                        <li>• <strong>Don't touch equipment</strong> without permission from the owner</li>
+                        <li>• <strong>If invited to watch</strong> - Stay quiet, don't offer commentary or suggestions</li>
+                        <li>• <strong>Respect the dynamic</strong> - Don't interfere with Dom/sub relationships</li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-background/50 border border-red-500/30 rounded-lg p-6">
+                      <h3 className="font-bold text-lg mb-3 text-foreground">Equipment & Space</h3>
+                      <ul className="text-sm space-y-2 ml-4">
+                        <li>• <strong>Wipe down equipment</strong> after use with provided sanitizer</li>
+                        <li>• <strong>Don't use equipment</strong> you're not trained on (St. Andrew's Cross, suspension rigs)</li>
+                        <li>• <strong>Bring your own toys</strong> when possible - don't assume community toys are available</li>
+                        <li>• <strong>Time limits on popular equipment</strong> - Don't hog the cross for hours</li>
+                        <li>• <strong>Report damaged equipment</strong> to dungeon monitors immediately</li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-background/50 border border-red-500/30 rounded-lg p-6">
+                      <h3 className="font-bold text-lg mb-3 text-foreground">Dungeon Monitors (DMs)</h3>
+                      <ul className="text-sm space-y-2 ml-4">
+                        <li>• <strong>DMs are there for safety</strong> - Respect their authority</li>
+                        <li>• <strong>If you see something concerning</strong> - Tell a DM, don't intervene yourself</li>
+                        <li>• <strong>DMs can stop scenes</strong> if they believe there's a safety issue</li>
+                        <li>• <strong>Ask DMs questions</strong> - They're happy to help newcomers navigate</li>
+                        <li>• <strong>Follow DM instructions</strong> immediately and without argument</li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-background/50 border border-red-500/30 rounded-lg p-6">
+                      <h3 className="font-bold text-lg mb-3 text-foreground">Aftercare at Events</h3>
+                      <ul className="text-sm space-y-2 ml-4">
+                        <li>• <strong>Aftercare areas exist</strong> - Use them; don't rush your partner out</li>
+                        <li>• <strong>Have water and snacks</strong> ready for after intense scenes</li>
+                        <li>• <strong>Don't abandon your partner</strong> after a scene to play with someone else</li>
+                        <li>• <strong>Check in the next day</strong> - Sub drop can hit 24-48 hours later</li>
+                        <li>• <strong>Debrief the scene</strong> - What worked? What didn't? How do you both feel?</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="enm-etiquette" className="mb-16">
+              <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8 md:p-12">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="p-2 bg-pink-500/10 rounded-lg">
+                    <Users className="w-6 h-6 text-pink-500" />
+                  </div>
+                  <h2 className="text-2xl md:text-3xl font-bold">ENM/Poly Etiquette</h2>
+                </div>
+                
+                <div className="space-y-6 text-muted-foreground">
+                  <p className="text-lg leading-relaxed">
+                    Ethical non-monogamy and polyamory involve multiple relationships. These etiquette guidelines help maintain healthy dynamics with all partners.
+                  </p>
+
+                  <div className="space-y-4">
+                    <div className="bg-background/50 border border-pink-500/30 rounded-lg p-6">
+                      <h3 className="font-bold text-lg mb-3 text-foreground">Respecting Existing Relationships</h3>
+                      <ul className="text-sm space-y-2 ml-4">
+                        <li>• <strong>Ask about relationship structure</strong> - Hierarchical? Non-hierarchical? Rules?</li>
+                        <li>• <strong>Respect primary/nesting partners</strong> - Don't try to become "more important"</li>
+                        <li>• <strong>Don't bad-mouth metamours</strong> (your partner's other partners)</li>
+                        <li>• <strong>Understand your role</strong> - Are you a secondary? A casual partner? Be clear</li>
+                        <li>• <strong>Don't issue ultimatums</strong> - "It's me or them" violates ENM ethics</li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-background/50 border border-pink-500/30 rounded-lg p-6">
+                      <h3 className="font-bold text-lg mb-3 text-foreground">Communication Standards</h3>
+                      <ul className="text-sm space-y-2 ml-4">
+                        <li>• <strong>Be honest about your situation</strong> - Are you married? Do you have other partners?</li>
+                        <li>• <strong>Communicate scheduling needs</strong> - Calendars matter in poly</li>
+                        <li>• <strong>Don't "forget" to mention partners</strong> - This is deception</li>
+                        <li>• <strong>Share relevant health info</strong> - STI status, new partners, testing schedules</li>
+                        <li>• <strong>Discuss relationship escalation</strong> - Don't assume relationships will progress</li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-background/50 border border-pink-500/30 rounded-lg p-6">
+                      <h3 className="font-bold text-lg mb-3 text-foreground">Time & Resource Management</h3>
+                      <ul className="text-sm space-y-2 ml-4">
+                        <li>• <strong>Be reliable</strong> - If you commit to time, show up</li>
+                        <li>• <strong>Don't over-promise availability</strong> - Be realistic about your capacity</li>
+                        <li>• <strong>Respect date nights</strong> - Don't text constantly when they're with another partner</li>
+                        <li>• <strong>Plan ahead</strong> - Last-minute requests often conflict with other relationships</li>
+                        <li>• <strong>Be understanding about cancellations</strong> - Life happens in poly networks</li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-background/50 border border-pink-500/30 rounded-lg p-6">
+                      <h3 className="font-bold text-lg mb-3 text-foreground">Metamour Relations</h3>
+                      <ul className="text-sm space-y-2 ml-4">
+                        <li>• <strong>Kitchen table vs. parallel poly</strong> - Know which they practice</li>
+                        <li>• <strong>Introduce yourself</strong> if appropriate - It reduces anxiety for everyone</li>
+                        <li>• <strong>Don't compete</strong> with metamours - You each offer different things</li>
+                        <li>• <strong>Be kind</strong> even if you're not close - You share someone you both care about</li>
+                        <li>• <strong>Handle jealousy maturely</strong> - It's normal but shouldn't drive poor behavior</li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-background/50 border border-pink-500/30 rounded-lg p-6">
+                      <h3 className="font-bold text-lg mb-3 text-foreground">ENM-Specific Don'ts</h3>
+                      <ul className="text-sm space-y-2 ml-4">
+                        <li>• <strong>Don't "cowboy/cowgirl"</strong> - Trying to pull someone out of their poly structure</li>
+                        <li>• <strong>Don't hide relationships</strong> - Secrecy isn't ethical non-monogamy</li>
+                        <li>• <strong>Don't veto abuse</strong> - Using veto power to control rather than protect</li>
+                        <li>• <strong>Don't date someone hoping</strong> they'll "become monogamous for you"</li>
+                        <li>• <strong>Don't use NRE</strong> (New Relationship Energy) as an excuse to neglect existing partners</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section id="red-flags" className="mb-16">
+              <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8 md:p-12">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="p-2 bg-red-500/10 rounded-lg">
+                    <Shield className="w-6 h-6 text-red-500" />
+                  </div>
+                  <h2 className="text-2xl md:text-3xl font-bold">Behavior Red Flags</h2>
+                </div>
+                
+                <div className="space-y-6 text-muted-foreground">
+                  <p className="text-lg leading-relaxed">
+                    Learning to recognize red flags protects you and the community. If you see these behaviors, proceed with extreme caution or disengage entirely.
+                  </p>
+
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-6">
+                      <h3 className="font-bold text-red-400 mb-4">🚩 Consent Red Flags</h3>
+                      <ul className="space-y-2 text-sm">
+                        <li>• Doesn't take "no" gracefully - pouts, argues, or asks repeatedly</li>
+                        <li>• Touches without asking first</li>
+                        <li>• Pushes boundaries after they've been stated</li>
+                        <li>• Gets angry when rejected</li>
+                        <li>• Tries to negotiate safer sex practices away</li>
+                        <li>• Ignores or "forgets" previously discussed limits</li>
+                        <li>• Uses intoxication as an excuse for bad behavior</li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-6">
+                      <h3 className="font-bold text-red-400 mb-4">🚩 Communication Red Flags</h3>
+                      <ul className="space-y-2 text-sm">
+                        <li>• Refuses to discuss boundaries or dismisses the topic</li>
+                        <li>• Gets defensive when you ask questions</li>
+                        <li>• Contradicts themselves or changes stories</li>
+                        <li>• Won't video verify or share basic info</li>
+                        <li>• Pressures for immediate meetings</li>
+                        <li>• Gets aggressive in messages when challenged</li>
+                        <li>• Love-bombs excessively early on</li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-6">
+                      <h3 className="font-bold text-red-400 mb-4">🚩 Relationship Red Flags</h3>
+                      <ul className="space-y-2 text-sm">
+                        <li>• Partner doesn't know about their lifestyle activities</li>
+                        <li>• Tries to isolate you from their other relationships</li>
+                        <li>• Bad-mouths all their exes or previous play partners</li>
+                        <li>• Claims everyone in the community is "crazy" or "drama"</li>
+                        <li>• Won't introduce you to their partner(s)</li>
+                        <li>• Has a reputation you keep hearing about from others</li>
+                        <li>• Tries to get you to break your relationship rules</li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-6">
+                      <h3 className="font-bold text-red-400 mb-4">🚩 Event/Party Red Flags</h3>
+                      <ul className="space-y-2 text-sm">
+                        <li>• Hovers around play areas without playing or socializing</li>
+                        <li>• Follows people around after being turned down</li>
+                        <li>• Gets too drunk/high to function appropriately</li>
+                        <li>• Makes comments about others' bodies or activities</li>
+                        <li>• Tries to sneak phones into play areas</li>
+                        <li>• Gossips about other attendees</li>
+                        <li>• Ignores dress codes or house rules</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-6">
+                    <h3 className="font-bold text-green-400 mb-3">✓ What To Do If You See Red Flags</h3>
+                    <ul className="text-sm space-y-2">
+                      <li>• <strong>Trust your gut</strong> - If something feels wrong, it probably is</li>
+                      <li>• <strong>Disengage politely</strong> - "I'm not feeling a connection, but nice to meet you"</li>
+                      <li>• <strong>Don't feel obligated</strong> to explain or justify your decision</li>
+                      <li>• <strong>Tell event organizers</strong> if you witness concerning behavior</li>
+                      <li>• <strong>Warn others</strong> appropriately (without defamation - stick to facts)</li>
+                      <li>• <strong>Report on platforms</strong> like SPICE to protect the community</li>
+                      <li>• <strong>Leave if you feel unsafe</strong> - Your safety trumps politeness</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+
             <section id="dos-donts" className="mb-16">
               <h2 className="text-2xl md:text-3xl font-bold mb-8">Quick Reference: Do's & Don'ts</h2>
               
