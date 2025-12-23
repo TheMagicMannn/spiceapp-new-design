@@ -75,6 +75,29 @@ const quizzes = [
       "Define boundaries together",
       "Get readiness insights"
     ]
+  },
+  {
+    id: "enm",
+    title: "ENM Compatibility Quiz",
+    subtitle: "Are You Ready for Ethical Non-Monogamy?",
+    description: "Discover if ENM and polyamory align with your values, communication style, and emotional readiness. Get personalized compatibility insights.",
+    path: "/quiz/enm",
+    icon: Sparkles,
+    color: "from-purple-500/20 via-pink-500/20 to-purple-500/20",
+    borderColor: "border-purple-500/30",
+    iconColor: "text-purple-500",
+    buttonColor: "from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600",
+    stats: {
+      questions: 20,
+      time: "10-15 min",
+      type: "All"
+    },
+    features: [
+      "Assess jealousy & security",
+      "Evaluate communication skills",
+      "Understand autonomy needs",
+      "Get compatibility score"
+    ]
   }
 ];
 
