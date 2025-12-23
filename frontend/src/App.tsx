@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
 import BDSMQuiz from "./pages/BDSMQuiz";
+import HotwifingQuiz from "./pages/HotwifingQuiz";
 import FAQ from "./pages/FAQ";
 import SpiceGuide from "./pages/SpiceGuide";
 import NewcomersGuide from "./pages/NewcomersGuide";
