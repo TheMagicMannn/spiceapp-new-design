@@ -961,7 +961,7 @@ const SwingersGuide = () => {
                     <div className="bg-primary/10 border border-primary/30 rounded-xl p-6 mt-6">
                       <h3 className="text-xl font-semibold text-foreground mb-4">The Golden Rule: No Means No</h3>
                       <p className="text-sm leading-relaxed">
-                        This cannot be overstated. If someone says no, you stop immediately. You don't ask "why?" or "are you sure?" You respect it, smile, and say "no problem!" Anyone who doesn't respect this will quickly earn a bad reputation and be excluded from events. The lifestyle community is small and word spreads fast. Learn more in our <Link to="/blog/swinging-etiquette" className="text-primary hover:underline">Swinging Etiquette Guide</Link>.
+                        This cannot be overstated. If someone says no, you stop immediately. You don't ask "why?" or "are you sure?" You respect it, smile, and say "no problem!" Anyone who doesn't respect this will quickly earn a bad reputation and be excluded from events. The lifestyle community is small and word spreads fast. Learn more in our <Link to="/blog/swinging-etiquette-rules" className="text-primary hover:underline">Swinging Etiquette Guide</Link>.
                       </p>
                     </div>
                   </div>
