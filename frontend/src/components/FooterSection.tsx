@@ -49,7 +49,7 @@ const FooterSection = () => {
             <h4 className="font-semibold mb-4 text-primary">New to the Lifestyle?</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li><Link to="/guide/newcomers" className="hover:text-foreground transition-colors">Start Here</Link></li>
-              <li><Link to="/lifestyle/swingers-guide" className="hover:text-foreground transition-colors">Lifestyle Guides</Link></li>
+              <li><Link to="/lifestyle" className="hover:text-foreground transition-colors">Lifestyle Guides</Link></li>
               <li><Link to="/academy" className="hover:text-foreground transition-colors">Academy</Link></li>
               <li><Link to="/start/consent-basics" className="hover:text-foreground transition-colors">Consent Basics</Link></li>
               <li><Link to="/faq" className="hover:text-foreground transition-colors">Beginner FAQ</Link></li>
