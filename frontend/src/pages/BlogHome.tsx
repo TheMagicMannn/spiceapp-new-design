@@ -7,13 +7,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 const BlogHome = () => {
   const categories = [
-    { name: "Swingers", path: "/blog/swingers", description: "Swinging lifestyle tips and stories", count: 12 },
-    { name: "Hotwifing", path: "/blog/hotwifing", description: "Hotwife and stag/vixen guides", count: 8 },
-    { name: "BDSM & Kink", path: "/blog/bdsm", description: "Kink education and safety", count: 15 },
-    { name: "ENM & Poly", path: "/blog/enm", description: "Non-monogamy insights", count: 10 },
-    { name: "Consent & Safety", path: "/blog/consent", description: "Safe practices and boundaries", count: 9 },
-    { name: "Travel Stories", path: "/blog/travel", description: "Lifestyle destinations", count: 7 },
-    { name: "Relationships", path: "/blog/relationships", description: "Communication and intimacy", count: 11 },
+    { name: "Swingers", path: "/blog/swingers", description: "Swinging lifestyle tips and stories", count: 1 },
+    { name: "Hotwifing", path: "/blog/hotwifing", description: "Hotwife and stag/vixen guides", count: 10 },
+    { name: "BDSM & Kink", path: "/blog/bdsm", description: "Kink education and safety", count: 1 },
+    { name: "ENM & Poly", path: "/blog/enm", description: "Non-monogamy insights", count: 0 },
+    { name: "Consent & Safety", path: "/blog/consent", description: "Safe practices and boundaries", count: 0 },
+    { name: "Travel Stories", path: "/blog/travel", description: "Lifestyle destinations", count: 0 },
+    { name: "Relationships", path: "/blog/relationships", description: "Communication and intimacy", count: 1 },
   ];
 
   const featuredPosts = [
