@@ -30,6 +30,7 @@ import Comparison3Fun from "./pages/Comparison3Fun";
 import ComparisonSDC from "./pages/ComparisonSDC";
 import HotwifingGuide from "./pages/HotwifingGuide";
 import SwingersGuide from "./pages/SwingersGuide";
+import BDSMGuide from "./pages/BDSMGuide";
 import TravelMiami from "./pages/TravelMiami";
 import BlogHome from "./pages/BlogHome";
 import AppComparisons from "./pages/AppComparisons";
