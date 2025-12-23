@@ -13,6 +13,7 @@ import Contact from "./pages/Contact";
 import BDSMQuiz from "./pages/BDSMQuiz";
 import HotwifingQuiz from "./pages/HotwifingQuiz";
 import SwingingQuiz from "./pages/SwingingQuiz";
+import ENMQuiz from "./pages/ENMQuiz";
 import QuizLanding from "./pages/QuizLanding";
 import FAQ from "./pages/FAQ";
 import SpiceGuide from "./pages/SpiceGuide";
@@ -137,6 +138,7 @@ const App = () => (
             <Route path="/quiz/bdsm" element={<BDSMQuiz />} />
             <Route path="/quiz/hotwifing" element={<HotwifingQuiz />} />
             <Route path="/quiz/swinging" element={<SwingingQuiz />} />
+            <Route path="/quiz/enm" element={<ENMQuiz />} />
             <Route path="/faq" element={<FAQ />} />
             <Route path="/guide" element={<SpiceGuide />} />
             <Route path="/guide/newcomers" element={<NewcomersGuide />} />
