@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import SEO from "@/components/SEO";
 import Header from "@/components/Header";
@@ -29,6 +29,11 @@ const SwingingQuiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<{ [key: number]: { score: number; optionIndex: number } }>({});
   const [showResults, setShowResults] = useState(false);
+
+  // Scroll to top when quiz starts, question changes, or results shown
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [started, currentQuestion, showResults]);
 
   const questions: Question[] = [
     // Communication (4 questions)
