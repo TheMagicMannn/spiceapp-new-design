@@ -52,6 +52,29 @@ const quizzes = [
       "Understand jealousy patterns",
       "Get tailored next steps"
     ]
+  },
+  {
+    id: "swinging",
+    title: "Swinging Readiness Quiz",
+    subtitle: "Explore the Lifestyle Together",
+    description: "Comprehensive assessment for couples considering the swinging lifestyle. Evaluate communication, trust, boundaries, and readiness for this journey.",
+    path: "/quiz/swinging",
+    icon: Users,
+    color: "from-blue-500/20 via-cyan-500/20 to-blue-500/20",
+    borderColor: "border-blue-500/30",
+    iconColor: "text-blue-500",
+    buttonColor: "from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600",
+    stats: {
+      questions: 20,
+      time: "15-20 min",
+      type: "Couples"
+    },
+    features: [
+      "Assess couple communication",
+      "Evaluate trust & jealousy",
+      "Define boundaries together",
+      "Get readiness insights"
+    ]
   }
 ];
 
