@@ -41,6 +41,7 @@ import WhyDifferent from "./pages/WhyDifferent";
 import ConsentBasics from "./pages/ConsentBasics";
 import LifestyleEtiquette from "./pages/LifestyleEtiquette";
 import CommonMyths from "./pages/CommonMyths";
+import BeginnerLifestyleFAQ from "./pages/BeginnerLifestyleFAQ";
 import Academy from "./pages/Academy";
 import AcademyModules from "./pages/AcademyModules";
 import Travel from "./pages/Travel";
