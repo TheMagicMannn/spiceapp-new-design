@@ -194,6 +194,7 @@ const App = () => (
             {/* Academy */}
             <Route path="/academy" element={<Academy />} />
             <Route path="/academy/modules" element={<AcademyModules />} />
+            <Route path="/academy/journeys" element={<GuidedJourneys />} />
             
             {/* Travel - Additional Cities */}
             <Route path="/travel" element={<Travel />} />
