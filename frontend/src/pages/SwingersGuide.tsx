@@ -1046,7 +1046,7 @@ const SwingersGuide = () => {
                     <div className="bg-blue-500/10 border border-blue-500/30 rounded-xl p-6 my-6">
                       <p className="text-sm text-foreground flex items-start gap-3">
                         <AlertCircle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
-                        <span><strong>Pro Tip:</strong> Jealousy often decreases over time as you build confidence and see that your partner always comes back to you. But it may never fully disappear—and that's okay. Read our comprehensive guide: <Link to="/blog/swinging-jealousy" className="text-primary hover:underline">Managing Jealousy in the Swinging Lifestyle</Link>.</span>
+                        <span><strong>Pro Tip:</strong> Jealousy often decreases over time as you build confidence and see that your partner always comes back to you. But it may never fully disappear—and that's okay. Read our comprehensive guide: <Link to="/blog/swinging-jealousy-tools" className="text-primary hover:underline">Managing Jealousy in the Swinging Lifestyle</Link>.</span>
                       </p>
                     </div>
                   </div>
