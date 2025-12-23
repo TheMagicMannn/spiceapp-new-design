@@ -79,6 +79,18 @@ import BlogSwingingHealthSafety from "./pages/BlogSwingingHealthSafety";
 import BlogSwingingKeepingSpark from "./pages/BlogSwingingKeepingSpark";
 import BlogCategory from "./pages/BlogCategory";
 
+// Consent & Safety Blog Articles
+import BlogConsentGoldenRules from "./pages/BlogConsentGoldenRules";
+import BlogRedFlagsGreenFlags from "./pages/BlogRedFlagsGreenFlags";
+import BlogSaferSexGuide from "./pages/BlogSaferSexGuide";
+import BlogSoloDatesSafety from "./pages/BlogSoloDatesSafety";
+import BlogConsentViolations from "./pages/BlogConsentViolations";
+import BlogConsentCheckIns from "./pages/BlogConsentCheckIns";
+import BlogAlcoholSubstancesConsent from "./pages/BlogAlcoholSubstancesConsent";
+import BlogDigitalSafetyFirst from "./pages/BlogDigitalSafetyFirst";
+import BlogAftercareEmotionalSafety from "./pages/BlogAftercareEmotionalSafety";
+import BlogTeachingConsentNextGen from "./pages/BlogTeachingConsentNextGen";
+
 const queryClient = new QueryClient();
 
 const App = () => (
