@@ -105,9 +105,9 @@ const QuizLanding = () => {
   return (
     <>
       <SEO
-        title="Lifestyle Quizzes - BDSM, Hotwifing & More | SPICE"
-        description="Take our interactive lifestyle quizzes to discover your kink profile, assess relationship readiness for hotwifing, and explore your preferences. Free, private, and insightful."
-        keywords="BDSM quiz, kink quiz, hotwifing quiz, lifestyle quiz, relationship quiz, D/s quiz, couples quiz, swinging readiness, ENM quiz"
+        title="Lifestyle Quizzes - BDSM, Hotwifing, Swinging & More | SPICE"
+        description="Take our interactive lifestyle quizzes to discover your kink profile, assess relationship readiness for hotwifing and swinging, and explore your preferences. Free, private, and insightful."
+        keywords="BDSM quiz, kink quiz, hotwifing quiz, swinging quiz, lifestyle quiz, relationship quiz, D/s quiz, couples quiz, swinging readiness, ENM quiz"
         canonical="https://thespiceapp.com/quiz"
         structuredData={structuredData}
       />
