@@ -57,6 +57,16 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import CookiePolicy from "./pages/CookiePolicy";
 import Legal from "./pages/Legal";
 import Lifestyle from "./pages/Lifestyle";
+import BlogHotwifingBeginnersGuide from "./pages/BlogHotwifingBeginnersGuide";
+import BlogHotwifingJealousy from "./pages/BlogHotwifingJealousy";
+import BlogHotwifingFirstDate from "./pages/BlogHotwifingFirstDate";
+import BlogHotwifingFindingBull from "./pages/BlogHotwifingFindingBull";
+import BlogHotwifingReclamationSex from "./pages/BlogHotwifingReclamationSex";
+import BlogHotwifingFantasyReality from "./pages/BlogHotwifingFantasyReality";
+import BlogHotwifingCreativeDates from "./pages/BlogHotwifingCreativeDates";
+import BlogHotwifingYearReview from "./pages/BlogHotwifingYearReview";
+import BlogHotwifingToysKink from "./pages/BlogHotwifingToysKink";
+import BlogHotwifingCommunicationMarriage from "./pages/BlogHotwifingCommunicationMarriage";
 
 const queryClient = new QueryClient();
 
