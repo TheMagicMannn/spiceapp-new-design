@@ -9,6 +9,13 @@ import { Heart, Users, MessageCircle, Flame, Shield, Sparkles, ChevronRight, Boo
 const Lifestyle = () => {
   const lifestyleGuides = [
     {
+      title: "BDSM & Kink Guide",
+      description: "Comprehensive guide to BDSM, kink, and power exchange. Learn about safety, consent, practices, finding community, and exploring your desires with confidence.",
+      icon: Flame,
+      link: "/lifestyle/bdsm-guide",
+      tag: "New Guide"
+    },
+    {
       title: "Swingers Guide",
       description: "Everything you need to know about the swinging lifestyle. From first-time tips to etiquette, communication strategies, and finding the right partners.",
       icon: Users,
