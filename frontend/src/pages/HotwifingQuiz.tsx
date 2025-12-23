@@ -244,15 +244,15 @@ interface ResultLevel {
 
 const HotwifingQuiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [answers, setAnswers] = useState<Record<number, number>>({});
+  const [answers, setAnswers] = useState<Record<number, { score: number; optionIndex: number }>>({});
   const [selectedFlags, setSelectedFlags] = useState<Record<number, string>>({});
   const [showResults, setShowResults] = useState(false);
   const [quizStarted, setQuizStarted] = useState(false);
 
   const progress = ((currentQuestion + 1) / questions.length) * 100;
 
-  const handleAnswer = (questionId: number, score: number, flag?: string) => {
-    setAnswers(prev => ({ ...prev, [questionId]: score }));
+  const handleAnswer = (questionId: number, score: number, optionIndex: number, flag?: string) => {
+    setAnswers(prev => ({ ...prev, [questionId]: { score, optionIndex } }));
     if (flag) {
       setSelectedFlags(prev => ({ ...prev, [questionId]: flag }));
     }
