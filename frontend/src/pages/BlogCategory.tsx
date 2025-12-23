@@ -662,13 +662,27 @@ const BlogCategory = () => {
 
             {/* CTA */}
             <div className="bg-gradient-to-r from-primary/20 via-purple-500/20 to-primary/20 rounded-2xl p-8 border border-primary/30 text-center mt-12">
-              <h2 className="text-2xl font-bold mb-4">Ready to Explore?</h2>
+              <h2 className="text-2xl font-bold mb-4">
+                {normalizedCategory === "hotwifing" ? "Are You Ready for Hotwifing?" : "Ready to Explore?"}
+              </h2>
               <p className="text-muted-foreground mb-6">
-                Join SPICE to connect with others who share your interests.
+                {normalizedCategory === "hotwifing" 
+                  ? "Take our couples readiness quiz or join SPICE to connect with the hotwifing community."
+                  : "Join SPICE to connect with others who share your interests."}
               </p>
-              <Link to="/download" className="inline-flex items-center justify-center px-8 py-3 bg-primary hover:bg-primary/90 text-white font-semibold rounded-full transition-all">
-                Join SPICE Free
-              </Link>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link to="/download" className="inline-flex items-center justify-center px-8 py-3 bg-primary hover:bg-primary/90 text-white font-semibold rounded-full transition-all">
+                  Join SPICE Free
+                </Link>
+                {normalizedCategory === "hotwifing" && (
+                  <Link 
+                    to="/quiz/hotwifing" 
+                    className="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white font-semibold rounded-full transition-all"
+                  >
+                    Take Hotwifing Quiz
+                  </Link>
+                )}
+              </div>
             </div>
           </div>
         </main>
