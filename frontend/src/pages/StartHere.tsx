@@ -63,8 +63,8 @@ const StartHere = () => {
   const additionalResources = [
     {
       icon: Brain,
-      title: "BDSM Quiz",
-      description: "Discover your kink preferences with our fun, detailed quiz",
+      title: "Lifestyle Quizzes",
+      description: "Discover your preferences with our BDSM and hotwifing quizzes",
       link: "/quiz",
       badge: "Popular"
     },
