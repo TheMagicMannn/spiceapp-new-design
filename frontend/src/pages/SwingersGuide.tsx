@@ -660,7 +660,7 @@ const SwingersGuide = () => {
                     <div className="bg-blue-500/10 border border-blue-500/30 rounded-xl p-6 my-6">
                       <p className="text-sm text-foreground flex items-start gap-3">
                         <AlertCircle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
-                        <span><strong>Important:</strong> Boundaries can and should evolve. What felt scary at first might become comfortable later. What you thought you'd enjoy might not work in reality. Check in regularly and adjust. Flexibility is key. Learn more in <Link to="/blog/swinging-marriage" className="text-primary hover:underline">How Swinging Strengthened Our Marriage</Link>.</span>
+                        <span><strong>Important:</strong> Boundaries can and should evolve. What felt scary at first might become comfortable later. What you thought you'd enjoy might not work in reality. Check in regularly and adjust. Flexibility is key. Learn more in <Link to="/blog/swinging-strengthened-marriage" className="text-primary hover:underline">How Swinging Strengthened Our Marriage</Link>.</span>
                       </p>
                     </div>
                   </div>
