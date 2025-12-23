@@ -318,6 +318,9 @@ const allBlogPosts = [
 // Category configuration
 const categories = [
   { id: "all", name: "All Articles", description: "Browse all lifestyle articles" },
+  { id: "exploring", name: "Exploring/Curious", description: "New to the lifestyle?" },
+  { id: "howto", name: "How-To", description: "Step-by-step guides" },
+  { id: "stories", name: "User Stories", description: "Real SPICE experiences" },
   { id: "swingers", name: "Swingers", description: "Swinging lifestyle tips and stories" },
   { id: "hotwifing", name: "Hotwifing", description: "Hotwife and stag/vixen guides" },
   { id: "bdsm", name: "BDSM & Kink", description: "Kink education and safety" },
