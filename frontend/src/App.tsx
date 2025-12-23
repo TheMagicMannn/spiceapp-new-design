@@ -159,13 +159,7 @@ const App = () => (
             
             {/* Blog Categories (Placeholders) */}
             {/* Blog Category Pages */}
-            <Route path="/blog/swingers" element={<BlogCategory />} />
-            <Route path="/blog/hotwifing" element={<BlogCategory />} />
-            <Route path="/blog/bdsm" element={<BlogCategory />} />
-            <Route path="/blog/enm" element={<BlogCategory />} />
-            <Route path="/blog/consent" element={<BlogCategory />} />
-            <Route path="/blog/travel" element={<BlogCategory />} />
-            <Route path="/blog/relationships" element={<BlogCategory />} />
+            <Route path="/blog/:category" element={<BlogCategory />} />
             
             {/* Blog Posts */}
             <Route path="/blog/10-signs-ready-lifestyle" element={<BlogPost10Signs />} />
