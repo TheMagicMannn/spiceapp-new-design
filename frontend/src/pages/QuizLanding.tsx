@@ -80,12 +80,6 @@ const quizzes = [
 
 const upcomingQuizzes = [
   {
-    title: "Swinging Readiness Quiz",
-    description: "Assess if you and your partner are ready to explore the swinging lifestyle.",
-    icon: Users,
-    comingSoon: true
-  },
-  {
     title: "ENM Compatibility Quiz",
     description: "Discover which ethical non-monogamy style fits your relationship best.",
     icon: Target,
