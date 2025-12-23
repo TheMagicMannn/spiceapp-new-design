@@ -494,6 +494,298 @@ const BDSMGuide = () => {
 
               {/* To be continued with remaining sections... */}
 
+              {/* Consent & Negotiation */}
+              <section id="consent" className="mb-16 scroll-mt-24">
+                <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12">
+                  <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
+                    <CheckCircle className="w-8 h-8 text-red-500" />
+                    Consent & Negotiation
+                  </h2>
+                  
+                  <div className="space-y-6 text-muted-foreground">
+                    <p className="text-lg leading-relaxed">
+                      Consent in BDSM is <strong className="text-foreground">explicit, enthusiastic, informed, and revocable</strong>. It's not a one-time thing—it's an ongoing conversation before, during, and after every scene.
+                    </p>
+
+                    <div className="bg-primary/10 border border-primary/30 rounded-xl p-6">
+                      <h3 className="text-xl font-semibold text-foreground mb-4">The Four Pillars of BDSM Consent</h3>
+                      <div className="space-y-3">
+                        <div className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <div>
+                            <strong className="text-foreground">Informed:</strong> All parties understand what they're agreeing to, including risks
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <div>
+                            <strong className="text-foreground">Enthusiastic:</strong> Active "yes," not just absence of "no." Coerced consent isn't consent
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <div>
+                            <strong className="text-foreground">Specific:</strong> Consenting to one activity doesn't mean consent to all activities
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                          <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                          <div>
+                            <strong className="text-foreground">Revocable:</strong> Anyone can withdraw consent at any time, for any reason, no explanation needed
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">Pre-Scene Negotiation</h3>
+                    <p className="leading-relaxed mb-4">
+                      Negotiation is where you discuss what will and won't happen in a scene. It's best done before any play, when everyone is clear-headed and not in a heightened state.
+                    </p>
+
+                    <div className="bg-background/50 rounded-xl p-6">
+                      <h4 className="font-semibold text-foreground mb-3">Essential Topics to Negotiate:</h4>
+                      <div className="grid md:grid-cols-2 gap-4 text-sm">
+                        <ul className="space-y-2">
+                          <li>• <strong className="text-foreground">Activities:</strong> What you want to do (bondage, impact, etc.)</li>
+                          <li>• <strong className="text-foreground">Hard limits:</strong> Absolute no's that won't be negotiated</li>
+                          <li>• <strong className="text-foreground">Soft limits:</strong> Maybe's or things you're nervous about</li>
+                          <li>• <strong className="text-foreground">Safewords:</strong> Agreed signals to slow or stop</li>
+                          <li>• <strong className="text-foreground">Triggers:</strong> Past traumas or sensitive topics to avoid</li>
+                        </ul>
+                        <ul className="space-y-2">
+                          <li>• <strong className="text-foreground">Health concerns:</strong> Injuries, conditions, medications</li>
+                          <li>• <strong className="text-foreground">Intensity level:</strong> Light, moderate, or heavy play</li>
+                          <li>• <strong className="text-foreground">Duration:</strong> How long the scene will last</li>
+                          <li>• <strong className="text-foreground">Aftercare needs:</strong> What each person needs afterward</li>
+                          <li>• <strong className="text-foreground">Check-in frequency:</strong> How often to pause and assess</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">Negotiation Tools</h3>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6">
+                        <h4 className="font-semibold text-foreground mb-3">Checklists</h4>
+                        <p className="text-sm mb-2">Written lists of activities marked as:</p>
+                        <ul className="text-xs space-y-1">
+                          <li>• ✅ Yes/Interested</li>
+                          <li>• ⚠️ Maybe/Willing to try</li>
+                          <li>• ❌ No/Hard limit</li>
+                        </ul>
+                        <p className="text-xs mt-3">Compare lists with partners to find overlaps</p>
+                      </div>
+
+                      <div className="bg-blue-500/10 border border-blue-500/30 rounded-xl p-6">
+                        <h4 className="font-semibold text-foreground mb-3">Traffic Light System</h4>
+                        <p className="text-sm mb-2">During scenes, use colors:</p>
+                        <ul className="text-xs space-y-1">
+                          <li>• 🟢 Green = All good, continue</li>
+                          <li>• 🟡 Yellow = Slow down, check in</li>
+                          <li>• 🔴 Red = Stop immediately</li>
+                        </ul>
+                        <p className="text-xs mt-3">Dom asks "Color?" regularly during play</p>
+                      </div>
+                    </div>
+
+                    <div className="bg-blue-500/10 border border-blue-500/30 rounded-xl p-6 my-6">
+                      <p className="text-sm text-foreground flex items-start gap-3">
+                        <AlertCircle className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                        <span><strong>Download Our Tool:</strong> Use the <Link to="/blog/bdsm-negotiation-checklist" className="text-primary hover:underline">BDSM Negotiation Checklist</Link> to facilitate thorough, organized pre-scene discussions with partners.</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              {/* Getting Started */}
+              <section id="getting-started" className="mb-16 scroll-mt-24">
+                <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12">
+                  <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
+                    <Sparkles className="w-8 h-8 text-red-500" />
+                    Getting Started in BDSM
+                  </h2>
+                  
+                  <div className="space-y-6 text-muted-foreground">
+                    <p className="text-lg leading-relaxed">
+                      Starting your BDSM journey can feel overwhelming. Here's a step-by-step approach to exploring safely and confidently.
+                    </p>
+
+                    <div className="space-y-6 mt-8">
+                      <div className="flex gap-4">
+                        <div className="flex-shrink-0 w-12 h-12 rounded-full bg-red-500/20 flex items-center justify-center text-red-500 font-bold text-xl">1</div>
+                        <div>
+                          <h3 className="text-xl font-semibold text-foreground mb-2">Self-Discovery & Education</h3>
+                          <p className="leading-relaxed mb-3">
+                            Before involving partners, explore what interests you. Read books, watch educational videos, take quizzes. Understand that fantasies don't always translate to reality—and that's okay.
+                          </p>
+                          <p className="text-sm">
+                            <strong className="text-foreground">Resources:</strong> <Link to="/quiz/bdsm" className="text-primary hover:underline">Take the BDSM Quiz</Link> • <Link to="/blog/bdsm-beginners-guide" className="text-primary hover:underline">Read BDSM for Beginners</Link>
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex gap-4">
+                        <div className="flex-shrink-0 w-12 h-12 rounded-full bg-red-500/20 flex items-center justify-center text-red-500 font-bold text-xl">2</div>
+                        <div>
+                          <h3 className="text-xl font-semibold text-foreground mb-2">Talk to Your Partner (If Applicable)</h3>
+                          <p className="leading-relaxed mb-3">
+                            If you're in a relationship, bring up your interests gently. Share what you've learned, ask about their curiosity, and explore together. If they're not interested, respect that—BDSM requires enthusiastic participation.
+                          </p>
+                          <p className="text-sm">
+                            <strong className="text-foreground">Tip:</strong> Frame it as exploration, not demands. "I've been curious about..." rather than "I need you to..."
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex gap-4">
+                        <div className="flex-shrink-0 w-12 h-12 rounded-full bg-red-500/20 flex items-center justify-center text-red-500 font-bold text-xl">3</div>
+                        <div>
+                          <h3 className="text-xl font-semibold text-foreground mb-2">Start Small & Low-Risk</h3>
+                          <p className="leading-relaxed mb-3">
+                            Begin with beginner-friendly activities: light bondage with silk scarves, blindfolds, ice cubes, feathers, soft spanking. Build skills and confidence before progressing to advanced practices.
+                          </p>
+                          <p className="text-sm">
+                            <strong className="text-foreground">Resource:</strong> <Link to="/blog/beginner-friendly-kinks" className="text-primary hover:underline">Beginner-Friendly Kinks to Try</Link>
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex gap-4">
+                        <div className="flex-shrink-0 w-12 h-12 rounded-full bg-red-500/20 flex items-center justify-center text-red-500 font-bold text-xl">4</div>
+                        <div>
+                          <h3 className="text-xl font-semibold text-foreground mb-2">Connect With the Community</h3>
+                          <p className="leading-relaxed mb-3">
+                            Attend munches (casual social gatherings), join online forums like FetLife, or find local BDSM education workshops. Learning from experienced practitioners accelerates your growth and keeps you safe.
+                          </p>
+                          <p className="text-sm">
+                            <strong className="text-foreground">Resource:</strong> <Link to="/blog/finding-kink-community" className="text-primary hover:underline">How to Find Your Kink Community</Link>
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex gap-4">
+                        <div className="flex-shrink-0 w-12 h-12 rounded-full bg-red-500/20 flex items-center justify-center text-red-500 font-bold text-xl">5</div>
+                        <div>
+                          <h3 className="text-xl font-semibold text-foreground mb-2">Invest in Quality Toys & Safety Gear</h3>
+                          <p className="leading-relaxed mb-3">
+                            As you progress, invest in proper equipment. Good rope, paddles, floggers, and safety scissors matter. Cheap toys can break or cause injury. Buy from reputable BDSM retailers.
+                          </p>
+                          <p className="text-sm">
+                            <strong className="text-foreground">Budget-Friendly:</strong> <Link to="/blog/kink-on-budget" className="text-primary hover:underline">Exploring Kink on a Budget</Link>
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex gap-4">
+                        <div className="flex-shrink-0 w-12 h-12 rounded-full bg-red-500/20 flex items-center justify-center text-red-500 font-bold text-xl">6</div>
+                        <div>
+                          <h3 className="text-xl font-semibold text-foreground mb-2">Attend Workshops & Classes</h3>
+                          <p className="leading-relaxed mb-3">
+                            Many communities offer classes on rope bondage, impact play, negotiation, and more. Hands-on learning with experienced teachers is invaluable and much safer than learning from videos alone.
+                          </p>
+                        </div>
+                      </div>
+
+                      <div className="flex gap-4">
+                        <div className="flex-shrink-0 w-12 h-12 rounded-full bg-red-500/20 flex items-center justify-center text-red-500 font-bold text-xl">7</div>
+                        <div>
+                          <h3 className="text-xl font-semibold text-foreground mb-2">Reflect & Adjust</h3>
+                          <p className="leading-relaxed mb-3">
+                            After each experience, reflect: What felt good? What didn't? How's your emotional state? BDSM is a journey, not a destination. Your interests will evolve—that's completely normal.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-6 my-6">
+                      <h4 className="font-semibold text-foreground mb-3 flex items-center gap-2">
+                        <CheckCircle className="w-5 h-5 text-green-500" />
+                        Timeline Expectations
+                      </h4>
+                      <p className="text-sm">
+                        There's no rush. Some people explore for years before trying anything physical. Others move faster. What matters is that you feel safe, informed, and excited—not pressured or scared.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              {/* Communication Skills */}
+              <section id="communication" className="mb-16 scroll-mt-24">
+                <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12">
+                  <h2 className="text-3xl font-bold mb-6 flex items-center gap-3">
+                    <MessageCircle className="w-8 h-8 text-red-500" />
+                    Communication Skills
+                  </h2>
+                  
+                  <div className="space-y-6 text-muted-foreground">
+                    <p className="text-lg leading-relaxed">
+                      BDSM requires exceptional communication—before, during, and after scenes. Poor communication leads to misunderstandings, violated boundaries, and damaged trust.
+                    </p>
+
+                    <div className="bg-primary/10 border border-primary/30 rounded-xl p-6">
+                      <h3 className="text-xl font-semibold text-foreground mb-4">Essential Communication Skills</h3>
+                      <div className="space-y-4">
+                        <div>
+                          <h4 className="font-semibold text-foreground mb-2 text-sm">Active Listening</h4>
+                          <p className="text-xs">Don't just wait for your turn to talk—truly hear what your partner is saying. Reflect back: "So you're saying you're nervous about..." to confirm understanding.</p>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-foreground mb-2 text-sm">Vulnerability</h4>
+                          <p className="text-xs">Share your fears, insecurities, and desires honestly. BDSM requires emotional intimacy alongside physical vulnerability.</p>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-foreground mb-2 text-sm">Non-Defensive Receiving</h4>
+                          <p className="text-xs">When your partner shares concerns or feedback, don't get defensive. Thank them for trusting you with their feelings, then problem-solve together.</p>
+                        </div>
+                        <div>
+                          <h4 className="font-semibold text-foreground mb-2 text-sm">Clear, Direct Language</h4>
+                          <p className="text-xs">Be specific: "I'd like to try rope bondage on my wrists" not "Maybe we could do some tie-up stuff?" Ambiguity leads to miscommunication.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">During-Scene Communication</h3>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div className="bg-background/50 rounded-xl p-6">
+                        <h4 className="font-semibold text-foreground mb-3">For Dominants:</h4>
+                        <ul className="text-sm space-y-2">
+                          <li>• Check in regularly: "Color?" or "How are you doing?"</li>
+                          <li>• Watch body language for distress signs</li>
+                          <li>• Give verbal reassurance and praise</li>
+                          <li>• Adjust intensity based on responses</li>
+                          <li>• Never shame for using safewords</li>
+                        </ul>
+                      </div>
+                      <div className="bg-background/50 rounded-xl p-6">
+                        <h4 className="font-semibold text-foreground mb-3">For Submissives:</h4>
+                        <ul className="text-sm space-y-2">
+                          <li>• Use safewords without hesitation</li>
+                          <li>• Communicate physical sensations: "That's intense but good"</li>
+                          <li>• Don't hide discomfort to please your Dominant</li>
+                          <li>• Remember: you have power to stop anytime</li>
+                          <li>• Speak up about unexpected triggers</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <h3 className="text-2xl font-semibold text-foreground mt-8 mb-4">Post-Scene Communication (Debriefing)</h3>
+                    <div className="bg-background/50 rounded-xl p-6">
+                      <p className="mb-4 text-sm">After scenes, discuss the experience while it's fresh:</p>
+                      <ul className="text-sm space-y-2">
+                        <li>• <strong className="text-foreground">What felt amazing?</strong> Celebrate what worked</li>
+                        <li>• <strong className="text-foreground">What was uncomfortable?</strong> Address issues without blame</li>
+                        <li>• <strong className="text-foreground">Surprises?</strong> Unexpected emotions or reactions</li>
+                        <li>• <strong className="text-foreground">Adjust for next time?</strong> Boundary changes needed</li>
+                        <li>• <strong className="text-foreground">Emotional state?</strong> Check in on feelings, not just physical</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              {/* Continue with more sections... */}
+
             </article>
           </div>
         </main>
