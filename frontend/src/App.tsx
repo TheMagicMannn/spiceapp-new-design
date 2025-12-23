@@ -208,6 +208,18 @@ const App = () => (
             <Route path="/blog/swinging-health-safety" element={<BlogSwingingHealthSafety />} />
             <Route path="/blog/swinging-keeping-spark" element={<BlogSwingingKeepingSpark />} />
             
+            {/* Consent & Safety Blog Articles */}
+            <Route path="/blog/consent-golden-rules" element={<BlogConsentGoldenRules />} />
+            <Route path="/blog/red-flags-green-flags" element={<BlogRedFlagsGreenFlags />} />
+            <Route path="/blog/safer-sex-guide-2026" element={<BlogSaferSexGuide />} />
+            <Route path="/blog/solo-dates-safety" element={<BlogSoloDatesSafety />} />
+            <Route path="/blog/consent-violations" element={<BlogConsentViolations />} />
+            <Route path="/blog/consent-check-ins-sexy" element={<BlogConsentCheckIns />} />
+            <Route path="/blog/alcohol-substances-consent" element={<BlogAlcoholSubstancesConsent />} />
+            <Route path="/blog/digital-safety-first" element={<BlogDigitalSafetyFirst />} />
+            <Route path="/blog/aftercare-emotional-safety" element={<BlogAftercareEmotionalSafety />} />
+            <Route path="/blog/teaching-consent-next-generation" element={<BlogTeachingConsentNextGen />} />
+            
             {/* Blog Category Pages (must come after specific article routes) */}
             <Route path="/blog/:category" element={<BlogCategory />} />
             
