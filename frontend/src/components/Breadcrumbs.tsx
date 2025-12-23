@@ -77,7 +77,12 @@ const Breadcrumbs = () => {
       // Special handling for /guide parent
       if (segment === "guide" && index < pathSegments.length - 1) {
         breadcrumbItems.push({ path: "/guide/newcomers", name: "SPICE Guide" });
-      } else if (segment !== "guide") {
+      } 
+      // Special handling for /support parent
+      else if (segment === "support" && index < pathSegments.length - 1) {
+        breadcrumbItems.push({ path: "/support", name: "Support" });
+      }
+      else if (segment !== "guide") {
         const name = routeNames[currentPathBuild] || segment.charAt(0).toUpperCase() + segment.slice(1);
         breadcrumbItems.push({ path: currentPathBuild, name });
       }
