@@ -158,13 +158,14 @@ const App = () => (
             <Route path="/tools/sti-resources" element={<ConsentBasics />} />
             
             {/* Blog Categories (Placeholders) */}
-            <Route path="/blog/swingers" element={<BlogHome />} />
-            <Route path="/blog/hotwifing" element={<BlogHome />} />
-            <Route path="/blog/bdsm" element={<BlogHome />} />
-            <Route path="/blog/enm" element={<BlogHome />} />
-            <Route path="/blog/consent" element={<BlogHome />} />
-            <Route path="/blog/travel" element={<BlogHome />} />
-            <Route path="/blog/relationships" element={<BlogHome />} />
+            {/* Blog Category Pages */}
+            <Route path="/blog/swingers" element={<BlogCategory />} />
+            <Route path="/blog/hotwifing" element={<BlogCategory />} />
+            <Route path="/blog/bdsm" element={<BlogCategory />} />
+            <Route path="/blog/enm" element={<BlogCategory />} />
+            <Route path="/blog/consent" element={<BlogCategory />} />
+            <Route path="/blog/travel" element={<BlogCategory />} />
+            <Route path="/blog/relationships" element={<BlogCategory />} />
             
             {/* Blog Posts */}
             <Route path="/blog/10-signs-ready-lifestyle" element={<BlogPost10Signs />} />
