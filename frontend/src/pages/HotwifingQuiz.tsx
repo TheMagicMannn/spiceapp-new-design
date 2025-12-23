@@ -293,7 +293,7 @@ const HotwifingQuiz = () => {
     if (!showResults) return null;
 
     // Calculate total score
-    const totalScore = Object.values(answers).reduce((sum, score) => sum + score, 0);
+    const totalScore = Object.values(answers).reduce((sum, answer) => sum + answer.score, 0);
     const maxScore = questions.length * 4;
     const percentage = Math.round((totalScore / maxScore) * 100);
 
@@ -303,7 +303,7 @@ const HotwifingQuiz = () => {
     
     categories.forEach(cat => {
       const catQuestions = questions.filter(q => q.category === cat);
-      const catScore = catQuestions.reduce((sum, q) => sum + (answers[q.id] || 0), 0);
+      const catScore = catQuestions.reduce((sum, q) => sum + (answers[q.id]?.score || 0), 0);
       const catMax = catQuestions.length * 4;
       categoryScores.push({
         category: cat,
