@@ -153,6 +153,12 @@ const App = () => (
             <Route path="/about/ai-matching" element={<AIMatching />} />
             <Route path="/about/why-different" element={<WhyDifferent />} />
             
+            {/* Support Pages */}
+            <Route path="/support" element={<Support />} />
+            <Route path="/support/help" element={<HelpCenter />} />
+            <Route path="/support/technical" element={<TechnicalResources />} />
+            <Route path="/support/report" element={<ReportIssue />} />
+            
             {/* Start Here */}
             <Route path="/start/consent-basics" element={<ConsentBasics />} />
             <Route path="/start/etiquette" element={<LifestyleEtiquette />} />
