@@ -64,7 +64,7 @@ const Breadcrumbs = () => {
   
   if (isArticlePage) {
     // For article pages, show: Home > SPICE Guide > Article Title
-    breadcrumbItems.push({ path: "/guide/newcomers", name: "SPICE Guide" });
+    breadcrumbItems.push({ path: "/guide", name: "SPICE Guide" });
     
     // Find the article to get its title
     const slug = pathSegments[2];
@@ -81,7 +81,7 @@ const Breadcrumbs = () => {
       
       // Special handling for /guide parent
       if (segment === "guide" && index < pathSegments.length - 1) {
-        breadcrumbItems.push({ path: "/guide/newcomers", name: "SPICE Guide" });
+        breadcrumbItems.push({ path: "/guide", name: "SPICE Guide" });
       } 
       // Special handling for /support parent
       else if (segment === "support" && index < pathSegments.length - 1) {
