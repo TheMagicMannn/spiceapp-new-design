@@ -155,6 +155,7 @@ const App = () => (
             <Route path="/lifestyle" element={<Lifestyle />} />
             <Route path="/lifestyle/hotwifing-guide" element={<HotwifingGuide />} />
             <Route path="/lifestyle/swingers-guide" element={<SwingersGuide />} />
+            <Route path="/lifestyle/bdsm-guide" element={<BDSMGuide />} />
             <Route path="/lifestyle/enm-polyamory-guide" element={<ENMPolyamoryGuide />} />
             <Route path="/lifestyle/relationships-communication" element={<RelationshipsCommunication />} />
             <Route path="/lifestyle/jealousy-management" element={<JealousyManagement />} />
