@@ -53,6 +53,7 @@ const BlogHotwifingBeginnersGuide = () => {
               <ul className="space-y-2 text-sm">
                 <li><a href="#what-is-hotwifing" className="text-primary hover:underline">→ What is Hotwifing?</a></li>
                 <li><a href="#is-it-right" className="text-primary hover:underline">→ Is Hotwifing Right for Your Relationship?</a></li>
+                <li><a href="#take-quiz" className="text-primary hover:underline">→ Take Our Readiness Quiz</a></li>
                 <li><a href="#starting-conversation" className="text-primary hover:underline">→ Starting the Conversation</a></li>
                 <li><a href="#setting-boundaries" className="text-primary hover:underline">→ Setting Boundaries Together</a></li>
                 <li><a href="#building-trust" className="text-primary hover:underline">→ Building Trust and Security</a></li>
