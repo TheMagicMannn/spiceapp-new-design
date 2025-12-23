@@ -109,7 +109,7 @@ const FooterSection = () => {
             <h4 className="font-semibold mb-4 text-primary">Connect</h4>
             <ul className="space-y-2 text-sm text-muted-foreground mb-4">
               <li><Link to="/newsletter" className="hover:text-foreground transition-colors">Newsletter Signup</Link></li>
-              <li><a href="https://instagram.com/spiceapp" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors flex items-center gap-2">
+              <li><a href="https://www.instagram.com/the_spice_app?igsh=YzViN3Zzam43cjRl&utm_source=qr" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors flex items-center gap-2">
                 <Instagram className="w-4 h-4" /> Instagram
               </a></li>
               <li><a href="https://twitter.com/spiceapp" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors flex items-center gap-2">
@@ -118,7 +118,7 @@ const FooterSection = () => {
               <li><a href="https://facebook.com/spiceapp" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors flex items-center gap-2">
                 <Facebook className="w-4 h-4" /> Facebook
               </a></li>
-              <li><a href="https://reddit.com/r/spiceapp" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors flex items-center gap-2">
+              <li><a href="https://www.reddit.com/r/SPICEAPP/s/Q2TTLkxqWT" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors flex items-center gap-2">
                 <RedditIcon className="w-4 h-4" /> Reddit
               </a></li>
               <li><a href="https://youtube.com/@spiceapp" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors flex items-center gap-2">
