@@ -157,10 +157,6 @@ const App = () => (
             <Route path="/newsletter" element={<ConsentBasics />} />
             <Route path="/tools/sti-resources" element={<ConsentBasics />} />
             
-            {/* Blog Categories (Placeholders) */}
-            {/* Blog Category Pages */}
-            <Route path="/blog/:category" element={<BlogCategory />} />
-            
             {/* Blog Posts */}
             <Route path="/blog/10-signs-ready-lifestyle" element={<BlogPost10Signs />} />
             <Route path="/blog/talk-partner-opening-relationship" element={<BlogTalkToPartner />} />
@@ -177,6 +173,9 @@ const App = () => (
             <Route path="/blog/hotwifing-year-review" element={<BlogHotwifingYearReview />} />
             <Route path="/blog/hotwifing-toys-kink" element={<BlogHotwifingToysKink />} />
             <Route path="/blog/hotwifing-communication-marriage" element={<BlogHotwifingCommunicationMarriage />} />
+            
+            {/* Blog Category Pages (must come after specific article routes) */}
+            <Route path="/blog/:category" element={<BlogCategory />} />
             
             {/* City Pages - Additional */}
             <Route path="/locations/chicago-il" element={<CityPage />} />
