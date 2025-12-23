@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { Link } from "react-router-dom";
 import SEO from "@/components/SEO";
 import Header from "@/components/Header";
@@ -248,6 +248,11 @@ const HotwifingQuiz = () => {
   const [selectedFlags, setSelectedFlags] = useState<Record<number, string>>({});
   const [showResults, setShowResults] = useState(false);
   const [quizStarted, setQuizStarted] = useState(false);
+
+  // Scroll to top when quiz starts, question changes, or results shown
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [quizStarted, currentQuestion, showResults]);
 
   const progress = ((currentQuestion + 1) / questions.length) * 100;
 
