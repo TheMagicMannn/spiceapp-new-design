@@ -476,7 +476,7 @@ const SwingersGuide = () => {
                             Bring up the topic gently. Frame it as curiosity, not a demand: "I read an interesting article about..." or "What do you think about couples who..." Watch how they respond. If they're horrified or shut down, don't push—give them time to process.
                           </p>
                           <p className="text-sm">
-                            <strong className="text-foreground">Resource:</strong> <Link to="/blog/swinging-101" className="text-primary hover:underline">Swinging 101: The Complete Beginner's Guide</Link>
+                            <strong className="text-foreground">Resource:</strong> <Link to="/blog/swinging-101-beginners-guide" className="text-primary hover:underline">Swinging 101: The Complete Beginner's Guide</Link>
                           </p>
                         </div>
                       </div>
@@ -548,7 +548,7 @@ const SwingersGuide = () => {
                             When you're both ready and excited (not nervous-scared), arrange a date with another couple or single. Meet for drinks first—chemistry matters! If everyone clicks, move forward at whatever pace feels right. Use your safe word if needed. Debrief afterward.
                           </p>
                           <p className="text-sm">
-                            <strong className="text-foreground">Resource:</strong> <Link to="/blog/swinging-mistakes" className="text-primary hover:underline">Common Mistakes New Swingers Make</Link>
+                            <strong className="text-foreground">Resource:</strong> <Link to="/blog/swinging-mistakes-avoid" className="text-primary hover:underline">Common Mistakes New Swingers Make</Link>
                           </p>
                         </div>
                       </div>
