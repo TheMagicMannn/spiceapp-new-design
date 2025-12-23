@@ -44,7 +44,7 @@ const navigationItems = [
     items: [
       { name: "Academy Overview", path: "/academy", description: "Structured learning paths" },
       { name: "Learning Modules", path: "/academy/modules", description: "Guided learning paths" },
-      { name: "BDSM Quiz", path: "/quiz", description: "Discover your preferences" },
+      { name: "Lifestyle Quizzes", path: "/quiz", description: "Discover your preferences" },
       { name: "Consent Modules", path: "/academy/consent", description: "Deep dive into consent" },
       { name: "Guided Journeys", path: "/academy/journeys", description: "Beginner to advanced" },
     ]
