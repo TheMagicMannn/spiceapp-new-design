@@ -101,15 +101,6 @@ const quizzes = [
   }
 ];
 
-const upcomingQuizzes = [
-  {
-    title: "ENM Compatibility Quiz",
-    description: "Discover which ethical non-monogamy style fits your relationship best.",
-    icon: Target,
-    comingSoon: true
-  }
-];
-
 const QuizLanding = () => {
   const structuredData = {
     "@context": "https://schema.org",
@@ -229,35 +220,6 @@ const QuizLanding = () => {
                   </div>
                 );
               })}
-            </div>
-
-            {/* Coming Soon Section */}
-            <div className="mb-16">
-              <h2 className="text-2xl font-bold mb-6 text-center">Coming Soon</h2>
-              <div className="grid md:grid-cols-2 gap-6">
-                {upcomingQuizzes.map((quiz, index) => {
-                  const IconComponent = quiz.icon;
-                  return (
-                    <div
-                      key={index}
-                      className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 relative overflow-hidden"
-                    >
-                      <div className="absolute top-4 right-4">
-                        <span className="text-xs bg-primary/20 text-primary px-3 py-1 rounded-full">Coming Soon</span>
-                      </div>
-                      <div className="flex items-start gap-4">
-                        <div className="p-3 rounded-xl bg-muted">
-                          <IconComponent className="w-6 h-6 text-muted-foreground" />
-                        </div>
-                        <div>
-                          <h3 className="font-bold mb-2">{quiz.title}</h3>
-                          <p className="text-sm text-muted-foreground">{quiz.description}</p>
-                        </div>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
             </div>
 
             {/* Why Take Our Quizzes */}
