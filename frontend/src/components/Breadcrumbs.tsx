@@ -29,6 +29,7 @@ const routeNames: Record<string, string> = {
   "/team": "Our Team",
   "/contact": "Contact",
   "/quiz": "BDSM Quiz",
+  "/quiz/hotwifing": "Hotwifing Quiz",
   "/guide": "SPICE Guide",
   "/guide/newcomers": "For the Interested/Curious",
   "/guide/how-to": "How To",
