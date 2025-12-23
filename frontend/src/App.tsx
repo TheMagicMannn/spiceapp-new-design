@@ -98,6 +98,18 @@ import TechnicalResources from "./pages/TechnicalResources";
 import ReportIssue from "./pages/ReportIssue";
 import StartHere from "./pages/StartHere";
 
+// BDSM & Kink Blog Articles
+import BlogBDSMBeginners from "./pages/BlogBDSMBeginners";
+import BlogBDSMAftercareGuide from "./pages/BlogBDSMAftercareGuide";
+import BlogBDSMNegotiationChecklist from "./pages/BlogBDSMNegotiationChecklist";
+import BlogKinkMentalHealth from "./pages/BlogKinkMentalHealth";
+import BlogBeginnerFriendlyKinks from "./pages/BlogBeginnerFriendlyKinks";
+import BlogFindingKinkCommunity from "./pages/BlogFindingKinkCommunity";
+import BlogSwitchingDynamics from "./pages/BlogSwitchingDynamics";
+import BlogKinkOnBudget from "./pages/BlogKinkOnBudget";
+import BlogLongDistanceBDSM from "./pages/BlogLongDistanceBDSM";
+import BlogComingOutKinky from "./pages/BlogComingOutKinky";
+
 const queryClient = new QueryClient();
 
 const App = () => (
