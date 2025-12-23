@@ -91,6 +91,12 @@ import BlogDigitalSafetyFirst from "./pages/BlogDigitalSafetyFirst";
 import BlogAftercareEmotionalSafety from "./pages/BlogAftercareEmotionalSafety";
 import BlogTeachingConsentNextGen from "./pages/BlogTeachingConsentNextGen";
 
+// Support Pages
+import Support from "./pages/Support";
+import HelpCenter from "./pages/HelpCenter";
+import TechnicalResources from "./pages/TechnicalResources";
+import ReportIssue from "./pages/ReportIssue";
+
 const queryClient = new QueryClient();
 
 const App = () => (
