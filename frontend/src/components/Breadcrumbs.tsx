@@ -40,6 +40,10 @@ const routeNames: Record<string, string> = {
   "/support/help": "Help Center",
   "/support/technical": "Technical Resources",
   "/support/report": "Report an Issue",
+  "/start": "Start Here",
+  "/start/myths": "Common Myths",
+  "/start/etiquette": "Lifestyle Etiquette",
+  "/start/consent-basics": "Consent Basics",
 };
 
 const Breadcrumbs = () => {
