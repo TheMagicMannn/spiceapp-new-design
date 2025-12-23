@@ -315,6 +315,21 @@ const categoryMeta: Record<string, { title: string; description: string; keyword
     title: "Relationship & Communication Articles | SPICE Blog",
     description: "Expert relationship advice for lifestyle couples. Communication strategies, intimacy tips, and guidance for stronger connections.",
     keywords: "relationship articles, communication guides, intimacy tips, couples advice, relationship blog, lifestyle relationships"
+  },
+  exploring: {
+    title: "Exploring & Curious | SPICE Blog",
+    description: "New to the lifestyle? Explore articles for curious minds. Learn about different lifestyles, what to expect, and how to start your journey.",
+    keywords: "lifestyle curious, exploring swinging, new to lifestyle, lifestyle beginners, curious about ENM, lifestyle exploration"
+  },
+  howto: {
+    title: "How-To Guides | SPICE Blog",
+    description: "Step-by-step guides and practical tutorials for the lifestyle. From profile tips to event preparation, learn how to navigate every situation.",
+    keywords: "lifestyle how to, swinger guides, lifestyle tutorials, how to swing, lifestyle tips, practical guides"
+  },
+  stories: {
+    title: "SPICE User Stories | SPICE Blog",
+    description: "Real stories from the SPICE community. Read about experiences, journeys, and lessons learned from couples and individuals in the lifestyle.",
+    keywords: "lifestyle stories, swinger experiences, real stories, community stories, lifestyle journeys, user experiences"
   }
 };
 
@@ -326,7 +341,10 @@ const categoryDisplayNames: Record<string, string> = {
   enm: "ENM & Poly",
   consent: "Consent & Safety",
   travel: "Travel Stories",
-  relationships: "Relationships"
+  relationships: "Relationships",
+  exploring: "Exploring/Curious",
+  howto: "How-To",
+  stories: "User Stories"
 };
 
 const BlogCategory = () => {
