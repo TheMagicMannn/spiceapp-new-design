@@ -25,7 +25,7 @@ const navigationItems = [
       { name: "Consent Basics", path: "/start/consent-basics", description: "Foundation of healthy exploration" },
       { name: "Lifestyle Etiquette", path: "/start/etiquette", description: "Do's and don'ts" },
       { name: "Common Myths", path: "/start/myths", description: "Misconceptions debunked" },
-      { name: "FAQ", path: "/faq", description: "Frequently asked questions" },
+      { name: "Lifestyle Newbies FAQ", path: "/start/beginner-faq", description: "Questions from beginners" },
     ]
   },
   {
