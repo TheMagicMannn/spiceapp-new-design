@@ -209,6 +209,18 @@ frontend:
         agent: "main"
         comment: "Added FAQ page to sitemap.xml. Robots.txt already properly configured. All pages indexed correctly."
 
+  - task: "BDSM/Kink Blog Articles (10 articles)"
+    implemented: true
+    working: true
+    file: "frontend/src/pages/BlogBDSMBeginners.tsx, BlogBDSMAftercareGuide.tsx, BlogBDSMNegotiationChecklist.tsx, BlogKinkMentalHealth.tsx, BlogBeginnerFriendlyKinks.tsx, BlogFindingKinkCommunity.tsx, BlogSwitchingDynamics.tsx, BlogKinkOnBudget.tsx, BlogLongDistanceBDSM.tsx, BlogComingOutKinky.tsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "main"
+        comment: "Created 2 new article files (BlogLongDistanceBDSM.tsx, BlogComingOutKinky.tsx). Added all 10 BDSM article imports and routes to App.tsx. Updated BlogCategory.tsx and BlogHome.tsx with all 11 BDSM articles. Build successful. All articles verified working via screenshots."
+
 metadata:
   created_by: "main_agent"
   version: "1.0"
