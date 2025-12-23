@@ -167,6 +167,37 @@ const BlogHotwifingBeginnersGuide = () => {
                 </p>
               </section>
 
+              {/* Quiz CTA Section */}
+              <section id="take-quiz" className="mb-12">
+                <div className="bg-gradient-to-r from-pink-500/20 via-purple-500/20 to-pink-500/20 border border-pink-500/30 rounded-2xl p-8">
+                  <div className="flex flex-col md:flex-row items-center gap-6">
+                    <div className="flex-shrink-0">
+                      <div className="bg-pink-500/20 rounded-full p-4">
+                        <Clock className="w-12 h-12 text-pink-500" />
+                      </div>
+                    </div>
+                    <div className="flex-1 text-center md:text-left">
+                      <h2 className="text-2xl font-bold mb-2">Are You Ready for Hotwifing?</h2>
+                      <p className="text-muted-foreground mb-4">
+                        Take our comprehensive 18-question couples quiz together. Get a detailed readiness assessment across 6 key relationship areas: communication, trust, jealousy management, relationship readiness, boundaries, and motivations.
+                      </p>
+                      <div className="flex flex-wrap gap-2 justify-center md:justify-start mb-4">
+                        <span className="text-xs bg-pink-500/20 text-pink-400 px-3 py-1 rounded-full">10-15 minutes</span>
+                        <span className="text-xs bg-pink-500/20 text-pink-400 px-3 py-1 rounded-full">18 questions</span>
+                        <span className="text-xs bg-pink-500/20 text-pink-400 px-3 py-1 rounded-full">Personalized results</span>
+                      </div>
+                      <Link 
+                        to="/quiz/hotwifing" 
+                        className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white font-semibold rounded-full transition-all"
+                      >
+                        Take the Quiz Together
+                        <span className="ml-2">→</span>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
               <section id="starting-conversation" className="mb-12">
                 <h2 className="text-2xl md:text-3xl font-bold mb-6">Starting the Conversation</h2>
                 <p className="text-muted-foreground leading-relaxed mb-6">
