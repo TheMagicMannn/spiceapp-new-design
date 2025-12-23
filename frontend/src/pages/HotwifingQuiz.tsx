@@ -897,22 +897,22 @@ const HotwifingQuiz = () => {
                 {currentQ.options.map((option, index) => (
                   <button
                     key={index}
-                    onClick={() => handleAnswer(currentQ.id, option.score, option.flag)}
+                    onClick={() => handleAnswer(currentQ.id, option.score, index, option.flag)}
                     className={`w-full text-left p-4 rounded-xl border transition-all ${
-                      answers[currentQ.id] === option.score
+                      answers[currentQ.id]?.optionIndex === index
                         ? "bg-primary/20 border-primary"
                         : "bg-background/50 border-border hover:border-primary/50"
                     }`}
                   >
                     <div className="flex items-start gap-3">
                       <span className={`flex items-center justify-center w-6 h-6 rounded-full text-sm font-bold flex-shrink-0 ${
-                        answers[currentQ.id] === option.score
+                        answers[currentQ.id]?.optionIndex === index
                           ? "bg-primary text-white"
                           : "bg-muted text-muted-foreground"
                       }`}>
                         {String.fromCharCode(65 + index)}
                       </span>
-                      <span className={answers[currentQ.id] === option.score ? "text-foreground" : "text-muted-foreground"}>
+                      <span className={answers[currentQ.id]?.optionIndex === index ? "text-foreground" : "text-muted-foreground"}>
                         {option.text}
                       </span>
                     </div>
