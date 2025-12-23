@@ -222,6 +222,97 @@ const allBlogPosts = [
     readTime: "10 min read",
     date: "2024-12-25"
   },
+  // Consent & Safety Articles (10)
+  {
+    title: "The Golden Rules of Consent: How to Ask, Give, and Revoke It Gracefully",
+    category: "consent",
+    categoryDisplay: "Consent & Safety",
+    excerpt: "A practical guide to enthusiastic consent, verbal/non-verbal cues, and why 'yes' should always feel exciting, never pressured.",
+    path: "/blog/consent-golden-rules",
+    readTime: "14 min read",
+    date: "2025-01-20"
+  },
+  {
+    title: "Red Flags vs. Green Flags: Spotting Safe Partners Before You Meet",
+    category: "consent",
+    categoryDisplay: "Consent & Safety",
+    excerpt: "Real examples of warning signs in profiles, messages, and first conversations—plus the positive traits that signal a respectful playmate.",
+    path: "/blog/red-flags-green-flags",
+    readTime: "12 min read",
+    date: "2025-01-19"
+  },
+  {
+    title: "Safer Sex in the Lifestyle: 2026 Guide to STI Testing, Barriers & Honest Conversations",
+    category: "consent",
+    categoryDisplay: "Consent & Safety",
+    excerpt: "Updated protocols, best testing services, how to share results without awkwardness, and protecting everyone involved.",
+    path: "/blog/safer-sex-guide-2026",
+    readTime: "15 min read",
+    date: "2025-01-18"
+  },
+  {
+    title: "Solo Dates Done Right: Personal Safety Tips for First Meets",
+    category: "consent",
+    categoryDisplay: "Consent & Safety",
+    excerpt: "Step-by-step checklist: location sharing, public meetups, check-in systems, sober consent, and emergency plans for swinging and ENM.",
+    path: "/blog/solo-dates-safety",
+    readTime: "11 min read",
+    date: "2025-01-17"
+  },
+  {
+    title: "When 'No' Gets Ignored: How to Handle Consent Violations",
+    category: "consent",
+    categoryDisplay: "Consent & Safety",
+    excerpt: "Empowering advice on immediate responses, aftermath support, reporting in communities, and healing as a couple or individual.",
+    path: "/blog/consent-violations",
+    readTime: "13 min read",
+    date: "2025-01-16"
+  },
+  {
+    title: "Consent Check-Ins: Sexy Phrases and Techniques to Keep Things Hot and Safe",
+    category: "consent",
+    categoryDisplay: "Consent & Safety",
+    excerpt: "Fun, flirty ways to pause and confirm comfort mid-scene without killing the mood—includes scripts for beginners.",
+    path: "/blog/consent-check-ins-sexy",
+    readTime: "10 min read",
+    date: "2025-01-15"
+  },
+  {
+    title: "Alcohol, Substances, and Consent: Why a Clear Head Makes Everything Better",
+    category: "consent",
+    categoryDisplay: "Consent & Safety",
+    excerpt: "Exploring how intoxication affects decision-making, setting personal limits, and creating group agreements for parties or dates.",
+    path: "/blog/alcohol-substances-consent",
+    readTime: "12 min read",
+    date: "2025-01-14"
+  },
+  {
+    title: "Digital Safety First: Protecting Your Privacy in Apps, Chats & Communities",
+    category: "consent",
+    categoryDisplay: "Consent & Safety",
+    excerpt: "Tips on anonymous profiles, secure messaging, avoiding revenge porn, and what to do if photos get shared without permission.",
+    path: "/blog/digital-safety-first",
+    readTime: "15 min read",
+    date: "2025-01-13"
+  },
+  {
+    title: "Aftercare and Emotional Safety: Why Reconnection Matters Just as Much as Protection",
+    category: "consent",
+    categoryDisplay: "Consent & Safety",
+    excerpt: "How to debrief, provide reassurance, and handle unexpected feelings after play—essential for long-term enjoyment and trust.",
+    path: "/blog/aftercare-emotional-safety",
+    readTime: "13 min read",
+    date: "2025-01-12"
+  },
+  {
+    title: "Teaching Consent to the Next Generation: Raising Kids Who Understand Boundaries",
+    category: "consent",
+    categoryDisplay: "Consent & Safety",
+    excerpt: "Age-appropriate ways to model healthy consent, respect, and communication for parents in open or lifestyle relationships.",
+    path: "/blog/teaching-consent-next-generation",
+    readTime: "14 min read",
+    date: "2025-01-11"
+  },
 ];
 
 // Category configuration
