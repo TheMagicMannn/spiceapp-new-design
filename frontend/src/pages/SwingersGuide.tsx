@@ -73,7 +73,7 @@ const SwingersGuide = () => {
                   <p className="text-sm text-muted-foreground">Assess your readiness</p>
                 </div>
               </Link>
-              <Link to="/blog/swinging-101" className="flex items-center gap-4 p-4 bg-card/50 backdrop-blur-sm border border-border rounded-xl hover:border-primary/50 transition-all group">
+              <Link to="/blog/swinging-101-beginners-guide" className="flex items-center gap-4 p-4 bg-card/50 backdrop-blur-sm border border-border rounded-xl hover:border-primary/50 transition-all group">
                 <BookOpen className="w-6 h-6 text-primary flex-shrink-0" />
                 <div>
                   <h3 className="font-semibold group-hover:text-primary transition-colors">Beginner's Guide</h3>
