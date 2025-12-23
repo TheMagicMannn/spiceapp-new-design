@@ -196,6 +196,86 @@ const allBlogPosts = [
     path: "/blog/bdsm-safety-checklist",
     readTime: "10 min read"
   },
+  {
+    title: "BDSM for Beginners: How to Safely Explore Your First Kinks",
+    category: "bdsm",
+    categoryDisplay: "BDSM & Kink",
+    excerpt: "A gentle, step-by-step guide to BDSM for beginners. Learn self-discovery, basic toys, negotiation techniques, and how to start with low-risk scenes safely.",
+    path: "/blog/bdsm-beginners-guide",
+    readTime: "18 min read"
+  },
+  {
+    title: "The Power of Aftercare: Why It's the Most Important Part of Any Scene",
+    category: "bdsm",
+    categoryDisplay: "BDSM & Kink",
+    excerpt: "Deep dive into emotional and physical aftercare techniques, real couple stories, and why skipping it can lead to sub-drop or Dom-drop.",
+    path: "/blog/bdsm-aftercare-guide",
+    readTime: "16 min read"
+  },
+  {
+    title: "Negotiating Like a Pro: The Ultimate BDSM Checklist and Templates",
+    category: "bdsm",
+    categoryDisplay: "BDSM & Kink",
+    excerpt: "Downloadable resources, must-ask questions, and tips for turning potentially awkward talks into intimate foreplay.",
+    path: "/blog/bdsm-negotiation-checklist",
+    readTime: "20 min read"
+  },
+  {
+    title: "Kink and Mental Health: How BDSM Can Heal, Harm, or Help You Grow",
+    category: "bdsm",
+    categoryDisplay: "BDSM & Kink",
+    excerpt: "Honest exploration of catharsis, trauma processing, therapy compatibility, and red flags to watch for.",
+    path: "/blog/kink-mental-health",
+    readTime: "17 min read"
+  },
+  {
+    title: "Top 10 Beginner-Friendly Kinks That Feel Intense But Are Low-Risk",
+    category: "bdsm",
+    categoryDisplay: "BDSM & Kink",
+    excerpt: "Spotlight on sensation play, light bondage, role-playing, and more—with safety tips and starter toy recommendations.",
+    path: "/blog/beginner-friendly-kinks",
+    readTime: "14 min read"
+  },
+  {
+    title: "Finding Your Kink Community in 2026: Events, Munches, Apps & Spaces",
+    category: "bdsm",
+    categoryDisplay: "BDSM & Kink",
+    excerpt: "Curated list of in-person and virtual options, etiquette for first-timers, and how to spot welcoming vs. toxic groups.",
+    path: "/blog/finding-kink-community",
+    readTime: "15 min read"
+  },
+  {
+    title: "Switching Dynamics: What Happens When a Dom Wants to Sub",
+    category: "bdsm",
+    categoryDisplay: "BDSM & Kink",
+    excerpt: "Personal stories, identity shifts, relationship impacts, and advice for partners navigating role flexibility.",
+    path: "/blog/switching-dynamics",
+    readTime: "13 min read"
+  },
+  {
+    title: "Kink on a Budget: DIY Toys, Furniture Hacks, and Affordable Gear",
+    category: "bdsm",
+    categoryDisplay: "BDSM & Kink",
+    excerpt: "Creative, safe homemade alternatives to expensive equipment—plus reviews of the best under-$50 finds.",
+    path: "/blog/kink-on-budget",
+    readTime: "12 min read"
+  },
+  {
+    title: "Long-Distance BDSM: Keeping the Power Exchange Hot Across Miles",
+    category: "bdsm",
+    categoryDisplay: "BDSM & Kink",
+    excerpt: "Tools, apps, tasks, rituals, and virtual scene ideas for maintaining intensity across time zones.",
+    path: "/blog/long-distance-bdsm",
+    readTime: "22 min read"
+  },
+  {
+    title: "Coming Out as Kinky: How to Tell Partners, Friends, or Family",
+    category: "bdsm",
+    categoryDisplay: "BDSM & Kink",
+    excerpt: "Strategies for disclosure, handling judgment, setting boundaries, and finding chosen family in the lifestyle.",
+    path: "/blog/coming-out-kinky",
+    readTime: "20 min read"
+  },
   // Consent & Safety Articles
   {
     title: "The Golden Rules of Consent: How to Ask, Give, and Revoke It Gracefully",
