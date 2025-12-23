@@ -589,10 +589,10 @@ const HotwifingGuide = () => {
                     Download SPICE Free
                   </a>
                   <a
-                    href="/quiz"
-                    className="inline-flex items-center justify-center px-8 py-3 bg-background border-2 border-primary hover:bg-primary/10 font-semibold rounded-full transition-all"
+                    href="/quiz/hotwifing"
+                    className="inline-flex items-center justify-center px-8 py-3 bg-gradient-to-r from-pink-500 to-red-500 hover:from-pink-600 hover:to-red-600 text-white font-semibold rounded-full transition-all"
                   >
-                    Take BDSM Quiz
+                    Take Hotwifing Quiz
                   </a>
                 </div>
               </div>
