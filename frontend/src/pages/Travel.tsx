@@ -13,9 +13,9 @@ const Travel = () => {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "TravelGuide",
-    "name": "Lifestyle Travel Guide: Swinger Cruises, Resorts & Hotel Takeovers",
-    "description": "Complete guide to lifestyle travel including swinger cruises, adults-only resorts, and hotel takeover events for couples and singles.",
-    "keywords": "swinger cruise, lifestyle resort, hotel takeover, Desire Riviera Maya, Hedonism II, Bliss Cruise"
+    "name": "Lifestyle Travel Guide: Swinger Cruises, Resorts, Clubs & Hotel Takeovers",
+    "description": "Complete guide to lifestyle travel including swinger cruises, adults-only resorts, swingers clubs, and hotel takeover events for couples and singles.",
+    "keywords": "swinger cruise, lifestyle resort, hotel takeover, swingers club, Desire Riviera Maya, Hedonism II, Bliss Cruise, Green Door, Trapeze, Colette"
   };
 
   const cruises = [
