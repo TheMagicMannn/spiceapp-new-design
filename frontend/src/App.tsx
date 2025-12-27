@@ -158,6 +158,8 @@ const App = () => (
             <Route path="/vs/feeld" element={<ComparisonFeeld />} />
             <Route path="/vs/3fun" element={<Comparison3Fun />} />
             <Route path="/vs/sdc" element={<ComparisonSDC />} />
+            <Route path="/vs/kasidie" element={<ComparisonKasidie />} />
+            <Route path="/vs/sls" element={<ComparisonSLS />} />
             
             {/* Lifestyle Guides */}
             <Route path="/lifestyle" element={<Lifestyle />} />
