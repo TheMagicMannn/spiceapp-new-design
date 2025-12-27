@@ -31,7 +31,7 @@ Complete guide for deploying the SPICE app to Vercel with proper environment var
 6. Deploy and get URL
 
 ### Option 3: Use Existing Deployment
-Your current backend URL: `https://enm-quiz-dev.preview.emergentagent.com`
+Your current backend URL: `https://sti-resources.preview.emergentagent.com`
 
 ## Vercel Environment Variables
 
@@ -41,8 +41,8 @@ Go to Vercel Dashboard → Your Project → Settings → Environment Variables
 
 ```bash
 # Backend API URL (CRITICAL - Update with your deployed backend URL)
-REACT_APP_BACKEND_URL=https://enm-quiz-dev.preview.emergentagent.com
-VITE_BACKEND_URL=https://enm-quiz-dev.preview.emergentagent.com
+REACT_APP_BACKEND_URL=https://sti-resources.preview.emergentagent.com
+VITE_BACKEND_URL=https://sti-resources.preview.emergentagent.com
 
 # Supabase (Optional - only if using Supabase features)
 VITE_SUPABASE_PROJECT_ID=rvpkcwskkovqhfwwrdeq
