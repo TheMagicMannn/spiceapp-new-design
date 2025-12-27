@@ -838,12 +838,13 @@ const Travel = () => {
                 <Ship className="w-6 h-6 text-primary" />
                 <Palmtree className="w-6 h-6 text-primary" />
                 <Hotel className="w-6 h-6 text-primary" />
+                <Martini className="w-6 h-6 text-primary" />
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-purple-400 to-primary bg-clip-text text-transparent">
                 Lifestyle Travel Guide 2026
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-                Your ultimate guide to swinger cruises, lifestyle resorts, and hotel takeover events. 
+                Your ultimate guide to swinger cruises, lifestyle resorts, hotel takeover events, and top-rated clubs. 
                 Discover the best experiences for couples and adventurous singles.
               </p>
               
