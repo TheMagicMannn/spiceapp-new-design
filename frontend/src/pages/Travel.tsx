@@ -26,7 +26,7 @@ const Travel = () => {
       features: ["Full Ship Charter", "3,000+ Guests", "Caribbean Itineraries", "Themed Nightly Parties", "Playrooms Available"],
       priceRange: "$2,500 - $8,000",
       duration: "7 nights",
-      nextSailing: "November 2026",
+      nextSailing: "February 2026",
       rating: 4.9,
       reviews: 2800,
       link: "https://blisscruise.com",
