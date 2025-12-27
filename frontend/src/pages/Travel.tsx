@@ -26,7 +26,7 @@ const Travel = () => {
       features: ["Full Ship Charter", "3,000+ Guests", "Caribbean Itineraries", "Themed Nightly Parties", "Playrooms Available"],
       priceRange: "$2,500 - $8,000",
       duration: "7 nights",
-      nextSailing: "November 2025",
+      nextSailing: "November 2026",
       rating: 4.9,
       reviews: 2800,
       link: "https://blisscruise.com",
@@ -40,7 +40,7 @@ const Travel = () => {
       features: ["Boutique Ships", "All-Inclusive", "Sensual Entertainment", "Couples-Focused", "Premium Suites"],
       priceRange: "$4,000 - $12,000",
       duration: "7-10 nights",
-      nextSailing: "April 2025",
+      nextSailing: "April 2026",
       rating: 4.8,
       reviews: 1400,
       link: "https://desirecruises.com",
@@ -54,7 +54,7 @@ const Travel = () => {
       features: ["Party Atmosphere", "Top DJs", "Topless-Optional", "Singles Welcome", "5-Night Voyages"],
       priceRange: "$1,800 - $5,500",
       duration: "5-7 nights",
-      nextSailing: "February 2025",
+      nextSailing: "February 2026",
       rating: 4.7,
       reviews: 1900,
       link: "https://temptationcruises.com",
@@ -340,7 +340,7 @@ const Travel = () => {
   return (
     <>
       <SEO
-        title="Swinger Cruises, Lifestyle Resorts & Hotel Takeovers 2025 | SPICE"
+        title="Swinger Cruises, Lifestyle Resorts & Hotel Takeovers 2026 | SPICE"
         description="Complete guide to swinger cruises, lifestyle resorts, and hotel takeovers. Compare Bliss Cruise, Desire Resorts, Hedonism II, LLV events, and more. Book your lifestyle vacation."
         keywords="swinger cruise, lifestyle resort, hotel takeover, Bliss Cruise, Desire Riviera Maya, Hedonism II, swinger vacation, lifestyle travel, couples vacation, adults only resort"
         canonical="https://thespiceapp.com/travel"
@@ -363,7 +363,7 @@ const Travel = () => {
                 <Hotel className="w-6 h-6 text-primary" />
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-purple-400 to-primary bg-clip-text text-transparent">
-                Lifestyle Travel Guide 2025
+                Lifestyle Travel Guide 2026
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
                 Your ultimate guide to swinger cruises, lifestyle resorts, and hotel takeover events. 
