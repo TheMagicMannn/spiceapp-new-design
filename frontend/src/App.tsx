@@ -29,6 +29,8 @@ import CityPage from "./pages/CityPage";
 import ComparisonFeeld from "./pages/ComparisonFeeld";
 import Comparison3Fun from "./pages/Comparison3Fun";
 import ComparisonSDC from "./pages/ComparisonSDC";
+import ComparisonKasidie from "./pages/ComparisonKasidie";
+import ComparisonSLS from "./pages/ComparisonSLS";
 import HotwifingGuide from "./pages/HotwifingGuide";
 import SwingersGuide from "./pages/SwingersGuide";
 import BDSMGuide from "./pages/BDSMGuide";
