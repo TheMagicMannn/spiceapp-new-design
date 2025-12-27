@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import SEO from "@/components/SEO";
-import { Check, X, Minus } from "lucide-react";
+import { Check, X, Minus, Crown, ChevronRight, Star, Shield, DollarSign, Smartphone, Sparkles } from "lucide-react";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import { Link } from "react-router-dom";
 
 type FeatureStatus = "yes" | "no" | "partial" | "coming";
 
