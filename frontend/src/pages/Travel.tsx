@@ -1,4 +1,4 @@
-import { Ship, Hotel, Palmtree, MapPin, Calendar, Star, Users, Heart, ExternalLink, Shield, Sparkles, PartyPopper, Plane, DollarSign, Clock, Check, ChevronRight, Sun, Waves, Music } from "lucide-react";
+import { Ship, Hotel, Palmtree, MapPin, Calendar, Star, Users, Heart, ExternalLink, Shield, Sparkles, PartyPopper, Plane, DollarSign, Clock, Check, ChevronRight, Sun, Waves, Music, Building2, Martini, Moon, Flame, Crown, Zap, Globe } from "lucide-react";
 import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
@@ -7,7 +7,8 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { useState } from "react";
 
 const Travel = () => {
-  const [activeCategory, setActiveCategory] = useState<'all' | 'cruises' | 'resorts' | 'takeovers'>('all');
+  const [activeCategory, setActiveCategory] = useState<'all' | 'cruises' | 'resorts' | 'takeovers' | 'clubs'>('all');
+  const [selectedCity, setSelectedCity] = useState<string>('all');
 
   const structuredData = {
     "@context": "https://schema.org",
