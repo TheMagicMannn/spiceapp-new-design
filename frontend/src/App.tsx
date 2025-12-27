@@ -41,6 +41,7 @@ import JealousyManagement from "./pages/JealousyManagement";
 import SafetyVerification from "./pages/SafetyVerification";
 import AIMatching from "./pages/AIMatching";
 import WhyDifferent from "./pages/WhyDifferent";
+import OurStory from "./pages/OurStory";
 import ConsentBasics from "./pages/ConsentBasics";
 import LifestyleEtiquette from "./pages/LifestyleEtiquette";
 import CommonMyths from "./pages/CommonMyths";
