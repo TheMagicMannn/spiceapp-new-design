@@ -182,26 +182,7 @@ const Travel = () => {
     }
   ];
 
-  // Swingers Clubs Data organized by city
-  const clubs = [
-    // LAS VEGAS
-    {
-      name: "Green Door",
-      city: "Las Vegas",
-      state: "NV",
-      tagline: "Vegas's Premier Adult Playground",
-      description: "The largest and most famous lifestyle club in Las Vegas. Two massive floors featuring multiple themed rooms, dance floors, pools, and play areas. Open 24/7 on weekends. A must-visit for any lifestyle couple in Vegas.",
-      image: "https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg",
-      features: ["24/7 Weekend Hours", "Pool & Hot Tub", "Multiple Dance Floors", "BYOB", "Couples & Singles", "Themed Rooms"],
-      priceRange: "$40-80/person",
-      hours: "Thu-Sun 24hrs, Mon-Wed 8PM-4AM",
-      dressCode: "Upscale Sexy",
-      rating: 4.7,
-      reviews: 2400,
-      link: "https://greendoorlasvegas.com",
-      highlight: "Most Famous",
-      established: "1996"
-    },
+  const tips = [
     {
       name: "Whispers",
       city: "Las Vegas",
