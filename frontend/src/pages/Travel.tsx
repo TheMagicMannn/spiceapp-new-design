@@ -184,367 +184,6 @@ const Travel = () => {
 
   const tips = [
     {
-      name: "Whispers",
-      city: "Las Vegas",
-      state: "NV",
-      tagline: "Upscale Intimate Experience",
-      description: "An elegant, upscale lifestyle club offering a more intimate experience than the mega-clubs. Known for its sophisticated crowd, excellent dance floor, and well-appointed play areas. Couples-focused atmosphere.",
-      image: "https://images.pexels.com/photos/2747449/pexels-photo-2747449.jpeg",
-      features: ["Upscale Crowd", "Intimate Setting", "Dance Floor", "BYOB", "Couples Focused", "Private Rooms"],
-      priceRange: "$60-100/couple",
-      hours: "Fri-Sat 9PM-4AM",
-      dressCode: "Upscale Sexy",
-      rating: 4.6,
-      reviews: 890,
-      link: "https://whisperslv.com",
-      highlight: "Most Upscale",
-      established: "2008"
-    },
-    {
-      name: "Red Rooster",
-      city: "Las Vegas",
-      state: "NV",
-      tagline: "The Original Vegas Swinger Club",
-      description: "One of the oldest and most established swinger clubs in America. A Vegas institution since 1982. More casual, house-party vibe with a diverse crowd. Great for first-timers looking for a relaxed introduction.",
-      image: "https://images.pexels.com/photos/1267697/pexels-photo-1267697.jpeg",
-      features: ["Historic Venue", "Relaxed Vibe", "House Party Feel", "BYOB", "All Experience Levels", "Pool Available"],
-      priceRange: "$50-75/couple",
-      hours: "Fri-Sat 9PM-5AM",
-      dressCode: "Casual Sexy",
-      rating: 4.3,
-      reviews: 1650,
-      link: "https://redroosterlv.com",
-      highlight: "Classic",
-      established: "1982"
-    },
-    // MIAMI
-    {
-      name: "Trapeze",
-      city: "Miami",
-      state: "FL",
-      tagline: "South Florida's Legendary Club",
-      description: "The crown jewel of Florida's lifestyle scene. Massive 10,000 sq ft facility with outdoor pool, multiple play areas, and legendary theme nights. Saturday nights are world-famous. A bucket-list destination.",
-      image: "https://images.pexels.com/photos/3171837/pexels-photo-3171837.jpeg",
-      features: ["10,000 Sq Ft", "Outdoor Pool", "Theme Nights", "BYOB", "Dance Floor", "Couples & Singles"],
-      priceRange: "$75-125/couple",
-      hours: "Fri-Sat 9PM-3AM",
-      dressCode: "Upscale Sexy",
-      rating: 4.8,
-      reviews: 3200,
-      link: "https://trapezeclubmiami.com",
-      highlight: "Legendary",
-      established: "1990"
-    },
-    {
-      name: "Miami Velvet",
-      city: "Miami",
-      state: "FL",
-      tagline: "Ultra-Luxe Lifestyle Experience",
-      description: "The most luxurious lifestyle club in Miami. Stunning modern design, bottle service, VIP areas, and an atmosphere that rivals the best nightclubs. Draws a beautiful, fashion-forward crowd. Premium experience.",
-      image: "https://images.pexels.com/photos/1587927/pexels-photo-1587927.jpeg",
-      features: ["Ultra-Luxury", "Bottle Service", "VIP Areas", "Modern Design", "Beautiful Crowd", "Premium Sound"],
-      priceRange: "$100-200/couple",
-      hours: "Fri-Sat 10PM-4AM",
-      dressCode: "Upscale Club Attire",
-      rating: 4.7,
-      reviews: 1800,
-      link: "https://miamivelvetnightclub.com",
-      highlight: "Most Luxurious",
-      established: "2010"
-    },
-    {
-      name: "Secrets Hideaway",
-      city: "Kissimmee",
-      state: "FL",
-      tagline: "Orlando Area's Only Resort Club",
-      description: "A unique lifestyle resort near Orlando with overnight accommodations, multiple pools, and club facilities. Perfect for weekend getaways. Features themed weekends, pool parties, and a welcoming atmosphere.",
-      image: "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg",
-      features: ["Resort Style", "Overnight Stays", "Multiple Pools", "Theme Weekends", "Restaurant", "Couples Only"],
-      priceRange: "$100-175/night",
-      hours: "Open Daily",
-      dressCode: "Resort Casual",
-      rating: 4.5,
-      reviews: 2100,
-      link: "https://secretsfl.com",
-      highlight: "Resort Club",
-      established: "2005"
-    },
-    // DALLAS / TEXAS
-    {
-      name: "Colette Dallas",
-      city: "Dallas",
-      state: "TX",
-      tagline: "Nationally Acclaimed Club Experience",
-      description: "Part of the renowned Colette chain known for premium experiences. Upscale venue with excellent facilities, professional management, and a sophisticated crowd. One of the best-run clubs in America.",
-      image: "https://images.pexels.com/photos/2034851/pexels-photo-2034851.jpeg",
-      features: ["Colette Brand", "Premium Facilities", "Great Management", "BYOB", "New Members Welcome", "Regular Events"],
-      priceRange: "$75-125/couple",
-      hours: "Fri-Sat 9PM-3AM",
-      dressCode: "Upscale Sexy",
-      rating: 4.8,
-      reviews: 1450,
-      link: "https://coletteclubs.com/dallas",
-      highlight: "Top Rated",
-      established: "2012"
-    },
-    {
-      name: "Players Club DFW",
-      city: "Dallas",
-      state: "TX",
-      tagline: "DFW's Largest Lifestyle Club",
-      description: "The biggest lifestyle club in the Dallas-Fort Worth metroplex. Large dance floor, multiple play areas, and a welcoming atmosphere for couples and singles. Regular theme nights and special events.",
-      image: "https://images.pexels.com/photos/1540406/pexels-photo-1540406.jpeg",
-      features: ["Large Venue", "Big Dance Floor", "Theme Nights", "BYOB", "Couples & Singles", "Party Atmosphere"],
-      priceRange: "$50-80/couple",
-      hours: "Fri-Sat 9PM-4AM",
-      dressCode: "Sexy Attire",
-      rating: 4.4,
-      reviews: 1100,
-      link: "https://playersclubdfw.com",
-      highlight: "Largest in DFW",
-      established: "2000"
-    },
-    {
-      name: "Colette Houston",
-      city: "Houston",
-      state: "TX",
-      tagline: "Houston's Premier Lifestyle Venue",
-      description: "Another gem in the Colette collection. Spacious, beautifully designed club with a diverse, friendly crowd. Known for excellent theme parties, professional staff, and consistently great experiences.",
-      image: "https://images.pexels.com/photos/3171770/pexels-photo-3171770.jpeg",
-      features: ["Colette Brand", "Spacious Layout", "Diverse Crowd", "BYOB", "Theme Parties", "Professional Staff"],
-      priceRange: "$75-125/couple",
-      hours: "Fri-Sat 9PM-3AM",
-      dressCode: "Upscale Sexy",
-      rating: 4.7,
-      reviews: 980,
-      link: "https://coletteclubs.com/houston",
-      highlight: "Premium",
-      established: "2015"
-    },
-    {
-      name: "Colette Austin",
-      city: "Austin",
-      state: "TX",
-      tagline: "Keep Austin Weird... And Sexy",
-      description: "The Austin outpost of the Colette brand brings premium lifestyle experiences to the Texas capital. Attracts Austin's open-minded, creative crowd. Excellent facilities and a fun, adventurous vibe.",
-      image: "https://images.pexels.com/photos/2114365/pexels-photo-2114365.jpeg",
-      features: ["Colette Brand", "Creative Crowd", "Austin Vibe", "BYOB", "Well-Designed", "Friendly Atmosphere"],
-      priceRange: "$75-125/couple",
-      hours: "Fri-Sat 9PM-3AM",
-      dressCode: "Upscale Sexy",
-      rating: 4.6,
-      reviews: 720,
-      link: "https://coletteclubs.com/austin",
-      highlight: "Austin Vibe",
-      established: "2018"
-    },
-    // LOS ANGELES / CALIFORNIA
-    {
-      name: "Club Joi",
-      city: "Los Angeles",
-      state: "CA",
-      tagline: "LA's Most Exclusive Lifestyle Club",
-      description: "The most exclusive and upscale lifestyle club in Los Angeles. Members-only with a strict vetting process. Attracts entertainment industry professionals and LA's elite. Ultra-high-end facilities.",
-      image: "https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg",
-      features: ["Members Only", "Ultra Exclusive", "Vetting Process", "Industry Crowd", "Premium Everything", "Privacy Focused"],
-      priceRange: "$200-500/couple",
-      hours: "Sat 10PM-4AM",
-      dressCode: "High Fashion",
-      rating: 4.9,
-      reviews: 650,
-      link: "https://clubjoi.com",
-      highlight: "Most Exclusive",
-      established: "2008"
-    },
-    {
-      name: "Freedom Acres",
-      city: "San Bernardino",
-      state: "CA",
-      tagline: "SoCal's Premier Outdoor Club",
-      description: "A unique outdoor lifestyle resort east of LA. Features pools, hot tubs, camping, and RV hookups. Perfect for weekend getaways. Day and night parties, theme events, and a relaxed atmosphere.",
-      image: "https://images.pexels.com/photos/221457/pexels-photo-221457.jpeg",
-      features: ["Outdoor Resort", "Pools & Hot Tubs", "Camping Available", "RV Hookups", "Theme Events", "Day Parties"],
-      priceRange: "$50-100/couple",
-      hours: "Weekends Only",
-      dressCode: "Casual/Nude",
-      rating: 4.4,
-      reviews: 1400,
-      link: "https://freedomacres.net",
-      highlight: "Outdoor Resort",
-      established: "1985"
-    },
-    {
-      name: "Sea Mountain Inn",
-      city: "Desert Hot Springs",
-      state: "CA",
-      tagline: "Nude Spa Resort & Club",
-      description: "A clothing-optional resort and spa in the California desert. Mineral pools, massage services, and lifestyle-friendly atmosphere. Open 24/7 for overnight guests. A unique, relaxing experience.",
-      image: "https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg",
-      features: ["24/7 Access", "Mineral Pools", "Spa Services", "Overnight Stays", "Clothing Optional", "Desert Setting"],
-      priceRange: "$150-300/night",
-      hours: "24/7 for guests",
-      dressCode: "None Required",
-      rating: 4.3,
-      reviews: 890,
-      link: "https://seamountaininn.com",
-      highlight: "Spa Resort",
-      established: "1995"
-    },
-    // NEW YORK / NORTHEAST
-    {
-      name: "Bowery Bliss",
-      city: "New York",
-      state: "NY",
-      tagline: "NYC's Most Sophisticated Club",
-      description: "A chic, sophisticated lifestyle club in Manhattan. Attracts NYC's fashionable, professional crowd. Intimate space with excellent music, premium drinks, and a sensual atmosphere. Highly vetted membership.",
-      image: "https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg",
-      features: ["Manhattan Location", "Sophisticated Crowd", "Vetted Members", "Premium Bar", "Fashion Forward", "Intimate Setting"],
-      priceRange: "$150-250/couple",
-      hours: "Sat 10PM-4AM",
-      dressCode: "NYC Chic",
-      rating: 4.6,
-      reviews: 580,
-      link: "https://bowerybliss.com",
-      highlight: "NYC Elite",
-      established: "2016"
-    },
-    {
-      name: "Chemistry",
-      city: "New York",
-      state: "NY",
-      tagline: "Brooklyn's Underground Scene",
-      description: "A trendy, underground-style club in Brooklyn. Attracts artists, creatives, and adventurous professionals. Known for theme nights, art installations, and a younger, hipper crowd. Very NYC cool.",
-      image: "https://images.pexels.com/photos/1699161/pexels-photo-1699161.jpeg",
-      features: ["Brooklyn Vibe", "Creative Crowd", "Theme Nights", "Art Installations", "Younger Crowd", "Underground Feel"],
-      priceRange: "$100-175/couple",
-      hours: "Fri-Sat 10PM-4AM",
-      dressCode: "Creative/Artsy",
-      rating: 4.5,
-      reviews: 420,
-      link: "https://chemistrynyc.com",
-      highlight: "Trendy",
-      established: "2019"
-    },
-    // ATLANTA
-    {
-      name: "Trapeze Atlanta",
-      city: "Atlanta",
-      state: "GA",
-      tagline: "Atlanta's Legendary Club",
-      description: "Sister club to the famous Miami Trapeze. Large, well-established venue with excellent facilities, themed rooms, and a diverse, friendly crowd. One of the best clubs in the Southeast.",
-      image: "https://images.pexels.com/photos/1449791/pexels-photo-1449791.jpeg",
-      features: ["Trapeze Brand", "Large Venue", "Themed Rooms", "BYOB", "Diverse Crowd", "Great Music"],
-      priceRange: "$65-100/couple",
-      hours: "Fri-Sat 9PM-3AM",
-      dressCode: "Upscale Sexy",
-      rating: 4.6,
-      reviews: 1900,
-      link: "https://trapezeclubatlanta.com",
-      highlight: "Southeast's Best",
-      established: "1998"
-    },
-    // CHICAGO
-    {
-      name: "Couples Choice",
-      city: "Chicago",
-      state: "IL",
-      tagline: "Chicago's Premier Destination",
-      description: "The top lifestyle club in the Chicago area. Spacious venue with dance floor, lounge areas, and well-designed play spaces. Attracts a sophisticated Midwest crowd. Regular theme nights.",
-      image: "https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg",
-      features: ["Chicago's Best", "Spacious Venue", "Theme Nights", "BYOB", "Sophisticated Crowd", "Great Sound System"],
-      priceRange: "$60-100/couple",
-      hours: "Fri-Sat 9PM-3AM",
-      dressCode: "Upscale Casual",
-      rating: 4.5,
-      reviews: 1100,
-      link: "https://coupleschoice.com",
-      highlight: "Chicago's #1",
-      established: "2005"
-    },
-    // NEW ORLEANS
-    {
-      name: "Colette New Orleans",
-      city: "New Orleans",
-      state: "LA",
-      tagline: "Big Easy's Sexiest Club",
-      description: "The Colette brand brings its premium experience to New Orleans. Located near the French Quarter, this club combines NOLA's party spirit with upscale lifestyle amenities. Perfect for destination weekends.",
-      image: "https://images.pexels.com/photos/1536619/pexels-photo-1536619.jpeg",
-      features: ["Colette Brand", "Near French Quarter", "NOLA Vibe", "BYOB", "Weekend Destination", "Party Atmosphere"],
-      priceRange: "$75-125/couple",
-      hours: "Fri-Sat 9PM-3AM",
-      dressCode: "Upscale Sexy",
-      rating: 4.7,
-      reviews: 850,
-      link: "https://coletteclubs.com/new-orleans",
-      highlight: "NOLA Party",
-      established: "2014"
-    },
-    // DENVER
-    {
-      name: "Scarlet Ranch",
-      city: "Denver",
-      state: "CO",
-      tagline: "Colorado's Lifestyle Destination",
-      description: "A unique ranch-style lifestyle club outside Denver. Indoor/outdoor facilities with a Western flair. Pools, hot tubs, fire pits, and themed cabins. Attracts Colorado's adventurous couples.",
-      image: "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg",
-      features: ["Ranch Setting", "Indoor/Outdoor", "Pools & Hot Tubs", "Fire Pits", "Theme Cabins", "Colorado Vibe"],
-      priceRange: "$80-120/couple",
-      hours: "Fri-Sat 8PM-2AM",
-      dressCode: "Casual Sexy",
-      rating: 4.5,
-      reviews: 920,
-      link: "https://scarletranch.com",
-      highlight: "Unique Setting",
-      established: "2002"
-    },
-    // PHOENIX
-    {
-      name: "The Chalet",
-      city: "Phoenix",
-      state: "AZ",
-      tagline: "Arizona's Premier Club",
-      description: "The best-known lifestyle club in Arizona. Large venue with multiple play areas, dance floor, and outdoor spaces. Known for a friendly, welcoming atmosphere and diverse crowd.",
-      image: "https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg",
-      features: ["Arizona's Best", "Large Venue", "Outdoor Spaces", "BYOB", "Welcoming Vibe", "Diverse Crowd"],
-      priceRange: "$50-80/couple",
-      hours: "Fri-Sat 9PM-3AM",
-      dressCode: "Casual Sexy",
-      rating: 4.4,
-      reviews: 780,
-      link: "https://thechaletonline.com",
-      highlight: "Desert Oasis",
-      established: "1999"
-    },
-    // SEATTLE
-    {
-      name: "Sapphire Seattle",
-      city: "Seattle",
-      state: "WA",
-      tagline: "Pacific Northwest's Hidden Gem",
-      description: "Seattle's upscale lifestyle club for open-minded couples. Modern design, great music, and a sophisticated Pacific Northwest crowd. Known for a friendly, inclusive atmosphere.",
-      image: "https://images.pexels.com/photos/2608517/pexels-photo-2608517.jpeg",
-      features: ["Modern Design", "Great Music", "PNW Crowd", "BYOB", "Inclusive Vibe", "Weekend Parties"],
-      priceRange: "$75-100/couple",
-      hours: "Sat 9PM-2AM",
-      dressCode: "Upscale Casual",
-      rating: 4.4,
-      reviews: 540,
-      link: "https://sapphireseattle.com",
-      highlight: "PNW Best",
-      established: "2012"
-    }
-  ];
-
-  // Get unique cities from clubs
-  const cities = ['all', ...Array.from(new Set(clubs.map(club => club.city))).sort()];
-
-  // Filter clubs by selected city
-  const filteredClubs = selectedCity === 'all' 
-    ? clubs 
-    : clubs.filter(club => club.city === selectedCity);
-
-  const tips = [
-    {
       icon: Calendar,
       title: "Book Early",
       description: "Popular cruises and takeovers sell out 6-12 months in advance. Book early for best cabin/room selection."
@@ -575,14 +214,6 @@ const Travel = () => {
       description: "Consider a resort stay before a cruise. Resorts let you come and go; cruises are immersive for 7+ days."
     }
   ];
-
-  const filterItems = (items: typeof cruises | typeof resorts | typeof takeovers, category: string) => {
-    if (activeCategory === 'all') return items;
-    if (category === 'cruises' && activeCategory === 'cruises') return items;
-    if (category === 'resorts' && activeCategory === 'resorts') return items;
-    if (category === 'takeovers' && activeCategory === 'takeovers') return items;
-    return [];
-  };
 
   const renderCard = (item: typeof cruises[0] | typeof resorts[0] | typeof takeovers[0], type: 'cruise' | 'resort' | 'takeover') => {
     const isCruise = type === 'cruise';
@@ -699,108 +330,12 @@ const Travel = () => {
     );
   };
 
-  // Render Club Card
-  const renderClubCard = (club: typeof clubs[0]) => {
-    return (
-      <div key={club.name} className="group bg-card/60 backdrop-blur-sm border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10">
-        {/* Image */}
-        <div className="relative h-52 overflow-hidden">
-          <img 
-            src={club.image} 
-            alt={club.name}
-            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
-          
-          {/* Highlight Badge */}
-          <div className="absolute top-4 left-4 px-3 py-1 bg-primary text-white text-xs font-bold rounded-full flex items-center gap-1">
-            <Flame className="w-3 h-3" />
-            {club.highlight}
-          </div>
-          
-          {/* Rating */}
-          <div className="absolute top-4 right-4 px-3 py-1 bg-black/60 backdrop-blur-sm text-white text-sm rounded-full flex items-center gap-1">
-            <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
-            <span className="font-semibold">{club.rating}</span>
-            <span className="text-white/70">({club.reviews.toLocaleString()})</span>
-          </div>
-          
-          {/* Location Badge */}
-          <div className="absolute bottom-4 left-4 text-white">
-            <div className="flex items-center gap-1 text-sm font-medium">
-              <MapPin className="w-4 h-4" />
-              {club.city}, {club.state}
-            </div>
-          </div>
-          
-          {/* Price Badge */}
-          <div className="absolute bottom-4 right-4 px-3 py-1.5 bg-gradient-to-r from-primary to-purple-600 text-white text-sm font-bold rounded-lg">
-            {club.priceRange}
-          </div>
-        </div>
-        
-        {/* Content */}
-        <div className="p-5">
-          <div className="flex items-start justify-between mb-2">
-            <div>
-              <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
-                {club.name}
-              </h3>
-              <p className="text-xs text-muted-foreground">Est. {club.established}</p>
-            </div>
-            <Martini className="w-6 h-6 text-primary flex-shrink-0" />
-          </div>
-          
-          <p className="text-sm text-primary font-medium mb-2">{club.tagline}</p>
-          <p className="text-muted-foreground text-sm mb-4 line-clamp-3">{club.description}</p>
-          
-          {/* Features */}
-          <div className="flex flex-wrap gap-1.5 mb-4">
-            {club.features.slice(0, 4).map((feature) => (
-              <span key={feature} className="px-2 py-0.5 bg-primary/10 text-primary text-xs rounded-full">
-                {feature}
-              </span>
-            ))}
-            {club.features.length > 4 && (
-              <span className="px-2 py-0.5 bg-muted text-muted-foreground text-xs rounded-full">
-                +{club.features.length - 4} more
-              </span>
-            )}
-          </div>
-          
-          {/* Club Details */}
-          <div className="space-y-2 mb-4 text-sm">
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <Clock className="w-4 h-4 text-primary flex-shrink-0" />
-              <span>{club.hours}</span>
-            </div>
-            <div className="flex items-center gap-2 text-muted-foreground">
-              <Crown className="w-4 h-4 text-primary flex-shrink-0" />
-              <span>Dress Code: <strong className="text-foreground">{club.dressCode}</strong></span>
-            </div>
-          </div>
-          
-          {/* CTA Button */}
-          <a 
-            href={club.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-gradient-to-r from-primary to-purple-600 hover:from-primary/90 hover:to-purple-600/90 text-white font-semibold rounded-xl transition-all group/btn"
-          >
-            <span>Visit Website</span>
-            <ExternalLink className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-          </a>
-        </div>
-      </div>
-    );
-  };
-
   return (
     <>
       <SEO
-        title="Swinger Cruises, Lifestyle Resorts, Clubs & Hotel Takeovers 2026 | SPICE"
-        description="Complete guide to swinger cruises, lifestyle resorts, swingers clubs, and hotel takeovers. Compare Bliss Cruise, Desire Resorts, Green Door, Trapeze, Colette clubs, and more. Find clubs in Las Vegas, Miami, Dallas, LA, NYC."
-        keywords="swinger cruise, lifestyle resort, hotel takeover, swingers club, Bliss Cruise, Desire Riviera Maya, Hedonism II, Green Door Las Vegas, Trapeze Miami, Colette clubs, swinger vacation, lifestyle travel, couples vacation, adults only resort"
+        title="Swinger Cruises, Lifestyle Resorts & Hotel Takeovers 2026 | SPICE"
+        description="Complete guide to swinger cruises, lifestyle resorts, and hotel takeovers. Compare Bliss Cruise, Desire Resorts, Hedonism II, LLV events, and more. Book your lifestyle vacation."
+        keywords="swinger cruise, lifestyle resort, hotel takeover, Bliss Cruise, Desire Riviera Maya, Hedonism II, swinger vacation, lifestyle travel, couples vacation, adults only resort"
         canonical="https://thespiceapp.com/travel"
         structuredData={structuredData}
       />
@@ -819,13 +354,12 @@ const Travel = () => {
                 <Ship className="w-6 h-6 text-primary" />
                 <Palmtree className="w-6 h-6 text-primary" />
                 <Hotel className="w-6 h-6 text-primary" />
-                <Martini className="w-6 h-6 text-primary" />
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-purple-400 to-primary bg-clip-text text-transparent">
                 Lifestyle Travel Guide 2026
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-                Your ultimate guide to swinger cruises, lifestyle resorts, hotel takeover events, and top-rated clubs. 
+                Your ultimate guide to swinger cruises, lifestyle resorts, and hotel takeover events. 
                 Discover the best experiences for couples and adventurous singles.
               </p>
               
@@ -844,12 +378,8 @@ const Travel = () => {
                   <div className="text-sm text-muted-foreground">Takeover Events</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">{clubs.length}+</div>
+                  <div className="text-3xl font-bold text-primary">25+</div>
                   <div className="text-sm text-muted-foreground">Swingers Clubs</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">{cities.length - 1}</div>
-                  <div className="text-sm text-muted-foreground">Cities Covered</div>
                 </div>
               </div>
               
@@ -898,17 +428,13 @@ const Travel = () => {
                   <Hotel className="w-4 h-4" />
                   Hotel Takeovers
                 </button>
-                <button 
-                  onClick={() => { setActiveCategory('clubs'); setSelectedCity('all'); }}
-                  className={`px-5 py-2.5 rounded-full font-medium transition-all flex items-center gap-2 ${
-                    activeCategory === 'clubs' 
-                      ? 'bg-primary text-white' 
-                      : 'bg-card/50 border border-border hover:border-primary/50 text-muted-foreground hover:text-foreground'
-                  }`}
+                <Link 
+                  to="/travel/clubs-resorts"
+                  className="px-5 py-2.5 rounded-full font-medium transition-all flex items-center gap-2 bg-card/50 border border-border hover:border-primary/50 text-muted-foreground hover:text-foreground"
                 >
                   <Martini className="w-4 h-4" />
                   Clubs & Venues
-                </button>
+                </Link>
               </div>
             </div>
 
@@ -1004,117 +530,29 @@ const Travel = () => {
               </section>
             )}
 
-            {/* Swingers Clubs Section */}
-            {(activeCategory === 'all' || activeCategory === 'clubs') && (
-              <section className="mb-20">
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8">
-                  <div className="flex items-center gap-3">
-                    <div className="p-3 bg-gradient-to-r from-pink-500/20 to-red-500/20 rounded-xl">
-                      <Martini className="w-7 h-7 text-pink-400" />
-                    </div>
-                    <div>
-                      <h2 className="text-2xl md:text-3xl font-bold">Swingers Clubs & Venues</h2>
-                      <p className="text-muted-foreground">Top-rated lifestyle clubs across {cities.length - 1} cities</p>
-                    </div>
+            {/* Clubs & Resorts CTA Banner */}
+            <section className="mb-20">
+              <div className="bg-gradient-to-r from-pink-500/20 via-purple-500/20 to-pink-500/20 border border-pink-500/30 rounded-2xl p-8 md:p-10">
+                <div className="flex flex-col md:flex-row items-center gap-6">
+                  <div className="p-4 bg-pink-500/20 rounded-2xl">
+                    <Martini className="w-12 h-12 text-pink-400" />
                   </div>
-                  
-                  {/* City Filter */}
-                  <div className="flex flex-wrap gap-2">
-                    <select
-                      value={selectedCity}
-                      onChange={(e) => setSelectedCity(e.target.value)}
-                      className="px-4 py-2 bg-card/70 border border-border rounded-xl text-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-all cursor-pointer"
-                    >
-                      <option value="all">All Cities ({clubs.length} clubs)</option>
-                      {cities.filter(c => c !== 'all').map((city) => (
-                        <option key={city} value={city}>
-                          {city} ({clubs.filter(c => c.city === city).length})
-                        </option>
-                      ))}
-                    </select>
+                  <div className="flex-1 text-center md:text-left">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-2">Swingers Clubs & Venues</h2>
+                    <p className="text-muted-foreground max-w-xl">
+                      Explore 25+ lifestyle clubs across 15 cities. Search by location, read reviews, and find the perfect venue for your next adventure.
+                    </p>
                   </div>
-                </div>
-
-                {/* Info Banner for Clubs */}
-                <div className="bg-gradient-to-r from-pink-500/10 to-purple-500/10 border border-pink-500/20 rounded-xl p-6 mb-8">
-                  <div className="flex flex-col md:flex-row md:items-center gap-4">
-                    <div className="p-3 bg-pink-500/10 rounded-full flex-shrink-0">
-                      <Shield className="w-6 h-6 text-pink-400" />
-                    </div>
-                    <div>
-                      <h3 className="font-bold text-lg mb-1">Club Etiquette & Tips</h3>
-                      <p className="text-sm text-muted-foreground">
-                        Most clubs are BYOB (Bring Your Own Bottle). Arrive after 10 PM for best atmosphere. 
-                        Always respect consent—"no" means "no." Couples are typically given priority entry. 
-                        Check websites for event calendars and theme nights before visiting.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* City Quick Select Buttons */}
-                {activeCategory === 'clubs' && (
-                  <div className="flex flex-wrap gap-2 mb-8">
-                    <button
-                      onClick={() => setSelectedCity('all')}
-                      className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-                        selectedCity === 'all'
-                          ? 'bg-pink-500 text-white'
-                          : 'bg-card/50 border border-border hover:border-pink-500/50 text-muted-foreground hover:text-foreground'
-                      }`}
-                    >
-                      <Globe className="w-4 h-4 inline mr-1" />
-                      All Cities
-                    </button>
-                    {['Las Vegas', 'Miami', 'Dallas', 'Los Angeles', 'New York', 'Atlanta', 'Chicago', 'New Orleans', 'Houston', 'Austin', 'Denver', 'Phoenix', 'Seattle'].map((city) => (
-                      clubs.some(c => c.city === city) && (
-                        <button
-                          key={city}
-                          onClick={() => setSelectedCity(city)}
-                          className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-                            selectedCity === city
-                              ? 'bg-pink-500 text-white'
-                              : 'bg-card/50 border border-border hover:border-pink-500/50 text-muted-foreground hover:text-foreground'
-                          }`}
-                        >
-                          {city}
-                        </button>
-                      )
-                    ))}
-                  </div>
-                )}
-                
-                {/* Club Grid */}
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {filteredClubs.map((club) => renderClubCard(club))}
-                </div>
-
-                {/* No Results */}
-                {filteredClubs.length === 0 && (
-                  <div className="text-center py-12">
-                    <Martini className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
-                    <p className="text-muted-foreground">No clubs found in {selectedCity}. Try selecting a different city.</p>
-                  </div>
-                )}
-
-                {/* Club Advertising Banner */}
-                <div className="mt-8 bg-gradient-to-r from-pink-500/20 via-purple-500/20 to-pink-500/20 border border-pink-500/30 rounded-2xl p-8 text-center">
-                  <Moon className="w-10 h-10 text-pink-400 mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold mb-3">Own a Lifestyle Club?</h3>
-                  <p className="text-muted-foreground max-w-xl mx-auto mb-6">
-                    Get featured on SPICE and reach 50,000+ verified lifestyle couples and singles. 
-                    Premium listings include enhanced visibility, event promotion, and direct booking integration.
-                  </p>
-                  <a 
-                    href="/contact" 
-                    className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-semibold rounded-full transition-all"
+                  <Link 
+                    to="/travel/clubs-resorts"
+                    className="inline-flex items-center justify-center gap-2 px-8 py-3 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-semibold rounded-full transition-all whitespace-nowrap"
                   >
-                    Partner With Us
+                    Browse Clubs
                     <ChevronRight className="w-5 h-5" />
-                  </a>
+                  </Link>
                 </div>
-              </section>
-            )}
+              </div>
+            </section>
 
             {/* Comparison Banner */}
             <section className="mb-20">
@@ -1249,14 +687,14 @@ const Travel = () => {
                   Find travel partners, get recommendations, and join group trips.
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                  <a href="/download" className="inline-flex items-center justify-center px-8 py-3 bg-primary hover:bg-primary/90 text-white font-semibold rounded-full transition-all gap-2">
+                  <Link to="/download" className="inline-flex items-center justify-center px-8 py-3 bg-primary hover:bg-primary/90 text-white font-semibold rounded-full transition-all gap-2">
                     Download SPICE Free
                     <ChevronRight className="w-5 h-5" />
-                  </a>
-                  <a href="/travel/miami" className="inline-flex items-center justify-center px-8 py-3 border border-primary text-primary hover:bg-primary/10 font-semibold rounded-full transition-all gap-2">
+                  </Link>
+                  <Link to="/travel/cities" className="inline-flex items-center justify-center px-8 py-3 border border-primary text-primary hover:bg-primary/10 font-semibold rounded-full transition-all gap-2">
                     Explore City Guides
                     <MapPin className="w-5 h-5" />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </section>
@@ -1269,7 +707,7 @@ const Travel = () => {
               </div>
               
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-                <a href="/travel/miami" className="group bg-card/50 backdrop-blur-sm border border-border rounded-xl p-5 hover:border-primary/50 transition-all">
+                <Link to="/travel/miami" className="group bg-card/50 backdrop-blur-sm border border-border rounded-xl p-5 hover:border-primary/50 transition-all">
                   <div className="flex items-center gap-3">
                     <Sun className="w-8 h-8 text-yellow-400" />
                     <div>
@@ -1277,8 +715,8 @@ const Travel = () => {
                       <p className="text-sm text-muted-foreground">7,800+ members</p>
                     </div>
                   </div>
-                </a>
-                <a href="/travel/new-orleans" className="group bg-card/50 backdrop-blur-sm border border-border rounded-xl p-5 hover:border-primary/50 transition-all">
+                </Link>
+                <Link to="/travel/new-orleans" className="group bg-card/50 backdrop-blur-sm border border-border rounded-xl p-5 hover:border-primary/50 transition-all">
                   <div className="flex items-center gap-3">
                     <Music className="w-8 h-8 text-purple-400" />
                     <div>
@@ -1286,8 +724,8 @@ const Travel = () => {
                       <p className="text-sm text-muted-foreground">4,200+ members</p>
                     </div>
                   </div>
-                </a>
-                <a href="/travel/orlando" className="group bg-card/50 backdrop-blur-sm border border-border rounded-xl p-5 hover:border-primary/50 transition-all">
+                </Link>
+                <Link to="/travel/orlando" className="group bg-card/50 backdrop-blur-sm border border-border rounded-xl p-5 hover:border-primary/50 transition-all">
                   <div className="flex items-center gap-3">
                     <Sparkles className="w-8 h-8 text-blue-400" />
                     <div>
@@ -1295,8 +733,8 @@ const Travel = () => {
                       <p className="text-sm text-muted-foreground">5,600+ members</p>
                     </div>
                   </div>
-                </a>
-                <a href="/travel/cancun" className="group bg-card/50 backdrop-blur-sm border border-border rounded-xl p-5 hover:border-primary/50 transition-all">
+                </Link>
+                <Link to="/travel/cancun" className="group bg-card/50 backdrop-blur-sm border border-border rounded-xl p-5 hover:border-primary/50 transition-all">
                   <div className="flex items-center gap-3">
                     <Palmtree className="w-8 h-8 text-green-400" />
                     <div>
@@ -1304,7 +742,18 @@ const Travel = () => {
                       <p className="text-sm text-muted-foreground">3,100+ members</p>
                     </div>
                   </div>
-                </a>
+                </Link>
+              </div>
+              
+              {/* View All Cities Link */}
+              <div className="text-center mt-6">
+                <Link 
+                  to="/travel/cities" 
+                  className="inline-flex items-center gap-2 text-primary hover:underline font-medium"
+                >
+                  View All 15 Cities
+                  <ChevronRight className="w-5 h-5" />
+                </Link>
               </div>
             </section>
 
