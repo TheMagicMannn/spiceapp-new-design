@@ -17,7 +17,7 @@ serve(async (req) => {
     console.log('Number of responses:', responses.length);
 
     // Call the backend API which has Emergent integration properly set up
-    const BACKEND_URL = Deno.env.get('BACKEND_URL') || 'https://travel-takeovers.preview.emergentagent.com';
+    const BACKEND_URL = Deno.env.get('BACKEND_URL') || 'https://bliss-date-fix.preview.emergentagent.com';
     
     const response = await fetch(`${BACKEND_URL}/api/analyze-quiz`, {
       method: 'POST',
