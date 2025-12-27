@@ -37,6 +37,7 @@ import BDSMGuide from "./pages/BDSMGuide";
 import TravelMiami from "./pages/TravelMiami";
 import BlogHome from "./pages/BlogHome";
 import AppComparisons from "./pages/AppComparisons";
+import Tools from "./pages/Tools";
 import ENMPolyamoryGuide from "./pages/ENMPolyamoryGuide";
 import RelationshipsCommunication from "./pages/RelationshipsCommunication";
 import JealousyManagement from "./pages/JealousyManagement";
