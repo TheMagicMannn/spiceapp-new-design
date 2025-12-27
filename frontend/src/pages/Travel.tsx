@@ -1022,6 +1022,118 @@ const Travel = () => {
               </section>
             )}
 
+            {/* Swingers Clubs Section */}
+            {(activeCategory === 'all' || activeCategory === 'clubs') && (
+              <section className="mb-20">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8">
+                  <div className="flex items-center gap-3">
+                    <div className="p-3 bg-gradient-to-r from-pink-500/20 to-red-500/20 rounded-xl">
+                      <Martini className="w-7 h-7 text-pink-400" />
+                    </div>
+                    <div>
+                      <h2 className="text-2xl md:text-3xl font-bold">Swingers Clubs & Venues</h2>
+                      <p className="text-muted-foreground">Top-rated lifestyle clubs across {cities.length - 1} cities</p>
+                    </div>
+                  </div>
+                  
+                  {/* City Filter */}
+                  <div className="flex flex-wrap gap-2">
+                    <select
+                      value={selectedCity}
+                      onChange={(e) => setSelectedCity(e.target.value)}
+                      className="px-4 py-2 bg-card/70 border border-border rounded-xl text-foreground focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-all cursor-pointer"
+                    >
+                      <option value="all">All Cities ({clubs.length} clubs)</option>
+                      {cities.filter(c => c !== 'all').map((city) => (
+                        <option key={city} value={city}>
+                          {city} ({clubs.filter(c => c.city === city).length})
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
+
+                {/* Info Banner for Clubs */}
+                <div className="bg-gradient-to-r from-pink-500/10 to-purple-500/10 border border-pink-500/20 rounded-xl p-6 mb-8">
+                  <div className="flex flex-col md:flex-row md:items-center gap-4">
+                    <div className="p-3 bg-pink-500/10 rounded-full flex-shrink-0">
+                      <Shield className="w-6 h-6 text-pink-400" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-lg mb-1">Club Etiquette & Tips</h3>
+                      <p className="text-sm text-muted-foreground">
+                        Most clubs are BYOB (Bring Your Own Bottle). Arrive after 10 PM for best atmosphere. 
+                        Always respect consent—"no" means "no." Couples are typically given priority entry. 
+                        Check websites for event calendars and theme nights before visiting.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* City Quick Select Buttons */}
+                {activeCategory === 'clubs' && (
+                  <div className="flex flex-wrap gap-2 mb-8">
+                    <button
+                      onClick={() => setSelectedCity('all')}
+                      className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                        selectedCity === 'all'
+                          ? 'bg-pink-500 text-white'
+                          : 'bg-card/50 border border-border hover:border-pink-500/50 text-muted-foreground hover:text-foreground'
+                      }`}
+                    >
+                      <Globe className="w-4 h-4 inline mr-1" />
+                      All Cities
+                    </button>
+                    {['Las Vegas', 'Miami', 'Dallas', 'Los Angeles', 'New York', 'Atlanta', 'Chicago', 'New Orleans', 'Houston', 'Austin', 'Denver', 'Phoenix', 'Seattle'].map((city) => (
+                      clubs.some(c => c.city === city) && (
+                        <button
+                          key={city}
+                          onClick={() => setSelectedCity(city)}
+                          className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                            selectedCity === city
+                              ? 'bg-pink-500 text-white'
+                              : 'bg-card/50 border border-border hover:border-pink-500/50 text-muted-foreground hover:text-foreground'
+                          }`}
+                        >
+                          {city}
+                        </button>
+                      )
+                    ))}
+                  </div>
+                )}
+                
+                {/* Club Grid */}
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {filteredClubs.map((club) => renderClubCard(club))}
+                </div>
+
+                {/* No Results */}
+                {filteredClubs.length === 0 && (
+                  <div className="text-center py-12">
+                    <Martini className="w-12 h-12 text-muted-foreground mx-auto mb-4" />
+                    <p className="text-muted-foreground">No clubs found in {selectedCity}. Try selecting a different city.</p>
+                  </div>
+                )}
+
+                {/* Club Advertising Banner */}
+                <div className="mt-8 bg-gradient-to-r from-pink-500/20 via-purple-500/20 to-pink-500/20 border border-pink-500/30 rounded-2xl p-8 text-center">
+                  <Moon className="w-10 h-10 text-pink-400 mx-auto mb-4" />
+                  <h3 className="text-2xl font-bold mb-3">Own a Lifestyle Club?</h3>
+                  <p className="text-muted-foreground max-w-xl mx-auto mb-6">
+                    Get featured on SPICE and reach 50,000+ verified lifestyle couples and singles. 
+                    Premium listings include enhanced visibility, event promotion, and direct booking integration.
+                  </p>
+                  <a 
+                    href="/contact" 
+                    className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-semibold rounded-full transition-all"
+                  >
+                    Partner With Us
+                    <ChevronRight className="w-5 h-5" />
+                  </a>
+                </div>
+              </section>
+            )}
+
             {/* Comparison Banner */}
             <section className="mb-20">
               <div className="bg-gradient-to-r from-primary/20 via-purple-500/20 to-pink-500/20 rounded-2xl p-8 md:p-10 border border-primary/30">
