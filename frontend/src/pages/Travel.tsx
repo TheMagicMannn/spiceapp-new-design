@@ -1,21 +1,21 @@
-import { Ship, Hotel, Palmtree, MapPin, Calendar, Star, Users, Heart, ExternalLink, Shield, Sparkles, PartyPopper, Plane, DollarSign, Clock, Check, ChevronRight, Sun, Waves, Music, Building2, Martini, Moon, Flame, Crown, Zap, Globe } from "lucide-react";
+import { Ship, Hotel, Palmtree, MapPin, Calendar, Star, Users, Heart, ExternalLink, Shield, Sparkles, PartyPopper, Plane, DollarSign, Clock, Check, ChevronRight, Sun, Waves, Music, Martini } from "lucide-react";
 import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Travel = () => {
-  const [activeCategory, setActiveCategory] = useState<'all' | 'cruises' | 'resorts' | 'takeovers' | 'clubs'>('all');
-  const [selectedCity, setSelectedCity] = useState<string>('all');
+  const [activeCategory, setActiveCategory] = useState<'all' | 'cruises' | 'resorts' | 'takeovers'>('all');
 
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "TravelGuide",
-    "name": "Lifestyle Travel Guide: Swinger Cruises, Resorts, Clubs & Hotel Takeovers",
-    "description": "Complete guide to lifestyle travel including swinger cruises, adults-only resorts, swingers clubs, and hotel takeover events for couples and singles.",
-    "keywords": "swinger cruise, lifestyle resort, hotel takeover, swingers club, Desire Riviera Maya, Hedonism II, Bliss Cruise, Green Door, Trapeze, Colette"
+    "name": "Lifestyle Travel Guide: Swinger Cruises, Resorts & Hotel Takeovers",
+    "description": "Complete guide to lifestyle travel including swinger cruises, adults-only resorts, and hotel takeover events for couples and singles.",
+    "keywords": "swinger cruise, lifestyle resort, hotel takeover, Desire Riviera Maya, Hedonism II, Bliss Cruise"
   };
 
   const cruises = [
