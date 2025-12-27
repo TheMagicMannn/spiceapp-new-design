@@ -222,7 +222,7 @@ const App = () => (
             <Route path="/support/help" element={<ConsentBasics />} />
             <Route path="/support/report" element={<ConsentBasics />} />
             <Route path="/newsletter" element={<ConsentBasics />} />
-            <Route path="/tools/sti-resources" element={<ConsentBasics />} />
+            <Route path="/tools/sti-resources" element={<STIResources />} />
             
             {/* Blog Posts */}
             <Route path="/blog/10-signs-ready-lifestyle" element={<BlogPost10Signs />} />
