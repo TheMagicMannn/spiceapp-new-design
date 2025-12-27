@@ -257,6 +257,262 @@ const SpiceApp = () => {
             </div>
           </motion.div>
 
+          {/* Detailed App Comparisons Section */}
+          <motion.section
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="mt-20"
+          >
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Detailed <span className="text-gradient">App Comparisons</span>
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Deep-dive into how SPICE stacks up against each competitor. Features, pricing, safety, and user reviews.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* SPICE vs Feeld */}
+              <Link
+                to="/vs/feeld"
+                className="group bg-card/60 backdrop-blur-sm border border-border rounded-2xl p-6 hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/10"
+              >
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center gap-3">
+                    <span className="text-3xl">🌿</span>
+                    <div>
+                      <h3 className="text-lg font-bold group-hover:text-primary transition-colors">SPICE vs Feeld</h3>
+                      <p className="text-xs text-muted-foreground">Most popular alternative</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-1 text-yellow-500">
+                    <Crown className="w-5 h-5" />
+                  </div>
+                </div>
+                
+                <div className="space-y-2 mb-4">
+                  <div className="flex items-center gap-2 text-sm">
+                    <Sparkles className="w-4 h-4 text-primary" />
+                    <span>Unique BDSM compatibility quiz</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm">
+                    <Shield className="w-4 h-4 text-green-500" />
+                    <span>ID verification (Feeld doesn't have)</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm">
+                    <DollarSign className="w-4 h-4 text-yellow-500" />
+                    <span>25% cheaper pricing</span>
+                  </div>
+                </div>
+
+                <div className="flex items-center justify-between pt-4 border-t border-border">
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm font-bold text-primary">92</span>
+                    <span className="text-xs text-muted-foreground">vs 78</span>
+                  </div>
+                  <span className="text-primary text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
+                    Read Full Comparison <ChevronRight className="w-4 h-4" />
+                  </span>
+                </div>
+              </Link>
+
+              {/* SPICE vs 3Fun */}
+              <Link
+                to="/vs/3fun"
+                className="group bg-card/60 backdrop-blur-sm border border-border rounded-2xl p-6 hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/10"
+              >
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center gap-3">
+                    <span className="text-3xl">🔥</span>
+                    <div>
+                      <h3 className="text-lg font-bold group-hover:text-primary transition-colors">SPICE vs 3Fun</h3>
+                      <p className="text-xs text-muted-foreground">Safety comparison</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-1 text-yellow-500">
+                    <Crown className="w-5 h-5" />
+                  </div>
+                </div>
+                
+                <div className="space-y-2 mb-4">
+                  <div className="flex items-center gap-2 text-sm">
+                    <Shield className="w-4 h-4 text-green-500" />
+                    <span>95% fewer fake profiles</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm">
+                    <Check className="w-4 h-4 text-green-500" />
+                    <span>24/7 active moderation</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm">
+                    <Shield className="w-4 h-4 text-green-500" />
+                    <span>Photo + ID verification</span>
+                  </div>
+                </div>
+
+                <div className="flex items-center justify-between pt-4 border-t border-border">
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm font-bold text-primary">90</span>
+                    <span className="text-xs text-muted-foreground">vs 65</span>
+                  </div>
+                  <span className="text-primary text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
+                    Read Full Comparison <ChevronRight className="w-4 h-4" />
+                  </span>
+                </div>
+              </Link>
+
+              {/* SPICE vs SDC */}
+              <Link
+                to="/vs/sdc"
+                className="group bg-card/60 backdrop-blur-sm border border-border rounded-2xl p-6 hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/10"
+              >
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center gap-3">
+                    <span className="text-3xl">💎</span>
+                    <div>
+                      <h3 className="text-lg font-bold group-hover:text-primary transition-colors">SPICE vs SDC</h3>
+                      <p className="text-xs text-muted-foreground">Value comparison</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-1 text-yellow-500">
+                    <Crown className="w-5 h-5" />
+                  </div>
+                </div>
+                
+                <div className="space-y-2 mb-4">
+                  <div className="flex items-center gap-2 text-sm">
+                    <DollarSign className="w-4 h-4 text-green-500" />
+                    <span>Save $420/year (70% cheaper)</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm">
+                    <Smartphone className="w-4 h-4 text-primary" />
+                    <span>Modern mobile app vs dated site</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm">
+                    <Sparkles className="w-4 h-4 text-primary" />
+                    <span>BDSM quiz + better UX</span>
+                  </div>
+                </div>
+
+                <div className="flex items-center justify-between pt-4 border-t border-border">
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm font-bold text-primary">88</span>
+                    <span className="text-xs text-muted-foreground">vs 72</span>
+                  </div>
+                  <span className="text-primary text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
+                    Read Full Comparison <ChevronRight className="w-4 h-4" />
+                  </span>
+                </div>
+              </Link>
+
+              {/* SPICE vs Kasidie */}
+              <Link
+                to="/vs/kasidie"
+                className="group bg-card/60 backdrop-blur-sm border border-border rounded-2xl p-6 hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/10"
+              >
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center gap-3">
+                    <span className="text-3xl">👑</span>
+                    <div>
+                      <h3 className="text-lg font-bold group-hover:text-primary transition-colors">SPICE vs Kasidie</h3>
+                      <p className="text-xs text-muted-foreground">Modern vs party-focused</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-1 text-yellow-500">
+                    <Crown className="w-5 h-5" />
+                  </div>
+                </div>
+                
+                <div className="space-y-2 mb-4">
+                  <div className="flex items-center gap-2 text-sm">
+                    <Smartphone className="w-4 h-4 text-primary" />
+                    <span>Real mobile app vs web wrapper</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm">
+                    <DollarSign className="w-4 h-4 text-green-500" />
+                    <span>33% cheaper subscription</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm">
+                    <Sparkles className="w-4 h-4 text-primary" />
+                    <span>BDSM compatibility matching</span>
+                  </div>
+                </div>
+
+                <div className="flex items-center justify-between pt-4 border-t border-border">
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm font-bold text-primary">87</span>
+                    <span className="text-xs text-muted-foreground">vs 74</span>
+                  </div>
+                  <span className="text-primary text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
+                    Read Full Comparison <ChevronRight className="w-4 h-4" />
+                  </span>
+                </div>
+              </Link>
+
+              {/* SPICE vs SLS */}
+              <Link
+                to="/vs/sls"
+                className="group bg-card/60 backdrop-blur-sm border border-border rounded-2xl p-6 hover:border-primary/50 transition-all hover:shadow-xl hover:shadow-primary/10"
+              >
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center gap-3">
+                    <span className="text-3xl">🎭</span>
+                    <div>
+                      <h3 className="text-lg font-bold group-hover:text-primary transition-colors">SPICE vs SLS</h3>
+                      <p className="text-xs text-muted-foreground">Modern vs legacy giant</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-1 text-yellow-500">
+                    <Crown className="w-5 h-5" />
+                  </div>
+                </div>
+                
+                <div className="space-y-2 mb-4">
+                  <div className="flex items-center gap-2 text-sm">
+                    <Smartphone className="w-4 h-4 text-primary" />
+                    <span>Modern app vs 2000s website</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm">
+                    <Check className="w-4 h-4 text-green-500" />
+                    <span>ID verification (SLS doesn't)</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-sm">
+                    <DollarSign className="w-4 h-4 text-green-500" />
+                    <span>Save $50/year on subscription</span>
+                  </div>
+                </div>
+
+                <div className="flex items-center justify-between pt-4 border-t border-border">
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm font-bold text-primary">86</span>
+                    <span className="text-xs text-muted-foreground">vs 68</span>
+                  </div>
+                  <span className="text-primary text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
+                    Read Full Comparison <ChevronRight className="w-4 h-4" />
+                  </span>
+                </div>
+              </Link>
+
+              {/* View All Comparisons */}
+              <Link
+                to="/tools/app-comparisons"
+                className="group bg-gradient-to-br from-primary/20 to-purple-500/20 border border-primary/30 rounded-2xl p-6 hover:border-primary/50 transition-all flex flex-col items-center justify-center text-center"
+              >
+                <div className="p-4 bg-primary/10 rounded-full mb-4">
+                  <Star className="w-8 h-8 text-primary" />
+                </div>
+                <h3 className="text-lg font-bold mb-2">All App Comparisons</h3>
+                <p className="text-sm text-muted-foreground mb-4">
+                  Complete comparison hub with feature tables, pricing, and scores
+                </p>
+                <span className="text-primary font-medium flex items-center gap-1 group-hover:gap-2 transition-all">
+                  View All <ChevronRight className="w-4 h-4" />
+                </span>
+              </Link>
+            </div>
+          </motion.section>
+
           {/* Bottom CTA */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
