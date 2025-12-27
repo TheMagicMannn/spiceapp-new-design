@@ -766,8 +766,12 @@ const Travel = () => {
                   <div className="text-sm text-muted-foreground">Takeover Events</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-primary">25K+</div>
-                  <div className="text-sm text-muted-foreground">Reviews Analyzed</div>
+                  <div className="text-3xl font-bold text-primary">{clubs.length}+</div>
+                  <div className="text-sm text-muted-foreground">Swingers Clubs</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-primary">{cities.length - 1}</div>
+                  <div className="text-sm text-muted-foreground">Cities Covered</div>
                 </div>
               </div>
               
@@ -815,6 +819,17 @@ const Travel = () => {
                 >
                   <Hotel className="w-4 h-4" />
                   Hotel Takeovers
+                </button>
+                <button 
+                  onClick={() => { setActiveCategory('clubs'); setSelectedCity('all'); }}
+                  className={`px-5 py-2.5 rounded-full font-medium transition-all flex items-center gap-2 ${
+                    activeCategory === 'clubs' 
+                      ? 'bg-primary text-white' 
+                      : 'bg-card/50 border border-border hover:border-primary/50 text-muted-foreground hover:text-foreground'
+                  }`}
+                >
+                  <Martini className="w-4 h-4" />
+                  Clubs & Venues
                 </button>
               </div>
             </div>
