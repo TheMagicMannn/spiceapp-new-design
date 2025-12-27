@@ -10,7 +10,7 @@ const navigationItems = [
   {
     name: "About SPICE",
     items: [
-      { name: "Our Story", path: "/about", description: "Learn about SPICE's mission" },
+      { name: "Our Story", path: "/about/our-story", description: "Learn about SPICE's mission" },
       { name: "Features", path: "/spice-app", description: "AI Matching, Verification & More" },
       { name: "Safety & Verification", path: "/about/safety-verification", description: "How we keep you safe" },
       { name: "AI Matching Explained", path: "/about/ai-matching", description: "Smart compatibility matching" },
