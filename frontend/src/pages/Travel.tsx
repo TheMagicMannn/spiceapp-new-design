@@ -718,6 +718,102 @@ const Travel = () => {
     );
   };
 
+  // Render Club Card
+  const renderClubCard = (club: typeof clubs[0]) => {
+    return (
+      <div key={club.name} className="group bg-card/60 backdrop-blur-sm border border-border rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary/10">
+        {/* Image */}
+        <div className="relative h-52 overflow-hidden">
+          <img 
+            src={club.image} 
+            alt={club.name}
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+          
+          {/* Highlight Badge */}
+          <div className="absolute top-4 left-4 px-3 py-1 bg-primary text-white text-xs font-bold rounded-full flex items-center gap-1">
+            <Flame className="w-3 h-3" />
+            {club.highlight}
+          </div>
+          
+          {/* Rating */}
+          <div className="absolute top-4 right-4 px-3 py-1 bg-black/60 backdrop-blur-sm text-white text-sm rounded-full flex items-center gap-1">
+            <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
+            <span className="font-semibold">{club.rating}</span>
+            <span className="text-white/70">({club.reviews.toLocaleString()})</span>
+          </div>
+          
+          {/* Location Badge */}
+          <div className="absolute bottom-4 left-4 text-white">
+            <div className="flex items-center gap-1 text-sm font-medium">
+              <MapPin className="w-4 h-4" />
+              {club.city}, {club.state}
+            </div>
+          </div>
+          
+          {/* Price Badge */}
+          <div className="absolute bottom-4 right-4 px-3 py-1.5 bg-gradient-to-r from-primary to-purple-600 text-white text-sm font-bold rounded-lg">
+            {club.priceRange}
+          </div>
+        </div>
+        
+        {/* Content */}
+        <div className="p-5">
+          <div className="flex items-start justify-between mb-2">
+            <div>
+              <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
+                {club.name}
+              </h3>
+              <p className="text-xs text-muted-foreground">Est. {club.established}</p>
+            </div>
+            <Martini className="w-6 h-6 text-primary flex-shrink-0" />
+          </div>
+          
+          <p className="text-sm text-primary font-medium mb-2">{club.tagline}</p>
+          <p className="text-muted-foreground text-sm mb-4 line-clamp-3">{club.description}</p>
+          
+          {/* Features */}
+          <div className="flex flex-wrap gap-1.5 mb-4">
+            {club.features.slice(0, 4).map((feature) => (
+              <span key={feature} className="px-2 py-0.5 bg-primary/10 text-primary text-xs rounded-full">
+                {feature}
+              </span>
+            ))}
+            {club.features.length > 4 && (
+              <span className="px-2 py-0.5 bg-muted text-muted-foreground text-xs rounded-full">
+                +{club.features.length - 4} more
+              </span>
+            )}
+          </div>
+          
+          {/* Club Details */}
+          <div className="space-y-2 mb-4 text-sm">
+            <div className="flex items-center gap-2 text-muted-foreground">
+              <Clock className="w-4 h-4 text-primary flex-shrink-0" />
+              <span>{club.hours}</span>
+            </div>
+            <div className="flex items-center gap-2 text-muted-foreground">
+              <Crown className="w-4 h-4 text-primary flex-shrink-0" />
+              <span>Dress Code: <strong className="text-foreground">{club.dressCode}</strong></span>
+            </div>
+          </div>
+          
+          {/* CTA Button */}
+          <a 
+            href={club.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-gradient-to-r from-primary to-purple-600 hover:from-primary/90 hover:to-purple-600/90 text-white font-semibold rounded-xl transition-all group/btn"
+          >
+            <span>Visit Website</span>
+            <ExternalLink className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+          </a>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <>
       <SEO
