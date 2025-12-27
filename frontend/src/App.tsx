@@ -180,6 +180,7 @@ const App = () => (
             <Route path="/about/safety-verification" element={<SafetyVerification />} />
             <Route path="/about/ai-matching" element={<AIMatching />} />
             <Route path="/about/why-different" element={<WhyDifferent />} />
+            <Route path="/about/our-story" element={<OurStory />} />
             
             {/* Support Pages */}
             <Route path="/support" element={<Support />} />
