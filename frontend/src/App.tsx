@@ -209,6 +209,7 @@ const App = () => (
             <Route path="/travel/cancun" element={<TravelCancun />} />
             <Route path="/travel/international" element={<TravelInternational />} />
             <Route path="/travel/clubs-resorts" element={<ClubsResorts />} />
+            <Route path="/travel/cities" element={<CityGuides />} />
             
             {/* Academy - Additional */}
             <Route path="/academy/consent" element={<ConsentBasics />} />
