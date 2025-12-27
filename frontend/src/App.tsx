@@ -55,6 +55,7 @@ import TravelOrlando from "./pages/TravelOrlando";
 import TravelCancun from "./pages/TravelCancun";
 import TravelInternational from "./pages/TravelInternational";
 import ClubsResorts from "./pages/ClubsResorts";
+import CityGuides from "./pages/CityGuides";
 import FeatureComparison from "./pages/FeatureComparison";
 import BlogPost10Signs from "./pages/BlogPost10Signs";
 import BlogTalkToPartner from "./pages/BlogTalkToPartner";
