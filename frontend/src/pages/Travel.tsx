@@ -817,9 +817,9 @@ const Travel = () => {
   return (
     <>
       <SEO
-        title="Swinger Cruises, Lifestyle Resorts & Hotel Takeovers 2026 | SPICE"
-        description="Complete guide to swinger cruises, lifestyle resorts, and hotel takeovers. Compare Bliss Cruise, Desire Resorts, Hedonism II, LLV events, and more. Book your lifestyle vacation."
-        keywords="swinger cruise, lifestyle resort, hotel takeover, Bliss Cruise, Desire Riviera Maya, Hedonism II, swinger vacation, lifestyle travel, couples vacation, adults only resort"
+        title="Swinger Cruises, Lifestyle Resorts, Clubs & Hotel Takeovers 2026 | SPICE"
+        description="Complete guide to swinger cruises, lifestyle resorts, swingers clubs, and hotel takeovers. Compare Bliss Cruise, Desire Resorts, Green Door, Trapeze, Colette clubs, and more. Find clubs in Las Vegas, Miami, Dallas, LA, NYC."
+        keywords="swinger cruise, lifestyle resort, hotel takeover, swingers club, Bliss Cruise, Desire Riviera Maya, Hedonism II, Green Door Las Vegas, Trapeze Miami, Colette clubs, swinger vacation, lifestyle travel, couples vacation, adults only resort"
         canonical="https://thespiceapp.com/travel"
         structuredData={structuredData}
       />
