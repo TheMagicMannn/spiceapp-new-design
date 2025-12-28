@@ -48,6 +48,18 @@ backend:
         comment: "Status endpoints (/api/status GET/POST) not tested as requested - status_checks table doesn't exist in Supabase yet. Endpoints return 500 error as expected."
 
 frontend:
+  - task: "Blog functionality testing"
+    implemented: true
+    working: true
+    file: "frontend/src/pages/BlogHome.tsx"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: true
+        agent: "testing"
+        comment: "Blog functionality tested successfully on local development server (localhost:3000). All features working: Blog homepage loads with 'SPICE Lifestyle Blog' heading, Latest Articles section displays, Filter by Category shows ENM & Poly (10) articles, Browse by Category section shows ENM & Poly with '10 articles', navigation to /blog/enm works, ENM category page shows '10 Articles' badge, article navigation to /blog/enm-vs-polyamory works, article content loads properly, internal links to /lifestyle/relationships-communication work, search functionality returns 5 results for 'polyamory' including ENM articles, clear search works. NOTE: Production domain (thespiceapp.com) serves cached Vercel deployment, but local development server works perfectly."
+
   - task: "Frontend testing"
     implemented: true
     working: "NA"
