@@ -795,7 +795,7 @@ const BlogHome = () => {
                 <div className="flex items-center justify-between mb-6">
                   <h2 className="text-xl font-bold">
                     {filteredPosts.length} {filteredPosts.length === 1 ? "Result" : "Results"}
-                    {searchQuery && <span className="text-muted-foreground"> for "{searchQuery}"</span>}
+                    {searchQuery && <span className="text-muted-foreground"> for &quot;{searchQuery}&quot;</span>}
                     {selectedCategory !== "all" && (
                       <span className="text-muted-foreground">
                         {" "}in {categories.find(c => c.id === selectedCategory)?.name}
