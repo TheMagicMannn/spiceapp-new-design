@@ -59,13 +59,6 @@ const FeatureComparison = () => {
     },
     {
       category: 'profiles',
-      name: "Voice Intros",
-      description: "Record voice introductions for your profile",
-      spice: true, feeld: false, sdc: false, kasidie: false, sls: false,
-      highlight: true
-    },
-    {
-      category: 'profiles',
       name: "Solo ↔ Partnered Profile Toggle",
       description: "Seamless switching between modes with separate desire visibility",
       spice: true, feeld: false, sdc: false, kasidie: false, sls: false,
