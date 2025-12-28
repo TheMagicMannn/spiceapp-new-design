@@ -59,8 +59,8 @@ const FeatureComparison = () => {
     },
     {
       category: 'profiles',
-      name: "Video & Voice Intros",
-      description: "Record video or voice introductions for your profile",
+      name: "Voice Intros",
+      description: "Record voice introductions for your profile",
       spice: true, feeld: false, sdc: false, kasidie: false, sls: false,
       highlight: true
     },
