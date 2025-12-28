@@ -123,6 +123,16 @@ import BlogSwitchingDynamics from "./pages/BlogSwitchingDynamics";
 import BlogKinkOnBudget from "./pages/BlogKinkOnBudget";
 import BlogLongDistanceBDSM from "./pages/BlogLongDistanceBDSM";
 import BlogComingOutKinky from "./pages/BlogComingOutKinky";
+import BlogENMvsPolyamory from "./pages/BlogENMvsPolyamory";
+import BlogPolyDatingApps2026 from "./pages/BlogPolyDatingApps2026";
+import BlogPolyculeDrama from "./pages/BlogPolyculeDrama";
+import BlogTimeManagement from "./pages/BlogTimeManagement";
+import BlogCompersionExercises from "./pages/BlogCompersionExercises";
+import BlogChosenFamily from "./pages/BlogChosenFamily";
+import BlogSoloPoly from "./pages/BlogSoloPoly";
+import BlogENMAtWork from "./pages/BlogENMAtWork";
+import BlogIntimacyBeyondSex from "./pages/BlogIntimacyBeyondSex";
+import BlogFutureOfLove from "./pages/BlogFutureOfLove";
 
 const queryClient = new QueryClient();
 
