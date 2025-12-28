@@ -574,6 +574,167 @@ const FeatureComparison = () => {
               </div>
             </section>
 
+            {/* Verification Options Section */}
+            <section className="mb-12">
+              <div className="bg-gradient-to-br from-green-500/20 to-emerald-500/20 border border-green-500/30 rounded-2xl p-8">
+                <div className="flex items-center gap-3 mb-6">
+                  <Shield className="w-8 h-8 text-green-500" />
+                  <div>
+                    <h2 className="text-2xl font-bold">Verification Options</h2>
+                    <p className="text-muted-foreground">Choose the method that works best for you. All provide the same level of trust.</p>
+                  </div>
+                </div>
+                
+                <div className="grid md:grid-cols-3 gap-6 mb-8">
+                  {/* Option 1: Social Media */}
+                  <div className="bg-background/60 border border-border rounded-xl p-6">
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="p-3 bg-blue-500/20 rounded-xl">
+                        <Globe className="w-6 h-6 text-blue-500" />
+                      </div>
+                      <span className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded-full">~24-48 hrs</span>
+                    </div>
+                    <h3 className="text-lg font-bold mb-2">Social Media Verification</h3>
+                    <p className="text-sm text-muted-foreground mb-4">Verify using an established lifestyle social media profile</p>
+                    <div className="space-y-2">
+                      <p className="text-xs font-medium text-foreground">Requirements:</p>
+                      <ul className="space-y-1.5">
+                        <li className="flex items-start gap-2 text-xs text-muted-foreground">
+                          <CheckCircle className="w-3.5 h-3.5 text-green-500 mt-0.5 flex-shrink-0" />
+                          <span>Verified profile (e.g., FetLife) at least 90 days old</span>
+                        </li>
+                        <li className="flex items-start gap-2 text-xs text-muted-foreground">
+                          <CheckCircle className="w-3.5 h-3.5 text-green-500 mt-0.5 flex-shrink-0" />
+                          <span>Submit profile URL for review</span>
+                        </li>
+                        <li className="flex items-start gap-2 text-xs text-muted-foreground">
+                          <CheckCircle className="w-3.5 h-3.5 text-green-500 mt-0.5 flex-shrink-0" />
+                          <span>Screenshot showing you logged in</span>
+                        </li>
+                        <li className="flex items-start gap-2 text-xs text-muted-foreground">
+                          <CheckCircle className="w-3.5 h-3.5 text-green-500 mt-0.5 flex-shrink-0" />
+                          <span>Profile in good standing, no violations</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  {/* Option 2: Selfie + Unique ID */}
+                  <div className="bg-background/60 border-2 border-primary rounded-xl p-6 relative">
+                    <div className="absolute -top-3 left-4 px-3 py-1 bg-primary text-white text-xs font-bold rounded-full">
+                      Most Popular
+                    </div>
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="p-3 bg-primary/20 rounded-xl">
+                        <Camera className="w-6 h-6 text-primary" />
+                      </div>
+                      <span className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded-full">~12-24 hrs</span>
+                    </div>
+                    <h3 className="text-lg font-bold mb-2">Selfie + Unique ID</h3>
+                    <p className="text-sm text-muted-foreground mb-4">Quick verification with a selfie and unique code</p>
+                    <div className="space-y-2">
+                      <p className="text-xs font-medium text-foreground">Requirements:</p>
+                      <ul className="space-y-1.5">
+                        <li className="flex items-start gap-2 text-xs text-muted-foreground">
+                          <CheckCircle className="w-3.5 h-3.5 text-green-500 mt-0.5 flex-shrink-0" />
+                          <span>Selfie holding unique verification ID shown on screen</span>
+                        </li>
+                        <li className="flex items-start gap-2 text-xs text-muted-foreground">
+                          <CheckCircle className="w-3.5 h-3.5 text-green-500 mt-0.5 flex-shrink-0" />
+                          <span>Face clearly visible, matching profile photos</span>
+                        </li>
+                        <li className="flex items-start gap-2 text-xs text-muted-foreground">
+                          <CheckCircle className="w-3.5 h-3.5 text-green-500 mt-0.5 flex-shrink-0" />
+                          <span>Unique ID code must be legible</span>
+                        </li>
+                        <li className="flex items-start gap-2 text-xs text-muted-foreground">
+                          <CheckCircle className="w-3.5 h-3.5 text-green-500 mt-0.5 flex-shrink-0" />
+                          <span>Photo must be taken in real-time</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  {/* Option 3: Government ID */}
+                  <div className="bg-background/60 border border-border rounded-xl p-6">
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="p-3 bg-amber-500/20 rounded-xl">
+                        <FileText className="w-6 h-6 text-amber-500" />
+                      </div>
+                      <span className="text-xs text-muted-foreground bg-muted px-2 py-1 rounded-full">~24-72 hrs</span>
+                    </div>
+                    <h3 className="text-lg font-bold mb-2">Government ID</h3>
+                    <p className="text-sm text-muted-foreground mb-4">Full identity verification with official ID</p>
+                    <div className="space-y-2">
+                      <p className="text-xs font-medium text-foreground">Requirements:</p>
+                      <ul className="space-y-1.5">
+                        <li className="flex items-start gap-2 text-xs text-muted-foreground">
+                          <CheckCircle className="w-3.5 h-3.5 text-green-500 mt-0.5 flex-shrink-0" />
+                          <span>Clear photo of government ID (front & back)</span>
+                        </li>
+                        <li className="flex items-start gap-2 text-xs text-muted-foreground">
+                          <CheckCircle className="w-3.5 h-3.5 text-green-500 mt-0.5 flex-shrink-0" />
+                          <span>Selfie holding ID next to your face</span>
+                        </li>
+                        <li className="flex items-start gap-2 text-xs text-muted-foreground">
+                          <CheckCircle className="w-3.5 h-3.5 text-green-500 mt-0.5 flex-shrink-0" />
+                          <span>ID must be valid and not expired</span>
+                        </li>
+                        <li className="flex items-start gap-2 text-xs text-muted-foreground">
+                          <Lock className="w-3.5 h-3.5 text-green-500 mt-0.5 flex-shrink-0" />
+                          <span>All info encrypted & securely stored</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Couples Account Verification */}
+                <div className="bg-background/70 border border-pink-500/30 rounded-xl p-6">
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-pink-500/20 rounded-xl flex-shrink-0">
+                      <Users2 className="w-6 h-6 text-pink-500" />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold mb-2 flex items-center gap-2">
+                        Couples Account Verification
+                        <span className="px-2 py-0.5 bg-pink-500/20 text-pink-500 text-xs font-medium rounded-full">Both Required</span>
+                      </h3>
+                      <p className="text-sm text-muted-foreground mb-4">
+                        For shared couples accounts, both parties must be individually verified to ensure consent and authenticity.
+                      </p>
+                      <div className="grid sm:grid-cols-2 gap-4">
+                        <div className="space-y-2">
+                          <ul className="space-y-1.5">
+                            <li className="flex items-start gap-2 text-sm text-muted-foreground">
+                              <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                              <span>Each individual must complete their own verification</span>
+                            </li>
+                            <li className="flex items-start gap-2 text-sm text-muted-foreground">
+                              <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                              <span>Both can use same or different methods</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div className="space-y-2">
+                          <ul className="space-y-1.5">
+                            <li className="flex items-start gap-2 text-sm text-muted-foreground">
+                              <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                              <span>Account limited until both verified</span>
+                            </li>
+                            <li className="flex items-start gap-2 text-sm text-muted-foreground">
+                              <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 flex-shrink-0" />
+                              <span>Ensures consent from all parties involved</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
             {/* VIP Features */}
             <section className="mb-12">
               <div className="bg-gradient-to-r from-yellow-500/20 via-amber-500/20 to-yellow-500/20 border border-yellow-500/30 rounded-2xl p-8">
