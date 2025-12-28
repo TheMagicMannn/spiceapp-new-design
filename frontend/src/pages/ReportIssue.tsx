@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import { toast } from "sonner";
 import { 
   AlertTriangle, 
   Shield, 
@@ -14,11 +15,18 @@ import {
   MessageCircle,
   ChevronRight,
   CheckCircle,
-  AlertCircle
+  AlertCircle,
+  Loader2,
+  PartyPopper
 } from "lucide-react";
 
 const ReportIssue = () => {
   const [selectedType, setSelectedType] = useState<string | null>(null);
+  const [subject, setSubject] = useState("");
+  const [details, setDetails] = useState("");
+  const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const reportTypes = [
     {
