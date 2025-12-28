@@ -129,8 +129,8 @@ const FeatureComparison = () => {
     },
     {
       category: 'communication',
-      name: "Photo & Video Sharing",
-      description: "Share photos and videos in chat",
+      name: "Photo Sharing in Chat",
+      description: "Share photos in chat with matches",
       spice: true, feeld: true, sdc: true, kasidie: true, sls: true,
       highlight: false
     },
