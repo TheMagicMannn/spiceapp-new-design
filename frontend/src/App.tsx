@@ -283,6 +283,18 @@ const App = () => (
             <Route path="/blog/long-distance-bdsm" element={<BlogLongDistanceBDSM />} />
             <Route path="/blog/coming-out-kinky" element={<BlogComingOutKinky />} />
             
+            {/* ENM & Polyamory Blog Articles */}
+            <Route path="/blog/enm-vs-polyamory" element={<BlogENMvsPolyamory />} />
+            <Route path="/blog/poly-dating-apps-2026" element={<BlogPolyDatingApps2026 />} />
+            <Route path="/blog/polycule-drama" element={<BlogPolyculeDrama />} />
+            <Route path="/blog/poly-time-management" element={<BlogTimeManagement />} />
+            <Route path="/blog/compersion-exercises" element={<BlogCompersionExercises />} />
+            <Route path="/blog/chosen-family" element={<BlogChosenFamily />} />
+            <Route path="/blog/solo-poly" element={<BlogSoloPoly />} />
+            <Route path="/blog/enm-at-work" element={<BlogENMAtWork />} />
+            <Route path="/blog/intimacy-beyond-sex" element={<BlogIntimacyBeyondSex />} />
+            <Route path="/blog/future-of-love" element={<BlogFutureOfLove />} />
+            
             {/* Consent & Safety Blog Articles */}
             <Route path="/blog/consent-golden-rules" element={<BlogConsentGoldenRules />} />
             <Route path="/blog/red-flags-green-flags" element={<BlogRedFlagsGreenFlags />} />
