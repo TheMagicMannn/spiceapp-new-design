@@ -27,7 +27,7 @@ const StartHere = () => {
       icon: BookOpen,
       title: "Beginner's Guide",
       description: "New to the lifestyle? Start here with our comprehensive introduction to swinging, ENM, and alternative relationships.",
-      link: "/guide/newcomers",
+      link: "/lifestyle",
       color: "blue"
     },
     {
