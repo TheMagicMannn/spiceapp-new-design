@@ -187,7 +187,7 @@ const App = () => (
             <Route path="/travel/new-york" element={<CityPage />} />
             
             {/* Blog */}
-            <Route path="/blog" element={<BlogHomeTest />} />
+            <Route path="/blog" element={<BlogHome />} />
             
             {/* Tools */}
             <Route path="/tools" element={<Tools />} />
