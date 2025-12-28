@@ -240,7 +240,7 @@ VITE_SUPABASE_PROJECT_ID="rvpkcwskkovqhfwwrdeq"
 VITE_SUPABASE_PUBLISHABLE_KEY="<YOUR_SUPABASE_ANON_KEY>"
 VITE_SUPABASE_URL="https://rvpkcwskkovqhfwwrdeq.supabase.co"
 VITE_GA_ID=G-9REM6Z20KL
-REACT_APP_BACKEND_URL=https://bliss-date-fix.preview.emergentagent.com
+REACT_APP_BACKEND_URL=https://data-switch.preview.emergentagent.com
 ```
 
 ## Next Steps
