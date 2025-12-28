@@ -220,16 +220,30 @@ const Download = () => {
             </div>
           </div>
 
-          {/* Phone Mockup Placeholder */}
+          {/* Phone Mockup with App Screenshot */}
           <div className="relative">
             <div className="glass-card rounded-3xl p-8 border-gradient text-center">
-              <div className="w-64 h-[500px] mx-auto bg-gradient-to-b from-primary/20 to-secondary/20 rounded-[3rem] flex items-center justify-center border-4 border-border">
-                <div className="text-center">
-                  <Smartphone className="w-16 h-16 text-primary mx-auto mb-4" />
-                  <p className="text-muted-foreground">App Preview</p>
-                  <p className="text-sm text-muted-foreground/60">Coming Soon</p>
+              <h2 className="text-2xl font-bold mb-8">App Preview</h2>
+              {/* iPhone Frame */}
+              <div className="relative w-[280px] h-[570px] mx-auto">
+                {/* Outer Frame - iPhone style */}
+                <div className="absolute inset-0 bg-gradient-to-b from-gray-800 to-gray-900 rounded-[3rem] shadow-2xl border-4 border-gray-700">
+                  {/* Notch */}
+                  <div className="absolute top-2 left-1/2 -translate-x-1/2 w-24 h-6 bg-black rounded-full z-20"></div>
+                  {/* Screen Container */}
+                  <div className="absolute top-3 left-3 right-3 bottom-3 rounded-[2.5rem] overflow-hidden bg-black">
+                    {/* App Screenshot */}
+                    <img 
+                      src="https://customer-assets.emergentagent.com/job_340e8681-3f18-41af-8ca3-0216439415ae/artifacts/qgi1zzzf_IMG_4476.jpeg"
+                      alt="SPICE App Profile Screen"
+                      className="w-full h-full object-cover object-top"
+                    />
+                  </div>
+                  {/* Home Indicator */}
+                  <div className="absolute bottom-2 left-1/2 -translate-x-1/2 w-32 h-1 bg-gray-500 rounded-full"></div>
                 </div>
               </div>
+              <p className="text-muted-foreground mt-6">Experience the SPICE app</p>
             </div>
           </div>
 
