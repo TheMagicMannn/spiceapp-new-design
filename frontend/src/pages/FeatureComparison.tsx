@@ -172,7 +172,7 @@ const FeatureComparison = () => {
     {
       category: 'safety',
       name: "Dual Verification for Couples",
-      description: "Both partners must complete separate photo/video verification. Prevents fake couple accounts.",
+      description: "Both partners must complete separate photo verification. Prevents fake couple accounts.",
       spice: true, feeld: false, sdc: false, kasidie: false, sls: false,
       highlight: true
     },
