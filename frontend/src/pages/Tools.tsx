@@ -66,7 +66,7 @@ const Tools = () => {
       title: "Lifestyle Glossary",
       description: "200+ terms explained for swingers, BDSM, and ENM communities",
       icon: BookOpen,
-      path: "/resources/glossary"
+      path: "/guide/glossary"
     },
     {
       title: "First Time Guide",
