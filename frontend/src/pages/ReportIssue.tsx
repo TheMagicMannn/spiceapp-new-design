@@ -196,12 +196,12 @@ const ReportIssue = () => {
             </div>
 
             {/* Report Form (shown when type selected) */}
-            {selectedType && (
+            {selectedType && !isSubmitted && (
               <div className="max-w-3xl mx-auto mb-12">
                 <div className="bg-card/50 border border-border rounded-xl p-6">
                   <h3 className="text-lg font-semibold text-white mb-4">Describe the Issue</h3>
                   
-                  <div className="space-y-4">
+                  <form onSubmit={handleSubmit} className="space-y-4">
                     <div>
                       <label className="block text-sm font-medium text-white mb-2">
                         Subject
@@ -209,7 +209,11 @@ const ReportIssue = () => {
                       <input
                         type="text"
                         placeholder="Brief description of the issue"
+                        value={subject}
+                        onChange={(e) => setSubject(e.target.value)}
                         className="w-full px-4 py-3 bg-background border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
+                        disabled={isSubmitting}
+                        required
                       />
                     </div>
                     
@@ -220,7 +224,11 @@ const ReportIssue = () => {
                       <textarea
                         rows={5}
                         placeholder="Please provide as much detail as possible. Include usernames, dates, times, and any other relevant information."
+                        value={details}
+                        onChange={(e) => setDetails(e.target.value)}
                         className="w-full px-4 py-3 bg-background border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 resize-none"
+                        disabled={isSubmitting}
+                        required
                       />
                     </div>
                     
@@ -231,7 +239,11 @@ const ReportIssue = () => {
                       <input
                         type="email"
                         placeholder="your@email.com"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                         className="w-full px-4 py-3 bg-background border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50"
+                        disabled={isSubmitting}
+                        required
                       />
                     </div>
                     
@@ -243,12 +255,53 @@ const ReportIssue = () => {
                     </div>
                     
                     <button
-                      type="button"
-                      className="w-full bg-primary hover:bg-primary/90 text-white py-3 rounded-lg font-medium transition-colors"
+                      type="submit"
+                      disabled={isSubmitting}
+                      className="w-full bg-primary hover:bg-primary/90 text-white py-3 rounded-lg font-medium transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                     >
-                      Submit Report
+                      {isSubmitting ? (
+                        <>
+                          <Loader2 className="w-5 h-5 animate-spin" />
+                          Submitting...
+                        </>
+                      ) : (
+                        "Submit Report"
+                      )}
                     </button>
+                  </form>
+                </div>
+              </div>
+            )}
+
+            {/* Success Message */}
+            {isSubmitted && (
+              <div className="max-w-3xl mx-auto mb-12">
+                <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-8 text-center">
+                  <div className="w-20 h-20 rounded-full bg-green-500/20 flex items-center justify-center mx-auto mb-6">
+                    <PartyPopper className="w-10 h-10 text-green-500" />
                   </div>
+                  <h3 className="text-2xl font-bold text-white mb-3">Thank You!</h3>
+                  <p className="text-lg text-green-400 mb-2">Your report has been submitted successfully.</p>
+                  <p className="text-muted-foreground mb-6">
+                    Our team will review your report and get back to you within 24-48 hours at <span className="text-white font-medium">{email}</span>.
+                  </p>
+                  <div className="flex items-start gap-3 p-4 bg-muted/20 rounded-lg text-left mb-6">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                    <div className="text-sm text-muted-foreground">
+                      <p className="font-medium text-white mb-1">What happens next?</p>
+                      <ul className="list-disc list-inside space-y-1">
+                        <li>You'll receive a confirmation email shortly</li>
+                        <li>Our team will investigate your report</li>
+                        <li>We'll follow up with any updates or questions</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <button
+                    onClick={handleNewReport}
+                    className="bg-card border border-border hover:border-primary/50 text-white px-6 py-3 rounded-xl font-medium transition-colors"
+                  >
+                    Submit Another Report
+                  </button>
                 </div>
               </div>
             )}
