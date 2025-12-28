@@ -78,13 +78,13 @@ const Tools = () => {
       title: "Communication Scripts",
       description: "Templates for discussing lifestyle with partners",
       icon: MessageSquare,
-      path: "/resources/communication"
+      path: "/lifestyle/relationships-communication"
     },
     {
       title: "Safety Checklist",
       description: "Pre-meet safety protocols and verification tips",
       icon: Shield,
-      path: "/resources/safety"
+      path: "/guide/safety"
     }
   ];
 
