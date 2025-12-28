@@ -212,6 +212,97 @@ const allBlogPosts = [
     readTime: "12 min read",
     date: "2024-12-28"
   },
+  // ENM & Polyamory Articles (10)
+  {
+    title: "ENM vs. Polyamory: Which Path Fits Your Heart",
+    category: "enm",
+    categoryDisplay: "ENM & Poly",
+    excerpt: "A clear, non-judgmental comparison of casual ENM styles versus romantic polyamory—with real stories of people who have switched or blended both.",
+    path: "/blog/enm-vs-polyamory",
+    readTime: "18 min read",
+    date: "2025-12-28"
+  },
+  {
+    title: "The 2026 Guide to Poly-Friendly Dating Apps",
+    category: "enm",
+    categoryDisplay: "ENM & Poly",
+    excerpt: "In-depth reviews of Feeld, OkCupid, Bloom, #open, and emerging platforms—plus profile tips for attracting multiple loving connections.",
+    path: "/blog/poly-dating-apps-2026",
+    readTime: "20 min read",
+    date: "2025-12-27"
+  },
+  {
+    title: "Polycule Drama: How to Spot It Early and Keep Relationships Drama-Free",
+    category: "enm",
+    categoryDisplay: "ENM & Poly",
+    excerpt: "Common pitfalls like triangulation, hierarchy fights, and unspoken expectations—plus proactive tools to foster harmony in your polycule.",
+    path: "/blog/polycule-drama",
+    readTime: "16 min read",
+    date: "2025-12-26"
+  },
+  {
+    title: "Time Management Mastery: Thriving in Multiple Relationships",
+    category: "enm",
+    categoryDisplay: "ENM & Poly",
+    excerpt: "Practical systems, apps, rituals, and boundary-setting strategies for balancing dates, partners, work, and self-care without burning out.",
+    path: "/blog/poly-time-management",
+    readTime: "15 min read",
+    date: "2025-12-25"
+  },
+  {
+    title: "Compersion in Action: Real Exercises to Feel Genuine Joy",
+    category: "enm",
+    categoryDisplay: "ENM & Poly",
+    excerpt: "Step-by-step practices, journaling prompts, and success stories from poly folks who turned jealousy into celebration.",
+    path: "/blog/compersion-exercises",
+    readTime: "18 min read",
+    date: "2025-12-24"
+  },
+  {
+    title: "Building Your Chosen Family: How Polycules Become Lifelong Support Networks",
+    category: "enm",
+    categoryDisplay: "ENM & Poly",
+    excerpt: "Heartwarming examples of shared holidays, group homes, co-parenting, and emotional safety nets beyond blood ties.",
+    path: "/blog/chosen-family",
+    readTime: "17 min read",
+    date: "2025-12-23"
+  },
+  {
+    title: "Solo Poly in a Coupled World: Why Independence Is the Ultimate Relationship Goal",
+    category: "enm",
+    categoryDisplay: "ENM & Poly",
+    excerpt: "Empowering insights for those who prioritize autonomy while loving deeply—dating tips, boundary scripts, and community advice.",
+    path: "/blog/solo-poly",
+    readTime: "19 min read",
+    date: "2025-12-22"
+  },
+  {
+    title: "ENM & Polyamory at Work: Navigating Professional Life",
+    category: "enm",
+    categoryDisplay: "ENM & Poly",
+    excerpt: "Strategies for handling nosy coworkers, LinkedIn privacy, workplace romance policies, and deciding who needs to know.",
+    path: "/blog/enm-at-work",
+    readTime: "16 min read",
+    date: "2025-12-21"
+  },
+  {
+    title: "Intimacy Beyond Sex: Deepening Emotional Connections",
+    category: "enm",
+    categoryDisplay: "ENM & Poly",
+    excerpt: "Ideas for love languages across partners, vulnerability dates, group bonding activities, and nurturing romance long-term.",
+    path: "/blog/intimacy-beyond-sex",
+    readTime: "16 min read",
+    date: "2025-12-20"
+  },
+  {
+    title: "The Future of Love: How ENM and Polyamory Are Reshaping Relationships",
+    category: "enm",
+    categoryDisplay: "ENM & Poly",
+    excerpt: "Trends like rising acceptance, new legal protections, media representation, and predictions from leading voices in the community.",
+    path: "/blog/future-of-love",
+    readTime: "14 min read",
+    date: "2025-12-19"
+  },
   // BDSM Articles (11)
   {
     title: "BDSM Safety Checklist: Essential Practices for Safe Play",
