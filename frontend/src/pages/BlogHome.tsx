@@ -656,7 +656,7 @@ const BlogHome = () => {
 
   // Calculate article counts per category
   const categoryCounts = useMemo(() => {
-    const counts = { all: allBlogPosts.length } as Record<string, number>;
+    const counts = { all: allBlogPosts.length };
     allBlogPosts.forEach(post => {
       counts[post.category] = (counts[post.category] || 0) + 1;
     });
