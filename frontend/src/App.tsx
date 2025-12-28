@@ -35,7 +35,7 @@ import HotwifingGuide from "./pages/HotwifingGuide";
 import SwingersGuide from "./pages/SwingersGuide";
 import BDSMGuide from "./pages/BDSMGuide";
 import TravelMiami from "./pages/TravelMiami";
-import BlogHome from "./pages/BlogHome";
+import BlogHomeTest from "./pages/BlogHomeTest";
 import AppComparisons from "./pages/AppComparisons";
 import Tools from "./pages/Tools";
 import ENMPolyamoryGuide from "./pages/ENMPolyamoryGuide";
