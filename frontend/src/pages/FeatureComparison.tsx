@@ -171,13 +171,6 @@ const FeatureComparison = () => {
     },
     {
       category: 'safety',
-      name: "Mandatory Video Selfie",
-      description: "Required video selfie + AI/human review for couple profile approval",
-      spice: true, feeld: false, sdc: false, kasidie: false, sls: false,
-      highlight: true
-    },
-    {
-      category: 'safety',
       name: "24/7 Professional Moderation",
       description: "Round-the-clock human moderation with kink-aware moderators. Transparent stats published in-app.",
       spice: true, feeld: true, sdc: true, kasidie: true, sls: true,
