@@ -893,7 +893,7 @@ const JealousyManagement = () => {
                       </Link>
                     </li>
                     <li>
-                      <Link to="/resources/glossary" className="flex items-center gap-2 hover:text-primary transition-colors">
+                      <Link to="/guide/glossary" className="flex items-center gap-2 hover:text-primary transition-colors">
                         <ArrowRight className="w-4 h-4 text-primary flex-shrink-0" />
                         <span><strong className="text-white">Lifestyle Glossary</strong> — Terms like compersion explained</span>
                       </Link>
