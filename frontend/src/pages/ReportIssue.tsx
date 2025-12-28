@@ -78,6 +78,42 @@ const ReportIssue = () => {
     return colors[color] || colors.blue;
   };
 
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!subject.trim()) {
+      toast.error("Please enter a subject for your report");
+      return;
+    }
+    
+    if (!details.trim()) {
+      toast.error("Please provide details about the issue");
+      return;
+    }
+    
+    if (!email.trim() || !email.includes("@")) {
+      toast.error("Please enter a valid email address");
+      return;
+    }
+
+    setIsSubmitting(true);
+    
+    // Simulate API call - in production this would send to backend
+    await new Promise(resolve => setTimeout(resolve, 1500));
+    
+    setIsSubmitting(false);
+    setIsSubmitted(true);
+    toast.success("Your report has been submitted successfully!");
+  };
+
+  const handleNewReport = () => {
+    setIsSubmitted(false);
+    setSelectedType(null);
+    setSubject("");
+    setDetails("");
+    setEmail("");
+  };
+
   return (
     <>
       <SEO
