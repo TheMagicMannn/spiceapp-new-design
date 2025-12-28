@@ -1,4 +1,4 @@
-import { CheckCircle, XCircle, Crown, Download, Shield, Users, Star, Heart, Sparkles, ChevronRight, MessageSquare, Calendar, Search, Lock, Camera, Video, Globe, Zap, Award, Eye, UserCheck, Users2, FileText, Brain, Filter, Stethoscope, Scale, Bell, BookOpen, Plane, BarChart3, Gem } from "lucide-react";
+import { CheckCircle, XCircle, Crown, Download, Shield, Users, Star, Heart, Sparkles, ChevronRight, MessageSquare, Calendar, Search, Lock, Camera, Globe, Zap, Award, Eye, UserCheck, Users2, FileText, Brain, Filter, Stethoscope, Scale, Bell, BookOpen, Plane, BarChart3, Gem } from "lucide-react";
 import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
