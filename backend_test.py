@@ -315,6 +315,7 @@ def main():
     results['root_endpoint'] = test_root_endpoint()
     results['waitlist_endpoint'] = test_waitlist_endpoint()
     results['contact_endpoint'] = test_contact_endpoint()
+    results['report_issue_endpoint'] = test_report_issue_endpoint()
     
     # Summary
     print("\n" + "=" * 60)
