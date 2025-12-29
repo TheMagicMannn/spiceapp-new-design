@@ -207,7 +207,7 @@ async def report_issue(request: ReportIssueRequest):
         if not resend_api_key:
             raise HTTPException(status_code=500, detail="Email service not configured")
         
-        # Save report to Supabase
+        # Generate report ID and document
         report_doc = {
             "id": str(uuid.uuid4()),
             "report_type": request.report_type,
@@ -219,10 +219,15 @@ async def report_issue(request: ReportIssueRequest):
             "updated_at": datetime.now(timezone.utc).isoformat()
         }
         
-        result = supabase.table("issue_reports").insert(report_doc).execute()
-        
-        if not result.data:
-            logger.warning("Failed to save report to database, but will still send email")
+        # Try to save report to Supabase (graceful degradation if table doesn't exist)
+        try:
+            result = supabase.table("issue_reports").insert(report_doc).execute()
+            if result.data:
+                logger.info(f"Report saved to database: {report_doc['id']}")
+            else:
+                logger.warning("Failed to save report to database, continuing with email")
+        except Exception as db_error:
+            logger.warning(f"Database error (continuing with email): {str(db_error)}")
         
         # Prepare email content
         report_type_labels = {
