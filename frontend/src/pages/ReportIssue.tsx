@@ -71,22 +71,6 @@ const ReportIssue = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
-    if (!subject.trim()) {
-      toast.error("Please enter a subject for your report");
-      return;
-    }
-    
-    if (!details.trim()) {
-      toast.error("Please provide details about the issue");
-      return;
-    }
-    
-    if (!email.trim() || !email.includes("@")) {
-      toast.error("Please enter a valid email address");
-      return;
-    }
-
     setIsSubmitting(true);
     
     try {
@@ -98,10 +82,10 @@ const ReportIssue = () => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          report_type: selectedType,
-          subject: subject,
-          details: details,
-          email: email,
+          report_type: formData.reportType,
+          subject: formData.subject,
+          details: formData.details,
+          email: formData.email,
         }),
       });
       
@@ -111,23 +95,31 @@ const ReportIssue = () => {
         throw new Error(data.detail || 'Failed to submit report');
       }
       
-      setIsSubmitting(false);
-      setIsSubmitted(true);
-      toast.success("Your report has been submitted successfully!");
+      toast({
+        title: "Report Submitted!",
+        description: "We'll review your report within 24-48 hours and follow up if needed.",
+      });
+      
+      trackFormSubmit('report_issue');
+      setFormData({ reportType: "", subject: "", details: "", email: "" });
     } catch (error) {
-      setIsSubmitting(false);
       const errorMessage = error instanceof Error ? error.message : 'Failed to submit report';
-      toast.error(errorMessage);
+      toast({
+        title: "Error",
+        description: errorMessage,
+        variant: "destructive",
+      });
       console.error('Error submitting report:', error);
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
-  const handleNewReport = () => {
-    setIsSubmitted(false);
-    setSelectedType(null);
-    setSubject("");
-    setDetails("");
-    setEmail("");
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Report an Issue - SPICE",
+    "description": "Report safety concerns, bugs, or content violations on SPICE"
   };
 
   return (
