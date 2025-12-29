@@ -7,10 +7,24 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 const WhyDifferent = () => {
   const uniqueFeatures = [
-    { icon: Sparkles, title: "BDSM Compatibility Quiz", desc: "50+ question AI-powered quiz analyzing your kink preferences, boundaries, and dynamics. Matches you with compatible partners. NO other lifestyle app has this comprehensive tool.", competitors: "Feeld: No quiz | 3Fun: No quiz | SDC: No quiz" },
-    { icon: Shield, title: "Dual Verification Required", desc: "Photo + ID verification mandatory for all members. Most apps only verify photos - we verify identity too. Reduces fake profiles by 99%.", competitors: "Feeld: Photo only | 3Fun: Photo only | SDC: Basic verification" },
-    { icon: Calendar, title: "Local Events Calendar", desc: "Discover lifestyle parties, munches, workshops, and meetups in your city. Built-in event management and RSVP system.", competitors: "Feeld: No events | 3Fun: No events | SDC: Event listings only" },
-    { icon: BookOpen, title: "60+ Educational Guides", desc: "Comprehensive articles on swinging, hotwifing, BDSM, ENM, polyamory, consent, communication, and safety. Most extensive educational library in lifestyle dating.", competitors: "Feeld: Blog only | 3Fun: Minimal content | SDC: Forums only" },
+    { icon: Users, title: "Polycule/Constellation Profiles", desc: "Unlimited linked profiles forming visible relationship maps (primaries, metamours, etc.)", competitors: "Feeld: ✗ | SDC: ✗ | Kasidie: ✗ | SLS: ✗" },
+    { icon: Target, title: "Solo ↔ Partnered Profile Toggle", desc: "Seamless switching between modes with separate desire visibility", competitors: "Feeld: ✗ | SDC: ✗ | Kasidie: ✗ | SLS: ✗" },
+    { icon: TrendingUp, title: "Ultra-Granular Physical Filters", desc: "Hair color/length, eye color, height (inch-by-inch), body type, ethnicity, tattoos/piercings, grooming, endowment preferences with savable presets", competitors: "Feeld: ✗ | SDC: ✓ | Kasidie: ✓ | SLS: ✓" },
+    { icon: Sparkles, title: "AI-Powered Learning Algorithm", desc: "Learns from swipes, messages, blocks, certifications; provides explained compatibility scores", competitors: "Feeld: ✗ | SDC: ✗ | Kasidie: ✗ | SLS: ✗" },
+    { icon: Users, title: "Group/Multi-Person Matching", desc: "Pre-match group chats and polycule/group swiping", competitors: "Feeld: ✗ | SDC: ✗ | Kasidie: ✗ | SLS: ✗" },
+    { icon: Shield, title: "ID Verification (Optional)", desc: "Government ID verification for enhanced trust", competitors: "Feeld: ✗ | SDC: ✓ | Kasidie: ✓ | SLS: ✗" },
+    { icon: Shield, title: "Dual Verification for Couples", desc: "Both partners must complete separate photo verification. Prevents fake couple accounts.", competitors: "Feeld: ✗ | SDC: ✗ | Kasidie: ✗ | SLS: ✗" },
+    { icon: Shield, title: "24/7 Professional Moderation", desc: "Round-the-clock human moderation with kink-aware moderators. Transparent stats published in-app.", competitors: "Feeld: ✓ | SDC: ✓ | Kasidie: ✓ | SLS: ✓" },
+    { icon: Shield, title: "Advanced Anti-Fake System", desc: "Activity scoring, AI detection, and human review to eliminate fakes", competitors: "Feeld: ✗ | SDC: ✗ | Kasidie: ✗ | SLS: ✗" },
+    { icon: Shield, title: "Linked Couple Read-Only Activity View", desc: "Both partners can view all shared profile activity (likes, messages, matches) for full transparency", competitors: "Feeld: ✗ | SDC: ✗ | Kasidie: ✗ | SLS: ✗" },
+    { icon: Shield, title: "Partner Approval Workflow", desc: "Optional: require partner approval before sending messages or likes", competitors: "Feeld: ✗ | SDC: ✗ | Kasidie: ✗ | SLS: ✗" },
+    { icon: Sparkles, title: "Comprehensive BDSM/Kink Quiz", desc: "50+ questions covering roles, experience, interests, limits, safe words, aftercare, dynamics. Generates detailed compatibility scores.", competitors: "Feeld: ✗ | SDC: ✗ | Kasidie: ✗ | SLS: ✗" },
+    { icon: Heart, title: "Boundary & Consent Tools", desc: "Shared checklists, negotiation templates, AI-assisted consent reminders in chats", competitors: "Feeld: ✗ | SDC: ✗ | Kasidie: ✗ | SLS: ✗" },
+    { icon: Heart, title: "STI/Health Status Sharing", desc: "Secure, voluntary upload of anonymized test results with visible badges", competitors: "Feeld: ✗ | SDC: ✗ | Kasidie: ✗ | SLS: ✗" },
+    { icon: Users, title: "ISO (In Search Of) Posts Feed", desc: "Dedicated personal ads section with rich text, photos, tags, browsing, and direct messaging", competitors: "Feeld: ✗ | SDC: ✓ | Kasidie: ✓ | SLS: ✓" },
+    { icon: CheckCircle, title: "Certifications & Validations", desc: "Moderated post-meetup reviews confirming real connections and boundary respect", competitors: "Feeld: ✗ | SDC: ✓ | Kasidie: ✓ | SLS: ✓" },
+    { icon: Calendar, title: "Integrated Event Calendar", desc: "RSVP to munches, parties, workshops. User-submitted and verified events + private invites.", competitors: "Feeld: ✗ | SDC: ✓ | Kasidie: ✓ | SLS: ✓" },
+    { icon: TrendingUp, title: "Fair Visibility Algorithm", desc: "Rewards profile completeness and activity, not payment. Everyone gets seen.", competitors: "Feeld: ✗ | SDC: ✗ | Kasidie: ✗ | SLS: ✗" },
   ];
 
   const advantages = [
