@@ -98,12 +98,37 @@ const ReportIssue = () => {
 
     setIsSubmitting(true);
     
-    // Simulate API call - in production this would send to backend
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    toast.success("Your report has been submitted successfully!");
+    try {
+      const backendUrl = import.meta.env.REACT_APP_BACKEND_URL || process.env.REACT_APP_BACKEND_URL;
+      
+      const response = await fetch(`${backendUrl}/report-issue`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          report_type: selectedType,
+          subject: subject,
+          details: details,
+          email: email,
+        }),
+      });
+      
+      const data = await response.json();
+      
+      if (!response.ok) {
+        throw new Error(data.detail || 'Failed to submit report');
+      }
+      
+      setIsSubmitting(false);
+      setIsSubmitted(true);
+      toast.success("Your report has been submitted successfully!");
+    } catch (error) {
+      setIsSubmitting(false);
+      const errorMessage = error instanceof Error ? error.message : 'Failed to submit report';
+      toast.error(errorMessage);
+      console.error('Error submitting report:', error);
+    }
   };
 
   const handleNewReport = () => {
