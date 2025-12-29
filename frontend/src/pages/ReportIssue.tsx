@@ -21,63 +21,53 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { trackFormSubmit } from "@/lib/gtag";
 
+const reportTypes = [
+  {
+    id: "safety",
+    icon: Shield,
+    title: "Safety Concern",
+    description: "Report harassment, threats, or other safety issues",
+    gradient: "from-red-500 to-rose-500",
+  },
+  {
+    id: "user",
+    icon: UserX,
+    title: "Report a User",
+    description: "Report fake profiles or inappropriate behavior",
+    gradient: "from-orange-500 to-amber-500",
+  },
+  {
+    id: "bug",
+    icon: Bug,
+    title: "Technical Bug",
+    description: "Report app crashes, errors, or things not working",
+    gradient: "from-purple-500 to-violet-500",
+  },
+  {
+    id: "content",
+    icon: Flag,
+    title: "Content Violation",
+    description: "Report inappropriate content or spam",
+    gradient: "from-amber-500 to-yellow-500",
+  },
+  {
+    id: "feedback",
+    icon: MessageCircle,
+    title: "General Feedback",
+    description: "Share suggestions, ideas, or concerns",
+    gradient: "from-blue-500 to-cyan-500",
+  }
+];
+
 const ReportIssue = () => {
-  const [selectedType, setSelectedType] = useState<string | null>(null);
-  const [subject, setSubject] = useState("");
-  const [details, setDetails] = useState("");
-  const [email, setEmail] = useState("");
+  const [formData, setFormData] = useState({
+    reportType: "",
+    subject: "",
+    details: "",
+    email: "",
+  });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const reportTypes = [
-    {
-      id: "safety",
-      icon: Shield,
-      title: "Safety Concern",
-      description: "Report harassment, threats, or other safety issues",
-      color: "red",
-      urgent: true
-    },
-    {
-      id: "user",
-      icon: UserX,
-      title: "Report a User",
-      description: "Report fake profiles, inappropriate behavior, or violations",
-      color: "orange"
-    },
-    {
-      id: "bug",
-      icon: Bug,
-      title: "Technical Bug",
-      description: "Report app crashes, errors, or things not working correctly",
-      color: "purple"
-    },
-    {
-      id: "content",
-      icon: Flag,
-      title: "Content Violation",
-      description: "Report inappropriate content, spam, or policy violations",
-      color: "amber"
-    },
-    {
-      id: "feedback",
-      icon: MessageCircle,
-      title: "General Feedback",
-      description: "Share suggestions, ideas, or general concerns",
-      color: "blue"
-    }
-  ];
-
-  const getColorClasses = (color: string) => {
-    const colors: Record<string, { bg: string; border: string; text: string; icon: string }> = {
-      red: { bg: "bg-red-500/10", border: "border-red-500/30", text: "text-red-400", icon: "text-red-500" },
-      orange: { bg: "bg-orange-500/10", border: "border-orange-500/30", text: "text-orange-400", icon: "text-orange-500" },
-      purple: { bg: "bg-purple-500/10", border: "border-purple-500/30", text: "text-purple-400", icon: "text-purple-500" },
-      amber: { bg: "bg-amber-500/10", border: "border-amber-500/30", text: "text-amber-400", icon: "text-amber-500" },
-      blue: { bg: "bg-blue-500/10", border: "border-blue-500/30", text: "text-blue-400", icon: "text-blue-500" },
-    };
-    return colors[color] || colors.blue;
-  };
+  const { toast } = useToast();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
