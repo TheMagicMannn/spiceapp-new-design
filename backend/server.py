@@ -200,6 +200,201 @@ async def join_waitlist(request: WaitlistRequest):
         logger.error(f"Waitlist error: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
+# Report Issue Endpoint with Email via Resend
+@api_router.post("/report-issue")
+async def report_issue(request: ReportIssueRequest):
+    try:
+        if not resend_api_key:
+            raise HTTPException(status_code=500, detail="Email service not configured")
+        
+        # Save report to Supabase
+        report_doc = {
+            "id": str(uuid.uuid4()),
+            "report_type": request.report_type,
+            "subject": request.subject,
+            "details": request.details,
+            "email": request.email.lower(),
+            "status": "new",
+            "created_at": datetime.now(timezone.utc).isoformat(),
+            "updated_at": datetime.now(timezone.utc).isoformat()
+        }
+        
+        result = supabase.table("issue_reports").insert(report_doc).execute()
+        
+        if not result.data:
+            logger.warning("Failed to save report to database, but will still send email")
+        
+        # Prepare email content
+        report_type_labels = {
+            "safety": "🚨 Safety Concern",
+            "user": "👤 Report a User",
+            "bug": "🐛 Technical Bug",
+            "content": "🚩 Content Violation",
+            "feedback": "💬 General Feedback"
+        }
+        
+        report_label = report_type_labels.get(request.report_type, "📝 Issue Report")
+        
+        html_content = f"""
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <style>
+                body {{
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+                    line-height: 1.6;
+                    color: #333;
+                    margin: 0;
+                    padding: 0;
+                    background-color: #f4f4f4;
+                }}
+                .container {{
+                    max-width: 600px;
+                    margin: 20px auto;
+                    background: #ffffff;
+                    border-radius: 8px;
+                    overflow: hidden;
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                }}
+                .header {{
+                    background: linear-gradient(135deg, #e63946 0%, #ff6b6b 100%);
+                    color: white;
+                    padding: 30px 20px;
+                    text-align: center;
+                }}
+                .header h1 {{
+                    margin: 0;
+                    font-size: 24px;
+                    font-weight: 600;
+                }}
+                .content {{
+                    padding: 30px 20px;
+                }}
+                .badge {{
+                    display: inline-block;
+                    background: #e63946;
+                    color: white;
+                    padding: 6px 12px;
+                    border-radius: 20px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                }}
+                .field {{
+                    margin-bottom: 20px;
+                }}
+                .label {{
+                    font-weight: 600;
+                    color: #555;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    letter-spacing: 0.5px;
+                    margin-bottom: 5px;
+                }}
+                .value {{
+                    color: #333;
+                    font-size: 16px;
+                    padding: 10px;
+                    background: #f8f9fa;
+                    border-radius: 4px;
+                    border-left: 3px solid #e63946;
+                }}
+                .details {{
+                    white-space: pre-wrap;
+                    word-wrap: break-word;
+                }}
+                .footer {{
+                    background: #f8f9fa;
+                    padding: 20px;
+                    text-align: center;
+                    color: #666;
+                    font-size: 12px;
+                    border-top: 1px solid #e0e0e0;
+                }}
+                .urgent {{
+                    background: #dc3545;
+                    color: white;
+                    padding: 15px;
+                    border-radius: 4px;
+                    margin-bottom: 20px;
+                    font-weight: 600;
+                }}
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <div class="header">
+                    <h1>New Issue Report</h1>
+                    <p style="margin: 5px 0 0 0; opacity: 0.9;">SPICE App Support</p>
+                </div>
+                <div class="content">
+                    <div class="badge">{report_label}</div>
+                    
+                    {'<div class="urgent">⚠️ PRIORITY: This is a safety concern that requires immediate attention!</div>' if request.report_type == 'safety' else ''}
+                    
+                    <div class="field">
+                        <div class="label">Report ID</div>
+                        <div class="value">{report_doc["id"]}</div>
+                    </div>
+                    
+                    <div class="field">
+                        <div class="label">Subject</div>
+                        <div class="value">{request.subject}</div>
+                    </div>
+                    
+                    <div class="field">
+                        <div class="label">Details</div>
+                        <div class="value details">{request.details}</div>
+                    </div>
+                    
+                    <div class="field">
+                        <div class="label">Reporter Email</div>
+                        <div class="value">{request.email}</div>
+                    </div>
+                    
+                    <div class="field">
+                        <div class="label">Submitted At</div>
+                        <div class="value">{datetime.now(timezone.utc).strftime('%B %d, %Y at %I:%M %p UTC')}</div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <p>This report was submitted through the SPICE App issue reporting system.</p>
+                    <p>Please respond within 24-48 hours to maintain user trust and safety.</p>
+                </div>
+            </div>
+        </body>
+        </html>
+        """
+        
+        # Send email using Resend (non-blocking)
+        params = {
+            "from": sender_email,
+            "to": [support_email],
+            "subject": f"[{report_label}] {request.subject}",
+            "html": html_content
+        }
+        
+        try:
+            email_response = await asyncio.to_thread(resend.Emails.send, params)
+            logger.info(f"Issue report email sent successfully. Email ID: {email_response.get('id')}")
+        except Exception as email_error:
+            logger.error(f"Failed to send email but report was saved: {str(email_error)}")
+            # Don't fail the request if email fails, but log it
+        
+        return {
+            "success": True,
+            "message": "Your report has been submitted successfully. Our team will review it within 24-48 hours.",
+            "report_id": report_doc["id"]
+        }
+        
+    except HTTPException:
+        raise
+    except Exception as e:
+        logger.error(f"Report issue error: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Failed to submit report: {str(e)}")
+
 # AI-Powered Quiz Analysis Endpoint
 @api_router.post("/analyze-quiz")
 async def analyze_quiz(request: QuizAnalysisRequest):
