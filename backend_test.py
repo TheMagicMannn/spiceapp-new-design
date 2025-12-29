@@ -9,8 +9,19 @@ import json
 import sys
 from datetime import datetime
 
-# Backend URL - using localhost as REACT_APP_BACKEND_URL is not set in frontend/.env
-BACKEND_URL = "http://localhost:8001"
+# Backend URL - Get from frontend/.env
+import os
+from dotenv import load_dotenv
+
+# Load frontend environment variables to get the correct backend URL
+load_dotenv('/app/frontend/.env')
+REACT_APP_BACKEND_URL = os.environ.get('REACT_APP_BACKEND_URL')
+
+if REACT_APP_BACKEND_URL:
+    BACKEND_URL = REACT_APP_BACKEND_URL
+else:
+    # Fallback to localhost for local testing
+    BACKEND_URL = "http://localhost:8001"
 
 def test_root_endpoint():
     """Test GET /api/ - Root endpoint"""
