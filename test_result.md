@@ -92,7 +92,7 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Blog functionality testing"
+    - "Report issue API endpoint"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
