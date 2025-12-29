@@ -1,11 +1,10 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import { toast } from "sonner";
 import { 
   AlertTriangle, 
   Shield, 
@@ -13,12 +12,14 @@ import {
   UserX, 
   Flag,
   MessageCircle,
-  ChevronRight,
-  CheckCircle,
-  AlertCircle,
-  Loader2,
-  PartyPopper
+  Send,
+  Loader2
 } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/hooks/use-toast";
+import { trackFormSubmit } from "@/lib/gtag";
 
 const ReportIssue = () => {
   const [selectedType, setSelectedType] = useState<string | null>(null);
