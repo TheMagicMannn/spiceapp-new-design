@@ -182,7 +182,7 @@ const WhyDifferent = () => {
             <div className="bg-gradient-to-r from-primary/20 via-purple-500/20 to-primary/20 rounded-2xl p-8 md:p-12 border border-primary/30 text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">Join 30,000+ Who Chose SPICE</h2>
               <p className="text-xl text-muted-foreground mb-8">
-                Experience the only lifestyle app with BDSM quiz, dual verification, events calendar, and 60+ educational guides.
+                Experience the only lifestyle app with 18 unique features including polycule profiles, BDSM quiz, AI matching, dual verification, and comprehensive safety tools.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a href="/download" className="inline-flex items-center justify-center px-8 py-3 bg-primary hover:bg-primary/90 text-white font-semibold rounded-full transition-all">
