@@ -1,4 +1,4 @@
-import { Crown, Target, Sparkles, Shield, TrendingUp, Heart, Users, Calendar, BookOpen, CheckCircle } from "lucide-react";
+import { Crown, Target, Sparkles, Shield, TrendingUp, Heart, Users, Calendar, BookOpen, CheckCircle, ChevronRight } from "lucide-react";
 import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
