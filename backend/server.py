@@ -27,6 +27,14 @@ if not supabase_url or not supabase_key:
 
 supabase: Client = create_client(supabase_url, supabase_key)
 
+# Resend API configuration
+resend_api_key = os.environ.get('RESEND_API_KEY')
+sender_email = os.environ.get('SENDER_EMAIL', 'onboarding@resend.dev')
+support_email = os.environ.get('SUPPORT_EMAIL', 'support@thespiceapp.com')
+
+if resend_api_key:
+    resend.api_key = resend_api_key
+
 # Create the main app without a prefix
 app = FastAPI()
 
