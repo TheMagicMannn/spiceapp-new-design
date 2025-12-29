@@ -105,6 +105,7 @@ realtime==2.27.0
 referencing==0.37.0
 regex==2025.11.3
 requests==2.32.5
+resend>=2.0.0
 requests-oauthlib==2.0.0
 rich==14.2.0
 rpds-py==0.30.0
