@@ -123,22 +123,58 @@ const WhyDifferent = () => {
             </section>
 
             <div className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-8 md:p-12 mb-16">
-              <h2 className="text-2xl md:text-3xl font-bold mb-6">See the Difference Yourself</h2>
-              <div className="grid md:grid-cols-3 gap-6">
-                <a href="/vs/feeld" className="bg-background/50 border border-primary/30 rounded-lg p-6 hover:border-primary/50 transition-all hover:scale-105">
-                  <h3 className="font-bold text-primary mb-2">vs Feeld</h3>
-                  <p className="text-sm text-muted-foreground mb-3">See how SPICE compares</p>
-                  <span className="text-primary text-sm font-semibold">Read Comparison →</span>
+              <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">See the Difference Yourself</h2>
+              <p className="text-center text-muted-foreground mb-8">
+                Compare SPICE with the leading lifestyle dating apps
+              </p>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <a href="/vs/feeld" className="bg-background/50 border border-primary/30 rounded-lg p-6 hover:border-primary/50 transition-all hover:scale-105 group">
+                  <h3 className="font-bold text-primary mb-2 text-lg">SPICE vs Feeld</h3>
+                  <p className="text-sm text-muted-foreground mb-3">Compare features, pricing, and community focus</p>
+                  <span className="text-primary text-sm font-semibold group-hover:gap-2 inline-flex items-center gap-1 transition-all">
+                    Read Comparison 
+                    <ChevronRight className="w-4 h-4" />
+                  </span>
                 </a>
-                <a href="/vs/3fun" className="bg-background/50 border border-primary/30 rounded-lg p-6 hover:border-primary/50 transition-all hover:scale-105">
-                  <h3 className="font-bold text-primary mb-2">vs 3Fun</h3>
-                  <p className="text-sm text-muted-foreground mb-3">Safety comparison</p>
-                  <span className="text-primary text-sm font-semibold">Read Comparison →</span>
+                <a href="/vs/3fun" className="bg-background/50 border border-primary/30 rounded-lg p-6 hover:border-primary/50 transition-all hover:scale-105 group">
+                  <h3 className="font-bold text-primary mb-2 text-lg">SPICE vs 3Fun</h3>
+                  <p className="text-sm text-muted-foreground mb-3">Safety, verification, and user experience</p>
+                  <span className="text-primary text-sm font-semibold group-hover:gap-2 inline-flex items-center gap-1 transition-all">
+                    Read Comparison 
+                    <ChevronRight className="w-4 h-4" />
+                  </span>
                 </a>
-                <a href="/vs/sdc" className="bg-background/50 border border-primary/30 rounded-lg p-6 hover:border-primary/50 transition-all hover:scale-105">
-                  <h3 className="font-bold text-primary mb-2">vs SDC</h3>
-                  <p className="text-sm text-muted-foreground mb-3">Value comparison</p>
-                  <span className="text-primary text-sm font-semibold">Read Comparison →</span>
+                <a href="/vs/sdc" className="bg-background/50 border border-primary/30 rounded-lg p-6 hover:border-primary/50 transition-all hover:scale-105 group">
+                  <h3 className="font-bold text-primary mb-2 text-lg">SPICE vs SDC</h3>
+                  <p className="text-sm text-muted-foreground mb-3">Modern features vs traditional swinger site</p>
+                  <span className="text-primary text-sm font-semibold group-hover:gap-2 inline-flex items-center gap-1 transition-all">
+                    Read Comparison 
+                    <ChevronRight className="w-4 h-4" />
+                  </span>
+                </a>
+                <a href="/vs/kasidie" className="bg-background/50 border border-primary/30 rounded-lg p-6 hover:border-primary/50 transition-all hover:scale-105 group">
+                  <h3 className="font-bold text-primary mb-2 text-lg">SPICE vs Kasidie</h3>
+                  <p className="text-sm text-muted-foreground mb-3">Compare event calendars and community features</p>
+                  <span className="text-primary text-sm font-semibold group-hover:gap-2 inline-flex items-center gap-1 transition-all">
+                    Read Comparison 
+                    <ChevronRight className="w-4 h-4" />
+                  </span>
+                </a>
+                <a href="/vs/sls" className="bg-background/50 border border-primary/30 rounded-lg p-6 hover:border-primary/50 transition-all hover:scale-105 group">
+                  <h3 className="font-bold text-primary mb-2 text-lg">SPICE vs SLS</h3>
+                  <p className="text-sm text-muted-foreground mb-3">Modern UI and AI matching vs legacy platform</p>
+                  <span className="text-primary text-sm font-semibold group-hover:gap-2 inline-flex items-center gap-1 transition-all">
+                    Read Comparison 
+                    <ChevronRight className="w-4 h-4" />
+                  </span>
+                </a>
+                <a href="/tools/feature-comparison" className="bg-gradient-to-br from-primary/20 to-purple-500/20 border-2 border-primary/50 rounded-lg p-6 hover:border-primary transition-all hover:scale-105 group">
+                  <h3 className="font-bold text-primary mb-2 text-lg">Full Feature Table</h3>
+                  <p className="text-sm text-muted-foreground mb-3">View detailed side-by-side comparison</p>
+                  <span className="text-primary text-sm font-semibold group-hover:gap-2 inline-flex items-center gap-1 transition-all">
+                    See All Features 
+                    <ChevronRight className="w-4 h-4" />
+                  </span>
                 </a>
               </div>
             </div>
