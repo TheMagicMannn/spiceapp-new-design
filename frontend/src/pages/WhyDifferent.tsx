@@ -203,3 +203,5 @@ const WhyDifferent = () => {
 };
 
 export default WhyDifferent;
+
+export default WhyDifferent;
