@@ -122,6 +122,12 @@ class WaitlistRequest(BaseModel):
     name: Optional[str] = None
     source: Optional[str] = "unknown"
 
+class ReportIssueRequest(BaseModel):
+    report_type: str
+    subject: str
+    details: str
+    email: EmailStr
+
 # Contact Form Endpoint
 @api_router.post("/contact")
 async def submit_contact(request: ContactRequest):
