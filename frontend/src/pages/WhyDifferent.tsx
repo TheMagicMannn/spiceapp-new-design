@@ -63,10 +63,10 @@ const WhyDifferent = () => {
               <div className="bg-gradient-to-r from-primary/20 via-purple-500/20 to-primary/20 rounded-2xl p-8 border border-primary/30 text-center">
                 <div className="flex items-center justify-center gap-3 mb-4">
                   <Crown className="w-10 h-10 text-yellow-500" />
-                  <h2 className="text-2xl md:text-3xl font-bold">4 Features NO Competitor Has</h2>
+                  <h2 className="text-2xl md:text-3xl font-bold">18 Features NO Competitor Has</h2>
                 </div>
                 <p className="text-lg text-muted-foreground">
-                  BDSM Quiz • Dual Verification • Events Calendar • 60+ Guides
+                  From polycule profiles and AI matching to comprehensive BDSM quiz and STI status sharing
                 </p>
               </div>
             </div>
