@@ -47,6 +47,18 @@ backend:
         agent: "testing"
         comment: "Status endpoints (/api/status GET/POST) not tested as requested - status_checks table doesn't exist in Supabase yet. Endpoints return 500 error as expected."
 
+  - task: "Report issue API endpoint"
+    implemented: true
+    working: false
+    file: "backend/server.py"
+    stuck_count: 0
+    priority: "high"
+    needs_retesting: false
+    status_history:
+      - working: false
+        agent: "testing"
+        comment: "POST /api/report-issue endpoint tested. CRITICAL ISSUE: Graceful degradation not working - when issue_reports table doesn't exist in Supabase, endpoint returns 500 error instead of continuing with email sending. Validation working correctly (422 for missing fields/invalid email). Email sending not tested due to database failure blocking execution. Code needs modification to catch database errors and continue with email sending as intended."
+
 frontend:
   - task: "Blog functionality testing"
     implemented: true
