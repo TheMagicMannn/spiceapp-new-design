@@ -37,9 +37,9 @@ const WhyDifferent = () => {
   return (
     <>
       <SEO
-        title="Why SPICE is Different: Best Lifestyle Dating App Features 2025"
-        description="Discover what makes SPICE unique: BDSM compatibility quiz, dual verification, events calendar, 60+ guides. Why 30,000+ members chose SPICE over Feeld, 3Fun, SDC."
-        keywords="SPICE unique features, best lifestyle app, why choose SPICE, SPICE advantages, lifestyle app comparison, BDSM dating app features"
+        title="Why SPICE is Different: 18 Unique Features | Best Lifestyle Dating App 2025"
+        description="Discover SPICE's 18 unique features: polycule profiles, BDSM quiz, AI matching, dual verification, STI sharing, consent tools. Compare with Feeld, SDC, Kasidie, SLS, 3Fun."
+        keywords="SPICE unique features, best lifestyle app, why choose SPICE, SPICE advantages, lifestyle app comparison, BDSM dating app features, polycule profiles, AI matching"
         canonical="https://thespiceapp.com/about/why-different"
       />
 
