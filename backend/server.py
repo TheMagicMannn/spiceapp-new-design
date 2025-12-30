@@ -5,7 +5,7 @@ from supabase import create_client, Client
 import os
 import logging
 from pathlib import Path
-from pydantic import BaseModel, Field, EmailStr
+from pydantic import BaseModel, Field, field_validator
 from typing import List, Dict, Any, Optional
 import uuid
 from datetime import datetime, timezone
@@ -13,6 +13,7 @@ import json
 from emergentintegrations.llm.chat import LlmChat, UserMessage
 import resend
 import asyncio
+import re
 
 
 ROOT_DIR = Path(__file__).parent
