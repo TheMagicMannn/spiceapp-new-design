@@ -72,7 +72,10 @@ const ReportIssue = () => {
     email: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [reportId, setReportId] = useState("");
   const { toast } = useToast();
+  const navigate = useNavigate();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -90,13 +93,10 @@ const ReportIssue = () => {
 
       if (error) throw error;
       
-      toast({
-        title: "Report Submitted!",
-        description: "We'll review your report within 24-48 hours and follow up if needed.",
-      });
-      
+      // Set success state with report ID
+      setReportId(data?.report_id || crypto.randomUUID());
+      setIsSubmitted(true);
       trackFormSubmit('report_issue');
-      setFormData({ reportType: "", subject: "", details: "", email: "" });
     } catch (error: unknown) {
       const errorMessage = error instanceof Error ? error.message : "Failed to submit report";
       toast({
@@ -108,6 +108,16 @@ const ReportIssue = () => {
     } finally {
       setIsSubmitting(false);
     }
+  };
+
+  const handleNewReport = () => {
+    setIsSubmitted(false);
+    setFormData({ reportType: "", subject: "", details: "", email: "" });
+    setReportId("");
+  };
+
+  const handleGoHome = () => {
+    navigate('/');
   };
 
   const structuredData = {
