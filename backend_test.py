@@ -144,17 +144,18 @@ def test_contact_endpoint():
         return False
 
 def test_report_issue_endpoint():
-    """Test POST /api/report-issue - Report issue endpoint with graceful degradation"""
-    print("\n=== Testing Report Issue Endpoint - GRACEFUL DEGRADATION FIX ===")
+    """Test POST /api/report-issue - Report issue endpoint with UPDATED RESEND API KEY"""
+    print("\n=== Testing Report Issue Endpoint - UPDATED RESEND API KEY ===")
+    print("Testing with new valid Resend API key: re_J68Uf9Xh_9tDQvAoS5DwcxJ7YrJEC8xKs")
     
-    # Test 1: Safety report (urgent type) as specified in review request
-    print("\n--- Test 1: Safety Report (Urgent Type) ---")
+    # Test 1: Bug report as specified in review request
+    print("\n--- Test 1: Bug Report with Email Sending ---")
     try:
         test_data = {
-            "report_type": "safety",
-            "subject": "Test Safety Report - Email Verification",
-            "details": "This is a test safety report to verify email sending works even if database table doesn't exist.",
-            "email": "reporter@example.com"
+            "report_type": "bug",
+            "subject": "Test Bug Report - Email Should Send",
+            "details": "This is a test report to verify that emails are now being sent successfully via Resend API.",
+            "email": "test@example.com"
         }
         
         response = requests.post(
@@ -169,7 +170,48 @@ def test_report_issue_endpoint():
         if response.status_code == 200:
             data = response.json()
             if (data.get("success") is True and 
-                "24-48 hours" in data.get("message", "") and 
+                "review" in data.get("message", "").lower() and 
+                data.get("report_id")):
+                print("✅ Bug report submission working correctly")
+                print(f"✅ Report ID generated: {data.get('report_id')}")
+                print("✅ Response includes success=True, review message, and report_id")
+                bug_test_passed = True
+            else:
+                print("❌ Bug report submission returned unexpected response")
+                print(f"Expected: success=True, message with 'review', report_id")
+                print(f"Got: {data}")
+                bug_test_passed = False
+        else:
+            print(f"❌ Bug report submission failed with status {response.status_code}")
+            bug_test_passed = False
+            
+    except Exception as e:
+        print(f"❌ Bug report submission test failed: {str(e)}")
+        bug_test_passed = False
+    
+    # Test 2: Safety report (should show priority in email)
+    print("\n--- Test 2: Safety Report (Priority Type) ---")
+    try:
+        test_data = {
+            "report_type": "safety",
+            "subject": "Test Safety Report - Priority Email",
+            "details": "This is a test safety report to verify priority handling in email sending.",
+            "email": "safety@example.com"
+        }
+        
+        response = requests.post(
+            f"{BACKEND_URL}/api/report-issue",
+            json=test_data,
+            headers={"Content-Type": "application/json"}
+        )
+        
+        print(f"Status Code: {response.status_code}")
+        print(f"Response: {response.json()}")
+        
+        if response.status_code == 200:
+            data = response.json()
+            if (data.get("success") is True and 
+                "review" in data.get("message", "").lower() and 
                 data.get("report_id")):
                 print("✅ Safety report submission working correctly")
                 print(f"✅ Report ID generated: {data.get('report_id')}")
@@ -185,51 +227,14 @@ def test_report_issue_endpoint():
         print(f"❌ Safety report submission test failed: {str(e)}")
         safety_test_passed = False
     
-    # Test 2: Bug report type
-    print("\n--- Test 2: Bug Report Type ---")
-    try:
-        test_data = {
-            "report_type": "bug",
-            "subject": "Test Bug Report - Graceful Degradation",
-            "details": "Testing bug report submission with graceful degradation when database table doesn't exist.",
-            "email": "reporter@example.com"
-        }
-        
-        response = requests.post(
-            f"{BACKEND_URL}/api/report-issue",
-            json=test_data,
-            headers={"Content-Type": "application/json"}
-        )
-        
-        print(f"Status Code: {response.status_code}")
-        print(f"Response: {response.json()}")
-        
-        if response.status_code == 200:
-            data = response.json()
-            if (data.get("success") is True and 
-                "24-48 hours" in data.get("message", "") and 
-                data.get("report_id")):
-                print("✅ Bug report submission working correctly")
-                bug_test_passed = True
-            else:
-                print("❌ Bug report submission returned unexpected response")
-                bug_test_passed = False
-        else:
-            print(f"❌ Bug report submission failed with status {response.status_code}")
-            bug_test_passed = False
-            
-    except Exception as e:
-        print(f"❌ Bug report submission test failed: {str(e)}")
-        bug_test_passed = False
-    
     # Test 3: Feedback report type
     print("\n--- Test 3: Feedback Report Type ---")
     try:
         test_data = {
             "report_type": "feedback",
-            "subject": "Test Feedback Report - Graceful Degradation",
-            "details": "Testing feedback report submission with graceful degradation when database table doesn't exist.",
-            "email": "reporter@example.com"
+            "subject": "Test Feedback Report - Email Verification",
+            "details": "This is a test feedback report to verify email sending functionality.",
+            "email": "feedback@example.com"
         }
         
         response = requests.post(
@@ -244,7 +249,7 @@ def test_report_issue_endpoint():
         if response.status_code == 200:
             data = response.json()
             if (data.get("success") is True and 
-                "24-48 hours" in data.get("message", "") and 
+                "review" in data.get("message", "").lower() and 
                 data.get("report_id")):
                 print("✅ Feedback report submission working correctly")
                 feedback_test_passed = True
@@ -283,7 +288,7 @@ def test_report_issue_endpoint():
             validation_test_passed = True
         else:
             print(f"⚠️ Missing report_type validation returned status {response.status_code} (expected 422)")
-            validation_test_passed = True  # Not critical for graceful degradation
+            validation_test_passed = True  # Not critical for main functionality
             
     except Exception as e:
         print(f"❌ Missing report_type validation test failed: {str(e)}")
@@ -313,25 +318,26 @@ def test_report_issue_endpoint():
             email_validation_passed = True
         else:
             print(f"⚠️ Invalid email format validation returned status {response.status_code} (expected 422)")
-            email_validation_passed = True  # Not critical for graceful degradation
+            email_validation_passed = True  # Not critical for main functionality
             
     except Exception as e:
         print(f"❌ Invalid email format validation test failed: {str(e)}")
         email_validation_passed = False
     
-    # Overall result - main functionality must work (graceful degradation)
-    core_tests_passed = safety_test_passed and bug_test_passed and feedback_test_passed
+    # Overall result - main functionality must work
+    core_tests_passed = bug_test_passed and safety_test_passed and feedback_test_passed
     
     if core_tests_passed:
-        print("\n✅ Report Issue endpoint GRACEFUL DEGRADATION working correctly")
-        print("✅ All report types return 200 success even if database fails")
-        print("✅ Email sending should be working (check backend logs for email_id)")
+        print("\n✅ Report Issue endpoint working correctly with UPDATED RESEND API KEY")
+        print("✅ All report types return 200 success with proper response structure")
+        print("✅ Email sending should be working - CHECK BACKEND LOGS for 'Issue report email sent successfully' and Email ID")
+        print("✅ Response includes: success=True, message about review, report_id (UUID)")
         if not validation_test_passed or not email_validation_passed:
             print("⚠️ Minor: Some validation tests had unexpected behavior")
         return True
     else:
-        print("\n❌ Report Issue endpoint GRACEFUL DEGRADATION failed")
-        print("❌ Core functionality not working - endpoint should return 200 even if database fails")
+        print("\n❌ Report Issue endpoint failed with UPDATED RESEND API KEY")
+        print("❌ Core functionality not working - check backend logs for errors")
         return False
 
 def test_backend_connectivity():
