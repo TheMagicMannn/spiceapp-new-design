@@ -127,7 +127,27 @@ class ReportIssueRequest(BaseModel):
     report_type: str
     subject: str
     details: str
-    email: EmailStr
+    email: str
+    
+    @field_validator('email')
+    @classmethod
+    def validate_email(cls, v):
+        # Simple email validation - just check for @ symbol and basic format
+        if not v or '@' not in v:
+            raise ValueError('Invalid email address')
+        # Basic regex pattern for email
+        pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+        if not re.match(pattern, v):
+            raise ValueError('Invalid email address format')
+        return v.lower()
+    
+    @field_validator('report_type')
+    @classmethod
+    def validate_report_type(cls, v):
+        valid_types = ['safety', 'user', 'bug', 'content', 'feedback']
+        if v not in valid_types:
+            raise ValueError(f'Invalid report type. Must be one of: {", ".join(valid_types)}')
+        return v
 
 # Contact Form Endpoint
 @api_router.post("/contact")
