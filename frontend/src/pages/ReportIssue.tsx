@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
@@ -13,7 +14,10 @@ import {
   Flag,
   MessageCircle,
   Send,
-  Loader2
+  Loader2,
+  CheckCircle,
+  Home,
+  FileText
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
