@@ -75,37 +75,16 @@ const ReportIssue = () => {
     setIsSubmitting(true);
     
     try {
-      const backendUrl = import.meta.env.REACT_APP_BACKEND_URL;
-      
-      const response = await fetch(`${backendUrl}/report-issue`, {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
+      const { data, error } = await supabase.functions.invoke("report-issue", {
+        body: {
           report_type: formData.reportType,
           subject: formData.subject,
           details: formData.details,
           email: formData.email,
-        }),
+        },
       });
-      
-      const data = await response.json();
-      
-      if (!response.ok) {
-        // Handle validation errors from FastAPI
-        if (data.detail && Array.isArray(data.detail)) {
-          const errorMsg = data.detail.map((err: any) => {
-            if (err.loc && err.msg) {
-              const field = err.loc[err.loc.length - 1];
-              return `${field}: ${err.msg.replace('Value error, ', '')}`;
-            }
-            return err.msg || 'Validation error';
-          }).join(', ');
-          throw new Error(errorMsg);
-        }
-        throw new Error(data.detail || 'Failed to submit report');
-      }
+
+      if (error) throw error;
       
       toast({
         title: "Report Submitted!",
@@ -114,8 +93,8 @@ const ReportIssue = () => {
       
       trackFormSubmit('report_issue');
       setFormData({ reportType: "", subject: "", details: "", email: "" });
-    } catch (error) {
-      const errorMessage = error instanceof Error ? error.message : 'Failed to submit report';
+    } catch (error: unknown) {
+      const errorMessage = error instanceof Error ? error.message : "Failed to submit report";
       toast({
         title: "Error",
         description: errorMessage,
