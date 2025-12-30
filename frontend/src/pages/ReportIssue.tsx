@@ -142,6 +142,112 @@ const ReportIssue = () => {
         <Header />
         <Breadcrumbs />
 
+        {/* Success Screen Overlay */}
+        <AnimatePresence>
+          {isSubmitted && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 z-50 flex items-center justify-center bg-background/95 backdrop-blur-sm"
+            >
+              <motion.div
+                initial={{ scale: 0.9, opacity: 0, y: 20 }}
+                animate={{ scale: 1, opacity: 1, y: 0 }}
+                transition={{ delay: 0.1, duration: 0.5, type: "spring" }}
+                className="relative max-w-2xl w-full mx-4"
+              >
+                <div className="glass-card rounded-3xl p-8 md:p-12 text-center border-2 border-primary/20">
+                  {/* Success Icon */}
+                  <motion.div
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    transition={{ delay: 0.3, type: "spring", stiffness: 200 }}
+                    className="mx-auto w-24 h-24 rounded-full bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center mb-6 shadow-lg shadow-green-500/50"
+                  >
+                    <CheckCircle className="w-14 h-14 text-white" />
+                  </motion.div>
+
+                  {/* Success Message */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.4 }}
+                  >
+                    <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gradient">
+                      Report Submitted Successfully!
+                    </h2>
+                    <p className="text-xl md:text-2xl text-muted-foreground mb-6">
+                      Thank you for helping us maintain a safe community
+                    </p>
+                  </motion.div>
+
+                  {/* Report Details */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.5 }}
+                    className="bg-muted/30 rounded-2xl p-6 mb-8 border border-border/50"
+                  >
+                    <div className="flex items-start gap-3 mb-4">
+                      <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0 mt-0.5" />
+                      <div className="text-left">
+                        <p className="font-semibold text-lg mb-1">What happens next?</p>
+                        <ul className="text-muted-foreground space-y-2 text-sm md:text-base">
+                          <li>• Our support team will review your report within 24-48 hours</li>
+                          <li>• We'll investigate the issue and take appropriate action</li>
+                          <li>• You'll receive a follow-up email at <span className="text-primary font-medium">{formData.email}</span></li>
+                          <li>• Your report ID: <span className="font-mono text-xs md:text-sm text-primary">{reportId}</span></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </motion.div>
+
+                  {/* Action Buttons */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.6 }}
+                    className="flex flex-col sm:flex-row gap-4 justify-center"
+                  >
+                    <Button
+                      onClick={handleGoHome}
+                      size="lg"
+                      variant="hero"
+                      className="text-lg px-8 py-6"
+                    >
+                      <Home className="w-5 h-5 mr-2" />
+                      Return to Home
+                    </Button>
+                    <Button
+                      onClick={handleNewReport}
+                      size="lg"
+                      variant="outline"
+                      className="text-lg px-8 py-6 border-2"
+                    >
+                      <FileText className="w-5 h-5 mr-2" />
+                      Submit Another Report
+                    </Button>
+                  </motion.div>
+
+                  {/* Additional Info */}
+                  <motion.p
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.7 }}
+                    className="text-sm text-muted-foreground mt-8"
+                  >
+                    Need immediate help? Contact us at{" "}
+                    <a href="mailto:support@thespiceapp.com" className="text-primary hover:underline">
+                      support@thespiceapp.com
+                    </a>
+                  </motion.p>
+                </div>
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
         <main className="relative z-10 pt-32 pb-12">
           <div className="container mx-auto px-4">
             {/* Hero Section */}
