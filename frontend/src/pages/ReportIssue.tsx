@@ -92,6 +92,17 @@ const ReportIssue = () => {
       const data = await response.json();
       
       if (!response.ok) {
+        // Handle validation errors from FastAPI
+        if (data.detail && Array.isArray(data.detail)) {
+          const errorMsg = data.detail.map((err: any) => {
+            if (err.loc && err.msg) {
+              const field = err.loc[err.loc.length - 1];
+              return `${field}: ${err.msg.replace('Value error, ', '')}`;
+            }
+            return err.msg || 'Validation error';
+          }).join(', ');
+          throw new Error(errorMsg);
+        }
         throw new Error(data.detail || 'Failed to submit report');
       }
       
