@@ -72,6 +72,87 @@ const QuizResults: React.FC<QuizResultsProps> = ({ insights, onRestart, response
     }
   };
 
+  const getShareText = () => {
+    let text = "🎯 Just completed the SPICE BDSM Quiz!\n\n";
+    
+    if (insights.dominanceScore !== undefined) {
+      const label = getDominanceLabel(insights.dominanceScore);
+      text += `My results: ${label} (${insights.dominanceScore}% dominance)\n`;
+    }
+    
+    if (insights.bdsmRole?.primary) {
+      text += `BDSM Role: ${insights.bdsmRole.primary}\n`;
+    }
+    
+    text += "\nDiscover your compatibility! 🔥\n";
+    return text;
+  };
+
+  const getShareUrl = () => {
+    return window.location.origin + '/quiz/bdsm';
+  };
+
+  const handleShareNative = async () => {
+    const shareData = {
+      title: 'My SPICE BDSM Quiz Results',
+      text: getShareText(),
+      url: getShareUrl(),
+    };
+
+    try {
+      if (navigator.share) {
+        await navigator.share(shareData);
+        toast({
+          title: "Shared!",
+          description: "Thanks for sharing your results",
+        });
+      } else {
+        // Fallback to showing share menu
+        setShowShareMenu(true);
+      }
+    } catch (error) {
+      if (error instanceof Error && error.name !== 'AbortError') {
+        console.error('Share error:', error);
+        setShowShareMenu(true);
+      }
+    }
+  };
+
+  const handleCopyLink = () => {
+    const shareText = getShareText() + '\n' + getShareUrl();
+    navigator.clipboard.writeText(shareText);
+    toast({
+      title: "Copied!",
+      description: "Results copied to clipboard",
+    });
+    setShowShareMenu(false);
+  };
+
+  const handleShareTwitter = () => {
+    const text = encodeURIComponent(getShareText());
+    const url = encodeURIComponent(getShareUrl());
+    window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, '_blank');
+    setShowShareMenu(false);
+  };
+
+  const handleShareFacebook = () => {
+    const url = encodeURIComponent(getShareUrl());
+    window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
+    setShowShareMenu(false);
+  };
+
+  const handleShareLinkedIn = () => {
+    const url = encodeURIComponent(getShareUrl());
+    window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}`, '_blank');
+    setShowShareMenu(false);
+  };
+
+  const handleShareWhatsApp = () => {
+    const text = encodeURIComponent(getShareText() + '\n' + getShareUrl());
+    window.open(`https://wa.me/?text=${text}`, '_blank');
+    setShowShareMenu(false);
+  };
+
   return (
     <div className="min-h-screen bg-background">
       {/* Header */}
