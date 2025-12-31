@@ -17,6 +17,7 @@ interface QuizResultsProps {
 const QuizResults: React.FC<QuizResultsProps> = ({ insights, onRestart, responses }) => {
   const { toast } = useToast();
   const [isDownloading, setIsDownloading] = useState(false);
+  const [showShareMenu, setShowShareMenu] = useState(false);
   const resultsRef = useRef<HTMLDivElement>(null);
 
   const getDominanceLabel = (score: number) => {
