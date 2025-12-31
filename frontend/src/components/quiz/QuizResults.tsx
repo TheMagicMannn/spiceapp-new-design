@@ -21,6 +21,12 @@ const QuizResults: React.FC<QuizResultsProps> = ({ insights, onRestart, response
   const resultsRef = useRef<HTMLDivElement>(null);
   const shareMenuRef = useRef<HTMLDivElement>(null);
 
+  // Debug log
+  useEffect(() => {
+    console.log('QuizResults component mounted with insights:', insights);
+    console.log('Buttons should be visible now');
+  }, []);
+
   // Close share menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
