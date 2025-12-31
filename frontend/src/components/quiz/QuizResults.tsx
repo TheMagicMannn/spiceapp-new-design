@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Sparkles, Heart, RefreshCw, Download, ArrowLeft, TrendingUp, Check, Copy } from 'lucide-react';
+import { Sparkles, Heart, RefreshCw, Download, ArrowLeft, TrendingUp, Check, Copy, Share2, Twitter, Facebook, Linkedin, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import { QuizInsights } from '@/pages/BDSMQuiz';
