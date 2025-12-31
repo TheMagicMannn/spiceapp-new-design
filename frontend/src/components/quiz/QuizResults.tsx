@@ -457,9 +457,9 @@ const QuizResults: React.FC<QuizResultsProps> = ({ insights, onRestart, response
           <p className="text-muted-foreground mb-4">
             Ready to find your perfect match?
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 justify-center mb-4">
             <Link to="/">
-              <Button size="lg" className="bg-gradient-to-r from-primary to-pink-600">
+              <Button size="lg" className="bg-gradient-to-r from-primary to-pink-600 w-full sm:w-auto">
                 Join SPICE Waitlist
                 <Heart className="ml-2 w-4 h-4" />
               </Button>
@@ -473,6 +473,71 @@ const QuizResults: React.FC<QuizResultsProps> = ({ insights, onRestart, response
               <Download className="mr-2 w-4 h-4" />
               {isDownloading ? 'Downloading...' : 'Download Results'}
             </Button>
+            <div className="relative">
+              <Button 
+                variant="outline" 
+                size="lg"
+                onClick={handleShareNative}
+                className="w-full sm:w-auto"
+              >
+                <Share2 className="mr-2 w-4 h-4" />
+                Share Results
+              </Button>
+              
+              {/* Share Menu Dropdown */}
+              {showShareMenu && (
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.95, y: -10 }}
+                  animate={{ opacity: 1, scale: 1, y: 0 }}
+                  exit={{ opacity: 0, scale: 0.95 }}
+                  className="absolute bottom-full mb-2 right-0 glass-card rounded-xl p-3 shadow-xl border border-border/50 min-w-[200px] z-50"
+                >
+                  <div className="space-y-2">
+                    <button
+                      onClick={handleCopyLink}
+                      className="w-full flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-muted/50 transition-colors text-left"
+                    >
+                      <Copy className="w-4 h-4 text-muted-foreground" />
+                      <span className="text-sm">Copy Link</span>
+                    </button>
+                    <button
+                      onClick={handleShareTwitter}
+                      className="w-full flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-muted/50 transition-colors text-left"
+                    >
+                      <Twitter className="w-4 h-4 text-[#1DA1F2]" />
+                      <span className="text-sm">Twitter</span>
+                    </button>
+                    <button
+                      onClick={handleShareFacebook}
+                      className="w-full flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-muted/50 transition-colors text-left"
+                    >
+                      <Facebook className="w-4 h-4 text-[#1877F2]" />
+                      <span className="text-sm">Facebook</span>
+                    </button>
+                    <button
+                      onClick={handleShareLinkedIn}
+                      className="w-full flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-muted/50 transition-colors text-left"
+                    >
+                      <Linkedin className="w-4 h-4 text-[#0A66C2]" />
+                      <span className="text-sm">LinkedIn</span>
+                    </button>
+                    <button
+                      onClick={handleShareWhatsApp}
+                      className="w-full flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-muted/50 transition-colors text-left"
+                    >
+                      <MessageCircle className="w-4 h-4 text-[#25D366]" />
+                      <span className="text-sm">WhatsApp</span>
+                    </button>
+                  </div>
+                  <button
+                    onClick={() => setShowShareMenu(false)}
+                    className="w-full mt-2 pt-2 border-t border-border/50 text-xs text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    Close
+                  </button>
+                </motion.div>
+              )}
+            </div>
           </div>
         </motion.div>
       </div>
