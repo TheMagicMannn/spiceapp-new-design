@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Sparkles, Heart, RefreshCw, Download, ArrowLeft, TrendingUp, Check, Copy, Share2, Twitter, Facebook, Linkedin, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
