@@ -727,7 +727,7 @@ const ENMQuiz = () => {
           canonical="https://thespiceapp.com/quiz/enm/results"
         />
 
-        <div className="relative min-h-screen">
+        <div className="relative min-h-screen" ref={resultsRef}>
           <ParticlesBackground />
           <Header />
           <Breadcrumbs />
