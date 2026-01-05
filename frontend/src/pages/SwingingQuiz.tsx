@@ -727,7 +727,7 @@ const SwingingQuiz = () => {
           canonical="https://thespiceapp.com/quiz/swinging/results"
         />
 
-        <div className="relative min-h-screen">
+        <div className="relative min-h-screen" ref={resultsRef}>
           <ParticlesBackground />
           <Header />
           <Breadcrumbs />
