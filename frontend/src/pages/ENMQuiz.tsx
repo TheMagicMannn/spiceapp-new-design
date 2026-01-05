@@ -31,6 +31,11 @@ const ENMQuiz = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<{ [key: number]: { score: number; optionIndex: number } }>({});
   const [showResults, setShowResults] = useState(false);
+  
+  const { toast } = useToast();
+  const [showShareMenu, setShowShareMenu] = useState(false);
+  const [isDownloading, setIsDownloading] = useState(false);
+  const resultsRef = useRef<HTMLDivElement>(null);
 
   // Scroll to top when quiz starts, question changes, or results shown
   useEffect(() => {
