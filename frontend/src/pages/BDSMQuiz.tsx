@@ -611,8 +611,190 @@ const BDSMQuiz = () => {
     setQuizStarted(false);
   };
 
+  const { toast } = useToast();
+  const [showShareMenu, setShowShareMenu] = useState(false);
+  const [isDownloading, setIsDownloading] = useState(false);
+  const resultsRef = useRef<HTMLDivElement>(null);
+
+  const handleDownloadImage = async () => {
+    if (!resultsRef.current) return;
+    
+    setIsDownloading(true);
+    
+    try {
+      const canvas = await html2canvas(resultsRef.current, {
+        backgroundColor: '#1a1625',
+        scale: 2,
+        logging: false,
+        useCORS: true,
+      });
+      
+      canvas.toBlob((blob) => {
+        if (blob) {
+          const url = URL.createObjectURL(blob);
+          const link = document.createElement('a');
+          link.href = url;
+          link.download = `SPICE-BDSM-Quiz-Results-${Date.now()}.png`;
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+          URL.revokeObjectURL(url);
+          
+          toast({
+            title: "Downloaded!",
+            description: "Your results have been saved as an image",
+          });
+        }
+      }, 'image/png');
+    } catch (error) {
+      console.error('Download error:', error);
+      toast({
+        title: "Download Failed",
+        description: "Unable to download results. Please try again.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsDownloading(false);
+    }
+  };
+
+  const handleShareNative = async () => {
+    const shareText = `🎯 Just completed the SPICE BDSM Quiz!\n\nDiscover your compatibility! 🔥\n${window.location.origin}/quiz/bdsm`;
+    
+    try {
+      if (navigator.share) {
+        await navigator.share({
+          title: 'My SPICE BDSM Quiz Results',
+          text: shareText,
+          url: window.location.origin + '/quiz/bdsm',
+        });
+        toast({
+          title: "Shared!",
+          description: "Thanks for sharing your results",
+        });
+      } else {
+        setShowShareMenu(true);
+      }
+    } catch (error) {
+      if (error instanceof Error && error.name !== 'AbortError') {
+        setShowShareMenu(true);
+      }
+    }
+  };
+
+  const handleCopyLink = () => {
+    navigator.clipboard.writeText(window.location.origin + '/quiz/bdsm');
+    toast({
+      title: "Copied!",
+      description: "Quiz link copied to clipboard",
+    });
+    setShowShareMenu(false);
+  };
+
   if (insights) {
-    return <QuizResults insights={insights} onRestart={restartQuiz} responses={responses} />;
+    return (
+      <div ref={resultsRef}>
+        <QuizResults insights={insights} onRestart={restartQuiz} responses={responses} />
+        
+        {/* Action Buttons Section */}
+        <div className="max-w-4xl mx-auto px-4 pb-12">
+          <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8">
+            <p className="text-center text-muted-foreground mb-6 text-lg">
+              Ready to find your perfect match?
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+              <Link to="/">
+                <Button size="lg" className="bg-gradient-to-r from-primary to-pink-600 w-full sm:w-auto">
+                  Join SPICE Waitlist
+                  <Heart className="ml-2 w-4 h-4" />
+                </Button>
+              </Link>
+              <Button 
+                variant="outline" 
+                size="lg"
+                onClick={handleDownloadImage}
+                disabled={isDownloading}
+                className="w-full sm:w-auto"
+              >
+                <Download className="mr-2 w-4 h-4" />
+                {isDownloading ? 'Downloading...' : 'Download Results'}
+              </Button>
+              <div className="relative">
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  onClick={handleShareNative}
+                  className="w-full sm:w-auto"
+                >
+                  <Share2 className="mr-2 w-4 h-4" />
+                  Share Results
+                </Button>
+                
+                {showShareMenu && (
+                  <div className="absolute bottom-full mb-2 right-0 glass-card rounded-xl p-3 shadow-xl border border-border/50 min-w-[200px] z-50">
+                    <div className="space-y-2">
+                      <button
+                        onClick={handleCopyLink}
+                        className="w-full flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-muted/50 transition-colors text-left"
+                      >
+                        <Copy className="w-4 h-4 text-muted-foreground" />
+                        <span className="text-sm">Copy Link</span>
+                      </button>
+                      <button
+                        onClick={() => {
+                          window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent('🎯 Just completed the SPICE BDSM Quiz! Discover your compatibility!')}&url=${encodeURIComponent(window.location.origin + '/quiz/bdsm')}`, '_blank');
+                          setShowShareMenu(false);
+                        }}
+                        className="w-full flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-muted/50 transition-colors text-left"
+                      >
+                        <Twitter className="w-4 h-4 text-[#1DA1F2]" />
+                        <span className="text-sm">Twitter</span>
+                      </button>
+                      <button
+                        onClick={() => {
+                          window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.origin + '/quiz/bdsm')}`, '_blank');
+                          setShowShareMenu(false);
+                        }}
+                        className="w-full flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-muted/50 transition-colors text-left"
+                      >
+                        <Facebook className="w-4 h-4 text-[#1877F2]" />
+                        <span className="text-sm">Facebook</span>
+                      </button>
+                      <button
+                        onClick={() => {
+                          window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.origin + '/quiz/bdsm')}`, '_blank');
+                          setShowShareMenu(false);
+                        }}
+                        className="w-full flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-muted/50 transition-colors text-left"
+                      >
+                        <Linkedin className="w-4 h-4 text-[#0A66C2]" />
+                        <span className="text-sm">LinkedIn</span>
+                      </button>
+                      <button
+                        onClick={() => {
+                          window.open(`https://wa.me/?text=${encodeURIComponent('🎯 Just completed the SPICE BDSM Quiz! ' + window.location.origin + '/quiz/bdsm')}`, '_blank');
+                          setShowShareMenu(false);
+                        }}
+                        className="w-full flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-muted/50 transition-colors text-left"
+                      >
+                        <MessageCircle className="w-4 h-4 text-[#25D366]" />
+                        <span className="text-sm">WhatsApp</span>
+                      </button>
+                    </div>
+                    <button
+                      onClick={() => setShowShareMenu(false)}
+                      className="w-full mt-2 pt-2 border-t border-border/50 text-xs text-muted-foreground hover:text-foreground transition-colors"
+                    >
+                      Close
+                    </button>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
   }
 
   if (!quizStarted) {
