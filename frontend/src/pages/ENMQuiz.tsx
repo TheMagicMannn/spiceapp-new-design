@@ -1,11 +1,13 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import { ArrowRight, ArrowLeft, RefreshCw, Heart, Users, Shield, MessageCircle, Sparkles, CheckCircle, BookOpen, ExternalLink } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
+import html2canvas from 'html2canvas';
+import { ArrowRight, ArrowLeft, RefreshCw, Heart, Users, Shield, MessageCircle, Sparkles, CheckCircle, BookOpen, ExternalLink, Download, Share2, Twitter, Facebook, Linkedin, Copy } from "lucide-react";
 
 interface Question {
   id: number;
