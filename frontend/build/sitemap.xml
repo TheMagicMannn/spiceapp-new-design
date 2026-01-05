@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- 
+    SPICE App Comprehensive Sitemap
+    Last Updated: 2025-12-29
+    Total URLs: 120+
+    Priority Scale: 1.0 (highest) to 0.5 (lowest)
+    ChangeFreq: daily, weekly, monthly
+  -->
+
+  <!-- ============================================ -->
+  <!-- CORE PAGES - Highest Priority -->
+  <!-- ============================================ -->
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://thespiceapp.com/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <!-- Quiz Landing (High Conversion) -->
+  <url>
+    <loc>https://thespiceapp.com/quiz</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <!-- Download Page (High Conversion) -->
+  <url>
+    <loc>https://thespiceapp.com/download</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <!-- SPICE App Features -->
+  <url>
+    <loc>https://thespiceapp.com/spice-app</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+
+  <!-- ============================================ -->
+  <!-- QUIZ PAGES - High Traffic -->
+  <!-- ============================================ -->
+  
+  <url>
+    <loc>https://thespiceapp.com/quiz/bdsm</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/quiz/hotwifing</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/quiz/swinging</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/quiz/enm</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+
+  <!-- ============================================ -->
+  <!-- LIFESTYLE GUIDES - High Value Content -->
+  <!-- ============================================ -->
+  
+  <url>
+    <loc>https://thespiceapp.com/lifestyle</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/lifestyle/hotwifing-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/lifestyle/swingers-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/lifestyle/bdsm-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/lifestyle/enm-polyamory-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/lifestyle/relationships-communication</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/lifestyle/jealousy-management</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+
+  <!-- ============================================ -->
+  <!-- BLOG - Content Hub -->
+  <!-- ============================================ -->
+  
+  <url>
+    <loc>https://thespiceapp.com/blog</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <!-- Blog Categories -->
+  <url>
+    <loc>https://thespiceapp.com/blog/hotwifing</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/swinging</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/bdsm</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/enm</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/consent-safety</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <!-- Hotwifing Blog Articles -->
+  <url>
+    <loc>https://thespiceapp.com/blog/hotwifing-beginners-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/hotwifing-jealousy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/hotwifing-first-date</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/hotwifing-finding-bull</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/hotwifing-reclamation-sex</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/hotwifing-fantasy-reality</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/hotwifing-creative-dates</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/hotwifing-year-review</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/hotwifing-toys-kink</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/hotwifing-communication-marriage</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <!-- Swinging Blog Articles -->
+  <url>
+    <loc>https://thespiceapp.com/blog/swinging-101-beginners-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/swinging-mistakes-avoid</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/swinging-strengthened-marriage</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/swinging-finding-couples</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/swinging-jealousy-tools</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/swinging-soft-full-swap</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/swinging-etiquette-rules</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/swinging-vacation-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/swinging-health-safety</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/swinging-keeping-spark</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <!-- BDSM & Kink Blog Articles -->
+  <url>
+    <loc>https://thespiceapp.com/blog/bdsm-beginners-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/bdsm-aftercare-guide</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/bdsm-negotiation-checklist</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/kink-mental-health</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/beginner-friendly-kinks</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/finding-kink-community</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/switching-dynamics</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/kink-on-budget</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/long-distance-bdsm</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/coming-out-kinky</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/bdsm-safety-checklist</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <!-- ENM & Polyamory Blog Articles -->
+  <url>
+    <loc>https://thespiceapp.com/blog/enm-vs-polyamory</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/poly-dating-apps-2026</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/polycule-drama</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/poly-time-management</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/compersion-exercises</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/chosen-family</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/solo-poly</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/enm-at-work</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/intimacy-beyond-sex</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/future-of-love</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/10-signs-ready-lifestyle</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/talk-partner-opening-relationship</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <!-- Consent & Safety Blog Articles -->
+  <url>
+    <loc>https://thespiceapp.com/blog/consent-golden-rules</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/red-flags-green-flags</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/safer-sex-guide-2026</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/solo-dates-safety</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/consent-violations</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/consent-check-ins-sexy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/alcohol-substances-consent</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/digital-safety-first</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/aftercare-emotional-safety</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/blog/teaching-consent-next-generation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+
+  <!-- ============================================ -->
+  <!-- GUIDES & EDUCATION -->
+  <!-- ============================================ -->
+  
+  <url>
+    <loc>https://thespiceapp.com/guide</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/guide/newcomers</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/guide/how-to</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/guide/community</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/guide/glossary</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/guide/safety</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/guide/self-care</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+
+  <!-- ============================================ -->
+  <!-- START HERE SECTION -->
+  <!-- ============================================ -->
+  
+  <url>
+    <loc>https://thespiceapp.com/start</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/start/consent-basics</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/start/etiquette</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/start/myths</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/start/beginner-faq</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+
+  <!-- ============================================ -->
+  <!-- ACADEMY -->
+  <!-- ============================================ -->
+  
+  <url>
+    <loc>https://thespiceapp.com/academy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/academy/modules</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/academy/journeys</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+
+  <!-- ============================================ -->
+  <!-- TRAVEL & CITY GUIDES -->
+  <!-- ============================================ -->
+  
+  <url>
+    <loc>https://thespiceapp.com/travel</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/travel/miami</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/travel/new-orleans</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/travel/orlando</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/travel/cancun</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/travel/international</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/travel/clubs-resorts</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/travel/cities</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <!-- City Pages (SEO Landing Pages) -->
+  <url>
+    <loc>https://thespiceapp.com/locations/new-york-ny</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/locations/las-vegas-nv</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/locations/los-angeles-ca</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/locations/chicago-il</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/locations/san-francisco-ca</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/locations/atlanta-ga</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+
+  <!-- ============================================ -->
+  <!-- COMPARISON PAGES (High Commercial Intent) -->
+  <!-- ============================================ -->
+  
+  <url>
+    <loc>https://thespiceapp.com/vs/feeld</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/vs/3fun</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/vs/sdc</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/vs/kasidie</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/vs/sls</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+
+  <!-- ============================================ -->
+  <!-- TOOLS & RESOURCES -->
+  <!-- ============================================ -->
+  
+  <url>
+    <loc>https://thespiceapp.com/tools</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/tools/app-comparisons</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/tools/feature-comparison</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/tools/sti-resources</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+
+  <!-- ============================================ -->
+  <!-- ABOUT & COMPANY PAGES -->
+  <!-- ============================================ -->
+  
+  <url>
+    <loc>https://thespiceapp.com/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/about/safety-verification</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/about/ai-matching</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/about/why-different</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/about/our-story</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/team</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/faq</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+
+  <!-- ============================================ -->
+  <!-- SUPPORT & HELP -->
+  <!-- ============================================ -->
+  
+  <url>
+    <loc>https://thespiceapp.com/support</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/support/help</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/support/technical</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/support/report</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+
+  <!-- ============================================ -->
+  <!-- LEGAL PAGES -->
+  <!-- ============================================ -->
+  
+  <url>
+    <loc>https://thespiceapp.com/legal</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/legal/terms</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/legal/privacy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/legal/cookies</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://thespiceapp.com/legal/community-standards</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <lastmod>2025-12-29</lastmod>
+  </url>
+
+</urlset>
