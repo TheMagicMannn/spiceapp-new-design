@@ -937,6 +937,96 @@ const HotwifingQuiz = () => {
                   </Button>
                 </Link>
               </div>
+              
+              {/* Share and Download Buttons */}
+              <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 mt-8">
+                <p className="text-center text-muted-foreground mb-6 text-lg">
+                  Share your results or save them for later
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <Button 
+                    variant="outline" 
+                    size="lg"
+                    onClick={handleDownloadImage}
+                    disabled={isDownloading}
+                    className="w-full sm:w-auto"
+                  >
+                    <Download className="mr-2 w-4 h-4" />
+                    {isDownloading ? 'Downloading...' : 'Download Results'}
+                  </Button>
+                  <div className="relative">
+                    <Button 
+                      variant="outline" 
+                      size="lg"
+                      onClick={handleShareNative}
+                      className="w-full sm:w-auto"
+                    >
+                      <Share2 className="mr-2 w-4 h-4" />
+                      Share Results
+                    </Button>
+                    
+                    {showShareMenu && (
+                      <div className="absolute bottom-full mb-2 right-0 glass-card rounded-xl p-3 shadow-xl border border-border/50 min-w-[200px] z-50">
+                        <div className="space-y-2">
+                          <button
+                            onClick={handleCopyLink}
+                            className="w-full flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-muted/50 transition-colors text-left"
+                          >
+                            <Copy className="w-4 h-4 text-muted-foreground" />
+                            <span className="text-sm">Copy Link</span>
+                          </button>
+                          <button
+                            onClick={() => {
+                              window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent('🔥 Just completed the SPICE Hotwifing Quiz!')}&url=${encodeURIComponent(window.location.origin + '/quiz/hotwifing')}`, '_blank');
+                              setShowShareMenu(false);
+                            }}
+                            className="w-full flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-muted/50 transition-colors text-left"
+                          >
+                            <Twitter className="w-4 h-4 text-[#1DA1F2]" />
+                            <span className="text-sm">Twitter</span>
+                          </button>
+                          <button
+                            onClick={() => {
+                              window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.origin + '/quiz/hotwifing')}`, '_blank');
+                              setShowShareMenu(false);
+                            }}
+                            className="w-full flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-muted/50 transition-colors text-left"
+                          >
+                            <Facebook className="w-4 h-4 text-[#1877F2]" />
+                            <span className="text-sm">Facebook</span>
+                          </button>
+                          <button
+                            onClick={() => {
+                              window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.origin + '/quiz/hotwifing')}`, '_blank');
+                              setShowShareMenu(false);
+                            }}
+                            className="w-full flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-muted/50 transition-colors text-left"
+                          >
+                            <Linkedin className="w-4 h-4 text-[#0A66C2]" />
+                            <span className="text-sm">LinkedIn</span>
+                          </button>
+                          <button
+                            onClick={() => {
+                              window.open(`https://wa.me/?text=${encodeURIComponent('🔥 Just completed the SPICE Hotwifing Quiz! ' + window.location.origin + '/quiz/hotwifing')}`, '_blank');
+                              setShowShareMenu(false);
+                            }}
+                            className="w-full flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-muted/50 transition-colors text-left"
+                          >
+                            <MessageCircle className="w-4 h-4 text-[#25D366]" />
+                            <span className="text-sm">WhatsApp</span>
+                          </button>
+                        </div>
+                        <button
+                          onClick={() => setShowShareMenu(false)}
+                          className="w-full mt-2 pt-2 border-t border-border/50 text-xs text-muted-foreground hover:text-foreground transition-colors"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
             </div>
           </main>
 
