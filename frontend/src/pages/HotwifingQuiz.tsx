@@ -250,6 +250,11 @@ const HotwifingQuiz = () => {
   const [selectedFlags, setSelectedFlags] = useState<Record<number, string>>({});
   const [showResults, setShowResults] = useState(false);
   const [quizStarted, setQuizStarted] = useState(false);
+  
+  const { toast } = useToast();
+  const [showShareMenu, setShowShareMenu] = useState(false);
+  const [isDownloading, setIsDownloading] = useState(false);
+  const resultsRef = useRef<HTMLDivElement>(null);
 
   // Scroll to top when quiz starts, question changes, or results shown
   useEffect(() => {
