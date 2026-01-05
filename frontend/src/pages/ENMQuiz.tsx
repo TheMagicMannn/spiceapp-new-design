@@ -516,6 +516,81 @@ const ENMQuiz = () => {
     return books;
   };
 
+  const handleDownloadImage = async () => {
+    if (!resultsRef.current) return;
+    
+    setIsDownloading(true);
+    
+    try {
+      const canvas = await html2canvas(resultsRef.current, {
+        backgroundColor: '#1a1625',
+        scale: 2,
+        logging: false,
+        useCORS: true,
+      });
+      
+      canvas.toBlob((blob) => {
+        if (blob) {
+          const url = URL.createObjectURL(blob);
+          const link = document.createElement('a');
+          link.href = url;
+          link.download = `SPICE-ENM-Quiz-Results-${Date.now()}.png`;
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+          URL.revokeObjectURL(url);
+          
+          toast({
+            title: "Downloaded!",
+            description: "Your results have been saved as an image",
+          });
+        }
+      }, 'image/png');
+    } catch (error) {
+      console.error('Download error:', error);
+      toast({
+        title: "Download Failed",
+        description: "Unable to download results. Please try again.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsDownloading(false);
+    }
+  };
+
+  const handleShareNative = async () => {
+    const shareText = `💜 Just completed the SPICE ENM Compatibility Quiz!\n\nDiscover if ENM is right for you! 🌈\n${window.location.origin}/quiz/enm`;
+    
+    try {
+      if (navigator.share) {
+        await navigator.share({
+          title: 'My SPICE ENM Quiz Results',
+          text: shareText,
+          url: window.location.origin + '/quiz/enm',
+        });
+        toast({
+          title: "Shared!",
+          description: "Thanks for sharing your results",
+        });
+      } else {
+        setShowShareMenu(true);
+      }
+    } catch (error) {
+      if (error instanceof Error && error.name !== 'AbortError') {
+        setShowShareMenu(true);
+      }
+    }
+  };
+
+  const handleCopyLink = () => {
+    navigator.clipboard.writeText(window.location.origin + '/quiz/enm');
+    toast({
+      title: "Copied!",
+      description: "Quiz link copied to clipboard",
+    });
+    setShowShareMenu(false);
+  };
+
   if (!started) {
     return (
       <>
