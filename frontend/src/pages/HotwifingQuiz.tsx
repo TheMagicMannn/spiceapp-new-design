@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import SEO from "@/components/SEO";
 import Header from "@/components/Header";
@@ -7,7 +7,9 @@ import ParticlesBackground from "@/components/ParticlesBackground";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
-import { Heart, Shield, MessageCircle, Users, ChevronRight, ChevronLeft, CheckCircle, AlertTriangle, BookOpen, ArrowRight, Sparkles, Target, Clock, Flame, RefreshCw } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
+import html2canvas from 'html2canvas';
+import { Heart, Shield, MessageCircle, Users, ChevronRight, ChevronLeft, CheckCircle, AlertTriangle, BookOpen, ArrowRight, Sparkles, Target, Clock, Flame, RefreshCw, Download, Share2, Twitter, Facebook, Linkedin, Copy } from "lucide-react";
 
 interface Question {
   id: number;
