@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Helmet } from 'react-helmet-async';
 import SEO from '@/components/SEO';
-import { ArrowLeft, ArrowRight, Sparkles, Heart, Shield, Lock } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Sparkles, Heart, Shield, Lock, Download, Share2, Twitter, Facebook, Linkedin, MessageCircle, Copy } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import { supabase } from '@/integrations/supabase/client';
@@ -13,6 +13,8 @@ import { quizQuestions } from '@/data/quizQuestions';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import Header from '@/components/Header';
 import { trackQuizStart, trackQuizComplete, trackQuizProgress } from '@/lib/gtag';
+import { Link } from 'react-router-dom';
+import html2canvas from 'html2canvas';
 
 export interface QuizResponse {
   questionId: string;
