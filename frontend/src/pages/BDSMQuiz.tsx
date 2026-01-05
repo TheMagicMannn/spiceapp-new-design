@@ -611,7 +611,6 @@ const BDSMQuiz = () => {
     setQuizStarted(false);
   };
 
-  const { toast } = useToast();
   const [showShareMenu, setShowShareMenu] = useState(false);
   const [isDownloading, setIsDownloading] = useState(false);
   const resultsRef = useRef<HTMLDivElement>(null);
