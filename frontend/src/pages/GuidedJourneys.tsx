@@ -163,32 +163,104 @@ const GuidedJourneys = () => {
         {
           title: "Phase 1: Discovery & Discussion",
           duration: "2-4 weeks",
+          difficulty: "beginner",
+          whatToExpect: "This phase is all about opening conversations and learning together. You'll explore if swinging is right for you without any pressure to act. Many couples spend weeks or months here - that's perfectly normal!",
+          commonQuestions: [
+            { q: "Is it normal to feel nervous?", a: "Absolutely! Most couples feel a mix of excitement and nervousness. Open communication about these feelings is key." },
+            { q: "What if we disagree?", a: "Disagreement is common. Use this time to understand each other's perspectives without judgment. No one should feel pressured." }
+          ],
           steps: [
             {
               title: "Initial Conversation",
               description: "Bring up swinging gently. Share articles, discuss fantasies, gauge interest without pressure.",
+              timeEstimate: "Multiple conversations over 1-2 weeks",
+              difficulty: "easy",
               resources: [
-                { title: "Swinging 101", path: "/blog/swinging-101-beginners-guide" },
-                { title: "How to Talk to Your Partner", path: "/guide/how-to" }
+                { 
+                  title: "Swinging 101: Beginner's Guide", 
+                  path: "/blog/swinging-101-beginners-guide",
+                  type: "article",
+                  description: "Complete introduction to what swinging is, common myths, and what to expect"
+                },
+                { 
+                  title: "How to Talk to Your Partner", 
+                  path: "/guide/how-to",
+                  type: "guide",
+                  description: "Communication strategies for bringing up alternative lifestyles"
+                },
+                { 
+                  title: "Consent & Communication Basics", 
+                  path: "/start/consent-basics",
+                  type: "guide",
+                  description: "Foundation of healthy communication in any lifestyle exploration"
+                }
               ],
-              action: "Have 3-5 open conversations about curiosity and desires"
+              action: "Have 3-5 open conversations about curiosity and desires",
+              tips: [
+                "Choose a relaxed time when you're both in a good mood",
+                "Frame it as curiosity and fantasy exploration, not a demand",
+                "Listen more than you speak",
+                "Give your partner time to process - don't expect immediate answers"
+              ]
             },
             {
               title: "Take the Quiz Together",
               description: "Complete the Swinging Readiness Quiz to assess your relationship foundation.",
+              timeEstimate: "30-45 minutes",
+              difficulty: "easy",
               resources: [
-                { title: "Swinging Readiness Quiz", path: "/quiz/swinging" }
+                { 
+                  title: "Swinging Readiness Quiz", 
+                  path: "/quiz/swinging",
+                  type: "quiz",
+                  description: "Interactive quiz to assess your readiness and identify areas to work on"
+                },
+                { 
+                  title: "Understanding Your Results", 
+                  path: "/start/beginner-faq#swinging",
+                  type: "faq",
+                  description: "FAQ section explaining quiz results and next steps"
+                }
               ],
-              action: "Discuss quiz results and identify areas to strengthen"
+              action: "Discuss quiz results and identify areas to strengthen",
+              tips: [
+                "Answer honestly - this is for your benefit, not to impress anyone",
+                "Don't panic if your scores differ - use it as a conversation starter",
+                "Focus on strengths first, then gently discuss areas for improvement"
+              ]
             },
             {
               title: "Educational Deep Dive",
               description: "Read books, watch documentaries, join online communities to learn about the lifestyle.",
+              timeEstimate: "1-2 weeks of reading/watching",
+              difficulty: "easy",
               resources: [
-                { title: "Complete Swingers Guide", path: "/lifestyle/swingers-guide" },
-                { title: "Common Mistakes", path: "/blog/swinging-mistakes-avoid" }
+                { 
+                  title: "Complete Swingers Guide", 
+                  path: "/lifestyle/swingers-guide",
+                  type: "guide",
+                  description: "Comprehensive guide covering all aspects of the swinging lifestyle"
+                },
+                { 
+                  title: "Common Mistakes to Avoid", 
+                  path: "/blog/swinging-mistakes-avoid",
+                  type: "article",
+                  description: "Learn from others' experiences and avoid common pitfalls"
+                },
+                { 
+                  title: "Real Couples' Stories", 
+                  path: "/blog/swinging-strengthened-marriage",
+                  type: "article",
+                  description: "How other couples navigated their swinging journey"
+                }
               ],
-              action: "Read 2-3 books or comprehensive guides together"
+              action: "Read 2-3 books or comprehensive guides together",
+              tips: [
+                "Read the same material and discuss each chapter",
+                "Take notes on what resonates and what concerns you",
+                "Join online forums (anonymously) to see real discussions",
+                "Remember: education doesn't mean commitment"
+              ]
             }
           ]
         },
