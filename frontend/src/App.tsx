@@ -63,6 +63,7 @@ import FeatureComparison from "./pages/FeatureComparison";
 import BlogPost10Signs from "./pages/BlogPost10Signs";
 import BlogTalkToPartner from "./pages/BlogTalkToPartner";
 import BlogBDSMSafety from "./pages/BlogBDSMSafety";
+import BlogLifestyleReadiness from "./pages/BlogLifestyleReadiness";
 import NotFound from "./pages/NotFound";
 import CommunityStandards from "./pages/CommunityStandards";
 import TermsOfService from "./pages/TermsOfService";
