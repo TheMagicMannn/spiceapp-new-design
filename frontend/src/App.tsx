@@ -247,6 +247,7 @@ const App = () => (
             <Route path="/blog/10-signs-ready-lifestyle" element={<BlogPost10Signs />} />
             <Route path="/blog/talk-partner-opening-relationship" element={<BlogTalkToPartner />} />
             <Route path="/blog/bdsm-safety-checklist" element={<BlogBDSMSafety />} />
+            <Route path="/blog/am-i-ready-lifestyle" element={<BlogLifestyleReadiness />} />
             
             {/* Hotwifing Blog Articles */}
             <Route path="/blog/hotwifing-beginners-guide" element={<BlogHotwifingBeginnersGuide />} />
