@@ -1104,57 +1104,258 @@ const GuidedJourneys = () => {
     }
   };
 
-  const renderJourney = (journey: any, type: "couples" | "singles") => {
-    return (
-      <div className="space-y-8 mt-8">
-        {journey.phases.map((phase: any, phaseIndex: number) => (
-          <div key={phaseIndex} className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8">
-            <div className="flex items-start gap-4 mb-6">
-              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary font-bold text-xl">
-                {phaseIndex + 1}
-              </div>
-              <div className="flex-1">
-                <h3 className="text-2xl font-bold mb-2">{phase.title}</h3>
-                <p className="text-sm text-muted-foreground">Estimated Duration: {phase.duration}</p>
-              </div>
-            </div>
+  const getResourceIcon = (type?: string) => {
+    switch (type) {
+      case 'quiz': return <Brain className="w-3 h-3" />;
+      case 'guide': return <BookOpen className="w-3 h-3" />;
+      case 'article': return <FileText className="w-3 h-3" />;
+      case 'faq': return <HelpCircle className="w-3 h-3" />;
+      case 'video': return <Video className="w-3 h-3" />;
+      default: return <BookOpen className="w-3 h-3" />;
+    }
+  };
 
-            <div className="space-y-6 ml-16">
-              {phase.steps.map((step: any, stepIndex: number) => (
-                <div key={stepIndex} className="bg-background/50 rounded-xl p-6">
-                  <h4 className="text-lg font-semibold mb-2 flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-primary" />
-                    {step.title}
-                  </h4>
-                  <p className="text-sm text-muted-foreground mb-4">{step.description}</p>
-                  
-                  {step.resources && step.resources.length > 0 && (
-                    <div className="mb-4">
-                      <p className="text-xs font-semibold text-foreground mb-2">Resources:</p>
-                      <div className="flex flex-wrap gap-2">
-                        {step.resources.map((resource: any, resIndex: number) => (
-                          <Link
-                            key={resIndex}
-                            to={resource.path}
-                            className="inline-flex items-center gap-1 px-3 py-1 bg-primary/10 hover:bg-primary/20 border border-primary/30 rounded-full text-xs transition-all"
-                          >
-                            <BookOpen className="w-3 h-3" />
-                            {resource.title}
-                          </Link>
-                        ))}
+  const getDifficultyBadge = (difficulty?: string) => {
+    const colors = {
+      'easy': 'bg-green-500/10 text-green-500 border-green-500/30',
+      'moderate': 'bg-yellow-500/10 text-yellow-500 border-yellow-500/30',
+      'challenging': 'bg-red-500/10 text-red-500 border-red-500/30'
+    };
+    const color = colors[difficulty as keyof typeof colors] || colors.easy;
+    
+    return difficulty ? (
+      <span className={`px-2 py-1 rounded-full text-xs border ${color}`}>
+        {difficulty.charAt(0).toUpperCase() + difficulty.slice(1)}
+      </span>
+    ) : null;
+  };
+
+  const renderJourney = (journey: any, type: "couples" | "singles") => {
+    const totalSteps = journey.phases.reduce((acc: number, phase: any) => acc + phase.steps.length, 0);
+    const completedCount = Object.values(completedSteps).filter(Boolean).length;
+    
+    return (
+      <div className="space-y-6 mt-8">
+        {/* Progress Overview */}
+        <div className="bg-gradient-to-r from-primary/10 via-purple-500/10 to-primary/10 border border-primary/30 rounded-2xl p-6">
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="text-xl font-bold flex items-center gap-2">
+              <Trophy className="w-5 h-5 text-primary" />
+              Your Progress
+            </h3>
+            <button
+              onClick={resetProgress}
+              className="text-xs text-muted-foreground hover:text-primary transition-colors"
+            >
+              Reset Progress
+            </button>
+          </div>
+          <div className="w-full bg-background/50 rounded-full h-3 mb-2">
+            <div 
+              className="bg-gradient-to-r from-primary to-purple-500 h-3 rounded-full transition-all duration-500"
+              style={{ width: `${getProgressPercentage(journey)}%` }}
+            />
+          </div>
+          <p className="text-sm text-muted-foreground">
+            {completedCount} of {totalSteps} steps completed ({getProgressPercentage(journey)}%)
+          </p>
+        </div>
+
+        {/* Timeline visualization */}
+        <div className="relative">
+          <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-primary/20" />
+          
+          {journey.phases.map((phase: any, phaseIndex: number) => {
+            const isExpanded = expandedPhases.includes(phaseIndex);
+            const phaseSteps = phase.steps || [];
+            const phaseCompleted = phaseSteps.every((_: any, stepIndex: number) => 
+              completedSteps[`${phaseIndex}-${stepIndex}`]
+            );
+            
+            return (
+              <div key={phaseIndex} className="relative mb-6">
+                {/* Phase Header */}
+                <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl overflow-hidden">
+                  <button
+                    onClick={() => togglePhase(phaseIndex)}
+                    className="w-full p-6 text-left hover:bg-primary/5 transition-colors"
+                  >
+                    <div className="flex items-start gap-4">
+                      <div className={`flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-xl ${
+                        phaseCompleted ? 'bg-gradient-to-br from-green-500 to-emerald-500' : 'bg-gradient-to-br from-primary to-purple-500'
+                      }`}>
+                        {phaseCompleted ? <CheckCircle className="w-6 h-6" /> : phaseIndex + 1}
+                      </div>
+                      <div className="flex-1">
+                        <div className="flex items-center gap-3 mb-2 flex-wrap">
+                          <h3 className="text-2xl font-bold">{phase.title}</h3>
+                          {getDifficultyBadge(phase.difficulty)}
+                        </div>
+                        <div className="flex items-center gap-4 text-sm text-muted-foreground flex-wrap">
+                          <span className="flex items-center gap-1">
+                            <Clock className="w-4 h-4" />
+                            {phase.duration}
+                          </span>
+                          <span className="flex items-center gap-1">
+                            <CheckCircle className="w-4 h-4" />
+                            {phaseSteps.filter((_: any, idx: number) => completedSteps[`${phaseIndex}-${idx}`]).length}/{phaseSteps.length} steps
+                          </span>
+                        </div>
+                        {phase.whatToExpect && !isExpanded && (
+                          <p className="text-sm text-muted-foreground mt-2 line-clamp-2">{phase.whatToExpect}</p>
+                        )}
+                      </div>
+                      <div>
+                        {isExpanded ? <ChevronUp className="w-6 h-6 text-primary" /> : <ChevronDown className="w-6 h-6 text-muted-foreground" />}
+                      </div>
+                    </div>
+                  </button>
+
+                  {/* Phase Content */}
+                  {isExpanded && (
+                    <div className="border-t border-border p-6 bg-background/30">
+                      {/* What to Expect */}
+                      {phase.whatToExpect && (
+                        <div className="mb-6 p-4 bg-blue-500/10 border border-blue-500/30 rounded-xl">
+                          <div className="flex items-start gap-2">
+                            <Lightbulb className="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" />
+                            <div>
+                              <h4 className="font-semibold text-blue-500 mb-1">What to Expect</h4>
+                              <p className="text-sm text-foreground">{phase.whatToExpect}</p>
+                            </div>
+                          </div>
+                        </div>
+                      )}
+
+                      {/* Common Questions */}
+                      {phase.commonQuestions && phase.commonQuestions.length > 0 && (
+                        <div className="mb-6 p-4 bg-purple-500/10 border border-purple-500/30 rounded-xl">
+                          <h4 className="font-semibold text-purple-500 mb-3 flex items-center gap-2">
+                            <HelpCircle className="w-5 h-5" />
+                            Common Questions
+                          </h4>
+                          <div className="space-y-3">
+                            {phase.commonQuestions.map((qa: any, qaIndex: number) => (
+                              <div key={qaIndex}>
+                                <p className="text-sm font-medium text-foreground mb-1">{qa.q}</p>
+                                <p className="text-sm text-muted-foreground">{qa.a}</p>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
+                      {/* Steps */}
+                      <div className="space-y-4">
+                        {phaseSteps.map((step: any, stepIndex: number) => {
+                          const stepId = `${phaseIndex}-${stepIndex}`;
+                          const isCompleted = completedSteps[stepId];
+                          
+                          return (
+                            <div 
+                              key={stepIndex} 
+                              className={`rounded-xl p-5 border-2 transition-all ${
+                                isCompleted 
+                                  ? 'bg-green-500/5 border-green-500/30' 
+                                  : 'bg-background/50 border-border hover:border-primary/50'
+                              }`}
+                            >
+                              {/* Step Header */}
+                              <div className="flex items-start gap-3 mb-3">
+                                <button
+                                  onClick={() => toggleStep(stepId)}
+                                  className="flex-shrink-0 mt-1 hover:scale-110 transition-transform"
+                                >
+                                  {isCompleted ? (
+                                    <CheckSquare className="w-6 h-6 text-green-500" />
+                                  ) : (
+                                    <Square className="w-6 h-6 text-muted-foreground" />
+                                  )}
+                                </button>
+                                <div className="flex-1">
+                                  <div className="flex items-center gap-2 mb-2 flex-wrap">
+                                    <h4 className="text-lg font-semibold">{step.title}</h4>
+                                    {getDifficultyBadge(step.difficulty)}
+                                  </div>
+                                  {step.timeEstimate && (
+                                    <p className="text-xs text-muted-foreground flex items-center gap-1 mb-2">
+                                      <Clock className="w-3 h-3" />
+                                      {step.timeEstimate}
+                                    </p>
+                                  )}
+                                  <p className="text-sm text-muted-foreground mb-3">{step.description}</p>
+
+                                  {/* Resources */}
+                                  {step.resources && step.resources.length > 0 && (
+                                    <div className="mb-3">
+                                      <p className="text-xs font-semibold text-foreground mb-2 flex items-center gap-1">
+                                        <BookOpen className="w-4 h-4" />
+                                        Learning Resources:
+                                      </p>
+                                      <div className="space-y-2">
+                                        {step.resources.map((resource: any, resIndex: number) => (
+                                          <Link
+                                            key={resIndex}
+                                            to={resource.path}
+                                            className="flex items-start gap-2 p-3 bg-primary/5 hover:bg-primary/10 border border-primary/20 hover:border-primary/40 rounded-lg transition-all group"
+                                          >
+                                            <div className="flex-shrink-0 mt-0.5">
+                                              {getResourceIcon(resource.type)}
+                                            </div>
+                                            <div className="flex-1 min-w-0">
+                                              <p className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">
+                                                {resource.title}
+                                              </p>
+                                              {resource.description && (
+                                                <p className="text-xs text-muted-foreground mt-0.5">{resource.description}</p>
+                                              )}
+                                            </div>
+                                            <ExternalLink className="w-4 h-4 text-primary flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                          </Link>
+                                        ))}
+                                      </div>
+                                    </div>
+                                  )}
+
+                                  {/* Action Step */}
+                                  <div className="bg-primary/10 border-l-4 border-primary pl-4 py-3 rounded-r-lg mb-3">
+                                    <p className="text-xs font-semibold text-primary mb-1 flex items-center gap-1">
+                                      <Target className="w-3 h-3" />
+                                      Action Step:
+                                    </p>
+                                    <p className="text-sm font-medium">{step.action}</p>
+                                  </div>
+
+                                  {/* Tips */}
+                                  {step.tips && step.tips.length > 0 && (
+                                    <div className="bg-amber-500/10 border border-amber-500/30 rounded-lg p-3">
+                                      <p className="text-xs font-semibold text-amber-500 mb-2 flex items-center gap-1">
+                                        <Lightbulb className="w-4 h-4" />
+                                        Helpful Tips:
+                                      </p>
+                                      <ul className="space-y-1">
+                                        {step.tips.map((tip: string, tipIndex: number) => (
+                                          <li key={tipIndex} className="text-xs text-foreground flex items-start gap-2">
+                                            <span className="text-amber-500 flex-shrink-0">•</span>
+                                            <span>{tip}</span>
+                                          </li>
+                                        ))}
+                                      </ul>
+                                    </div>
+                                  )}
+                                </div>
+                              </div>
+                            </div>
+                          );
+                        })}
                       </div>
                     </div>
                   )}
-
-                  <div className="bg-primary/5 border-l-4 border-primary pl-4 py-2">
-                    <p className="text-xs font-semibold text-primary">Action Step:</p>
-                    <p className="text-sm">{step.action}</p>
-                  </div>
                 </div>
-              ))}
-            </div>
-          </div>
-        ))}
+              </div>
+            );
+          })}
+        </div>
       </div>
     );
   };
