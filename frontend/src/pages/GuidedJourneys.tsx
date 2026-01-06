@@ -12,9 +12,95 @@ import {
   Video, ExternalLink, CheckSquare, Square, Trophy
 } from "lucide-react";
 
+// Glossary definitions for tooltips
+const glossary: { [key: string]: string } = {
+  "swinging": "A lifestyle where committed couples engage in sexual activities with other couples or singles, typically with full knowledge and consent.",
+  "soft swap": "Sexual play that doesn't include penetrative intercourse - typically includes kissing, touching, and oral sex.",
+  "full swap": "Complete sexual activity including penetrative intercourse with other partners.",
+  "unicorn": "A single bisexual woman who joins a couple (often hard to find, hence the mythical reference).",
+  "bull": "A single man who engages with a couple, particularly in hotwifing scenarios.",
+  "BDSM": "Bondage & Discipline, Dominance & Submission, Sadism & Masochism - consensual power exchange and sensation play.",
+  "safeword": "A pre-agreed word that immediately stops all activity when spoken, ensuring safety and consent.",
+  "aftercare": "The time after a scene or sexual activity dedicated to emotional and physical comfort and reconnection.",
+  "scene": "A planned BDSM play session with negotiated activities and boundaries.",
+  "dominant": "The partner who takes control in a power exchange dynamic (also called Dom/Domme).",
+  "submissive": "The partner who consensually gives up control in a power exchange dynamic (also called sub).",
+  "switch": "Someone who enjoys both dominant and submissive roles at different times.",
+  "ENM": "Ethical Non-Monogamy - consensual non-exclusive relationships with honesty and communication.",
+  "polyamory": "Having multiple romantic relationships simultaneously with the knowledge and consent of all involved.",
+  "metamour": "Your partner's other partner (not a direct relationship with you).",
+  "compersion": "Feeling joy from your partner's happiness with another person - the opposite of jealousy.",
+  "hotwifing": "A relationship dynamic where the wife has sexual experiences with other men, typically with the husband's encouragement.",
+  "hierarchical polyamory": "A polyamory structure with primary/secondary relationship rankings.",
+  "relationship anarchy": "Rejecting traditional relationship hierarchies and rules, treating each connection uniquely.",
+  "munch": "A casual social gathering for people in alternative lifestyles, typically in a vanilla (non-sexual) setting like a restaurant.",
+  "lifestyle": "General term for alternative relationship structures including swinging, BDSM, ENM, etc.",
+  "vanilla": "Traditional monogamous relationships or non-kinky sexual activities.",
+  "fetlife": "A social networking site for the BDSM and fetish community."
+};
+
 const GuidedJourneys = () => {
   const [selectedLifestyle, setSelectedLifestyle] = useState<string | null>(null);
   const [selectedType, setSelectedType] = useState<"couples" | "singles" | null>(null);
+  const [expandedPhases, setExpandedPhases] = useState<number[]>([0]); // First phase expanded by default
+  const [completedSteps, setCompletedSteps] = useState<{ [key: string]: boolean }>({});
+  const [showGlossary, setShowGlossary] = useState(false);
+  const [activeTooltip, setActiveTooltip] = useState<string | null>(null);
+
+  // Load progress from localStorage
+  useEffect(() => {
+    if (selectedLifestyle && selectedType) {
+      const key = `journey-progress-${selectedLifestyle}-${selectedType}`;
+      const saved = localStorage.getItem(key);
+      if (saved) {
+        try {
+          setCompletedSteps(JSON.parse(saved));
+        } catch (e) {
+          console.error("Failed to load progress:", e);
+        }
+      }
+    }
+  }, [selectedLifestyle, selectedType]);
+
+  // Save progress to localStorage
+  useEffect(() => {
+    if (selectedLifestyle && selectedType && Object.keys(completedSteps).length > 0) {
+      const key = `journey-progress-${selectedLifestyle}-${selectedType}`;
+      localStorage.setItem(key, JSON.stringify(completedSteps));
+    }
+  }, [completedSteps, selectedLifestyle, selectedType]);
+
+  const togglePhase = (index: number) => {
+    setExpandedPhases(prev => 
+      prev.includes(index) 
+        ? prev.filter(i => i !== index)
+        : [...prev, index]
+    );
+  };
+
+  const toggleStep = (stepId: string) => {
+    setCompletedSteps(prev => ({
+      ...prev,
+      [stepId]: !prev[stepId]
+    }));
+  };
+
+  const resetProgress = () => {
+    if (window.confirm("Are you sure you want to reset your progress? This cannot be undone.")) {
+      setCompletedSteps({});
+      if (selectedLifestyle && selectedType) {
+        const key = `journey-progress-${selectedLifestyle}-${selectedType}`;
+        localStorage.removeItem(key);
+      }
+    }
+  };
+
+  const getProgressPercentage = (journey: any) => {
+    if (!journey || !journey.phases) return 0;
+    const totalSteps = journey.phases.reduce((acc: number, phase: any) => acc + phase.steps.length, 0);
+    const completed = Object.values(completedSteps).filter(Boolean).length;
+    return totalSteps > 0 ? Math.round((completed / totalSteps) * 100) : 0;
+  };
 
   const structuredData = {
     "@context": "https://schema.org",
