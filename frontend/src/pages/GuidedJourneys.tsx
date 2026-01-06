@@ -1,11 +1,16 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
 import ParticlesBackground from "@/components/ParticlesBackground";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import { Users, Heart, Flame, Sparkles, CheckCircle, ArrowRight, Target, BookOpen, Brain, Shield, MessageCircle, Lock } from "lucide-react";
+import { 
+  Users, Heart, Flame, Sparkles, CheckCircle, ArrowRight, Target, BookOpen, 
+  Brain, Shield, MessageCircle, Lock, ChevronDown, ChevronUp, Info, 
+  Clock, Star, Award, HelpCircle, Lightbulb, AlertCircle, FileText,
+  Video, ExternalLink, CheckSquare, Square, Trophy
+} from "lucide-react";
 
 const GuidedJourneys = () => {
   const [selectedLifestyle, setSelectedLifestyle] = useState<string | null>(null);
