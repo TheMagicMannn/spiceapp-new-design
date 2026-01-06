@@ -712,13 +712,157 @@ const ENMPolyamoryGuide = () => {
               </section>
 
               {/* Continue with remaining sections - for brevity showing structure */}
+              {/* Relationship Agreements */}
+              <section id="agreements" className="mb-16 scroll-mt-24">
+                <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12">
+                  <h2 className="text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
+                    <Shield className="w-8 h-8 text-primary" />
+                    Creating Relationship Agreements
+                  </h2>
+                  <div className="space-y-6 text-muted-foreground">
+                    <p className="text-lg leading-relaxed">
+                      Relationship agreements (sometimes called "rules" but better framed as collaborative agreements) are the foundation of ethical non-monogamy. These are negotiated boundaries that all parties agree to honor.
+                    </p>
+                    <div className="bg-blue-500/10 border border-blue-500/30 rounded-xl p-6">
+                      <h3 className="text-xl font-semibold text-foreground mb-4">Key Areas for Agreements:</h3>
+                      <div className="grid md:grid-cols-2 gap-4 text-sm">
+                        <div className="space-y-2">
+                          <p className="font-medium text-foreground">Safer Sex & Health:</p>
+                          <ul className="space-y-1 ml-4">
+                            <li>• Barrier requirements (condoms, dental dams)</li>
+                            <li>• STI testing frequency and disclosure</li>
+                            <li>• Fluid bonding decisions</li>
+                            <li>• Birth control responsibilities</li>
+                          </ul>
+                        </div>
+                        <div className="space-y-2">
+                          <p className="font-medium text-foreground">Time & Scheduling:</p>
+                          <ul className="space-y-1 ml-4">
+                            <li>• Date nights protected for each partner</li>
+                            <li>• Advance notice for new dates</li>
+                            <li>• Holiday and vacation priorities</li>
+                            <li>• Overnight permissions and notice</li>
+                          </ul>
+                        </div>
+                        <div className="space-y-2">
+                          <p className="font-medium text-foreground">Information Sharing:</p>
+                          <ul className="space-y-1 ml-4">
+                            <li>• What details to share about other partners</li>
+                            <li>• Meeting metamours expectations</li>
+                            <li>• Social media boundaries</li>
+                            <li>• Privacy for other partners</li>
+                          </ul>
+                        </div>
+                        <div className="space-y-2">
+                          <p className="font-medium text-foreground">Emotional & Physical:</p>
+                          <ul className="space-y-1 ml-4">
+                            <li>• Shared space boundaries (bedroom, etc.)</li>
+                            <li>• Pet names or special activities</li>
+                            <li>• Financial arrangements</li>
+                            <li>• Meeting friends and family</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="bg-amber-500/10 border border-amber-500/30 rounded-xl p-6">
+                      <h3 className="text-lg font-semibold text-foreground mb-3">⚠️ Agreements vs Rules</h3>
+                      <p className="text-sm mb-3">Frame agreements as collaborative choices, not controlling rules:</p>
+                      <div className="grid md:grid-cols-2 gap-4 text-sm">
+                        <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-3">
+                          <p className="font-medium text-red-500 mb-2">Controlling Rule:</p>
+                          <p>"You can't have sex with anyone else without me present."</p>
+                        </div>
+                        <div className="bg-green-500/10 border border-green-500/20 rounded-lg p-3">
+                          <p className="font-medium text-green-500 mb-2">Healthy Agreement:</p>
+                          <p>"For now, I'm only comfortable with group experiences. Can we revisit this in 3 months?"</p>
+                        </div>
+                      </div>
+                    </div>
+                    <p className="text-sm italic">
+                      Remember: Agreements should be regularly revisited and renegotiated as relationships evolve and people grow.
+                    </p>
+                    <Link to="/start/consent-basics" className="inline-flex items-center gap-2 text-primary hover:underline text-sm font-medium">
+                      <CheckCircle className="w-4 h-4" />
+                      Learn About Consent & Boundaries
+                    </Link>
+                  </div>
+                </div>
+              </section>
+
+              {/* Jealousy Management */}
               <section id="jealousy" className="mb-16 scroll-mt-24">
                 <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12">
                   <h2 className="text-2xl md:text-3xl font-bold mb-6">Managing Jealousy in Polyamory</h2>
                   <div className="space-y-6 text-muted-foreground">
                     <p className="text-lg leading-relaxed">
-                      Jealousy is normal and expected in polyamory. The goal isn't to eliminate jealousy but to manage it healthily and use it as information about your needs and insecurities.
+                      Jealousy is normal and expected in polyamory. Even experienced poly folks feel jealous sometimes. The goal isn't to eliminate jealousy but to manage it healthily and use it as information about your needs, insecurities, and areas for growth.
                     </p>
+                    <div className="bg-purple-500/10 border border-purple-500/30 rounded-xl p-6">
+                      <h3 className="text-xl font-semibold text-foreground mb-4">Understanding Your Jealousy</h3>
+                      <p className="mb-3 text-sm">Jealousy is often a secondary emotion covering deeper fears. Ask yourself:</p>
+                      <ul className="space-y-2 text-sm">
+                        <li className="flex items-start gap-2">
+                          <span className="text-primary">•</span>
+                          <span><strong className="text-foreground">Fear of abandonment:</strong> "Will they leave me for someone better?"</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-primary">•</span>
+                          <span><strong className="text-foreground">Inadequacy:</strong> "Am I not enough? What do they have that I don't?"</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-primary">•</span>
+                          <span><strong className="text-foreground">Scarcity mindset:</strong> "There's only so much love/time/attention to go around"</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-primary">•</span>
+                          <span><strong className="text-foreground">Unmet needs:</strong> "I'm not getting enough quality time/affection/sex"</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <span className="text-primary">•</span>
+                          <span><strong className="text-foreground">Loss of specialness:</strong> "Our intimate moments won't be unique anymore"</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="bg-card/30 border border-border rounded-xl p-6">
+                      <h3 className="text-xl font-semibold text-foreground mb-4">Tools for Managing Jealousy</h3>
+                      <div className="space-y-3 text-sm">
+                        <div className="flex items-start gap-3">
+                          <span className="flex items-center justify-center w-6 h-6 rounded-full bg-primary/20 text-primary text-xs font-bold flex-shrink-0 mt-0.5">1</span>
+                          <div>
+                            <p className="font-medium text-foreground">Name and acknowledge the feeling</p>
+                            <p>Don't try to suppress it. "I'm feeling jealous right now" is valid.</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                          <span className="flex items-center justify-center w-6 h-6 rounded-full bg-primary/20 text-primary text-xs font-bold flex-shrink-0 mt-0.5">2</span>
+                          <div>
+                            <p className="font-medium text-foreground">Dig deeper into the root cause</p>
+                            <p>What specific fear or insecurity is being triggered?</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                          <span className="flex items-center justify-center w-6 h-6 rounded-full bg-primary/20 text-primary text-xs font-bold flex-shrink-0 mt-0.5">3</span>
+                          <div>
+                            <p className="font-medium text-foreground">Communicate your needs (not demands)</p>
+                            <p>Share what would help you feel secure without controlling your partner.</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                          <span className="flex items-center justify-center w-6 h-6 rounded-full bg-primary/20 text-primary text-xs font-bold flex-shrink-0 mt-0.5">4</span>
+                          <div>
+                            <p className="font-medium text-foreground">Practice self-soothing</p>
+                            <p>Meditation, journaling, exercise, calling a friend (not your partner mid-date!).</p>
+                          </div>
+                        </div>
+                        <div className="flex items-start gap-3">
+                          <span className="flex items-center justify-center w-6 h-6 rounded-full bg-primary/20 text-primary text-xs font-bold flex-shrink-0 mt-0.5">5</span>
+                          <div>
+                            <p className="font-medium text-foreground">Challenge scarcity thinking</p>
+                            <p>Love is not a finite resource. Your partner loving someone else doesn't diminish their love for you.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     <div className="flex gap-3 flex-wrap">
                       <Link to="/lifestyle/jealousy-management" className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 hover:bg-primary/20 border border-primary/30 rounded-lg transition-all text-sm font-medium">
                         <Heart className="w-4 h-4" />
@@ -728,6 +872,246 @@ const ENMPolyamoryGuide = () => {
                         <Sparkles className="w-4 h-4" />
                         Compersion Exercises
                       </Link>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              {/* Compersion */}
+              <section id="compersion" className="mb-16 scroll-mt-24">
+                <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12">
+                  <h2 className="text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
+                    <Star className="w-8 h-8 text-primary" />
+                    Cultivating Compersion
+                  </h2>
+                  <div className="space-y-6 text-muted-foreground">
+                    <p className="text-lg leading-relaxed">
+                      <strong className="text-foreground">Compersion</strong> is often described as the opposite of jealousy – it's the feeling of joy, happiness, or satisfaction when your partner experiences pleasure or happiness with another person. Think of it as empathetic happiness for your partner's joy.
+                    </p>
+                    <div className="bg-gradient-to-r from-pink-500/10 to-purple-500/10 border border-pink-500/30 rounded-xl p-6">
+                      <h3 className="text-xl font-semibold text-foreground mb-3">What Compersion Feels Like:</h3>
+                      <ul className="space-y-2 text-sm">
+                        <li className="flex items-start gap-2">
+                          <Heart className="w-4 h-4 text-pink-500 flex-shrink-0 mt-0.5" />
+                          <span>Genuine happiness when your partner talks excitedly about their date</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <Heart className="w-4 h-4 text-pink-500 flex-shrink-0 mt-0.5" />
+                          <span>Feeling warmth knowing your partner is experiencing new love or connection</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <Heart className="w-4 h-4 text-pink-500 flex-shrink-0 mt-0.5" />
+                          <span>Relief that your partner's needs are being met in ways you might not be able to provide</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <Heart className="w-4 h-4 text-pink-500 flex-shrink-0 mt-0.5" />
+                          <span>Appreciation for the ways other relationships enrich your partner's life</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <p className="text-lg leading-relaxed">
+                      Compersion doesn't always come naturally – and that's okay! It's a skill that can be developed over time. Many people experience a mix of compersion and jealousy simultaneously, which is completely normal.
+                    </p>
+                    <div className="bg-blue-500/10 border border-blue-500/30 rounded-xl p-6">
+                      <h3 className="text-xl font-semibold text-foreground mb-4">Exercises to Build Compersion:</h3>
+                      <div className="space-y-3 text-sm">
+                        <p className="font-medium text-foreground">Try these practices from our comprehensive guide:</p>
+                        <ul className="space-y-2 ml-4">
+                          <li>• Gratitude journaling for your partner's other relationships</li>
+                          <li>• Reframing thoughts from scarcity to abundance</li>
+                          <li>• Celebrating metamours' positive impact on your partner</li>
+                          <li>• Visualization exercises imagining your partner's joy</li>
+                          <li>• Sharing in post-date excitement together</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <Link to="/blog/compersion-exercises" className="inline-flex items-center gap-2 px-6 py-3 bg-primary hover:bg-primary/90 text-white rounded-lg transition-all font-medium">
+                      <Sparkles className="w-5 h-5" />
+                      8 Compersion Exercises to Practice
+                    </Link>
+                  </div>
+                </div>
+              </section>
+
+              {/* Metamours */}
+              <section id="metamours" className="mb-16 scroll-mt-24">
+                <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12">
+                  <h2 className="text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
+                    <Users className="w-8 h-8 text-primary" />
+                    Navigating Metamour Relationships
+                  </h2>
+                  <div className="space-y-6 text-muted-foreground">
+                    <p className="text-lg leading-relaxed">
+                      A <strong className="text-foreground">metamour</strong> is your partner's other partner – someone you're connected to through a shared romantic/sexual partner but don't have a direct romantic relationship with yourself. How you relate to metamours significantly impacts your polyamory experience.
+                    </p>
+                    <div className="grid md:grid-cols-3 gap-4">
+                      <div className="bg-green-500/10 border border-green-500/30 rounded-xl p-5">
+                        <h3 className="text-lg font-semibold text-foreground mb-3">Kitchen Table Poly</h3>
+                        <p className="text-sm mb-3">Everyone is comfortable sitting around the kitchen table together. Metamours are friends or friendly.</p>
+                        <p className="text-xs text-muted-foreground italic">Level: High integration, everyone knows everyone</p>
+                      </div>
+                      <div className="bg-blue-500/10 border border-blue-500/30 rounded-xl p-5">
+                        <h3 className="text-lg font-semibold text-foreground mb-3">Garden Party Poly</h3>
+                        <p className="text-sm mb-3">Metamours are pleasant at group gatherings but don't seek independent friendships. Cordial but not close.</p>
+                        <p className="text-xs text-muted-foreground italic">Level: Medium integration, friendly when together</p>
+                      </div>
+                      <div className="bg-purple-500/10 border border-purple-500/30 rounded-xl p-5">
+                        <h3 className="text-lg font-semibold text-foreground mb-3">Parallel Poly</h3>
+                        <p className="text-sm mb-3">Minimal to no contact with metamours. Relationships stay separate. You may not even meet them.</p>
+                        <p className="text-xs text-muted-foreground italic">Level: Low/no integration, separate relationships</p>
+                      </div>
+                    </div>
+                    <div className="bg-amber-500/10 border border-amber-500/30 rounded-xl p-6">
+                      <h3 className="text-lg font-semibold text-foreground mb-3">Tips for Positive Metamour Dynamics:</h3>
+                      <ul className="space-y-2 text-sm">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                          <span><strong className="text-foreground">Respect boundaries:</strong> Not everyone wants to be friends with their metamours, and that's valid</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                          <span><strong className="text-foreground">Remember the hinge:</strong> Your shared partner is juggling multiple relationships – be compassionate</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                          <span><strong className="text-foreground">Avoid comparison:</strong> You and your metamour offer different things – neither better nor worse</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                          <span><strong className="text-foreground">Direct communication:</strong> When issues arise, talk to your partner, not about them through the metamour</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                          <span><strong className="text-foreground">Find your style:</strong> Your metamour relationship style can differ from your partner's preference</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              {/* Time Management */}
+              <section id="time-management" className="mb-16 scroll-mt-24">
+                <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12">
+                  <h2 className="text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
+                    <Calendar className="w-8 h-8 text-primary" />
+                    Time & Energy Management
+                  </h2>
+                  <div className="space-y-6 text-muted-foreground">
+                    <p className="text-lg leading-relaxed">
+                      One of polyamory's biggest challenges is managing limited time and energy across multiple relationships. Unlike monogamy where you focus resources on one partnership, poly requires careful attention to balance and sustainability.
+                    </p>
+                    <div className="bg-red-500/10 border border-red-500/30 rounded-xl p-6">
+                      <h3 className="text-xl font-semibold text-foreground mb-4">⏰ The Time Reality Check</h3>
+                      <p className="mb-3 text-sm">Before adding partners, honestly assess your available capacity:</p>
+                      <div className="bg-background/50 rounded-lg p-4 text-sm space-y-2">
+                        <p>• <strong className="text-foreground">Work/Career:</strong> 40-60+ hours/week</p>
+                        <p>• <strong className="text-foreground">Sleep & Self-Care:</strong> 50-60 hours/week</p>
+                        <p>• <strong className="text-foreground">Household/Life Admin:</strong> 10-15 hours/week</p>
+                        <p>• <strong className="text-foreground">Friends & Family:</strong> 5-10 hours/week</p>
+                        <p>• <strong className="text-foreground">Personal Hobbies:</strong> 5-10 hours/week</p>
+                        <p className="pt-2 border-t border-border"><strong className="text-foreground">Remaining for dating/relationships:</strong> 20-30 hours/week realistically</p>
+                      </div>
+                      <p className="text-xs mt-3 italic">And remember: relationship time isn't just dates – it includes communication, scheduling, emotional labor, and processing.</p>
+                    </div>
+                    <div className="bg-card/30 border border-border rounded-xl p-6">
+                      <h3 className="text-xl font-semibold text-foreground mb-4">Practical Time Management Strategies:</h3>
+                      <div className="space-y-4 text-sm">
+                        <div>
+                          <p className="font-medium text-foreground mb-2">1. Use Shared Calendars</p>
+                          <p>Google Calendar with color-coding for each partner helps prevent double-booking and allows partners to see when you're available.</p>
+                        </div>
+                        <div>
+                          <p className="font-medium text-foreground mb-2">2. Schedule Regular Date Nights</p>
+                          <p>Protect recurring time for each partner. Tuesday nights with Partner A, Fridays with Partner B ensures consistent connection.</p>
+                        </div>
+                        <div>
+                          <p className="font-medium text-foreground mb-2">3. Quality Over Quantity</p>
+                          <p>3 focused, present hours trump 10 hours of distracted parallel time. Be fully there when you're together.</p>
+                        </div>
+                        <div>
+                          <p className="font-medium text-foreground mb-2">4. Build in Transition Time</p>
+                          <p>Don't schedule back-to-back dates. Allow time for emotional processing and self-care between partners.</p>
+                        </div>
+                        <div>
+                          <p className="font-medium text-foreground mb-2">5. Protect Solo Time</p>
+                          <p>Schedule time alone for recharging. Polyamory can be emotionally intensive – burnout is real.</p>
+                        </div>
+                        <div>
+                          <p className="font-medium text-foreground mb-2">6. Be Realistic About Capacity</p>
+                          <p>You can't maintain 5 deep romantic relationships while working full-time. Be honest about your bandwidth.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="bg-blue-500/10 border border-blue-500/30 rounded-xl p-6">
+                      <p className="text-sm">
+                        <strong className="text-foreground">Remember:</strong> It's okay to be "poly-saturated" (at capacity for relationships). Quality relationships require time investment – it's better to have 2-3 well-tended connections than 5 neglected ones.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              {/* Common Mistakes */}
+              <section id="mistakes" className="mb-16 scroll-mt-24">
+                <div className="bg-card/50 backdrop-blur-sm border border-border rounded-2xl p-8 md:p-12">
+                  <h2 className="text-2xl md:text-3xl font-bold mb-6 flex items-center gap-3">
+                    <AlertCircle className="w-8 h-8 text-red-500" />
+                    Common Polyamory Mistakes to Avoid
+                  </h2>
+                  <div className="space-y-6 text-muted-foreground">
+                    <p className="text-lg leading-relaxed">
+                      Learning from others' mistakes can save you heartache. Here are the most common pitfalls people encounter when starting polyamory:
+                    </p>
+                    <div className="space-y-4">
+                      {/* Mistake 1 */}
+                      <div className="bg-red-500/10 border-l-4 border-red-500 rounded-lg p-5">
+                        <h3 className="text-lg font-semibold text-foreground mb-2">❌ Using Poly to Fix Relationship Problems</h3>
+                        <p className="text-sm mb-2">Opening a struggling relationship to "add excitement" or "meet unmet needs" almost always makes things worse. Fix your foundation first.</p>
+                        <p className="text-xs text-green-500">✓ Instead: Strengthen your relationship through therapy, communication work, and addressing core issues before opening up.</p>
+                      </div>
+
+                      {/* Mistake 2 */}
+                      <div className="bg-red-500/10 border-l-4 border-red-500 rounded-lg p-5">
+                        <h3 className="text-lg font-semibold text-foreground mb-2">❌ Couple Privilege & "Unicorn Hunting"</h3>
+                        <p className="text-sm mb-2">Seeking a "third" person to join an existing couple equally, with veto power and rules designed to protect the couple first. This treats people as relationship accessories.</p>
+                        <p className="text-xs text-green-500">✓ Instead: Date separately or approach triads organically without pre-existing power imbalances. Let all relationships develop authentically.</p>
+                      </div>
+
+                      {/* Mistake 3 */}
+                      <div className="bg-red-500/10 border-l-4 border-red-500 rounded-lg p-5">
+                        <h3 className="text-lg font-semibold text-foreground mb-2">❌ Moving Too Fast</h3>
+                        <p className="text-sm mb-2">Jumping into polyamory without education, rushing into new relationships, or opening up immediately when one partner asks.</p>
+                        <p className="text-xs text-green-500">✓ Instead: Take months to learn, discuss, and prepare. Start slowly with clear check-ins and gradual steps.</p>
+                      </div>
+
+                      {/* Mistake 4 */}
+                      <div className="bg-red-500/10 border-l-4 border-red-500 rounded-lg p-5">
+                        <h3 className="text-lg font-semibold text-foreground mb-2">❌ Neglecting Existing Relationships</h3>
+                        <p className="text-sm mb-2">New Relationship Energy (NRE) is intoxicating. Many people accidentally neglect established partners while caught up in the excitement of someone new.</p>
+                        <p className="text-xs text-green-500">✓ Instead: Maintain protected time with existing partners. Be mindful of NRE's effects and intentionally balance attention.</p>
+                      </div>
+
+                      {/* Mistake 5 */}
+                      <div className="bg-red-500/10 border-l-4 border-red-500 rounded-lg p-5">
+                        <h3 className="text-lg font-semibold text-foreground mb-2">❌ Poor Communication & Assumptions</h3>
+                        <p className="text-sm mb-2">Assuming partners know what you need, avoiding difficult conversations, or expecting partners to read your mind.</p>
+                        <p className="text-xs text-green-500">✓ Instead: Over-communicate, especially early on. Explicitly state needs, boundaries, and feelings even when uncomfortable.</p>
+                      </div>
+
+                      {/* Mistake 6 */}
+                      <div className="bg-red-500/10 border-l-4 border-red-500 rounded-lg p-5">
+                        <h3 className="text-lg font-semibold text-foreground mb-2">❌ Ignoring Your Own Needs</h3>
+                        <p className="text-sm mb-2">Being so focused on being a "good poly person" that you suppress legitimate needs and feelings, or agreeing to things you're not actually comfortable with.</p>
+                        <p className="text-xs text-green-500">✓ Instead: Honor your authentic feelings. It's okay to have boundaries and limits. Polyamory requires honesty with yourself first.</p>
+                      </div>
+
+                      {/* Mistake 7 */}
+                      <div className="bg-red-500/10 border-l-4 border-red-500 rounded-lg p-5">
+                        <h3 className="text-lg font-semibold text-foreground mb-2">❌ Comparing Relationships</h3>
+                        <p className="text-sm mb-2">Constantly comparing yourself to metamours or comparing relationships to each other creates unnecessary suffering.</p>
+                        <p className="text-xs text-green-500">✓ Instead: Each relationship is unique. Focus on what you share with your partner rather than what they share with others.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
