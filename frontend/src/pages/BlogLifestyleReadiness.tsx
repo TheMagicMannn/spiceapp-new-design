@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { CheckCircle, AlertCircle, Heart, Brain, MessageCircle, Shield, Target, HelpCircle, Lightbulb, TrendingUp, Users, Clock } from "lucide-react";
+import { CheckCircle, AlertCircle, Heart, Brain, MessageCircle, Shield, Target, HelpCircle, Lightbulb, TrendingUp, Users, Clock, BookOpen, Sparkles } from "lucide-react";
 import SEO from "@/components/SEO";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
