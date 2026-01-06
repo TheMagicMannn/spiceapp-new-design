@@ -1529,13 +1529,167 @@ const GuidedJourneys = () => {
                         </div>
                       </div>
 
-                      {/* Render Journey */}
-                      {selectedType === "couples" && couplesJourneys[selectedLifestyle as keyof typeof couplesJourneys] && 
-                        renderJourney(couplesJourneys[selectedLifestyle as keyof typeof couplesJourneys], "couples")
-                      }
-                      {selectedType === "singles" && singlesJourneys[selectedLifestyle as keyof typeof singlesJourneys] && 
-                        renderJourney(singlesJourneys[selectedLifestyle as keyof typeof singlesJourneys], "singles")
-                      }
+                      {/* Main Content with Sidebar Layout */}
+                      <div className="grid lg:grid-cols-3 gap-8">
+                        {/* Main Journey Content */}
+                        <div className="lg:col-span-2">
+                          {selectedType === "couples" && couplesJourneys[selectedLifestyle as keyof typeof couplesJourneys] && 
+                            renderJourney(couplesJourneys[selectedLifestyle as keyof typeof couplesJourneys], "couples")
+                          }
+                          {selectedType === "singles" && singlesJourneys[selectedLifestyle as keyof typeof singlesJourneys] && 
+                            renderJourney(singlesJourneys[selectedLifestyle as keyof typeof singlesJourneys], "singles")
+                          }
+                        </div>
+
+                        {/* Sidebar with Resources and Glossary */}
+                        <div className="lg:col-span-1 space-y-6">
+                          {/* New to this lifestyle? */}
+                          <div className="bg-gradient-to-br from-blue-500/10 to-cyan-500/10 border border-blue-500/30 rounded-2xl p-6 sticky top-24">
+                            <div className="flex items-center gap-2 mb-4">
+                              <AlertCircle className="w-5 h-5 text-blue-500" />
+                              <h3 className="text-lg font-bold text-blue-500">New to This Lifestyle?</h3>
+                            </div>
+                            <p className="text-sm text-muted-foreground mb-4">
+                              Start with these essential resources to build your foundation.
+                            </p>
+                            
+                            {/* Essential Resources */}
+                            <div className="space-y-2 mb-6">
+                              {selectedLifestyle === "swinging" && (
+                                <>
+                                  <Link to="/blog/swinging-101-beginners-guide" className="flex items-center gap-2 p-3 bg-background/50 hover:bg-background rounded-lg transition-all group">
+                                    <BookOpen className="w-4 h-4 text-blue-500 flex-shrink-0" />
+                                    <span className="text-sm group-hover:text-primary transition-colors">What is Swinging?</span>
+                                  </Link>
+                                  <Link to="/guide/how-to" className="flex items-center gap-2 p-3 bg-background/50 hover:bg-background rounded-lg transition-all group">
+                                    <MessageCircle className="w-4 h-4 text-blue-500 flex-shrink-0" />
+                                    <span className="text-sm group-hover:text-primary transition-colors">Communication Guide</span>
+                                  </Link>
+                                  <Link to="/guide/safety" className="flex items-center gap-2 p-3 bg-background/50 hover:bg-background rounded-lg transition-all group">
+                                    <Shield className="w-4 h-4 text-blue-500 flex-shrink-0" />
+                                    <span className="text-sm group-hover:text-primary transition-colors">Safety First</span>
+                                  </Link>
+                                  <Link to="/start/consent-basics" className="flex items-center gap-2 p-3 bg-background/50 hover:bg-background rounded-lg transition-all group">
+                                    <CheckCircle className="w-4 h-4 text-blue-500 flex-shrink-0" />
+                                    <span className="text-sm group-hover:text-primary transition-colors">Consent Basics</span>
+                                  </Link>
+                                  <Link to="/start/beginner-faq#swinging" className="flex items-center gap-2 p-3 bg-background/50 hover:bg-background rounded-lg transition-all group">
+                                    <HelpCircle className="w-4 h-4 text-blue-500 flex-shrink-0" />
+                                    <span className="text-sm group-hover:text-primary transition-colors">Common Myths</span>
+                                  </Link>
+                                </>
+                              )}
+                              {selectedLifestyle === "bdsm" && (
+                                <>
+                                  <Link to="/blog/bdsm-beginners-guide" className="flex items-center gap-2 p-3 bg-background/50 hover:bg-background rounded-lg transition-all group">
+                                    <BookOpen className="w-4 h-4 text-blue-500 flex-shrink-0" />
+                                    <span className="text-sm group-hover:text-primary transition-colors">BDSM for Beginners</span>
+                                  </Link>
+                                  <Link to="/blog/bdsm-safety-checklist" className="flex items-center gap-2 p-3 bg-background/50 hover:bg-background rounded-lg transition-all group">
+                                    <Shield className="w-4 h-4 text-blue-500 flex-shrink-0" />
+                                    <span className="text-sm group-hover:text-primary transition-colors">Safety Checklist</span>
+                                  </Link>
+                                  <Link to="/lifestyle/bdsm-guide#roles" className="flex items-center gap-2 p-3 bg-background/50 hover:bg-background rounded-lg transition-all group">
+                                    <Users className="w-4 h-4 text-blue-500 flex-shrink-0" />
+                                    <span className="text-sm group-hover:text-primary transition-colors">Understanding Roles</span>
+                                  </Link>
+                                  <Link to="/blog/bdsm-negotiation-checklist" className="flex items-center gap-2 p-3 bg-background/50 hover:bg-background rounded-lg transition-all group">
+                                    <CheckCircle className="w-4 h-4 text-blue-500 flex-shrink-0" />
+                                    <span className="text-sm group-hover:text-primary transition-colors">Consent & Negotiation</span>
+                                  </Link>
+                                  <Link to="/lifestyle/bdsm-guide" className="flex items-center gap-2 p-3 bg-background/50 hover:bg-background rounded-lg transition-all group">
+                                    <HelpCircle className="w-4 h-4 text-blue-500 flex-shrink-0" />
+                                    <span className="text-sm group-hover:text-primary transition-colors">Common Questions</span>
+                                  </Link>
+                                </>
+                              )}
+                              {selectedLifestyle === "hotwifing" && (
+                                <>
+                                  <Link to="/lifestyle/hotwifing-guide" className="flex items-center gap-2 p-3 bg-background/50 hover:bg-background rounded-lg transition-all group">
+                                    <BookOpen className="w-4 h-4 text-blue-500 flex-shrink-0" />
+                                    <span className="text-sm group-hover:text-primary transition-colors">Hotwifing 101</span>
+                                  </Link>
+                                  <Link to="/guide/how-to" className="flex items-center gap-2 p-3 bg-background/50 hover:bg-background rounded-lg transition-all group">
+                                    <MessageCircle className="w-4 h-4 text-blue-500 flex-shrink-0" />
+                                    <span className="text-sm group-hover:text-primary transition-colors">Communication Guide</span>
+                                  </Link>
+                                  <Link to="/lifestyle/jealousy-management" className="flex items-center gap-2 p-3 bg-background/50 hover:bg-background rounded-lg transition-all group">
+                                    <Heart className="w-4 h-4 text-blue-500 flex-shrink-0" />
+                                    <span className="text-sm group-hover:text-primary transition-colors">Managing Jealousy</span>
+                                  </Link>
+                                  <Link to="/guide/safety" className="flex items-center gap-2 p-3 bg-background/50 hover:bg-background rounded-lg transition-all group">
+                                    <Shield className="w-4 h-4 text-blue-500 flex-shrink-0" />
+                                    <span className="text-sm group-hover:text-primary transition-colors">Safety Guidelines</span>
+                                  </Link>
+                                  <Link to="/start/beginner-faq#hotwifing" className="flex items-center gap-2 p-3 bg-background/50 hover:bg-background rounded-lg transition-all group">
+                                    <HelpCircle className="w-4 h-4 text-blue-500 flex-shrink-0" />
+                                    <span className="text-sm group-hover:text-primary transition-colors">FAQs</span>
+                                  </Link>
+                                </>
+                              )}
+                              {selectedLifestyle === "enm" && (
+                                <>
+                                  <Link to="/lifestyle/enm-polyamory-guide" className="flex items-center gap-2 p-3 bg-background/50 hover:bg-background rounded-lg transition-all group">
+                                    <BookOpen className="w-4 h-4 text-blue-500 flex-shrink-0" />
+                                    <span className="text-sm group-hover:text-primary transition-colors">What is ENM?</span>
+                                  </Link>
+                                  <Link to="/lifestyle/enm-polyamory-guide" className="flex items-center gap-2 p-3 bg-background/50 hover:bg-background rounded-lg transition-all group">
+                                    <Users className="w-4 h-4 text-blue-500 flex-shrink-0" />
+                                    <span className="text-sm group-hover:text-primary transition-colors">Relationship Structures</span>
+                                  </Link>
+                                  <Link to="/lifestyle/jealousy-management" className="flex items-center gap-2 p-3 bg-background/50 hover:bg-background rounded-lg transition-all group">
+                                    <Heart className="w-4 h-4 text-blue-500 flex-shrink-0" />
+                                    <span className="text-sm group-hover:text-primary transition-colors">Managing Jealousy</span>
+                                  </Link>
+                                  <Link to="/lifestyle/relationships-communication" className="flex items-center gap-2 p-3 bg-background/50 hover:bg-background rounded-lg transition-all group">
+                                    <MessageCircle className="w-4 h-4 text-blue-500 flex-shrink-0" />
+                                    <span className="text-sm group-hover:text-primary transition-colors">Communication Skills</span>
+                                  </Link>
+                                  <Link to="/start/beginner-faq#enm" className="flex items-center gap-2 p-3 bg-background/50 hover:bg-background rounded-lg transition-all group">
+                                    <HelpCircle className="w-4 h-4 text-blue-500 flex-shrink-0" />
+                                    <span className="text-sm group-hover:text-primary transition-colors">ENM FAQ</span>
+                                  </Link>
+                                </>
+                              )}
+                            </div>
+
+                            {/* Quick Glossary Toggle */}
+                            <button
+                              onClick={() => setShowGlossary(!showGlossary)}
+                              className="w-full flex items-center justify-between p-3 bg-primary/10 hover:bg-primary/20 border border-primary/30 rounded-lg transition-all"
+                            >
+                              <span className="text-sm font-medium">Quick Glossary</span>
+                              {showGlossary ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
+                            </button>
+
+                            {/* Glossary Terms */}
+                            {showGlossary && (
+                              <div className="mt-4 space-y-3 max-h-96 overflow-y-auto">
+                                {Object.entries(glossary)
+                                  .filter(([term]) => {
+                                    // Filter relevant terms based on lifestyle
+                                    if (selectedLifestyle === "swinging") {
+                                      return ["swinging", "soft swap", "full swap", "unicorn", "bull", "lifestyle", "vanilla", "munch"].includes(term);
+                                    } else if (selectedLifestyle === "bdsm") {
+                                      return ["BDSM", "safeword", "aftercare", "scene", "dominant", "submissive", "switch", "fetlife", "munch", "negotiation", "consent"].includes(term);
+                                    } else if (selectedLifestyle === "hotwifing") {
+                                      return ["hotwifing", "bull", "boundaries", "consent", "compersion"].includes(term);
+                                    } else if (selectedLifestyle === "enm") {
+                                      return ["ENM", "polyamory", "metamour", "compersion", "hierarchical polyamory", "relationship anarchy", "NRE", "veto power", "boundaries"].includes(term);
+                                    }
+                                    return true;
+                                  })
+                                  .map(([term, definition]) => (
+                                    <div key={term} className="p-3 bg-background/50 rounded-lg">
+                                      <p className="text-sm font-semibold text-primary mb-1 capitalize">{term}</p>
+                                      <p className="text-xs text-muted-foreground">{definition}</p>
+                                    </div>
+                                  ))}
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      </div>
                     </div>
 
                     {/* CTA */}
