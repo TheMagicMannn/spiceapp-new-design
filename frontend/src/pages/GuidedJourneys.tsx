@@ -36,7 +36,12 @@ const glossary: { [key: string]: string } = {
   "munch": "A casual social gathering for people in alternative lifestyles, typically in a vanilla (non-sexual) setting like a restaurant.",
   "lifestyle": "General term for alternative relationship structures including swinging, BDSM, ENM, etc.",
   "vanilla": "Traditional monogamous relationships or non-kinky sexual activities.",
-  "fetlife": "A social networking site for the BDSM and fetish community."
+  "fetlife": "A social networking site for the BDSM and fetish community.",
+  "negotiation": "The process of discussing boundaries, desires, and limits before engaging in play or new experiences.",
+  "consent": "Freely given, enthusiastic agreement to participate in activities. Can be withdrawn at any time.",
+  "boundaries": "Personal limits and rules about what you're comfortable with in relationships and activities.",
+  "NRE": "New Relationship Energy - the exciting, intoxicating feeling at the start of a new relationship.",
+  "veto power": "The ability for one partner to end another partner's relationship (controversial in polyamory)."
 };
 
 const GuidedJourneys = () => {
