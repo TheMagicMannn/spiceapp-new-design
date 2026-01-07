@@ -422,7 +422,7 @@ const Academy = () => {
                     <p className="text-sm text-muted-foreground mb-4">
                       Work through modules, read guides, and practice skills
                     </p>
-                    <Link to="/guide" className="text-primary text-sm font-medium hover:underline">
+                    <Link to="/lifestyle" className="text-primary text-sm font-medium hover:underline">
                       Browse Guides →
                     </Link>
                   </div>
