@@ -888,6 +888,47 @@ const BlogHome = () => {
                     ))}
                   </div>
                 </div>
+
+                {/* Category Sections with Posts */}
+                {categories.filter(c => c.id !== "all").map((category) => {
+                  const categoryPosts = allBlogPosts.filter(post => post.category === category.id).slice(0, 3);
+                  if (categoryPosts.length === 0) return null;
+                  
+                  return (
+                    <div key={category.id} className="mb-16">
+                      <div className="flex items-center justify-between mb-6">
+                        <h2 className="text-2xl md:text-3xl font-bold">{category.name}</h2>
+                        <Link
+                          to={`/blog/${category.id}`}
+                          className="text-primary hover:underline font-semibold flex items-center gap-2"
+                        >
+                          View All {categoryCounts[category.id] || 0} Articles →
+                        </Link>
+                      </div>
+                      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {categoryPosts.map((post, idx) => (
+                          <Link
+                            key={idx}
+                            to={post.path}
+                            className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 hover:border-primary/50 transition-all hover:scale-[1.02]"
+                          >
+                            <div className="flex items-center gap-2 mb-3">
+                              <span className="text-xs font-semibold text-primary bg-primary/10 px-3 py-1 rounded-full">
+                                {post.categoryDisplay}
+                              </span>
+                              <span className="text-xs text-muted-foreground flex items-center gap-1">
+                                <Clock className="w-3 h-3" />
+                                {post.readTime}
+                              </span>
+                            </div>
+                            <h3 className="text-lg font-bold mb-3 line-clamp-2">{post.title}</h3>
+                            <p className="text-sm text-muted-foreground line-clamp-3">{post.excerpt}</p>
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  );
+                })}
               </>
             )}
 
