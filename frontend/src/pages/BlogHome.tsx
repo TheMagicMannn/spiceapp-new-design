@@ -885,31 +885,6 @@ const BlogHome = () => {
                   </div>
                 </div>
 
-                {/* Browse by Category */}
-                <div className="mb-16">
-                  <h2 className="text-2xl md:text-3xl font-bold mb-8">Browse by Category</h2>
-                  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {categories.filter(c => c.id !== "all").map((category, index) => (
-                      <Link
-                        key={index}
-                        to={`/blog/${category.id}`}
-                        className="bg-card/50 backdrop-blur-sm border border-border rounded-xl p-6 hover:border-primary/50 transition-all group"
-                      >
-                        <div className="flex items-center justify-between mb-3">
-                          <h3 className="text-xl font-bold text-primary">{category.name}</h3>
-                          <span className="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">
-                            {categoryCounts[category.id] || 0} {(categoryCounts[category.id] || 0) === 1 ? "article" : "articles"}
-                          </span>
-                        </div>
-                        <p className="text-sm text-muted-foreground mb-4">{category.description}</p>
-                        <span className="text-primary text-sm font-semibold group-hover:underline">
-                          Explore {category.name} →
-                        </span>
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-
                 {/* Category Sections with Posts */}
                 {categories.filter(c => c.id !== "all").map((category) => {
                   const categoryPosts = allBlogPosts.filter(post => post.category === category.id).slice(0, 3);
