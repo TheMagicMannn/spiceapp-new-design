@@ -81,11 +81,11 @@ const PricingSection = () => {
                 VIP Membership
               </h3>
               <div className="flex items-baseline gap-2">
-                <span className="text-5xl font-black text-gradient">$16.99</span>
+                <span className="text-5xl font-black text-gradient">$14.99</span>
                 <span className="text-muted-foreground">/month</span>
               </div>
               <p className="text-sm text-muted-foreground mt-2">
-                or $149.99/year <span className="text-primary font-semibold">(save 26%)</span>
+                or $99.99/year <span className="text-primary font-semibold">(save 44%)</span>
               </p>
             </div>
 
