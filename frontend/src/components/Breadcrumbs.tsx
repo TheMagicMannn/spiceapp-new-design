@@ -117,6 +117,10 @@ const Breadcrumbs = () => {
       else if (segment === "tools" && index < pathSegments.length - 1) {
         breadcrumbItems.push({ path: "/tools", name: "Tools" });
       }
+      // Special handling for /vs parent - redirect to app comparisons
+      else if (segment === "vs" && index < pathSegments.length - 1) {
+        breadcrumbItems.push({ path: "/tools/app-comparisons", name: "App Comparisons" });
+      }
       else if (segment !== "guide") {
         const name = routeNames[currentPathBuild] || segment.charAt(0).toUpperCase() + segment.slice(1);
         breadcrumbItems.push({ path: currentPathBuild, name });
