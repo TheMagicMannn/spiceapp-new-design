@@ -652,7 +652,7 @@ const categories = [
 const BlogHome = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
-  const [showFilters, setShowFilters] = useState(false);
+  const [showFilters, setShowFilters] = useState(true); // Expanded by default
 
   // Calculate article counts per category
   const categoryCounts = useMemo(() => {
