@@ -57,6 +57,12 @@ const routeNames: Record<string, string> = {
   "/tools/app-comparisons": "App Comparisons",
   "/tools/feature-comparison": "Feature Comparison",
   "/tools/sti-resources": "STI Resources",
+  "/vs": "App Comparisons",
+  "/vs/feeld": "SPICE vs Feeld",
+  "/vs/3fun": "SPICE vs 3Fun",
+  "/vs/sdc": "SPICE vs SDC",
+  "/vs/kasidie": "SPICE vs Kasidie",
+  "/vs/sls": "SPICE vs SLS",
 };
 
 const Breadcrumbs = () => {
