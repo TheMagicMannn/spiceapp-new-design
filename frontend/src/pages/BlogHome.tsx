@@ -677,11 +677,32 @@ const BlogHome = () => {
     });
   }, [searchQuery, selectedCategory]);
 
-  // Get latest articles (sorted by date, top 6)
+  // Get latest articles - mixed across categories for variety
   const latestPosts = useMemo(() => {
-    return [...allBlogPosts]
-      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-      .slice(0, 6);
+    const categoriesUsed = new Set<string>();
+    const mixedPosts: typeof allBlogPosts = [];
+    
+    // Sort all posts by date
+    const sortedPosts = [...allBlogPosts]
+      .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    
+    // First pass: Get one post from each category
+    for (const post of sortedPosts) {
+      if (!categoriesUsed.has(post.category) && mixedPosts.length < 9) {
+        mixedPosts.push(post);
+        categoriesUsed.add(post.category);
+      }
+    }
+    
+    // Second pass: Fill remaining slots with latest posts
+    for (const post of sortedPosts) {
+      if (mixedPosts.length >= 9) break;
+      if (!mixedPosts.includes(post)) {
+        mixedPosts.push(post);
+      }
+    }
+    
+    return mixedPosts;
   }, []);
 
   // Clear all filters
