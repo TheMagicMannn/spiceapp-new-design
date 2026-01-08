@@ -105,7 +105,7 @@ const FAQ = () => {
       questions: [
         {
           q: "Is SPICE free to use?",
-          a: "Yes! SPICE offers a free tier with basic features including profile creation, browsing profiles, limited messaging, and access to the BDSM quiz. You can upgrade to VIP membership ($16.99/month or $149.99/year) for unlimited messaging, advanced filters, priority matching, and exclusive features.",
+          a: "Yes! SPICE offers a free tier with basic features including profile creation, browsing profiles, limited messaging, and access to the BDSM quiz. You can upgrade to VIP membership ($14.99/month or $99.99/year) for unlimited messaging, advanced filters, priority matching, and exclusive features.",
         },
         {
           q: "What's included in VIP membership?",
