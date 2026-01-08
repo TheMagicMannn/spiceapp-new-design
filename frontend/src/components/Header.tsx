@@ -49,19 +49,7 @@ const navigationItems = [
       { name: "Guided Journeys", path: "/academy/journeys", description: "Beginner to advanced" },
     ]
   },
-  {
-    name: "Blog",
-    items: [
-      { name: "Latest Articles", path: "/blog", description: "Newest content" },
-      { name: "Swingers", path: "/blog/swingers", description: "Swinging lifestyle articles" },
-      { name: "Hotwifing", path: "/blog/hotwifing", description: "Hotwife & stag/vixen stories" },
-      { name: "BDSM & Kink", path: "/blog/bdsm", description: "Kink education & guides" },
-      { name: "ENM & Poly", path: "/blog/enm", description: "Non-monogamy insights" },
-      { name: "Consent & Safety", path: "/blog/consent", description: "Safe practices" },
-      { name: "Travel Stories", path: "/blog/travel", description: "Lifestyle destinations" },
-      { name: "Relationships", path: "/blog/relationships", description: "Intimacy & connection" },
-    ]
-  },
+  { name: "Blog", path: "/blog" },
   {
     name: "Tools",
     items: [
