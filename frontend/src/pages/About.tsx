@@ -66,7 +66,7 @@ const About = () => {
     <div className="relative min-h-screen">
       <SEO
         title="About SPICE — Inclusive, Verified Dating for Swingers, BDSM & ENM"
-        description="Learn about SPICE's mission to create the most inclusive, verified, and privacy-focused dating app for swingers, BDSM, ENM, and polyamorous communities. Built by the lifestyle community, for the community. 10K+ waitlist members, 100% verification rate, 50+ countries."
+        description="Learn about SPICE's mission to create the most inclusive, verified, and privacy-focused dating app for swingers, BDSM, ENM, and polyamorous communities. Built by the lifestyle community, for the community. 100% verification rate, 200+ desire tags."
         keywords="about SPICE dating app, lifestyle dating mission, sex-positive dating platform, inclusive adult dating, verified dating community, alternative lifestyle app, BDSM community values, ENM platform mission, privacy-focused adult dating, authentic connections dating"
         canonical="https://thespiceapp.com/about"
         structuredData={structuredData}
