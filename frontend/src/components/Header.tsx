@@ -59,20 +59,7 @@ const navigationItems = [
       { name: "STI Resources", path: "/tools/sti-resources", description: "Sexual health & safety" },
     ]
   },
-  {
-    name: "Travel",
-    items: [
-      { name: "Sexiest Cities", path: "/travel", description: "Top lifestyle destinations" },
-      { name: "Miami", path: "/travel/miami", description: "Complete Miami guide" },
-      { name: "Las Vegas", path: "/travel/las-vegas", description: "Vegas lifestyle scene" },
-      { name: "New York", path: "/travel/new-york", description: "NYC lifestyle community" },
-      { name: "New Orleans", path: "/travel/new-orleans", description: "NOLA nightlife & events" },
-      { name: "Orlando", path: "/travel/orlando", description: "Theme parks & lifestyle" },
-      { name: "Cancun & Playa", path: "/travel/cancun", description: "Mexico hotspots" },
-      { name: "International", path: "/travel/international", description: "Global destinations" },
-      { name: "Clubs & Resorts", path: "/travel/clubs-resorts", description: "Directory of venues" },
-    ]
-  },
+  { name: "Travel", path: "/travel" },
 ];
 
 const Header = () => {
