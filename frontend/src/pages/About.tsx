@@ -40,10 +40,8 @@ const values = [
 ];
 
 const stats = [
-  { value: "10K+", label: "Waitlist Members" },
   { value: "200+", label: "Desire Tags" },
   { value: "100%", label: "Verification Rate" },
-  { value: "50+", label: "Countries Represented" },
 ];
 
 const About = () => {
